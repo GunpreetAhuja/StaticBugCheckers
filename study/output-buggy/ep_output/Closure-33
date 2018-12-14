@@ -1,0 +1,11 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-33/src/com/google/javascript/rhino/jstype/PrototypeObjectType.java:326: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+    return propertyType != nativePropertyType;
+                        ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'return !Objects.equals(propertyType, nativePropertyType);' or 'return !propertyType.equals(nativePropertyType);'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-33/src/com/google/javascript/rhino/jstype/PrototypeObjectType.java:515: warning: [MissingOverride] setOwnerFunction overrides method in ObjectType; expected @Override
+  void setOwnerFunction(FunctionType type) {
+       ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override void setOwnerFunction(FunctionType type) {'?
+2 warnings

@@ -1,0 +1,6 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Mockito-28/src/org/mockito/internal/configuration/DefaultInjectionEngine.java:30: warning: [MissingOverride] compare implements method in Comparator; expected @Override
+        public int compare(Field field1, Field field2) {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int compare(Field field1, Field field2) {'?
+1 warning

@@ -1,0 +1,86 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-67/src/main/java/org/apache/commons/math/optimization/MultiStartUnivariateRealOptimizer.java:91: warning: [MissingOverride] getFunctionValue implements method in UnivariateRealOptimizer; expected @Override
+    public double getFunctionValue() {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double getFunctionValue() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-67/src/main/java/org/apache/commons/math/optimization/MultiStartUnivariateRealOptimizer.java:96: warning: [MissingOverride] getResult implements method in UnivariateRealOptimizer; expected @Override
+    public double getResult() {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double getResult() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-67/src/main/java/org/apache/commons/math/optimization/MultiStartUnivariateRealOptimizer.java:101: warning: [MissingOverride] getAbsoluteAccuracy implements method in ConvergingAlgorithm; expected @Override
+    public double getAbsoluteAccuracy() {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double getAbsoluteAccuracy() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-67/src/main/java/org/apache/commons/math/optimization/MultiStartUnivariateRealOptimizer.java:106: warning: [MissingOverride] getIterationCount implements method in ConvergingAlgorithm; expected @Override
+    public int getIterationCount() {
+               ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int getIterationCount() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-67/src/main/java/org/apache/commons/math/optimization/MultiStartUnivariateRealOptimizer.java:111: warning: [MissingOverride] getMaximalIterationCount implements method in ConvergingAlgorithm; expected @Override
+    public int getMaximalIterationCount() {
+               ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int getMaximalIterationCount() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-67/src/main/java/org/apache/commons/math/optimization/MultiStartUnivariateRealOptimizer.java:116: warning: [MissingOverride] getMaxEvaluations implements method in UnivariateRealOptimizer; expected @Override
+    public int getMaxEvaluations() {
+               ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int getMaxEvaluations() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-67/src/main/java/org/apache/commons/math/optimization/MultiStartUnivariateRealOptimizer.java:121: warning: [MissingOverride] getEvaluations implements method in UnivariateRealOptimizer; expected @Override
+    public int getEvaluations() {
+               ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int getEvaluations() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-67/src/main/java/org/apache/commons/math/optimization/MultiStartUnivariateRealOptimizer.java:126: warning: [MissingOverride] getRelativeAccuracy implements method in ConvergingAlgorithm; expected @Override
+    public double getRelativeAccuracy() {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double getRelativeAccuracy() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-67/src/main/java/org/apache/commons/math/optimization/MultiStartUnivariateRealOptimizer.java:131: warning: [MissingOverride] resetAbsoluteAccuracy implements method in ConvergingAlgorithm; expected @Override
+    public void resetAbsoluteAccuracy() {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void resetAbsoluteAccuracy() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-67/src/main/java/org/apache/commons/math/optimization/MultiStartUnivariateRealOptimizer.java:136: warning: [MissingOverride] resetMaximalIterationCount implements method in ConvergingAlgorithm; expected @Override
+    public void resetMaximalIterationCount() {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void resetMaximalIterationCount() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-67/src/main/java/org/apache/commons/math/optimization/MultiStartUnivariateRealOptimizer.java:141: warning: [MissingOverride] resetRelativeAccuracy implements method in ConvergingAlgorithm; expected @Override
+    public void resetRelativeAccuracy() {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void resetRelativeAccuracy() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-67/src/main/java/org/apache/commons/math/optimization/MultiStartUnivariateRealOptimizer.java:146: warning: [MissingOverride] setAbsoluteAccuracy implements method in ConvergingAlgorithm; expected @Override
+    public void setAbsoluteAccuracy(double accuracy) {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void setAbsoluteAccuracy(double accuracy) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-67/src/main/java/org/apache/commons/math/optimization/MultiStartUnivariateRealOptimizer.java:151: warning: [MissingOverride] setMaximalIterationCount implements method in ConvergingAlgorithm; expected @Override
+    public void setMaximalIterationCount(int count) {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void setMaximalIterationCount(int count) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-67/src/main/java/org/apache/commons/math/optimization/MultiStartUnivariateRealOptimizer.java:156: warning: [MissingOverride] setMaxEvaluations implements method in UnivariateRealOptimizer; expected @Override
+    public void setMaxEvaluations(int maxEvaluations) {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void setMaxEvaluations(int maxEvaluations) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-67/src/main/java/org/apache/commons/math/optimization/MultiStartUnivariateRealOptimizer.java:161: warning: [MissingOverride] setRelativeAccuracy implements method in ConvergingAlgorithm; expected @Override
+    public void setRelativeAccuracy(double accuracy) {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void setRelativeAccuracy(double accuracy) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-67/src/main/java/org/apache/commons/math/optimization/MultiStartUnivariateRealOptimizer.java:226: warning: [MissingOverride] optimize implements method in UnivariateRealOptimizer; expected @Override
+    public double optimize(final UnivariateRealFunction f, final GoalType goalType,
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double optimize(final UnivariateRealFunction f, final GoalType goalType,'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-67/src/main/java/org/apache/commons/math/optimization/MultiStartUnivariateRealOptimizer.java:313: warning: [MissingOverride] optimize implements method in UnivariateRealOptimizer; expected @Override
+    public double optimize(final UnivariateRealFunction f, final GoalType goalType,
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double optimize(final UnivariateRealFunction f, final GoalType goalType,'?
+17 warnings

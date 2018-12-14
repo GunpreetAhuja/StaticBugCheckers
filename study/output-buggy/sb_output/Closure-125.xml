@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.1.0" sequence="0" timestamp="1542185484000" analysisTimestamp="1542185486680" release="">
+  <Project projectName="">
+    <Jar>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-125/src</Jar>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-125/build/classes</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-125/lib/args4j.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-125/lib/guava.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-125/lib/json.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-125/lib/jsr305.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-125/lib/protobuf-java.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-125/build/lib/rhino.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-125/lib/ant.jar</AuxClasspathEntry>
+  </Project>
+  <BugInstance type="NP_NULL_ON_SOME_PATH" priority="2" rank="8" abbrev="NP" category="CORRECTNESS" instanceHash="36809c0d8ffa2f5c07fae6f4c66ba73c" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="476">
+    <ShortMessage>Possible null pointer dereference</ShortMessage>
+    <LongMessage>Possible null pointer dereference of ? in com.google.javascript.jscomp.TypeCheck.visitAssign(NodeTraversal, Node)</LongMessage>
+    <Class classname="com.google.javascript.jscomp.TypeCheck" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.TypeCheck" start="63" end="2117" sourcefile="TypeCheck.java" sourcepath="com/google/javascript/jscomp/TypeCheck.java">
+        <Message>At TypeCheck.java:[lines 63-2117]</Message>
+      </SourceLine>
+      <Message>In class com.google.javascript.jscomp.TypeCheck</Message>
+    </Class>
+    <Method classname="com.google.javascript.jscomp.TypeCheck" name="visitAssign" signature="(Lcom/google/javascript/jscomp/NodeTraversal;Lcom/google/javascript/rhino/Node;)V" isStatic="false" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.TypeCheck" start="913" end="1021" startBytecode="0" endBytecode="857" sourcefile="TypeCheck.java" sourcepath="com/google/javascript/jscomp/TypeCheck.java"/>
+      <Message>In method com.google.javascript.jscomp.TypeCheck.visitAssign(NodeTraversal, Node)</Message>
+    </Method>
+    <LocalVariable name="?" register="7" pc="242" role="LOCAL_VARIABLE_VALUE_OF">
+      <Message>Value loaded from ?</Message>
+    </LocalVariable>
+    <SourceLine classname="com.google.javascript.jscomp.TypeCheck" primary="true" start="963" end="963" startBytecode="244" endBytecode="244" sourcefile="TypeCheck.java" sourcepath="com/google/javascript/jscomp/TypeCheck.java" role="SOURCE_LINE_DEREF">
+      <Message>Dereferenced at TypeCheck.java:[line 963]</Message>
+    </SourceLine>
+    <SourceLine classname="com.google.javascript.jscomp.TypeCheck" start="942" end="942" startBytecode="138" endBytecode="138" sourcefile="TypeCheck.java" sourcepath="com/google/javascript/jscomp/TypeCheck.java" role="SOURCE_LINE_KNOWN_NULL">
+      <Message>Known null at TypeCheck.java:[line 942]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.NullDerefProperty.LONG_RANGE_NULL_SOURCE" value="true"/>
+  </BugInstance>
+  <BugInstance type="REC_CATCH_EXCEPTION" priority="2" rank="17" abbrev="REC" category="STYLE" instanceHash="ba4b5edecade00e925e68153898abc69" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="396">
+    <ShortMessage>Exception is caught when Exception is not thrown</ShortMessage>
+    <LongMessage>Exception is caught when Exception is not thrown in new com.google.javascript.jscomp.TypeCheck(AbstractCompiler, ReverseAbstractInterpreter, JSTypeRegistry, Scope, MemoizedScopeCreator, CheckLevel)</LongMessage>
+    <Class classname="com.google.javascript.jscomp.TypeCheck" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.TypeCheck" start="63" end="2117" sourcefile="TypeCheck.java" sourcepath="com/google/javascript/jscomp/TypeCheck.java">
+        <Message>At TypeCheck.java:[lines 63-2117]</Message>
+      </SourceLine>
+      <Message>In class com.google.javascript.jscomp.TypeCheck</Message>
+    </Class>
+    <Method classname="com.google.javascript.jscomp.TypeCheck" name="&lt;init&gt;" signature="(Lcom/google/javascript/jscomp/AbstractCompiler;Lcom/google/javascript/jscomp/type/ReverseAbstractInterpreter;Lcom/google/javascript/rhino/jstype/JSTypeRegistry;Lcom/google/javascript/jscomp/Scope;Lcom/google/javascript/jscomp/MemoizedScopeCreator;Lcom/google/javascript/jscomp/CheckLevel;)V" isStatic="false" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.TypeCheck" start="329" end="350" startBytecode="0" endBytecode="324" sourcefile="TypeCheck.java" sourcepath="com/google/javascript/jscomp/TypeCheck.java"/>
+      <Message>In method new com.google.javascript.jscomp.TypeCheck(AbstractCompiler, ReverseAbstractInterpreter, JSTypeRegistry, Scope, MemoizedScopeCreator, CheckLevel)</Message>
+    </Method>
+    <SourceLine classname="com.google.javascript.jscomp.TypeCheck" primary="true" start="347" end="347" startBytecode="154" endBytecode="154" sourcefile="TypeCheck.java" sourcepath="com/google/javascript/jscomp/TypeCheck.java">
+      <Message>At TypeCheck.java:[line 347]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="REC_CATCH_EXCEPTION" priority="2" rank="17" abbrev="REC" category="STYLE" instanceHash="bdaf6596568fd106495e81902502b9f3" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="396">
+    <ShortMessage>Exception is caught when Exception is not thrown</ShortMessage>
+    <LongMessage>Exception is caught when Exception is not thrown in com.google.javascript.jscomp.TypeCheck.getClosestPropertySuggestion(JSType, String)</LongMessage>
+    <Class classname="com.google.javascript.jscomp.TypeCheck" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.TypeCheck" start="63" end="2117" sourcefile="TypeCheck.java" sourcepath="com/google/javascript/jscomp/TypeCheck.java">
+        <Message>At TypeCheck.java:[lines 63-2117]</Message>
+      </SourceLine>
+      <Message>In class com.google.javascript.jscomp.TypeCheck</Message>
+    </Class>
+    <Method classname="com.google.javascript.jscomp.TypeCheck" name="getClosestPropertySuggestion" signature="(Lcom/google/javascript/rhino/jstype/JSType;Ljava/lang/String;)Lcom/google/javascript/jscomp/TypeCheck$SuggestionPair;" isStatic="false" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.TypeCheck" start="1512" end="1562" startBytecode="0" endBytecode="550" sourcefile="TypeCheck.java" sourcepath="com/google/javascript/jscomp/TypeCheck.java"/>
+      <Message>In method com.google.javascript.jscomp.TypeCheck.getClosestPropertySuggestion(JSType, String)</Message>
+    </Method>
+    <SourceLine classname="com.google.javascript.jscomp.TypeCheck" primary="true" start="1524" end="1524" startBytecode="102" endBytecode="102" sourcefile="TypeCheck.java" sourcepath="com/google/javascript/jscomp/TypeCheck.java">
+      <Message>At TypeCheck.java:[line 1524]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="SF_SWITCH_FALLTHROUGH" priority="2" rank="17" abbrev="SF" category="STYLE" instanceHash="5a10123543f51685e2564728a01ece66" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="484">
+    <ShortMessage>Switch statement found where one case falls through to the next case</ShortMessage>
+    <LongMessage>Switch statement found in com.google.javascript.jscomp.TypeCheck.visit(NodeTraversal, Node, Node) where one case falls through to the next case</LongMessage>
+    <Class classname="com.google.javascript.jscomp.TypeCheck" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.TypeCheck" start="63" end="2117" sourcefile="TypeCheck.java" sourcepath="com/google/javascript/jscomp/TypeCheck.java">
+        <Message>At TypeCheck.java:[lines 63-2117]</Message>
+      </SourceLine>
+      <Message>In class com.google.javascript.jscomp.TypeCheck</Message>
+    </Class>
+    <Method classname="com.google.javascript.jscomp.TypeCheck" name="visit" signature="(Lcom/google/javascript/jscomp/NodeTraversal;Lcom/google/javascript/rhino/Node;Lcom/google/javascript/rhino/Node;)V" isStatic="false" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.TypeCheck" start="501" end="876" startBytecode="0" endBytecode="3240" sourcefile="TypeCheck.java" sourcepath="com/google/javascript/jscomp/TypeCheck.java"/>
+      <Message>In method com.google.javascript.jscomp.TypeCheck.visit(NodeTraversal, Node, Node)</Message>
+    </Method>
+    <SourceLine classname="com.google.javascript.jscomp.TypeCheck" primary="true" start="763" end="777" startBytecode="1697" endBytecode="1700" sourcefile="TypeCheck.java" sourcepath="com/google/javascript/jscomp/TypeCheck.java">
+      <Message>At TypeCheck.java:[lines 763-777]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="SF_SWITCH_NO_DEFAULT" priority="2" rank="19" abbrev="SF" category="STYLE" instanceHash="fadc70e511724999af3fce5b8999541a" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Switch statement found where default case is missing</ShortMessage>
+    <LongMessage>Switch statement found in com.google.javascript.jscomp.TypeCheck.checkNoTypeCheckSection(Node, boolean) where default case is missing</LongMessage>
+    <Class classname="com.google.javascript.jscomp.TypeCheck" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.TypeCheck" start="63" end="2117" sourcefile="TypeCheck.java" sourcepath="com/google/javascript/jscomp/TypeCheck.java">
+        <Message>At TypeCheck.java:[lines 63-2117]</Message>
+      </SourceLine>
+      <Message>In class com.google.javascript.jscomp.TypeCheck</Message>
+    </Class>
+    <Method classname="com.google.javascript.jscomp.TypeCheck" name="checkNoTypeCheckSection" signature="(Lcom/google/javascript/rhino/Node;Z)V" isStatic="false" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.TypeCheck" start="432" end="449" startBytecode="0" endBytecode="214" sourcefile="TypeCheck.java" sourcepath="com/google/javascript/jscomp/TypeCheck.java"/>
+      <Message>In method com.google.javascript.jscomp.TypeCheck.checkNoTypeCheckSection(Node, boolean)</Message>
+    </Method>
+    <SourceLine classname="com.google.javascript.jscomp.TypeCheck" primary="true" start="432" end="446" startBytecode="4" endBytecode="117" sourcefile="TypeCheck.java" sourcepath="com/google/javascript/jscomp/TypeCheck.java">
+      <Message>At TypeCheck.java:[lines 432-446]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="SF_SWITCH_NO_DEFAULT" priority="2" rank="19" abbrev="SF" category="STYLE" instanceHash="d37748d9e387a0e5abf342c59f139f4a" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Switch statement found where default case is missing</ShortMessage>
+    <LongMessage>Switch statement found in com.google.javascript.jscomp.TypeCheck.shouldTraverse(NodeTraversal, Node, Node) where default case is missing</LongMessage>
+    <Class classname="com.google.javascript.jscomp.TypeCheck" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.TypeCheck" start="63" end="2117" sourcefile="TypeCheck.java" sourcepath="com/google/javascript/jscomp/TypeCheck.java">
+        <Message>At TypeCheck.java:[lines 63-2117]</Message>
+      </SourceLine>
+      <Message>In class com.google.javascript.jscomp.TypeCheck</Message>
+    </Class>
+    <Method classname="com.google.javascript.jscomp.TypeCheck" name="shouldTraverse" signature="(Lcom/google/javascript/jscomp/NodeTraversal;Lcom/google/javascript/rhino/Node;Lcom/google/javascript/rhino/Node;)Z" isStatic="false" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.TypeCheck" start="461" end="482" startBytecode="0" endBytecode="174" sourcefile="TypeCheck.java" sourcepath="com/google/javascript/jscomp/TypeCheck.java"/>
+      <Message>In method com.google.javascript.jscomp.TypeCheck.shouldTraverse(NodeTraversal, Node, Node)</Message>
+    </Method>
+    <SourceLine classname="com.google.javascript.jscomp.TypeCheck" primary="true" start="462" end="474" startBytecode="10" endBytecode="100" sourcefile="TypeCheck.java" sourcepath="com/google/javascript/jscomp/TypeCheck.java">
+      <Message>At TypeCheck.java:[lines 462-474]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="CORRECTNESS">
+    <Description>Correctness</Description>
+  </BugCategory>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="NP_NULL_ON_SOME_PATH" abbrev="NP" category="CORRECTNESS">
+    <ShortDescription>Possible null pointer dereference</ShortDescription>
+    <Details><![CDATA[
+
+<p> There is a branch of statement that, <em>if executed,</em>  guarantees that
+a null value will be dereferenced, which
+would generate a <code>NullPointerException</code> when the code is executed.
+Of course, the problem might be that the branch or statement is infeasible and that
+the null pointer exception can't ever be executed; deciding that is beyond the ability of SpotBugs.
+</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="SF_SWITCH_FALLTHROUGH" abbrev="SF" category="STYLE" cweid="484">
+    <ShortDescription>Switch statement found where one case falls through to the next case</ShortDescription>
+    <Details><![CDATA[
+
+  <p> This method contains a switch statement where one case branch will fall through to the next case.
+  Usually you need to end this case with a break or return.</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="REC_CATCH_EXCEPTION" abbrev="REC" category="STYLE" cweid="396">
+    <ShortDescription>Exception is caught when Exception is not thrown</ShortDescription>
+    <Details><![CDATA[
+  
+  <p>
+  This method uses a try-catch block that catches Exception objects, but Exception is not
+  thrown within the try block, and RuntimeException is not explicitly caught.  It is a common bug pattern to
+  say try { ... } catch (Exception e) { something } as a shorthand for catching a number of types of exception
+  each of whose catch blocks is identical, but this construct also accidentally catches RuntimeException as well,
+  masking potential bugs.
+  </p>
+  <p>A better approach is to either explicitly catch the specific exceptions that are thrown,
+  or to explicitly catch RuntimeException exception, rethrow it, and then catch all non-Runtime Exceptions, as shown below:</p>
+<pre><code>try {
+    ...
+} catch (RuntimeException e) {
+    throw e;
+} catch (Exception e) {
+    ... deal with all non-runtime exceptions ...
+}
+</code></pre>
+  
+     ]]></Details>
+  </BugPattern>
+  <BugPattern type="SF_SWITCH_NO_DEFAULT" abbrev="SF" category="STYLE">
+    <ShortDescription>Switch statement found where default case is missing</ShortDescription>
+    <Details><![CDATA[
+
+  <p> This method contains a switch statement where default case is missing.
+  Usually you need to provide a default case.</p>
+  <p>Because the analysis only looks at the generated bytecode, this warning can be incorrect triggered if
+the default case is at the end of the switch statement and the switch statement doesn't contain break statements for other
+cases.
+
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="REC">
+    <Description>RuntimeException capture</Description>
+  </BugCode>
+  <BugCode abbrev="NP" cweid="476">
+    <Description>Null pointer dereference</Description>
+  </BugCode>
+  <BugCode abbrev="SF">
+    <Description>Switch case falls through</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 14 Nov 2018 03:51:24 -0500" total_classes="3" referenced_classes="84" total_bugs="6" total_size="987" num_packages="1" java_version="1.8.0_121" vm_version="25.121-b13" cpu_seconds="15.58" clock_seconds="8.42" peak_mbytes="206.15" alloc_mbytes="1820.50" gc_seconds="0.15" priority_2="6">
+    <FileStats path="com/google/javascript/jscomp/TypeCheck.java" bugCount="6" size="987" bugHash="1adb93c1e4f789a0189483f6b5919cad"/>
+    <PackageStats package="com.google.javascript.jscomp" total_bugs="6" total_types="3" total_size="987" priority_2="6">
+      <ClassStats class="com.google.javascript.jscomp.TypeCheck" sourceFile="TypeCheck.java" interface="false" size="975" bugs="6" priority_2="6"/>
+      <ClassStats class="com.google.javascript.jscomp.TypeCheck$1" sourceFile="TypeCheck.java" interface="false" size="1" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.TypeCheck$SuggestionPair" sourceFile="TypeCheck.java" interface="false" size="11" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="1334" invocations="782" avgMicrosecondsPerInvocation="1706" maxMicrosecondsPerInvocation="30952" standardDeviationMicrosecondsPerInvocation="3252"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="848" invocations="780" avgMicrosecondsPerInvocation="1088" maxMicrosecondsPerInvocation="41089" standardDeviationMicrosecondsPerInvocation="3732"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="409" invocations="84" avgMicrosecondsPerInvocation="4880" maxMicrosecondsPerInvocation="35679" standardDeviationMicrosecondsPerInvocation="8141"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="334" invocations="44" avgMicrosecondsPerInvocation="7596" maxMicrosecondsPerInvocation="99053" standardDeviationMicrosecondsPerInvocation="17670"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="329" invocations="44" avgMicrosecondsPerInvocation="7479" maxMicrosecondsPerInvocation="42853" standardDeviationMicrosecondsPerInvocation="11569"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="296" invocations="44" avgMicrosecondsPerInvocation="6734" maxMicrosecondsPerInvocation="49213" standardDeviationMicrosecondsPerInvocation="10524"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="244" invocations="44" avgMicrosecondsPerInvocation="5564" maxMicrosecondsPerInvocation="37855" standardDeviationMicrosecondsPerInvocation="8892"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="244" invocations="84" avgMicrosecondsPerInvocation="2914" maxMicrosecondsPerInvocation="29733" standardDeviationMicrosecondsPerInvocation="5083"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="235" invocations="44" avgMicrosecondsPerInvocation="5356" maxMicrosecondsPerInvocation="40145" standardDeviationMicrosecondsPerInvocation="8898"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="232" invocations="363" avgMicrosecondsPerInvocation="641" maxMicrosecondsPerInvocation="21414" standardDeviationMicrosecondsPerInvocation="1777"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="148" invocations="44" avgMicrosecondsPerInvocation="3379" maxMicrosecondsPerInvocation="26711" standardDeviationMicrosecondsPerInvocation="5940"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="127" invocations="745" avgMicrosecondsPerInvocation="170" maxMicrosecondsPerInvocation="13307" standardDeviationMicrosecondsPerInvocation="747"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="126" invocations="44" avgMicrosecondsPerInvocation="2868" maxMicrosecondsPerInvocation="82505" standardDeviationMicrosecondsPerInvocation="12957"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="124" invocations="84" avgMicrosecondsPerInvocation="1478" maxMicrosecondsPerInvocation="30690" standardDeviationMicrosecondsPerInvocation="4074"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="118" invocations="42" avgMicrosecondsPerInvocation="2824" maxMicrosecondsPerInvocation="35747" standardDeviationMicrosecondsPerInvocation="6256"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="105" invocations="120" avgMicrosecondsPerInvocation="876" maxMicrosecondsPerInvocation="30094" standardDeviationMicrosecondsPerInvocation="3169"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="97" invocations="84" avgMicrosecondsPerInvocation="1159" maxMicrosecondsPerInvocation="17950" standardDeviationMicrosecondsPerInvocation="2843"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

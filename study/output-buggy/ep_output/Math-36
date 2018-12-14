@@ -1,0 +1,46 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-36/src/main/java/org/apache/commons/math/fraction/BigFraction.java:506: warning: [MissingOverride] add implements method in FieldElement; expected @Override
+    public BigFraction add(final BigFraction fraction) {
+                       ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public BigFraction add(final BigFraction fraction) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-36/src/main/java/org/apache/commons/math/fraction/BigFraction.java:593: warning: [MissingOverride] compareTo implements method in Comparable; expected @Override
+    public int compareTo(final BigFraction object) {
+               ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int compareTo(final BigFraction object) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-36/src/main/java/org/apache/commons/math/fraction/BigFraction.java:663: warning: [MissingOverride] divide implements method in FieldElement; expected @Override
+    public BigFraction divide(final BigFraction fraction) {
+                       ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public BigFraction divide(final BigFraction fraction) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-36/src/main/java/org/apache/commons/math/fraction/BigFraction.java:872: warning: [MissingOverride] multiply implements method in FieldElement; expected @Override
+    public BigFraction multiply(final int i) {
+                       ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public BigFraction multiply(final int i) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-36/src/main/java/org/apache/commons/math/fraction/BigFraction.java:900: warning: [MissingOverride] multiply implements method in FieldElement; expected @Override
+    public BigFraction multiply(final BigFraction fraction) {
+                       ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public BigFraction multiply(final BigFraction fraction) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-36/src/main/java/org/apache/commons/math/fraction/BigFraction.java:920: warning: [MissingOverride] negate implements method in FieldElement; expected @Override
+    public BigFraction negate() {
+                       ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public BigFraction negate() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-36/src/main/java/org/apache/commons/math/fraction/BigFraction.java:1015: warning: [MissingOverride] reciprocal implements method in FieldElement; expected @Override
+    public BigFraction reciprocal() {
+                       ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public BigFraction reciprocal() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-36/src/main/java/org/apache/commons/math/fraction/BigFraction.java:1085: warning: [MissingOverride] subtract implements method in FieldElement; expected @Override
+    public BigFraction subtract(final BigFraction fraction) {
+                       ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public BigFraction subtract(final BigFraction fraction) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-36/src/main/java/org/apache/commons/math/fraction/BigFraction.java:1129: warning: [MissingOverride] getField implements method in FieldElement; expected @Override
+    public BigFractionField getField() {
+                            ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public BigFractionField getField() {'?
+9 warnings

@@ -1,0 +1,11 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-73/src/main/java/org/apache/commons/math/analysis/solvers/BrentSolver.java:98: warning: [MissingOverride] solve implements method in UnivariateRealSolver; expected @Override
+    public double solve(final UnivariateRealFunction f,
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double solve(final UnivariateRealFunction f,'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-73/src/main/java/org/apache/commons/math/analysis/solvers/BrentSolver.java:163: warning: [MissingOverride] solve implements method in UnivariateRealSolver; expected @Override
+    public double solve(final UnivariateRealFunction f,
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double solve(final UnivariateRealFunction f,'?
+2 warnings

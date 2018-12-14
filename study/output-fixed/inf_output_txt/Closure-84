@@ -1,0 +1,13 @@
+Found 1 issue
+
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-84/src/com/google/javascript/jscomp/parsing/IRFactory.java:620: error: NULL_DEREFERENCE
+  object `prev` last assigned on line 604 could be null and is dereferenced at line 620.
+  618.           cur = newNode(Token.LABEL);
+  619.         }
+  620. >       prev.addChildToBack(transform(statementNode.getStatement()));
+  621.         return node;
+  622.       }
+
+Summary of the reports
+
+  NULL_DEREFERENCE: 1

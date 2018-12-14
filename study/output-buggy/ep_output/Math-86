@@ -1,0 +1,46 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-86/src/java/org/apache/commons/math/linear/CholeskyDecompositionImpl.java:154: warning: [MissingOverride] getL implements method in CholeskyDecomposition; expected @Override
+    public RealMatrix getL() {
+                      ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public RealMatrix getL() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-86/src/java/org/apache/commons/math/linear/CholeskyDecompositionImpl.java:162: warning: [MissingOverride] getLT implements method in CholeskyDecomposition; expected @Override
+    public RealMatrix getLT() {
+                      ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public RealMatrix getLT() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-86/src/java/org/apache/commons/math/linear/CholeskyDecompositionImpl.java:174: warning: [MissingOverride] getDeterminant implements method in CholeskyDecomposition; expected @Override
+    public double getDeterminant() {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double getDeterminant() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-86/src/java/org/apache/commons/math/linear/CholeskyDecompositionImpl.java:184: warning: [MissingOverride] getSolver implements method in CholeskyDecomposition; expected @Override
+    public DecompositionSolver getSolver() {
+                               ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public DecompositionSolver getSolver() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-86/src/java/org/apache/commons/math/linear/CholeskyDecompositionImpl.java:203: warning: [MissingOverride] isNonSingular implements method in DecompositionSolver; expected @Override
+        public boolean isNonSingular() {
+                       ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public boolean isNonSingular() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-86/src/java/org/apache/commons/math/linear/CholeskyDecompositionImpl.java:209: warning: [MissingOverride] solve implements method in DecompositionSolver; expected @Override
+        public double[] solve(double[] b)
+                        ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double[] solve(double[] b)'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-86/src/java/org/apache/commons/math/linear/CholeskyDecompositionImpl.java:245: warning: [MissingOverride] solve implements method in DecompositionSolver; expected @Override
+        public RealVector solve(RealVector b)
+                          ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public RealVector solve(RealVector b)'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-86/src/java/org/apache/commons/math/linear/CholeskyDecompositionImpl.java:297: warning: [MissingOverride] solve implements method in DecompositionSolver; expected @Override
+        public RealMatrix solve(RealMatrix b)
+                          ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public RealMatrix solve(RealMatrix b)'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-86/src/java/org/apache/commons/math/linear/CholeskyDecompositionImpl.java:348: warning: [MissingOverride] getInverse implements method in DecompositionSolver; expected @Override
+        public RealMatrix getInverse() throws InvalidMatrixException {
+                          ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public RealMatrix getInverse() throws InvalidMatrixException {'?
+9 warnings

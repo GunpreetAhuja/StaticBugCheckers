@@ -1,0 +1,11 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-121/src/com/google/javascript/jscomp/InlineVariables.java:110: warning: [ClassCanBeStatic] Inner class is non-static but does not reference enclosing class
+  private class IdentifyConstants implements Predicate<Var> {
+          ^
+    (see http://errorprone.info/bugpattern/ClassCanBeStatic)
+  Did you mean 'private static class IdentifyConstants implements Predicate<Var> {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-121/src/com/google/javascript/jscomp/InlineVariables.java:120: warning: [ClassCanBeStatic] Inner class is non-static but does not reference enclosing class
+  private class IdentifyLocals implements Predicate<Var> {
+          ^
+    (see http://errorprone.info/bugpattern/ClassCanBeStatic)
+  Did you mean 'private static class IdentifyLocals implements Predicate<Var> {'?
+2 warnings

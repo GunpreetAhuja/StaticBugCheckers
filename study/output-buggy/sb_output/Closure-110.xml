@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.1.0" sequence="0" timestamp="1542185401000" analysisTimestamp="1542185404444" release="">
+  <Project projectName="">
+    <Jar>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-110/src</Jar>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-110/build/classes</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-110/lib/args4j.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-110/lib/guava.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-110/lib/json.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-110/lib/jsr305.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-110/lib/protobuf-java.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-110/build/lib/rhino.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-110/lib/ant.jar</AuxClasspathEntry>
+  </Project>
+  <BugInstance type="NP_UNWRITTEN_FIELD" priority="2" rank="8" abbrev="NP" category="CORRECTNESS" instanceHash="efd27f0a02180f29b55a95d9af1a9b4c" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="476">
+    <ShortMessage>Read of unwritten field</ShortMessage>
+    <LongMessage>Read of unwritten field aliasVar in com.google.javascript.jscomp.ScopedAliases.hotSwapScript(Node, Node)</LongMessage>
+    <Class classname="com.google.javascript.jscomp.ScopedAliases" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.ScopedAliases" start="73" end="189" sourcefile="ScopedAliases.java" sourcepath="com/google/javascript/jscomp/ScopedAliases.java">
+        <Message>At ScopedAliases.java:[lines 73-189]</Message>
+      </SourceLine>
+      <Message>In class com.google.javascript.jscomp.ScopedAliases</Message>
+    </Class>
+    <Method classname="com.google.javascript.jscomp.ScopedAliases" name="hotSwapScript" signature="(Lcom/google/javascript/rhino/Node;Lcom/google/javascript/rhino/Node;)V" isStatic="false" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.ScopedAliases" start="133" end="189" startBytecode="0" endBytecode="626" sourcefile="ScopedAliases.java" sourcepath="com/google/javascript/jscomp/ScopedAliases.java"/>
+      <Message>In method com.google.javascript.jscomp.ScopedAliases.hotSwapScript(Node, Node)</Message>
+    </Method>
+    <Field classname="com.google.javascript.jscomp.ScopedAliases$AliasUsage" name="aliasVar" signature="Lcom/google/javascript/jscomp/Scope$Var;" isStatic="false" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.ScopedAliases$AliasUsage" sourcefile="ScopedAliases.java" sourcepath="com/google/javascript/jscomp/ScopedAliases.java">
+        <Message>In ScopedAliases.java</Message>
+      </SourceLine>
+      <Message>Field com.google.javascript.jscomp.ScopedAliases$AliasUsage.aliasVar</Message>
+    </Field>
+    <SourceLine classname="com.google.javascript.jscomp.ScopedAliases" primary="true" start="155" end="155" startBytecode="149" endBytecode="149" sourcefile="ScopedAliases.java" sourcepath="com/google/javascript/jscomp/ScopedAliases.java">
+      <Message>At ScopedAliases.java:[line 155]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="NP_UNWRITTEN_FIELD" priority="2" rank="8" abbrev="NP" category="CORRECTNESS" instanceHash="f70c2174c709c5da43d7b0afa45c36c3" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="476">
+    <ShortMessage>Read of unwritten field</ShortMessage>
+    <LongMessage>Read of unwritten field nodeA in com.google.javascript.rhino.Node.checkTreeEquals(Node)</LongMessage>
+    <Class classname="com.google.javascript.rhino.Node" primary="true">
+      <SourceLine classname="com.google.javascript.rhino.Node" start="114" end="2447" sourcefile="Node.java" sourcepath="com/google/javascript/rhino/Node.java">
+        <Message>At Node.java:[lines 114-2447]</Message>
+      </SourceLine>
+      <Message>In class com.google.javascript.rhino.Node</Message>
+    </Class>
+    <Method classname="com.google.javascript.rhino.Node" name="checkTreeEquals" signature="(Lcom/google/javascript/rhino/Node;)Ljava/lang/String;" isStatic="false" primary="true">
+      <SourceLine classname="com.google.javascript.rhino.Node" start="1429" end="1437" startBytecode="0" endBytecode="146" sourcefile="Node.java" sourcepath="com/google/javascript/rhino/Node.java"/>
+      <Message>In method com.google.javascript.rhino.Node.checkTreeEquals(Node)</Message>
+    </Method>
+    <Field classname="com.google.javascript.rhino.Node$NodeMismatch" name="nodeA" signature="Lcom/google/javascript/rhino/Node;" isStatic="false" primary="true">
+      <SourceLine classname="com.google.javascript.rhino.Node$NodeMismatch" sourcefile="Node.java" sourcepath="com/google/javascript/rhino/Node.java">
+        <Message>In Node.java</Message>
+      </SourceLine>
+      <Message>Field com.google.javascript.rhino.Node$NodeMismatch.nodeA</Message>
+    </Field>
+    <SourceLine classname="com.google.javascript.rhino.Node" primary="true" start="1434" end="1434" startBytecode="50" endBytecode="50" sourcefile="Node.java" sourcepath="com/google/javascript/rhino/Node.java">
+      <Message>At Node.java:[line 1434]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="NP_UNWRITTEN_FIELD" priority="2" rank="8" abbrev="NP" category="CORRECTNESS" instanceHash="81913abbb4fd2da2dd84dc06d1a5049a" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="476">
+    <ShortMessage>Read of unwritten field</ShortMessage>
+    <LongMessage>Read of unwritten field nodeB in com.google.javascript.rhino.Node.checkTreeEquals(Node)</LongMessage>
+    <Class classname="com.google.javascript.rhino.Node" primary="true">
+      <SourceLine classname="com.google.javascript.rhino.Node" start="114" end="2447" sourcefile="Node.java" sourcepath="com/google/javascript/rhino/Node.java">
+        <Message>At Node.java:[lines 114-2447]</Message>
+      </SourceLine>
+      <Message>In class com.google.javascript.rhino.Node</Message>
+    </Class>
+    <Method classname="com.google.javascript.rhino.Node" name="checkTreeEquals" signature="(Lcom/google/javascript/rhino/Node;)Ljava/lang/String;" isStatic="false" primary="true">
+      <SourceLine classname="com.google.javascript.rhino.Node" start="1429" end="1437" startBytecode="0" endBytecode="146" sourcefile="Node.java" sourcepath="com/google/javascript/rhino/Node.java"/>
+      <Message>In method com.google.javascript.rhino.Node.checkTreeEquals(Node)</Message>
+    </Method>
+    <Field classname="com.google.javascript.rhino.Node$NodeMismatch" name="nodeB" signature="Lcom/google/javascript/rhino/Node;" isStatic="false" primary="true">
+      <SourceLine classname="com.google.javascript.rhino.Node$NodeMismatch" sourcefile="Node.java" sourcepath="com/google/javascript/rhino/Node.java">
+        <Message>In Node.java</Message>
+      </SourceLine>
+      <Message>Field com.google.javascript.rhino.Node$NodeMismatch.nodeB</Message>
+    </Field>
+    <SourceLine classname="com.google.javascript.rhino.Node" primary="true" start="1435" end="1435" startBytecode="65" endBytecode="65" sourcefile="Node.java" sourcepath="com/google/javascript/rhino/Node.java">
+      <Message>At Node.java:[line 1435]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="CORRECTNESS">
+    <Description>Correctness</Description>
+  </BugCategory>
+  <BugPattern type="NP_UNWRITTEN_FIELD" abbrev="NP" category="CORRECTNESS">
+    <ShortDescription>Read of unwritten field</ShortDescription>
+    <Details><![CDATA[
+
+  <p> The program is dereferencing a field that does not seem to ever have a non-null value written to it.
+Unless the field is initialized via some mechanism not seen by the analysis,
+dereferencing this value will generate a null pointer exception.
+</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="NP" cweid="476">
+    <Description>Null pointer dereference</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 14 Nov 2018 03:50:01 -0500" total_classes="20" referenced_classes="106" total_bugs="3" total_size="1538" num_packages="2" java_version="1.8.0_121" vm_version="25.121-b13" cpu_seconds="14.13" clock_seconds="7.50" peak_mbytes="194.43" alloc_mbytes="1820.50" gc_seconds="0.10" priority_2="3">
+    <FileStats path="com/google/javascript/jscomp/ScopedAliases.java" bugCount="1" size="322" bugHash="c8be4a49ba8aad64e6b8f1acaf009dfc"/>
+    <FileStats path="com/google/javascript/rhino/Node.java" bugCount="2" size="1216" bugHash="fd71755a105e6bb66ea89c4a93087dcc"/>
+    <PackageStats package="com.google.javascript.jscomp" total_bugs="1" total_types="7" total_size="322" priority_2="1">
+      <ClassStats class="com.google.javascript.jscomp.ScopedAliases" sourceFile="ScopedAliases.java" interface="false" size="77" bugs="1" priority_2="1"/>
+      <ClassStats class="com.google.javascript.jscomp.ScopedAliases$1" sourceFile="ScopedAliases.java" interface="false" size="1" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.ScopedAliases$AliasUsage" sourceFile="ScopedAliases.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.ScopedAliases$AliasedNode" sourceFile="ScopedAliases.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.ScopedAliases$AliasedTypeNode" sourceFile="ScopedAliases.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.ScopedAliases$Traversal" sourceFile="ScopedAliases.java" interface="false" size="199" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.ScopedAliases$Traversal$1" sourceFile="ScopedAliases.java" interface="false" size="4" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="com.google.javascript.rhino" total_bugs="2" total_types="13" total_size="1216" priority_2="2">
+      <ClassStats class="com.google.javascript.rhino.Node" sourceFile="Node.java" interface="false" size="988" bugs="2" priority_2="2"/>
+      <ClassStats class="com.google.javascript.rhino.Node$AbstractPropListItem" sourceFile="Node.java" interface="false" size="14" bugs="0"/>
+      <ClassStats class="com.google.javascript.rhino.Node$AncestorIterable" sourceFile="Node.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="com.google.javascript.rhino.Node$AncestorIterable$1" sourceFile="Node.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="com.google.javascript.rhino.Node$FileLevelJsDocBuilder" sourceFile="Node.java" interface="false" size="14" bugs="0"/>
+      <ClassStats class="com.google.javascript.rhino.Node$IntPropListItem" sourceFile="Node.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="com.google.javascript.rhino.Node$NodeMismatch" sourceFile="Node.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="com.google.javascript.rhino.Node$NumberNode" sourceFile="Node.java" interface="false" size="24" bugs="0"/>
+      <ClassStats class="com.google.javascript.rhino.Node$ObjectPropListItem" sourceFile="Node.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="com.google.javascript.rhino.Node$PropListItem" sourceFile="Node.java" interface="true" size="6" bugs="0"/>
+      <ClassStats class="com.google.javascript.rhino.Node$SiblingNodeIterable" sourceFile="Node.java" interface="false" size="26" bugs="0"/>
+      <ClassStats class="com.google.javascript.rhino.Node$SideEffectFlags" sourceFile="Node.java" interface="false" size="43" bugs="0"/>
+      <ClassStats class="com.google.javascript.rhino.Node$StringNode" sourceFile="Node.java" interface="false" size="30" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="1079" invocations="785" avgMicrosecondsPerInvocation="1375" maxMicrosecondsPerInvocation="39848" standardDeviationMicrosecondsPerInvocation="2710"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="800" invocations="782" avgMicrosecondsPerInvocation="1023" maxMicrosecondsPerInvocation="49389" standardDeviationMicrosecondsPerInvocation="3637"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="258" invocations="106" avgMicrosecondsPerInvocation="2439" maxMicrosecondsPerInvocation="47985" standardDeviationMicrosecondsPerInvocation="6664"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="254" invocations="215" avgMicrosecondsPerInvocation="1182" maxMicrosecondsPerInvocation="56364" standardDeviationMicrosecondsPerInvocation="5004"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="225" invocations="106" avgMicrosecondsPerInvocation="2129" maxMicrosecondsPerInvocation="40056" standardDeviationMicrosecondsPerInvocation="5154"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="222" invocations="217" avgMicrosecondsPerInvocation="1026" maxMicrosecondsPerInvocation="28362" standardDeviationMicrosecondsPerInvocation="3541"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="191" invocations="217" avgMicrosecondsPerInvocation="883" maxMicrosecondsPerInvocation="23850" standardDeviationMicrosecondsPerInvocation="2796"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="189" invocations="215" avgMicrosecondsPerInvocation="881" maxMicrosecondsPerInvocation="46192" standardDeviationMicrosecondsPerInvocation="3733"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="185" invocations="518" avgMicrosecondsPerInvocation="358" maxMicrosecondsPerInvocation="22537" standardDeviationMicrosecondsPerInvocation="1361"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="181" invocations="215" avgMicrosecondsPerInvocation="844" maxMicrosecondsPerInvocation="34141" standardDeviationMicrosecondsPerInvocation="3124"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="143" invocations="215" avgMicrosecondsPerInvocation="665" maxMicrosecondsPerInvocation="24804" standardDeviationMicrosecondsPerInvocation="2180"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="142" invocations="750" avgMicrosecondsPerInvocation="189" maxMicrosecondsPerInvocation="16235" standardDeviationMicrosecondsPerInvocation="1035"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.LiveLocalStoreDataflowFactory" totalMilliseconds="110" invocations="211" avgMicrosecondsPerInvocation="521" maxMicrosecondsPerInvocation="12020" standardDeviationMicrosecondsPerInvocation="1803"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="108" invocations="106" avgMicrosecondsPerInvocation="1024" maxMicrosecondsPerInvocation="36834" standardDeviationMicrosecondsPerInvocation="3825"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="93" invocations="133" avgMicrosecondsPerInvocation="699" maxMicrosecondsPerInvocation="30582" standardDeviationMicrosecondsPerInvocation="2962"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="88" invocations="215" avgMicrosecondsPerInvocation="410" maxMicrosecondsPerInvocation="53277" standardDeviationMicrosecondsPerInvocation="3624"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="83" invocations="215" avgMicrosecondsPerInvocation="389" maxMicrosecondsPerInvocation="23405" standardDeviationMicrosecondsPerInvocation="2060"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="82" invocations="106" avgMicrosecondsPerInvocation="782" maxMicrosecondsPerInvocation="33872" standardDeviationMicrosecondsPerInvocation="3441"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueRangeAnalysisFactory" totalMilliseconds="76" invocations="215" avgMicrosecondsPerInvocation="353" maxMicrosecondsPerInvocation="26383" standardDeviationMicrosecondsPerInvocation="2307"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="74" invocations="191" avgMicrosecondsPerInvocation="388" maxMicrosecondsPerInvocation="24790" standardDeviationMicrosecondsPerInvocation="2069"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="62" invocations="106" avgMicrosecondsPerInvocation="592" maxMicrosecondsPerInvocation="13651" standardDeviationMicrosecondsPerInvocation="1644"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

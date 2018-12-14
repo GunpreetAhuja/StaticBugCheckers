@@ -1,0 +1,36 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-98/src/com/google/javascript/jscomp/ReferenceCollectingCallback.java:99: warning: [MissingOverride] process implements method in CompilerPass; expected @Override
+  public void process(Node externs, Node root) {
+              ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void process(Node externs, Node root) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-98/src/com/google/javascript/jscomp/ReferenceCollectingCallback.java:114: warning: [MissingOverride] visit implements method in Callback; expected @Override
+  public void visit(NodeTraversal t, Node n, Node parent) {
+              ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void visit(NodeTraversal t, Node n, Node parent) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-98/src/com/google/javascript/jscomp/ReferenceCollectingCallback.java:131: warning: [MissingOverride] enterScope implements method in ScopedCallback; expected @Override
+  public void enterScope(NodeTraversal t) {
+              ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void enterScope(NodeTraversal t) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-98/src/com/google/javascript/jscomp/ReferenceCollectingCallback.java:140: warning: [MissingOverride] exitScope implements method in ScopedCallback; expected @Override
+  public void exitScope(NodeTraversal t) {
+              ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void exitScope(NodeTraversal t) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-98/src/com/google/javascript/jscomp/ReferenceCollectingCallback.java:148: warning: [MissingOverride] shouldTraverse implements method in Callback; expected @Override
+  public boolean shouldTraverse(NodeTraversal nodeTraversal, Node n,
+                 ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public boolean shouldTraverse(NodeTraversal nodeTraversal, Node n,'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-98/src/com/google/javascript/jscomp/ReferenceCollectingCallback.java:421: warning: [MutableConstantField] Constant field declarations should use the immutable type (such as ImmutableList) instead of the general collection interface type (such as List)
+    private static final Set<Integer> DECLARATION_PARENTS =
+                            ^
+    (see http://errorprone.info/bugpattern/MutableConstantField)
+  Did you mean 'private static final ImmutableSet<Integer> DECLARATION_PARENTS ='?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-98/src/com/google/javascript/jscomp/ReferenceCollectingCallback.java:457: warning: [OperatorPrecedence] Use grouping parenthesis to make the operator precedence explicit
+          parent.getType() == Token.LP &&
+                                       ^
+    (see http://errorprone.info/bugpattern/OperatorPrecedence)
+  Did you mean '(parent.getType() == Token.LP &&'?
+7 warnings

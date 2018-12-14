@@ -1,0 +1,18 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-66/src/main/java/org/apache/commons/math/optimization/univariate/BrentOptimizer.java:55: warning: [MissingOverride] doOptimize implements method in AbstractUnivariateRealOptimizer; expected @Override
+    protected double doOptimize()
+                     ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override protected double doOptimize()'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-66/src/main/java/org/apache/commons/math/optimization/univariate/BrentOptimizer.java:59: warning: [MissingOverride] optimize overrides method in AbstractUnivariateRealOptimizer; expected @Override
+    public double optimize(final UnivariateRealFunction f, final GoalType goalType, final double min, final double max, final double startValue) throws MaxIterationsExceededException, FunctionEvaluationException {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double optimize(final UnivariateRealFunction f, final GoalType goalType, final double min, final double max, final double startValue) throws MaxIterationsExceededException, FunctionEvaluationException {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-66/src/main/java/org/apache/commons/math/optimization/univariate/BrentOptimizer.java:65: warning: [MissingOverride] optimize overrides method in AbstractUnivariateRealOptimizer; expected @Override
+    public double optimize(final UnivariateRealFunction f, final GoalType goalType, final double min, final double max) throws MaxIterationsExceededException, FunctionEvaluationException {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double optimize(final UnivariateRealFunction f, final GoalType goalType, final double min, final double max) throws MaxIterationsExceededException, FunctionEvaluationException {'?
+Note: /Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-66/src/main/java/org/apache/commons/math/optimization/univariate/BrentOptimizer.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+3 warnings

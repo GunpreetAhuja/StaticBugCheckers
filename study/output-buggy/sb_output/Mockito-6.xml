@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.1.0" sequence="0" timestamp="1542186959000" analysisTimestamp="1542186962713" release="">
+  <Project projectName="">
+    <Jar>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Mockito-6/src</Jar>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Mockito-6/build/classes/main</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/framework/projects/Mockito/lib/asm-all-5.0.4.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/framework/projects/Mockito/lib/assertj-core-2.1.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/framework/projects/Mockito/lib/cglib-and-asm-1.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/framework/projects/Mockito/lib/cobertura-2.0.3.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/framework/projects/Mockito/lib/fest-assert-1.3.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/framework/projects/Mockito/lib/fest-util-1.1.4.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/framework/projects/Mockito/lib/hamcrest-all-1.3.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/framework/projects/Mockito/lib/hamcrest-core-1.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/framework/projects/Mockito/lib/objenesis-2.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/framework/projects/Mockito/lib/objenesis-2.2.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/framework/projects/Mockito/lib/powermock-reflect-1.2.5.jar</AuxClasspathEntry>
+  </Project>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 14 Nov 2018 04:15:59 -0500" total_classes="1" referenced_classes="37" total_bugs="0" total_size="112" num_packages="1" java_version="1.8.0_121" vm_version="25.121-b13" cpu_seconds="7.41" clock_seconds="4.77" peak_mbytes="114.36" alloc_mbytes="1820.50" gc_seconds="0.06">
+    <FileStats path="org/mockito/Matchers.java" bugCount="0" size="112"/>
+    <PackageStats package="org.mockito" total_bugs="0" total_types="1" total_size="112">
+      <ClassStats class="org.mockito.Matchers" sourceFile="Matchers.java" interface="false" size="112" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="671" invocations="363" avgMicrosecondsPerInvocation="1850" maxMicrosecondsPerInvocation="33257" standardDeviationMicrosecondsPerInvocation="3851"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="484" invocations="361" avgMicrosecondsPerInvocation="1342" maxMicrosecondsPerInvocation="63043" standardDeviationMicrosecondsPerInvocation="4781"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="170" invocations="37" avgMicrosecondsPerInvocation="4613" maxMicrosecondsPerInvocation="46958" standardDeviationMicrosecondsPerInvocation="10410"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="149" invocations="55" avgMicrosecondsPerInvocation="2711" maxMicrosecondsPerInvocation="125884" standardDeviationMicrosecondsPerInvocation="16878"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="146" invocations="55" avgMicrosecondsPerInvocation="2666" maxMicrosecondsPerInvocation="60253" standardDeviationMicrosecondsPerInvocation="9373"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="137" invocations="125" avgMicrosecondsPerInvocation="1103" maxMicrosecondsPerInvocation="62162" standardDeviationMicrosecondsPerInvocation="5657"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="132" invocations="55" avgMicrosecondsPerInvocation="2401" maxMicrosecondsPerInvocation="36831" standardDeviationMicrosecondsPerInvocation="7792"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="128" invocations="56" avgMicrosecondsPerInvocation="2296" maxMicrosecondsPerInvocation="83153" standardDeviationMicrosecondsPerInvocation="11519"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="112" invocations="37" avgMicrosecondsPerInvocation="3032" maxMicrosecondsPerInvocation="44660" standardDeviationMicrosecondsPerInvocation="7321"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="112" invocations="55" avgMicrosecondsPerInvocation="2037" maxMicrosecondsPerInvocation="35865" standardDeviationMicrosecondsPerInvocation="5884"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="108" invocations="329" avgMicrosecondsPerInvocation="329" maxMicrosecondsPerInvocation="27734" standardDeviationMicrosecondsPerInvocation="1770"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="79" invocations="55" avgMicrosecondsPerInvocation="1449" maxMicrosecondsPerInvocation="22266" standardDeviationMicrosecondsPerInvocation="3631"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="78" invocations="55" avgMicrosecondsPerInvocation="1429" maxMicrosecondsPerInvocation="28822" standardDeviationMicrosecondsPerInvocation="4053"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindInconsistentSync2" totalMilliseconds="60" invocations="1" avgMicrosecondsPerInvocation="60668" maxMicrosecondsPerInvocation="60668" standardDeviationMicrosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="57" invocations="37" avgMicrosecondsPerInvocation="1559" maxMicrosecondsPerInvocation="18354" standardDeviationMicrosecondsPerInvocation="3607"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

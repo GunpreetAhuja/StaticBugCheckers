@@ -1,0 +1,11 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-132/src/com/google/javascript/jscomp/PeepholeSubstituteAlternateSyntax.java:1233: warning: [OperatorPrecedence] Use grouping parenthesis to make the operator precedence explicit
+          if (type == Token.OR && !rval ||
+                               ^
+    (see http://errorprone.info/bugpattern/OperatorPrecedence)
+  Did you mean 'if ((type == Token.OR && !rval) ||'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-132/src/com/google/javascript/jscomp/PeepholeSubstituteAlternateSyntax.java:1234: warning: [OperatorPrecedence] Use grouping parenthesis to make the operator precedence explicit
+              type == Token.AND && rval) {
+                                ^
+    (see http://errorprone.info/bugpattern/OperatorPrecedence)
+  Did you mean '(type == Token.AND && rval)) {'?
+2 warnings

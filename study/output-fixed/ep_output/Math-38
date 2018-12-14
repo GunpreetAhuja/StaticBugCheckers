@@ -1,0 +1,45 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-38/src/main/java/org/apache/commons/math/optimization/direct/BOBYQAOptimizer.java:480: error: [FallThrough] Execution may fall through from the previous case; add a `// fall through` comment before this line if it was deliberate
+        case 60: {
+        ^
+    (see http://errorprone.info/bugpattern/FallThrough)
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-38/src/main/java/org/apache/commons/math/optimization/direct/BOBYQAOptimizer.java:554: error: [FallThrough] Execution may fall through from the previous case; add a `// fall through` comment before this line if it was deliberate
+        case 90: {
+        ^
+    (see http://errorprone.info/bugpattern/FallThrough)
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-38/src/main/java/org/apache/commons/math/optimization/direct/BOBYQAOptimizer.java:685: error: [FallThrough] Execution may fall through from the previous case; add a `// fall through` comment before this line if it was deliberate
+        case 230: {
+        ^
+    (see http://errorprone.info/bugpattern/FallThrough)
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-38/src/main/java/org/apache/commons/math/optimization/direct/BOBYQAOptimizer.java:808: error: [FallThrough] Execution may fall through from the previous case; add a `// fall through` comment before this line if it was deliberate
+        case 360: {
+        ^
+    (see http://errorprone.info/bugpattern/FallThrough)
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-38/src/main/java/org/apache/commons/math/optimization/direct/BOBYQAOptimizer.java:1117: error: [FallThrough] Execution may fall through from the previous case; add a `// fall through` comment before this line if it was deliberate
+        case 650: {
+        ^
+    (see http://errorprone.info/bugpattern/FallThrough)
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-38/src/main/java/org/apache/commons/math/optimization/direct/BOBYQAOptimizer.java:1169: error: [FallThrough] Execution may fall through from the previous case; add a `// fall through` comment before this line if it was deliberate
+        case 680: {
+        ^
+    (see http://errorprone.info/bugpattern/FallThrough)
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-38/src/main/java/org/apache/commons/math/optimization/direct/BOBYQAOptimizer.java:1194: error: [FallThrough] Execution may fall through from the previous case; add a `// fall through` comment before this line if it was deliberate
+        case 720: {
+        ^
+    (see http://errorprone.info/bugpattern/FallThrough)
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-38/src/main/java/org/apache/commons/math/optimization/direct/BOBYQAOptimizer.java:1883: error: [FallThrough] Execution may fall through from the previous case; add a `// fall through` comment before this line if it was deliberate
+        case 30: {
+        ^
+    (see http://errorprone.info/bugpattern/FallThrough)
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-38/src/main/java/org/apache/commons/math/optimization/direct/BOBYQAOptimizer.java:2024: error: [FallThrough] Execution may fall through from the previous case; add a `// fall through` comment before this line if it was deliberate
+        case 90: {
+        ^
+    (see http://errorprone.info/bugpattern/FallThrough)
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-38/src/main/java/org/apache/commons/math/optimization/direct/BOBYQAOptimizer.java:2033: error: [FallThrough] Execution may fall through from the previous case; add a `// fall through` comment before this line if it was deliberate
+        case 100: {
+        ^
+    (see http://errorprone.info/bugpattern/FallThrough)
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-38/src/main/java/org/apache/commons/math/optimization/direct/BOBYQAOptimizer.java:2216: error: [FallThrough] Execution may fall through from the previous case; add a `// fall through` comment before this line if it was deliberate
+        case 190: {
+        ^
+    (see http://errorprone.info/bugpattern/FallThrough)
+11 errors

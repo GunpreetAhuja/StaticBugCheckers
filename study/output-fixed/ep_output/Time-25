@@ -1,0 +1,51 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-25/src/main/java/org/joda/time/DateTimeZone.java:450: warning: [ClassNewInstance] Class.newInstance() bypasses exception checking; prefer getDeclaredConstructor().newInstance()
+                    provider = (Provider) Class.forName(providerClass).newInstance();
+                                                                                  ^
+    (see http://errorprone.info/bugpattern/ClassNewInstance)
+  Did you mean 'provider = (Provider) Class.forName(providerClass).getDeclaredConstructor().newInstance();'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-25/src/main/java/org/joda/time/DateTimeZone.java:534: warning: [ClassNewInstance] Class.newInstance() bypasses exception checking; prefer getDeclaredConstructor().newInstance()
+                    nameProvider = (NameProvider) Class.forName(providerClass).newInstance();
+                                                                                          ^
+    (see http://errorprone.info/bugpattern/ClassNewInstance)
+  Did you mean 'nameProvider = (NameProvider) Class.forName(providerClass).getDeclaredConstructor().newInstance();'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-25/src/main/java/org/joda/time/DateTimeZone.java:604: warning: [MissingOverride] getZone implements method in BaseChronology; expected @Override
+            public DateTimeZone getZone() {
+                                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public DateTimeZone getZone() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-25/src/main/java/org/joda/time/DateTimeZone.java:607: warning: [MissingOverride] withUTC implements method in BaseChronology; expected @Override
+            public Chronology withUTC() {
+                              ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Chronology withUTC() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-25/src/main/java/org/joda/time/DateTimeZone.java:610: warning: [MissingOverride] withZone implements method in BaseChronology; expected @Override
+            public Chronology withZone(DateTimeZone zone) {
+                              ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Chronology withZone(DateTimeZone zone) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-25/src/main/java/org/joda/time/DateTimeZone.java:613: warning: [MissingOverride] toString implements method in BaseChronology; expected @Override
+            public String toString() {
+                          ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public String toString() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-25/src/main/java/org/joda/time/DateTimeZone.java:1030: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+        if (newZone == this) {
+                    ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'if (Objects.equals(newZone, this)) {' or 'if (newZone.equals(this)) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-25/src/main/java/org/joda/time/DateTimeZone.java:1201: warning: [MissingOverride] equals overrides method in Object; expected @Override
+    public abstract boolean equals(Object object);
+                            ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public abstract boolean equals(Object object);'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-25/src/main/java/org/joda/time/DateTimeZone.java:1208: warning: [MissingOverride] hashCode overrides method in Object; expected @Override
+    public int hashCode() {
+               ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int hashCode() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-25/src/main/java/org/joda/time/DateTimeZone.java:1216: warning: [MissingOverride] toString overrides method in Object; expected @Override
+    public String toString() {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public String toString() {'?
+10 warnings

@@ -1,0 +1,16 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Lang-65/src/java/org/apache/commons/lang/time/DateUtils.java:902: warning: [MissingOverride] hasNext implements method in Iterator; expected @Override
+        public boolean hasNext() {
+                       ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public boolean hasNext() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Lang-65/src/java/org/apache/commons/lang/time/DateUtils.java:911: warning: [MissingOverride] next implements method in Iterator; expected @Override
+        public Object next() {
+                      ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Object next() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Lang-65/src/java/org/apache/commons/lang/time/DateUtils.java:925: warning: [MissingOverride] remove implements method in Iterator; expected @Override
+        public void remove() {
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void remove() {'?
+3 warnings

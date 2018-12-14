@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.1.0" sequence="0" timestamp="1542185726000" analysisTimestamp="1542185729261" release="">
+  <Project projectName="">
+    <Jar>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-47/src</Jar>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-47/build/classes</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-47/lib/args4j.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-47/lib/guava.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-47/lib/json.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-47/lib/jsr305.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-47/lib/protobuf-java.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-47/build/lib/rhino.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-47/lib/ant.jar</AuxClasspathEntry>
+  </Project>
+  <BugInstance type="INT_BAD_COMPARISON_WITH_NONNEGATIVE_VALUE" priority="2" rank="7" abbrev="INT" category="CORRECTNESS" instanceHash="dcfaa8768dd7a5fff24cb102b00c2dd7" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Bad comparison of nonnegative value with negative constant or zero</ShortMessage>
+    <LongMessage>Bad comparison of nonnegative value with 0 in com.google.debugging.sourcemap.SourceMapConsumerV3.getMappingForLine(int, int)</LongMessage>
+    <Class classname="com.google.debugging.sourcemap.SourceMapConsumerV3" primary="true">
+      <SourceLine classname="com.google.debugging.sourcemap.SourceMapConsumerV3" start="43" end="723" sourcefile="SourceMapConsumerV3.java" sourcepath="com/google/debugging/sourcemap/SourceMapConsumerV3.java">
+        <Message>At SourceMapConsumerV3.java:[lines 43-723]</Message>
+      </SourceLine>
+      <Message>In class com.google.debugging.sourcemap.SourceMapConsumerV3</Message>
+    </Class>
+    <Method classname="com.google.debugging.sourcemap.SourceMapConsumerV3" name="getMappingForLine" signature="(II)Lcom/google/debugging/sourcemap/proto/Mapping$OriginalMapping;" isStatic="false" primary="true">
+      <SourceLine classname="com.google.debugging.sourcemap.SourceMapConsumerV3" start="208" end="233" startBytecode="0" endBytecode="281" sourcefile="SourceMapConsumerV3.java" sourcepath="com/google/debugging/sourcemap/SourceMapConsumerV3.java"/>
+      <Message>In method com.google.debugging.sourcemap.SourceMapConsumerV3.getMappingForLine(int, int)</Message>
+    </Method>
+    <Int value="0" role="INT_VALUE">
+      <Message>Value 0</Message>
+    </Int>
+    <SourceLine classname="com.google.debugging.sourcemap.SourceMapConsumerV3" primary="true" start="215" end="215" startBytecode="24" endBytecode="24" sourcefile="SourceMapConsumerV3.java" sourcepath="com/google/debugging/sourcemap/SourceMapConsumerV3.java">
+      <Message>At SourceMapConsumerV3.java:[line 215]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="NP_UNWRITTEN_FIELD" priority="2" rank="8" abbrev="NP" category="CORRECTNESS" instanceHash="245a6e89b9d2d18daf48f16ec90c3c64" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="476">
+    <ShortMessage>Read of unwritten field</ShortMessage>
+    <LongMessage>Read of unwritten field prefix in com.google.javascript.jscomp.SourceMap.fixupSourceLocation(String)</LongMessage>
+    <Class classname="com.google.javascript.jscomp.SourceMap" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.SourceMap" start="43" end="203" sourcefile="SourceMap.java" sourcepath="com/google/javascript/jscomp/SourceMap.java">
+        <Message>At SourceMap.java:[lines 43-203]</Message>
+      </SourceLine>
+      <Message>In class com.google.javascript.jscomp.SourceMap</Message>
+    </Class>
+    <Method classname="com.google.javascript.jscomp.SourceMap" name="fixupSourceLocation" signature="(Ljava/lang/String;)Ljava/lang/String;" isStatic="false" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.SourceMap" start="150" end="174" startBytecode="0" endBytecode="247" sourcefile="SourceMap.java" sourcepath="com/google/javascript/jscomp/SourceMap.java"/>
+      <Message>In method com.google.javascript.jscomp.SourceMap.fixupSourceLocation(String)</Message>
+    </Method>
+    <Field classname="com.google.javascript.jscomp.SourceMap$LocationMapping" name="prefix" signature="Ljava/lang/String;" isStatic="false" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.SourceMap$LocationMapping" sourcefile="SourceMap.java" sourcepath="com/google/javascript/jscomp/SourceMap.java">
+        <Message>In SourceMap.java</Message>
+      </SourceLine>
+      <Message>Field com.google.javascript.jscomp.SourceMap$LocationMapping.prefix</Message>
+    </Field>
+    <SourceLine classname="com.google.javascript.jscomp.SourceMap" primary="true" start="163" end="163" startBytecode="97" endBytecode="97" sourcefile="SourceMap.java" sourcepath="com/google/javascript/jscomp/SourceMap.java">
+      <Message>At SourceMap.java:[line 163]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="CORRECTNESS">
+    <Description>Correctness</Description>
+  </BugCategory>
+  <BugPattern type="NP_UNWRITTEN_FIELD" abbrev="NP" category="CORRECTNESS">
+    <ShortDescription>Read of unwritten field</ShortDescription>
+    <Details><![CDATA[
+
+  <p> The program is dereferencing a field that does not seem to ever have a non-null value written to it.
+Unless the field is initialized via some mechanism not seen by the analysis,
+dereferencing this value will generate a null pointer exception.
+</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="INT_BAD_COMPARISON_WITH_NONNEGATIVE_VALUE" abbrev="INT" category="CORRECTNESS">
+    <ShortDescription>Bad comparison of nonnegative value with negative constant or zero</ShortDescription>
+    <Details><![CDATA[
+
+<p> This code compares a value that is guaranteed to be non-negative with a negative constant or zero.
+</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="NP" cweid="476">
+    <Description>Null pointer dereference</Description>
+  </BugCode>
+  <BugCode abbrev="INT">
+    <Description>Suspicious integer expression</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 14 Nov 2018 03:55:26 -0500" total_classes="20" referenced_classes="76" total_bugs="2" total_size="502" num_packages="2" java_version="1.8.0_121" vm_version="25.121-b13" cpu_seconds="10.35" clock_seconds="5.64" peak_mbytes="117.37" alloc_mbytes="1820.50" gc_seconds="0.10" priority_2="2">
+    <FileStats path="com/google/debugging/sourcemap/SourceMapConsumerV3.java" bugCount="1" size="365" bugHash="2b613bbb381bbc2634ac97e8d5402faa"/>
+    <FileStats path="com/google/javascript/jscomp/SourceMap.java" bugCount="1" size="137" bugHash="5113b88e458f3ed494393d34df76cfc8"/>
+    <PackageStats package="com.google.debugging.sourcemap" total_bugs="1" total_types="9" total_size="365" priority_2="1">
+      <ClassStats class="com.google.debugging.sourcemap.SourceMapConsumerV3" sourceFile="SourceMapConsumerV3.java" interface="false" size="212" bugs="1" priority_2="1"/>
+      <ClassStats class="com.google.debugging.sourcemap.SourceMapConsumerV3$DefaultSourceMapSupplier" sourceFile="SourceMapConsumerV3.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="com.google.debugging.sourcemap.SourceMapConsumerV3$Entry" sourceFile="SourceMapConsumerV3.java" interface="true" size="6" bugs="0"/>
+      <ClassStats class="com.google.debugging.sourcemap.SourceMapConsumerV3$EntryVisitor" sourceFile="SourceMapConsumerV3.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="com.google.debugging.sourcemap.SourceMapConsumerV3$MappingBuilder" sourceFile="SourceMapConsumerV3.java" interface="false" size="82" bugs="0"/>
+      <ClassStats class="com.google.debugging.sourcemap.SourceMapConsumerV3$NamedEntry" sourceFile="SourceMapConsumerV3.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="com.google.debugging.sourcemap.SourceMapConsumerV3$StringCharIterator" sourceFile="SourceMapConsumerV3.java" interface="false" size="16" bugs="0"/>
+      <ClassStats class="com.google.debugging.sourcemap.SourceMapConsumerV3$UnmappedEntry" sourceFile="SourceMapConsumerV3.java" interface="false" size="16" bugs="0"/>
+      <ClassStats class="com.google.debugging.sourcemap.SourceMapConsumerV3$UnnamedEntry" sourceFile="SourceMapConsumerV3.java" interface="false" size="18" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="com.google.javascript.jscomp" total_bugs="1" total_types="11" total_size="137" priority_2="1">
+      <ClassStats class="com.google.javascript.jscomp.SourceMap" sourceFile="SourceMap.java" interface="false" size="57" bugs="1" priority_2="1"/>
+      <ClassStats class="com.google.javascript.jscomp.SourceMap$1" sourceFile="SourceMap.java" interface="false" size="1" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.SourceMap$DetailLevel" sourceFile="SourceMap.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.SourceMap$DetailLevel$1" sourceFile="SourceMap.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.SourceMap$DetailLevel$2" sourceFile="SourceMap.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.SourceMap$Format" sourceFile="SourceMap.java" interface="false" size="17" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.SourceMap$Format$1" sourceFile="SourceMap.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.SourceMap$Format$2" sourceFile="SourceMap.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.SourceMap$Format$3" sourceFile="SourceMap.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.SourceMap$Format$4" sourceFile="SourceMap.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.SourceMap$LocationMapping" sourceFile="SourceMap.java" interface="false" size="8" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="993" invocations="629" avgMicrosecondsPerInvocation="1580" maxMicrosecondsPerInvocation="43166" standardDeviationMicrosecondsPerInvocation="3770"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="533" invocations="625" avgMicrosecondsPerInvocation="853" maxMicrosecondsPerInvocation="26025" standardDeviationMicrosecondsPerInvocation="2437"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="203" invocations="76" avgMicrosecondsPerInvocation="2674" maxMicrosecondsPerInvocation="27280" standardDeviationMicrosecondsPerInvocation="5475"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="193" invocations="76" avgMicrosecondsPerInvocation="2542" maxMicrosecondsPerInvocation="30658" standardDeviationMicrosecondsPerInvocation="5663"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="186" invocations="30" avgMicrosecondsPerInvocation="6205" maxMicrosecondsPerInvocation="57295" standardDeviationMicrosecondsPerInvocation="12290"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="184" invocations="306" avgMicrosecondsPerInvocation="602" maxMicrosecondsPerInvocation="13082" standardDeviationMicrosecondsPerInvocation="1615"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="151" invocations="33" avgMicrosecondsPerInvocation="4595" maxMicrosecondsPerInvocation="51244" standardDeviationMicrosecondsPerInvocation="9667"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="124" invocations="33" avgMicrosecondsPerInvocation="3779" maxMicrosecondsPerInvocation="36841" standardDeviationMicrosecondsPerInvocation="7919"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="124" invocations="589" avgMicrosecondsPerInvocation="210" maxMicrosecondsPerInvocation="24541" standardDeviationMicrosecondsPerInvocation="1316"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="120" invocations="30" avgMicrosecondsPerInvocation="4027" maxMicrosecondsPerInvocation="48146" standardDeviationMicrosecondsPerInvocation="9387"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="98" invocations="103" avgMicrosecondsPerInvocation="953" maxMicrosecondsPerInvocation="29675" standardDeviationMicrosecondsPerInvocation="3608"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="92" invocations="30" avgMicrosecondsPerInvocation="3094" maxMicrosecondsPerInvocation="77149" standardDeviationMicrosecondsPerInvocation="13783"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="86" invocations="76" avgMicrosecondsPerInvocation="1137" maxMicrosecondsPerInvocation="17975" standardDeviationMicrosecondsPerInvocation="2862"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="82" invocations="30" avgMicrosecondsPerInvocation="2734" maxMicrosecondsPerInvocation="41215" standardDeviationMicrosecondsPerInvocation="7734"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.Methods" totalMilliseconds="78" invocations="76" avgMicrosecondsPerInvocation="1026" maxMicrosecondsPerInvocation="74509" standardDeviationMicrosecondsPerInvocation="8485"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="75" invocations="76" avgMicrosecondsPerInvocation="999" maxMicrosecondsPerInvocation="18094" standardDeviationMicrosecondsPerInvocation="2902"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

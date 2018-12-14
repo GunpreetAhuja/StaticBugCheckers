@@ -1,0 +1,67 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-8/source/org/jfree/data/time/Week.java:175: error: [ChainingConstructorIgnoresParameter] The called constructor accepts a parameter with the same name and type as one of its caller's parameters, but its caller doesn't pass that parameter to it.  It's likely that it was intended to.
+        this(time, RegularTimePeriod.DEFAULT_TIME_ZONE, Locale.getDefault());
+            ^
+    (see http://errorprone.info/bugpattern/ChainingConstructorIgnoresParameter)
+  Did you mean 'this(time, zone, Locale.getDefault());'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-8/source/org/jfree/data/time/Week.java:261: warning: [MissingOverride] getFirstMillisecond implements method in RegularTimePeriod; expected @Override
+    public long getFirstMillisecond() {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public long getFirstMillisecond() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-8/source/org/jfree/data/time/Week.java:275: warning: [MissingOverride] getLastMillisecond implements method in RegularTimePeriod; expected @Override
+    public long getLastMillisecond() {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public long getLastMillisecond() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-8/source/org/jfree/data/time/Week.java:287: warning: [MissingOverride] peg implements method in RegularTimePeriod; expected @Override
+    public void peg(Calendar calendar) {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void peg(Calendar calendar) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-8/source/org/jfree/data/time/Week.java:300: warning: [MissingOverride] previous implements method in RegularTimePeriod; expected @Override
+    public RegularTimePeriod previous() {
+                             ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public RegularTimePeriod previous() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-8/source/org/jfree/data/time/Week.java:332: warning: [MissingOverride] next implements method in RegularTimePeriod; expected @Override
+    public RegularTimePeriod next() {
+                             ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public RegularTimePeriod next() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-8/source/org/jfree/data/time/Week.java:364: warning: [MissingOverride] getSerialIndex implements method in RegularTimePeriod; expected @Override
+    public long getSerialIndex() {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public long getSerialIndex() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-8/source/org/jfree/data/time/Week.java:379: warning: [MissingOverride] getFirstMillisecond implements method in RegularTimePeriod; expected @Override
+    public long getFirstMillisecond(Calendar calendar) {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public long getFirstMillisecond(Calendar calendar) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-8/source/org/jfree/data/time/Week.java:404: warning: [MissingOverride] getLastMillisecond implements method in RegularTimePeriod; expected @Override
+    public long getLastMillisecond(Calendar calendar) {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public long getLastMillisecond(Calendar calendar) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-8/source/org/jfree/data/time/Week.java:425: warning: [MissingOverride] toString overrides method in RegularTimePeriod; expected @Override
+    public String toString() {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public String toString() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-8/source/org/jfree/data/time/Week.java:439: warning: [MissingOverride] equals overrides method in Object; expected @Override
+    public boolean equals(Object obj) {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public boolean equals(Object obj) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-8/source/org/jfree/data/time/Week.java:467: warning: [MissingOverride] hashCode overrides method in Object; expected @Override
+    public int hashCode() {
+               ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int hashCode() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-8/source/org/jfree/data/time/Week.java:484: warning: [MissingOverride] compareTo implements method in Comparable; expected @Override
+    public int compareTo(Object o1) {
+               ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int compareTo(Object o1) {'?
+1 error
+12 warnings

@@ -1,0 +1,6 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-118/src/com/google/javascript/jscomp/DisambiguateProperties.java:890: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+        while (objType != null && objType.getImplicitPrototype() != objType) {
+                                                                 ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'while (objType != null && !Objects.equals(objType.getImplicitPrototype(), objType)) {' or 'while (objType != null && !objType.getImplicitPrototype().equals(objType)) {'?
+1 warning

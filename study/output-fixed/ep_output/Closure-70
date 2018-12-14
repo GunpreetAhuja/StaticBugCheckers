@@ -1,0 +1,11 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-70/src/com/google/javascript/jscomp/TypedScopeCreator.java:180: warning: [MissingOverride] createScope implements method in ScopeCreator; expected @Override
+  public Scope createScope(Node root, Scope parent) {
+               ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Scope createScope(Node root, Scope parent) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-70/src/com/google/javascript/jscomp/TypedScopeCreator.java:1496: warning: [MissingOverride] visit implements method in Callback; expected @Override
+      public void visit(NodeTraversal t, Node n, Node parent) {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void visit(NodeTraversal t, Node n, Node parent) {'?
+2 warnings

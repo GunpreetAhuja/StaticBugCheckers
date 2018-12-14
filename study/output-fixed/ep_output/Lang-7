@@ -1,0 +1,6 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-7/src/main/java/org/apache/commons/lang3/math/NumberUtils.java:505: warning: [OperatorPrecedence] Use grouping parenthesis to make the operator precedence explicit
+                        && (numeric.charAt(0) == '-' && isDigits(numeric.substring(1)) || isDigits(numeric))) {
+                                                     ^
+    (see http://errorprone.info/bugpattern/OperatorPrecedence)
+  Did you mean '&& ((numeric.charAt(0) == '-' && isDigits(numeric.substring(1))) || isDigits(numeric))) {'?
+1 warning

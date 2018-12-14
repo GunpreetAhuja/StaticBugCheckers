@@ -1,0 +1,21 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-97/src/com/google/javascript/jscomp/PeepholeFoldConstants.java:412: warning: [OperatorPrecedence] Use grouping parenthesis to make the operator precedence explicit
+      if (lval && type == Token.OR ||
+               ^
+    (see http://errorprone.info/bugpattern/OperatorPrecedence)
+  Did you mean 'if ((lval && type == Token.OR) ||'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-97/src/com/google/javascript/jscomp/PeepholeFoldConstants.java:413: warning: [OperatorPrecedence] Use grouping parenthesis to make the operator precedence explicit
+          !lval && type == Token.AND) {
+                ^
+    (see http://errorprone.info/bugpattern/OperatorPrecedence)
+  Did you mean '(!lval && type == Token.AND)) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-97/src/com/google/javascript/jscomp/PeepholeFoldConstants.java:441: warning: [OperatorPrecedence] Use grouping parenthesis to make the operator precedence explicit
+        if (type == Token.OR && !rval ||
+                             ^
+    (see http://errorprone.info/bugpattern/OperatorPrecedence)
+  Did you mean 'if ((type == Token.OR && !rval) ||'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-97/src/com/google/javascript/jscomp/PeepholeFoldConstants.java:442: warning: [OperatorPrecedence] Use grouping parenthesis to make the operator precedence explicit
+            type == Token.AND && rval) {
+                              ^
+    (see http://errorprone.info/bugpattern/OperatorPrecedence)
+  Did you mean '(type == Token.AND && rval)) {'?
+4 warnings

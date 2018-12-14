@@ -1,0 +1,66 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-61/src/com/google/javascript/jscomp/NodeUtil.java:900: warning: [MutableConstantField] Constant field declarations should use the immutable type (such as ImmutableList) instead of the general collection interface type (such as List)
+  private static final Set<String> BUILTIN_FUNCTIONS_WITHOUT_SIDEEFFECTS =
+                          ^
+    (see http://errorprone.info/bugpattern/MutableConstantField)
+  Did you mean 'private static final ImmutableSet<String> BUILTIN_FUNCTIONS_WITHOUT_SIDEEFFECTS ='?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-61/src/com/google/javascript/jscomp/NodeUtil.java:903: warning: [MutableConstantField] Constant field declarations should use the immutable type (such as ImmutableList) instead of the general collection interface type (such as List)
+  private static final Set<String> OBJECT_METHODS_WITHOUT_SIDEEFFECTS =
+                          ^
+    (see http://errorprone.info/bugpattern/MutableConstantField)
+  Did you mean 'private static final ImmutableSet<String> OBJECT_METHODS_WITHOUT_SIDEEFFECTS ='?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-61/src/com/google/javascript/jscomp/NodeUtil.java:905: warning: [MutableConstantField] Constant field declarations should use the immutable type (such as ImmutableList) instead of the general collection interface type (such as List)
+  private static final Set<String> REGEXP_METHODS =
+                          ^
+    (see http://errorprone.info/bugpattern/MutableConstantField)
+  Did you mean 'private static final ImmutableSet<String> REGEXP_METHODS ='?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-61/src/com/google/javascript/jscomp/NodeUtil.java:907: warning: [MutableConstantField] Constant field declarations should use the immutable type (such as ImmutableList) instead of the general collection interface type (such as List)
+  private static final Set<String> STRING_REGEXP_METHODS =
+                          ^
+    (see http://errorprone.info/bugpattern/MutableConstantField)
+  Did you mean 'private static final ImmutableSet<String> STRING_REGEXP_METHODS ='?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-61/src/com/google/javascript/jscomp/NodeUtil.java:1196: warning: [MissingOverride] apply implements method in Predicate; expected @Override
+    public boolean apply(Node n) {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public boolean apply(Node n) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-61/src/com/google/javascript/jscomp/NodeUtil.java:1248: warning: [MissingOverride] apply implements method in Predicate; expected @Override
+    public boolean apply(Node n) {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public boolean apply(Node n) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-61/src/com/google/javascript/jscomp/NodeUtil.java:1309: warning: [MissingOverride] apply implements method in Predicate; expected @Override
+    public boolean apply(Node n) {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public boolean apply(Node n) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-61/src/com/google/javascript/jscomp/NodeUtil.java:2480: warning: [MissingOverride] visit implements method in Visitor; expected @Override
+    public void visit(Node n) {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void visit(Node n) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-61/src/com/google/javascript/jscomp/NodeUtil.java:2588: warning: [MissingOverride] apply implements method in Predicate; expected @Override
+    public boolean apply(Node n) {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public boolean apply(Node n) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-61/src/com/google/javascript/jscomp/NodeUtil.java:2604: warning: [MissingOverride] apply implements method in Predicate; expected @Override
+    public boolean apply(Node n) {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public boolean apply(Node n) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-61/src/com/google/javascript/jscomp/NodeUtil.java:2614: warning: [MissingOverride] apply implements method in Predicate; expected @Override
+    public boolean apply(Node n) {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public boolean apply(Node n) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-61/src/com/google/javascript/jscomp/NodeUtil.java:2623: warning: [MissingOverride] apply implements method in Predicate; expected @Override
+    public boolean apply(Node n) {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public boolean apply(Node n) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-61/src/com/google/javascript/jscomp/NodeUtil.java:2634: warning: [MissingOverride] apply implements method in Predicate; expected @Override
+    public boolean apply(Node n) {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public boolean apply(Node n) {'?
+13 warnings

@@ -1,0 +1,11 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-40/src/main/java/org/apache/commons/math/analysis/solvers/BracketingNthOrderBrentSolver.java:383: warning: [MissingOverride] solve implements method in BracketedUnivariateRealSolver; expected @Override
+    public double solve(int maxEval, UnivariateFunction f, double min,
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double solve(int maxEval, UnivariateFunction f, double min,'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-40/src/main/java/org/apache/commons/math/analysis/solvers/BracketingNthOrderBrentSolver.java:390: warning: [MissingOverride] solve implements method in BracketedUnivariateRealSolver; expected @Override
+    public double solve(int maxEval, UnivariateFunction f, double min,
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double solve(int maxEval, UnivariateFunction f, double min,'?
+2 warnings

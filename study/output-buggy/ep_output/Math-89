@@ -1,0 +1,8 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-89/src/java/org/apache/commons/math/stat/Frequency.java:486: warning: [MissingOverride] compare implements method in Comparator; expected @Override
+        public int compare(Object o1, Object o2) {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int compare(Object o1, Object o2) {'?
+Note: /Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-89/src/java/org/apache/commons/math/stat/Frequency.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 warning

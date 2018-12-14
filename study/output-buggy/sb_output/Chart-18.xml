@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.1.0" sequence="0" timestamp="1542185242000" analysisTimestamp="1542185245644" release="">
+  <Project projectName="">
+    <Jar>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-18/source</Jar>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-18/build</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-18/lib/servlet.jar</AuxClasspathEntry>
+  </Project>
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" rank="18" abbrev="Bx" category="PERFORMANCE" instanceHash="d9bd48237ceebfdbb57504a69a7aff10" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Method invokes inefficient Number constructor; use static valueOf instead</ShortMessage>
+    <LongMessage>org.jfree.data.DefaultKeyedValues.rebuildIndex() invokes inefficient new Integer(int) constructor; use Integer.valueOf(int) instead</LongMessage>
+    <Class classname="org.jfree.data.DefaultKeyedValues" primary="true">
+      <SourceLine classname="org.jfree.data.DefaultKeyedValues" start="98" end="468" sourcefile="DefaultKeyedValues.java" sourcepath="org/jfree/data/DefaultKeyedValues.java">
+        <Message>At DefaultKeyedValues.java:[lines 98-468]</Message>
+      </SourceLine>
+      <Message>In class org.jfree.data.DefaultKeyedValues</Message>
+    </Class>
+    <Method classname="org.jfree.data.DefaultKeyedValues" name="rebuildIndex" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jfree.data.DefaultKeyedValues" start="299" end="304" startBytecode="0" endBytecode="111" sourcefile="DefaultKeyedValues.java" sourcepath="org/jfree/data/DefaultKeyedValues.java"/>
+      <Message>In method org.jfree.data.DefaultKeyedValues.rebuildIndex()</Message>
+    </Method>
+    <Method classname="java.lang.Integer" name="&lt;init&gt;" signature="(I)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Integer" start="849" end="851" startBytecode="0" endBytecode="41" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+      <Message>Called method new Integer(int)</Message>
+    </Method>
+    <Method classname="java.lang.Integer" name="valueOf" signature="(I)Ljava/lang/Integer;" isStatic="true" role="SHOULD_CALL">
+      <SourceLine classname="java.lang.Integer" start="830" end="832" startBytecode="0" endBytecode="72" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+      <Message>Should call Integer.valueOf(int) instead</Message>
+    </Method>
+    <SourceLine classname="org.jfree.data.DefaultKeyedValues" primary="true" start="302" end="302" startBytecode="39" endBytecode="39" sourcefile="DefaultKeyedValues.java" sourcepath="org/jfree/data/DefaultKeyedValues.java">
+      <Message>At DefaultKeyedValues.java:[line 302]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" rank="18" abbrev="Bx" category="PERFORMANCE" instanceHash="44c3e8fa32fbc4e90df85b6769f1fa30" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Method invokes inefficient Number constructor; use static valueOf instead</ShortMessage>
+    <LongMessage>org.jfree.data.DefaultKeyedValues.setValue(Comparable, Number) invokes inefficient new Integer(int) constructor; use Integer.valueOf(int) instead</LongMessage>
+    <Class classname="org.jfree.data.DefaultKeyedValues" primary="true">
+      <SourceLine classname="org.jfree.data.DefaultKeyedValues" start="98" end="468" sourcefile="DefaultKeyedValues.java" sourcepath="org/jfree/data/DefaultKeyedValues.java">
+        <Message>At DefaultKeyedValues.java:[lines 98-468]</Message>
+      </SourceLine>
+      <Message>In class org.jfree.data.DefaultKeyedValues</Message>
+    </Class>
+    <Method classname="org.jfree.data.DefaultKeyedValues" name="setValue" signature="(Ljava/lang/Comparable;Ljava/lang/Number;)V" isStatic="false" primary="true">
+      <SourceLine classname="org.jfree.data.DefaultKeyedValues" start="229" end="242" startBytecode="0" endBytecode="164" sourcefile="DefaultKeyedValues.java" sourcepath="org/jfree/data/DefaultKeyedValues.java"/>
+      <Message>In method org.jfree.data.DefaultKeyedValues.setValue(Comparable, Number)</Message>
+    </Method>
+    <Method classname="java.lang.Integer" name="&lt;init&gt;" signature="(I)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Integer" start="849" end="851" startBytecode="0" endBytecode="41" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+      <Message>Called method new Integer(int)</Message>
+    </Method>
+    <Method classname="java.lang.Integer" name="valueOf" signature="(I)Ljava/lang/Integer;" isStatic="true" role="SHOULD_CALL">
+      <SourceLine classname="java.lang.Integer" start="830" end="832" startBytecode="0" endBytecode="72" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+      <Message>Should call Integer.valueOf(int) instead</Message>
+    </Method>
+    <SourceLine classname="org.jfree.data.DefaultKeyedValues" primary="true" start="240" end="240" startBytecode="83" endBytecode="83" sourcefile="DefaultKeyedValues.java" sourcepath="org/jfree/data/DefaultKeyedValues.java">
+      <Message>At DefaultKeyedValues.java:[line 240]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="PERFORMANCE">
+    <Description>Performance</Description>
+  </BugCategory>
+  <BugPattern type="DM_NUMBER_CTOR" abbrev="Bx" category="PERFORMANCE">
+    <ShortDescription>Method invokes inefficient Number constructor; use static valueOf instead</ShortDescription>
+    <Details><![CDATA[
+      
+      <p>
+      Using <code>new Integer(int)</code> is guaranteed to always result in a new object whereas
+      <code>Integer.valueOf(int)</code> allows caching of values to be done by the compiler, class library, or JVM.
+      Using of cached values avoids object allocation and the code will be faster.
+      </p>
+      <p>
+      Values between -128 and 127 are guaranteed to have corresponding cached instances
+      and using <code>valueOf</code> is approximately 3.5 times faster than using constructor.
+      For values outside the constant range the performance of both styles is the same.
+      </p>
+      <p>
+      Unless the class must be compatible with JVMs predating Java 1.5,
+      use either autoboxing or the <code>valueOf()</code> method when creating instances of
+      <code>Long</code>, <code>Integer</code>, <code>Short</code>, <code>Character</code>, and <code>Byte</code>.
+      </p>
+      
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="Bx">
+    <Description>Questionable Boxing of primitive value</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 14 Nov 2018 03:47:22 -0500" total_classes="2" referenced_classes="35" total_bugs="2" total_size="322" num_packages="1" java_version="1.8.0_121" vm_version="25.121-b13" cpu_seconds="8.77" clock_seconds="4.76" peak_mbytes="112.50" alloc_mbytes="1820.50" gc_seconds="0.06" priority_2="2">
+    <FileStats path="org/jfree/data/DefaultKeyedValues.java" bugCount="2" size="149" bugHash="34ee88fa0fd5b8284708d3656380589c"/>
+    <FileStats path="org/jfree/data/DefaultKeyedValues2D.java" bugCount="0" size="173"/>
+    <PackageStats package="org.jfree.data" total_bugs="2" total_types="2" total_size="322" priority_2="2">
+      <ClassStats class="org.jfree.data.DefaultKeyedValues" sourceFile="DefaultKeyedValues.java" interface="false" size="149" bugs="2" priority_2="2"/>
+      <ClassStats class="org.jfree.data.DefaultKeyedValues2D" sourceFile="DefaultKeyedValues2D.java" interface="false" size="173" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="591" invocations="447" avgMicrosecondsPerInvocation="1322" maxMicrosecondsPerInvocation="30244" standardDeviationMicrosecondsPerInvocation="3010"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="479" invocations="444" avgMicrosecondsPerInvocation="1078" maxMicrosecondsPerInvocation="34422" standardDeviationMicrosecondsPerInvocation="3229"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="245" invocations="227" avgMicrosecondsPerInvocation="1079" maxMicrosecondsPerInvocation="32380" standardDeviationMicrosecondsPerInvocation="3603"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="202" invocations="35" avgMicrosecondsPerInvocation="5781" maxMicrosecondsPerInvocation="44272" standardDeviationMicrosecondsPerInvocation="10074"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="201" invocations="45" avgMicrosecondsPerInvocation="4474" maxMicrosecondsPerInvocation="41477" standardDeviationMicrosecondsPerInvocation="8236"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="147" invocations="411" avgMicrosecondsPerInvocation="359" maxMicrosecondsPerInvocation="37081" standardDeviationMicrosecondsPerInvocation="2416"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="136" invocations="45" avgMicrosecondsPerInvocation="3032" maxMicrosecondsPerInvocation="54012" standardDeviationMicrosecondsPerInvocation="8766"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="112" invocations="35" avgMicrosecondsPerInvocation="3225" maxMicrosecondsPerInvocation="25463" standardDeviationMicrosecondsPerInvocation="6138"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="109" invocations="45" avgMicrosecondsPerInvocation="2441" maxMicrosecondsPerInvocation="22577" standardDeviationMicrosecondsPerInvocation="4901"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="93" invocations="62" avgMicrosecondsPerInvocation="1515" maxMicrosecondsPerInvocation="60988" standardDeviationMicrosecondsPerInvocation="7782"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="83" invocations="45" avgMicrosecondsPerInvocation="1855" maxMicrosecondsPerInvocation="62592" standardDeviationMicrosecondsPerInvocation="9277"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="81" invocations="45" avgMicrosecondsPerInvocation="1818" maxMicrosecondsPerInvocation="13453" standardDeviationMicrosecondsPerInvocation="3124"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="78" invocations="45" avgMicrosecondsPerInvocation="1745" maxMicrosecondsPerInvocation="36222" standardDeviationMicrosecondsPerInvocation="5773"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="70" invocations="35" avgMicrosecondsPerInvocation="2011" maxMicrosecondsPerInvocation="27337" standardDeviationMicrosecondsPerInvocation="5790"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="67" invocations="45" avgMicrosecondsPerInvocation="1500" maxMicrosecondsPerInvocation="32801" standardDeviationMicrosecondsPerInvocation="4802"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindInconsistentSync2" totalMilliseconds="65" invocations="2" avgMicrosecondsPerInvocation="32982" maxMicrosecondsPerInvocation="38627" standardDeviationMicrosecondsPerInvocation="5645"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="65" invocations="35" avgMicrosecondsPerInvocation="1861" maxMicrosecondsPerInvocation="25208" standardDeviationMicrosecondsPerInvocation="5031"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NumberConstructor" totalMilliseconds="60" invocations="2" avgMicrosecondsPerInvocation="30237" maxMicrosecondsPerInvocation="60339" standardDeviationMicrosecondsPerInvocation="30101"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

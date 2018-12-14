@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.1.0" sequence="0" timestamp="1542186633000" analysisTimestamp="1542186636112" release="">
+  <Project projectName="">
+    <Jar>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-61/src/main/java</Jar>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-61/target/classes</AuxClasspathEntry>
+  </Project>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 14 Nov 2018 04:10:33 -0500" total_classes="1" referenced_classes="29" total_bugs="0" total_size="53" num_packages="1" java_version="1.8.0_121" vm_version="25.121-b13" cpu_seconds="6.59" clock_seconds="4.00" peak_mbytes="112.35" alloc_mbytes="1820.50" gc_seconds="0.07">
+    <FileStats path="org/apache/commons/math/distribution/PoissonDistributionImpl.java" bugCount="0" size="53"/>
+    <PackageStats package="org.apache.commons.math.distribution" total_bugs="0" total_types="1" total_size="53">
+      <ClassStats class="org.apache.commons.math.distribution.PoissonDistributionImpl" sourceFile="PoissonDistributionImpl.java" interface="false" size="53" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="685" invocations="399" avgMicrosecondsPerInvocation="1719" maxMicrosecondsPerInvocation="38368" standardDeviationMicrosecondsPerInvocation="4145"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="520" invocations="393" avgMicrosecondsPerInvocation="1323" maxMicrosecondsPerInvocation="40737" standardDeviationMicrosecondsPerInvocation="4214"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="201" invocations="29" avgMicrosecondsPerInvocation="6944" maxMicrosecondsPerInvocation="65170" standardDeviationMicrosecondsPerInvocation="15022"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="153" invocations="29" avgMicrosecondsPerInvocation="5277" maxMicrosecondsPerInvocation="44699" standardDeviationMicrosecondsPerInvocation="10891"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="133" invocations="359" avgMicrosecondsPerInvocation="370" maxMicrosecondsPerInvocation="19684" standardDeviationMicrosecondsPerInvocation="1643"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="125" invocations="93" avgMicrosecondsPerInvocation="1350" maxMicrosecondsPerInvocation="37823" standardDeviationMicrosecondsPerInvocation="4791"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="122" invocations="60" avgMicrosecondsPerInvocation="2033" maxMicrosecondsPerInvocation="50176" standardDeviationMicrosecondsPerInvocation="8511"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="85" invocations="11" avgMicrosecondsPerInvocation="7756" maxMicrosecondsPerInvocation="79834" standardDeviationMicrosecondsPerInvocation="22816"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="77" invocations="29" avgMicrosecondsPerInvocation="2667" maxMicrosecondsPerInvocation="29679" standardDeviationMicrosecondsPerInvocation="6184"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="74" invocations="11" avgMicrosecondsPerInvocation="6731" maxMicrosecondsPerInvocation="46645" standardDeviationMicrosecondsPerInvocation="13148"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="64" invocations="29" avgMicrosecondsPerInvocation="2236" maxMicrosecondsPerInvocation="31778" standardDeviationMicrosecondsPerInvocation="6220"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

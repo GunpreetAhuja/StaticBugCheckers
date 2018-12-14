@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.1.0" sequence="0" timestamp="1542190026000" analysisTimestamp="1542190028560" release="">
+  <Project projectName="">
+    <Jar>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-46/src</Jar>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-46/build/classes</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-46/lib/args4j.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-46/lib/guava.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-46/lib/json.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-46/lib/jsr305.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-46/lib/protobuf-java.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-46/build/lib/rhino.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-46/lib/ant.jar</AuxClasspathEntry>
+  </Project>
+  <BugInstance type="WMI_WRONG_MAP_ITERATOR" priority="2" rank="18" abbrev="WMI" category="PERFORMANCE" instanceHash="baec5fe0ed04025613f933aa678d5069" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Inefficient use of keySet iterator instead of entrySet iterator</ShortMessage>
+    <LongMessage>new com.google.javascript.rhino.jstype.RecordType(JSTypeRegistry, Map) makes inefficient use of keySet iterator instead of entrySet iterator</LongMessage>
+    <Class classname="com.google.javascript.rhino.jstype.RecordType" primary="true">
+      <SourceLine classname="com.google.javascript.rhino.jstype.RecordType" start="67" end="279" sourcefile="RecordType.java" sourcepath="com/google/javascript/rhino/jstype/RecordType.java">
+        <Message>At RecordType.java:[lines 67-279]</Message>
+      </SourceLine>
+      <Message>In class com.google.javascript.rhino.jstype.RecordType</Message>
+    </Class>
+    <Method classname="com.google.javascript.rhino.jstype.RecordType" name="&lt;init&gt;" signature="(Lcom/google/javascript/rhino/jstype/JSTypeRegistry;Ljava/util/Map;)V" isStatic="false" primary="true">
+      <SourceLine classname="com.google.javascript.rhino.jstype.RecordType" start="79" end="93" startBytecode="0" endBytecode="216" sourcefile="RecordType.java" sourcepath="com/google/javascript/rhino/jstype/RecordType.java"/>
+      <Message>In method new com.google.javascript.rhino.jstype.RecordType(JSTypeRegistry, Map)</Message>
+    </Method>
+    <SourceLine classname="com.google.javascript.rhino.jstype.RecordType" primary="true" start="83" end="83" startBytecode="59" endBytecode="59" sourcefile="RecordType.java" sourcepath="com/google/javascript/rhino/jstype/RecordType.java">
+      <Message>At RecordType.java:[line 83]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="PERFORMANCE">
+    <Description>Performance</Description>
+  </BugCategory>
+  <BugPattern type="WMI_WRONG_MAP_ITERATOR" abbrev="WMI" category="PERFORMANCE">
+    <ShortDescription>Inefficient use of keySet iterator instead of entrySet iterator</ShortDescription>
+    <Details><![CDATA[
+
+<p> This method accesses the value of a Map entry, using a key that was retrieved from
+a keySet iterator. It is more efficient to use an iterator on the entrySet of the map, to avoid the
+Map.get(key) lookup.</p>
+
+        ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="WMI">
+    <Description>Inefficient Map Iterator</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 14 Nov 2018 05:07:06 -0500" total_classes="1" referenced_classes="51" total_bugs="1" total_size="111" num_packages="1" java_version="1.8.0_121" vm_version="25.121-b13" cpu_seconds="9.06" clock_seconds="4.60" peak_mbytes="124.92" alloc_mbytes="1820.50" gc_seconds="0.05" priority_2="1">
+    <FileStats path="com/google/javascript/rhino/jstype/RecordType.java" bugCount="1" size="111" bugHash="17596b90ad37d6b3ce78ad6e80d54c66"/>
+    <PackageStats package="com.google.javascript.rhino.jstype" total_bugs="1" total_types="1" total_size="111" priority_2="1">
+      <ClassStats class="com.google.javascript.rhino.jstype.RecordType" sourceFile="RecordType.java" interface="false" size="111" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="766" invocations="530" avgMicrosecondsPerInvocation="1446" maxMicrosecondsPerInvocation="45325" standardDeviationMicrosecondsPerInvocation="2919"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="507" invocations="526" avgMicrosecondsPerInvocation="965" maxMicrosecondsPerInvocation="43933" standardDeviationMicrosecondsPerInvocation="3247"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="185" invocations="51" avgMicrosecondsPerInvocation="3633" maxMicrosecondsPerInvocation="40975" standardDeviationMicrosecondsPerInvocation="7102"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="136" invocations="202" avgMicrosecondsPerInvocation="674" maxMicrosecondsPerInvocation="18679" standardDeviationMicrosecondsPerInvocation="2100"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="131" invocations="51" avgMicrosecondsPerInvocation="2586" maxMicrosecondsPerInvocation="19708" standardDeviationMicrosecondsPerInvocation="3868"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="120" invocations="491" avgMicrosecondsPerInvocation="245" maxMicrosecondsPerInvocation="18710" standardDeviationMicrosecondsPerInvocation="1296"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="120" invocations="9" avgMicrosecondsPerInvocation="13353" maxMicrosecondsPerInvocation="117029" standardDeviationMicrosecondsPerInvocation="36655"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="114" invocations="9" avgMicrosecondsPerInvocation="12674" maxMicrosecondsPerInvocation="74627" standardDeviationMicrosecondsPerInvocation="22528"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="110" invocations="9" avgMicrosecondsPerInvocation="12302" maxMicrosecondsPerInvocation="57584" standardDeviationMicrosecondsPerInvocation="20003"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="95" invocations="9" avgMicrosecondsPerInvocation="10643" maxMicrosecondsPerInvocation="73592" standardDeviationMicrosecondsPerInvocation="22430"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="91" invocations="9" avgMicrosecondsPerInvocation="10166" maxMicrosecondsPerInvocation="31949" standardDeviationMicrosecondsPerInvocation="11964"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="89" invocations="83" avgMicrosecondsPerInvocation="1082" maxMicrosecondsPerInvocation="38622" standardDeviationMicrosecondsPerInvocation="4443"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="87" invocations="51" avgMicrosecondsPerInvocation="1707" maxMicrosecondsPerInvocation="40500" standardDeviationMicrosecondsPerInvocation="5826"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="56" invocations="51" avgMicrosecondsPerInvocation="1100" maxMicrosecondsPerInvocation="12253" standardDeviationMicrosecondsPerInvocation="2092"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

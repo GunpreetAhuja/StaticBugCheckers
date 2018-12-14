@@ -1,0 +1,86 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-14/src/main/java/org/joda/time/chrono/BasicMonthOfYearDateTimeField.java:58: warning: [MissingOverride] isLenient implements method in DateTimeField; expected @Override
+    public boolean isLenient() {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public boolean isLenient() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-14/src/main/java/org/joda/time/chrono/BasicMonthOfYearDateTimeField.java:71: warning: [MissingOverride] get implements method in ImpreciseDateTimeField; expected @Override
+    public int get(long instant) {
+               ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int get(long instant) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-14/src/main/java/org/joda/time/chrono/BasicMonthOfYearDateTimeField.java:91: warning: [MissingOverride] add implements method in ImpreciseDateTimeField; expected @Override
+    public long add(long instant, int months) {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public long add(long instant, int months) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-14/src/main/java/org/joda/time/chrono/BasicMonthOfYearDateTimeField.java:150: warning: [MissingOverride] add implements method in ImpreciseDateTimeField; expected @Override
+    public long add(long instant, long months) {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public long add(long instant, long months) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-14/src/main/java/org/joda/time/chrono/BasicMonthOfYearDateTimeField.java:175: warning: [IntLongMath] Expression of type int may overflow before being assigned to a long
+            monthToUse = iMax - remMonthToUse + 1;
+                                              ^
+    (see http://errorprone.info/bugpattern/IntLongMath)
+  Did you mean 'monthToUse = (long) iMax - remMonthToUse + 1;'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-14/src/main/java/org/joda/time/chrono/BasicMonthOfYearDateTimeField.java:203: warning: [MissingOverride] add overrides method in BaseDateTimeField; expected @Override
+    public int[] add(ReadablePartial partial, int fieldIndex, int[] values, int valueToAdd) {
+                 ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int[] add(ReadablePartial partial, int fieldIndex, int[] values, int valueToAdd) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-14/src/main/java/org/joda/time/chrono/BasicMonthOfYearDateTimeField.java:232: warning: [MissingOverride] addWrapField overrides method in BaseDateTimeField; expected @Override
+    public long addWrapField(long instant, int months) {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public long addWrapField(long instant, int months) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-14/src/main/java/org/joda/time/chrono/BasicMonthOfYearDateTimeField.java:237: warning: [MissingOverride] getDifferenceAsLong overrides method in ImpreciseDateTimeField; expected @Override
+    public long getDifferenceAsLong(long minuendInstant, long subtrahendInstant) {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public long getDifferenceAsLong(long minuendInstant, long subtrahendInstant) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-14/src/main/java/org/joda/time/chrono/BasicMonthOfYearDateTimeField.java:292: warning: [MissingOverride] set implements method in ImpreciseDateTimeField; expected @Override
+    public long set(long instant, int month) {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public long set(long instant, int month) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-14/src/main/java/org/joda/time/chrono/BasicMonthOfYearDateTimeField.java:309: warning: [MissingOverride] getRangeDurationField implements method in ImpreciseDateTimeField; expected @Override
+    public DurationField getRangeDurationField() {
+                         ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public DurationField getRangeDurationField() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-14/src/main/java/org/joda/time/chrono/BasicMonthOfYearDateTimeField.java:314: warning: [MissingOverride] isLeap overrides method in BaseDateTimeField; expected @Override
+    public boolean isLeap(long instant) {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public boolean isLeap(long instant) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-14/src/main/java/org/joda/time/chrono/BasicMonthOfYearDateTimeField.java:323: warning: [MissingOverride] getLeapAmount overrides method in BaseDateTimeField; expected @Override
+    public int getLeapAmount(long instant) {
+               ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int getLeapAmount(long instant) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-14/src/main/java/org/joda/time/chrono/BasicMonthOfYearDateTimeField.java:328: warning: [MissingOverride] getLeapDurationField overrides method in BaseDateTimeField; expected @Override
+    public DurationField getLeapDurationField() {
+                         ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public DurationField getLeapDurationField() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-14/src/main/java/org/joda/time/chrono/BasicMonthOfYearDateTimeField.java:333: warning: [MissingOverride] getMinimumValue implements method in BaseDateTimeField; expected @Override
+    public int getMinimumValue() {
+               ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int getMinimumValue() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-14/src/main/java/org/joda/time/chrono/BasicMonthOfYearDateTimeField.java:338: warning: [MissingOverride] getMaximumValue implements method in BaseDateTimeField; expected @Override
+    public int getMaximumValue() {
+               ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int getMaximumValue() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-14/src/main/java/org/joda/time/chrono/BasicMonthOfYearDateTimeField.java:343: warning: [MissingOverride] roundFloor implements method in ImpreciseDateTimeField; expected @Override
+    public long roundFloor(long instant) {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public long roundFloor(long instant) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-14/src/main/java/org/joda/time/chrono/BasicMonthOfYearDateTimeField.java:350: warning: [MissingOverride] remainder overrides method in BaseDateTimeField; expected @Override
+    public long remainder(long instant) {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public long remainder(long instant) {'?
+17 warnings

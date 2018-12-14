@@ -1,0 +1,11 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Mockito-21/src/org/mockito/internal/creation/instance/ConstructorInstantiator.java:13: warning: [MissingOverride] newInstance implements method in Instantiator; expected @Override
+    public <T> T newInstance(Class<T> cls) {
+                 ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public <T> T newInstance(Class<T> cls) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Mockito-21/src/org/mockito/internal/creation/instance/ConstructorInstantiator.java:39: warning: [ClassNewInstance] Class.newInstance() bypasses exception checking; prefer getDeclaredConstructor().newInstance()
+            return cls.newInstance();
+                                  ^
+    (see http://errorprone.info/bugpattern/ClassNewInstance)
+  Did you mean 'return cls.getDeclaredConstructor().newInstance();'?
+2 warnings

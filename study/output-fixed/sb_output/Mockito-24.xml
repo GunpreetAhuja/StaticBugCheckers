@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.1.0" sequence="0" timestamp="1542191206000" analysisTimestamp="1542191209613" release="">
+  <Project projectName="">
+    <Jar>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Mockito-24/src</Jar>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Mockito-24/target/classes</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/framework/projects/Mockito/lib/asm-all-5.0.4.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/framework/projects/Mockito/lib/assertj-core-2.1.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/framework/projects/Mockito/lib/cglib-and-asm-1.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/framework/projects/Mockito/lib/cobertura-2.0.3.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/framework/projects/Mockito/lib/fest-assert-1.3.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/framework/projects/Mockito/lib/fest-util-1.1.4.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/framework/projects/Mockito/lib/hamcrest-all-1.3.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/framework/projects/Mockito/lib/hamcrest-core-1.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/framework/projects/Mockito/lib/objenesis-2.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/framework/projects/Mockito/lib/objenesis-2.2.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/framework/projects/Mockito/lib/powermock-reflect-1.2.5.jar</AuxClasspathEntry>
+  </Project>
+  <BugInstance type="SE_BAD_FIELD" priority="1" rank="14" abbrev="Se" category="BAD_PRACTICE" instanceHash="ac14b0788dc6fde2cd3b5fed726e2107" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Non-transient non-serializable instance field in serializable class</ShortMessage>
+    <LongMessage>Class org.mockito.internal.stubbing.defaultanswers.ReturnsEmptyValues defines non-transient non-serializable instance field mockUtil</LongMessage>
+    <Class classname="org.mockito.internal.stubbing.defaultanswers.ReturnsEmptyValues" primary="true">
+      <SourceLine classname="org.mockito.internal.stubbing.defaultanswers.ReturnsEmptyValues" start="54" end="120" sourcefile="ReturnsEmptyValues.java" sourcepath="org/mockito/internal/stubbing/defaultanswers/ReturnsEmptyValues.java">
+        <Message>At ReturnsEmptyValues.java:[lines 54-120]</Message>
+      </SourceLine>
+      <Message>In class org.mockito.internal.stubbing.defaultanswers.ReturnsEmptyValues</Message>
+    </Class>
+    <Field classname="org.mockito.internal.stubbing.defaultanswers.ReturnsEmptyValues" name="mockUtil" signature="Lorg/mockito/internal/util/MockUtil;" isStatic="false" primary="true">
+      <SourceLine classname="org.mockito.internal.stubbing.defaultanswers.ReturnsEmptyValues" sourcefile="ReturnsEmptyValues.java" sourcepath="org/mockito/internal/stubbing/defaultanswers/ReturnsEmptyValues.java">
+        <Message>In ReturnsEmptyValues.java</Message>
+      </SourceLine>
+      <Message>Field org.mockito.internal.stubbing.defaultanswers.ReturnsEmptyValues.mockUtil</Message>
+    </Field>
+    <Type descriptor="Lorg/mockito/internal/util/MockUtil;" role="TYPE_FOUND">
+      <SourceLine classname="org.mockito.internal.util.MockUtil" start="21" end="89" sourcefile="MockUtil.java" sourcepath="org/mockito/internal/util/MockUtil.java">
+        <Message>At MockUtil.java:[lines 21-89]</Message>
+      </SourceLine>
+      <Message>Actual type org.mockito.internal.util.MockUtil</Message>
+    </Type>
+    <SourceLine classname="org.mockito.internal.stubbing.defaultanswers.ReturnsEmptyValues" sourcefile="ReturnsEmptyValues.java" sourcepath="org/mockito/internal/stubbing/defaultanswers/ReturnsEmptyValues.java" synthetic="true">
+      <Message>In ReturnsEmptyValues.java</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="BAD_PRACTICE">
+    <Description>Bad practice</Description>
+  </BugCategory>
+  <BugPattern type="SE_BAD_FIELD" abbrev="Se" category="BAD_PRACTICE">
+    <ShortDescription>Non-transient non-serializable instance field in serializable class</ShortDescription>
+    <Details><![CDATA[
+
+<p> This Serializable class defines a non-primitive instance field which is neither transient,
+Serializable, or <code>java.lang.Object</code>, and does not appear to implement
+the <code>Externalizable</code> interface or the
+<code>readObject()</code> and <code>writeObject()</code> methods.&nbsp;
+Objects of this class will not be deserialized correctly if a non-Serializable
+object is stored in this field.</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="Se">
+    <Description>Incorrect definition of Serializable class</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 14 Nov 2018 05:26:46 -0500" total_classes="1" referenced_classes="33" total_bugs="1" total_size="51" num_packages="1" java_version="1.8.0_121" vm_version="25.121-b13" cpu_seconds="6.95" clock_seconds="4.19" peak_mbytes="108.41" alloc_mbytes="1820.50" gc_seconds="0.08" priority_1="1">
+    <FileStats path="org/mockito/internal/stubbing/defaultanswers/ReturnsEmptyValues.java" bugCount="1" size="51" bugHash="38b38b67d678af005acb7b2b018fe36f"/>
+    <PackageStats package="org.mockito.internal.stubbing.defaultanswers" total_bugs="1" total_types="1" total_size="51" priority_1="1">
+      <ClassStats class="org.mockito.internal.stubbing.defaultanswers.ReturnsEmptyValues" sourceFile="ReturnsEmptyValues.java" interface="false" size="51" bugs="1" priority_1="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="687" invocations="397" avgMicrosecondsPerInvocation="1731" maxMicrosecondsPerInvocation="69289" standardDeviationMicrosecondsPerInvocation="6228"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="588" invocations="400" avgMicrosecondsPerInvocation="1471" maxMicrosecondsPerInvocation="31844" standardDeviationMicrosecondsPerInvocation="3561"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="196" invocations="33" avgMicrosecondsPerInvocation="5951" maxMicrosecondsPerInvocation="66763" standardDeviationMicrosecondsPerInvocation="12815"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="179" invocations="129" avgMicrosecondsPerInvocation="1393" maxMicrosecondsPerInvocation="24344" standardDeviationMicrosecondsPerInvocation="3460"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="146" invocations="3" avgMicrosecondsPerInvocation="48810" maxMicrosecondsPerInvocation="144507" standardDeviationMicrosecondsPerInvocation="67668"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="128" invocations="365" avgMicrosecondsPerInvocation="352" maxMicrosecondsPerInvocation="33233" standardDeviationMicrosecondsPerInvocation="2046"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="115" invocations="33" avgMicrosecondsPerInvocation="3513" maxMicrosecondsPerInvocation="34604" standardDeviationMicrosecondsPerInvocation="7710"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="67" invocations="61" avgMicrosecondsPerInvocation="1110" maxMicrosecondsPerInvocation="42460" standardDeviationMicrosecondsPerInvocation="5434"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="60" invocations="33" avgMicrosecondsPerInvocation="1840" maxMicrosecondsPerInvocation="27258" standardDeviationMicrosecondsPerInvocation="5339"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="59" invocations="33" avgMicrosecondsPerInvocation="1796" maxMicrosecondsPerInvocation="29157" standardDeviationMicrosecondsPerInvocation="5307"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="53" invocations="3" avgMicrosecondsPerInvocation="17854" maxMicrosecondsPerInvocation="31322" standardDeviationMicrosecondsPerInvocation="10465"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

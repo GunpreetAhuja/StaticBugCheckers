@@ -1,0 +1,21 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-71/src/com/google/javascript/jscomp/CheckAccessControls.java:128: warning: [MissingOverride] enterScope implements method in ScopedCallback; expected @Override
+  public void enterScope(NodeTraversal t) {
+              ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void enterScope(NodeTraversal t) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-71/src/com/google/javascript/jscomp/CheckAccessControls.java:143: warning: [MissingOverride] exitScope implements method in ScopedCallback; expected @Override
+  public void exitScope(NodeTraversal t) {
+              ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void exitScope(NodeTraversal t) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-71/src/com/google/javascript/jscomp/CheckAccessControls.java:210: warning: [MissingOverride] shouldTraverse implements method in Callback; expected @Override
+  public boolean shouldTraverse(NodeTraversal t, Node n, Node parent) {
+                 ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public boolean shouldTraverse(NodeTraversal t, Node n, Node parent) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-71/src/com/google/javascript/jscomp/CheckAccessControls.java:214: warning: [MissingOverride] visit implements method in Callback; expected @Override
+  public void visit(NodeTraversal t, Node n, Node parent) {
+              ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void visit(NodeTraversal t, Node n, Node parent) {'?
+4 warnings

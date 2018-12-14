@@ -1,0 +1,16 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Mockito-20/src/org/mockito/internal/creation/bytebuddy/ByteBuddyMockMaker.java:24: warning: [MissingOverride] createMock implements method in MockMaker; expected @Override
+    public <T> T createMock(MockCreationSettings<T> settings, MockHandler handler) {
+                 ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public <T> T createMock(MockCreationSettings<T> settings, MockHandler handler) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Mockito-20/src/org/mockito/internal/creation/bytebuddy/ByteBuddyMockMaker.java:72: warning: [MissingOverride] getHandler implements method in MockMaker; expected @Override
+    public MockHandler getHandler(Object mock) {
+                       ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public MockHandler getHandler(Object mock) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Mockito-20/src/org/mockito/internal/creation/bytebuddy/ByteBuddyMockMaker.java:79: warning: [MissingOverride] resetMock implements method in MockMaker; expected @Override
+    public void resetMock(Object mock, MockHandler newHandler, MockCreationSettings settings) {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void resetMock(Object mock, MockHandler newHandler, MockCreationSettings settings) {'?
+3 warnings

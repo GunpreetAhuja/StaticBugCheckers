@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.1.0" sequence="0" timestamp="1542189714000" analysisTimestamp="1542189717000" release="">
+  <Project projectName="">
+    <Jar>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-113/src</Jar>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-113/build/classes</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-113/lib/args4j.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-113/lib/guava.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-113/lib/json.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-113/lib/jsr305.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-113/lib/protobuf-java.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-113/build/lib/rhino.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-113/lib/ant.jar</AuxClasspathEntry>
+  </Project>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" instanceHash="ccbeb43b1e6df682489b5f0b87f4137a" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Dead store to local variable</ShortMessage>
+    <LongMessage>Dead store to $L7 in com.google.javascript.jscomp.ProcessClosurePrimitives.processDefineCall(NodeTraversal, Node, Node)</LongMessage>
+    <Class classname="com.google.javascript.jscomp.ProcessClosurePrimitives" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.ProcessClosurePrimitives" start="42" end="1215" sourcefile="ProcessClosurePrimitives.java" sourcepath="com/google/javascript/jscomp/ProcessClosurePrimitives.java">
+        <Message>At ProcessClosurePrimitives.java:[lines 42-1215]</Message>
+      </SourceLine>
+      <Message>In class com.google.javascript.jscomp.ProcessClosurePrimitives</Message>
+    </Class>
+    <Method classname="com.google.javascript.jscomp.ProcessClosurePrimitives" name="processDefineCall" signature="(Lcom/google/javascript/jscomp/NodeTraversal;Lcom/google/javascript/rhino/Node;Lcom/google/javascript/rhino/Node;)V" isStatic="false" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.ProcessClosurePrimitives" start="368" end="380" startBytecode="0" endBytecode="32" sourcefile="ProcessClosurePrimitives.java" sourcepath="com/google/javascript/jscomp/ProcessClosurePrimitives.java"/>
+      <Message>In method com.google.javascript.jscomp.ProcessClosurePrimitives.processDefineCall(NodeTraversal, Node, Node)</Message>
+    </Method>
+    <LocalVariable name="?" register="7" pc="37" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 7</Message>
+    </LocalVariable>
+    <SourceLine classname="com.google.javascript.jscomp.ProcessClosurePrimitives" primary="true" start="372" end="372" startBytecode="35" endBytecode="35" sourcefile="ProcessClosurePrimitives.java" sourcepath="com/google/javascript/jscomp/ProcessClosurePrimitives.java">
+      <Message>At ProcessClosurePrimitives.java:[line 372]</Message>
+    </SourceLine>
+    <SourceLine classname="com.google.javascript.jscomp.ProcessClosurePrimitives" start="373" end="373" startBytecode="42" endBytecode="42" sourcefile="ProcessClosurePrimitives.java" sourcepath="com/google/javascript/jscomp/ProcessClosurePrimitives.java" role="SOURCE_LINE_ANOTHER_INSTANCE">
+      <Message>Another occurrence at ProcessClosurePrimitives.java:[line 373]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.BASE_VALUE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="SF_SWITCH_NO_DEFAULT" priority="2" rank="19" abbrev="SF" category="STYLE" instanceHash="e8e21eeb96eaedac4095a5b7b5f8e7c7" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Switch statement found where default case is missing</ShortMessage>
+    <LongMessage>Switch statement found in com.google.javascript.jscomp.ProcessClosurePrimitives.visit(NodeTraversal, Node, Node) where default case is missing</LongMessage>
+    <Class classname="com.google.javascript.jscomp.ProcessClosurePrimitives" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.ProcessClosurePrimitives" start="42" end="1215" sourcefile="ProcessClosurePrimitives.java" sourcepath="com/google/javascript/jscomp/ProcessClosurePrimitives.java">
+        <Message>At ProcessClosurePrimitives.java:[lines 42-1215]</Message>
+      </SourceLine>
+      <Message>In class com.google.javascript.jscomp.ProcessClosurePrimitives</Message>
+    </Class>
+    <Method classname="com.google.javascript.jscomp.ProcessClosurePrimitives" name="visit" signature="(Lcom/google/javascript/jscomp/NodeTraversal;Lcom/google/javascript/rhino/Node;Lcom/google/javascript/rhino/Node;)V" isStatic="false" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.ProcessClosurePrimitives" start="203" end="290" startBytecode="0" endBytecode="873" sourcefile="ProcessClosurePrimitives.java" sourcepath="com/google/javascript/jscomp/ProcessClosurePrimitives.java"/>
+      <Message>In method com.google.javascript.jscomp.ProcessClosurePrimitives.visit(NodeTraversal, Node, Node)</Message>
+    </Method>
+    <SourceLine classname="com.google.javascript.jscomp.ProcessClosurePrimitives" primary="true" start="203" end="286" startBytecode="4" endBytecode="546" sourcefile="ProcessClosurePrimitives.java" sourcepath="com/google/javascript/jscomp/ProcessClosurePrimitives.java">
+      <Message>At ProcessClosurePrimitives.java:[lines 203-286]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="DLS_DEAD_LOCAL_STORE" abbrev="DLS" category="STYLE">
+    <ShortDescription>Dead store to local variable</ShortDescription>
+    <Details><![CDATA[
+
+<p>
+This instruction assigns a value to a local variable,
+but the value is not read or used in any subsequent instruction.
+Often, this indicates an error, because the value computed is never
+used.
+</p>
+<p>
+Note that Sun's javac compiler often generates dead stores for
+final local variables.  Because SpotBugs is a bytecode-based tool,
+there is no easy way to eliminate these false positives.
+</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="SF_SWITCH_NO_DEFAULT" abbrev="SF" category="STYLE">
+    <ShortDescription>Switch statement found where default case is missing</ShortDescription>
+    <Details><![CDATA[
+
+  <p> This method contains a switch statement where default case is missing.
+  Usually you need to provide a default case.</p>
+  <p>Because the analysis only looks at the generated bytecode, this warning can be incorrect triggered if
+the default case is at the end of the switch statement and the switch statement doesn't contain break statements for other
+cases.
+
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="SF">
+    <Description>Switch case falls through</Description>
+  </BugCode>
+  <BugCode abbrev="DLS" cweid="563">
+    <Description>Dead local store</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 14 Nov 2018 05:01:54 -0500" total_classes="4" referenced_classes="75" total_bugs="2" total_size="660" num_packages="1" java_version="1.8.0_121" vm_version="25.121-b13" cpu_seconds="12.37" clock_seconds="6.58" peak_mbytes="164.92" alloc_mbytes="1820.50" gc_seconds="0.10" priority_2="2">
+    <FileStats path="com/google/javascript/jscomp/ProcessClosurePrimitives.java" bugCount="2" size="660" bugHash="f4d0fa4255ffb3b2301e30799cd01101"/>
+    <PackageStats package="com.google.javascript.jscomp" total_bugs="2" total_types="4" total_size="660" priority_2="2">
+      <ClassStats class="com.google.javascript.jscomp.ProcessClosurePrimitives" sourceFile="ProcessClosurePrimitives.java" interface="false" size="488" bugs="2" priority_2="2"/>
+      <ClassStats class="com.google.javascript.jscomp.ProcessClosurePrimitives$1" sourceFile="ProcessClosurePrimitives.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.ProcessClosurePrimitives$ProvidedName" sourceFile="ProcessClosurePrimitives.java" interface="false" size="149" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.ProcessClosurePrimitives$UnrecognizedRequire" sourceFile="ProcessClosurePrimitives.java" interface="false" size="11" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="1199" invocations="685" avgMicrosecondsPerInvocation="1751" maxMicrosecondsPerInvocation="37523" standardDeviationMicrosecondsPerInvocation="3668"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="626" invocations="680" avgMicrosecondsPerInvocation="921" maxMicrosecondsPerInvocation="43331" standardDeviationMicrosecondsPerInvocation="3061"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="263" invocations="32" avgMicrosecondsPerInvocation="8236" maxMicrosecondsPerInvocation="76578" standardDeviationMicrosecondsPerInvocation="15838"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="231" invocations="75" avgMicrosecondsPerInvocation="3084" maxMicrosecondsPerInvocation="33599" standardDeviationMicrosecondsPerInvocation="6393"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="214" invocations="75" avgMicrosecondsPerInvocation="2860" maxMicrosecondsPerInvocation="34249" standardDeviationMicrosecondsPerInvocation="5305"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="201" invocations="32" avgMicrosecondsPerInvocation="6294" maxMicrosecondsPerInvocation="49989" standardDeviationMicrosecondsPerInvocation="11657"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="187" invocations="32" avgMicrosecondsPerInvocation="5870" maxMicrosecondsPerInvocation="38285" standardDeviationMicrosecondsPerInvocation="8729"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="164" invocations="290" avgMicrosecondsPerInvocation="567" maxMicrosecondsPerInvocation="16537" standardDeviationMicrosecondsPerInvocation="1567"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="162" invocations="32" avgMicrosecondsPerInvocation="5069" maxMicrosecondsPerInvocation="43683" standardDeviationMicrosecondsPerInvocation="9434"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="159" invocations="32" avgMicrosecondsPerInvocation="4995" maxMicrosecondsPerInvocation="87171" standardDeviationMicrosecondsPerInvocation="16779"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="159" invocations="32" avgMicrosecondsPerInvocation="4978" maxMicrosecondsPerInvocation="45489" standardDeviationMicrosecondsPerInvocation="9770"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="107" invocations="32" avgMicrosecondsPerInvocation="3359" maxMicrosecondsPerInvocation="32656" standardDeviationMicrosecondsPerInvocation="6183"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="106" invocations="104" avgMicrosecondsPerInvocation="1026" maxMicrosecondsPerInvocation="33034" standardDeviationMicrosecondsPerInvocation="4347"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="90" invocations="75" avgMicrosecondsPerInvocation="1202" maxMicrosecondsPerInvocation="67419" standardDeviationMicrosecondsPerInvocation="7710"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="85" invocations="646" avgMicrosecondsPerInvocation="132" maxMicrosecondsPerInvocation="10918" standardDeviationMicrosecondsPerInvocation="464"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

@@ -1,0 +1,30 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Chart-24/source/org/jfree/chart/renderer/GrayPaintScale.java:144: warning: [EqualsHashCode] Classes that override equals should also override hashCode.
+    public boolean equals(Object obj) {
+                   ^
+    (see http://errorprone.info/bugpattern/EqualsHashCode)
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Chart-24/source/org/jfree/chart/renderer/GrayPaintScale.java:100: warning: [MissingOverride] getLowerBound implements method in PaintScale; expected @Override
+    public double getLowerBound() {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double getLowerBound() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Chart-24/source/org/jfree/chart/renderer/GrayPaintScale.java:111: warning: [MissingOverride] getUpperBound implements method in PaintScale; expected @Override
+    public double getUpperBound() {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double getUpperBound() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Chart-24/source/org/jfree/chart/renderer/GrayPaintScale.java:123: warning: [MissingOverride] getPaint implements method in PaintScale; expected @Override
+    public Paint getPaint(double value) {
+                 ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Paint getPaint(double value) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Chart-24/source/org/jfree/chart/renderer/GrayPaintScale.java:144: warning: [MissingOverride] equals overrides method in Object; expected @Override
+    public boolean equals(Object obj) {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public boolean equals(Object obj) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Chart-24/source/org/jfree/chart/renderer/GrayPaintScale.java:169: warning: [MissingOverride] clone implements method in PublicCloneable; expected @Override
+    public Object clone() throws CloneNotSupportedException {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Object clone() throws CloneNotSupportedException {'?
+6 warnings

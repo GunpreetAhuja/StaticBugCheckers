@@ -1,0 +1,13 @@
+Found 1 issue
+
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-14/src/com/google/javascript/jscomp/ControlFlowAnalysis.java:576: error: NULL_DEREFERENCE
+  object returned by `cur.getLastChild()` could be null and is dereferenced by call to `computeFallThrough(...)` at line 576.
+  574.             && cur.getLastChild() != previous) {
+  575.           if (lastJump == node) {
+  576. >           createEdge(lastJump, Branch.UNCOND, computeFallThrough(
+  577.                 cur.getLastChild()));
+  578.           } else {
+
+Summary of the reports
+
+  NULL_DEREFERENCE: 1

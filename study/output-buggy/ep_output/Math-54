@@ -1,0 +1,31 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-54/src/main/java/org/apache/commons/math/dfp/Dfp.java:288: error: [IdentityBinaryExpression] A binary expression where both operands are the same is usually incorrect; the value of this expression is equivalent to `!Double.isNan(x)`.
+            if (x != x) {
+                  ^
+    (see http://errorprone.info/bugpattern/IdentityBinaryExpression)
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-54/src/main/java/org/apache/commons/math/dfp/Dfp.java:632: warning: [MissingOverride] getField implements method in FieldElement; expected @Override
+    public DfpField getField() {
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public DfpField getField() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-54/src/main/java/org/apache/commons/math/dfp/Dfp.java:1165: warning: [MissingOverride] add implements method in FieldElement; expected @Override
+    public Dfp add(final Dfp x) {
+               ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Dfp add(final Dfp x) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-54/src/main/java/org/apache/commons/math/dfp/Dfp.java:1323: warning: [MissingOverride] subtract implements method in FieldElement; expected @Override
+    public Dfp subtract(final Dfp x) {
+               ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Dfp subtract(final Dfp x) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-54/src/main/java/org/apache/commons/math/dfp/Dfp.java:1410: warning: [MissingOverride] multiply implements method in FieldElement; expected @Override
+    public Dfp multiply(final Dfp x) {
+               ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Dfp multiply(final Dfp x) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-54/src/main/java/org/apache/commons/math/dfp/Dfp.java:1579: warning: [MissingOverride] divide implements method in FieldElement; expected @Override
+    public Dfp divide(Dfp divisor) {
+               ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Dfp divide(Dfp divisor) {'?
+1 error
+5 warnings

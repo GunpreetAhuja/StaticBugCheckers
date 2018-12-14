@@ -1,0 +1,13 @@
+Found 1 issue
+
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-121/src/com/google/javascript/jscomp/InlineVariables.java:410: error: NULL_DEREFERENCE
+  object `decl` last assigned on line 400 could be null and is dereferenced by call to `removeDeclaration(...)` at line 410.
+  408.         }
+  409.   
+  410. >       removeDeclaration(decl);
+  411.       }
+  412.   
+
+Summary of the reports
+
+  NULL_DEREFERENCE: 1

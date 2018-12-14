@@ -1,0 +1,26 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-58/src/main/java/org/apache/commons/math/optimization/fitting/GaussianFitter.java:87: warning: [MissingOverride] value implements method in ParametricUnivariateRealFunction; expected @Override
+                public double value(double x, double[] p) {
+                              ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double value(double x, double[] p) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-58/src/main/java/org/apache/commons/math/optimization/fitting/GaussianFitter.java:87: warning: [Overrides] Varargs doesn't agree for overridden method
+                public double value(double x, double[] p) {
+                              ^
+    (see http://errorprone.info/bugpattern/Overrides)
+  Did you mean 'public double value(double x, double... p) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-58/src/main/java/org/apache/commons/math/optimization/fitting/GaussianFitter.java:97: warning: [MissingOverride] gradient implements method in ParametricUnivariateRealFunction; expected @Override
+                public double[] gradient(double x, double[] p) {
+                                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double[] gradient(double x, double[] p) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-58/src/main/java/org/apache/commons/math/optimization/fitting/GaussianFitter.java:97: warning: [Overrides] Varargs doesn't agree for overridden method
+                public double[] gradient(double x, double[] p) {
+                                ^
+    (see http://errorprone.info/bugpattern/Overrides)
+  Did you mean 'public double[] gradient(double x, double... p) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-58/src/main/java/org/apache/commons/math/optimization/fitting/GaussianFitter.java:303: warning: [MissingOverride] compare implements method in Comparator; expected @Override
+                public int compare(WeightedObservedPoint p1, WeightedObservedPoint p2) {
+                           ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int compare(WeightedObservedPoint p1, WeightedObservedPoint p2) {'?
+5 warnings

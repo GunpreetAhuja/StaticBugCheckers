@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.1.0" sequence="0" timestamp="1542185631000" analysisTimestamp="1542185633800" release="">
+  <Project projectName="">
+    <Jar>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-30/src</Jar>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-30/build/classes</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-30/lib/args4j.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-30/lib/guava.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-30/lib/json.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-30/lib/jsr305.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-30/lib/protobuf-java.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-30/build/lib/rhino.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-30/lib/ant.jar</AuxClasspathEntry>
+  </Project>
+  <BugInstance type="NP_UNWRITTEN_FIELD" priority="2" rank="8" abbrev="NP" category="CORRECTNESS" instanceHash="c98571a01aa63951603706e4734f8a56" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="476">
+    <ShortMessage>Read of unwritten field</ShortMessage>
+    <LongMessage>Read of unwritten field depends in com.google.javascript.jscomp.MustBeReachingVariableDef.addToDefIfLocal(String, Node, Node, MustBeReachingVariableDef$MustDef)</LongMessage>
+    <Class classname="com.google.javascript.jscomp.MustBeReachingVariableDef" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.MustBeReachingVariableDef" start="45" end="436" sourcefile="MustBeReachingVariableDef.java" sourcepath="com/google/javascript/jscomp/MustBeReachingVariableDef.java">
+        <Message>At MustBeReachingVariableDef.java:[lines 45-436]</Message>
+      </SourceLine>
+      <Message>In class com.google.javascript.jscomp.MustBeReachingVariableDef</Message>
+    </Class>
+    <Method classname="com.google.javascript.jscomp.MustBeReachingVariableDef" name="addToDefIfLocal" signature="(Ljava/lang/String;Lcom/google/javascript/rhino/Node;Lcom/google/javascript/rhino/Node;Lcom/google/javascript/jscomp/MustBeReachingVariableDef$MustDef;)V" isStatic="false" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.MustBeReachingVariableDef" start="328" end="357" startBytecode="0" endBytecode="333" sourcefile="MustBeReachingVariableDef.java" sourcepath="com/google/javascript/jscomp/MustBeReachingVariableDef.java"/>
+      <Message>In method com.google.javascript.jscomp.MustBeReachingVariableDef.addToDefIfLocal(String, Node, Node, MustBeReachingVariableDef$MustDef)</Message>
+    </Method>
+    <Field classname="com.google.javascript.jscomp.MustBeReachingVariableDef$Definition" name="depends" signature="Ljava/util/Set;" isStatic="false" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.MustBeReachingVariableDef$Definition" sourcefile="MustBeReachingVariableDef.java" sourcepath="com/google/javascript/jscomp/MustBeReachingVariableDef.java">
+        <Message>In MustBeReachingVariableDef.java</Message>
+      </SourceLine>
+      <Message>Field com.google.javascript.jscomp.MustBeReachingVariableDef$Definition.depends</Message>
+    </Field>
+    <SourceLine classname="com.google.javascript.jscomp.MustBeReachingVariableDef" primary="true" start="341" end="341" startBytecode="99" endBytecode="99" sourcefile="MustBeReachingVariableDef.java" sourcepath="com/google/javascript/jscomp/MustBeReachingVariableDef.java">
+      <Message>At MustBeReachingVariableDef.java:[line 341]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="NP_UNWRITTEN_FIELD" priority="2" rank="8" abbrev="NP" category="CORRECTNESS" instanceHash="795aa1dcdf94d1662745151727497384" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="476">
+    <ShortMessage>Read of unwritten field</ShortMessage>
+    <LongMessage>Read of unwritten field reachingDef in com.google.javascript.jscomp.MustBeReachingVariableDef.addToDefIfLocal(String, Node, Node, MustBeReachingVariableDef$MustDef)</LongMessage>
+    <Class classname="com.google.javascript.jscomp.MustBeReachingVariableDef" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.MustBeReachingVariableDef" start="45" end="436" sourcefile="MustBeReachingVariableDef.java" sourcepath="com/google/javascript/jscomp/MustBeReachingVariableDef.java">
+        <Message>At MustBeReachingVariableDef.java:[lines 45-436]</Message>
+      </SourceLine>
+      <Message>In class com.google.javascript.jscomp.MustBeReachingVariableDef</Message>
+    </Class>
+    <Method classname="com.google.javascript.jscomp.MustBeReachingVariableDef" name="addToDefIfLocal" signature="(Ljava/lang/String;Lcom/google/javascript/rhino/Node;Lcom/google/javascript/rhino/Node;Lcom/google/javascript/jscomp/MustBeReachingVariableDef$MustDef;)V" isStatic="false" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.MustBeReachingVariableDef" start="328" end="357" startBytecode="0" endBytecode="333" sourcefile="MustBeReachingVariableDef.java" sourcepath="com/google/javascript/jscomp/MustBeReachingVariableDef.java"/>
+      <Message>In method com.google.javascript.jscomp.MustBeReachingVariableDef.addToDefIfLocal(String, Node, Node, MustBeReachingVariableDef$MustDef)</Message>
+    </Method>
+    <Field classname="com.google.javascript.jscomp.MustBeReachingVariableDef$MustDef" name="reachingDef" signature="Ljava/util/Map;" isStatic="false" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.MustBeReachingVariableDef$MustDef" sourcefile="MustBeReachingVariableDef.java" sourcepath="com/google/javascript/jscomp/MustBeReachingVariableDef.java">
+        <Message>In MustBeReachingVariableDef.java</Message>
+      </SourceLine>
+      <Message>Field com.google.javascript.jscomp.MustBeReachingVariableDef$MustDef.reachingDef</Message>
+    </Field>
+    <SourceLine classname="com.google.javascript.jscomp.MustBeReachingVariableDef" primary="true" start="336" end="336" startBytecode="33" endBytecode="33" sourcefile="MustBeReachingVariableDef.java" sourcepath="com/google/javascript/jscomp/MustBeReachingVariableDef.java">
+      <Message>At MustBeReachingVariableDef.java:[line 336]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="NP_UNWRITTEN_FIELD" priority="2" rank="8" abbrev="NP" category="CORRECTNESS" instanceHash="99d739dc42e9f87e9ee5b6ac642de608" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="476">
+    <ShortMessage>Read of unwritten field</ShortMessage>
+    <LongMessage>Read of unwritten field depends in com.google.javascript.jscomp.MustBeReachingVariableDef.dependsOnOuterScopeVars(String, Node)</LongMessage>
+    <Class classname="com.google.javascript.jscomp.MustBeReachingVariableDef" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.MustBeReachingVariableDef" start="45" end="436" sourcefile="MustBeReachingVariableDef.java" sourcepath="com/google/javascript/jscomp/MustBeReachingVariableDef.java">
+        <Message>At MustBeReachingVariableDef.java:[lines 45-436]</Message>
+      </SourceLine>
+      <Message>In class com.google.javascript.jscomp.MustBeReachingVariableDef</Message>
+    </Class>
+    <Method classname="com.google.javascript.jscomp.MustBeReachingVariableDef" name="dependsOnOuterScopeVars" signature="(Ljava/lang/String;Lcom/google/javascript/rhino/Node;)Z" isStatic="false" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.MustBeReachingVariableDef" start="426" end="436" startBytecode="0" endBytecode="208" sourcefile="MustBeReachingVariableDef.java" sourcepath="com/google/javascript/jscomp/MustBeReachingVariableDef.java"/>
+      <Message>In method com.google.javascript.jscomp.MustBeReachingVariableDef.dependsOnOuterScopeVars(String, Node)</Message>
+    </Method>
+    <Field classname="com.google.javascript.jscomp.MustBeReachingVariableDef$Definition" name="depends" signature="Ljava/util/Set;" isStatic="false" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.MustBeReachingVariableDef$Definition" sourcefile="MustBeReachingVariableDef.java" sourcepath="com/google/javascript/jscomp/MustBeReachingVariableDef.java">
+        <Message>In MustBeReachingVariableDef.java</Message>
+      </SourceLine>
+      <Message>Field com.google.javascript.jscomp.MustBeReachingVariableDef$Definition.depends</Message>
+    </Field>
+    <SourceLine classname="com.google.javascript.jscomp.MustBeReachingVariableDef" primary="true" start="431" end="431" startBytecode="65" endBytecode="65" sourcefile="MustBeReachingVariableDef.java" sourcepath="com/google/javascript/jscomp/MustBeReachingVariableDef.java">
+      <Message>At MustBeReachingVariableDef.java:[line 431]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="NP_UNWRITTEN_FIELD" priority="2" rank="8" abbrev="NP" category="CORRECTNESS" instanceHash="a5efa360ae594a5ce504eceaa37f3bad" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="476">
+    <ShortMessage>Read of unwritten field</ShortMessage>
+    <LongMessage>Read of unwritten field reachingDef in com.google.javascript.jscomp.MustBeReachingVariableDef.dependsOnOuterScopeVars(String, Node)</LongMessage>
+    <Class classname="com.google.javascript.jscomp.MustBeReachingVariableDef" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.MustBeReachingVariableDef" start="45" end="436" sourcefile="MustBeReachingVariableDef.java" sourcepath="com/google/javascript/jscomp/MustBeReachingVariableDef.java">
+        <Message>At MustBeReachingVariableDef.java:[lines 45-436]</Message>
+      </SourceLine>
+      <Message>In class com.google.javascript.jscomp.MustBeReachingVariableDef</Message>
+    </Class>
+    <Method classname="com.google.javascript.jscomp.MustBeReachingVariableDef" name="dependsOnOuterScopeVars" signature="(Ljava/lang/String;Lcom/google/javascript/rhino/Node;)Z" isStatic="false" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.MustBeReachingVariableDef" start="426" end="436" startBytecode="0" endBytecode="208" sourcefile="MustBeReachingVariableDef.java" sourcepath="com/google/javascript/jscomp/MustBeReachingVariableDef.java"/>
+      <Message>In method com.google.javascript.jscomp.MustBeReachingVariableDef.dependsOnOuterScopeVars(String, Node)</Message>
+    </Method>
+    <Field classname="com.google.javascript.jscomp.MustBeReachingVariableDef$MustDef" name="reachingDef" signature="Ljava/util/Map;" isStatic="false" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.MustBeReachingVariableDef$MustDef" sourcefile="MustBeReachingVariableDef.java" sourcepath="com/google/javascript/jscomp/MustBeReachingVariableDef.java">
+        <Message>In MustBeReachingVariableDef.java</Message>
+      </SourceLine>
+      <Message>Field com.google.javascript.jscomp.MustBeReachingVariableDef$MustDef.reachingDef</Message>
+    </Field>
+    <SourceLine classname="com.google.javascript.jscomp.MustBeReachingVariableDef" primary="true" start="429" end="429" startBytecode="50" endBytecode="50" sourcefile="MustBeReachingVariableDef.java" sourcepath="com/google/javascript/jscomp/MustBeReachingVariableDef.java">
+      <Message>At MustBeReachingVariableDef.java:[line 429]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="NP_UNWRITTEN_FIELD" priority="2" rank="8" abbrev="NP" category="CORRECTNESS" instanceHash="d73e4863f4980a9d439719d77b8d4e99" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="476">
+    <ShortMessage>Read of unwritten field</ShortMessage>
+    <LongMessage>Read of unwritten field depends in com.google.javascript.jscomp.MustBeReachingVariableDef.escapeParameters(MustBeReachingVariableDef$MustDef)</LongMessage>
+    <Class classname="com.google.javascript.jscomp.MustBeReachingVariableDef" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.MustBeReachingVariableDef" start="45" end="436" sourcefile="MustBeReachingVariableDef.java" sourcepath="com/google/javascript/jscomp/MustBeReachingVariableDef.java">
+        <Message>At MustBeReachingVariableDef.java:[lines 45-436]</Message>
+      </SourceLine>
+      <Message>In class com.google.javascript.jscomp.MustBeReachingVariableDef</Message>
+    </Class>
+    <Method classname="com.google.javascript.jscomp.MustBeReachingVariableDef" name="escapeParameters" signature="(Lcom/google/javascript/jscomp/MustBeReachingVariableDef$MustDef;)V" isStatic="false" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.MustBeReachingVariableDef" start="360" end="381" startBytecode="0" endBytecode="295" sourcefile="MustBeReachingVariableDef.java" sourcepath="com/google/javascript/jscomp/MustBeReachingVariableDef.java"/>
+      <Message>In method com.google.javascript.jscomp.MustBeReachingVariableDef.escapeParameters(MustBeReachingVariableDef$MustDef)</Message>
+    </Method>
+    <Field classname="com.google.javascript.jscomp.MustBeReachingVariableDef$Definition" name="depends" signature="Ljava/util/Set;" isStatic="false" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.MustBeReachingVariableDef$Definition" sourcefile="MustBeReachingVariableDef.java" sourcepath="com/google/javascript/jscomp/MustBeReachingVariableDef.java">
+        <Message>In MustBeReachingVariableDef.java</Message>
+      </SourceLine>
+      <Message>Field com.google.javascript.jscomp.MustBeReachingVariableDef$Definition.depends</Message>
+    </Field>
+    <SourceLine classname="com.google.javascript.jscomp.MustBeReachingVariableDef" primary="true" start="375" end="375" startBytecode="108" endBytecode="108" sourcefile="MustBeReachingVariableDef.java" sourcepath="com/google/javascript/jscomp/MustBeReachingVariableDef.java">
+      <Message>At MustBeReachingVariableDef.java:[line 375]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="NP_UNWRITTEN_FIELD" priority="2" rank="8" abbrev="NP" category="CORRECTNESS" instanceHash="b4a3826353c55bd74dd78f3ea4fff03d" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="476">
+    <ShortMessage>Read of unwritten field</ShortMessage>
+    <LongMessage>Read of unwritten field reachingDef in com.google.javascript.jscomp.MustBeReachingVariableDef.escapeParameters(MustBeReachingVariableDef$MustDef)</LongMessage>
+    <Class classname="com.google.javascript.jscomp.MustBeReachingVariableDef" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.MustBeReachingVariableDef" start="45" end="436" sourcefile="MustBeReachingVariableDef.java" sourcepath="com/google/javascript/jscomp/MustBeReachingVariableDef.java">
+        <Message>At MustBeReachingVariableDef.java:[lines 45-436]</Message>
+      </SourceLine>
+      <Message>In class com.google.javascript.jscomp.MustBeReachingVariableDef</Message>
+    </Class>
+    <Method classname="com.google.javascript.jscomp.MustBeReachingVariableDef" name="escapeParameters" signature="(Lcom/google/javascript/jscomp/MustBeReachingVariableDef$MustDef;)V" isStatic="false" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.MustBeReachingVariableDef" start="360" end="381" startBytecode="0" endBytecode="295" sourcefile="MustBeReachingVariableDef.java" sourcepath="com/google/javascript/jscomp/MustBeReachingVariableDef.java"/>
+      <Message>In method com.google.javascript.jscomp.MustBeReachingVariableDef.escapeParameters(MustBeReachingVariableDef$MustDef)</Message>
+    </Method>
+    <Field classname="com.google.javascript.jscomp.MustBeReachingVariableDef$MustDef" name="reachingDef" signature="Ljava/util/Map;" isStatic="false" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.MustBeReachingVariableDef$MustDef" sourcefile="MustBeReachingVariableDef.java" sourcepath="com/google/javascript/jscomp/MustBeReachingVariableDef.java">
+        <Message>In MustBeReachingVariableDef.java</Message>
+      </SourceLine>
+      <Message>Field com.google.javascript.jscomp.MustBeReachingVariableDef$MustDef.reachingDef</Message>
+    </Field>
+    <SourceLine classname="com.google.javascript.jscomp.MustBeReachingVariableDef" primary="true" start="365" end="365" startBytecode="41" endBytecode="41" sourcefile="MustBeReachingVariableDef.java" sourcepath="com/google/javascript/jscomp/MustBeReachingVariableDef.java">
+      <Message>At MustBeReachingVariableDef.java:[line 365]</Message>
+    </SourceLine>
+    <SourceLine classname="com.google.javascript.jscomp.MustBeReachingVariableDef" start="370" end="370" startBytecode="54" endBytecode="54" sourcefile="MustBeReachingVariableDef.java" sourcepath="com/google/javascript/jscomp/MustBeReachingVariableDef.java" role="SOURCE_LINE_ANOTHER_INSTANCE">
+      <Message>Another occurrence at MustBeReachingVariableDef.java:[line 370]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="NP_UNWRITTEN_FIELD" priority="2" rank="8" abbrev="NP" category="CORRECTNESS" instanceHash="59ce84031a27c215a7bedba3b62f9daf" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="476">
+    <ShortMessage>Read of unwritten field</ShortMessage>
+    <LongMessage>Read of unwritten field reachingDef in com.google.javascript.jscomp.MustBeReachingVariableDef.getDef(String, Node)</LongMessage>
+    <Class classname="com.google.javascript.jscomp.MustBeReachingVariableDef" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.MustBeReachingVariableDef" start="45" end="436" sourcefile="MustBeReachingVariableDef.java" sourcepath="com/google/javascript/jscomp/MustBeReachingVariableDef.java">
+        <Message>At MustBeReachingVariableDef.java:[lines 45-436]</Message>
+      </SourceLine>
+      <Message>In class com.google.javascript.jscomp.MustBeReachingVariableDef</Message>
+    </Class>
+    <Method classname="com.google.javascript.jscomp.MustBeReachingVariableDef" name="getDef" signature="(Ljava/lang/String;Lcom/google/javascript/rhino/Node;)Lcom/google/javascript/rhino/Node;" isStatic="false" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.MustBeReachingVariableDef" start="414" end="421" startBytecode="0" endBytecode="140" sourcefile="MustBeReachingVariableDef.java" sourcepath="com/google/javascript/jscomp/MustBeReachingVariableDef.java"/>
+      <Message>In method com.google.javascript.jscomp.MustBeReachingVariableDef.getDef(String, Node)</Message>
+    </Method>
+    <Field classname="com.google.javascript.jscomp.MustBeReachingVariableDef$MustDef" name="reachingDef" signature="Ljava/util/Map;" isStatic="false" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.MustBeReachingVariableDef$MustDef" sourcefile="MustBeReachingVariableDef.java" sourcepath="com/google/javascript/jscomp/MustBeReachingVariableDef.java">
+        <Message>In MustBeReachingVariableDef.java</Message>
+      </SourceLine>
+      <Message>Field com.google.javascript.jscomp.MustBeReachingVariableDef$MustDef.reachingDef</Message>
+    </Field>
+    <SourceLine classname="com.google.javascript.jscomp.MustBeReachingVariableDef" primary="true" start="417" end="417" startBytecode="50" endBytecode="50" sourcefile="MustBeReachingVariableDef.java" sourcepath="com/google/javascript/jscomp/MustBeReachingVariableDef.java">
+      <Message>At MustBeReachingVariableDef.java:[line 417]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="CORRECTNESS">
+    <Description>Correctness</Description>
+  </BugCategory>
+  <BugPattern type="NP_UNWRITTEN_FIELD" abbrev="NP" category="CORRECTNESS">
+    <ShortDescription>Read of unwritten field</ShortDescription>
+    <Details><![CDATA[
+
+  <p> The program is dereferencing a field that does not seem to ever have a non-null value written to it.
+Unless the field is initialized via some mechanism not seen by the analysis,
+dereferencing this value will generate a null pointer exception.
+</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="NP" cweid="476">
+    <Description>Null pointer dereference</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 14 Nov 2018 03:53:51 -0500" total_classes="14" referenced_classes="107" total_bugs="7" total_size="444" num_packages="1" java_version="1.8.0_121" vm_version="25.121-b13" cpu_seconds="11.15" clock_seconds="6.17" peak_mbytes="126.23" alloc_mbytes="1820.50" gc_seconds="0.08" priority_2="7">
+    <FileStats path="com/google/javascript/jscomp/FlowSensitiveInlineVariables.java" bugCount="0" size="238"/>
+    <FileStats path="com/google/javascript/jscomp/MustBeReachingVariableDef.java" bugCount="7" size="206" bugHash="121a954ae44112368af9981e5eb6a4ec"/>
+    <PackageStats package="com.google.javascript.jscomp" total_bugs="7" total_types="14" total_size="444" priority_2="7">
+      <ClassStats class="com.google.javascript.jscomp.FlowSensitiveInlineVariables" sourceFile="FlowSensitiveInlineVariables.java" interface="false" size="64" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.FlowSensitiveInlineVariables$1" sourceFile="FlowSensitiveInlineVariables.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.FlowSensitiveInlineVariables$Candidate" sourceFile="FlowSensitiveInlineVariables.java" interface="false" size="84" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.FlowSensitiveInlineVariables$Candidate$1" sourceFile="FlowSensitiveInlineVariables.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.FlowSensitiveInlineVariables$Candidate$2" sourceFile="FlowSensitiveInlineVariables.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.FlowSensitiveInlineVariables$Candidate$3" sourceFile="FlowSensitiveInlineVariables.java" interface="false" size="14" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.FlowSensitiveInlineVariables$Candidate$4" sourceFile="FlowSensitiveInlineVariables.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.FlowSensitiveInlineVariables$GatherCandiates" sourceFile="FlowSensitiveInlineVariables.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.FlowSensitiveInlineVariables$GatherCandiates$1" sourceFile="FlowSensitiveInlineVariables.java" interface="false" size="20" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.MustBeReachingVariableDef" sourceFile="MustBeReachingVariableDef.java" interface="false" size="134" bugs="7" priority_2="7"/>
+      <ClassStats class="com.google.javascript.jscomp.MustBeReachingVariableDef$1" sourceFile="MustBeReachingVariableDef.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.MustBeReachingVariableDef$Definition" sourceFile="MustBeReachingVariableDef.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.MustBeReachingVariableDef$MustDef" sourceFile="MustBeReachingVariableDef.java" interface="false" size="20" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.MustBeReachingVariableDef$MustDefJoin" sourceFile="MustBeReachingVariableDef.java" interface="false" size="29" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="965" invocations="765" avgMicrosecondsPerInvocation="1262" maxMicrosecondsPerInvocation="33711" standardDeviationMicrosecondsPerInvocation="2661"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="707" invocations="760" avgMicrosecondsPerInvocation="930" maxMicrosecondsPerInvocation="80440" standardDeviationMicrosecondsPerInvocation="4156"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="327" invocations="107" avgMicrosecondsPerInvocation="3062" maxMicrosecondsPerInvocation="86436" standardDeviationMicrosecondsPerInvocation="9501"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="267" invocations="312" avgMicrosecondsPerInvocation="858" maxMicrosecondsPerInvocation="20870" standardDeviationMicrosecondsPerInvocation="2390"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="215" invocations="107" avgMicrosecondsPerInvocation="2017" maxMicrosecondsPerInvocation="34189" standardDeviationMicrosecondsPerInvocation="4895"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="199" invocations="32" avgMicrosecondsPerInvocation="6220" maxMicrosecondsPerInvocation="67716" standardDeviationMicrosecondsPerInvocation="16155"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="161" invocations="32" avgMicrosecondsPerInvocation="5047" maxMicrosecondsPerInvocation="39426" standardDeviationMicrosecondsPerInvocation="10041"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="128" invocations="107" avgMicrosecondsPerInvocation="1205" maxMicrosecondsPerInvocation="27684" standardDeviationMicrosecondsPerInvocation="4321"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="116" invocations="30" avgMicrosecondsPerInvocation="3876" maxMicrosecondsPerInvocation="25705" standardDeviationMicrosecondsPerInvocation="7217"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="107" invocations="32" avgMicrosecondsPerInvocation="3348" maxMicrosecondsPerInvocation="34955" standardDeviationMicrosecondsPerInvocation="7674"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="94" invocations="728" avgMicrosecondsPerInvocation="129" maxMicrosecondsPerInvocation="8062" standardDeviationMicrosecondsPerInvocation="410"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="92" invocations="32" avgMicrosecondsPerInvocation="2875" maxMicrosecondsPerInvocation="48407" standardDeviationMicrosecondsPerInvocation="8814"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="89" invocations="107" avgMicrosecondsPerInvocation="839" maxMicrosecondsPerInvocation="15146" standardDeviationMicrosecondsPerInvocation="2382"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="84" invocations="32" avgMicrosecondsPerInvocation="2628" maxMicrosecondsPerInvocation="75178" standardDeviationMicrosecondsPerInvocation="13039"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="82" invocations="107" avgMicrosecondsPerInvocation="775" maxMicrosecondsPerInvocation="36789" standardDeviationMicrosecondsPerInvocation="4022"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

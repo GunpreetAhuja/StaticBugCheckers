@@ -1,0 +1,6 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-22/src/main/java/org/apache/commons/lang3/math/Fraction.java:887: warning: [MissingOverride] compareTo implements method in Comparable; expected @Override
+    public int compareTo(Fraction other) {
+               ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int compareTo(Fraction other) {'?
+1 warning

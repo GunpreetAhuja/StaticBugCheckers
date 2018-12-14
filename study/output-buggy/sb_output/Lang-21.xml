@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.1.0" sequence="0" timestamp="1542186097000" analysisTimestamp="1542186100667" release="">
+  <Project projectName="">
+    <Jar>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Lang-21/src/main/java</Jar>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Lang-21/target/classes</AuxClasspathEntry>
+  </Project>
+  <BugInstance type="SF_SWITCH_FALLTHROUGH" priority="2" rank="17" abbrev="SF" category="STYLE" instanceHash="7c04ade5c3e6696de1186ec626b8f244" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="484">
+    <ShortMessage>Switch statement found where one case falls through to the next case</ShortMessage>
+    <LongMessage>Switch statement found in org.apache.commons.lang3.time.DateUtils.getFragment(Calendar, int, int) where one case falls through to the next case</LongMessage>
+    <Class classname="org.apache.commons.lang3.time.DateUtils" primary="true">
+      <SourceLine classname="org.apache.commons.lang3.time.DateUtils" start="60" end="1815" sourcefile="DateUtils.java" sourcepath="org/apache/commons/lang3/time/DateUtils.java">
+        <Message>At DateUtils.java:[lines 60-1815]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.lang3.time.DateUtils</Message>
+    </Class>
+    <Method classname="org.apache.commons.lang3.time.DateUtils" name="getFragment" signature="(Ljava/util/Calendar;II)J" isStatic="true" primary="true">
+      <SourceLine classname="org.apache.commons.lang3.time.DateUtils" start="1671" end="1709" startBytecode="0" endBytecode="379" sourcefile="DateUtils.java" sourcepath="org/apache/commons/lang3/time/DateUtils.java"/>
+      <Message>In method org.apache.commons.lang3.time.DateUtils.getFragment(Calendar, int, int)</Message>
+    </Method>
+    <SourceLine classname="org.apache.commons.lang3.time.DateUtils" primary="true" start="1695" end="1698" startBytecode="172" endBytecode="174" sourcefile="DateUtils.java" sourcepath="org/apache/commons/lang3/time/DateUtils.java">
+      <Message>At DateUtils.java:[lines 1695-1698]</Message>
+    </SourceLine>
+    <SourceLine classname="org.apache.commons.lang3.time.DateUtils" start="1698" end="1701" startBytecode="190" endBytecode="192" sourcefile="DateUtils.java" sourcepath="org/apache/commons/lang3/time/DateUtils.java" role="SOURCE_LINE_ANOTHER_INSTANCE">
+      <Message>Another occurrence at DateUtils.java:[lines 1698-1701]</Message>
+    </SourceLine>
+    <SourceLine classname="org.apache.commons.lang3.time.DateUtils" start="1701" end="1704" startBytecode="208" endBytecode="210" sourcefile="DateUtils.java" sourcepath="org/apache/commons/lang3/time/DateUtils.java" role="SOURCE_LINE_ANOTHER_INSTANCE">
+      <Message>Another occurrence at DateUtils.java:[lines 1701-1704]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="SF_SWITCH_NO_DEFAULT" priority="2" rank="19" abbrev="SF" category="STYLE" instanceHash="cb90357704e73e52b92ae26fc1710619" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Switch statement found where default case is missing</ShortMessage>
+    <LongMessage>Switch statement found in org.apache.commons.lang3.time.DateUtils.getFragment(Calendar, int, int) where default case is missing</LongMessage>
+    <Class classname="org.apache.commons.lang3.time.DateUtils" primary="true">
+      <SourceLine classname="org.apache.commons.lang3.time.DateUtils" start="60" end="1815" sourcefile="DateUtils.java" sourcepath="org/apache/commons/lang3/time/DateUtils.java">
+        <Message>At DateUtils.java:[lines 60-1815]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.lang3.time.DateUtils</Message>
+    </Class>
+    <Method classname="org.apache.commons.lang3.time.DateUtils" name="getFragment" signature="(Ljava/util/Calendar;II)J" isStatic="true" primary="true">
+      <SourceLine classname="org.apache.commons.lang3.time.DateUtils" start="1671" end="1709" startBytecode="0" endBytecode="379" sourcefile="DateUtils.java" sourcepath="org/apache/commons/lang3/time/DateUtils.java"/>
+      <Message>In method org.apache.commons.lang3.time.DateUtils.getFragment(Calendar, int, int)</Message>
+    </Method>
+    <SourceLine classname="org.apache.commons.lang3.time.DateUtils" primary="true" start="1678" end="1683" startBytecode="23" endBytecode="85" sourcefile="DateUtils.java" sourcepath="org/apache/commons/lang3/time/DateUtils.java">
+      <Message>At DateUtils.java:[lines 1678-1683]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="SF_SWITCH_NO_DEFAULT" priority="2" rank="19" abbrev="SF" category="STYLE" instanceHash="1743de4f967b783b608b34776cce3385" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Switch statement found where default case is missing</ShortMessage>
+    <LongMessage>Switch statement found in org.apache.commons.lang3.time.DateUtils.iterator(Calendar, int) where default case is missing</LongMessage>
+    <Class classname="org.apache.commons.lang3.time.DateUtils" primary="true">
+      <SourceLine classname="org.apache.commons.lang3.time.DateUtils" start="60" end="1815" sourcefile="DateUtils.java" sourcepath="org/apache/commons/lang3/time/DateUtils.java">
+        <Message>At DateUtils.java:[lines 60-1815]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.lang3.time.DateUtils</Message>
+    </Class>
+    <Method classname="org.apache.commons.lang3.time.DateUtils" name="iterator" signature="(Ljava/util/Calendar;I)Ljava/util/Iterator;" isStatic="true" primary="true">
+      <SourceLine classname="org.apache.commons.lang3.time.DateUtils" start="1138" end="1206" startBytecode="0" endBytecode="545" sourcefile="DateUtils.java" sourcepath="org/apache/commons/lang3/time/DateUtils.java"/>
+      <Message>In method org.apache.commons.lang3.time.DateUtils.iterator(Calendar, int)</Message>
+    </Method>
+    <SourceLine classname="org.apache.commons.lang3.time.DateUtils" primary="true" start="1167" end="1181" startBytecode="118" endBytecode="196" sourcefile="DateUtils.java" sourcepath="org/apache/commons/lang3/time/DateUtils.java">
+      <Message>At DateUtils.java:[lines 1167-1181]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="SF_SWITCH_NO_DEFAULT" priority="2" rank="19" abbrev="SF" category="STYLE" instanceHash="9b50ba8f946f38d01f840d6c8d2c4436" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Switch statement found where default case is missing</ShortMessage>
+    <LongMessage>Switch statement found in org.apache.commons.lang3.time.DateUtils.modify(Calendar, int, int) where default case is missing</LongMessage>
+    <Class classname="org.apache.commons.lang3.time.DateUtils" primary="true">
+      <SourceLine classname="org.apache.commons.lang3.time.DateUtils" start="60" end="1815" sourcefile="DateUtils.java" sourcepath="org/apache/commons/lang3/time/DateUtils.java">
+        <Message>At DateUtils.java:[lines 60-1815]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.lang3.time.DateUtils</Message>
+    </Class>
+    <Method classname="org.apache.commons.lang3.time.DateUtils" name="modify" signature="(Ljava/util/Calendar;II)V" isStatic="true" primary="true">
+      <SourceLine classname="org.apache.commons.lang3.time.DateUtils" start="942" end="1075" startBytecode="0" endBytecode="989" sourcefile="DateUtils.java" sourcepath="org/apache/commons/lang3/time/DateUtils.java"/>
+      <Message>In method org.apache.commons.lang3.time.DateUtils.modify(Calendar, int, int)</Message>
+    </Method>
+    <SourceLine classname="org.apache.commons.lang3.time.DateUtils" primary="true" start="1032" end="1058" startBytecode="353" endBytecode="478" sourcefile="DateUtils.java" sourcepath="org/apache/commons/lang3/time/DateUtils.java">
+      <Message>At DateUtils.java:[lines 1032-1058]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="SF_SWITCH_FALLTHROUGH" abbrev="SF" category="STYLE" cweid="484">
+    <ShortDescription>Switch statement found where one case falls through to the next case</ShortDescription>
+    <Details><![CDATA[
+
+  <p> This method contains a switch statement where one case branch will fall through to the next case.
+  Usually you need to end this case with a break or return.</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="SF_SWITCH_NO_DEFAULT" abbrev="SF" category="STYLE">
+    <ShortDescription>Switch statement found where default case is missing</ShortDescription>
+    <Details><![CDATA[
+
+  <p> This method contains a switch statement where default case is missing.
+  Usually you need to provide a default case.</p>
+  <p>Because the analysis only looks at the generated bytecode, this warning can be incorrect triggered if
+the default case is at the end of the switch statement and the switch statement doesn't contain break statements for other
+cases.
+
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="SF">
+    <Description>Switch case falls through</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 14 Nov 2018 04:01:37 -0500" total_classes="2" referenced_classes="25" total_bugs="4" total_size="402" num_packages="1" java_version="1.8.0_121" vm_version="25.121-b13" cpu_seconds="8.74" clock_seconds="4.54" peak_mbytes="114.65" alloc_mbytes="1820.50" gc_seconds="0.07" priority_2="4">
+    <FileStats path="org/apache/commons/lang3/time/DateUtils.java" bugCount="4" size="402" bugHash="06402cd947d2e55914e5c1bfd1f51e8e"/>
+    <PackageStats package="org.apache.commons.lang3.time" total_bugs="4" total_types="2" total_size="402" priority_2="4">
+      <ClassStats class="org.apache.commons.lang3.time.DateUtils" sourceFile="DateUtils.java" interface="false" size="382" bugs="4" priority_2="4"/>
+      <ClassStats class="org.apache.commons.lang3.time.DateUtils$DateIterator" sourceFile="DateUtils.java" interface="false" size="20" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="536" invocations="376" avgMicrosecondsPerInvocation="1425" maxMicrosecondsPerInvocation="86963" standardDeviationMicrosecondsPerInvocation="5363"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="459" invocations="377" avgMicrosecondsPerInvocation="1219" maxMicrosecondsPerInvocation="24723" standardDeviationMicrosecondsPerInvocation="2229"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="199" invocations="25" avgMicrosecondsPerInvocation="7983" maxMicrosecondsPerInvocation="43864" standardDeviationMicrosecondsPerInvocation="11926"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="195" invocations="58" avgMicrosecondsPerInvocation="3362" maxMicrosecondsPerInvocation="103053" standardDeviationMicrosecondsPerInvocation="14061"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="134" invocations="58" avgMicrosecondsPerInvocation="2314" maxMicrosecondsPerInvocation="33372" standardDeviationMicrosecondsPerInvocation="6301"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="133" invocations="148" avgMicrosecondsPerInvocation="904" maxMicrosecondsPerInvocation="21713" standardDeviationMicrosecondsPerInvocation="2515"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="110" invocations="25" avgMicrosecondsPerInvocation="4437" maxMicrosecondsPerInvocation="34081" standardDeviationMicrosecondsPerInvocation="8840"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="106" invocations="58" avgMicrosecondsPerInvocation="1828" maxMicrosecondsPerInvocation="36919" standardDeviationMicrosecondsPerInvocation="5269"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="103" invocations="58" avgMicrosecondsPerInvocation="1789" maxMicrosecondsPerInvocation="17033" standardDeviationMicrosecondsPerInvocation="3693"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="103" invocations="58" avgMicrosecondsPerInvocation="1781" maxMicrosecondsPerInvocation="82206" standardDeviationMicrosecondsPerInvocation="10755"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="89" invocations="343" avgMicrosecondsPerInvocation="262" maxMicrosecondsPerInvocation="13131" standardDeviationMicrosecondsPerInvocation="857"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="86" invocations="58" avgMicrosecondsPerInvocation="1491" maxMicrosecondsPerInvocation="34023" standardDeviationMicrosecondsPerInvocation="4970"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="83" invocations="1" avgMicrosecondsPerInvocation="83978" maxMicrosecondsPerInvocation="83978" standardDeviationMicrosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.SwitchFallthrough" totalMilliseconds="81" invocations="1" avgMicrosecondsPerInvocation="81224" maxMicrosecondsPerInvocation="81224" standardDeviationMicrosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="80" invocations="25" avgMicrosecondsPerInvocation="3222" maxMicrosecondsPerInvocation="29793" standardDeviationMicrosecondsPerInvocation="6853"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="61" invocations="58" avgMicrosecondsPerInvocation="1054" maxMicrosecondsPerInvocation="12644" standardDeviationMicrosecondsPerInvocation="2167"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="59" invocations="25" avgMicrosecondsPerInvocation="2372" maxMicrosecondsPerInvocation="30575" standardDeviationMicrosecondsPerInvocation="6276"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.LiveLocalStoreDataflowFactory" totalMilliseconds="53" invocations="58" avgMicrosecondsPerInvocation="920" maxMicrosecondsPerInvocation="15751" standardDeviationMicrosecondsPerInvocation="2877"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="45" invocations="25" avgMicrosecondsPerInvocation="1837" maxMicrosecondsPerInvocation="13302" standardDeviationMicrosecondsPerInvocation="2919"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="43" invocations="41" avgMicrosecondsPerInvocation="1049" maxMicrosecondsPerInvocation="24946" standardDeviationMicrosecondsPerInvocation="3875"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

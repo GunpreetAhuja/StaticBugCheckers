@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.1.0" sequence="0" timestamp="1542186616000" analysisTimestamp="1542186619123" release="">
+  <Project projectName="">
+    <Jar>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-59/src/main/java</Jar>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-59/target/classes</AuxClasspathEntry>
+  </Project>
+  <BugInstance type="CNT_ROUGH_CONSTANT_VALUE" priority="1" rank="14" abbrev="CNT" category="BAD_PRACTICE" instanceHash="de1a3ed2911a8ae250a7594d89420d1d" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Rough value of known constant found</ShortMessage>
+    <LongMessage>Rough value of Math.PI/2 found: 1.570796251296997</LongMessage>
+    <Class classname="org.apache.commons.math.util.FastMath" primary="true">
+      <SourceLine classname="org.apache.commons.math.util.FastMath" start="35" end="3491" sourcefile="FastMath.java" sourcepath="org/apache/commons/math/util/FastMath.java">
+        <Message>At FastMath.java:[lines 35-3491]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.math.util.FastMath</Message>
+    </Class>
+    <Method classname="org.apache.commons.math.util.FastMath" name="cos" signature="(D)D" isStatic="true" primary="true">
+      <SourceLine classname="org.apache.commons.math.util.FastMath" start="2503" end="2577" startBytecode="0" endBytecode="507" sourcefile="FastMath.java" sourcepath="org/apache/commons/math/util/FastMath.java"/>
+      <Message>In method org.apache.commons.math.util.FastMath.cos(double)</Message>
+    </Method>
+    <String value="1.570796251296997">
+      <Message>Value 1.570796251296997</Message>
+    </String>
+    <String value="Math.PI/2">
+      <Message>Value Math.PI/2</Message>
+    </String>
+    <SourceLine classname="org.apache.commons.math.util.FastMath" primary="true" start="2537" end="2537" startBytecode="95" endBytecode="95" sourcefile="FastMath.java" sourcepath="org/apache/commons/math/util/FastMath.java">
+      <Message>At FastMath.java:[line 2537]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="CNT_ROUGH_CONSTANT_VALUE" priority="1" rank="14" abbrev="CNT" category="BAD_PRACTICE" instanceHash="9a777415af0890967ca8976cfd9d0e1a" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Rough value of known constant found</ShortMessage>
+    <LongMessage>Rough value of Math.PI/2 found: 1.570796251296997</LongMessage>
+    <Class classname="org.apache.commons.math.util.FastMath" primary="true">
+      <SourceLine classname="org.apache.commons.math.util.FastMath" start="35" end="3491" sourcefile="FastMath.java" sourcepath="org/apache/commons/math/util/FastMath.java">
+        <Message>At FastMath.java:[lines 35-3491]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.math.util.FastMath</Message>
+    </Class>
+    <Method classname="org.apache.commons.math.util.FastMath" name="sin" signature="(D)D" isStatic="true" primary="true">
+      <SourceLine classname="org.apache.commons.math.util.FastMath" start="2406" end="2493" startBytecode="0" endBytecode="612" sourcefile="FastMath.java" sourcepath="org/apache/commons/math/util/FastMath.java"/>
+      <Message>In method org.apache.commons.math.util.FastMath.sin(double)</Message>
+    </Method>
+    <String value="1.570796251296997">
+      <Message>Value 1.570796251296997</Message>
+    </String>
+    <String value="Math.PI/2">
+      <Message>Value Math.PI/2</Message>
+    </String>
+    <SourceLine classname="org.apache.commons.math.util.FastMath" primary="true" start="2452" end="2452" startBytecode="136" endBytecode="136" sourcefile="FastMath.java" sourcepath="org/apache/commons/math/util/FastMath.java">
+      <Message>At FastMath.java:[line 2452]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="CNT_ROUGH_CONSTANT_VALUE" priority="1" rank="14" abbrev="CNT" category="BAD_PRACTICE" instanceHash="ee5da92a0af2c5d2815a253aa8fdd199" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Rough value of known constant found</ShortMessage>
+    <LongMessage>Rough value of Math.PI/2 found: 1.570796251296997</LongMessage>
+    <Class classname="org.apache.commons.math.util.FastMath" primary="true">
+      <SourceLine classname="org.apache.commons.math.util.FastMath" start="35" end="3491" sourcefile="FastMath.java" sourcepath="org/apache/commons/math/util/FastMath.java">
+        <Message>At FastMath.java:[lines 35-3491]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.math.util.FastMath</Message>
+    </Class>
+    <Method classname="org.apache.commons.math.util.FastMath" name="tan" signature="(D)D" isStatic="true" primary="true">
+      <SourceLine classname="org.apache.commons.math.util.FastMath" start="2587" end="2685" startBytecode="0" endBytecode="665" sourcefile="FastMath.java" sourcepath="org/apache/commons/math/util/FastMath.java"/>
+      <Message>In method org.apache.commons.math.util.FastMath.tan(double)</Message>
+    </Method>
+    <String value="1.570796251296997">
+      <Message>Value 1.570796251296997</Message>
+    </String>
+    <String value="Math.PI/2">
+      <Message>Value Math.PI/2</Message>
+    </String>
+    <SourceLine classname="org.apache.commons.math.util.FastMath" primary="true" start="2632" end="2632" startBytecode="136" endBytecode="136" sourcefile="FastMath.java" sourcepath="org/apache/commons/math/util/FastMath.java">
+      <Message>At FastMath.java:[line 2632]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="BAD_PRACTICE">
+    <Description>Bad practice</Description>
+  </BugCategory>
+  <BugPattern type="CNT_ROUGH_CONSTANT_VALUE" abbrev="CNT" category="BAD_PRACTICE">
+    <ShortDescription>Rough value of known constant found</ShortDescription>
+    <Details><![CDATA[
+      
+    <p>It's recommended to use the predefined library constant for code clarity and better precision.</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="CNT">
+    <Description>Rough value of known constant</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 14 Nov 2018 04:10:16 -0500" total_classes="1" referenced_classes="12" total_bugs="3" total_size="1626" num_packages="1" java_version="1.8.0_121" vm_version="25.121-b13" cpu_seconds="11.97" clock_seconds="5.61" peak_mbytes="177.00" alloc_mbytes="1820.50" gc_seconds="0.07" priority_1="3">
+    <FileStats path="org/apache/commons/math/util/FastMath.java" bugCount="3" size="1626" bugHash="9ef8b8f3acb7381b52acd71515501e5d"/>
+    <PackageStats package="org.apache.commons.math.util" total_bugs="3" total_types="1" total_size="1626" priority_1="3">
+      <ClassStats class="org.apache.commons.math.util.FastMath" sourceFile="FastMath.java" interface="false" size="1626" bugs="3" priority_1="3"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="524" invocations="69" avgMicrosecondsPerInvocation="7596" maxMicrosecondsPerInvocation="66957" standardDeviationMicrosecondsPerInvocation="14698"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="390" invocations="304" avgMicrosecondsPerInvocation="1283" maxMicrosecondsPerInvocation="29828" standardDeviationMicrosecondsPerInvocation="2817"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="378" invocations="303" avgMicrosecondsPerInvocation="1249" maxMicrosecondsPerInvocation="57814" standardDeviationMicrosecondsPerInvocation="4136"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="296" invocations="69" avgMicrosecondsPerInvocation="4300" maxMicrosecondsPerInvocation="66146" standardDeviationMicrosecondsPerInvocation="12016"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="271" invocations="69" avgMicrosecondsPerInvocation="3934" maxMicrosecondsPerInvocation="40416" standardDeviationMicrosecondsPerInvocation="7252"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="185" invocations="69" avgMicrosecondsPerInvocation="2686" maxMicrosecondsPerInvocation="47902" standardDeviationMicrosecondsPerInvocation="6994"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="146" invocations="69" avgMicrosecondsPerInvocation="2124" maxMicrosecondsPerInvocation="27551" standardDeviationMicrosecondsPerInvocation="4516"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="142" invocations="115" avgMicrosecondsPerInvocation="1241" maxMicrosecondsPerInvocation="21983" standardDeviationMicrosecondsPerInvocation="3142"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="114" invocations="12" avgMicrosecondsPerInvocation="9561" maxMicrosecondsPerInvocation="43992" standardDeviationMicrosecondsPerInvocation="13265"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="108" invocations="69" avgMicrosecondsPerInvocation="1570" maxMicrosecondsPerInvocation="21769" standardDeviationMicrosecondsPerInvocation="3015"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="100" invocations="69" avgMicrosecondsPerInvocation="1451" maxMicrosecondsPerInvocation="69845" standardDeviationMicrosecondsPerInvocation="8345"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="81" invocations="69" avgMicrosecondsPerInvocation="1179" maxMicrosecondsPerInvocation="23442" standardDeviationMicrosecondsPerInvocation="3147"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindSelfComparison" totalMilliseconds="74" invocations="1" avgMicrosecondsPerInvocation="74127" maxMicrosecondsPerInvocation="74127" standardDeviationMicrosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="72" invocations="1" avgMicrosecondsPerInvocation="72442" maxMicrosecondsPerInvocation="72442" standardDeviationMicrosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="70" invocations="12" avgMicrosecondsPerInvocation="5886" maxMicrosecondsPerInvocation="49867" standardDeviationMicrosecondsPerInvocation="13635"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="69" invocations="1" avgMicrosecondsPerInvocation="69199" maxMicrosecondsPerInvocation="69199" standardDeviationMicrosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="68" invocations="12" avgMicrosecondsPerInvocation="5677" maxMicrosecondsPerInvocation="32381" standardDeviationMicrosecondsPerInvocation="8940"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="67" invocations="53" avgMicrosecondsPerInvocation="1277" maxMicrosecondsPerInvocation="26816" standardDeviationMicrosecondsPerInvocation="3760"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="67" invocations="12" avgMicrosecondsPerInvocation="5593" maxMicrosecondsPerInvocation="25888" standardDeviationMicrosecondsPerInvocation="8962"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="66" invocations="12" avgMicrosecondsPerInvocation="5530" maxMicrosecondsPerInvocation="23315" standardDeviationMicrosecondsPerInvocation="7769"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="62" invocations="268" avgMicrosecondsPerInvocation="233" maxMicrosecondsPerInvocation="5708" standardDeviationMicrosecondsPerInvocation="610"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="54" invocations="25" avgMicrosecondsPerInvocation="2173" maxMicrosecondsPerInvocation="30348" standardDeviationMicrosecondsPerInvocation="6158"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindFloatEquality" totalMilliseconds="48" invocations="1" avgMicrosecondsPerInvocation="48347" maxMicrosecondsPerInvocation="48347" standardDeviationMicrosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="45" invocations="12" avgMicrosecondsPerInvocation="3825" maxMicrosecondsPerInvocation="16984" standardDeviationMicrosecondsPerInvocation="4914"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

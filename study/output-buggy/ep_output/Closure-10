@@ -1,0 +1,21 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-10/src/com/google/javascript/jscomp/NodeUtil.java:967: warning: [MutableConstantField] Constant field declarations should use the immutable type (such as ImmutableList) instead of the general collection interface type (such as List)
+  private static final Set<String> BUILTIN_FUNCTIONS_WITHOUT_SIDEEFFECTS =
+                          ^
+    (see http://errorprone.info/bugpattern/MutableConstantField)
+  Did you mean 'private static final ImmutableSet<String> BUILTIN_FUNCTIONS_WITHOUT_SIDEEFFECTS ='?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-10/src/com/google/javascript/jscomp/NodeUtil.java:970: warning: [MutableConstantField] Constant field declarations should use the immutable type (such as ImmutableList) instead of the general collection interface type (such as List)
+  private static final Set<String> OBJECT_METHODS_WITHOUT_SIDEEFFECTS =
+                          ^
+    (see http://errorprone.info/bugpattern/MutableConstantField)
+  Did you mean 'private static final ImmutableSet<String> OBJECT_METHODS_WITHOUT_SIDEEFFECTS ='?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-10/src/com/google/javascript/jscomp/NodeUtil.java:972: warning: [MutableConstantField] Constant field declarations should use the immutable type (such as ImmutableList) instead of the general collection interface type (such as List)
+  private static final Set<String> REGEXP_METHODS =
+                          ^
+    (see http://errorprone.info/bugpattern/MutableConstantField)
+  Did you mean 'private static final ImmutableSet<String> REGEXP_METHODS ='?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-10/src/com/google/javascript/jscomp/NodeUtil.java:974: warning: [MutableConstantField] Constant field declarations should use the immutable type (such as ImmutableList) instead of the general collection interface type (such as List)
+  private static final Set<String> STRING_REGEXP_METHODS =
+                          ^
+    (see http://errorprone.info/bugpattern/MutableConstantField)
+  Did you mean 'private static final ImmutableSet<String> STRING_REGEXP_METHODS ='?
+4 warnings

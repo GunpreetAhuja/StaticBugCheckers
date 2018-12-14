@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.1.0" sequence="0" timestamp="1542186732000" analysisTimestamp="1542186735640" release="">
+  <Project projectName="">
+    <Jar>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-81/src/main/java</Jar>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-81/target/classes</AuxClasspathEntry>
+  </Project>
+  <BugInstance type="FE_FLOATING_POINT_EQUALITY" priority="1" rank="15" abbrev="FE" category="STYLE" instanceHash="271abd60e23daa3aae11806aa672f397" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Test for floating point equality</ShortMessage>
+    <LongMessage>Test for floating point equality in org.apache.commons.math.linear.EigenDecompositionImpl.computeShiftIncrement(int, int, int)</LongMessage>
+    <Class classname="org.apache.commons.math.linear.EigenDecompositionImpl" primary="true">
+      <SourceLine classname="org.apache.commons.math.linear.EigenDecompositionImpl" start="167" end="1840" sourcefile="EigenDecompositionImpl.java" sourcepath="org/apache/commons/math/linear/EigenDecompositionImpl.java">
+        <Message>At EigenDecompositionImpl.java:[lines 167-1840]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.math.linear.EigenDecompositionImpl</Message>
+    </Class>
+    <Method classname="org.apache.commons.math.linear.EigenDecompositionImpl" name="computeShiftIncrement" signature="(III)V" isStatic="false" primary="true">
+      <SourceLine classname="org.apache.commons.math.linear.EigenDecompositionImpl" start="1438" end="1672" startBytecode="0" endBytecode="2880" sourcefile="EigenDecompositionImpl.java" sourcepath="org/apache/commons/math/linear/EigenDecompositionImpl.java"/>
+      <Message>In method org.apache.commons.math.linear.EigenDecompositionImpl.computeShiftIncrement(int, int, int)</Message>
+    </Method>
+    <SourceLine classname="org.apache.commons.math.linear.EigenDecompositionImpl" primary="true" start="1448" end="1448" startBytecode="73" endBytecode="73" sourcefile="EigenDecompositionImpl.java" sourcepath="org/apache/commons/math/linear/EigenDecompositionImpl.java">
+      <Message>At EigenDecompositionImpl.java:[line 1448]</Message>
+    </SourceLine>
+    <SourceLine classname="org.apache.commons.math.linear.EigenDecompositionImpl" start="1448" end="1448" startBytecode="85" endBytecode="85" sourcefile="EigenDecompositionImpl.java" sourcepath="org/apache/commons/math/linear/EigenDecompositionImpl.java" role="SOURCE_LINE_ANOTHER_INSTANCE">
+      <Message>Another occurrence at EigenDecompositionImpl.java:[line 1448]</Message>
+    </SourceLine>
+    <SourceLine classname="org.apache.commons.math.linear.EigenDecompositionImpl" start="1454" end="1454" startBytecode="175" endBytecode="175" sourcefile="EigenDecompositionImpl.java" sourcepath="org/apache/commons/math/linear/EigenDecompositionImpl.java" role="SOURCE_LINE_ANOTHER_INSTANCE">
+      <Message>Another occurrence at EigenDecompositionImpl.java:[line 1454]</Message>
+    </SourceLine>
+    <SourceLine classname="org.apache.commons.math.linear.EigenDecompositionImpl" start="1454" end="1454" startBytecode="187" endBytecode="187" sourcefile="EigenDecompositionImpl.java" sourcepath="org/apache/commons/math/linear/EigenDecompositionImpl.java" role="SOURCE_LINE_ANOTHER_INSTANCE">
+      <Message>Another occurrence at EigenDecompositionImpl.java:[line 1454]</Message>
+    </SourceLine>
+    <SourceLine classname="org.apache.commons.math.linear.EigenDecompositionImpl" start="1478" end="1478" startBytecode="400" endBytecode="400" sourcefile="EigenDecompositionImpl.java" sourcepath="org/apache/commons/math/linear/EigenDecompositionImpl.java" role="SOURCE_LINE_ANOTHER_INSTANCE">
+      <Message>Another occurrence at EigenDecompositionImpl.java:[line 1478]</Message>
+    </SourceLine>
+    <SourceLine classname="org.apache.commons.math.linear.EigenDecompositionImpl" start="1526" end="1526" startBytecode="772" endBytecode="772" sourcefile="EigenDecompositionImpl.java" sourcepath="org/apache/commons/math/linear/EigenDecompositionImpl.java" role="SOURCE_LINE_ANOTHER_INSTANCE">
+      <Message>Another occurrence at EigenDecompositionImpl.java:[line 1526]</Message>
+    </SourceLine>
+    <SourceLine classname="org.apache.commons.math.linear.EigenDecompositionImpl" start="1586" end="1586" startBytecode="1187" endBytecode="1187" sourcefile="EigenDecompositionImpl.java" sourcepath="org/apache/commons/math/linear/EigenDecompositionImpl.java" role="SOURCE_LINE_ANOTHER_INSTANCE">
+      <Message>Another occurrence at EigenDecompositionImpl.java:[line 1586]</Message>
+    </SourceLine>
+    <SourceLine classname="org.apache.commons.math.linear.EigenDecompositionImpl" start="1586" end="1586" startBytecode="1199" endBytecode="1199" sourcefile="EigenDecompositionImpl.java" sourcepath="org/apache/commons/math/linear/EigenDecompositionImpl.java" role="SOURCE_LINE_ANOTHER_INSTANCE">
+      <Message>Another occurrence at EigenDecompositionImpl.java:[line 1586]</Message>
+    </SourceLine>
+    <SourceLine classname="org.apache.commons.math.linear.EigenDecompositionImpl" start="1622" end="1622" startBytecode="1521" endBytecode="1521" sourcefile="EigenDecompositionImpl.java" sourcepath="org/apache/commons/math/linear/EigenDecompositionImpl.java" role="SOURCE_LINE_ANOTHER_INSTANCE">
+      <Message>Another occurrence at EigenDecompositionImpl.java:[line 1622]</Message>
+    </SourceLine>
+    <SourceLine classname="org.apache.commons.math.linear.EigenDecompositionImpl" start="1632" end="1632" startBytecode="1554" endBytecode="1554" sourcefile="EigenDecompositionImpl.java" sourcepath="org/apache/commons/math/linear/EigenDecompositionImpl.java" role="SOURCE_LINE_ANOTHER_INSTANCE">
+      <Message>Another occurrence at EigenDecompositionImpl.java:[line 1632]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="FE_FLOATING_POINT_EQUALITY" abbrev="FE" category="STYLE">
+    <ShortDescription>Test for floating point equality</ShortDescription>
+    <Details><![CDATA[
+   
+    <p>
+    This operation compares two floating point values for equality.
+    Because floating point calculations may involve rounding,
+   calculated float and double values may not be accurate.
+    For values that must be precise, such as monetary values,
+   consider using a fixed-precision type such as BigDecimal.
+    For values that need not be precise, consider comparing for equality
+    within some range, for example:
+    <code>if ( Math.abs(x - y) &lt; .0000001 )</code>.
+   See the Java Language Specification, section 4.2.4.
+    </p>
+    
+     ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="FE">
+    <Description>Test for floating point equality</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 14 Nov 2018 04:12:12 -0500" total_classes="3" referenced_classes="31" total_bugs="1" total_size="930" num_packages="1" java_version="1.8.0_121" vm_version="25.121-b13" cpu_seconds="11.82" clock_seconds="6.76" peak_mbytes="134.00" alloc_mbytes="1820.50" gc_seconds="0.10" priority_1="1">
+    <FileStats path="org/apache/commons/math/linear/EigenDecompositionImpl.java" bugCount="1" size="930" bugHash="ca6a5a1b88a831d5b92323b313f4762d"/>
+    <PackageStats package="org.apache.commons.math.linear" total_bugs="1" total_types="3" total_size="930" priority_1="1">
+      <ClassStats class="org.apache.commons.math.linear.EigenDecompositionImpl" sourceFile="EigenDecompositionImpl.java" interface="false" size="848" bugs="1" priority_1="1"/>
+      <ClassStats class="org.apache.commons.math.linear.EigenDecompositionImpl$1" sourceFile="EigenDecompositionImpl.java" interface="false" size="1" bugs="0"/>
+      <ClassStats class="org.apache.commons.math.linear.EigenDecompositionImpl$Solver" sourceFile="EigenDecompositionImpl.java" interface="false" size="81" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="736" invocations="426" avgMicrosecondsPerInvocation="1728" maxMicrosecondsPerInvocation="41055" standardDeviationMicrosecondsPerInvocation="3911"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="660" invocations="425" avgMicrosecondsPerInvocation="1554" maxMicrosecondsPerInvocation="78213" standardDeviationMicrosecondsPerInvocation="5642"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="377" invocations="37" avgMicrosecondsPerInvocation="10202" maxMicrosecondsPerInvocation="56082" standardDeviationMicrosecondsPerInvocation="14775"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="353" invocations="325" avgMicrosecondsPerInvocation="1086" maxMicrosecondsPerInvocation="23821" standardDeviationMicrosecondsPerInvocation="2863"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="307" invocations="36" avgMicrosecondsPerInvocation="8538" maxMicrosecondsPerInvocation="95665" standardDeviationMicrosecondsPerInvocation="17050"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="255" invocations="36" avgMicrosecondsPerInvocation="7107" maxMicrosecondsPerInvocation="45405" standardDeviationMicrosecondsPerInvocation="9815"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="239" invocations="31" avgMicrosecondsPerInvocation="7712" maxMicrosecondsPerInvocation="64787" standardDeviationMicrosecondsPerInvocation="13033"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="204" invocations="36" avgMicrosecondsPerInvocation="5669" maxMicrosecondsPerInvocation="42114" standardDeviationMicrosecondsPerInvocation="9893"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="194" invocations="36" avgMicrosecondsPerInvocation="5403" maxMicrosecondsPerInvocation="55087" standardDeviationMicrosecondsPerInvocation="10416"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="180" invocations="31" avgMicrosecondsPerInvocation="5811" maxMicrosecondsPerInvocation="36328" standardDeviationMicrosecondsPerInvocation="10236"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="159" invocations="392" avgMicrosecondsPerInvocation="408" maxMicrosecondsPerInvocation="24503" standardDeviationMicrosecondsPerInvocation="1960"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="139" invocations="36" avgMicrosecondsPerInvocation="3888" maxMicrosecondsPerInvocation="84798" standardDeviationMicrosecondsPerInvocation="14147"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="118" invocations="36" avgMicrosecondsPerInvocation="3300" maxMicrosecondsPerInvocation="43174" standardDeviationMicrosecondsPerInvocation="8584"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="95" invocations="54" avgMicrosecondsPerInvocation="1767" maxMicrosecondsPerInvocation="39495" standardDeviationMicrosecondsPerInvocation="5859"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="90" invocations="36" avgMicrosecondsPerInvocation="2508" maxMicrosecondsPerInvocation="28607" standardDeviationMicrosecondsPerInvocation="6030"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="77" invocations="31" avgMicrosecondsPerInvocation="2512" maxMicrosecondsPerInvocation="34474" standardDeviationMicrosecondsPerInvocation="6496"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="72" invocations="31" avgMicrosecondsPerInvocation="2342" maxMicrosecondsPerInvocation="36320" standardDeviationMicrosecondsPerInvocation="7431"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

@@ -1,0 +1,6 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Mockito-24/src/org/mockito/internal/stubbing/defaultanswers/ReturnsEmptyValues.java:63: warning: [MissingOverride] answer implements method in Answer; expected @Override
+    public Object answer(InvocationOnMock invocation) {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Object answer(InvocationOnMock invocation) {'?
+1 warning

@@ -1,0 +1,95 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Chart-16/source/org/jfree/data/category/DefaultIntervalCategoryDataset.java:712: warning: [EqualsHashCode] Classes that override equals should also override hashCode.
+    public boolean equals(Object obj) {
+                   ^
+    (see http://errorprone.info/bugpattern/EqualsHashCode)
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Chart-16/source/org/jfree/data/category/DefaultIntervalCategoryDataset.java:222: warning: [MissingOverride] getSeriesCount implements method in AbstractSeriesDataset; expected @Override
+    public int getSeriesCount() {
+               ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int getSeriesCount() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Chart-16/source/org/jfree/data/category/DefaultIntervalCategoryDataset.java:260: warning: [MissingOverride] getSeriesKey implements method in AbstractSeriesDataset; expected @Override
+    public Comparable getSeriesKey(int series) {
+                      ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Comparable getSeriesKey(int series) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Chart-16/source/org/jfree/data/category/DefaultIntervalCategoryDataset.java:313: warning: [MissingOverride] getColumnKeys implements method in KeyedValues2D; expected @Override
+    public List getColumnKeys() {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public List getColumnKeys() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Chart-16/source/org/jfree/data/category/DefaultIntervalCategoryDataset.java:366: warning: [MissingOverride] getValue implements method in KeyedValues2D; expected @Override
+    public Number getValue(Comparable series, Comparable category) {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Number getValue(Comparable series, Comparable category) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Chart-16/source/org/jfree/data/category/DefaultIntervalCategoryDataset.java:391: warning: [MissingOverride] getValue implements method in Values2D; expected @Override
+    public Number getValue(int series, int category) {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Number getValue(int series, int category) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Chart-16/source/org/jfree/data/category/DefaultIntervalCategoryDataset.java:406: warning: [MissingOverride] getStartValue implements method in IntervalCategoryDataset; expected @Override
+    public Number getStartValue(Comparable series, Comparable category) {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Number getStartValue(Comparable series, Comparable category) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Chart-16/source/org/jfree/data/category/DefaultIntervalCategoryDataset.java:429: warning: [MissingOverride] getStartValue implements method in IntervalCategoryDataset; expected @Override
+    public Number getStartValue(int series, int category) {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Number getStartValue(int series, int category) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Chart-16/source/org/jfree/data/category/DefaultIntervalCategoryDataset.java:459: warning: [MissingOverride] getEndValue implements method in IntervalCategoryDataset; expected @Override
+    public Number getEndValue(Comparable series, Comparable category) {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Number getEndValue(Comparable series, Comparable category) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Chart-16/source/org/jfree/data/category/DefaultIntervalCategoryDataset.java:481: warning: [MissingOverride] getEndValue implements method in IntervalCategoryDataset; expected @Override
+    public Number getEndValue(int series, int category) {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Number getEndValue(int series, int category) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Chart-16/source/org/jfree/data/category/DefaultIntervalCategoryDataset.java:611: warning: [MissingOverride] getColumnKey implements method in KeyedValues2D; expected @Override
+    public Comparable getColumnKey(int column) {
+                      ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Comparable getColumnKey(int column) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Chart-16/source/org/jfree/data/category/DefaultIntervalCategoryDataset.java:624: warning: [MissingOverride] getColumnIndex implements method in KeyedValues2D; expected @Override
+    public int getColumnIndex(Comparable columnKey) {
+               ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int getColumnIndex(Comparable columnKey) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Chart-16/source/org/jfree/data/category/DefaultIntervalCategoryDataset.java:640: warning: [MissingOverride] getRowIndex implements method in KeyedValues2D; expected @Override
+    public int getRowIndex(Comparable rowKey) {
+               ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int getRowIndex(Comparable rowKey) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Chart-16/source/org/jfree/data/category/DefaultIntervalCategoryDataset.java:652: warning: [MissingOverride] getRowKeys implements method in KeyedValues2D; expected @Override
+    public List getRowKeys() {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public List getRowKeys() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Chart-16/source/org/jfree/data/category/DefaultIntervalCategoryDataset.java:672: warning: [MissingOverride] getRowKey implements method in KeyedValues2D; expected @Override
+    public Comparable getRowKey(int row) {
+                      ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Comparable getRowKey(int row) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Chart-16/source/org/jfree/data/category/DefaultIntervalCategoryDataset.java:689: warning: [MissingOverride] getColumnCount implements method in Values2D; expected @Override
+    public int getColumnCount() {
+               ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int getColumnCount() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Chart-16/source/org/jfree/data/category/DefaultIntervalCategoryDataset.java:701: warning: [MissingOverride] getRowCount implements method in Values2D; expected @Override
+    public int getRowCount() {
+               ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int getRowCount() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Chart-16/source/org/jfree/data/category/DefaultIntervalCategoryDataset.java:712: warning: [MissingOverride] equals overrides method in Object; expected @Override
+    public boolean equals(Object obj) {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public boolean equals(Object obj) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Chart-16/source/org/jfree/data/category/DefaultIntervalCategoryDataset.java:745: warning: [MissingOverride] clone overrides method in AbstractDataset; expected @Override
+    public Object clone() throws CloneNotSupportedException {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Object clone() throws CloneNotSupportedException {'?
+19 warnings

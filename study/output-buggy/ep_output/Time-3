@@ -1,0 +1,226 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-3/src/main/java/org/joda/time/MutableDateTime.java:453: warning: [MissingOverride] setMillis overrides method in BaseDateTime; expected @Override
+    public void setMillis(long instant) {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void setMillis(long instant) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-3/src/main/java/org/joda/time/MutableDateTime.java:484: warning: [MissingOverride] setMillis implements method in ReadWritableInstant; expected @Override
+    public void setMillis(ReadableInstant instant) {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void setMillis(ReadableInstant instant) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-3/src/main/java/org/joda/time/MutableDateTime.java:496: warning: [MissingOverride] add implements method in ReadWritableInstant; expected @Override
+    public void add(long duration) {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void add(long duration) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-3/src/main/java/org/joda/time/MutableDateTime.java:508: warning: [MissingOverride] add implements method in ReadWritableInstant; expected @Override
+    public void add(ReadableDuration duration) {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void add(ReadableDuration duration) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-3/src/main/java/org/joda/time/MutableDateTime.java:521: warning: [MissingOverride] add implements method in ReadWritableInstant; expected @Override
+    public void add(ReadableDuration duration, int scalar) {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void add(ReadableDuration duration, int scalar) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-3/src/main/java/org/joda/time/MutableDateTime.java:535: warning: [MissingOverride] add implements method in ReadWritableInstant; expected @Override
+    public void add(ReadablePeriod period) {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void add(ReadablePeriod period) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-3/src/main/java/org/joda/time/MutableDateTime.java:548: warning: [MissingOverride] add implements method in ReadWritableInstant; expected @Override
+    public void add(ReadablePeriod period, int scalar) {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void add(ReadablePeriod period, int scalar) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-3/src/main/java/org/joda/time/MutableDateTime.java:562: warning: [MissingOverride] setChronology overrides method in BaseDateTime; expected @Override
+    public void setChronology(Chronology chronology) {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void setChronology(Chronology chronology) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-3/src/main/java/org/joda/time/MutableDateTime.java:581: warning: [MissingOverride] setZone implements method in ReadWritableInstant; expected @Override
+    public void setZone(DateTimeZone newZone) {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void setZone(DateTimeZone newZone) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-3/src/main/java/org/joda/time/MutableDateTime.java:584: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+        if (chrono.getZone() != newZone) {
+                             ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'if (!Objects.equals(chrono.getZone(), newZone)) {' or 'if (!chrono.getZone().equals(newZone)) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-3/src/main/java/org/joda/time/MutableDateTime.java:600: warning: [MissingOverride] setZoneRetainFields implements method in ReadWritableInstant; expected @Override
+    public void setZoneRetainFields(DateTimeZone newZone) {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void setZoneRetainFields(DateTimeZone newZone) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-3/src/main/java/org/joda/time/MutableDateTime.java:603: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+        if (newZone == originalZone) {
+                    ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'if (Objects.equals(newZone, originalZone)) {' or 'if (newZone.equals(originalZone)) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-3/src/main/java/org/joda/time/MutableDateTime.java:620: warning: [MissingOverride] set implements method in ReadWritableInstant; expected @Override
+    public void set(DateTimeFieldType type, int value) {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void set(DateTimeFieldType type, int value) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-3/src/main/java/org/joda/time/MutableDateTime.java:635: warning: [MissingOverride] add implements method in ReadWritableInstant; expected @Override
+    public void add(DurationFieldType type, int amount) {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void add(DurationFieldType type, int amount) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-3/src/main/java/org/joda/time/MutableDateTime.java:649: warning: [MissingOverride] setYear implements method in ReadWritableDateTime; expected @Override
+    public void setYear(final int year) {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void setYear(final int year) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-3/src/main/java/org/joda/time/MutableDateTime.java:659: warning: [MissingOverride] addYears implements method in ReadWritableDateTime; expected @Override
+    public void addYears(final int years) {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void addYears(final int years) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-3/src/main/java/org/joda/time/MutableDateTime.java:670: warning: [MissingOverride] setWeekyear implements method in ReadWritableDateTime; expected @Override
+    public void setWeekyear(final int weekyear) {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void setWeekyear(final int weekyear) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-3/src/main/java/org/joda/time/MutableDateTime.java:680: warning: [MissingOverride] addWeekyears implements method in ReadWritableDateTime; expected @Override
+    public void addWeekyears(final int weekyears) {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void addWeekyears(final int weekyears) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-3/src/main/java/org/joda/time/MutableDateTime.java:691: warning: [MissingOverride] setMonthOfYear implements method in ReadWritableDateTime; expected @Override
+    public void setMonthOfYear(final int monthOfYear) {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void setMonthOfYear(final int monthOfYear) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-3/src/main/java/org/joda/time/MutableDateTime.java:701: warning: [MissingOverride] addMonths implements method in ReadWritableDateTime; expected @Override
+    public void addMonths(final int months) {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void addMonths(final int months) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-3/src/main/java/org/joda/time/MutableDateTime.java:712: warning: [MissingOverride] setWeekOfWeekyear implements method in ReadWritableDateTime; expected @Override
+    public void setWeekOfWeekyear(final int weekOfWeekyear) {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void setWeekOfWeekyear(final int weekOfWeekyear) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-3/src/main/java/org/joda/time/MutableDateTime.java:722: warning: [MissingOverride] addWeeks implements method in ReadWritableDateTime; expected @Override
+    public void addWeeks(final int weeks) {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void addWeeks(final int weeks) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-3/src/main/java/org/joda/time/MutableDateTime.java:733: warning: [MissingOverride] setDayOfYear implements method in ReadWritableDateTime; expected @Override
+    public void setDayOfYear(final int dayOfYear) {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void setDayOfYear(final int dayOfYear) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-3/src/main/java/org/joda/time/MutableDateTime.java:743: warning: [MissingOverride] setDayOfMonth implements method in ReadWritableDateTime; expected @Override
+    public void setDayOfMonth(final int dayOfMonth) {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void setDayOfMonth(final int dayOfMonth) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-3/src/main/java/org/joda/time/MutableDateTime.java:753: warning: [MissingOverride] setDayOfWeek implements method in ReadWritableDateTime; expected @Override
+    public void setDayOfWeek(final int dayOfWeek) {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void setDayOfWeek(final int dayOfWeek) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-3/src/main/java/org/joda/time/MutableDateTime.java:763: warning: [MissingOverride] addDays implements method in ReadWritableDateTime; expected @Override
+    public void addDays(final int days) {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void addDays(final int days) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-3/src/main/java/org/joda/time/MutableDateTime.java:774: warning: [MissingOverride] setHourOfDay implements method in ReadWritableDateTime; expected @Override
+    public void setHourOfDay(final int hourOfDay) {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void setHourOfDay(final int hourOfDay) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-3/src/main/java/org/joda/time/MutableDateTime.java:784: warning: [MissingOverride] addHours implements method in ReadWritableDateTime; expected @Override
+    public void addHours(final int hours) {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void addHours(final int hours) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-3/src/main/java/org/joda/time/MutableDateTime.java:795: warning: [MissingOverride] setMinuteOfDay implements method in ReadWritableDateTime; expected @Override
+    public void setMinuteOfDay(final int minuteOfDay) {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void setMinuteOfDay(final int minuteOfDay) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-3/src/main/java/org/joda/time/MutableDateTime.java:805: warning: [MissingOverride] setMinuteOfHour implements method in ReadWritableDateTime; expected @Override
+    public void setMinuteOfHour(final int minuteOfHour) {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void setMinuteOfHour(final int minuteOfHour) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-3/src/main/java/org/joda/time/MutableDateTime.java:815: warning: [MissingOverride] addMinutes implements method in ReadWritableDateTime; expected @Override
+    public void addMinutes(final int minutes) {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void addMinutes(final int minutes) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-3/src/main/java/org/joda/time/MutableDateTime.java:826: warning: [MissingOverride] setSecondOfDay implements method in ReadWritableDateTime; expected @Override
+    public void setSecondOfDay(final int secondOfDay) {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void setSecondOfDay(final int secondOfDay) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-3/src/main/java/org/joda/time/MutableDateTime.java:836: warning: [MissingOverride] setSecondOfMinute implements method in ReadWritableDateTime; expected @Override
+    public void setSecondOfMinute(final int secondOfMinute) {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void setSecondOfMinute(final int secondOfMinute) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-3/src/main/java/org/joda/time/MutableDateTime.java:846: warning: [MissingOverride] addSeconds implements method in ReadWritableDateTime; expected @Override
+    public void addSeconds(final int seconds) {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void addSeconds(final int seconds) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-3/src/main/java/org/joda/time/MutableDateTime.java:857: warning: [MissingOverride] setMillisOfDay implements method in ReadWritableDateTime; expected @Override
+    public void setMillisOfDay(final int millisOfDay) {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void setMillisOfDay(final int millisOfDay) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-3/src/main/java/org/joda/time/MutableDateTime.java:867: warning: [MissingOverride] setMillisOfSecond implements method in ReadWritableDateTime; expected @Override
+    public void setMillisOfSecond(final int millisOfSecond) {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void setMillisOfSecond(final int millisOfSecond) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-3/src/main/java/org/joda/time/MutableDateTime.java:879: warning: [MissingOverride] addMillis implements method in ReadWritableDateTime; expected @Override
+    public void addMillis(final int millis) {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void addMillis(final int millis) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-3/src/main/java/org/joda/time/MutableDateTime.java:927: warning: [MissingOverride] setDate implements method in ReadWritableDateTime; expected @Override
+    public void setDate(
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void setDate('?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-3/src/main/java/org/joda/time/MutableDateTime.java:976: warning: [MissingOverride] setTime implements method in ReadWritableDateTime; expected @Override
+    public void setTime(
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void setTime('?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-3/src/main/java/org/joda/time/MutableDateTime.java:998: warning: [MissingOverride] setDateTime implements method in ReadWritableDateTime; expected @Override
+    public void setDateTime(
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void setDateTime('?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-3/src/main/java/org/joda/time/MutableDateTime.java:1214: warning: [MissingOverride] clone overrides method in Object; expected @Override
+    public Object clone() {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Object clone() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-3/src/main/java/org/joda/time/MutableDateTime.java:1228: warning: [MissingOverride] toString overrides method in AbstractInstant; expected @Override
+    public String toString() {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override @ToString'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-3/src/main/java/org/joda/time/MutableDateTime.java:1297: warning: [MissingOverride] getField implements method in AbstractReadableInstantFieldProperty; expected @Override
+        public DateTimeField getField() {
+                             ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public DateTimeField getField() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-3/src/main/java/org/joda/time/MutableDateTime.java:1306: warning: [MissingOverride] getMillis implements method in AbstractReadableInstantFieldProperty; expected @Override
+        protected long getMillis() {
+                       ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override protected long getMillis() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-3/src/main/java/org/joda/time/MutableDateTime.java:1316: warning: [MissingOverride] getChronology overrides method in AbstractReadableInstantFieldProperty; expected @Override
+        protected Chronology getChronology() {
+                             ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override protected Chronology getChronology() {'?
+45 warnings

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.1.0" sequence="0" timestamp="1542190640000" analysisTimestamp="1542190643401" release="">
+  <Project projectName="">
+    <Jar>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-8/src/main/java</Jar>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-8/target/classes</AuxClasspathEntry>
+  </Project>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 14 Nov 2018 05:17:20 -0500" total_classes="17" referenced_classes="47" total_bugs="0" total_size="468" num_packages="1" java_version="1.8.0_121" vm_version="25.121-b13" cpu_seconds="9.42" clock_seconds="5.54" peak_mbytes="134.04" alloc_mbytes="1820.50" gc_seconds="0.06">
+    <FileStats path="org/apache/commons/lang3/time/FastDatePrinter.java" bugCount="0" size="468"/>
+    <PackageStats package="org.apache.commons.lang3.time" total_bugs="0" total_types="17" total_size="468">
+      <ClassStats class="org.apache.commons.lang3.time.FastDatePrinter" sourceFile="FastDatePrinter.java" interface="false" size="201" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.time.FastDatePrinter$CharacterLiteral" sourceFile="FastDatePrinter.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.time.FastDatePrinter$NumberRule" sourceFile="FastDatePrinter.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.time.FastDatePrinter$PaddedNumberField" sourceFile="FastDatePrinter.java" interface="false" size="29" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.time.FastDatePrinter$Rule" sourceFile="FastDatePrinter.java" interface="true" size="3" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.time.FastDatePrinter$StringLiteral" sourceFile="FastDatePrinter.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.time.FastDatePrinter$TextField" sourceFile="FastDatePrinter.java" interface="false" size="19" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.time.FastDatePrinter$TimeZoneDisplayKey" sourceFile="FastDatePrinter.java" interface="false" size="23" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.time.FastDatePrinter$TimeZoneNameRule" sourceFile="FastDatePrinter.java" interface="false" size="21" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.time.FastDatePrinter$TimeZoneNumberRule" sourceFile="FastDatePrinter.java" interface="false" size="28" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.time.FastDatePrinter$TwelveHourField" sourceFile="FastDatePrinter.java" interface="false" size="17" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.time.FastDatePrinter$TwentyFourHourField" sourceFile="FastDatePrinter.java" interface="false" size="17" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.time.FastDatePrinter$TwoDigitMonthField" sourceFile="FastDatePrinter.java" interface="false" size="16" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.time.FastDatePrinter$TwoDigitNumberField" sourceFile="FastDatePrinter.java" interface="false" size="17" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.time.FastDatePrinter$TwoDigitYearField" sourceFile="FastDatePrinter.java" interface="false" size="16" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.time.FastDatePrinter$UnpaddedMonthField" sourceFile="FastDatePrinter.java" interface="false" size="18" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.time.FastDatePrinter$UnpaddedNumberField" sourceFile="FastDatePrinter.java" interface="false" size="19" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="892" invocations="550" avgMicrosecondsPerInvocation="1622" maxMicrosecondsPerInvocation="31394" standardDeviationMicrosecondsPerInvocation="3325"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="685" invocations="547" avgMicrosecondsPerInvocation="1252" maxMicrosecondsPerInvocation="45097" standardDeviationMicrosecondsPerInvocation="4151"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="323" invocations="172" avgMicrosecondsPerInvocation="1878" maxMicrosecondsPerInvocation="39455" standardDeviationMicrosecondsPerInvocation="5317"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="286" invocations="47" avgMicrosecondsPerInvocation="6095" maxMicrosecondsPerInvocation="45808" standardDeviationMicrosecondsPerInvocation="10758"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="266" invocations="47" avgMicrosecondsPerInvocation="5676" maxMicrosecondsPerInvocation="62052" standardDeviationMicrosecondsPerInvocation="12391"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="145" invocations="85" avgMicrosecondsPerInvocation="1712" maxMicrosecondsPerInvocation="40237" standardDeviationMicrosecondsPerInvocation="6297"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="144" invocations="23" avgMicrosecondsPerInvocation="6296" maxMicrosecondsPerInvocation="60999" standardDeviationMicrosecondsPerInvocation="16071"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="114" invocations="23" avgMicrosecondsPerInvocation="4997" maxMicrosecondsPerInvocation="93301" standardDeviationMicrosecondsPerInvocation="18940"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="104" invocations="23" avgMicrosecondsPerInvocation="4562" maxMicrosecondsPerInvocation="56067" standardDeviationMicrosecondsPerInvocation="11791"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="101" invocations="507" avgMicrosecondsPerInvocation="200" maxMicrosecondsPerInvocation="12869" standardDeviationMicrosecondsPerInvocation="812"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="87" invocations="23" avgMicrosecondsPerInvocation="3822" maxMicrosecondsPerInvocation="33402" standardDeviationMicrosecondsPerInvocation="8566"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="85" invocations="23" avgMicrosecondsPerInvocation="3730" maxMicrosecondsPerInvocation="37363" standardDeviationMicrosecondsPerInvocation="8303"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="85" invocations="23" avgMicrosecondsPerInvocation="3720" maxMicrosecondsPerInvocation="38631" standardDeviationMicrosecondsPerInvocation="9775"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="78" invocations="47" avgMicrosecondsPerInvocation="1661" maxMicrosecondsPerInvocation="21888" standardDeviationMicrosecondsPerInvocation="3798"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="69" invocations="23" avgMicrosecondsPerInvocation="3039" maxMicrosecondsPerInvocation="33160" standardDeviationMicrosecondsPerInvocation="7567"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

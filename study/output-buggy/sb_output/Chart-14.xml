@@ -1,0 +1,869 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.1.0" sequence="0" timestamp="1542185219000" analysisTimestamp="1542185222043" release="">
+  <Project projectName="">
+    <Jar>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-14/source</Jar>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-14/build</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-14/lib/servlet.jar</AuxClasspathEntry>
+  </Project>
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" rank="18" abbrev="Bx" category="PERFORMANCE" instanceHash="dd1778144a0d1739e0aabe679a2ac41b" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Method invokes inefficient Number constructor; use static valueOf instead</ShortMessage>
+    <LongMessage>org.jfree.chart.plot.CategoryPlot.addDomainMarker(int, CategoryMarker, Layer, boolean) invokes inefficient new Integer(int) constructor; use Integer.valueOf(int) instead</LongMessage>
+    <Class classname="org.jfree.chart.plot.CategoryPlot" primary="true">
+      <SourceLine classname="org.jfree.chart.plot.CategoryPlot" start="251" end="4115" sourcefile="CategoryPlot.java" sourcepath="org/jfree/chart/plot/CategoryPlot.java">
+        <Message>At CategoryPlot.java:[lines 251-4115]</Message>
+      </SourceLine>
+      <Message>In class org.jfree.chart.plot.CategoryPlot</Message>
+    </Class>
+    <Method classname="org.jfree.chart.plot.CategoryPlot" name="addDomainMarker" signature="(ILorg/jfree/chart/plot/CategoryMarker;Lorg/jfree/chart/util/Layer;Z)V" isStatic="false" primary="true">
+      <SourceLine classname="org.jfree.chart.plot.CategoryPlot" start="1964" end="1993" startBytecode="0" endBytecode="318" sourcefile="CategoryPlot.java" sourcepath="org/jfree/chart/plot/CategoryPlot.java"/>
+      <Message>In method org.jfree.chart.plot.CategoryPlot.addDomainMarker(int, CategoryMarker, Layer, boolean)</Message>
+    </Method>
+    <Method classname="java.lang.Integer" name="&lt;init&gt;" signature="(I)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Integer" start="849" end="851" startBytecode="0" endBytecode="41" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+      <Message>Called method new Integer(int)</Message>
+    </Method>
+    <Method classname="java.lang.Integer" name="valueOf" signature="(I)Ljava/lang/Integer;" isStatic="true" role="SHOULD_CALL">
+      <SourceLine classname="java.lang.Integer" start="830" end="832" startBytecode="0" endBytecode="72" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+      <Message>Should call Integer.valueOf(int) instead</Message>
+    </Method>
+    <SourceLine classname="org.jfree.chart.plot.CategoryPlot" primary="true" start="1972" end="1972" startBytecode="44" endBytecode="44" sourcefile="CategoryPlot.java" sourcepath="org/jfree/chart/plot/CategoryPlot.java">
+      <Message>At CategoryPlot.java:[line 1972]</Message>
+    </SourceLine>
+    <SourceLine classname="org.jfree.chart.plot.CategoryPlot" start="1976" end="1976" startBytecode="80" endBytecode="80" sourcefile="CategoryPlot.java" sourcepath="org/jfree/chart/plot/CategoryPlot.java" role="SOURCE_LINE_ANOTHER_INSTANCE">
+      <Message>Another occurrence at CategoryPlot.java:[line 1976]</Message>
+    </SourceLine>
+    <SourceLine classname="org.jfree.chart.plot.CategoryPlot" start="1981" end="1981" startBytecode="119" endBytecode="119" sourcefile="CategoryPlot.java" sourcepath="org/jfree/chart/plot/CategoryPlot.java" role="SOURCE_LINE_ANOTHER_INSTANCE">
+      <Message>Another occurrence at CategoryPlot.java:[line 1981]</Message>
+    </SourceLine>
+    <SourceLine classname="org.jfree.chart.plot.CategoryPlot" start="1985" end="1985" startBytecode="155" endBytecode="155" sourcefile="CategoryPlot.java" sourcepath="org/jfree/chart/plot/CategoryPlot.java" role="SOURCE_LINE_ANOTHER_INSTANCE">
+      <Message>Another occurrence at CategoryPlot.java:[line 1985]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" rank="18" abbrev="Bx" category="PERFORMANCE" instanceHash="2d6f68da413637f6a134f9de8e06fca5" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Method invokes inefficient Number constructor; use static valueOf instead</ShortMessage>
+    <LongMessage>org.jfree.chart.plot.CategoryPlot.addRangeMarker(int, Marker, Layer, boolean) invokes inefficient new Integer(int) constructor; use Integer.valueOf(int) instead</LongMessage>
+    <Class classname="org.jfree.chart.plot.CategoryPlot" primary="true">
+      <SourceLine classname="org.jfree.chart.plot.CategoryPlot" start="251" end="4115" sourcefile="CategoryPlot.java" sourcepath="org/jfree/chart/plot/CategoryPlot.java">
+        <Message>At CategoryPlot.java:[lines 251-4115]</Message>
+      </SourceLine>
+      <Message>In class org.jfree.chart.plot.CategoryPlot</Message>
+    </Class>
+    <Method classname="org.jfree.chart.plot.CategoryPlot" name="addRangeMarker" signature="(ILorg/jfree/chart/plot/Marker;Lorg/jfree/chart/util/Layer;Z)V" isStatic="false" primary="true">
+      <SourceLine classname="org.jfree.chart.plot.CategoryPlot" start="2239" end="2261" startBytecode="0" endBytecode="272" sourcefile="CategoryPlot.java" sourcepath="org/jfree/chart/plot/CategoryPlot.java"/>
+      <Message>In method org.jfree.chart.plot.CategoryPlot.addRangeMarker(int, Marker, Layer, boolean)</Message>
+    </Method>
+    <Method classname="java.lang.Integer" name="&lt;init&gt;" signature="(I)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Integer" start="849" end="851" startBytecode="0" endBytecode="41" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+      <Message>Called method new Integer(int)</Message>
+    </Method>
+    <Method classname="java.lang.Integer" name="valueOf" signature="(I)Ljava/lang/Integer;" isStatic="true" role="SHOULD_CALL">
+      <SourceLine classname="java.lang.Integer" start="830" end="832" startBytecode="0" endBytecode="72" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+      <Message>Should call Integer.valueOf(int) instead</Message>
+    </Method>
+    <SourceLine classname="org.jfree.chart.plot.CategoryPlot" primary="true" start="2240" end="2240" startBytecode="16" endBytecode="16" sourcefile="CategoryPlot.java" sourcepath="org/jfree/chart/plot/CategoryPlot.java">
+      <Message>At CategoryPlot.java:[line 2240]</Message>
+    </SourceLine>
+    <SourceLine classname="org.jfree.chart.plot.CategoryPlot" start="2244" end="2244" startBytecode="52" endBytecode="52" sourcefile="CategoryPlot.java" sourcepath="org/jfree/chart/plot/CategoryPlot.java" role="SOURCE_LINE_ANOTHER_INSTANCE">
+      <Message>Another occurrence at CategoryPlot.java:[line 2244]</Message>
+    </SourceLine>
+    <SourceLine classname="org.jfree.chart.plot.CategoryPlot" start="2249" end="2249" startBytecode="91" endBytecode="91" sourcefile="CategoryPlot.java" sourcepath="org/jfree/chart/plot/CategoryPlot.java" role="SOURCE_LINE_ANOTHER_INSTANCE">
+      <Message>Another occurrence at CategoryPlot.java:[line 2249]</Message>
+    </SourceLine>
+    <SourceLine classname="org.jfree.chart.plot.CategoryPlot" start="2253" end="2253" startBytecode="127" endBytecode="127" sourcefile="CategoryPlot.java" sourcepath="org/jfree/chart/plot/CategoryPlot.java" role="SOURCE_LINE_ANOTHER_INSTANCE">
+      <Message>Another occurrence at CategoryPlot.java:[line 2253]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" rank="18" abbrev="Bx" category="PERFORMANCE" instanceHash="efc67db728696bd701249207012c986" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Method invokes inefficient Number constructor; use static valueOf instead</ShortMessage>
+    <LongMessage>org.jfree.chart.plot.CategoryPlot.clearDomainMarkers(int) invokes inefficient new Integer(int) constructor; use Integer.valueOf(int) instead</LongMessage>
+    <Class classname="org.jfree.chart.plot.CategoryPlot" primary="true">
+      <SourceLine classname="org.jfree.chart.plot.CategoryPlot" start="251" end="4115" sourcefile="CategoryPlot.java" sourcepath="org/jfree/chart/plot/CategoryPlot.java">
+        <Message>At CategoryPlot.java:[lines 251-4115]</Message>
+      </SourceLine>
+      <Message>In class org.jfree.chart.plot.CategoryPlot</Message>
+    </Class>
+    <Method classname="org.jfree.chart.plot.CategoryPlot" name="clearDomainMarkers" signature="(I)V" isStatic="false" primary="true">
+      <SourceLine classname="org.jfree.chart.plot.CategoryPlot" start="2066" end="2092" startBytecode="0" endBytecode="302" sourcefile="CategoryPlot.java" sourcepath="org/jfree/chart/plot/CategoryPlot.java"/>
+      <Message>In method org.jfree.chart.plot.CategoryPlot.clearDomainMarkers(int)</Message>
+    </Method>
+    <Method classname="java.lang.Integer" name="&lt;init&gt;" signature="(I)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Integer" start="849" end="851" startBytecode="0" endBytecode="41" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+      <Message>Called method new Integer(int)</Message>
+    </Method>
+    <Method classname="java.lang.Integer" name="valueOf" signature="(I)Ljava/lang/Integer;" isStatic="true" role="SHOULD_CALL">
+      <SourceLine classname="java.lang.Integer" start="830" end="832" startBytecode="0" endBytecode="72" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+      <Message>Should call Integer.valueOf(int) instead</Message>
+    </Method>
+    <SourceLine classname="org.jfree.chart.plot.CategoryPlot" primary="true" start="2066" end="2066" startBytecode="5" endBytecode="5" sourcefile="CategoryPlot.java" sourcepath="org/jfree/chart/plot/CategoryPlot.java">
+      <Message>At CategoryPlot.java:[line 2066]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" rank="18" abbrev="Bx" category="PERFORMANCE" instanceHash="14cfb256b2ea7db2e12c71fc4fc63fc3" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Method invokes inefficient Number constructor; use static valueOf instead</ShortMessage>
+    <LongMessage>org.jfree.chart.plot.CategoryPlot.clearRangeMarkers(int) invokes inefficient new Integer(int) constructor; use Integer.valueOf(int) instead</LongMessage>
+    <Class classname="org.jfree.chart.plot.CategoryPlot" primary="true">
+      <SourceLine classname="org.jfree.chart.plot.CategoryPlot" start="251" end="4115" sourcefile="CategoryPlot.java" sourcepath="org/jfree/chart/plot/CategoryPlot.java">
+        <Message>At CategoryPlot.java:[lines 251-4115]</Message>
+      </SourceLine>
+      <Message>In class org.jfree.chart.plot.CategoryPlot</Message>
+    </Class>
+    <Method classname="org.jfree.chart.plot.CategoryPlot" name="clearRangeMarkers" signature="(I)V" isStatic="false" primary="true">
+      <SourceLine classname="org.jfree.chart.plot.CategoryPlot" start="2336" end="2362" startBytecode="0" endBytecode="302" sourcefile="CategoryPlot.java" sourcepath="org/jfree/chart/plot/CategoryPlot.java"/>
+      <Message>In method org.jfree.chart.plot.CategoryPlot.clearRangeMarkers(int)</Message>
+    </Method>
+    <Method classname="java.lang.Integer" name="&lt;init&gt;" signature="(I)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Integer" start="849" end="851" startBytecode="0" endBytecode="41" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+      <Message>Called method new Integer(int)</Message>
+    </Method>
+    <Method classname="java.lang.Integer" name="valueOf" signature="(I)Ljava/lang/Integer;" isStatic="true" role="SHOULD_CALL">
+      <SourceLine classname="java.lang.Integer" start="830" end="832" startBytecode="0" endBytecode="72" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+      <Message>Should call Integer.valueOf(int) instead</Message>
+    </Method>
+    <SourceLine classname="org.jfree.chart.plot.CategoryPlot" primary="true" start="2336" end="2336" startBytecode="5" endBytecode="5" sourcefile="CategoryPlot.java" sourcepath="org/jfree/chart/plot/CategoryPlot.java">
+      <Message>At CategoryPlot.java:[line 2336]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" rank="18" abbrev="Bx" category="PERFORMANCE" instanceHash="f6f822bd1af77d9e7626612da8b038e9" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Method invokes inefficient Number constructor; use static valueOf instead</ShortMessage>
+    <LongMessage>org.jfree.chart.plot.CategoryPlot.getDomainMarkers(int, Layer) invokes inefficient new Integer(int) constructor; use Integer.valueOf(int) instead</LongMessage>
+    <Class classname="org.jfree.chart.plot.CategoryPlot" primary="true">
+      <SourceLine classname="org.jfree.chart.plot.CategoryPlot" start="251" end="4115" sourcefile="CategoryPlot.java" sourcepath="org/jfree/chart/plot/CategoryPlot.java">
+        <Message>At CategoryPlot.java:[lines 251-4115]</Message>
+      </SourceLine>
+      <Message>In class org.jfree.chart.plot.CategoryPlot</Message>
+    </Class>
+    <Method classname="org.jfree.chart.plot.CategoryPlot" name="getDomainMarkers" signature="(ILorg/jfree/chart/util/Layer;)Ljava/util/Collection;" isStatic="false" primary="true">
+      <SourceLine classname="org.jfree.chart.plot.CategoryPlot" start="2044" end="2055" startBytecode="0" endBytecode="144" sourcefile="CategoryPlot.java" sourcepath="org/jfree/chart/plot/CategoryPlot.java"/>
+      <Message>In method org.jfree.chart.plot.CategoryPlot.getDomainMarkers(int, Layer)</Message>
+    </Method>
+    <Method classname="java.lang.Integer" name="&lt;init&gt;" signature="(I)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Integer" start="849" end="851" startBytecode="0" endBytecode="41" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+      <Message>Called method new Integer(int)</Message>
+    </Method>
+    <Method classname="java.lang.Integer" name="valueOf" signature="(I)Ljava/lang/Integer;" isStatic="true" role="SHOULD_CALL">
+      <SourceLine classname="java.lang.Integer" start="830" end="832" startBytecode="0" endBytecode="72" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+      <Message>Should call Integer.valueOf(int) instead</Message>
+    </Method>
+    <SourceLine classname="org.jfree.chart.plot.CategoryPlot" primary="true" start="2045" end="2045" startBytecode="7" endBytecode="7" sourcefile="CategoryPlot.java" sourcepath="org/jfree/chart/plot/CategoryPlot.java">
+      <Message>At CategoryPlot.java:[line 2045]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" rank="18" abbrev="Bx" category="PERFORMANCE" instanceHash="15e53c48cc39df44fb25a7eed2cf513d" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Method invokes inefficient Number constructor; use static valueOf instead</ShortMessage>
+    <LongMessage>org.jfree.chart.plot.CategoryPlot.getRangeMarkers(int, Layer) invokes inefficient new Integer(int) constructor; use Integer.valueOf(int) instead</LongMessage>
+    <Class classname="org.jfree.chart.plot.CategoryPlot" primary="true">
+      <SourceLine classname="org.jfree.chart.plot.CategoryPlot" start="251" end="4115" sourcefile="CategoryPlot.java" sourcepath="org/jfree/chart/plot/CategoryPlot.java">
+        <Message>At CategoryPlot.java:[lines 251-4115]</Message>
+      </SourceLine>
+      <Message>In class org.jfree.chart.plot.CategoryPlot</Message>
+    </Class>
+    <Method classname="org.jfree.chart.plot.CategoryPlot" name="getRangeMarkers" signature="(ILorg/jfree/chart/util/Layer;)Ljava/util/Collection;" isStatic="false" primary="true">
+      <SourceLine classname="org.jfree.chart.plot.CategoryPlot" start="2314" end="2325" startBytecode="0" endBytecode="144" sourcefile="CategoryPlot.java" sourcepath="org/jfree/chart/plot/CategoryPlot.java"/>
+      <Message>In method org.jfree.chart.plot.CategoryPlot.getRangeMarkers(int, Layer)</Message>
+    </Method>
+    <Method classname="java.lang.Integer" name="&lt;init&gt;" signature="(I)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Integer" start="849" end="851" startBytecode="0" endBytecode="41" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+      <Message>Called method new Integer(int)</Message>
+    </Method>
+    <Method classname="java.lang.Integer" name="valueOf" signature="(I)Ljava/lang/Integer;" isStatic="true" role="SHOULD_CALL">
+      <SourceLine classname="java.lang.Integer" start="830" end="832" startBytecode="0" endBytecode="72" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+      <Message>Should call Integer.valueOf(int) instead</Message>
+    </Method>
+    <SourceLine classname="org.jfree.chart.plot.CategoryPlot" primary="true" start="2315" end="2315" startBytecode="7" endBytecode="7" sourcefile="CategoryPlot.java" sourcepath="org/jfree/chart/plot/CategoryPlot.java">
+      <Message>At CategoryPlot.java:[line 2315]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" rank="18" abbrev="Bx" category="PERFORMANCE" instanceHash="d3a1ffe2ef6e604583fa3b2f4636bcf8" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Method invokes inefficient Number constructor; use static valueOf instead</ShortMessage>
+    <LongMessage>org.jfree.chart.plot.CategoryPlot.mapDatasetToDomainAxis(int, int) invokes inefficient new Integer(int) constructor; use Integer.valueOf(int) instead</LongMessage>
+    <Class classname="org.jfree.chart.plot.CategoryPlot" primary="true">
+      <SourceLine classname="org.jfree.chart.plot.CategoryPlot" start="251" end="4115" sourcefile="CategoryPlot.java" sourcepath="org/jfree/chart/plot/CategoryPlot.java">
+        <Message>At CategoryPlot.java:[lines 251-4115]</Message>
+      </SourceLine>
+      <Message>In class org.jfree.chart.plot.CategoryPlot</Message>
+    </Class>
+    <Method classname="org.jfree.chart.plot.CategoryPlot" name="mapDatasetToDomainAxis" signature="(II)V" isStatic="false" primary="true">
+      <SourceLine classname="org.jfree.chart.plot.CategoryPlot" start="1241" end="1244" startBytecode="0" endBytecode="65" sourcefile="CategoryPlot.java" sourcepath="org/jfree/chart/plot/CategoryPlot.java"/>
+      <Message>In method org.jfree.chart.plot.CategoryPlot.mapDatasetToDomainAxis(int, int)</Message>
+    </Method>
+    <Method classname="java.lang.Integer" name="&lt;init&gt;" signature="(I)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Integer" start="849" end="851" startBytecode="0" endBytecode="41" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+      <Message>Called method new Integer(int)</Message>
+    </Method>
+    <Method classname="java.lang.Integer" name="valueOf" signature="(I)Ljava/lang/Integer;" isStatic="true" role="SHOULD_CALL">
+      <SourceLine classname="java.lang.Integer" start="830" end="832" startBytecode="0" endBytecode="72" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+      <Message>Should call Integer.valueOf(int) instead</Message>
+    </Method>
+    <SourceLine classname="org.jfree.chart.plot.CategoryPlot" primary="true" start="1241" end="1241" startBytecode="10" endBytecode="10" sourcefile="CategoryPlot.java" sourcepath="org/jfree/chart/plot/CategoryPlot.java">
+      <Message>At CategoryPlot.java:[line 1241]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" rank="18" abbrev="Bx" category="PERFORMANCE" instanceHash="a6b06077390c45d8d21d8f31fceeb961" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Method invokes inefficient Number constructor; use static valueOf instead</ShortMessage>
+    <LongMessage>org.jfree.chart.plot.CategoryPlot.mapDatasetToRangeAxis(int, int) invokes inefficient new Integer(int) constructor; use Integer.valueOf(int) instead</LongMessage>
+    <Class classname="org.jfree.chart.plot.CategoryPlot" primary="true">
+      <SourceLine classname="org.jfree.chart.plot.CategoryPlot" start="251" end="4115" sourcefile="CategoryPlot.java" sourcepath="org/jfree/chart/plot/CategoryPlot.java">
+        <Message>At CategoryPlot.java:[lines 251-4115]</Message>
+      </SourceLine>
+      <Message>In class org.jfree.chart.plot.CategoryPlot</Message>
+    </Class>
+    <Method classname="org.jfree.chart.plot.CategoryPlot" name="mapDatasetToRangeAxis" signature="(II)V" isStatic="false" primary="true">
+      <SourceLine classname="org.jfree.chart.plot.CategoryPlot" start="1274" end="1277" startBytecode="0" endBytecode="65" sourcefile="CategoryPlot.java" sourcepath="org/jfree/chart/plot/CategoryPlot.java"/>
+      <Message>In method org.jfree.chart.plot.CategoryPlot.mapDatasetToRangeAxis(int, int)</Message>
+    </Method>
+    <Method classname="java.lang.Integer" name="&lt;init&gt;" signature="(I)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Integer" start="849" end="851" startBytecode="0" endBytecode="41" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+      <Message>Called method new Integer(int)</Message>
+    </Method>
+    <Method classname="java.lang.Integer" name="valueOf" signature="(I)Ljava/lang/Integer;" isStatic="true" role="SHOULD_CALL">
+      <SourceLine classname="java.lang.Integer" start="830" end="832" startBytecode="0" endBytecode="72" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+      <Message>Should call Integer.valueOf(int) instead</Message>
+    </Method>
+    <SourceLine classname="org.jfree.chart.plot.CategoryPlot" primary="true" start="1274" end="1274" startBytecode="10" endBytecode="10" sourcefile="CategoryPlot.java" sourcepath="org/jfree/chart/plot/CategoryPlot.java">
+      <Message>At CategoryPlot.java:[line 1274]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" rank="18" abbrev="Bx" category="PERFORMANCE" instanceHash="b04f33c28b3b4f15229570d1c4c0b01f" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Method invokes inefficient Number constructor; use static valueOf instead</ShortMessage>
+    <LongMessage>org.jfree.chart.plot.CategoryPlot.removeDomainMarker(int, Marker, Layer, boolean) invokes inefficient new Integer(int) constructor; use Integer.valueOf(int) instead</LongMessage>
+    <Class classname="org.jfree.chart.plot.CategoryPlot" primary="true">
+      <SourceLine classname="org.jfree.chart.plot.CategoryPlot" start="251" end="4115" sourcefile="CategoryPlot.java" sourcepath="org/jfree/chart/plot/CategoryPlot.java">
+        <Message>At CategoryPlot.java:[lines 251-4115]</Message>
+      </SourceLine>
+      <Message>In class org.jfree.chart.plot.CategoryPlot</Message>
+    </Class>
+    <Method classname="org.jfree.chart.plot.CategoryPlot" name="removeDomainMarker" signature="(ILorg/jfree/chart/plot/Marker;Lorg/jfree/chart/util/Layer;Z)Z" isStatic="false" primary="true">
+      <SourceLine classname="org.jfree.chart.plot.CategoryPlot" start="2158" end="2170" startBytecode="0" endBytecode="145" sourcefile="CategoryPlot.java" sourcepath="org/jfree/chart/plot/CategoryPlot.java"/>
+      <Message>In method org.jfree.chart.plot.CategoryPlot.removeDomainMarker(int, Marker, Layer, boolean)</Message>
+    </Method>
+    <Method classname="java.lang.Integer" name="&lt;init&gt;" signature="(I)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Integer" start="849" end="851" startBytecode="0" endBytecode="41" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+      <Message>Called method new Integer(int)</Message>
+    </Method>
+    <Method classname="java.lang.Integer" name="valueOf" signature="(I)Ljava/lang/Integer;" isStatic="true" role="SHOULD_CALL">
+      <SourceLine classname="java.lang.Integer" start="830" end="832" startBytecode="0" endBytecode="72" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+      <Message>Should call Integer.valueOf(int) instead</Message>
+    </Method>
+    <SourceLine classname="org.jfree.chart.plot.CategoryPlot" primary="true" start="2159" end="2159" startBytecode="16" endBytecode="16" sourcefile="CategoryPlot.java" sourcepath="org/jfree/chart/plot/CategoryPlot.java">
+      <Message>At CategoryPlot.java:[line 2159]</Message>
+    </SourceLine>
+    <SourceLine classname="org.jfree.chart.plot.CategoryPlot" start="2163" end="2163" startBytecode="41" endBytecode="41" sourcefile="CategoryPlot.java" sourcepath="org/jfree/chart/plot/CategoryPlot.java" role="SOURCE_LINE_ANOTHER_INSTANCE">
+      <Message>Another occurrence at CategoryPlot.java:[line 2163]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" rank="18" abbrev="Bx" category="PERFORMANCE" instanceHash="4486d5b0b9ab96480e340c3886c6b801" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Method invokes inefficient Number constructor; use static valueOf instead</ShortMessage>
+    <LongMessage>org.jfree.chart.plot.CategoryPlot.removeRangeMarker(int, Marker, Layer, boolean) invokes inefficient new Integer(int) constructor; use Integer.valueOf(int) instead</LongMessage>
+    <Class classname="org.jfree.chart.plot.CategoryPlot" primary="true">
+      <SourceLine classname="org.jfree.chart.plot.CategoryPlot" start="251" end="4115" sourcefile="CategoryPlot.java" sourcepath="org/jfree/chart/plot/CategoryPlot.java">
+        <Message>At CategoryPlot.java:[lines 251-4115]</Message>
+      </SourceLine>
+      <Message>In class org.jfree.chart.plot.CategoryPlot</Message>
+    </Class>
+    <Method classname="org.jfree.chart.plot.CategoryPlot" name="removeRangeMarker" signature="(ILorg/jfree/chart/plot/Marker;Lorg/jfree/chart/util/Layer;Z)Z" isStatic="false" primary="true">
+      <SourceLine classname="org.jfree.chart.plot.CategoryPlot" start="2436" end="2452" startBytecode="0" endBytecode="168" sourcefile="CategoryPlot.java" sourcepath="org/jfree/chart/plot/CategoryPlot.java"/>
+      <Message>In method org.jfree.chart.plot.CategoryPlot.removeRangeMarker(int, Marker, Layer, boolean)</Message>
+    </Method>
+    <Method classname="java.lang.Integer" name="&lt;init&gt;" signature="(I)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Integer" start="849" end="851" startBytecode="0" endBytecode="41" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+      <Message>Called method new Integer(int)</Message>
+    </Method>
+    <Method classname="java.lang.Integer" name="valueOf" signature="(I)Ljava/lang/Integer;" isStatic="true" role="SHOULD_CALL">
+      <SourceLine classname="java.lang.Integer" start="830" end="832" startBytecode="0" endBytecode="72" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+      <Message>Should call Integer.valueOf(int) instead</Message>
+    </Method>
+    <SourceLine classname="org.jfree.chart.plot.CategoryPlot" primary="true" start="2441" end="2441" startBytecode="30" endBytecode="30" sourcefile="CategoryPlot.java" sourcepath="org/jfree/chart/plot/CategoryPlot.java">
+      <Message>At CategoryPlot.java:[line 2441]</Message>
+    </SourceLine>
+    <SourceLine classname="org.jfree.chart.plot.CategoryPlot" start="2445" end="2445" startBytecode="55" endBytecode="55" sourcefile="CategoryPlot.java" sourcepath="org/jfree/chart/plot/CategoryPlot.java" role="SOURCE_LINE_ANOTHER_INSTANCE">
+      <Message>Another occurrence at CategoryPlot.java:[line 2445]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="HE_EQUALS_USE_HASHCODE" priority="1" rank="14" abbrev="HE" category="BAD_PRACTICE" instanceHash="a135d70a518a644bc773223b1d03423f" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Class defines equals() and uses Object.hashCode()</ShortMessage>
+    <LongMessage>org.jfree.chart.plot.CategoryPlot defines equals and uses Object.hashCode()</LongMessage>
+    <Class classname="org.jfree.chart.plot.CategoryPlot" primary="true">
+      <SourceLine classname="org.jfree.chart.plot.CategoryPlot" start="251" end="4115" sourcefile="CategoryPlot.java" sourcepath="org/jfree/chart/plot/CategoryPlot.java">
+        <Message>At CategoryPlot.java:[lines 251-4115]</Message>
+      </SourceLine>
+      <Message>In class org.jfree.chart.plot.CategoryPlot</Message>
+    </Class>
+    <Method classname="org.jfree.chart.plot.CategoryPlot" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false" primary="true">
+      <SourceLine classname="org.jfree.chart.plot.CategoryPlot" start="3866" end="3988" startBytecode="0" endBytecode="863" sourcefile="CategoryPlot.java" sourcepath="org/jfree/chart/plot/CategoryPlot.java"/>
+      <Message>In method org.jfree.chart.plot.CategoryPlot.equals(Object)</Message>
+    </Method>
+    <SourceLine classname="org.jfree.chart.plot.CategoryPlot" start="3866" end="3988" startBytecode="0" endBytecode="863" sourcefile="CategoryPlot.java" sourcepath="org/jfree/chart/plot/CategoryPlot.java" synthetic="true">
+      <Message>At CategoryPlot.java:[lines 3866-3988]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="MS_SHOULD_BE_FINAL" priority="1" rank="16" abbrev="MS" category="MALICIOUS_CODE" instanceHash="d35e7e5208c4d5533fffde1645bc1571" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="218">
+    <ShortMessage>Field isn&apos;t final but should be</ShortMessage>
+    <LongMessage>org.jfree.chart.plot.CategoryPlot.localizationResources isn&apos;t final but should be</LongMessage>
+    <Class classname="org.jfree.chart.plot.CategoryPlot" primary="true">
+      <SourceLine classname="org.jfree.chart.plot.CategoryPlot" start="251" end="4115" sourcefile="CategoryPlot.java" sourcepath="org/jfree/chart/plot/CategoryPlot.java">
+        <Message>At CategoryPlot.java:[lines 251-4115]</Message>
+      </SourceLine>
+      <Message>In class org.jfree.chart.plot.CategoryPlot</Message>
+    </Class>
+    <Field classname="org.jfree.chart.plot.CategoryPlot" name="localizationResources" signature="Ljava/util/ResourceBundle;" isStatic="true" primary="true">
+      <SourceLine classname="org.jfree.chart.plot.CategoryPlot" sourcefile="CategoryPlot.java" sourcepath="org/jfree/chart/plot/CategoryPlot.java">
+        <Message>In CategoryPlot.java</Message>
+      </SourceLine>
+      <Message>Field org.jfree.chart.plot.CategoryPlot.localizationResources</Message>
+    </Field>
+    <SourceLine classname="org.jfree.chart.plot.CategoryPlot" primary="true" start="286" end="286" startBytecode="67" endBytecode="67" sourcefile="CategoryPlot.java" sourcepath="org/jfree/chart/plot/CategoryPlot.java">
+      <Message>At CategoryPlot.java:[line 286]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" rank="18" abbrev="Bx" category="PERFORMANCE" instanceHash="fcdc5a72a7ab891dfe526bf6c2897e33" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Method invokes inefficient Number constructor; use static valueOf instead</ShortMessage>
+    <LongMessage>org.jfree.chart.plot.XYPlot.addDomainMarker(int, Marker, Layer, boolean) invokes inefficient new Integer(int) constructor; use Integer.valueOf(int) instead</LongMessage>
+    <Class classname="org.jfree.chart.plot.XYPlot" primary="true">
+      <SourceLine classname="org.jfree.chart.plot.XYPlot" start="284" end="5061" sourcefile="XYPlot.java" sourcepath="org/jfree/chart/plot/XYPlot.java">
+        <Message>At XYPlot.java:[lines 284-5061]</Message>
+      </SourceLine>
+      <Message>In class org.jfree.chart.plot.XYPlot</Message>
+    </Class>
+    <Method classname="org.jfree.chart.plot.XYPlot" name="addDomainMarker" signature="(ILorg/jfree/chart/plot/Marker;Lorg/jfree/chart/util/Layer;Z)V" isStatic="false" primary="true">
+      <SourceLine classname="org.jfree.chart.plot.XYPlot" start="2189" end="2218" startBytecode="0" endBytecode="318" sourcefile="XYPlot.java" sourcepath="org/jfree/chart/plot/XYPlot.java"/>
+      <Message>In method org.jfree.chart.plot.XYPlot.addDomainMarker(int, Marker, Layer, boolean)</Message>
+    </Method>
+    <Method classname="java.lang.Integer" name="&lt;init&gt;" signature="(I)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Integer" start="849" end="851" startBytecode="0" endBytecode="41" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+      <Message>Called method new Integer(int)</Message>
+    </Method>
+    <Method classname="java.lang.Integer" name="valueOf" signature="(I)Ljava/lang/Integer;" isStatic="true" role="SHOULD_CALL">
+      <SourceLine classname="java.lang.Integer" start="830" end="832" startBytecode="0" endBytecode="72" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+      <Message>Should call Integer.valueOf(int) instead</Message>
+    </Method>
+    <SourceLine classname="org.jfree.chart.plot.XYPlot" primary="true" start="2197" end="2197" startBytecode="44" endBytecode="44" sourcefile="XYPlot.java" sourcepath="org/jfree/chart/plot/XYPlot.java">
+      <Message>At XYPlot.java:[line 2197]</Message>
+    </SourceLine>
+    <SourceLine classname="org.jfree.chart.plot.XYPlot" start="2201" end="2201" startBytecode="80" endBytecode="80" sourcefile="XYPlot.java" sourcepath="org/jfree/chart/plot/XYPlot.java" role="SOURCE_LINE_ANOTHER_INSTANCE">
+      <Message>Another occurrence at XYPlot.java:[line 2201]</Message>
+    </SourceLine>
+    <SourceLine classname="org.jfree.chart.plot.XYPlot" start="2206" end="2206" startBytecode="119" endBytecode="119" sourcefile="XYPlot.java" sourcepath="org/jfree/chart/plot/XYPlot.java" role="SOURCE_LINE_ANOTHER_INSTANCE">
+      <Message>Another occurrence at XYPlot.java:[line 2206]</Message>
+    </SourceLine>
+    <SourceLine classname="org.jfree.chart.plot.XYPlot" start="2210" end="2210" startBytecode="155" endBytecode="155" sourcefile="XYPlot.java" sourcepath="org/jfree/chart/plot/XYPlot.java" role="SOURCE_LINE_ANOTHER_INSTANCE">
+      <Message>Another occurrence at XYPlot.java:[line 2210]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" rank="18" abbrev="Bx" category="PERFORMANCE" instanceHash="2aa94b5321da6de99abc7a3ee9ad1d34" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Method invokes inefficient Number constructor; use static valueOf instead</ShortMessage>
+    <LongMessage>org.jfree.chart.plot.XYPlot.addRangeMarker(int, Marker, Layer, boolean) invokes inefficient new Integer(int) constructor; use Integer.valueOf(int) instead</LongMessage>
+    <Class classname="org.jfree.chart.plot.XYPlot" primary="true">
+      <SourceLine classname="org.jfree.chart.plot.XYPlot" start="284" end="5061" sourcefile="XYPlot.java" sourcepath="org/jfree/chart/plot/XYPlot.java">
+        <Message>At XYPlot.java:[lines 284-5061]</Message>
+      </SourceLine>
+      <Message>In class org.jfree.chart.plot.XYPlot</Message>
+    </Class>
+    <Method classname="org.jfree.chart.plot.XYPlot" name="addRangeMarker" signature="(ILorg/jfree/chart/plot/Marker;Lorg/jfree/chart/util/Layer;Z)V" isStatic="false" primary="true">
+      <SourceLine classname="org.jfree.chart.plot.XYPlot" start="2394" end="2416" startBytecode="0" endBytecode="272" sourcefile="XYPlot.java" sourcepath="org/jfree/chart/plot/XYPlot.java"/>
+      <Message>In method org.jfree.chart.plot.XYPlot.addRangeMarker(int, Marker, Layer, boolean)</Message>
+    </Method>
+    <Method classname="java.lang.Integer" name="&lt;init&gt;" signature="(I)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Integer" start="849" end="851" startBytecode="0" endBytecode="41" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+      <Message>Called method new Integer(int)</Message>
+    </Method>
+    <Method classname="java.lang.Integer" name="valueOf" signature="(I)Ljava/lang/Integer;" isStatic="true" role="SHOULD_CALL">
+      <SourceLine classname="java.lang.Integer" start="830" end="832" startBytecode="0" endBytecode="72" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+      <Message>Should call Integer.valueOf(int) instead</Message>
+    </Method>
+    <SourceLine classname="org.jfree.chart.plot.XYPlot" primary="true" start="2395" end="2395" startBytecode="16" endBytecode="16" sourcefile="XYPlot.java" sourcepath="org/jfree/chart/plot/XYPlot.java">
+      <Message>At XYPlot.java:[line 2395]</Message>
+    </SourceLine>
+    <SourceLine classname="org.jfree.chart.plot.XYPlot" start="2399" end="2399" startBytecode="52" endBytecode="52" sourcefile="XYPlot.java" sourcepath="org/jfree/chart/plot/XYPlot.java" role="SOURCE_LINE_ANOTHER_INSTANCE">
+      <Message>Another occurrence at XYPlot.java:[line 2399]</Message>
+    </SourceLine>
+    <SourceLine classname="org.jfree.chart.plot.XYPlot" start="2404" end="2404" startBytecode="91" endBytecode="91" sourcefile="XYPlot.java" sourcepath="org/jfree/chart/plot/XYPlot.java" role="SOURCE_LINE_ANOTHER_INSTANCE">
+      <Message>Another occurrence at XYPlot.java:[line 2404]</Message>
+    </SourceLine>
+    <SourceLine classname="org.jfree.chart.plot.XYPlot" start="2408" end="2408" startBytecode="127" endBytecode="127" sourcefile="XYPlot.java" sourcepath="org/jfree/chart/plot/XYPlot.java" role="SOURCE_LINE_ANOTHER_INSTANCE">
+      <Message>Another occurrence at XYPlot.java:[line 2408]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" rank="18" abbrev="Bx" category="PERFORMANCE" instanceHash="c132a5f8f2c99b8e7fa3ea319a436d32" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Method invokes inefficient Number constructor; use static valueOf instead</ShortMessage>
+    <LongMessage>org.jfree.chart.plot.XYPlot.clearDomainMarkers(int) invokes inefficient new Integer(int) constructor; use Integer.valueOf(int) instead</LongMessage>
+    <Class classname="org.jfree.chart.plot.XYPlot" primary="true">
+      <SourceLine classname="org.jfree.chart.plot.XYPlot" start="284" end="5061" sourcefile="XYPlot.java" sourcepath="org/jfree/chart/plot/XYPlot.java">
+        <Message>At XYPlot.java:[lines 284-5061]</Message>
+      </SourceLine>
+      <Message>In class org.jfree.chart.plot.XYPlot</Message>
+    </Class>
+    <Method classname="org.jfree.chart.plot.XYPlot" name="clearDomainMarkers" signature="(I)V" isStatic="false" primary="true">
+      <SourceLine classname="org.jfree.chart.plot.XYPlot" start="2125" end="2151" startBytecode="0" endBytecode="302" sourcefile="XYPlot.java" sourcepath="org/jfree/chart/plot/XYPlot.java"/>
+      <Message>In method org.jfree.chart.plot.XYPlot.clearDomainMarkers(int)</Message>
+    </Method>
+    <Method classname="java.lang.Integer" name="&lt;init&gt;" signature="(I)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Integer" start="849" end="851" startBytecode="0" endBytecode="41" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+      <Message>Called method new Integer(int)</Message>
+    </Method>
+    <Method classname="java.lang.Integer" name="valueOf" signature="(I)Ljava/lang/Integer;" isStatic="true" role="SHOULD_CALL">
+      <SourceLine classname="java.lang.Integer" start="830" end="832" startBytecode="0" endBytecode="72" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+      <Message>Should call Integer.valueOf(int) instead</Message>
+    </Method>
+    <SourceLine classname="org.jfree.chart.plot.XYPlot" primary="true" start="2125" end="2125" startBytecode="5" endBytecode="5" sourcefile="XYPlot.java" sourcepath="org/jfree/chart/plot/XYPlot.java">
+      <Message>At XYPlot.java:[line 2125]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" rank="18" abbrev="Bx" category="PERFORMANCE" instanceHash="c790af9e28ff71fe589232b3a4d579f5" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Method invokes inefficient Number constructor; use static valueOf instead</ShortMessage>
+    <LongMessage>org.jfree.chart.plot.XYPlot.clearRangeMarkers(int) invokes inefficient new Integer(int) constructor; use Integer.valueOf(int) instead</LongMessage>
+    <Class classname="org.jfree.chart.plot.XYPlot" primary="true">
+      <SourceLine classname="org.jfree.chart.plot.XYPlot" start="284" end="5061" sourcefile="XYPlot.java" sourcepath="org/jfree/chart/plot/XYPlot.java">
+        <Message>At XYPlot.java:[lines 284-5061]</Message>
+      </SourceLine>
+      <Message>In class org.jfree.chart.plot.XYPlot</Message>
+    </Class>
+    <Method classname="org.jfree.chart.plot.XYPlot" name="clearRangeMarkers" signature="(I)V" isStatic="false" primary="true">
+      <SourceLine classname="org.jfree.chart.plot.XYPlot" start="2425" end="2451" startBytecode="0" endBytecode="302" sourcefile="XYPlot.java" sourcepath="org/jfree/chart/plot/XYPlot.java"/>
+      <Message>In method org.jfree.chart.plot.XYPlot.clearRangeMarkers(int)</Message>
+    </Method>
+    <Method classname="java.lang.Integer" name="&lt;init&gt;" signature="(I)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Integer" start="849" end="851" startBytecode="0" endBytecode="41" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+      <Message>Called method new Integer(int)</Message>
+    </Method>
+    <Method classname="java.lang.Integer" name="valueOf" signature="(I)Ljava/lang/Integer;" isStatic="true" role="SHOULD_CALL">
+      <SourceLine classname="java.lang.Integer" start="830" end="832" startBytecode="0" endBytecode="72" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+      <Message>Should call Integer.valueOf(int) instead</Message>
+    </Method>
+    <SourceLine classname="org.jfree.chart.plot.XYPlot" primary="true" start="2425" end="2425" startBytecode="5" endBytecode="5" sourcefile="XYPlot.java" sourcepath="org/jfree/chart/plot/XYPlot.java">
+      <Message>At XYPlot.java:[line 2425]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" rank="18" abbrev="Bx" category="PERFORMANCE" instanceHash="95800ad317ebf46702ec575f14bc862b" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Method invokes inefficient Number constructor; use static valueOf instead</ShortMessage>
+    <LongMessage>org.jfree.chart.plot.XYPlot.getDataRange(ValueAxis) invokes inefficient new Integer(int) constructor; use Integer.valueOf(int) instead</LongMessage>
+    <Class classname="org.jfree.chart.plot.XYPlot" primary="true">
+      <SourceLine classname="org.jfree.chart.plot.XYPlot" start="284" end="5061" sourcefile="XYPlot.java" sourcepath="org/jfree/chart/plot/XYPlot.java">
+        <Message>At XYPlot.java:[lines 284-5061]</Message>
+      </SourceLine>
+      <Message>In class org.jfree.chart.plot.XYPlot</Message>
+    </Class>
+    <Method classname="org.jfree.chart.plot.XYPlot" name="getDataRange" signature="(Lorg/jfree/chart/axis/ValueAxis;)Lorg/jfree/data/Range;" isStatic="false" primary="true">
+      <SourceLine classname="org.jfree.chart.plot.XYPlot" start="3974" end="4021" startBytecode="0" endBytecode="392" sourcefile="XYPlot.java" sourcepath="org/jfree/chart/plot/XYPlot.java"/>
+      <Message>In method org.jfree.chart.plot.XYPlot.getDataRange(ValueAxis)</Message>
+    </Method>
+    <Method classname="java.lang.Integer" name="&lt;init&gt;" signature="(I)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Integer" start="849" end="851" startBytecode="0" endBytecode="41" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+      <Message>Called method new Integer(int)</Message>
+    </Method>
+    <Method classname="java.lang.Integer" name="valueOf" signature="(I)Ljava/lang/Integer;" isStatic="true" role="SHOULD_CALL">
+      <SourceLine classname="java.lang.Integer" start="830" end="832" startBytecode="0" endBytecode="72" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+      <Message>Should call Integer.valueOf(int) instead</Message>
+    </Method>
+    <SourceLine classname="org.jfree.chart.plot.XYPlot" primary="true" start="3982" end="3982" startBytecode="36" endBytecode="36" sourcefile="XYPlot.java" sourcepath="org/jfree/chart/plot/XYPlot.java">
+      <Message>At XYPlot.java:[line 3982]</Message>
+    </SourceLine>
+    <SourceLine classname="org.jfree.chart.plot.XYPlot" start="3990" end="3990" startBytecode="71" endBytecode="71" sourcefile="XYPlot.java" sourcepath="org/jfree/chart/plot/XYPlot.java" role="SOURCE_LINE_ANOTHER_INSTANCE">
+      <Message>Another occurrence at XYPlot.java:[line 3990]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" rank="18" abbrev="Bx" category="PERFORMANCE" instanceHash="3f938da6a456033eb6ab328e5a816645" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Method invokes inefficient Number constructor; use static valueOf instead</ShortMessage>
+    <LongMessage>org.jfree.chart.plot.XYPlot.getDatasetsMappedToDomainAxis(Integer) invokes inefficient new Integer(int) constructor; use Integer.valueOf(int) instead</LongMessage>
+    <Class classname="org.jfree.chart.plot.XYPlot" primary="true">
+      <SourceLine classname="org.jfree.chart.plot.XYPlot" start="284" end="5061" sourcefile="XYPlot.java" sourcepath="org/jfree/chart/plot/XYPlot.java">
+        <Message>At XYPlot.java:[lines 284-5061]</Message>
+      </SourceLine>
+      <Message>In class org.jfree.chart.plot.XYPlot</Message>
+    </Class>
+    <Method classname="org.jfree.chart.plot.XYPlot" name="getDatasetsMappedToDomainAxis" signature="(Ljava/lang/Integer;)Ljava/util/List;" isStatic="false" primary="true">
+      <SourceLine classname="org.jfree.chart.plot.XYPlot" start="3870" end="3888" startBytecode="0" endBytecode="218" sourcefile="XYPlot.java" sourcepath="org/jfree/chart/plot/XYPlot.java"/>
+      <Message>In method org.jfree.chart.plot.XYPlot.getDatasetsMappedToDomainAxis(Integer)</Message>
+    </Method>
+    <Method classname="java.lang.Integer" name="&lt;init&gt;" signature="(I)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Integer" start="849" end="851" startBytecode="0" endBytecode="41" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+      <Message>Called method new Integer(int)</Message>
+    </Method>
+    <Method classname="java.lang.Integer" name="valueOf" signature="(I)Ljava/lang/Integer;" isStatic="true" role="SHOULD_CALL">
+      <SourceLine classname="java.lang.Integer" start="830" end="832" startBytecode="0" endBytecode="72" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+      <Message>Should call Integer.valueOf(int) instead</Message>
+    </Method>
+    <SourceLine classname="org.jfree.chart.plot.XYPlot" primary="true" start="3875" end="3875" startBytecode="45" endBytecode="45" sourcefile="XYPlot.java" sourcepath="org/jfree/chart/plot/XYPlot.java">
+      <Message>At XYPlot.java:[line 3875]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" rank="18" abbrev="Bx" category="PERFORMANCE" instanceHash="e4f939c21efdc0111c6233a128039e34" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Method invokes inefficient Number constructor; use static valueOf instead</ShortMessage>
+    <LongMessage>org.jfree.chart.plot.XYPlot.getDatasetsMappedToRangeAxis(Integer) invokes inefficient new Integer(int) constructor; use Integer.valueOf(int) instead</LongMessage>
+    <Class classname="org.jfree.chart.plot.XYPlot" primary="true">
+      <SourceLine classname="org.jfree.chart.plot.XYPlot" start="284" end="5061" sourcefile="XYPlot.java" sourcepath="org/jfree/chart/plot/XYPlot.java">
+        <Message>At XYPlot.java:[lines 284-5061]</Message>
+      </SourceLine>
+      <Message>In class org.jfree.chart.plot.XYPlot</Message>
+    </Class>
+    <Method classname="org.jfree.chart.plot.XYPlot" name="getDatasetsMappedToRangeAxis" signature="(Ljava/lang/Integer;)Ljava/util/List;" isStatic="false" primary="true">
+      <SourceLine classname="org.jfree.chart.plot.XYPlot" start="3900" end="3918" startBytecode="0" endBytecode="218" sourcefile="XYPlot.java" sourcepath="org/jfree/chart/plot/XYPlot.java"/>
+      <Message>In method org.jfree.chart.plot.XYPlot.getDatasetsMappedToRangeAxis(Integer)</Message>
+    </Method>
+    <Method classname="java.lang.Integer" name="&lt;init&gt;" signature="(I)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Integer" start="849" end="851" startBytecode="0" endBytecode="41" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+      <Message>Called method new Integer(int)</Message>
+    </Method>
+    <Method classname="java.lang.Integer" name="valueOf" signature="(I)Ljava/lang/Integer;" isStatic="true" role="SHOULD_CALL">
+      <SourceLine classname="java.lang.Integer" start="830" end="832" startBytecode="0" endBytecode="72" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+      <Message>Should call Integer.valueOf(int) instead</Message>
+    </Method>
+    <SourceLine classname="org.jfree.chart.plot.XYPlot" primary="true" start="3905" end="3905" startBytecode="45" endBytecode="45" sourcefile="XYPlot.java" sourcepath="org/jfree/chart/plot/XYPlot.java">
+      <Message>At XYPlot.java:[line 3905]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" rank="18" abbrev="Bx" category="PERFORMANCE" instanceHash="3a5a602c643b7cd6babf39ff278b385" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Method invokes inefficient Number constructor; use static valueOf instead</ShortMessage>
+    <LongMessage>org.jfree.chart.plot.XYPlot.getDomainAxisForDataset(int) invokes inefficient new Integer(int) constructor; use Integer.valueOf(int) instead</LongMessage>
+    <Class classname="org.jfree.chart.plot.XYPlot" primary="true">
+      <SourceLine classname="org.jfree.chart.plot.XYPlot" start="284" end="5061" sourcefile="XYPlot.java" sourcepath="org/jfree/chart/plot/XYPlot.java">
+        <Message>At XYPlot.java:[lines 284-5061]</Message>
+      </SourceLine>
+      <Message>In class org.jfree.chart.plot.XYPlot</Message>
+    </Class>
+    <Method classname="org.jfree.chart.plot.XYPlot" name="getDomainAxisForDataset" signature="(I)Lorg/jfree/chart/axis/ValueAxis;" isStatic="false" primary="true">
+      <SourceLine classname="org.jfree.chart.plot.XYPlot" start="3389" end="3403" startBytecode="0" endBytecode="164" sourcefile="XYPlot.java" sourcepath="org/jfree/chart/plot/XYPlot.java"/>
+      <Message>In method org.jfree.chart.plot.XYPlot.getDomainAxisForDataset(int)</Message>
+    </Method>
+    <Method classname="java.lang.Integer" name="&lt;init&gt;" signature="(I)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Integer" start="849" end="851" startBytecode="0" endBytecode="41" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+      <Message>Called method new Integer(int)</Message>
+    </Method>
+    <Method classname="java.lang.Integer" name="valueOf" signature="(I)Ljava/lang/Integer;" isStatic="true" role="SHOULD_CALL">
+      <SourceLine classname="java.lang.Integer" start="830" end="832" startBytecode="0" endBytecode="72" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+      <Message>Should call Integer.valueOf(int) instead</Message>
+    </Method>
+    <SourceLine classname="org.jfree.chart.plot.XYPlot" primary="true" start="3395" end="3395" startBytecode="57" endBytecode="57" sourcefile="XYPlot.java" sourcepath="org/jfree/chart/plot/XYPlot.java">
+      <Message>At XYPlot.java:[line 3395]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" rank="18" abbrev="Bx" category="PERFORMANCE" instanceHash="23dc2e8794f1366f83a5c4637541704e" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Method invokes inefficient Number constructor; use static valueOf instead</ShortMessage>
+    <LongMessage>org.jfree.chart.plot.XYPlot.getDomainMarkers(int, Layer) invokes inefficient new Integer(int) constructor; use Integer.valueOf(int) instead</LongMessage>
+    <Class classname="org.jfree.chart.plot.XYPlot" primary="true">
+      <SourceLine classname="org.jfree.chart.plot.XYPlot" start="284" end="5061" sourcefile="XYPlot.java" sourcepath="org/jfree/chart/plot/XYPlot.java">
+        <Message>At XYPlot.java:[lines 284-5061]</Message>
+      </SourceLine>
+      <Message>In class org.jfree.chart.plot.XYPlot</Message>
+    </Class>
+    <Method classname="org.jfree.chart.plot.XYPlot" name="getDomainMarkers" signature="(ILorg/jfree/chart/util/Layer;)Ljava/util/Collection;" isStatic="false" primary="true">
+      <SourceLine classname="org.jfree.chart.plot.XYPlot" start="3659" end="3670" startBytecode="0" endBytecode="144" sourcefile="XYPlot.java" sourcepath="org/jfree/chart/plot/XYPlot.java"/>
+      <Message>In method org.jfree.chart.plot.XYPlot.getDomainMarkers(int, Layer)</Message>
+    </Method>
+    <Method classname="java.lang.Integer" name="&lt;init&gt;" signature="(I)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Integer" start="849" end="851" startBytecode="0" endBytecode="41" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+      <Message>Called method new Integer(int)</Message>
+    </Method>
+    <Method classname="java.lang.Integer" name="valueOf" signature="(I)Ljava/lang/Integer;" isStatic="true" role="SHOULD_CALL">
+      <SourceLine classname="java.lang.Integer" start="830" end="832" startBytecode="0" endBytecode="72" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+      <Message>Should call Integer.valueOf(int) instead</Message>
+    </Method>
+    <SourceLine classname="org.jfree.chart.plot.XYPlot" primary="true" start="3660" end="3660" startBytecode="7" endBytecode="7" sourcefile="XYPlot.java" sourcepath="org/jfree/chart/plot/XYPlot.java">
+      <Message>At XYPlot.java:[line 3660]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" rank="18" abbrev="Bx" category="PERFORMANCE" instanceHash="88c88f2a572aec0da77ced3debdc83e9" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Method invokes inefficient Number constructor; use static valueOf instead</ShortMessage>
+    <LongMessage>org.jfree.chart.plot.XYPlot.getRangeAxisForDataset(int) invokes inefficient new Integer(int) constructor; use Integer.valueOf(int) instead</LongMessage>
+    <Class classname="org.jfree.chart.plot.XYPlot" primary="true">
+      <SourceLine classname="org.jfree.chart.plot.XYPlot" start="284" end="5061" sourcefile="XYPlot.java" sourcepath="org/jfree/chart/plot/XYPlot.java">
+        <Message>At XYPlot.java:[lines 284-5061]</Message>
+      </SourceLine>
+      <Message>In class org.jfree.chart.plot.XYPlot</Message>
+    </Class>
+    <Method classname="org.jfree.chart.plot.XYPlot" name="getRangeAxisForDataset" signature="(I)Lorg/jfree/chart/axis/ValueAxis;" isStatic="false" primary="true">
+      <SourceLine classname="org.jfree.chart.plot.XYPlot" start="3416" end="3430" startBytecode="0" endBytecode="168" sourcefile="XYPlot.java" sourcepath="org/jfree/chart/plot/XYPlot.java"/>
+      <Message>In method org.jfree.chart.plot.XYPlot.getRangeAxisForDataset(int)</Message>
+    </Method>
+    <Method classname="java.lang.Integer" name="&lt;init&gt;" signature="(I)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Integer" start="849" end="851" startBytecode="0" endBytecode="41" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+      <Message>Called method new Integer(int)</Message>
+    </Method>
+    <Method classname="java.lang.Integer" name="valueOf" signature="(I)Ljava/lang/Integer;" isStatic="true" role="SHOULD_CALL">
+      <SourceLine classname="java.lang.Integer" start="830" end="832" startBytecode="0" endBytecode="72" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+      <Message>Should call Integer.valueOf(int) instead</Message>
+    </Method>
+    <SourceLine classname="org.jfree.chart.plot.XYPlot" primary="true" start="3422" end="3422" startBytecode="57" endBytecode="57" sourcefile="XYPlot.java" sourcepath="org/jfree/chart/plot/XYPlot.java">
+      <Message>At XYPlot.java:[line 3422]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" rank="18" abbrev="Bx" category="PERFORMANCE" instanceHash="530047d8cbbaa786bb4a082d620d7591" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Method invokes inefficient Number constructor; use static valueOf instead</ShortMessage>
+    <LongMessage>org.jfree.chart.plot.XYPlot.getRangeMarkers(int, Layer) invokes inefficient new Integer(int) constructor; use Integer.valueOf(int) instead</LongMessage>
+    <Class classname="org.jfree.chart.plot.XYPlot" primary="true">
+      <SourceLine classname="org.jfree.chart.plot.XYPlot" start="284" end="5061" sourcefile="XYPlot.java" sourcepath="org/jfree/chart/plot/XYPlot.java">
+        <Message>At XYPlot.java:[lines 284-5061]</Message>
+      </SourceLine>
+      <Message>In class org.jfree.chart.plot.XYPlot</Message>
+    </Class>
+    <Method classname="org.jfree.chart.plot.XYPlot" name="getRangeMarkers" signature="(ILorg/jfree/chart/util/Layer;)Ljava/util/Collection;" isStatic="false" primary="true">
+      <SourceLine classname="org.jfree.chart.plot.XYPlot" start="3685" end="3696" startBytecode="0" endBytecode="144" sourcefile="XYPlot.java" sourcepath="org/jfree/chart/plot/XYPlot.java"/>
+      <Message>In method org.jfree.chart.plot.XYPlot.getRangeMarkers(int, Layer)</Message>
+    </Method>
+    <Method classname="java.lang.Integer" name="&lt;init&gt;" signature="(I)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Integer" start="849" end="851" startBytecode="0" endBytecode="41" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+      <Message>Called method new Integer(int)</Message>
+    </Method>
+    <Method classname="java.lang.Integer" name="valueOf" signature="(I)Ljava/lang/Integer;" isStatic="true" role="SHOULD_CALL">
+      <SourceLine classname="java.lang.Integer" start="830" end="832" startBytecode="0" endBytecode="72" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+      <Message>Should call Integer.valueOf(int) instead</Message>
+    </Method>
+    <SourceLine classname="org.jfree.chart.plot.XYPlot" primary="true" start="3686" end="3686" startBytecode="7" endBytecode="7" sourcefile="XYPlot.java" sourcepath="org/jfree/chart/plot/XYPlot.java">
+      <Message>At XYPlot.java:[line 3686]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" rank="18" abbrev="Bx" category="PERFORMANCE" instanceHash="2e3725f219f610ada8ec73f2b43f5887" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Method invokes inefficient Number constructor; use static valueOf instead</ShortMessage>
+    <LongMessage>org.jfree.chart.plot.XYPlot.mapDatasetToDomainAxis(int, int) invokes inefficient new Integer(int) constructor; use Integer.valueOf(int) instead</LongMessage>
+    <Class classname="org.jfree.chart.plot.XYPlot" primary="true">
+      <SourceLine classname="org.jfree.chart.plot.XYPlot" start="284" end="5061" sourcefile="XYPlot.java" sourcepath="org/jfree/chart/plot/XYPlot.java">
+        <Message>At XYPlot.java:[lines 284-5061]</Message>
+      </SourceLine>
+      <Message>In class org.jfree.chart.plot.XYPlot</Message>
+    </Class>
+    <Method classname="org.jfree.chart.plot.XYPlot" name="mapDatasetToDomainAxis" signature="(II)V" isStatic="false" primary="true">
+      <SourceLine classname="org.jfree.chart.plot.XYPlot" start="1354" end="1358" startBytecode="0" endBytecode="75" sourcefile="XYPlot.java" sourcepath="org/jfree/chart/plot/XYPlot.java"/>
+      <Message>In method org.jfree.chart.plot.XYPlot.mapDatasetToDomainAxis(int, int)</Message>
+    </Method>
+    <Method classname="java.lang.Integer" name="&lt;init&gt;" signature="(I)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Integer" start="849" end="851" startBytecode="0" endBytecode="41" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+      <Message>Called method new Integer(int)</Message>
+    </Method>
+    <Method classname="java.lang.Integer" name="valueOf" signature="(I)Ljava/lang/Integer;" isStatic="true" role="SHOULD_CALL">
+      <SourceLine classname="java.lang.Integer" start="830" end="832" startBytecode="0" endBytecode="72" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+      <Message>Should call Integer.valueOf(int) instead</Message>
+    </Method>
+    <SourceLine classname="org.jfree.chart.plot.XYPlot" primary="true" start="1354" end="1354" startBytecode="9" endBytecode="9" sourcefile="XYPlot.java" sourcepath="org/jfree/chart/plot/XYPlot.java">
+      <Message>At XYPlot.java:[line 1354]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" rank="18" abbrev="Bx" category="PERFORMANCE" instanceHash="7c919c704c99a098d8cb2284f48890a3" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Method invokes inefficient Number constructor; use static valueOf instead</ShortMessage>
+    <LongMessage>org.jfree.chart.plot.XYPlot.mapDatasetToRangeAxis(int, int) invokes inefficient new Integer(int) constructor; use Integer.valueOf(int) instead</LongMessage>
+    <Class classname="org.jfree.chart.plot.XYPlot" primary="true">
+      <SourceLine classname="org.jfree.chart.plot.XYPlot" start="284" end="5061" sourcefile="XYPlot.java" sourcepath="org/jfree/chart/plot/XYPlot.java">
+        <Message>At XYPlot.java:[lines 284-5061]</Message>
+      </SourceLine>
+      <Message>In class org.jfree.chart.plot.XYPlot</Message>
+    </Class>
+    <Method classname="org.jfree.chart.plot.XYPlot" name="mapDatasetToRangeAxis" signature="(II)V" isStatic="false" primary="true">
+      <SourceLine classname="org.jfree.chart.plot.XYPlot" start="1370" end="1374" startBytecode="0" endBytecode="75" sourcefile="XYPlot.java" sourcepath="org/jfree/chart/plot/XYPlot.java"/>
+      <Message>In method org.jfree.chart.plot.XYPlot.mapDatasetToRangeAxis(int, int)</Message>
+    </Method>
+    <Method classname="java.lang.Integer" name="&lt;init&gt;" signature="(I)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Integer" start="849" end="851" startBytecode="0" endBytecode="41" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+      <Message>Called method new Integer(int)</Message>
+    </Method>
+    <Method classname="java.lang.Integer" name="valueOf" signature="(I)Ljava/lang/Integer;" isStatic="true" role="SHOULD_CALL">
+      <SourceLine classname="java.lang.Integer" start="830" end="832" startBytecode="0" endBytecode="72" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+      <Message>Should call Integer.valueOf(int) instead</Message>
+    </Method>
+    <SourceLine classname="org.jfree.chart.plot.XYPlot" primary="true" start="1370" end="1370" startBytecode="9" endBytecode="9" sourcefile="XYPlot.java" sourcepath="org/jfree/chart/plot/XYPlot.java">
+      <Message>At XYPlot.java:[line 1370]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" rank="18" abbrev="Bx" category="PERFORMANCE" instanceHash="67f00907ee47640622bae303c7e6e3b8" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Method invokes inefficient Number constructor; use static valueOf instead</ShortMessage>
+    <LongMessage>org.jfree.chart.plot.XYPlot.removeDomainMarker(int, Marker, Layer, boolean) invokes inefficient new Integer(int) constructor; use Integer.valueOf(int) instead</LongMessage>
+    <Class classname="org.jfree.chart.plot.XYPlot" primary="true">
+      <SourceLine classname="org.jfree.chart.plot.XYPlot" start="284" end="5061" sourcefile="XYPlot.java" sourcepath="org/jfree/chart/plot/XYPlot.java">
+        <Message>At XYPlot.java:[lines 284-5061]</Message>
+      </SourceLine>
+      <Message>In class org.jfree.chart.plot.XYPlot</Message>
+    </Class>
+    <Method classname="org.jfree.chart.plot.XYPlot" name="removeDomainMarker" signature="(ILorg/jfree/chart/plot/Marker;Lorg/jfree/chart/util/Layer;Z)Z" isStatic="false" primary="true">
+      <SourceLine classname="org.jfree.chart.plot.XYPlot" start="2285" end="2297" startBytecode="0" endBytecode="145" sourcefile="XYPlot.java" sourcepath="org/jfree/chart/plot/XYPlot.java"/>
+      <Message>In method org.jfree.chart.plot.XYPlot.removeDomainMarker(int, Marker, Layer, boolean)</Message>
+    </Method>
+    <Method classname="java.lang.Integer" name="&lt;init&gt;" signature="(I)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Integer" start="849" end="851" startBytecode="0" endBytecode="41" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+      <Message>Called method new Integer(int)</Message>
+    </Method>
+    <Method classname="java.lang.Integer" name="valueOf" signature="(I)Ljava/lang/Integer;" isStatic="true" role="SHOULD_CALL">
+      <SourceLine classname="java.lang.Integer" start="830" end="832" startBytecode="0" endBytecode="72" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+      <Message>Should call Integer.valueOf(int) instead</Message>
+    </Method>
+    <SourceLine classname="org.jfree.chart.plot.XYPlot" primary="true" start="2286" end="2286" startBytecode="16" endBytecode="16" sourcefile="XYPlot.java" sourcepath="org/jfree/chart/plot/XYPlot.java">
+      <Message>At XYPlot.java:[line 2286]</Message>
+    </SourceLine>
+    <SourceLine classname="org.jfree.chart.plot.XYPlot" start="2290" end="2290" startBytecode="41" endBytecode="41" sourcefile="XYPlot.java" sourcepath="org/jfree/chart/plot/XYPlot.java" role="SOURCE_LINE_ANOTHER_INSTANCE">
+      <Message>Another occurrence at XYPlot.java:[line 2290]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" rank="18" abbrev="Bx" category="PERFORMANCE" instanceHash="aebd354e69a3e9eff706ba51825596ef" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Method invokes inefficient Number constructor; use static valueOf instead</ShortMessage>
+    <LongMessage>org.jfree.chart.plot.XYPlot.removeRangeMarker(int, Marker, Layer, boolean) invokes inefficient new Integer(int) constructor; use Integer.valueOf(int) instead</LongMessage>
+    <Class classname="org.jfree.chart.plot.XYPlot" primary="true">
+      <SourceLine classname="org.jfree.chart.plot.XYPlot" start="284" end="5061" sourcefile="XYPlot.java" sourcepath="org/jfree/chart/plot/XYPlot.java">
+        <Message>At XYPlot.java:[lines 284-5061]</Message>
+      </SourceLine>
+      <Message>In class org.jfree.chart.plot.XYPlot</Message>
+    </Class>
+    <Method classname="org.jfree.chart.plot.XYPlot" name="removeRangeMarker" signature="(ILorg/jfree/chart/plot/Marker;Lorg/jfree/chart/util/Layer;Z)Z" isStatic="false" primary="true">
+      <SourceLine classname="org.jfree.chart.plot.XYPlot" start="2517" end="2533" startBytecode="0" endBytecode="168" sourcefile="XYPlot.java" sourcepath="org/jfree/chart/plot/XYPlot.java"/>
+      <Message>In method org.jfree.chart.plot.XYPlot.removeRangeMarker(int, Marker, Layer, boolean)</Message>
+    </Method>
+    <Method classname="java.lang.Integer" name="&lt;init&gt;" signature="(I)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Integer" start="849" end="851" startBytecode="0" endBytecode="41" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+      <Message>Called method new Integer(int)</Message>
+    </Method>
+    <Method classname="java.lang.Integer" name="valueOf" signature="(I)Ljava/lang/Integer;" isStatic="true" role="SHOULD_CALL">
+      <SourceLine classname="java.lang.Integer" start="830" end="832" startBytecode="0" endBytecode="72" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+      <Message>Should call Integer.valueOf(int) instead</Message>
+    </Method>
+    <SourceLine classname="org.jfree.chart.plot.XYPlot" primary="true" start="2522" end="2522" startBytecode="30" endBytecode="30" sourcefile="XYPlot.java" sourcepath="org/jfree/chart/plot/XYPlot.java">
+      <Message>At XYPlot.java:[line 2522]</Message>
+    </SourceLine>
+    <SourceLine classname="org.jfree.chart.plot.XYPlot" start="2526" end="2526" startBytecode="55" endBytecode="55" sourcefile="XYPlot.java" sourcepath="org/jfree/chart/plot/XYPlot.java" role="SOURCE_LINE_ANOTHER_INSTANCE">
+      <Message>Another occurrence at XYPlot.java:[line 2526]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="HE_EQUALS_USE_HASHCODE" priority="1" rank="14" abbrev="HE" category="BAD_PRACTICE" instanceHash="4dbfe37eb80fe9e7fabfb0f907b353df" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Class defines equals() and uses Object.hashCode()</ShortMessage>
+    <LongMessage>org.jfree.chart.plot.XYPlot defines equals and uses Object.hashCode()</LongMessage>
+    <Class classname="org.jfree.chart.plot.XYPlot" primary="true">
+      <SourceLine classname="org.jfree.chart.plot.XYPlot" start="284" end="5061" sourcefile="XYPlot.java" sourcepath="org/jfree/chart/plot/XYPlot.java">
+        <Message>At XYPlot.java:[lines 284-5061]</Message>
+      </SourceLine>
+      <Message>In class org.jfree.chart.plot.XYPlot</Message>
+    </Class>
+    <Method classname="org.jfree.chart.plot.XYPlot" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false" primary="true">
+      <SourceLine classname="org.jfree.chart.plot.XYPlot" start="4707" end="4879" startBytecode="0" endBytecode="1208" sourcefile="XYPlot.java" sourcepath="org/jfree/chart/plot/XYPlot.java"/>
+      <Message>In method org.jfree.chart.plot.XYPlot.equals(Object)</Message>
+    </Method>
+    <SourceLine classname="org.jfree.chart.plot.XYPlot" start="4707" end="4879" startBytecode="0" endBytecode="1208" sourcefile="XYPlot.java" sourcepath="org/jfree/chart/plot/XYPlot.java" synthetic="true">
+      <Message>At XYPlot.java:[lines 4707-4879]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="MS_SHOULD_BE_FINAL" priority="1" rank="16" abbrev="MS" category="MALICIOUS_CODE" instanceHash="bb134b0c11c8bf9245ca15ae027e58f" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="218">
+    <ShortMessage>Field isn&apos;t final but should be</ShortMessage>
+    <LongMessage>org.jfree.chart.plot.XYPlot.localizationResources isn&apos;t final but should be</LongMessage>
+    <Class classname="org.jfree.chart.plot.XYPlot" primary="true">
+      <SourceLine classname="org.jfree.chart.plot.XYPlot" start="284" end="5061" sourcefile="XYPlot.java" sourcepath="org/jfree/chart/plot/XYPlot.java">
+        <Message>At XYPlot.java:[lines 284-5061]</Message>
+      </SourceLine>
+      <Message>In class org.jfree.chart.plot.XYPlot</Message>
+    </Class>
+    <Field classname="org.jfree.chart.plot.XYPlot" name="localizationResources" signature="Ljava/util/ResourceBundle;" isStatic="true" primary="true">
+      <SourceLine classname="org.jfree.chart.plot.XYPlot" sourcefile="XYPlot.java" sourcepath="org/jfree/chart/plot/XYPlot.java">
+        <Message>In XYPlot.java</Message>
+      </SourceLine>
+      <Message>Field org.jfree.chart.plot.XYPlot.localizationResources</Message>
+    </Field>
+    <SourceLine classname="org.jfree.chart.plot.XYPlot" primary="true" start="303" end="303" startBytecode="51" endBytecode="51" sourcefile="XYPlot.java" sourcepath="org/jfree/chart/plot/XYPlot.java">
+      <Message>At XYPlot.java:[line 303]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="BAD_PRACTICE">
+    <Description>Bad practice</Description>
+  </BugCategory>
+  <BugCategory category="MALICIOUS_CODE">
+    <Description>Malicious code vulnerability</Description>
+  </BugCategory>
+  <BugCategory category="PERFORMANCE">
+    <Description>Performance</Description>
+  </BugCategory>
+  <BugPattern type="MS_SHOULD_BE_FINAL" abbrev="MS" category="MALICIOUS_CODE">
+    <ShortDescription>Field isn&apos;t final but should be</ShortDescription>
+    <Details><![CDATA[
+
+   <p>
+This static field public but not final, and
+could be changed by malicious code or
+        by accident from another package.
+        The field could be made final to avoid
+        this vulnerability.</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="HE_EQUALS_USE_HASHCODE" abbrev="HE" category="BAD_PRACTICE">
+    <ShortDescription>Class defines equals() and uses Object.hashCode()</ShortDescription>
+    <Details><![CDATA[
+
+  <p> This class overrides <code>equals(Object)</code>, but does not
+  override <code>hashCode()</code>, and inherits the implementation of
+  <code>hashCode()</code> from <code>java.lang.Object</code> (which returns
+  the identity hash code, an arbitrary value assigned to the object
+  by the VM).&nbsp; Therefore, the class is very likely to violate the
+  invariant that equal objects must have equal hashcodes.</p>
+
+<p>If you don't think instances of this class will ever be inserted into a HashMap/HashTable,
+the recommended <code>hashCode</code> implementation to use is:</p>
+<pre><code>public int hashCode() {
+    assert false : "hashCode not designed";
+    return 42; // any arbitrary constant will do
+}
+</code></pre>
+
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="DM_NUMBER_CTOR" abbrev="Bx" category="PERFORMANCE">
+    <ShortDescription>Method invokes inefficient Number constructor; use static valueOf instead</ShortDescription>
+    <Details><![CDATA[
+      
+      <p>
+      Using <code>new Integer(int)</code> is guaranteed to always result in a new object whereas
+      <code>Integer.valueOf(int)</code> allows caching of values to be done by the compiler, class library, or JVM.
+      Using of cached values avoids object allocation and the code will be faster.
+      </p>
+      <p>
+      Values between -128 and 127 are guaranteed to have corresponding cached instances
+      and using <code>valueOf</code> is approximately 3.5 times faster than using constructor.
+      For values outside the constant range the performance of both styles is the same.
+      </p>
+      <p>
+      Unless the class must be compatible with JVMs predating Java 1.5,
+      use either autoboxing or the <code>valueOf()</code> method when creating instances of
+      <code>Long</code>, <code>Integer</code>, <code>Short</code>, <code>Character</code>, and <code>Byte</code>.
+      </p>
+      
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="Bx">
+    <Description>Questionable Boxing of primitive value</Description>
+  </BugCode>
+  <BugCode abbrev="MS" cweid="218">
+    <Description>Mutable static field</Description>
+  </BugCode>
+  <BugCode abbrev="HE">
+    <Description>Equal objects must have equal hashcodes</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 14 Nov 2018 03:46:59 -0500" total_classes="2" referenced_classes="118" total_bugs="29" total_size="3199" num_packages="1" java_version="1.8.0_121" vm_version="25.121-b13" cpu_seconds="20.20" clock_seconds="11.27" peak_mbytes="257.96" alloc_mbytes="1820.50" gc_seconds="0.14" priority_2="25" priority_1="4">
+    <FileStats path="org/jfree/chart/plot/CategoryPlot.java" bugCount="12" size="1402" bugHash="b6612bce582092ea910425023e2dff43"/>
+    <FileStats path="org/jfree/chart/plot/XYPlot.java" bugCount="17" size="1797" bugHash="c4dec66c524c731b81328b0d40ae8cac"/>
+    <PackageStats package="org.jfree.chart.plot" total_bugs="29" total_types="2" total_size="3199" priority_2="25" priority_1="4">
+      <ClassStats class="org.jfree.chart.plot.CategoryPlot" sourceFile="CategoryPlot.java" interface="false" size="1402" bugs="12" priority_2="10" priority_1="2"/>
+      <ClassStats class="org.jfree.chart.plot.XYPlot" sourceFile="XYPlot.java" interface="false" size="1797" bugs="17" priority_2="15" priority_1="2"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="935" invocations="735" avgMicrosecondsPerInvocation="1272" maxMicrosecondsPerInvocation="30509" standardDeviationMicrosecondsPerInvocation="3007"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="767" invocations="375" avgMicrosecondsPerInvocation="2046" maxMicrosecondsPerInvocation="149275" standardDeviationMicrosecondsPerInvocation="10296"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="717" invocations="375" avgMicrosecondsPerInvocation="1912" maxMicrosecondsPerInvocation="60838" standardDeviationMicrosecondsPerInvocation="6635"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="709" invocations="728" avgMicrosecondsPerInvocation="974" maxMicrosecondsPerInvocation="73374" standardDeviationMicrosecondsPerInvocation="4485"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="560" invocations="391" avgMicrosecondsPerInvocation="1432" maxMicrosecondsPerInvocation="48443" standardDeviationMicrosecondsPerInvocation="4991"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="467" invocations="375" avgMicrosecondsPerInvocation="1247" maxMicrosecondsPerInvocation="46004" standardDeviationMicrosecondsPerInvocation="4711"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="431" invocations="375" avgMicrosecondsPerInvocation="1151" maxMicrosecondsPerInvocation="29384" standardDeviationMicrosecondsPerInvocation="3887"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="382" invocations="118" avgMicrosecondsPerInvocation="3242" maxMicrosecondsPerInvocation="52652" standardDeviationMicrosecondsPerInvocation="8025"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="353" invocations="678" avgMicrosecondsPerInvocation="521" maxMicrosecondsPerInvocation="29812" standardDeviationMicrosecondsPerInvocation="2139"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="338" invocations="118" avgMicrosecondsPerInvocation="2866" maxMicrosecondsPerInvocation="75177" standardDeviationMicrosecondsPerInvocation="8564"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="250" invocations="375" avgMicrosecondsPerInvocation="667" maxMicrosecondsPerInvocation="25863" standardDeviationMicrosecondsPerInvocation="2394"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="165" invocations="375" avgMicrosecondsPerInvocation="440" maxMicrosecondsPerInvocation="108742" standardDeviationMicrosecondsPerInvocation="5638"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindOpenStream" totalMilliseconds="155" invocations="2" avgMicrosecondsPerInvocation="77987" maxMicrosecondsPerInvocation="111894" standardDeviationMicrosecondsPerInvocation="33906"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="155" invocations="311" avgMicrosecondsPerInvocation="498" maxMicrosecondsPerInvocation="15349" standardDeviationMicrosecondsPerInvocation="1576"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="154" invocations="118" avgMicrosecondsPerInvocation="1309" maxMicrosecondsPerInvocation="29489" standardDeviationMicrosecondsPerInvocation="3988"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="142" invocations="2" avgMicrosecondsPerInvocation="71328" maxMicrosecondsPerInvocation="120222" standardDeviationMicrosecondsPerInvocation="48893"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="140" invocations="688" avgMicrosecondsPerInvocation="204" maxMicrosecondsPerInvocation="17766" standardDeviationMicrosecondsPerInvocation="1089"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="113" invocations="375" avgMicrosecondsPerInvocation="303" maxMicrosecondsPerInvocation="17912" standardDeviationMicrosecondsPerInvocation="1574"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="108" invocations="118" avgMicrosecondsPerInvocation="920" maxMicrosecondsPerInvocation="22708" standardDeviationMicrosecondsPerInvocation="3109"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="105" invocations="118" avgMicrosecondsPerInvocation="896" maxMicrosecondsPerInvocation="22975" standardDeviationMicrosecondsPerInvocation="3196"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NumberConstructor" totalMilliseconds="98" invocations="2" avgMicrosecondsPerInvocation="49213" maxMicrosecondsPerInvocation="79042" standardDeviationMicrosecondsPerInvocation="29829"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="94" invocations="172" avgMicrosecondsPerInvocation="551" maxMicrosecondsPerInvocation="37229" standardDeviationMicrosecondsPerInvocation="2994"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="77" invocations="118" avgMicrosecondsPerInvocation="653" maxMicrosecondsPerInvocation="25500" standardDeviationMicrosecondsPerInvocation="2513"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.LiveLocalStoreDataflowFactory" totalMilliseconds="74" invocations="375" avgMicrosecondsPerInvocation="198" maxMicrosecondsPerInvocation="10402" standardDeviationMicrosecondsPerInvocation="828"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindFloatEquality" totalMilliseconds="73" invocations="2" avgMicrosecondsPerInvocation="36933" maxMicrosecondsPerInvocation="64963" standardDeviationMicrosecondsPerInvocation="28030"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

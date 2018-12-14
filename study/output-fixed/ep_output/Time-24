@@ -1,0 +1,11 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-24/src/main/java/org/joda/time/format/DateTimeParserBucket.java:163: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+        iZone = zone == DateTimeZone.UTC ? null : zone;
+                     ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'iZone = Objects.equals(zone, DateTimeZone.UTC) ? null : zone;' or 'iZone = zone.equals(DateTimeZone.UTC) ? null : zone;'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-24/src/main/java/org/joda/time/format/DateTimeParserBucket.java:486: warning: [MissingOverride] compareTo implements method in Comparable; expected @Override
+        public int compareTo(SavedField obj) {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int compareTo(SavedField obj) {'?
+2 warnings

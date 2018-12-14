@@ -1,0 +1,8 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-39/src/java/org/apache/commons/lang3/StringUtils.java:5364: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+        if (str1 == str2) {
+                 ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'if (Objects.equals(str1, str2)) {' or 'if (str1.equals(str2)) {'?
+Note: /Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-39/src/java/org/apache/commons/lang3/StringUtils.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 warning

@@ -1,0 +1,11 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-5/src/main/java/org/joda/time/Period.java:726: warning: [MissingOverride] toPeriod overrides method in AbstractPeriod; expected @Override
+    public Period toPeriod() {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Period toPeriod() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-5/src/main/java/org/joda/time/Period.java:1334: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+        if (this == ZERO || scalar == 1) {
+                 ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'if (this.equals(ZERO) || scalar == 1) {'?
+2 warnings

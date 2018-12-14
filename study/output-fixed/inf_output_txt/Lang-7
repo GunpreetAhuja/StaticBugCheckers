@@ -1,0 +1,21 @@
+Found 2 issues
+
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-7/src/main/java/org/apache/commons/lang3/math/NumberUtils.java:533: error: NULL_DEREFERENCE
+  object `d` last assigned on line 532 could be null and is dereferenced at line 533.
+  531.                       try {
+  532.                           Double d = NumberUtils.createDouble(numeric);
+  533. >                         if (!(d.isInfinite() || (d.floatValue() == 0.0D && !allZeros))) {
+  534.                               return d;
+  535.                           }
+
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-7/src/main/java/org/apache/commons/lang3/math/NumberUtils.java:519: error: NULL_DEREFERENCE
+  object `f` last assigned on line 518 could be null and is dereferenced at line 519.
+  517.                       try {
+  518.                           Float f = NumberUtils.createFloat(numeric);
+  519. >                         if (!(f.isInfinite() || (f.floatValue() == 0.0F && !allZeros))) {
+  520.                               //If it's too big for a float or the float value = 0 and the string
+  521.                               //has non-zeros in it, then float does not have the precision we want
+
+Summary of the reports
+
+  NULL_DEREFERENCE: 2

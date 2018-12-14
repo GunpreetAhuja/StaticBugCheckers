@@ -1,0 +1,26 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-69/src/com/google/javascript/jscomp/TypeCheck.java:346: warning: [MissingOverride] process implements method in CompilerPass; expected @Override
+  public void process(Node externsRoot, Node jsRoot) {
+              ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void process(Node externsRoot, Node jsRoot) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-69/src/com/google/javascript/jscomp/TypeCheck.java:423: warning: [MissingOverride] shouldTraverse implements method in Callback; expected @Override
+  public boolean shouldTraverse(
+                 ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public boolean shouldTraverse('?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-69/src/com/google/javascript/jscomp/TypeCheck.java:461: warning: [MissingOverride] visit implements method in Callback; expected @Override
+  public void visit(NodeTraversal t, Node n, Node parent) {
+              ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void visit(NodeTraversal t, Node n, Node parent) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-69/src/com/google/javascript/jscomp/TypeCheck.java:1480: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+          baseConstructor != getNativeType(OBJECT_FUNCTION_TYPE) &&
+                          ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean '!baseConstructor.equals(getNativeType(OBJECT_FUNCTION_TYPE)) &&'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-69/src/com/google/javascript/jscomp/TypeCheck.java:1613: warning: [OperatorPrecedence] Use grouping parenthesis to make the operator precedence explicit
+            parameter != null && parameter.isVarArgs())) {
+                              ^
+    (see http://errorprone.info/bugpattern/OperatorPrecedence)
+  Did you mean '(parameter != null && parameter.isVarArgs()))) {'?
+5 warnings

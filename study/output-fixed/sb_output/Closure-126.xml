@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.1.0" sequence="0" timestamp="1542189787000" analysisTimestamp="1542189789999" release="">
+  <Project projectName="">
+    <Jar>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-126/src</Jar>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-126/build/classes</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-126/lib/args4j.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-126/lib/guava.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-126/lib/json.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-126/lib/jsr305.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-126/lib/protobuf-java.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-126/build/lib/rhino.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-126/lib/ant.jar</AuxClasspathEntry>
+  </Project>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" instanceHash="401a24b31d232ea04e9320493f25231b" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Dead store to local variable</ShortMessage>
+    <LongMessage>Dead store to $L6 in com.google.javascript.jscomp.MinimizeExitPoints.tryMinimizeIfBlockExits(Node, Node, Node, int, String)</LongMessage>
+    <Class classname="com.google.javascript.jscomp.MinimizeExitPoints" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.MinimizeExitPoints" start="38" end="307" sourcefile="MinimizeExitPoints.java" sourcepath="com/google/javascript/jscomp/MinimizeExitPoints.java">
+        <Message>At MinimizeExitPoints.java:[lines 38-307]</Message>
+      </SourceLine>
+      <Message>In class com.google.javascript.jscomp.MinimizeExitPoints</Message>
+    </Class>
+    <Method classname="com.google.javascript.jscomp.MinimizeExitPoints" name="tryMinimizeIfBlockExits" signature="(Lcom/google/javascript/rhino/Node;Lcom/google/javascript/rhino/Node;Lcom/google/javascript/rhino/Node;ILjava/lang/String;)V" isStatic="false" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.MinimizeExitPoints" start="214" end="259" startBytecode="0" endBytecode="69" sourcefile="MinimizeExitPoints.java" sourcepath="com/google/javascript/jscomp/MinimizeExitPoints.java"/>
+      <Message>In method com.google.javascript.jscomp.MinimizeExitPoints.tryMinimizeIfBlockExits(Node, Node, Node, int, String)</Message>
+    </Method>
+    <LocalVariable name="?" register="6" pc="37" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 6</Message>
+    </LocalVariable>
+    <SourceLine classname="com.google.javascript.jscomp.MinimizeExitPoints" primary="true" start="226" end="226" startBytecode="35" endBytecode="35" sourcefile="MinimizeExitPoints.java" sourcepath="com/google/javascript/jscomp/MinimizeExitPoints.java">
+      <Message>At MinimizeExitPoints.java:[line 226]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.COPY_VALUE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+  </BugInstance>
+  <BugInstance type="SF_SWITCH_NO_DEFAULT" priority="2" rank="19" abbrev="SF" category="STYLE" instanceHash="3f9c48eb878821f2567c9de8c2744f38" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Switch statement found where default case is missing</ShortMessage>
+    <LongMessage>Switch statement found in com.google.javascript.jscomp.MinimizeExitPoints.visit(NodeTraversal, Node, Node) where default case is missing</LongMessage>
+    <Class classname="com.google.javascript.jscomp.MinimizeExitPoints" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.MinimizeExitPoints" start="38" end="307" sourcefile="MinimizeExitPoints.java" sourcepath="com/google/javascript/jscomp/MinimizeExitPoints.java">
+        <Message>At MinimizeExitPoints.java:[lines 38-307]</Message>
+      </SourceLine>
+      <Message>In class com.google.javascript.jscomp.MinimizeExitPoints</Message>
+    </Class>
+    <Method classname="com.google.javascript.jscomp.MinimizeExitPoints" name="visit" signature="(Lcom/google/javascript/jscomp/NodeTraversal;Lcom/google/javascript/rhino/Node;Lcom/google/javascript/rhino/Node;)V" isStatic="false" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.MinimizeExitPoints" start="49" end="76" startBytecode="0" endBytecode="227" sourcefile="MinimizeExitPoints.java" sourcepath="com/google/javascript/jscomp/MinimizeExitPoints.java"/>
+      <Message>In method com.google.javascript.jscomp.MinimizeExitPoints.visit(NodeTraversal, Node, Node)</Message>
+    </Method>
+    <SourceLine classname="com.google.javascript.jscomp.MinimizeExitPoints" primary="true" start="49" end="73" startBytecode="4" endBytecode="141" sourcefile="MinimizeExitPoints.java" sourcepath="com/google/javascript/jscomp/MinimizeExitPoints.java">
+      <Message>At MinimizeExitPoints.java:[lines 49-73]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="DLS_DEAD_LOCAL_STORE" abbrev="DLS" category="STYLE">
+    <ShortDescription>Dead store to local variable</ShortDescription>
+    <Details><![CDATA[
+
+<p>
+This instruction assigns a value to a local variable,
+but the value is not read or used in any subsequent instruction.
+Often, this indicates an error, because the value computed is never
+used.
+</p>
+<p>
+Note that Sun's javac compiler often generates dead stores for
+final local variables.  Because SpotBugs is a bytecode-based tool,
+there is no easy way to eliminate these false positives.
+</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="SF_SWITCH_NO_DEFAULT" abbrev="SF" category="STYLE">
+    <ShortDescription>Switch statement found where default case is missing</ShortDescription>
+    <Details><![CDATA[
+
+  <p> This method contains a switch statement where default case is missing.
+  Usually you need to provide a default case.</p>
+  <p>Because the analysis only looks at the generated bytecode, this warning can be incorrect triggered if
+the default case is at the end of the switch statement and the switch statement doesn't contain break statements for other
+cases.
+
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="SF">
+    <Description>Switch case falls through</Description>
+  </BugCode>
+  <BugCode abbrev="DLS" cweid="563">
+    <Description>Dead local store</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 14 Nov 2018 05:03:07 -0500" total_classes="1" referenced_classes="46" total_bugs="2" total_size="108" num_packages="1" java_version="1.8.0_121" vm_version="25.121-b13" cpu_seconds="8.24" clock_seconds="4.52" peak_mbytes="112.02" alloc_mbytes="1820.50" gc_seconds="0.08" priority_2="2">
+    <FileStats path="com/google/javascript/jscomp/MinimizeExitPoints.java" bugCount="2" size="108" bugHash="c7c8574200c841c43ec5ef887a62c04f"/>
+    <PackageStats package="com.google.javascript.jscomp" total_bugs="2" total_types="1" total_size="108" priority_2="2">
+      <ClassStats class="com.google.javascript.jscomp.MinimizeExitPoints" sourceFile="MinimizeExitPoints.java" interface="false" size="108" bugs="2" priority_2="2"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="755" invocations="486" avgMicrosecondsPerInvocation="1555" maxMicrosecondsPerInvocation="41703" standardDeviationMicrosecondsPerInvocation="3589"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="564" invocations="483" avgMicrosecondsPerInvocation="1167" maxMicrosecondsPerInvocation="57669" standardDeviationMicrosecondsPerInvocation="4133"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="218" invocations="46" avgMicrosecondsPerInvocation="4751" maxMicrosecondsPerInvocation="46406" standardDeviationMicrosecondsPerInvocation="9449"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="203" invocations="46" avgMicrosecondsPerInvocation="4422" maxMicrosecondsPerInvocation="57228" standardDeviationMicrosecondsPerInvocation="10187"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="113" invocations="184" avgMicrosecondsPerInvocation="617" maxMicrosecondsPerInvocation="11039" standardDeviationMicrosecondsPerInvocation="1359"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="108" invocations="451" avgMicrosecondsPerInvocation="240" maxMicrosecondsPerInvocation="14081" standardDeviationMicrosecondsPerInvocation="870"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="88" invocations="7" avgMicrosecondsPerInvocation="12707" maxMicrosecondsPerInvocation="45141" standardDeviationMicrosecondsPerInvocation="15301"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="82" invocations="69" avgMicrosecondsPerInvocation="1195" maxMicrosecondsPerInvocation="37823" standardDeviationMicrosecondsPerInvocation="4671"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="80" invocations="46" avgMicrosecondsPerInvocation="1760" maxMicrosecondsPerInvocation="23701" standardDeviationMicrosecondsPerInvocation="4854"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="80" invocations="7" avgMicrosecondsPerInvocation="11504" maxMicrosecondsPerInvocation="76734" standardDeviationMicrosecondsPerInvocation="26632"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="73" invocations="7" avgMicrosecondsPerInvocation="10493" maxMicrosecondsPerInvocation="26918" standardDeviationMicrosecondsPerInvocation="10189"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="64" invocations="7" avgMicrosecondsPerInvocation="9181" maxMicrosecondsPerInvocation="27365" standardDeviationMicrosecondsPerInvocation="10075"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="63" invocations="46" avgMicrosecondsPerInvocation="1381" maxMicrosecondsPerInvocation="14660" standardDeviationMicrosecondsPerInvocation="2856"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

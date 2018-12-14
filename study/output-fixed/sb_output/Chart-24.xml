@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.1.0" sequence="0" timestamp="1542189574000" analysisTimestamp="1542189577451" release="">
+  <Project projectName="">
+    <Jar>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Chart-24/source</Jar>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Chart-24/build</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Chart-24/lib/servlet.jar</AuxClasspathEntry>
+  </Project>
+  <BugInstance type="HE_EQUALS_USE_HASHCODE" priority="1" rank="14" abbrev="HE" category="BAD_PRACTICE" instanceHash="9a8a709b0d102d90b5bb265785762c04" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Class defines equals() and uses Object.hashCode()</ShortMessage>
+    <LongMessage>org.jfree.chart.renderer.GrayPaintScale defines equals and uses Object.hashCode()</LongMessage>
+    <Class classname="org.jfree.chart.renderer.GrayPaintScale" primary="true">
+      <SourceLine classname="org.jfree.chart.renderer.GrayPaintScale" start="72" end="170" sourcefile="GrayPaintScale.java" sourcepath="org/jfree/chart/renderer/GrayPaintScale.java">
+        <Message>At GrayPaintScale.java:[lines 72-170]</Message>
+      </SourceLine>
+      <Message>In class org.jfree.chart.renderer.GrayPaintScale</Message>
+    </Class>
+    <Method classname="org.jfree.chart.renderer.GrayPaintScale" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false" primary="true">
+      <SourceLine classname="org.jfree.chart.renderer.GrayPaintScale" start="145" end="158" startBytecode="0" endBytecode="127" sourcefile="GrayPaintScale.java" sourcepath="org/jfree/chart/renderer/GrayPaintScale.java"/>
+      <Message>In method org.jfree.chart.renderer.GrayPaintScale.equals(Object)</Message>
+    </Method>
+    <SourceLine classname="org.jfree.chart.renderer.GrayPaintScale" start="145" end="158" startBytecode="0" endBytecode="127" sourcefile="GrayPaintScale.java" sourcepath="org/jfree/chart/renderer/GrayPaintScale.java" synthetic="true">
+      <Message>At GrayPaintScale.java:[lines 145-158]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="BAD_PRACTICE">
+    <Description>Bad practice</Description>
+  </BugCategory>
+  <BugPattern type="HE_EQUALS_USE_HASHCODE" abbrev="HE" category="BAD_PRACTICE">
+    <ShortDescription>Class defines equals() and uses Object.hashCode()</ShortDescription>
+    <Details><![CDATA[
+
+  <p> This class overrides <code>equals(Object)</code>, but does not
+  override <code>hashCode()</code>, and inherits the implementation of
+  <code>hashCode()</code> from <code>java.lang.Object</code> (which returns
+  the identity hash code, an arbitrary value assigned to the object
+  by the VM).&nbsp; Therefore, the class is very likely to violate the
+  invariant that equal objects must have equal hashcodes.</p>
+
+<p>If you don't think instances of this class will ever be inserted into a HashMap/HashTable,
+the recommended <code>hashCode</code> implementation to use is:</p>
+<pre><code>public int hashCode() {
+    assert false : "hashCode not designed";
+    return 42; // any arbitrary constant will do
+}
+</code></pre>
+
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="HE">
+    <Description>Equal objects must have equal hashcodes</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 14 Nov 2018 04:59:34 -0500" total_classes="1" referenced_classes="16" total_bugs="1" total_size="35" num_packages="1" java_version="1.8.0_121" vm_version="25.121-b13" cpu_seconds="6.02" clock_seconds="3.51" peak_mbytes="108.41" alloc_mbytes="1820.50" gc_seconds="0.08" priority_1="1">
+    <FileStats path="org/jfree/chart/renderer/GrayPaintScale.java" bugCount="1" size="35" bugHash="f562ba4c884067de19f65a608804562a"/>
+    <PackageStats package="org.jfree.chart.renderer" total_bugs="1" total_types="1" total_size="35" priority_1="1">
+      <ClassStats class="org.jfree.chart.renderer.GrayPaintScale" sourceFile="GrayPaintScale.java" interface="false" size="35" bugs="1" priority_1="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="618" invocations="328" avgMicrosecondsPerInvocation="1886" maxMicrosecondsPerInvocation="40279" standardDeviationMicrosecondsPerInvocation="5106"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="472" invocations="331" avgMicrosecondsPerInvocation="1427" maxMicrosecondsPerInvocation="35380" standardDeviationMicrosecondsPerInvocation="3108"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="131" invocations="16" avgMicrosecondsPerInvocation="8197" maxMicrosecondsPerInvocation="39944" standardDeviationMicrosecondsPerInvocation="12948"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="128" invocations="296" avgMicrosecondsPerInvocation="435" maxMicrosecondsPerInvocation="25599" standardDeviationMicrosecondsPerInvocation="2169"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="97" invocations="7" avgMicrosecondsPerInvocation="13936" maxMicrosecondsPerInvocation="39998" standardDeviationMicrosecondsPerInvocation="16091"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="97" invocations="70" avgMicrosecondsPerInvocation="1393" maxMicrosecondsPerInvocation="19401" standardDeviationMicrosecondsPerInvocation="2847"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="88" invocations="16" avgMicrosecondsPerInvocation="5538" maxMicrosecondsPerInvocation="38778" standardDeviationMicrosecondsPerInvocation="10883"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="80" invocations="7" avgMicrosecondsPerInvocation="11535" maxMicrosecondsPerInvocation="78097" standardDeviationMicrosecondsPerInvocation="27175"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="59" invocations="16" avgMicrosecondsPerInvocation="3719" maxMicrosecondsPerInvocation="25960" standardDeviationMicrosecondsPerInvocation="6697"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="56" invocations="16" avgMicrosecondsPerInvocation="3545" maxMicrosecondsPerInvocation="19250" standardDeviationMicrosecondsPerInvocation="5830"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

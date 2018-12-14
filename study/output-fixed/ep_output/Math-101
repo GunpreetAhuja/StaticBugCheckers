@@ -1,0 +1,16 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-101/src/java/org/apache/commons/math/complex/ComplexFormat.java:174: warning: [MissingOverride] format implements method in Format; expected @Override
+    public StringBuffer format(Object obj, StringBuffer toAppendTo,
+                        ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public StringBuffer format(Object obj, StringBuffer toAppendTo,'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-101/src/java/org/apache/commons/math/complex/ComplexFormat.java:453: warning: [BoxedPrimitiveConstructor] valueOf or autoboxing provides better time and space performance
+                ret = new Double(value);
+                      ^
+    (see http://errorprone.info/bugpattern/BoxedPrimitiveConstructor)
+  Did you mean 'ret = value;'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-101/src/java/org/apache/commons/math/complex/ComplexFormat.java:499: warning: [MissingOverride] parseObject implements method in Format; expected @Override
+    public Object parseObject(String source, ParsePosition pos) {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Object parseObject(String source, ParsePosition pos) {'?
+3 warnings

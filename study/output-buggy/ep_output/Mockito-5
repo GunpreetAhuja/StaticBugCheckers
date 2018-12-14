@@ -1,0 +1,5 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Mockito-5/src/org/mockito/internal/verification/VerificationOverTimeImpl.java:80: error: cannot access ComparisonFailure
+            try {
+            ^
+  class file for junit.framework.ComparisonFailure not found
+1 error

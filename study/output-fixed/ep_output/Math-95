@@ -1,0 +1,46 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-95/src/java/org/apache/commons/math/distribution/FDistributionImpl.java:70: warning: [MissingOverride] cumulativeProbability implements method in Distribution; expected @Override
+    public double cumulativeProbability(double x) throws MathException {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double cumulativeProbability(double x) throws MathException {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-95/src/java/org/apache/commons/math/distribution/FDistributionImpl.java:98: warning: [MissingOverride] inverseCumulativeProbability overrides method in AbstractContinuousDistribution; expected @Override
+    public double inverseCumulativeProbability(final double p) 
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double inverseCumulativeProbability(final double p)'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-95/src/java/org/apache/commons/math/distribution/FDistributionImpl.java:118: warning: [MissingOverride] getDomainLowerBound implements method in AbstractContinuousDistribution; expected @Override
+    protected double getDomainLowerBound(double p) {
+                     ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override protected double getDomainLowerBound(double p) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-95/src/java/org/apache/commons/math/distribution/FDistributionImpl.java:131: warning: [MissingOverride] getDomainUpperBound implements method in AbstractContinuousDistribution; expected @Override
+    protected double getDomainUpperBound(double p) {
+                     ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override protected double getDomainUpperBound(double p) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-95/src/java/org/apache/commons/math/distribution/FDistributionImpl.java:143: warning: [MissingOverride] getInitialDomain implements method in AbstractContinuousDistribution; expected @Override
+    protected double getInitialDomain(double p) {
+                     ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override protected double getInitialDomain(double p) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-95/src/java/org/apache/commons/math/distribution/FDistributionImpl.java:159: warning: [MissingOverride] setNumeratorDegreesOfFreedom implements method in FDistribution; expected @Override
+    public void setNumeratorDegreesOfFreedom(double degreesOfFreedom) {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void setNumeratorDegreesOfFreedom(double degreesOfFreedom) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-95/src/java/org/apache/commons/math/distribution/FDistributionImpl.java:171: warning: [MissingOverride] getNumeratorDegreesOfFreedom implements method in FDistribution; expected @Override
+    public double getNumeratorDegreesOfFreedom() {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double getNumeratorDegreesOfFreedom() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-95/src/java/org/apache/commons/math/distribution/FDistributionImpl.java:181: warning: [MissingOverride] setDenominatorDegreesOfFreedom implements method in FDistribution; expected @Override
+    public void setDenominatorDegreesOfFreedom(double degreesOfFreedom) {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void setDenominatorDegreesOfFreedom(double degreesOfFreedom) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-95/src/java/org/apache/commons/math/distribution/FDistributionImpl.java:193: warning: [MissingOverride] getDenominatorDegreesOfFreedom implements method in FDistribution; expected @Override
+    public double getDenominatorDegreesOfFreedom() {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double getDenominatorDegreesOfFreedom() {'?
+9 warnings

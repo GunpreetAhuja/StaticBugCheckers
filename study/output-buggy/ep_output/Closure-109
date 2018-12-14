@@ -1,0 +1,5 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-109/src/com/google/javascript/jscomp/parsing/JsDocInfoParser.java:978: error: [MissingCasesInEnumSwitch] Non-exhaustive switch; either add a default or handle the remaining cases: NG_INJECT, AUTHOR, CONSISTENTIDGENERATOR, and 44 others
+            switch (annotation) {
+            ^
+    (see http://errorprone.info/bugpattern/MissingCasesInEnumSwitch)
+1 error

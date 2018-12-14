@@ -1,0 +1,14 @@
+Found 1 issue
+
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Lang-13/src/main/java/org/apache/commons/lang3/SerializationUtils.java:105: error: RESOURCE_LEAK
+  resource of type `org.apache.commons.lang3.SerializationUtils$ClassLoaderAwareObjectInputStream` acquired to `in` by call to `new()` at line 88 is not released after line 105.
+**Note**: potential exception at line 95
+  103.               try {
+  104.                   if (in != null) {
+  105. >                     in.close();
+  106.                   }
+  107.               } catch (IOException ex) {
+
+Summary of the reports
+
+  RESOURCE_LEAK: 1

@@ -1,0 +1,256 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-6/src/main/java/org/joda/time/chrono/GJChronology.java:218: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+            if (zone == DateTimeZone.UTC) {
+                     ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'if (Objects.equals(zone, DateTimeZone.UTC)) {' or 'if (zone.equals(DateTimeZone.UTC)) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-6/src/main/java/org/joda/time/chrono/GJChronology.java:294: warning: [MissingOverride] getZone overrides method in AssembledChronology; expected @Override
+    public DateTimeZone getZone() {
+                        ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public DateTimeZone getZone() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-6/src/main/java/org/joda/time/chrono/GJChronology.java:309: warning: [MissingOverride] withUTC implements method in BaseChronology; expected @Override
+    public Chronology withUTC() {
+                      ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Chronology withUTC() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-6/src/main/java/org/joda/time/chrono/GJChronology.java:319: warning: [MissingOverride] withZone implements method in BaseChronology; expected @Override
+    public Chronology withZone(DateTimeZone zone) {
+                      ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Chronology withZone(DateTimeZone zone) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-6/src/main/java/org/joda/time/chrono/GJChronology.java:323: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+        if (zone == getZone()) {
+                 ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'if (Objects.equals(zone, getZone())) {' or 'if (zone.equals(getZone())) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-6/src/main/java/org/joda/time/chrono/GJChronology.java:329: warning: [MissingOverride] getDateTimeMillis overrides method in AssembledChronology; expected @Override
+    public long getDateTimeMillis(int year, int monthOfYear, int dayOfMonth,
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public long getDateTimeMillis(int year, int monthOfYear, int dayOfMonth,'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-6/src/main/java/org/joda/time/chrono/GJChronology.java:353: warning: [MissingOverride] getDateTimeMillis overrides method in AssembledChronology; expected @Override
+    public long getDateTimeMillis(int year, int monthOfYear, int dayOfMonth,
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public long getDateTimeMillis(int year, int monthOfYear, int dayOfMonth,'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-6/src/main/java/org/joda/time/chrono/GJChronology.java:420: warning: [MissingOverride] equals overrides method in Object; expected @Override
+    public boolean equals(Object obj) {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public boolean equals(Object obj) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-6/src/main/java/org/joda/time/chrono/GJChronology.java:439: warning: [MissingOverride] hashCode overrides method in Object; expected @Override
+    public int hashCode() {
+               ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int hashCode() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-6/src/main/java/org/joda/time/chrono/GJChronology.java:451: warning: [MissingOverride] toString implements method in BaseChronology; expected @Override
+    public String toString() {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public String toString() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-6/src/main/java/org/joda/time/chrono/GJChronology.java:477: warning: [MissingOverride] assemble implements method in AssembledChronology; expected @Override
+    protected void assemble(Fields fields) {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override protected void assemble(Fields fields) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-6/src/main/java/org/joda/time/chrono/GJChronology.java:652: warning: [MissingOverride] isLenient implements method in DateTimeField; expected @Override
+        public boolean isLenient() {
+                       ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public boolean isLenient() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-6/src/main/java/org/joda/time/chrono/GJChronology.java:656: warning: [MissingOverride] get implements method in BaseDateTimeField; expected @Override
+        public int get(long instant) {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int get(long instant) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-6/src/main/java/org/joda/time/chrono/GJChronology.java:664: warning: [MissingOverride] getAsText overrides method in BaseDateTimeField; expected @Override
+        public String getAsText(long instant, Locale locale) {
+                      ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public String getAsText(long instant, Locale locale) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-6/src/main/java/org/joda/time/chrono/GJChronology.java:672: warning: [MissingOverride] getAsText overrides method in BaseDateTimeField; expected @Override
+        public String getAsText(int fieldValue, Locale locale) {
+                      ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public String getAsText(int fieldValue, Locale locale) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-6/src/main/java/org/joda/time/chrono/GJChronology.java:676: warning: [MissingOverride] getAsShortText overrides method in BaseDateTimeField; expected @Override
+        public String getAsShortText(long instant, Locale locale) {
+                      ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public String getAsShortText(long instant, Locale locale) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-6/src/main/java/org/joda/time/chrono/GJChronology.java:684: warning: [MissingOverride] getAsShortText overrides method in BaseDateTimeField; expected @Override
+        public String getAsShortText(int fieldValue, Locale locale) {
+                      ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public String getAsShortText(int fieldValue, Locale locale) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-6/src/main/java/org/joda/time/chrono/GJChronology.java:688: warning: [MissingOverride] add overrides method in BaseDateTimeField; expected @Override
+        public long add(long instant, int value) {
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public long add(long instant, int value) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-6/src/main/java/org/joda/time/chrono/GJChronology.java:692: warning: [MissingOverride] add overrides method in BaseDateTimeField; expected @Override
+        public long add(long instant, long value) {
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public long add(long instant, long value) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-6/src/main/java/org/joda/time/chrono/GJChronology.java:696: warning: [MissingOverride] add overrides method in BaseDateTimeField; expected @Override
+        public int[] add(ReadablePartial partial, int fieldIndex, int[] values, int valueToAdd) {
+                     ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int[] add(ReadablePartial partial, int fieldIndex, int[] values, int valueToAdd) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-6/src/main/java/org/joda/time/chrono/GJChronology.java:714: warning: [MissingOverride] getDifference overrides method in BaseDateTimeField; expected @Override
+        public int getDifference(long minuendInstant, long subtrahendInstant) {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int getDifference(long minuendInstant, long subtrahendInstant) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-6/src/main/java/org/joda/time/chrono/GJChronology.java:718: warning: [MissingOverride] getDifferenceAsLong overrides method in BaseDateTimeField; expected @Override
+        public long getDifferenceAsLong(long minuendInstant, long subtrahendInstant) {
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public long getDifferenceAsLong(long minuendInstant, long subtrahendInstant) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-6/src/main/java/org/joda/time/chrono/GJChronology.java:722: warning: [MissingOverride] set implements method in BaseDateTimeField; expected @Override
+        public long set(long instant, int value) {
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public long set(long instant, int value) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-6/src/main/java/org/joda/time/chrono/GJChronology.java:753: warning: [MissingOverride] set overrides method in BaseDateTimeField; expected @Override
+        public long set(long instant, String text, Locale locale) {
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public long set(long instant, String text, Locale locale) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-6/src/main/java/org/joda/time/chrono/GJChronology.java:776: warning: [MissingOverride] getDurationField implements method in BaseDateTimeField; expected @Override
+        public DurationField getDurationField() {
+                             ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public DurationField getDurationField() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-6/src/main/java/org/joda/time/chrono/GJChronology.java:780: warning: [MissingOverride] getRangeDurationField implements method in BaseDateTimeField; expected @Override
+        public DurationField getRangeDurationField() {
+                             ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public DurationField getRangeDurationField() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-6/src/main/java/org/joda/time/chrono/GJChronology.java:784: warning: [MissingOverride] isLeap overrides method in BaseDateTimeField; expected @Override
+        public boolean isLeap(long instant) {
+                       ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public boolean isLeap(long instant) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-6/src/main/java/org/joda/time/chrono/GJChronology.java:792: warning: [MissingOverride] getLeapAmount overrides method in BaseDateTimeField; expected @Override
+        public int getLeapAmount(long instant) {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int getLeapAmount(long instant) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-6/src/main/java/org/joda/time/chrono/GJChronology.java:800: warning: [MissingOverride] getLeapDurationField overrides method in BaseDateTimeField; expected @Override
+        public DurationField getLeapDurationField() {
+                             ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public DurationField getLeapDurationField() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-6/src/main/java/org/joda/time/chrono/GJChronology.java:805: warning: [MissingOverride] getMinimumValue implements method in BaseDateTimeField; expected @Override
+        public int getMinimumValue() {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int getMinimumValue() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-6/src/main/java/org/joda/time/chrono/GJChronology.java:811: warning: [MissingOverride] getMinimumValue overrides method in BaseDateTimeField; expected @Override
+        public int getMinimumValue(ReadablePartial partial) {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int getMinimumValue(ReadablePartial partial) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-6/src/main/java/org/joda/time/chrono/GJChronology.java:815: warning: [MissingOverride] getMinimumValue overrides method in BaseDateTimeField; expected @Override
+        public int getMinimumValue(ReadablePartial partial, int[] values) {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int getMinimumValue(ReadablePartial partial, int[] values) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-6/src/main/java/org/joda/time/chrono/GJChronology.java:819: warning: [MissingOverride] getMinimumValue overrides method in BaseDateTimeField; expected @Override
+        public int getMinimumValue(long instant) {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int getMinimumValue(long instant) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-6/src/main/java/org/joda/time/chrono/GJChronology.java:836: warning: [MissingOverride] getMaximumValue implements method in BaseDateTimeField; expected @Override
+        public int getMaximumValue() {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int getMaximumValue() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-6/src/main/java/org/joda/time/chrono/GJChronology.java:842: warning: [MissingOverride] getMaximumValue overrides method in BaseDateTimeField; expected @Override
+        public int getMaximumValue(long instant) {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int getMaximumValue(long instant) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-6/src/main/java/org/joda/time/chrono/GJChronology.java:859: warning: [MissingOverride] getMaximumValue overrides method in BaseDateTimeField; expected @Override
+        public int getMaximumValue(ReadablePartial partial) {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int getMaximumValue(ReadablePartial partial) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-6/src/main/java/org/joda/time/chrono/GJChronology.java:864: warning: [MissingOverride] getMaximumValue overrides method in BaseDateTimeField; expected @Override
+        public int getMaximumValue(ReadablePartial partial, int[] values) {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int getMaximumValue(ReadablePartial partial, int[] values) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-6/src/main/java/org/joda/time/chrono/GJChronology.java:876: warning: [MissingOverride] roundFloor implements method in BaseDateTimeField; expected @Override
+        public long roundFloor(long instant) {
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public long roundFloor(long instant) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-6/src/main/java/org/joda/time/chrono/GJChronology.java:891: warning: [MissingOverride] roundCeiling overrides method in BaseDateTimeField; expected @Override
+        public long roundCeiling(long instant) {
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public long roundCeiling(long instant) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-6/src/main/java/org/joda/time/chrono/GJChronology.java:906: warning: [MissingOverride] getMaximumTextLength overrides method in BaseDateTimeField; expected @Override
+        public int getMaximumTextLength(Locale locale) {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int getMaximumTextLength(Locale locale) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-6/src/main/java/org/joda/time/chrono/GJChronology.java:911: warning: [MissingOverride] getMaximumShortTextLength overrides method in BaseDateTimeField; expected @Override
+        public int getMaximumShortTextLength(Locale locale) {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int getMaximumShortTextLength(Locale locale) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-6/src/main/java/org/joda/time/chrono/GJChronology.java:977: warning: [MissingOverride] add overrides method in CutoverField; expected @Override
+        public long add(long instant, int value) {
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public long add(long instant, int value) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-6/src/main/java/org/joda/time/chrono/GJChronology.java:1010: warning: [MissingOverride] add overrides method in CutoverField; expected @Override
+        public long add(long instant, long value) {
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public long add(long instant, long value) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-6/src/main/java/org/joda/time/chrono/GJChronology.java:1043: warning: [MissingOverride] getDifference overrides method in CutoverField; expected @Override
+        public int getDifference(long minuendInstant, long subtrahendInstant) {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int getDifference(long minuendInstant, long subtrahendInstant) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-6/src/main/java/org/joda/time/chrono/GJChronology.java:1063: warning: [MissingOverride] getDifferenceAsLong overrides method in CutoverField; expected @Override
+        public long getDifferenceAsLong(long minuendInstant, long subtrahendInstant) {
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public long getDifferenceAsLong(long minuendInstant, long subtrahendInstant) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-6/src/main/java/org/joda/time/chrono/GJChronology.java:1093: warning: [MissingOverride] getMinimumValue overrides method in CutoverField; expected @Override
+        public int getMinimumValue(long instant) {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int getMinimumValue(long instant) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-6/src/main/java/org/joda/time/chrono/GJChronology.java:1101: warning: [MissingOverride] getMaximumValue overrides method in CutoverField; expected @Override
+        public int getMaximumValue(long instant) {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int getMaximumValue(long instant) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-6/src/main/java/org/joda/time/chrono/GJChronology.java:1124: warning: [MissingOverride] add overrides method in DecoratedDurationField; expected @Override
+        public long add(long instant, int value) {
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public long add(long instant, int value) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-6/src/main/java/org/joda/time/chrono/GJChronology.java:1128: warning: [MissingOverride] add overrides method in DecoratedDurationField; expected @Override
+        public long add(long instant, long value) {
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public long add(long instant, long value) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-6/src/main/java/org/joda/time/chrono/GJChronology.java:1132: warning: [MissingOverride] getDifference overrides method in BaseDurationField; expected @Override
+        public int getDifference(long minuendInstant, long subtrahendInstant) {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int getDifference(long minuendInstant, long subtrahendInstant) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-6/src/main/java/org/joda/time/chrono/GJChronology.java:1136: warning: [MissingOverride] getDifferenceAsLong overrides method in DecoratedDurationField; expected @Override
+        public long getDifferenceAsLong(long minuendInstant, long subtrahendInstant) {
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public long getDifferenceAsLong(long minuendInstant, long subtrahendInstant) {'?
+51 warnings

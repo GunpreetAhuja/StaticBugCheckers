@@ -1,0 +1,46 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-17/src/main/java/org/apache/commons/math3/dfp/Dfp.java:291: error: [IdentityBinaryExpression] A binary expression where both operands are the same is usually incorrect; the value of this expression is equivalent to `!Double.isNan(x)`.
+            if (x != x) {
+                  ^
+    (see http://errorprone.info/bugpattern/IdentityBinaryExpression)
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-17/src/main/java/org/apache/commons/math3/dfp/Dfp.java:634: warning: [MissingOverride] getField implements method in FieldElement; expected @Override
+    public DfpField getField() {
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public DfpField getField() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-17/src/main/java/org/apache/commons/math3/dfp/Dfp.java:1251: warning: [MissingOverride] add implements method in FieldElement; expected @Override
+    public Dfp add(final Dfp x) {
+               ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Dfp add(final Dfp x) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-17/src/main/java/org/apache/commons/math3/dfp/Dfp.java:1399: warning: [MissingOverride] negate implements method in FieldElement; expected @Override
+    public Dfp negate() {
+               ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Dfp negate() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-17/src/main/java/org/apache/commons/math3/dfp/Dfp.java:1409: warning: [MissingOverride] subtract implements method in FieldElement; expected @Override
+    public Dfp subtract(final Dfp x) {
+               ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Dfp subtract(final Dfp x) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-17/src/main/java/org/apache/commons/math3/dfp/Dfp.java:1496: warning: [MissingOverride] multiply implements method in FieldElement; expected @Override
+    public Dfp multiply(final Dfp x) {
+               ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Dfp multiply(final Dfp x) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-17/src/main/java/org/apache/commons/math3/dfp/Dfp.java:1602: warning: [MissingOverride] multiply implements method in FieldElement; expected @Override
+    public Dfp multiply(final int x) {
+               ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Dfp multiply(final int x) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-17/src/main/java/org/apache/commons/math3/dfp/Dfp.java:1677: warning: [MissingOverride] divide implements method in FieldElement; expected @Override
+    public Dfp divide(Dfp divisor) {
+               ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Dfp divide(Dfp divisor) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-17/src/main/java/org/apache/commons/math3/dfp/Dfp.java:1953: warning: [MissingOverride] reciprocal implements method in FieldElement; expected @Override
+    public Dfp reciprocal() {
+               ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Dfp reciprocal() {'?
+1 error
+8 warnings

@@ -1,0 +1,6 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-10/source/org/jfree/chart/imagemap/StandardToolTipTagFragmentGenerator.java:64: warning: [MissingOverride] generateToolTipFragment implements method in ToolTipTagFragmentGenerator; expected @Override
+    public String generateToolTipFragment(String toolTipText) {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public String generateToolTipFragment(String toolTipText) {'?
+1 warning

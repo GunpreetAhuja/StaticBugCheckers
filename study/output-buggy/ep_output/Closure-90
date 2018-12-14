@@ -1,0 +1,37 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-90/src/com/google/javascript/jscomp/FunctionTypeBuilder.java:318: warning: [OperatorPrecedence] Use grouping parenthesis to make the operator precedence explicit
+        if (cType == Token.RETURN && current.getFirstChild() != null ||
+                                  ^
+    (see http://errorprone.info/bugpattern/OperatorPrecedence)
+  Did you mean 'if ((cType == Token.RETURN && current.getFirstChild() != null) ||'?
+1 warning
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-90/src/com/google/javascript/rhino/jstype/FunctionType.java:291: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+    if (isConstructor() && prototype == getInstanceType()) {
+                                     ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'if (isConstructor() && prototype.equals(getInstanceType())) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-90/src/com/google/javascript/rhino/jstype/FunctionType.java:664: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+        return this == that;
+                    ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'return this.equals(that);'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-90/src/com/google/javascript/rhino/jstype/FunctionType.java:698: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+    if (this == registry.getNativeType(JSTypeNative.FUNCTION_INSTANCE_TYPE)) {
+             ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'if (this.equals(registry.getNativeType(JSTypeNative.FUNCTION_INSTANCE_TYPE))) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-90/src/com/google/javascript/rhino/jstype/FunctionType.java:890: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+      changed |= (resolvedIface != iface);
+                                ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'changed |= (!Objects.equals(resolvedIface, iface));' or 'changed |= (!resolvedIface.equals(iface));'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-90/src/com/google/javascript/rhino/jstype/FunctionType.java:907: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+    if (this == registry.getNativeType(JSTypeNative.FUNCTION_INSTANCE_TYPE)) {
+             ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'if (this.equals(registry.getNativeType(JSTypeNative.FUNCTION_INSTANCE_TYPE))) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-90/src/com/google/javascript/rhino/jstype/FunctionType.java:939: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+    if (type == this) {
+             ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'if (Objects.equals(type, this)) {' or 'if (type.equals(this)) {'?
+6 warnings

@@ -1,0 +1,56 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-12/src/main/java/org/apache/commons/math3/random/BitsStreamGenerator.java:42: warning: [MissingOverride] setSeed implements method in RandomGenerator; expected @Override
+    public abstract void setSeed(int seed);
+                         ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public abstract void setSeed(int seed);'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-12/src/main/java/org/apache/commons/math3/random/BitsStreamGenerator.java:45: warning: [MissingOverride] setSeed implements method in RandomGenerator; expected @Override
+    public abstract void setSeed(int[] seed);
+                         ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public abstract void setSeed(int[] seed);'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-12/src/main/java/org/apache/commons/math3/random/BitsStreamGenerator.java:48: warning: [MissingOverride] setSeed implements method in RandomGenerator; expected @Override
+    public abstract void setSeed(long seed);
+                         ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public abstract void setSeed(long seed);'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-12/src/main/java/org/apache/commons/math3/random/BitsStreamGenerator.java:62: warning: [MissingOverride] nextBoolean implements method in RandomGenerator; expected @Override
+    public boolean nextBoolean() {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public boolean nextBoolean() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-12/src/main/java/org/apache/commons/math3/random/BitsStreamGenerator.java:67: warning: [MissingOverride] nextBytes implements method in RandomGenerator; expected @Override
+    public void nextBytes(byte[] bytes) {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void nextBytes(byte[] bytes) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-12/src/main/java/org/apache/commons/math3/random/BitsStreamGenerator.java:86: warning: [MissingOverride] nextDouble implements method in RandomGenerator; expected @Override
+    public double nextDouble() {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double nextDouble() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-12/src/main/java/org/apache/commons/math3/random/BitsStreamGenerator.java:93: warning: [MissingOverride] nextFloat implements method in RandomGenerator; expected @Override
+    public float nextFloat() {
+                 ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public float nextFloat() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-12/src/main/java/org/apache/commons/math3/random/BitsStreamGenerator.java:98: warning: [MissingOverride] nextGaussian implements method in RandomGenerator; expected @Override
+    public double nextGaussian() {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double nextGaussian() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-12/src/main/java/org/apache/commons/math3/random/BitsStreamGenerator.java:120: warning: [MissingOverride] nextInt implements method in RandomGenerator; expected @Override
+    public int nextInt() {
+               ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int nextInt() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-12/src/main/java/org/apache/commons/math3/random/BitsStreamGenerator.java:139: warning: [MissingOverride] nextInt implements method in RandomGenerator; expected @Override
+    public int nextInt(int n) throws IllegalArgumentException {
+               ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int nextInt(int n) throws IllegalArgumentException {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-12/src/main/java/org/apache/commons/math3/random/BitsStreamGenerator.java:156: warning: [MissingOverride] nextLong implements method in RandomGenerator; expected @Override
+    public long nextLong() {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public long nextLong() {'?
+11 warnings

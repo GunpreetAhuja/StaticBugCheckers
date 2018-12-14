@@ -1,0 +1,191 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-18/src/main/java/org/apache/commons/lang3/time/FastDateFormat.java:600: warning: [OperatorPrecedence] Use grouping parenthesis to make the operator precedence explicit
+        if (c >= 'A' && c <= 'Z' || c >= 'a' && c <= 'z') {
+                     ^
+    (see http://errorprone.info/bugpattern/OperatorPrecedence)
+  Did you mean 'if ((c >= 'A' && c <= 'Z') || c >= 'a' && c <= 'z') {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-18/src/main/java/org/apache/commons/lang3/time/FastDateFormat.java:600: warning: [OperatorPrecedence] Use grouping parenthesis to make the operator precedence explicit
+        if (c >= 'A' && c <= 'Z' || c >= 'a' && c <= 'z') {
+                                             ^
+    (see http://errorprone.info/bugpattern/OperatorPrecedence)
+  Did you mean 'if (c >= 'A' && c <= 'Z' || (c >= 'a' && c <= 'z')) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-18/src/main/java/org/apache/commons/lang3/time/FastDateFormat.java:632: warning: [OperatorPrecedence] Use grouping parenthesis to make the operator precedence explicit
+                         (c >= 'A' && c <= 'Z' || c >= 'a' && c <= 'z')) {
+                                   ^
+    (see http://errorprone.info/bugpattern/OperatorPrecedence)
+  Did you mean '((c >= 'A' && c <= 'Z') || c >= 'a' && c <= 'z')) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-18/src/main/java/org/apache/commons/lang3/time/FastDateFormat.java:632: warning: [OperatorPrecedence] Use grouping parenthesis to make the operator precedence explicit
+                         (c >= 'A' && c <= 'Z' || c >= 'a' && c <= 'z')) {
+                                                           ^
+    (see http://errorprone.info/bugpattern/OperatorPrecedence)
+  Did you mean '(c >= 'A' && c <= 'Z' || (c >= 'a' && c <= 'z'))) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-18/src/main/java/org/apache/commons/lang3/time/FastDateFormat.java:943: warning: [MissingOverride] estimateLength implements method in Rule; expected @Override
+        public int estimateLength() {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int estimateLength() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-18/src/main/java/org/apache/commons/lang3/time/FastDateFormat.java:950: warning: [MissingOverride] appendTo implements method in Rule; expected @Override
+        public void appendTo(StringBuffer buffer, Calendar calendar) {
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void appendTo(StringBuffer buffer, Calendar calendar) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-18/src/main/java/org/apache/commons/lang3/time/FastDateFormat.java:974: warning: [MissingOverride] estimateLength implements method in Rule; expected @Override
+        public int estimateLength() {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int estimateLength() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-18/src/main/java/org/apache/commons/lang3/time/FastDateFormat.java:981: warning: [MissingOverride] appendTo implements method in Rule; expected @Override
+        public void appendTo(StringBuffer buffer, Calendar calendar) {
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void appendTo(StringBuffer buffer, Calendar calendar) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-18/src/main/java/org/apache/commons/lang3/time/FastDateFormat.java:1008: warning: [MissingOverride] estimateLength implements method in Rule; expected @Override
+        public int estimateLength() {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int estimateLength() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-18/src/main/java/org/apache/commons/lang3/time/FastDateFormat.java:1022: warning: [MissingOverride] appendTo implements method in Rule; expected @Override
+        public void appendTo(StringBuffer buffer, Calendar calendar) {
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void appendTo(StringBuffer buffer, Calendar calendar) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-18/src/main/java/org/apache/commons/lang3/time/FastDateFormat.java:1045: warning: [MissingOverride] estimateLength implements method in Rule; expected @Override
+        public int estimateLength() {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int estimateLength() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-18/src/main/java/org/apache/commons/lang3/time/FastDateFormat.java:1052: warning: [MissingOverride] appendTo implements method in Rule; expected @Override
+        public void appendTo(StringBuffer buffer, Calendar calendar) {
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void appendTo(StringBuffer buffer, Calendar calendar) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-18/src/main/java/org/apache/commons/lang3/time/FastDateFormat.java:1059: warning: [MissingOverride] appendTo implements method in NumberRule; expected @Override
+        public final void appendTo(StringBuffer buffer, int value) {
+                          ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public final void appendTo(StringBuffer buffer, int value) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-18/src/main/java/org/apache/commons/lang3/time/FastDateFormat.java:1088: warning: [MissingOverride] estimateLength implements method in Rule; expected @Override
+        public int estimateLength() {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int estimateLength() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-18/src/main/java/org/apache/commons/lang3/time/FastDateFormat.java:1095: warning: [MissingOverride] appendTo implements method in Rule; expected @Override
+        public void appendTo(StringBuffer buffer, Calendar calendar) {
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void appendTo(StringBuffer buffer, Calendar calendar) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-18/src/main/java/org/apache/commons/lang3/time/FastDateFormat.java:1102: warning: [MissingOverride] appendTo implements method in NumberRule; expected @Override
+        public final void appendTo(StringBuffer buffer, int value) {
+                          ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public final void appendTo(StringBuffer buffer, int value) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-18/src/main/java/org/apache/commons/lang3/time/FastDateFormat.java:1137: warning: [MissingOverride] estimateLength implements method in Rule; expected @Override
+        public int estimateLength() {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int estimateLength() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-18/src/main/java/org/apache/commons/lang3/time/FastDateFormat.java:1144: warning: [MissingOverride] appendTo implements method in Rule; expected @Override
+        public void appendTo(StringBuffer buffer, Calendar calendar) {
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void appendTo(StringBuffer buffer, Calendar calendar) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-18/src/main/java/org/apache/commons/lang3/time/FastDateFormat.java:1151: warning: [MissingOverride] appendTo implements method in NumberRule; expected @Override
+        public final void appendTo(StringBuffer buffer, int value) {
+                          ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public final void appendTo(StringBuffer buffer, int value) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-18/src/main/java/org/apache/commons/lang3/time/FastDateFormat.java:1192: warning: [MissingOverride] estimateLength implements method in Rule; expected @Override
+        public int estimateLength() {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int estimateLength() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-18/src/main/java/org/apache/commons/lang3/time/FastDateFormat.java:1199: warning: [MissingOverride] appendTo implements method in Rule; expected @Override
+        public void appendTo(StringBuffer buffer, Calendar calendar) {
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void appendTo(StringBuffer buffer, Calendar calendar) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-18/src/main/java/org/apache/commons/lang3/time/FastDateFormat.java:1206: warning: [MissingOverride] appendTo implements method in NumberRule; expected @Override
+        public final void appendTo(StringBuffer buffer, int value) {
+                          ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public final void appendTo(StringBuffer buffer, int value) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-18/src/main/java/org/apache/commons/lang3/time/FastDateFormat.java:1232: warning: [MissingOverride] estimateLength implements method in Rule; expected @Override
+        public int estimateLength() {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int estimateLength() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-18/src/main/java/org/apache/commons/lang3/time/FastDateFormat.java:1239: warning: [MissingOverride] appendTo implements method in Rule; expected @Override
+        public void appendTo(StringBuffer buffer, Calendar calendar) {
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void appendTo(StringBuffer buffer, Calendar calendar) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-18/src/main/java/org/apache/commons/lang3/time/FastDateFormat.java:1246: warning: [MissingOverride] appendTo implements method in NumberRule; expected @Override
+        public final void appendTo(StringBuffer buffer, int value) {
+                          ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public final void appendTo(StringBuffer buffer, int value) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-18/src/main/java/org/apache/commons/lang3/time/FastDateFormat.java:1268: warning: [MissingOverride] estimateLength implements method in Rule; expected @Override
+        public int estimateLength() {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int estimateLength() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-18/src/main/java/org/apache/commons/lang3/time/FastDateFormat.java:1275: warning: [MissingOverride] appendTo implements method in Rule; expected @Override
+        public void appendTo(StringBuffer buffer, Calendar calendar) {
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void appendTo(StringBuffer buffer, Calendar calendar) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-18/src/main/java/org/apache/commons/lang3/time/FastDateFormat.java:1282: warning: [MissingOverride] appendTo implements method in NumberRule; expected @Override
+        public final void appendTo(StringBuffer buffer, int value) {
+                          ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public final void appendTo(StringBuffer buffer, int value) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-18/src/main/java/org/apache/commons/lang3/time/FastDateFormat.java:1307: warning: [MissingOverride] estimateLength implements method in Rule; expected @Override
+        public int estimateLength() {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int estimateLength() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-18/src/main/java/org/apache/commons/lang3/time/FastDateFormat.java:1314: warning: [MissingOverride] appendTo implements method in Rule; expected @Override
+        public void appendTo(StringBuffer buffer, Calendar calendar) {
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void appendTo(StringBuffer buffer, Calendar calendar) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-18/src/main/java/org/apache/commons/lang3/time/FastDateFormat.java:1325: warning: [MissingOverride] appendTo implements method in NumberRule; expected @Override
+        public void appendTo(StringBuffer buffer, int value) {
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void appendTo(StringBuffer buffer, int value) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-18/src/main/java/org/apache/commons/lang3/time/FastDateFormat.java:1349: warning: [MissingOverride] estimateLength implements method in Rule; expected @Override
+        public int estimateLength() {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int estimateLength() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-18/src/main/java/org/apache/commons/lang3/time/FastDateFormat.java:1356: warning: [MissingOverride] appendTo implements method in Rule; expected @Override
+        public void appendTo(StringBuffer buffer, Calendar calendar) {
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void appendTo(StringBuffer buffer, Calendar calendar) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-18/src/main/java/org/apache/commons/lang3/time/FastDateFormat.java:1367: warning: [MissingOverride] appendTo implements method in NumberRule; expected @Override
+        public void appendTo(StringBuffer buffer, int value) {
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void appendTo(StringBuffer buffer, int value) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-18/src/main/java/org/apache/commons/lang3/time/FastDateFormat.java:1397: warning: [MissingOverride] estimateLength implements method in Rule; expected @Override
+        public int estimateLength() {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int estimateLength() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-18/src/main/java/org/apache/commons/lang3/time/FastDateFormat.java:1404: warning: [MissingOverride] appendTo implements method in Rule; expected @Override
+        public void appendTo(StringBuffer buffer, Calendar calendar) {
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void appendTo(StringBuffer buffer, Calendar calendar) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-18/src/main/java/org/apache/commons/lang3/time/FastDateFormat.java:1435: warning: [MissingOverride] estimateLength implements method in Rule; expected @Override
+        public int estimateLength() {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int estimateLength() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-18/src/main/java/org/apache/commons/lang3/time/FastDateFormat.java:1442: warning: [MissingOverride] appendTo implements method in Rule; expected @Override
+        public void appendTo(StringBuffer buffer, Calendar calendar) {
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void appendTo(StringBuffer buffer, Calendar calendar) {'?
+38 warnings

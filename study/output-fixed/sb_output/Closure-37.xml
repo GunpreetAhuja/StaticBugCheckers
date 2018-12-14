@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.1.0" sequence="0" timestamp="1542189974000" analysisTimestamp="1542189977043" release="">
+  <Project projectName="">
+    <Jar>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-37/src</Jar>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-37/build/classes</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-37/lib/args4j.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-37/lib/guava.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-37/lib/json.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-37/lib/jsr305.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-37/lib/protobuf-java.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-37/build/lib/rhino.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-37/lib/ant.jar</AuxClasspathEntry>
+  </Project>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 14 Nov 2018 05:06:14 -0500" total_classes="11" referenced_classes="112" total_bugs="0" total_size="1076" num_packages="2" java_version="1.8.0_121" vm_version="25.121-b13" cpu_seconds="12.41" clock_seconds="6.19" peak_mbytes="188.54" alloc_mbytes="1820.50" gc_seconds="0.08">
+    <FileStats path="com/google/javascript/jscomp/NodeTraversal.java" bugCount="0" size="304"/>
+    <FileStats path="com/google/javascript/jscomp/parsing/IRFactory.java" bugCount="0" size="772"/>
+    <PackageStats package="com.google.javascript.jscomp" total_bugs="0" total_types="8" total_size="304">
+      <ClassStats class="com.google.javascript.jscomp.NodeTraversal" sourceFile="NodeTraversal.java" interface="false" size="259" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.NodeTraversal$AbstractNodeTypePruningCallback" sourceFile="NodeTraversal.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.NodeTraversal$AbstractPostOrderCallback" sourceFile="NodeTraversal.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.NodeTraversal$AbstractScopedCallback" sourceFile="NodeTraversal.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.NodeTraversal$AbstractShallowCallback" sourceFile="NodeTraversal.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.NodeTraversal$AbstractShallowStatementCallback" sourceFile="NodeTraversal.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.NodeTraversal$Callback" sourceFile="NodeTraversal.java" interface="true" size="3" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.NodeTraversal$ScopedCallback" sourceFile="NodeTraversal.java" interface="true" size="3" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="com.google.javascript.jscomp.parsing" total_bugs="0" total_types="3" total_size="772">
+      <ClassStats class="com.google.javascript.jscomp.parsing.IRFactory" sourceFile="IRFactory.java" interface="false" size="293" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.parsing.IRFactory$1" sourceFile="IRFactory.java" interface="false" size="4" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.parsing.IRFactory$TransformDispatcher" sourceFile="IRFactory.java" interface="false" size="475" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="930" invocations="703" avgMicrosecondsPerInvocation="1324" maxMicrosecondsPerInvocation="39120" standardDeviationMicrosecondsPerInvocation="2781"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="566" invocations="701" avgMicrosecondsPerInvocation="808" maxMicrosecondsPerInvocation="30558" standardDeviationMicrosecondsPerInvocation="2356"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="285" invocations="112" avgMicrosecondsPerInvocation="2551" maxMicrosecondsPerInvocation="62102" standardDeviationMicrosecondsPerInvocation="7243"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="265" invocations="112" avgMicrosecondsPerInvocation="2371" maxMicrosecondsPerInvocation="46465" standardDeviationMicrosecondsPerInvocation="5492"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="194" invocations="85" avgMicrosecondsPerInvocation="2290" maxMicrosecondsPerInvocation="42231" standardDeviationMicrosecondsPerInvocation="6662"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="191" invocations="85" avgMicrosecondsPerInvocation="2248" maxMicrosecondsPerInvocation="36189" standardDeviationMicrosecondsPerInvocation="5821"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="188" invocations="85" avgMicrosecondsPerInvocation="2219" maxMicrosecondsPerInvocation="41485" standardDeviationMicrosecondsPerInvocation="5942"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="187" invocations="85" avgMicrosecondsPerInvocation="2209" maxMicrosecondsPerInvocation="173253" standardDeviationMicrosecondsPerInvocation="18663"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="160" invocations="85" avgMicrosecondsPerInvocation="1892" maxMicrosecondsPerInvocation="50925" standardDeviationMicrosecondsPerInvocation="6170"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="158" invocations="376" avgMicrosecondsPerInvocation="421" maxMicrosecondsPerInvocation="10300" standardDeviationMicrosecondsPerInvocation="953"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="146" invocations="85" avgMicrosecondsPerInvocation="1724" maxMicrosecondsPerInvocation="81261" standardDeviationMicrosecondsPerInvocation="8803"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="133" invocations="85" avgMicrosecondsPerInvocation="1575" maxMicrosecondsPerInvocation="18985" standardDeviationMicrosecondsPerInvocation="3114"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="131" invocations="143" avgMicrosecondsPerInvocation="920" maxMicrosecondsPerInvocation="41070" standardDeviationMicrosecondsPerInvocation="4267"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="130" invocations="112" avgMicrosecondsPerInvocation="1162" maxMicrosecondsPerInvocation="61336" standardDeviationMicrosecondsPerInvocation="5903"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="96" invocations="112" avgMicrosecondsPerInvocation="859" maxMicrosecondsPerInvocation="20703" standardDeviationMicrosecondsPerInvocation="2365"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="93" invocations="665" avgMicrosecondsPerInvocation="140" maxMicrosecondsPerInvocation="4530" standardDeviationMicrosecondsPerInvocation="356"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

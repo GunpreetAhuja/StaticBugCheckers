@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.1.0" sequence="0" timestamp="1542190436000" analysisTimestamp="1542190439260" release="">
+  <Project projectName="">
+    <Jar>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-28/src/main/java</Jar>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-28/target/classes</AuxClasspathEntry>
+  </Project>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 14 Nov 2018 05:13:56 -0500" total_classes="1" referenced_classes="21" total_bugs="0" total_size="28" num_packages="1" java_version="1.8.0_121" vm_version="25.121-b13" cpu_seconds="6.44" clock_seconds="3.86" peak_mbytes="109.85" alloc_mbytes="1820.50" gc_seconds="0.08">
+    <FileStats path="org/apache/commons/lang3/text/translate/NumericEntityUnescaper.java" bugCount="0" size="28"/>
+    <PackageStats package="org.apache.commons.lang3.text.translate" total_bugs="0" total_types="1" total_size="28">
+      <ClassStats class="org.apache.commons.lang3.text.translate.NumericEntityUnescaper" sourceFile="NumericEntityUnescaper.java" interface="false" size="28" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="684" invocations="374" avgMicrosecondsPerInvocation="1831" maxMicrosecondsPerInvocation="107694" standardDeviationMicrosecondsPerInvocation="6967"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="572" invocations="377" avgMicrosecondsPerInvocation="1519" maxMicrosecondsPerInvocation="29030" standardDeviationMicrosecondsPerInvocation="3119"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="212" invocations="21" avgMicrosecondsPerInvocation="10133" maxMicrosecondsPerInvocation="60979" standardDeviationMicrosecondsPerInvocation="17042"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="155" invocations="342" avgMicrosecondsPerInvocation="456" maxMicrosecondsPerInvocation="20059" standardDeviationMicrosecondsPerInvocation="1782"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="97" invocations="2" avgMicrosecondsPerInvocation="48665" maxMicrosecondsPerInvocation="84604" standardDeviationMicrosecondsPerInvocation="35939"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="97" invocations="71" avgMicrosecondsPerInvocation="1366" maxMicrosecondsPerInvocation="21485" standardDeviationMicrosecondsPerInvocation="3037"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="85" invocations="40" avgMicrosecondsPerInvocation="2145" maxMicrosecondsPerInvocation="53241" standardDeviationMicrosecondsPerInvocation="8474"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="71" invocations="1" avgMicrosecondsPerInvocation="71146" maxMicrosecondsPerInvocation="71146" standardDeviationMicrosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="64" invocations="2" avgMicrosecondsPerInvocation="32049" maxMicrosecondsPerInvocation="41591" standardDeviationMicrosecondsPerInvocation="9540"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="63" invocations="2" avgMicrosecondsPerInvocation="31903" maxMicrosecondsPerInvocation="59910" standardDeviationMicrosecondsPerInvocation="28007"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="63" invocations="21" avgMicrosecondsPerInvocation="3030" maxMicrosecondsPerInvocation="16566" standardDeviationMicrosecondsPerInvocation="4432"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

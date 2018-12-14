@@ -1,0 +1,6 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-13/src/com/google/javascript/jscomp/PeepholeOptimizationsPass.java:141: warning: [OperatorPrecedence] Use grouping parenthesis to make the operator precedence explicit
+    if (node.getParent() != null && node.isFunction() || node.isScript()) {
+                                 ^
+    (see http://errorprone.info/bugpattern/OperatorPrecedence)
+  Did you mean 'if ((node.getParent() != null && node.isFunction()) || node.isScript()) {'?
+1 warning

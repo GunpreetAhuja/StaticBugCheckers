@@ -1,0 +1,11 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-11/src/main/java/org/apache/commons/math3/distribution/MultivariateNormalDistribution.java:177: warning: [MissingOverride] density implements method in MultivariateRealDistribution; expected @Override
+    public double density(final double[] vals) throws DimensionMismatchException {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double density(final double[] vals) throws DimensionMismatchException {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-11/src/main/java/org/apache/commons/math3/distribution/MultivariateNormalDistribution.java:205: warning: [MissingOverride] sample implements method in AbstractMultivariateRealDistribution; expected @Override
+    public double[] sample() {
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double[] sample() {'?
+2 warnings

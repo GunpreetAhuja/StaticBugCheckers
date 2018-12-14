@@ -1,0 +1,6 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Mockito-5/src/org/mockito/internal/verification/VerificationOverTimeImpl.java:75: warning: [MissingOverride] verify implements method in VerificationMode; expected @Override
+    public void verify(VerificationData data) {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void verify(VerificationData data) {'?
+1 warning

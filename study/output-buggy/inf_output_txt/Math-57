@@ -1,0 +1,21 @@
+Found 2 issues
+
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-57/src/main/java/org/apache/commons/math/stat/clustering/KMeansPlusPlusClusterer.java:148: error: NULL_DEREFERENCE
+  object `cluster` last assigned on line 147 could be null and is dereferenced at line 148.
+  146.           for (final T p : points) {
+  147.               Cluster<T> cluster = getNearestCluster(clusters, p);
+  148. >             cluster.addPoint(p);
+  149.           }
+  150.       }
+
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-57/src/main/java/org/apache/commons/math/stat/clustering/KMeansPlusPlusClusterer.java:179: error: NULL_DEREFERENCE
+  object `nearest` last assigned on line 178 could be null and is dereferenced at line 179.
+  177.                   final T p = pointSet.get(i);
+  178.                   final Cluster<T> nearest = getNearestCluster(resultSet, p);
+  179. >                 final double d = p.distanceFrom(nearest.getCenter());
+  180.                   sum += d * d;
+  181.                   dx2[i] = sum;
+
+Summary of the reports
+
+  NULL_DEREFERENCE: 2

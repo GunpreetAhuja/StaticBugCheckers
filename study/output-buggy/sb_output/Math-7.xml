@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.1.0" sequence="0" timestamp="1542186675000" analysisTimestamp="1542186679174" release="">
+  <Project projectName="">
+    <Jar>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-7/src/main/java</Jar>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-7/target/classes</AuxClasspathEntry>
+  </Project>
+  <BugInstance type="URF_UNREAD_PUBLIC_OR_PROTECTED_FIELD" priority="2" rank="18" abbrev="UrF" category="STYLE" instanceHash="f148a4319c5e5a8cd87ea66068c9506f" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Unread public/protected field</ShortMessage>
+    <LongMessage>Unread public/protected field: org.apache.commons.math3.ode.AbstractIntegrator.resetOccurred</LongMessage>
+    <Class classname="org.apache.commons.math3.ode.AbstractIntegrator" primary="true">
+      <SourceLine classname="org.apache.commons.math3.ode.AbstractIntegrator" start="84" end="425" sourcefile="AbstractIntegrator.java" sourcepath="org/apache/commons/math3/ode/AbstractIntegrator.java">
+        <Message>At AbstractIntegrator.java:[lines 84-425]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.math3.ode.AbstractIntegrator</Message>
+    </Class>
+    <Field classname="org.apache.commons.math3.ode.AbstractIntegrator" name="resetOccurred" signature="Z" isStatic="false" primary="true">
+      <SourceLine classname="org.apache.commons.math3.ode.AbstractIntegrator" sourcefile="AbstractIntegrator.java" sourcepath="org/apache/commons/math3/ode/AbstractIntegrator.java">
+        <Message>In AbstractIntegrator.java</Message>
+      </SourceLine>
+      <Message>Field org.apache.commons.math3.ode.AbstractIntegrator.resetOccurred</Message>
+    </Field>
+    <SourceLine classname="org.apache.commons.math3.ode.AbstractIntegrator" primary="true" start="369" end="369" startBytecode="394" endBytecode="394" sourcefile="AbstractIntegrator.java" sourcepath="org/apache/commons/math3/ode/AbstractIntegrator.java">
+      <Message>At AbstractIntegrator.java:[line 369]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="URF_UNREAD_PUBLIC_OR_PROTECTED_FIELD" abbrev="UrF" category="STYLE">
+    <ShortDescription>Unread public/protected field</ShortDescription>
+    <Details><![CDATA[
+
+  <p> This field is never read.&nbsp;
+The field is public or protected, so perhaps
+    it is intended to be used with classes not seen as part of the analysis. If not,
+consider removing it from the class.</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="UrF">
+    <Description>Unread field</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 14 Nov 2018 04:11:15 -0500" total_classes="2" referenced_classes="58" total_bugs="1" total_size="170" num_packages="1" java_version="1.8.0_121" vm_version="25.121-b13" cpu_seconds="8.66" clock_seconds="4.09" peak_mbytes="117.66" alloc_mbytes="1820.50" gc_seconds="0.07" priority_2="1">
+    <FileStats path="org/apache/commons/math3/ode/AbstractIntegrator.java" bugCount="1" size="170" bugHash="9d28267ef004cb4d4e7bd38aafa28ef1"/>
+    <PackageStats package="org.apache.commons.math3.ode" total_bugs="1" total_types="2" total_size="170" priority_2="1">
+      <ClassStats class="org.apache.commons.math3.ode.AbstractIntegrator" sourceFile="AbstractIntegrator.java" interface="false" size="162" bugs="1" priority_2="1"/>
+      <ClassStats class="org.apache.commons.math3.ode.AbstractIntegrator$1" sourceFile="AbstractIntegrator.java" interface="false" size="8" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="607" invocations="516" avgMicrosecondsPerInvocation="1177" maxMicrosecondsPerInvocation="27302" standardDeviationMicrosecondsPerInvocation="1970"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="508" invocations="515" avgMicrosecondsPerInvocation="987" maxMicrosecondsPerInvocation="22941" standardDeviationMicrosecondsPerInvocation="2361"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="168" invocations="58" avgMicrosecondsPerInvocation="2902" maxMicrosecondsPerInvocation="33144" standardDeviationMicrosecondsPerInvocation="6315"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="125" invocations="58" avgMicrosecondsPerInvocation="2172" maxMicrosecondsPerInvocation="16295" standardDeviationMicrosecondsPerInvocation="3665"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="122" invocations="22" avgMicrosecondsPerInvocation="5586" maxMicrosecondsPerInvocation="52535" standardDeviationMicrosecondsPerInvocation="12812"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="120" invocations="22" avgMicrosecondsPerInvocation="5462" maxMicrosecondsPerInvocation="45417" standardDeviationMicrosecondsPerInvocation="13037"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="107" invocations="149" avgMicrosecondsPerInvocation="724" maxMicrosecondsPerInvocation="8115" standardDeviationMicrosecondsPerInvocation="1258"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="96" invocations="22" avgMicrosecondsPerInvocation="4399" maxMicrosecondsPerInvocation="55607" standardDeviationMicrosecondsPerInvocation="12268"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="84" invocations="23" avgMicrosecondsPerInvocation="3679" maxMicrosecondsPerInvocation="74249" standardDeviationMicrosecondsPerInvocation="15068"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="83" invocations="22" avgMicrosecondsPerInvocation="3811" maxMicrosecondsPerInvocation="38394" standardDeviationMicrosecondsPerInvocation="8213"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="68" invocations="478" avgMicrosecondsPerInvocation="143" maxMicrosecondsPerInvocation="2386" standardDeviationMicrosecondsPerInvocation="262"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="67" invocations="58" avgMicrosecondsPerInvocation="1168" maxMicrosecondsPerInvocation="25498" standardDeviationMicrosecondsPerInvocation="3957"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="66" invocations="90" avgMicrosecondsPerInvocation="740" maxMicrosecondsPerInvocation="23823" standardDeviationMicrosecondsPerInvocation="2701"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="60" invocations="58" avgMicrosecondsPerInvocation="1050" maxMicrosecondsPerInvocation="13803" standardDeviationMicrosecondsPerInvocation="2342"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="49" invocations="22" avgMicrosecondsPerInvocation="2262" maxMicrosecondsPerInvocation="19340" standardDeviationMicrosecondsPerInvocation="5307"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="46" invocations="58" avgMicrosecondsPerInvocation="809" maxMicrosecondsPerInvocation="29878" standardDeviationMicrosecondsPerInvocation="3884"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

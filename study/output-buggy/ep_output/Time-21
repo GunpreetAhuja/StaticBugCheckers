@@ -1,0 +1,11 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-21/src/main/java/org/joda/time/tz/DefaultNameProvider.java:42: warning: [MissingOverride] getShortName implements method in NameProvider; expected @Override
+    public String getShortName(Locale locale, String id, String nameKey) {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public String getShortName(Locale locale, String id, String nameKey) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-21/src/main/java/org/joda/time/tz/DefaultNameProvider.java:47: warning: [MissingOverride] getName implements method in NameProvider; expected @Override
+    public String getName(Locale locale, String id, String nameKey) {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public String getName(Locale locale, String id, String nameKey) {'?
+2 warnings

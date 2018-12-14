@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.1.0" sequence="0" timestamp="1542191392000" analysisTimestamp="1542191395446" release="">
+  <Project projectName="">
+    <Jar>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-3/src/main/java</Jar>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-3/target/classes</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/framework/projects/Time/lib/org/joda/joda-convert/1.2/joda-convert-1.2.jar</AuxClasspathEntry>
+  </Project>
+  <BugInstance type="SE_BAD_FIELD" priority="2" rank="16" abbrev="Se" category="BAD_PRACTICE" instanceHash="fad782a95929b329d70c21d7ef5e71bb" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Non-transient non-serializable instance field in serializable class</ShortMessage>
+    <LongMessage>Class org.joda.time.MutableDateTime defines non-transient non-serializable instance field iRoundingField</LongMessage>
+    <Class classname="org.joda.time.MutableDateTime" primary="true">
+      <SourceLine classname="org.joda.time.MutableDateTime" start="106" end="1249" sourcefile="MutableDateTime.java" sourcepath="org/joda/time/MutableDateTime.java">
+        <Message>At MutableDateTime.java:[lines 106-1249]</Message>
+      </SourceLine>
+      <Message>In class org.joda.time.MutableDateTime</Message>
+    </Class>
+    <Field classname="org.joda.time.MutableDateTime" name="iRoundingField" signature="Lorg/joda/time/DateTimeField;" isStatic="false" primary="true">
+      <SourceLine classname="org.joda.time.MutableDateTime" sourcefile="MutableDateTime.java" sourcepath="org/joda/time/MutableDateTime.java">
+        <Message>In MutableDateTime.java</Message>
+      </SourceLine>
+      <Message>Field org.joda.time.MutableDateTime.iRoundingField</Message>
+    </Field>
+    <Type descriptor="Lorg/joda/time/DateTimeField;" role="TYPE_FOUND">
+      <SourceLine classname="org.joda.time.DateTimeField" start="33" end="33" sourcefile="DateTimeField.java" sourcepath="org/joda/time/DateTimeField.java">
+        <Message>At DateTimeField.java:[line 33]</Message>
+      </SourceLine>
+      <Message>Actual type org.joda.time.DateTimeField</Message>
+    </Type>
+    <SourceLine classname="org.joda.time.MutableDateTime" sourcefile="MutableDateTime.java" sourcepath="org/joda/time/MutableDateTime.java" synthetic="true">
+      <Message>In MutableDateTime.java</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="SF_SWITCH_NO_DEFAULT" priority="2" rank="19" abbrev="SF" category="STYLE" instanceHash="f834c15108609b5342e8c5db1f61299b" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Switch statement found where default case is missing</ShortMessage>
+    <LongMessage>Switch statement found in org.joda.time.MutableDateTime.setMillis(long) where default case is missing</LongMessage>
+    <Class classname="org.joda.time.MutableDateTime" primary="true">
+      <SourceLine classname="org.joda.time.MutableDateTime" start="106" end="1249" sourcefile="MutableDateTime.java" sourcepath="org/joda/time/MutableDateTime.java">
+        <Message>At MutableDateTime.java:[lines 106-1249]</Message>
+      </SourceLine>
+      <Message>In class org.joda.time.MutableDateTime</Message>
+    </Class>
+    <Method classname="org.joda.time.MutableDateTime" name="setMillis" signature="(J)V" isStatic="false" primary="true">
+      <SourceLine classname="org.joda.time.MutableDateTime" start="454" end="474" startBytecode="0" endBytecode="196" sourcefile="MutableDateTime.java" sourcepath="org/joda/time/MutableDateTime.java"/>
+      <Message>In method org.joda.time.MutableDateTime.setMillis(long)</Message>
+    </Method>
+    <SourceLine classname="org.joda.time.MutableDateTime" primary="true" start="454" end="470" startBytecode="4" endBytecode="103" sourcefile="MutableDateTime.java" sourcepath="org/joda/time/MutableDateTime.java">
+      <Message>At MutableDateTime.java:[lines 454-470]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="BAD_PRACTICE">
+    <Description>Bad practice</Description>
+  </BugCategory>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="SE_BAD_FIELD" abbrev="Se" category="BAD_PRACTICE">
+    <ShortDescription>Non-transient non-serializable instance field in serializable class</ShortDescription>
+    <Details><![CDATA[
+
+<p> This Serializable class defines a non-primitive instance field which is neither transient,
+Serializable, or <code>java.lang.Object</code>, and does not appear to implement
+the <code>Externalizable</code> interface or the
+<code>readObject()</code> and <code>writeObject()</code> methods.&nbsp;
+Objects of this class will not be deserialized correctly if a non-Serializable
+object is stored in this field.</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="SF_SWITCH_NO_DEFAULT" abbrev="SF" category="STYLE">
+    <ShortDescription>Switch statement found where default case is missing</ShortDescription>
+    <Details><![CDATA[
+
+  <p> This method contains a switch statement where default case is missing.
+  Usually you need to provide a default case.</p>
+  <p>Because the analysis only looks at the generated bytecode, this warning can be incorrect triggered if
+the default case is at the end of the switch statement and the switch statement doesn't contain break statements for other
+cases.
+
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="Se">
+    <Description>Incorrect definition of Serializable class</Description>
+  </BugCode>
+  <BugCode abbrev="SF">
+    <Description>Switch case falls through</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 14 Nov 2018 05:29:52 -0500" total_classes="2" referenced_classes="55" total_bugs="2" total_size="365" num_packages="1" java_version="1.8.0_121" vm_version="25.121-b13" cpu_seconds="10.03" clock_seconds="5.23" peak_mbytes="152.24" alloc_mbytes="1820.50" gc_seconds="0.06" priority_2="2">
+    <FileStats path="org/joda/time/MutableDateTime.java" bugCount="2" size="365" bugHash="3c01d03879f1f319cfc2b9c7ff5df908"/>
+    <PackageStats package="org.joda.time" total_bugs="2" total_types="2" total_size="365" priority_2="2">
+      <ClassStats class="org.joda.time.MutableDateTime" sourceFile="MutableDateTime.java" interface="false" size="306" bugs="2" priority_2="2"/>
+      <ClassStats class="org.joda.time.MutableDateTime$Property" sourceFile="MutableDateTime.java" interface="false" size="59" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="822" invocations="543" avgMicrosecondsPerInvocation="1514" maxMicrosecondsPerInvocation="48618" standardDeviationMicrosecondsPerInvocation="3565"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="646" invocations="537" avgMicrosecondsPerInvocation="1203" maxMicrosecondsPerInvocation="46868" standardDeviationMicrosecondsPerInvocation="3728"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="227" invocations="55" avgMicrosecondsPerInvocation="4142" maxMicrosecondsPerInvocation="55646" standardDeviationMicrosecondsPerInvocation="9956"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="158" invocations="55" avgMicrosecondsPerInvocation="2884" maxMicrosecondsPerInvocation="53481" standardDeviationMicrosecondsPerInvocation="7440"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="135" invocations="86" avgMicrosecondsPerInvocation="1571" maxMicrosecondsPerInvocation="61180" standardDeviationMicrosecondsPerInvocation="7245"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="132" invocations="85" avgMicrosecondsPerInvocation="1560" maxMicrosecondsPerInvocation="28975" standardDeviationMicrosecondsPerInvocation="4385"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="130" invocations="498" avgMicrosecondsPerInvocation="262" maxMicrosecondsPerInvocation="19794" standardDeviationMicrosecondsPerInvocation="1195"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="127" invocations="85" avgMicrosecondsPerInvocation="1502" maxMicrosecondsPerInvocation="19024" standardDeviationMicrosecondsPerInvocation="3219"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="120" invocations="85" avgMicrosecondsPerInvocation="1421" maxMicrosecondsPerInvocation="103041" standardDeviationMicrosecondsPerInvocation="11093"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="118" invocations="85" avgMicrosecondsPerInvocation="1393" maxMicrosecondsPerInvocation="29359" standardDeviationMicrosecondsPerInvocation="3888"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="112" invocations="178" avgMicrosecondsPerInvocation="633" maxMicrosecondsPerInvocation="14600" standardDeviationMicrosecondsPerInvocation="1692"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="103" invocations="85" avgMicrosecondsPerInvocation="1219" maxMicrosecondsPerInvocation="33456" standardDeviationMicrosecondsPerInvocation="3766"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="93" invocations="86" avgMicrosecondsPerInvocation="1090" maxMicrosecondsPerInvocation="32112" standardDeviationMicrosecondsPerInvocation="3445"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="87" invocations="93" avgMicrosecondsPerInvocation="940" maxMicrosecondsPerInvocation="29075" standardDeviationMicrosecondsPerInvocation="3394"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="85" invocations="83" avgMicrosecondsPerInvocation="1029" maxMicrosecondsPerInvocation="33891" standardDeviationMicrosecondsPerInvocation="4748"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="73" invocations="55" avgMicrosecondsPerInvocation="1330" maxMicrosecondsPerInvocation="30684" standardDeviationMicrosecondsPerInvocation="5363"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

@@ -1,0 +1,18 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-22/source/org/jfree/data/KeyedObjects2D.java:390: warning: [MissingOverride] equals overrides method in Object; expected @Override
+    public boolean equals(Object obj) {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public boolean equals(Object obj) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-22/source/org/jfree/data/KeyedObjects2D.java:437: warning: [MissingOverride] hashCode overrides method in Object; expected @Override
+    public int hashCode() {
+               ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int hashCode() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-22/source/org/jfree/data/KeyedObjects2D.java:453: warning: [MissingOverride] clone overrides method in Object; expected @Override
+    public Object clone() throws CloneNotSupportedException {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Object clone() throws CloneNotSupportedException {'?
+Note: /Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-22/source/org/jfree/data/KeyedObjects2D.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+3 warnings

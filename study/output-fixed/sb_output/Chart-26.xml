@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.1.0" sequence="0" timestamp="1542189584000" analysisTimestamp="1542189587285" release="">
+  <Project projectName="">
+    <Jar>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Chart-26/source</Jar>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Chart-26/build</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Chart-26/lib/servlet.jar</AuxClasspathEntry>
+  </Project>
+  <BugInstance type="HE_EQUALS_USE_HASHCODE" priority="2" rank="16" abbrev="HE" category="BAD_PRACTICE" instanceHash="6db5aebbde562d1cdc18942f309dfbf6" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Class defines equals() and uses Object.hashCode()</ShortMessage>
+    <LongMessage>org.jfree.chart.axis.Axis defines equals and uses Object.hashCode()</LongMessage>
+    <Class classname="org.jfree.chart.axis.Axis" primary="true">
+      <SourceLine classname="org.jfree.chart.axis.Axis" start="137" end="1372" sourcefile="Axis.java" sourcepath="org/jfree/chart/axis/Axis.java">
+        <Message>At Axis.java:[lines 137-1372]</Message>
+      </SourceLine>
+      <Message>In class org.jfree.chart.axis.Axis</Message>
+    </Class>
+    <Method classname="org.jfree.chart.axis.Axis" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false" primary="true">
+      <SourceLine classname="org.jfree.chart.axis.Axis" start="1262" end="1334" startBytecode="0" endBytecode="586" sourcefile="Axis.java" sourcepath="org/jfree/chart/axis/Axis.java"/>
+      <Message>In method org.jfree.chart.axis.Axis.equals(Object)</Message>
+    </Method>
+    <SourceLine classname="org.jfree.chart.axis.Axis" start="1262" end="1334" startBytecode="0" endBytecode="586" sourcefile="Axis.java" sourcepath="org/jfree/chart/axis/Axis.java" synthetic="true">
+      <Message>At Axis.java:[lines 1262-1334]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="BAD_PRACTICE">
+    <Description>Bad practice</Description>
+  </BugCategory>
+  <BugPattern type="HE_EQUALS_USE_HASHCODE" abbrev="HE" category="BAD_PRACTICE">
+    <ShortDescription>Class defines equals() and uses Object.hashCode()</ShortDescription>
+    <Details><![CDATA[
+
+  <p> This class overrides <code>equals(Object)</code>, but does not
+  override <code>hashCode()</code>, and inherits the implementation of
+  <code>hashCode()</code> from <code>java.lang.Object</code> (which returns
+  the identity hash code, an arbitrary value assigned to the object
+  by the VM).&nbsp; Therefore, the class is very likely to violate the
+  invariant that equal objects must have equal hashcodes.</p>
+
+<p>If you don't think instances of this class will ever be inserted into a HashMap/HashTable,
+the recommended <code>hashCode</code> implementation to use is:</p>
+<pre><code>public int hashCode() {
+    assert false : "hashCode not designed";
+    return 42; // any arbitrary constant will do
+}
+</code></pre>
+
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="HE">
+    <Description>Equal objects must have equal hashcodes</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 14 Nov 2018 04:59:44 -0500" total_classes="1" referenced_classes="51" total_bugs="1" total_size="452" num_packages="1" java_version="1.8.0_121" vm_version="25.121-b13" cpu_seconds="10.26" clock_seconds="5.21" peak_mbytes="118.33" alloc_mbytes="1820.50" gc_seconds="0.09" priority_2="1">
+    <FileStats path="org/jfree/chart/axis/Axis.java" bugCount="1" size="452" bugHash="9efe1f3ed2c6439ff8740eee3be12466"/>
+    <PackageStats package="org.jfree.chart.axis" total_bugs="1" total_types="1" total_size="452" priority_2="1">
+      <ClassStats class="org.jfree.chart.axis.Axis" sourceFile="Axis.java" interface="false" size="452" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="760" invocations="561" avgMicrosecondsPerInvocation="1354" maxMicrosecondsPerInvocation="31360" standardDeviationMicrosecondsPerInvocation="2994"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="580" invocations="558" avgMicrosecondsPerInvocation="1040" maxMicrosecondsPerInvocation="67113" standardDeviationMicrosecondsPerInvocation="3865"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="314" invocations="51" avgMicrosecondsPerInvocation="6169" maxMicrosecondsPerInvocation="62785" standardDeviationMicrosecondsPerInvocation="11276"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="244" invocations="51" avgMicrosecondsPerInvocation="4790" maxMicrosecondsPerInvocation="56688" standardDeviationMicrosecondsPerInvocation="9477"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="205" invocations="236" avgMicrosecondsPerInvocation="869" maxMicrosecondsPerInvocation="18222" standardDeviationMicrosecondsPerInvocation="2402"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="178" invocations="51" avgMicrosecondsPerInvocation="3492" maxMicrosecondsPerInvocation="103290" standardDeviationMicrosecondsPerInvocation="14598"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="140" invocations="519" avgMicrosecondsPerInvocation="270" maxMicrosecondsPerInvocation="36708" standardDeviationMicrosecondsPerInvocation="1800"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="98" invocations="57" avgMicrosecondsPerInvocation="1723" maxMicrosecondsPerInvocation="26349" standardDeviationMicrosecondsPerInvocation="5039"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="84" invocations="51" avgMicrosecondsPerInvocation="1660" maxMicrosecondsPerInvocation="33860" standardDeviationMicrosecondsPerInvocation="5343"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="81" invocations="57" avgMicrosecondsPerInvocation="1425" maxMicrosecondsPerInvocation="23365" standardDeviationMicrosecondsPerInvocation="4085"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="80" invocations="89" avgMicrosecondsPerInvocation="901" maxMicrosecondsPerInvocation="30295" standardDeviationMicrosecondsPerInvocation="3872"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="79" invocations="57" avgMicrosecondsPerInvocation="1395" maxMicrosecondsPerInvocation="17634" standardDeviationMicrosecondsPerInvocation="3140"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="71" invocations="51" avgMicrosecondsPerInvocation="1400" maxMicrosecondsPerInvocation="14667" standardDeviationMicrosecondsPerInvocation="2689"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="69" invocations="57" avgMicrosecondsPerInvocation="1214" maxMicrosecondsPerInvocation="18414" standardDeviationMicrosecondsPerInvocation="2956"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="64" invocations="61" avgMicrosecondsPerInvocation="1059" maxMicrosecondsPerInvocation="50647" standardDeviationMicrosecondsPerInvocation="6410"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

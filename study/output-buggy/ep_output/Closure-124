@@ -1,0 +1,6 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-124/src/com/google/javascript/jscomp/ExploitAssigns.java:172: warning: [OperatorPrecedence] Use grouping parenthesis to make the operator precedence explicit
+              leftSide.isGetProp() &&
+                                   ^
+    (see http://errorprone.info/bugpattern/OperatorPrecedence)
+  Did you mean '(leftSide.isGetProp() &&'?
+1 warning

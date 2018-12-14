@@ -1,0 +1,125 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-16/src/main/java/org/apache/commons/math3/util/FastMath.java:85: warning: [FloatingPointLiteralPrecision] Floating point literal loses precision
+    public static final double PI = 105414357.0 / 33554432.0 + 1.984187159361080883e-9;
+                                                               ^
+    (see http://errorprone.info/bugpattern/FloatingPointLiteralPrecision)
+  Did you mean 'public static final double PI = 105414357.0 / 33554432.0 + 1.984187159361081E-9;'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-16/src/main/java/org/apache/commons/math3/util/FastMath.java:88: warning: [FloatingPointLiteralPrecision] Floating point literal loses precision
+    public static final double E = 2850325.0 / 1048576.0 + 8.254840070411028747e-8;
+                                                           ^
+    (see http://errorprone.info/bugpattern/FloatingPointLiteralPrecision)
+  Did you mean 'public static final double E = 2850325.0 / 1048576.0 + 8.254840070411029E-8;'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-16/src/main/java/org/apache/commons/math3/util/FastMath.java:109: warning: [FloatingPointLiteralPrecision] Floating point literal loses precision
+    private static final double LN_2_A = 0.693147063255310059;
+                                         ^
+    (see http://errorprone.info/bugpattern/FloatingPointLiteralPrecision)
+  Did you mean 'private static final double LN_2_A = 0.6931470632553101;'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-16/src/main/java/org/apache/commons/math3/util/FastMath.java:112: warning: [FloatingPointLiteralPrecision] Floating point literal loses precision
+    private static final double LN_2_B = 1.17304635250823482e-7;
+                                         ^
+    (see http://errorprone.info/bugpattern/FloatingPointLiteralPrecision)
+  Did you mean 'private static final double LN_2_B = 1.1730463525082348E-7;'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-16/src/main/java/org/apache/commons/math3/util/FastMath.java:385: error: [IdentityBinaryExpression] A binary expression where both operands are the same is usually incorrect; the value of this expression is equivalent to `!Double.isNan(x)`.
+      if (x != x) {
+            ^
+    (see http://errorprone.info/bugpattern/IdentityBinaryExpression)
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-16/src/main/java/org/apache/commons/math3/util/FastMath.java:455: error: [IdentityBinaryExpression] A binary expression where both operands are the same is usually incorrect; the value of this expression is equivalent to `!Double.isNan(x)`.
+      if (x != x) {
+            ^
+    (see http://errorprone.info/bugpattern/IdentityBinaryExpression)
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-16/src/main/java/org/apache/commons/math3/util/FastMath.java:581: error: [IdentityBinaryExpression] A binary expression where both operands are the same is usually incorrect; the value of this expression is equivalent to `!Double.isNan(x)`.
+      if (x != x) {
+            ^
+    (see http://errorprone.info/bugpattern/IdentityBinaryExpression)
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-16/src/main/java/org/apache/commons/math3/util/FastMath.java:871: warning: [FloatingPointLiteralPrecision] Floating point literal loses precision
+                final double result = exp(x+1.494140625, extra, hiPrec) / 4.455505956692756620;
+                                                                          ^
+    (see http://errorprone.info/bugpattern/FloatingPointLiteralPrecision)
+  Did you mean 'final double result = exp(x+1.494140625, extra, hiPrec) / 4.455505956692757;'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-16/src/main/java/org/apache/commons/math3/util/FastMath.java:873: warning: [FloatingPointLiteralPrecision] Floating point literal loses precision
+                    hiPrec[0] /= 4.455505956692756620;
+                                 ^
+    (see http://errorprone.info/bugpattern/FloatingPointLiteralPrecision)
+  Did you mean 'hiPrec[0] /= 4.455505956692757;'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-16/src/main/java/org/apache/commons/math3/util/FastMath.java:874: warning: [FloatingPointLiteralPrecision] Floating point literal loses precision
+                    hiPrec[1] /= 4.455505956692756620;
+                                 ^
+    (see http://errorprone.info/bugpattern/FloatingPointLiteralPrecision)
+  Did you mean 'hiPrec[1] /= 4.455505956692757;'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-16/src/main/java/org/apache/commons/math3/util/FastMath.java:970: error: [IdentityBinaryExpression] A binary expression where both operands are the same is usually incorrect; the value of this expression is equivalent to `!Double.isNan(x)`.
+        if (x != x || x == 0.0) { // NaN or zero
+              ^
+    (see http://errorprone.info/bugpattern/IdentityBinaryExpression)
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-16/src/main/java/org/apache/commons/math3/util/FastMath.java:1134: error: [IdentityBinaryExpression] A binary expression where both operands are the same is usually incorrect; the value of this expression is equivalent to `!Double.isNan(x)`.
+        if ((bits & 0x8000000000000000L) != 0 || x != x) {
+                                                   ^
+    (see http://errorprone.info/bugpattern/IdentityBinaryExpression)
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-16/src/main/java/org/apache/commons/math3/util/FastMath.java:1447: error: [IdentityBinaryExpression] A binary expression where both operands are the same is usually incorrect; the value of this expression is equivalent to `!Double.isNan(x)`.
+        if (x != x) { // X is NaN
+              ^
+    (see http://errorprone.info/bugpattern/IdentityBinaryExpression)
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-16/src/main/java/org/apache/commons/math3/util/FastMath.java:1478: error: [IdentityBinaryExpression] A binary expression where both operands are the same is usually incorrect; the value of this expression is equivalent to `!Double.isNan(y)`.
+            if (y != y) { // y is NaN
+                  ^
+    (see http://errorprone.info/bugpattern/IdentityBinaryExpression)
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-16/src/main/java/org/apache/commons/math3/util/FastMath.java:1501: error: [IdentityBinaryExpression] A binary expression where both operands are the same is usually incorrect; the value of this expression is equivalent to `!Double.isNan(y)`.
+            if (y != y) { // y is NaN
+                  ^
+    (see http://errorprone.info/bugpattern/IdentityBinaryExpression)
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-16/src/main/java/org/apache/commons/math3/util/FastMath.java:1560: warning: [FloatingPointLiteralPrecision] Floating point literal loses precision
+            double tmp1 = y * 9.31322574615478515625E-10;
+                              ^
+    (see http://errorprone.info/bugpattern/FloatingPointLiteralPrecision)
+  Did you mean 'double tmp1 = y * 9.313225746154785E-10;'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-16/src/main/java/org/apache/commons/math3/util/FastMath.java:1561: warning: [FloatingPointLiteralPrecision] Floating point literal loses precision
+            double tmp2 = tmp1 * 9.31322574615478515625E-10;
+                                 ^
+    (see http://errorprone.info/bugpattern/FloatingPointLiteralPrecision)
+  Did you mean 'double tmp2 = tmp1 * 9.313225746154785E-10;'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-16/src/main/java/org/apache/commons/math3/util/FastMath.java:2244: error: [IdentityBinaryExpression] A binary expression where both operands are the same is usually incorrect; the value of this expression is equivalent to `!Double.isNan(xa)`.
+        if (xa != xa || xa == Double.POSITIVE_INFINITY) {
+               ^
+    (see http://errorprone.info/bugpattern/IdentityBinaryExpression)
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-16/src/main/java/org/apache/commons/math3/util/FastMath.java:2298: error: [IdentityBinaryExpression] A binary expression where both operands are the same is usually incorrect; the value of this expression is equivalent to `!Double.isNan(xa)`.
+        if (xa != xa || xa == Double.POSITIVE_INFINITY) {
+               ^
+    (see http://errorprone.info/bugpattern/IdentityBinaryExpression)
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-16/src/main/java/org/apache/commons/math3/util/FastMath.java:2363: error: [IdentityBinaryExpression] A binary expression where both operands are the same is usually incorrect; the value of this expression is equivalent to `!Double.isNan(xa)`.
+        if (xa != xa || xa == Double.POSITIVE_INFINITY) {
+               ^
+    (see http://errorprone.info/bugpattern/IdentityBinaryExpression)
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-16/src/main/java/org/apache/commons/math3/util/FastMath.java:2450: warning: [FloatingPointLiteralPrecision] Floating point literal loses precision
+            idx = (int) (((-1.7168146928204136 * xa * xa + 8.0) * xa) + 0.5);
+                            ^
+    (see http://errorprone.info/bugpattern/FloatingPointLiteralPrecision)
+  Did you mean 'idx = (int) (((-1.7168146928204135 * xa * xa + 8.0) * xa) + 0.5);'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-16/src/main/java/org/apache/commons/math3/util/FastMath.java:2453: warning: [FloatingPointLiteralPrecision] Floating point literal loses precision
+            idx = (int) (-((-1.7168146928204136 * oneOverXa * oneOverXa + 8.0) * oneOverXa) + 13.07);
+                             ^
+    (see http://errorprone.info/bugpattern/FloatingPointLiteralPrecision)
+  Did you mean 'idx = (int) (-((-1.7168146928204135 * oneOverXa * oneOverXa + 8.0) * oneOverXa) + 13.07);'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-16/src/main/java/org/apache/commons/math3/util/FastMath.java:2577: error: [IdentityBinaryExpression] A binary expression where both operands are the same is usually incorrect; the value of this expression is equivalent to `!Double.isNan(x)`.
+        if (x != x || y != y) {
+              ^
+    (see http://errorprone.info/bugpattern/IdentityBinaryExpression)
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-16/src/main/java/org/apache/commons/math3/util/FastMath.java:2577: error: [IdentityBinaryExpression] A binary expression where both operands are the same is usually incorrect; the value of this expression is equivalent to `!Double.isNan(y)`.
+        if (x != x || y != y) {
+                        ^
+    (see http://errorprone.info/bugpattern/IdentityBinaryExpression)
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-16/src/main/java/org/apache/commons/math3/util/FastMath.java:2698: error: [IdentityBinaryExpression] A binary expression where both operands are the same is usually incorrect; the value of this expression is equivalent to `!Double.isNan(x)`.
+      if (x != x) {
+            ^
+    (see http://errorprone.info/bugpattern/IdentityBinaryExpression)
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-16/src/main/java/org/apache/commons/math3/util/FastMath.java:2774: error: [IdentityBinaryExpression] A binary expression where both operands are the same is usually incorrect; the value of this expression is equivalent to `!Double.isNan(x)`.
+      if (x != x) {
+            ^
+    (see http://errorprone.info/bugpattern/IdentityBinaryExpression)
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-16/src/main/java/org/apache/commons/math3/util/FastMath.java:3328: error: [IdentityBinaryExpression] A binary expression where both operands are the same is usually incorrect; the value of this expression is equivalent to `!Double.isNan(x)`.
+        if (x != x) { // NaN
+              ^
+    (see http://errorprone.info/bugpattern/IdentityBinaryExpression)
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-16/src/main/java/org/apache/commons/math3/util/FastMath.java:3355: error: [IdentityBinaryExpression] A binary expression where both operands are the same is usually incorrect; the value of this expression is equivalent to `!Double.isNan(x)`.
+        if (x != x) { // NaN
+              ^
+    (see http://errorprone.info/bugpattern/IdentityBinaryExpression)
+17 errors
+11 warnings

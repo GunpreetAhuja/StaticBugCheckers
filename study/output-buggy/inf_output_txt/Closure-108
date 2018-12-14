@@ -1,0 +1,13 @@
+Found 1 issue
+
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-108/src/com/google/javascript/jscomp/ScopedAliases.java:402: error: NULL_DEREFERENCE
+  object `value` last assigned on line 376 could be null and is dereferenced at line 402.
+  400.               // function, and the programmer is using the hoisting.
+  401.               Node newName = IR.name("").useSourceInfoFrom(existingName);
+  402. >             value.replaceChild(existingName, newName);
+  403.   
+  404.               varNode = IR.var(existingName).useSourceInfoFrom(existingName);
+
+Summary of the reports
+
+  NULL_DEREFERENCE: 1

@@ -1,0 +1,11 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-78/src/com/google/javascript/jscomp/PeepholeFoldConstants.java:539: warning: [OperatorPrecedence] Use grouping parenthesis to make the operator precedence explicit
+      if (lval && type == Token.OR ||
+               ^
+    (see http://errorprone.info/bugpattern/OperatorPrecedence)
+  Did you mean 'if ((lval && type == Token.OR) ||'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-78/src/com/google/javascript/jscomp/PeepholeFoldConstants.java:540: warning: [OperatorPrecedence] Use grouping parenthesis to make the operator precedence explicit
+          !lval && type == Token.AND) {
+                ^
+    (see http://errorprone.info/bugpattern/OperatorPrecedence)
+  Did you mean '(!lval && type == Token.AND)) {'?
+2 warnings

@@ -1,0 +1,27 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-89/src/com/google/javascript/jscomp/CollapseProperties.java:645: warning: [MissingOverride] visit implements method in Callback; expected @Override
+            public void visit(NodeTraversal t, Node n, Node parent) {
+                        ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void visit(NodeTraversal t, Node n, Node parent) {'?
+1 warning
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-89/src/com/google/javascript/jscomp/GlobalNamespace.java:127: warning: [MissingOverride] apply implements method in Predicate; expected @Override
+    public boolean apply(Node n) {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public boolean apply(Node n) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-89/src/com/google/javascript/jscomp/GlobalNamespace.java:495: warning: [OperatorPrecedence] Use grouping parenthesis to make the operator precedence explicit
+             (info.isConstructor() && valueNodeType == Token.FUNCTION ||
+                                   ^
+    (see http://errorprone.info/bugpattern/OperatorPrecedence)
+  Did you mean '((info.isConstructor() && valueNodeType == Token.FUNCTION) ||'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-89/src/com/google/javascript/jscomp/GlobalNamespace.java:496: warning: [OperatorPrecedence] Use grouping parenthesis to make the operator precedence explicit
+              info.hasEnumParameterType() && valueNodeType == Token.OBJECTLIT);
+                                          ^
+    (see http://errorprone.info/bugpattern/OperatorPrecedence)
+  Did you mean '(info.hasEnumParameterType() && valueNodeType == Token.OBJECTLIT));'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-89/src/com/google/javascript/jscomp/GlobalNamespace.java:892: warning: [OperatorPrecedence] Use grouping parenthesis to make the operator precedence explicit
+          (parent == null || parent.canCollapseUnannotatedChildNames()) &&
+                                                                        ^
+    (see http://errorprone.info/bugpattern/OperatorPrecedence)
+  Did you mean '((parent == null || parent.canCollapseUnannotatedChildNames()) &&'?
+4 warnings

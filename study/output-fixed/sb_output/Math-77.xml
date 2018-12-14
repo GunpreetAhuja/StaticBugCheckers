@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.1.0" sequence="0" timestamp="1542191025000" analysisTimestamp="1542191027718" release="">
+  <Project projectName="">
+    <Jar>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-77/src/main/java</Jar>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-77/target/classes</AuxClasspathEntry>
+  </Project>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE" instanceHash="ac55a15d01974cc3746fc636be2b0318" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="374">
+    <ShortMessage>May expose internal representation by returning reference to mutable object</ShortMessage>
+    <LongMessage>org.apache.commons.math.linear.ArrayRealVector.getDataRef() may expose internal representation by returning ArrayRealVector.data</LongMessage>
+    <Class classname="org.apache.commons.math.linear.ArrayRealVector" primary="true">
+      <SourceLine classname="org.apache.commons.math.linear.ArrayRealVector" start="31" end="1181" sourcefile="ArrayRealVector.java" sourcepath="org/apache/commons/math/linear/ArrayRealVector.java">
+        <Message>At ArrayRealVector.java:[lines 31-1181]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.math.linear.ArrayRealVector</Message>
+    </Class>
+    <Method classname="org.apache.commons.math.linear.ArrayRealVector" name="getDataRef" signature="()[D" isStatic="false" primary="true">
+      <SourceLine classname="org.apache.commons.math.linear.ArrayRealVector" start="654" end="654" startBytecode="0" endBytecode="28" sourcefile="ArrayRealVector.java" sourcepath="org/apache/commons/math/linear/ArrayRealVector.java"/>
+      <Message>In method org.apache.commons.math.linear.ArrayRealVector.getDataRef()</Message>
+    </Method>
+    <Field classname="org.apache.commons.math.linear.ArrayRealVector" name="data" signature="[D" isStatic="false" primary="true">
+      <SourceLine classname="org.apache.commons.math.linear.ArrayRealVector" sourcefile="ArrayRealVector.java" sourcepath="org/apache/commons/math/linear/ArrayRealVector.java">
+        <Message>In ArrayRealVector.java</Message>
+      </SourceLine>
+      <Message>Field org.apache.commons.math.linear.ArrayRealVector.data</Message>
+    </Field>
+    <SourceLine classname="org.apache.commons.math.linear.ArrayRealVector" primary="true" start="654" end="654" startBytecode="4" endBytecode="4" sourcefile="ArrayRealVector.java" sourcepath="org/apache/commons/math/linear/ArrayRealVector.java">
+      <Message>At ArrayRealVector.java:[line 654]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="MALICIOUS_CODE">
+    <Description>Malicious code vulnerability</Description>
+  </BugCategory>
+  <BugPattern type="EI_EXPOSE_REP" abbrev="EI" category="MALICIOUS_CODE" cweid="374">
+    <ShortDescription>May expose internal representation by returning reference to mutable object</ShortDescription>
+    <Details><![CDATA[
+
+  <p> Returning a reference to a mutable object value stored in one of the object's fields
+  exposes the internal representation of the object.&nbsp;
+   If instances
+   are accessed by untrusted code, and unchecked changes to
+   the mutable object would compromise security or other
+   important properties, you will need to do something different.
+  Returning a new copy of the object is better approach in many situations.</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="EI">
+    <Description>Method returning array may expose internal representation</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 14 Nov 2018 05:23:45 -0500" total_classes="4" referenced_classes="47" total_bugs="1" total_size="1002" num_packages="1" java_version="1.8.0_121" vm_version="25.121-b13" cpu_seconds="12.82" clock_seconds="6.94" peak_mbytes="189.79" alloc_mbytes="1820.50" gc_seconds="0.05" priority_2="1">
+    <FileStats path="org/apache/commons/math/linear/ArrayRealVector.java" bugCount="1" size="523" bugHash="6de1983aaff277f5270b0062ccc5f242"/>
+    <FileStats path="org/apache/commons/math/linear/OpenMapRealVector.java" bugCount="0" size="479"/>
+    <PackageStats package="org.apache.commons.math.linear" total_bugs="1" total_types="4" total_size="1002" priority_2="1">
+      <ClassStats class="org.apache.commons.math.linear.ArrayRealVector" sourceFile="ArrayRealVector.java" interface="false" size="523" bugs="1" priority_2="1"/>
+      <ClassStats class="org.apache.commons.math.linear.OpenMapRealVector" sourceFile="OpenMapRealVector.java" interface="false" size="447" bugs="0"/>
+      <ClassStats class="org.apache.commons.math.linear.OpenMapRealVector$OpenMapEntry" sourceFile="OpenMapRealVector.java" interface="false" size="14" bugs="0"/>
+      <ClassStats class="org.apache.commons.math.linear.OpenMapRealVector$OpenMapSparseIterator" sourceFile="OpenMapRealVector.java" interface="false" size="18" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="731" invocations="501" avgMicrosecondsPerInvocation="1460" maxMicrosecondsPerInvocation="41254" standardDeviationMicrosecondsPerInvocation="2966"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="643" invocations="497" avgMicrosecondsPerInvocation="1295" maxMicrosecondsPerInvocation="61805" standardDeviationMicrosecondsPerInvocation="4293"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="311" invocations="479" avgMicrosecondsPerInvocation="650" maxMicrosecondsPerInvocation="25384" standardDeviationMicrosecondsPerInvocation="2491"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="282" invocations="186" avgMicrosecondsPerInvocation="1518" maxMicrosecondsPerInvocation="34296" standardDeviationMicrosecondsPerInvocation="4113"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="219" invocations="47" avgMicrosecondsPerInvocation="4661" maxMicrosecondsPerInvocation="28203" standardDeviationMicrosecondsPerInvocation="8108"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="196" invocations="183" avgMicrosecondsPerInvocation="1072" maxMicrosecondsPerInvocation="21433" standardDeviationMicrosecondsPerInvocation="2304"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="187" invocations="47" avgMicrosecondsPerInvocation="3998" maxMicrosecondsPerInvocation="22891" standardDeviationMicrosecondsPerInvocation="6064"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="177" invocations="175" avgMicrosecondsPerInvocation="1015" maxMicrosecondsPerInvocation="13691" standardDeviationMicrosecondsPerInvocation="1916"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="170" invocations="183" avgMicrosecondsPerInvocation="932" maxMicrosecondsPerInvocation="120382" standardDeviationMicrosecondsPerInvocation="9003"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="166" invocations="186" avgMicrosecondsPerInvocation="892" maxMicrosecondsPerInvocation="17633" standardDeviationMicrosecondsPerInvocation="1726"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="163" invocations="183" avgMicrosecondsPerInvocation="894" maxMicrosecondsPerInvocation="53461" standardDeviationMicrosecondsPerInvocation="4058"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="155" invocations="166" avgMicrosecondsPerInvocation="936" maxMicrosecondsPerInvocation="32939" standardDeviationMicrosecondsPerInvocation="2701"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="111" invocations="47" avgMicrosecondsPerInvocation="2370" maxMicrosecondsPerInvocation="36924" standardDeviationMicrosecondsPerInvocation="6689"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="103" invocations="74" avgMicrosecondsPerInvocation="1397" maxMicrosecondsPerInvocation="60200" standardDeviationMicrosecondsPerInvocation="7053"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="100" invocations="172" avgMicrosecondsPerInvocation="581" maxMicrosecondsPerInvocation="22469" standardDeviationMicrosecondsPerInvocation="2010"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="95" invocations="47" avgMicrosecondsPerInvocation="2039" maxMicrosecondsPerInvocation="31239" standardDeviationMicrosecondsPerInvocation="6360"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="95" invocations="47" avgMicrosecondsPerInvocation="2032" maxMicrosecondsPerInvocation="40622" standardDeviationMicrosecondsPerInvocation="6760"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="82" invocations="464" avgMicrosecondsPerInvocation="176" maxMicrosecondsPerInvocation="10591" standardDeviationMicrosecondsPerInvocation="616"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="80" invocations="47" avgMicrosecondsPerInvocation="1714" maxMicrosecondsPerInvocation="34943" standardDeviationMicrosecondsPerInvocation="5649"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.LiveLocalStoreDataflowFactory" totalMilliseconds="75" invocations="165" avgMicrosecondsPerInvocation="456" maxMicrosecondsPerInvocation="30657" standardDeviationMicrosecondsPerInvocation="2461"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="70" invocations="183" avgMicrosecondsPerInvocation="385" maxMicrosecondsPerInvocation="11467" standardDeviationMicrosecondsPerInvocation="1220"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindReturnRef" totalMilliseconds="65" invocations="2" avgMicrosecondsPerInvocation="32546" maxMicrosecondsPerInvocation="61780" standardDeviationMicrosecondsPerInvocation="29234"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

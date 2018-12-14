@@ -1,0 +1,125 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-47/src/java/org/apache/commons/lang/text/StrBuilder.java:2430: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+        if (this == other) {
+                 ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'if (this.equals(other)) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-47/src/java/org/apache/commons/lang/text/StrBuilder.java:2455: warning: [NonOverridingEquals] equals method doesn't override Object.equals; if this is a type-specific helper for a method that does override Object.equals, either inline it into the callers or rename it to avoid ambiguity
+    public boolean equals(StrBuilder other) {
+                   ^
+    (see http://errorprone.info/bugpattern/NonOverridingEquals)
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-47/src/java/org/apache/commons/lang/text/StrBuilder.java:2456: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+        if (this == other) {
+                 ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'if (this.equals(other)) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-47/src/java/org/apache/commons/lang/text/StrBuilder.java:2479: warning: [MissingOverride] equals overrides method in Object; expected @Override
+    public boolean equals(Object obj) {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public boolean equals(Object obj) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-47/src/java/org/apache/commons/lang/text/StrBuilder.java:2491: warning: [MissingOverride] hashCode overrides method in Object; expected @Override
+    public int hashCode() {
+               ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int hashCode() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-47/src/java/org/apache/commons/lang/text/StrBuilder.java:2510: warning: [MissingOverride] toString overrides method in Object; expected @Override
+    public String toString() {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public String toString() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-47/src/java/org/apache/commons/lang/text/StrBuilder.java:2571: warning: [MissingOverride] tokenize overrides method in StrTokenizer; expected @Override
+        protected List tokenize(char[] chars, int offset, int count) {
+                       ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override protected List tokenize(char[] chars, int offset, int count) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-47/src/java/org/apache/commons/lang/text/StrBuilder.java:2580: warning: [MissingOverride] getContent overrides method in StrTokenizer; expected @Override
+        public String getContent() {
+                      ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public String getContent() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-47/src/java/org/apache/commons/lang/text/StrBuilder.java:2606: warning: [MissingOverride] close implements method in Reader; expected @Override
+        public void close() {
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void close() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-47/src/java/org/apache/commons/lang/text/StrBuilder.java:2611: warning: [MissingOverride] read overrides method in Reader; expected @Override
+        public int read() {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int read() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-47/src/java/org/apache/commons/lang/text/StrBuilder.java:2619: warning: [MissingOverride] read implements method in Reader; expected @Override
+        public int read(char b[], int off, int len) {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int read(char b[], int off, int len) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-47/src/java/org/apache/commons/lang/text/StrBuilder.java:2639: warning: [MissingOverride] skip overrides method in Reader; expected @Override
+        public long skip(long n) {
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public long skip(long n) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-47/src/java/org/apache/commons/lang/text/StrBuilder.java:2641: warning: [IntLongMath] Expression of type int may overflow before being assigned to a long
+                n = StrBuilder.this.size() - pos;
+                                           ^
+    (see http://errorprone.info/bugpattern/IntLongMath)
+  Did you mean 'n = (long) StrBuilder.this.size() - pos;'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-47/src/java/org/apache/commons/lang/text/StrBuilder.java:2646: warning: [NarrowingCompoundAssignment] Compound assignments from long to int hide lossy casts
+            pos += n;
+                ^
+    (see http://errorprone.info/bugpattern/NarrowingCompoundAssignment)
+  Did you mean 'pos = (int) (pos + n);'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-47/src/java/org/apache/commons/lang/text/StrBuilder.java:2651: warning: [MissingOverride] ready overrides method in Reader; expected @Override
+        public boolean ready() {
+                       ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public boolean ready() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-47/src/java/org/apache/commons/lang/text/StrBuilder.java:2656: warning: [MissingOverride] markSupported overrides method in Reader; expected @Override
+        public boolean markSupported() {
+                       ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public boolean markSupported() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-47/src/java/org/apache/commons/lang/text/StrBuilder.java:2661: warning: [MissingOverride] mark overrides method in Reader; expected @Override
+        public void mark(int readAheadLimit) {
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void mark(int readAheadLimit) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-47/src/java/org/apache/commons/lang/text/StrBuilder.java:2666: warning: [MissingOverride] reset overrides method in Reader; expected @Override
+        public void reset() {
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void reset() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-47/src/java/org/apache/commons/lang/text/StrBuilder.java:2683: warning: [MissingOverride] close implements method in Writer; expected @Override
+        public void close() {
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void close() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-47/src/java/org/apache/commons/lang/text/StrBuilder.java:2688: warning: [MissingOverride] flush implements method in Writer; expected @Override
+        public void flush() {
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void flush() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-47/src/java/org/apache/commons/lang/text/StrBuilder.java:2693: warning: [MissingOverride] write overrides method in Writer; expected @Override
+        public void write(int c) {
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void write(int c) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-47/src/java/org/apache/commons/lang/text/StrBuilder.java:2698: warning: [MissingOverride] write overrides method in Writer; expected @Override
+        public void write(char[] cbuf) {
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void write(char[] cbuf) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-47/src/java/org/apache/commons/lang/text/StrBuilder.java:2703: warning: [MissingOverride] write implements method in Writer; expected @Override
+        public void write(char[] cbuf, int off, int len) {
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void write(char[] cbuf, int off, int len) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-47/src/java/org/apache/commons/lang/text/StrBuilder.java:2708: warning: [MissingOverride] write overrides method in Writer; expected @Override
+        public void write(String str) {
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void write(String str) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-47/src/java/org/apache/commons/lang/text/StrBuilder.java:2713: warning: [MissingOverride] write overrides method in Writer; expected @Override
+        public void write(String str, int off, int len) {
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void write(String str, int off, int len) {'?
+25 warnings

@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.1.0" sequence="0" timestamp="1542190560000" analysisTimestamp="1542190562588" release="">
+  <Project projectName="">
+    <Jar>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-51/src/java</Jar>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-51/target/classes</AuxClasspathEntry>
+  </Project>
+  <BugInstance type="ES_COMPARING_PARAMETER_STRING_WITH_EQ" priority="1" rank="14" abbrev="ES" category="BAD_PRACTICE" instanceHash="419894bd6302e6cae068dfa7eb47217f" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="597">
+    <ShortMessage>Comparison of String parameter using == or !=</ShortMessage>
+    <LongMessage>Comparison of String parameter using == or != in org.apache.commons.lang.BooleanUtils.toBoolean(String) </LongMessage>
+    <Class classname="org.apache.commons.lang.BooleanUtils" primary="true">
+      <SourceLine classname="org.apache.commons.lang.BooleanUtils" start="44" end="970" sourcefile="BooleanUtils.java" sourcepath="org/apache/commons/lang/BooleanUtils.java">
+        <Message>At BooleanUtils.java:[lines 44-970]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.lang.BooleanUtils</Message>
+    </Class>
+    <Method classname="org.apache.commons.lang.BooleanUtils" name="toBoolean" signature="(Ljava/lang/String;)Z" isStatic="true" primary="true">
+      <SourceLine classname="org.apache.commons.lang.BooleanUtils" start="656" end="700" startBytecode="0" endBytecode="175" sourcefile="BooleanUtils.java" sourcepath="org/apache/commons/lang/BooleanUtils.java"/>
+      <Message>In method org.apache.commons.lang.BooleanUtils.toBoolean(String)</Message>
+    </Method>
+    <Type descriptor="Ljava/lang/String;" role="TYPE_FOUND">
+      <SourceLine classname="java.lang.String" start="111" end="3141" sourcefile="String.java" sourcepath="java/lang/String.java">
+        <Message>At String.java:[lines 111-3141]</Message>
+      </SourceLine>
+      <Message>Actual type String</Message>
+    </Type>
+    <String value="true" role="STRING_CONSTANT">
+      <Message>String constant &quot;true&quot;</Message>
+    </String>
+    <LocalVariable name="?" register="0" pc="1" role="LOCAL_VARIABLE_VALUE_OF">
+      <Message>Value loaded from ?</Message>
+    </LocalVariable>
+    <SourceLine classname="org.apache.commons.lang.BooleanUtils" primary="true" start="656" end="656" startBytecode="3" endBytecode="3" sourcefile="BooleanUtils.java" sourcepath="org/apache/commons/lang/BooleanUtils.java">
+      <Message>At BooleanUtils.java:[line 656]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.RefComparisonWarningProperty.STATIC_AND_PARAMETER_IN_PUBLIC_METHOD" value="true"/>
+  </BugInstance>
+  <BugInstance type="NP_BOOLEAN_RETURN_NULL" priority="2" rank="14" abbrev="NP" category="BAD_PRACTICE" instanceHash="f0066b906341b7281e76531c2a049567" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="476">
+    <ShortMessage>Method with Boolean return type returns explicit null</ShortMessage>
+    <LongMessage>org.apache.commons.lang.BooleanUtils.negate(Boolean) has Boolean return type and returns explicit null</LongMessage>
+    <Class classname="org.apache.commons.lang.BooleanUtils" primary="true">
+      <SourceLine classname="org.apache.commons.lang.BooleanUtils" start="44" end="970" sourcefile="BooleanUtils.java" sourcepath="org/apache/commons/lang/BooleanUtils.java">
+        <Message>At BooleanUtils.java:[lines 44-970]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.lang.BooleanUtils</Message>
+    </Class>
+    <Method classname="org.apache.commons.lang.BooleanUtils" name="negate" signature="(Ljava/lang/Boolean;)Ljava/lang/Boolean;" isStatic="true" primary="true">
+      <SourceLine classname="org.apache.commons.lang.BooleanUtils" start="64" end="67" startBytecode="0" endBytecode="68" sourcefile="BooleanUtils.java" sourcepath="org/apache/commons/lang/BooleanUtils.java"/>
+      <Message>In method org.apache.commons.lang.BooleanUtils.negate(Boolean)</Message>
+    </Method>
+    <SourceLine classname="org.apache.commons.lang.BooleanUtils" primary="true" start="65" end="65" startBytecode="5" endBytecode="5" sourcefile="BooleanUtils.java" sourcepath="org/apache/commons/lang/BooleanUtils.java">
+      <Message>At BooleanUtils.java:[line 65]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="NP_BOOLEAN_RETURN_NULL" priority="2" rank="14" abbrev="NP" category="BAD_PRACTICE" instanceHash="8db3356399a2ad1c2ac3afb65c52ec4a" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="476">
+    <ShortMessage>Method with Boolean return type returns explicit null</ShortMessage>
+    <LongMessage>org.apache.commons.lang.BooleanUtils.toBooleanObject(int, int, int, int) has Boolean return type and returns explicit null</LongMessage>
+    <Class classname="org.apache.commons.lang.BooleanUtils" primary="true">
+      <SourceLine classname="org.apache.commons.lang.BooleanUtils" start="44" end="970" sourcefile="BooleanUtils.java" sourcepath="org/apache/commons/lang/BooleanUtils.java">
+        <Message>At BooleanUtils.java:[lines 44-970]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.lang.BooleanUtils</Message>
+    </Class>
+    <Method classname="org.apache.commons.lang.BooleanUtils" name="toBooleanObject" signature="(IIII)Ljava/lang/Boolean;" isStatic="true" primary="true">
+      <SourceLine classname="org.apache.commons.lang.BooleanUtils" start="348" end="356" startBytecode="0" endBytecode="93" sourcefile="BooleanUtils.java" sourcepath="org/apache/commons/lang/BooleanUtils.java"/>
+      <Message>In method org.apache.commons.lang.BooleanUtils.toBooleanObject(int, int, int, int)</Message>
+    </Method>
+    <SourceLine classname="org.apache.commons.lang.BooleanUtils" primary="true" start="353" end="353" startBytecode="24" endBytecode="24" sourcefile="BooleanUtils.java" sourcepath="org/apache/commons/lang/BooleanUtils.java">
+      <Message>At BooleanUtils.java:[line 353]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="NP_BOOLEAN_RETURN_NULL" priority="2" rank="14" abbrev="NP" category="BAD_PRACTICE" instanceHash="6f7aa88c0ba8f37f0a0f8028157a1578" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="476">
+    <ShortMessage>Method with Boolean return type returns explicit null</ShortMessage>
+    <LongMessage>org.apache.commons.lang.BooleanUtils.toBooleanObject(Integer) has Boolean return type and returns explicit null</LongMessage>
+    <Class classname="org.apache.commons.lang.BooleanUtils" primary="true">
+      <SourceLine classname="org.apache.commons.lang.BooleanUtils" start="44" end="970" sourcefile="BooleanUtils.java" sourcepath="org/apache/commons/lang/BooleanUtils.java">
+        <Message>At BooleanUtils.java:[lines 44-970]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.lang.BooleanUtils</Message>
+    </Class>
+    <Method classname="org.apache.commons.lang.BooleanUtils" name="toBooleanObject" signature="(Ljava/lang/Integer;)Ljava/lang/Boolean;" isStatic="true" primary="true">
+      <SourceLine classname="org.apache.commons.lang.BooleanUtils" start="264" end="267" startBytecode="0" endBytecode="68" sourcefile="BooleanUtils.java" sourcepath="org/apache/commons/lang/BooleanUtils.java"/>
+      <Message>In method org.apache.commons.lang.BooleanUtils.toBooleanObject(Integer)</Message>
+    </Method>
+    <SourceLine classname="org.apache.commons.lang.BooleanUtils" primary="true" start="265" end="265" startBytecode="5" endBytecode="5" sourcefile="BooleanUtils.java" sourcepath="org/apache/commons/lang/BooleanUtils.java">
+      <Message>At BooleanUtils.java:[line 265]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="NP_BOOLEAN_RETURN_NULL" priority="2" rank="14" abbrev="NP" category="BAD_PRACTICE" instanceHash="b0a2753fa4434c8a3268aee37707f4f2" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="476">
+    <ShortMessage>Method with Boolean return type returns explicit null</ShortMessage>
+    <LongMessage>org.apache.commons.lang.BooleanUtils.toBooleanObject(Integer, Integer, Integer, Integer) has Boolean return type and returns explicit null</LongMessage>
+    <Class classname="org.apache.commons.lang.BooleanUtils" primary="true">
+      <SourceLine classname="org.apache.commons.lang.BooleanUtils" start="44" end="970" sourcefile="BooleanUtils.java" sourcepath="org/apache/commons/lang/BooleanUtils.java">
+        <Message>At BooleanUtils.java:[lines 44-970]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.lang.BooleanUtils</Message>
+    </Class>
+    <Method classname="org.apache.commons.lang.BooleanUtils" name="toBooleanObject" signature="(Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;)Ljava/lang/Boolean;" isStatic="true" primary="true">
+      <SourceLine classname="org.apache.commons.lang.BooleanUtils" start="379" end="395" startBytecode="0" endBytecode="159" sourcefile="BooleanUtils.java" sourcepath="org/apache/commons/lang/BooleanUtils.java"/>
+      <Message>In method org.apache.commons.lang.BooleanUtils.toBooleanObject(Integer, Integer, Integer, Integer)</Message>
+    </Method>
+    <SourceLine classname="org.apache.commons.lang.BooleanUtils" primary="true" start="385" end="385" startBytecode="25" endBytecode="25" sourcefile="BooleanUtils.java" sourcepath="org/apache/commons/lang/BooleanUtils.java">
+      <Message>At BooleanUtils.java:[line 385]</Message>
+    </SourceLine>
+    <SourceLine classname="org.apache.commons.lang.BooleanUtils" start="392" end="392" startBytecode="59" endBytecode="59" sourcefile="BooleanUtils.java" sourcepath="org/apache/commons/lang/BooleanUtils.java" role="SOURCE_LINE_ANOTHER_INSTANCE">
+      <Message>Another occurrence at BooleanUtils.java:[line 392]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="NP_BOOLEAN_RETURN_NULL" priority="2" rank="14" abbrev="NP" category="BAD_PRACTICE" instanceHash="fa330196d4a570e3732a8e210b3c25f1" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="476">
+    <ShortMessage>Method with Boolean return type returns explicit null</ShortMessage>
+    <LongMessage>org.apache.commons.lang.BooleanUtils.toBooleanObject(String) has Boolean return type and returns explicit null</LongMessage>
+    <Class classname="org.apache.commons.lang.BooleanUtils" primary="true">
+      <SourceLine classname="org.apache.commons.lang.BooleanUtils" start="44" end="970" sourcefile="BooleanUtils.java" sourcepath="org/apache/commons/lang/BooleanUtils.java">
+        <Message>At BooleanUtils.java:[lines 44-970]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.lang.BooleanUtils</Message>
+    </Class>
+    <Method classname="org.apache.commons.lang.BooleanUtils" name="toBooleanObject" signature="(Ljava/lang/String;)Ljava/lang/Boolean;" isStatic="true" primary="true">
+      <SourceLine classname="org.apache.commons.lang.BooleanUtils" start="563" end="577" startBytecode="0" endBytecode="165" sourcefile="BooleanUtils.java" sourcepath="org/apache/commons/lang/BooleanUtils.java"/>
+      <Message>In method org.apache.commons.lang.BooleanUtils.toBooleanObject(String)</Message>
+    </Method>
+    <SourceLine classname="org.apache.commons.lang.BooleanUtils" primary="true" start="577" end="577" startBytecode="79" endBytecode="79" sourcefile="BooleanUtils.java" sourcepath="org/apache/commons/lang/BooleanUtils.java">
+      <Message>At BooleanUtils.java:[line 577]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="NP_BOOLEAN_RETURN_NULL" priority="2" rank="14" abbrev="NP" category="BAD_PRACTICE" instanceHash="1d4d5c1ae47b9517c6bd807cb97f2d26" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="476">
+    <ShortMessage>Method with Boolean return type returns explicit null</ShortMessage>
+    <LongMessage>org.apache.commons.lang.BooleanUtils.toBooleanObject(String, String, String, String) has Boolean return type and returns explicit null</LongMessage>
+    <Class classname="org.apache.commons.lang.BooleanUtils" primary="true">
+      <SourceLine classname="org.apache.commons.lang.BooleanUtils" start="44" end="970" sourcefile="BooleanUtils.java" sourcepath="org/apache/commons/lang/BooleanUtils.java">
+        <Message>At BooleanUtils.java:[lines 44-970]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.lang.BooleanUtils</Message>
+    </Class>
+    <Method classname="org.apache.commons.lang.BooleanUtils" name="toBooleanObject" signature="(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/Boolean;" isStatic="true" primary="true">
+      <SourceLine classname="org.apache.commons.lang.BooleanUtils" start="603" end="619" startBytecode="0" endBytecode="159" sourcefile="BooleanUtils.java" sourcepath="org/apache/commons/lang/BooleanUtils.java"/>
+      <Message>In method org.apache.commons.lang.BooleanUtils.toBooleanObject(String, String, String, String)</Message>
+    </Method>
+    <SourceLine classname="org.apache.commons.lang.BooleanUtils" primary="true" start="609" end="609" startBytecode="25" endBytecode="25" sourcefile="BooleanUtils.java" sourcepath="org/apache/commons/lang/BooleanUtils.java">
+      <Message>At BooleanUtils.java:[line 609]</Message>
+    </SourceLine>
+    <SourceLine classname="org.apache.commons.lang.BooleanUtils" start="616" end="616" startBytecode="59" endBytecode="59" sourcefile="BooleanUtils.java" sourcepath="org/apache/commons/lang/BooleanUtils.java" role="SOURCE_LINE_ANOTHER_INSTANCE">
+      <Message>Another occurrence at BooleanUtils.java:[line 616]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="BAD_PRACTICE">
+    <Description>Bad practice</Description>
+  </BugCategory>
+  <BugPattern type="ES_COMPARING_PARAMETER_STRING_WITH_EQ" abbrev="ES" category="BAD_PRACTICE">
+    <ShortDescription>Comparison of String parameter using == or !=</ShortDescription>
+    <Details><![CDATA[
+
+  <p>This code compares a <code>java.lang.String</code> parameter for reference
+equality using the == or != operators. Requiring callers to
+pass only String constants or interned strings to a method is unnecessarily
+fragile, and rarely leads to measurable performance gains. Consider
+using the <code>equals(Object)</code> method instead.</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="NP_BOOLEAN_RETURN_NULL" abbrev="NP" category="BAD_PRACTICE">
+    <ShortDescription>Method with Boolean return type returns explicit null</ShortDescription>
+    <Details><![CDATA[
+       
+       <p>
+    A method that returns either Boolean.TRUE, Boolean.FALSE or null is an accident waiting to happen.
+    This method can be invoked as though it returned a value of type boolean, and
+    the compiler will insert automatic unboxing of the Boolean value. If a null value is returned,
+    this will result in a NullPointerException.
+       </p>
+       
+       ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="NP" cweid="476">
+    <Description>Null pointer dereference</Description>
+  </BugCode>
+  <BugCode abbrev="ES" cweid="597">
+    <Description>Checking String equality using == or !=</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 14 Nov 2018 05:16:00 -0500" total_classes="1" referenced_classes="14" total_bugs="7" total_size="210" num_packages="1" java_version="1.8.0_121" vm_version="25.121-b13" cpu_seconds="7.13" clock_seconds="4.09" peak_mbytes="115.12" alloc_mbytes="1820.50" gc_seconds="0.03" priority_2="6" priority_1="1">
+    <FileStats path="org/apache/commons/lang/BooleanUtils.java" bugCount="7" size="210" bugHash="3b4bf5eb06f43bd21fdb45079be4a6fa"/>
+    <PackageStats package="org.apache.commons.lang" total_bugs="7" total_types="1" total_size="210" priority_2="6" priority_1="1">
+      <ClassStats class="org.apache.commons.lang.BooleanUtils" sourceFile="BooleanUtils.java" interface="false" size="210" bugs="7" priority_2="6" priority_1="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="477" invocations="315" avgMicrosecondsPerInvocation="1515" maxMicrosecondsPerInvocation="37504" standardDeviationMicrosecondsPerInvocation="4273"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="423" invocations="316" avgMicrosecondsPerInvocation="1340" maxMicrosecondsPerInvocation="30287" standardDeviationMicrosecondsPerInvocation="2775"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="145" invocations="164" avgMicrosecondsPerInvocation="888" maxMicrosecondsPerInvocation="25558" standardDeviationMicrosecondsPerInvocation="2853"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="141" invocations="14" avgMicrosecondsPerInvocation="10129" maxMicrosecondsPerInvocation="43834" standardDeviationMicrosecondsPerInvocation="15346"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="123" invocations="14" avgMicrosecondsPerInvocation="8845" maxMicrosecondsPerInvocation="90370" standardDeviationMicrosecondsPerInvocation="23044"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="123" invocations="37" avgMicrosecondsPerInvocation="3334" maxMicrosecondsPerInvocation="110677" standardDeviationMicrosecondsPerInvocation="17907"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="120" invocations="14" avgMicrosecondsPerInvocation="8638" maxMicrosecondsPerInvocation="37304" standardDeviationMicrosecondsPerInvocation="11140"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="118" invocations="37" avgMicrosecondsPerInvocation="3209" maxMicrosecondsPerInvocation="42537" standardDeviationMicrosecondsPerInvocation="9148"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="111" invocations="282" avgMicrosecondsPerInvocation="395" maxMicrosecondsPerInvocation="21032" standardDeviationMicrosecondsPerInvocation="1706"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="107" invocations="28" avgMicrosecondsPerInvocation="3836" maxMicrosecondsPerInvocation="57263" standardDeviationMicrosecondsPerInvocation="11165"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="87" invocations="37" avgMicrosecondsPerInvocation="2374" maxMicrosecondsPerInvocation="34528" standardDeviationMicrosecondsPerInvocation="6833"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="81" invocations="37" avgMicrosecondsPerInvocation="2203" maxMicrosecondsPerInvocation="33745" standardDeviationMicrosecondsPerInvocation="5572"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="79" invocations="14" avgMicrosecondsPerInvocation="5683" maxMicrosecondsPerInvocation="21643" standardDeviationMicrosecondsPerInvocation="8242"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="78" invocations="37" avgMicrosecondsPerInvocation="2124" maxMicrosecondsPerInvocation="47679" standardDeviationMicrosecondsPerInvocation="7830"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="77" invocations="14" avgMicrosecondsPerInvocation="5502" maxMicrosecondsPerInvocation="44129" standardDeviationMicrosecondsPerInvocation="11511"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison" totalMilliseconds="73" invocations="1" avgMicrosecondsPerInvocation="73557" maxMicrosecondsPerInvocation="73557" standardDeviationMicrosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="67" invocations="37" avgMicrosecondsPerInvocation="1819" maxMicrosecondsPerInvocation="20633" standardDeviationMicrosecondsPerInvocation="3885"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

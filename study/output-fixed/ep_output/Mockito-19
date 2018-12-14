@@ -1,0 +1,44 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Mockito-19/src/org/mockito/internal/configuration/injection/filter/TypeBasedCandidateFilter.java:20: warning: [MissingOverride] filterCandidate implements method in MockCandidateFilter; expected @Override
+    public OngoingInjecter filterCandidate(Collection<Object> mocks, Field field, List<Field> fields, Object fieldInstance) {
+                           ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public OngoingInjecter filterCandidate(Collection<Object> mocks, Field field, List<Field> fields, Object fieldInstance) {'?
+1 warning
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Mockito-19/src/org/mockito/internal/configuration/injection/filter/FinalMockCandidateFilter.java:24: warning: [MissingOverride] filterCandidate implements method in MockCandidateFilter; expected @Override
+    public OngoingInjecter filterCandidate(final Collection<Object> mocks, final Field field, List<Field> fields, final Object fieldInstance) {
+                           ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public OngoingInjecter filterCandidate(final Collection<Object> mocks, final Field field, List<Field> fields, final Object fieldInstance) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Mockito-19/src/org/mockito/internal/configuration/injection/filter/FinalMockCandidateFilter.java:29: warning: [MissingOverride] thenInject implements method in OngoingInjecter; expected @Override
+                public Object thenInject() {
+                              ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Object thenInject() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Mockito-19/src/org/mockito/internal/configuration/injection/filter/FinalMockCandidateFilter.java:43: warning: [MissingOverride] thenInject implements method in OngoingInjecter; expected @Override
+            public Object thenInject() {
+                          ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Object thenInject() {'?
+3 warnings
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Mockito-19/src/org/mockito/internal/configuration/injection/filter/NameBasedCandidateFilter.java:22: warning: [MissingOverride] filterCandidate implements method in MockCandidateFilter; expected @Override
+	public OngoingInjecter filterCandidate(Collection<Object> mocks,
+	                       ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public OngoingInjecter filterCandidate(Collection<Object> mocks,'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Mockito-19/src/org/mockito/internal/configuration/injection/filter/NameBasedCandidateFilter.java:52: warning: [MissingOverride] thenInject implements method in OngoingInjecter; expected @Override
+						public Object thenInject() {
+						              ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Object thenInject() {'?
+2 warnings
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Mockito-19/src/org/mockito/internal/configuration/injection/PropertyAndSetterInjection.java:65: warning: [MissingOverride] isOut implements method in Filter; expected @Override
+        public boolean isOut(Field object) {
+                       ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public boolean isOut(Field object) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Mockito-19/src/org/mockito/internal/configuration/injection/PropertyAndSetterInjection.java:71: warning: [MissingOverride] processInjection implements method in MockInjectionStrategy; expected @Override
+    public boolean processInjection(Field injectMocksField, Object injectMocksFieldOwner, Set<Object> mockCandidates) {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public boolean processInjection(Field injectMocksField, Object injectMocksFieldOwner, Set<Object> mockCandidates) {'?
+2 warnings

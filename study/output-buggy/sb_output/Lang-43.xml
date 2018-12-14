@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.1.0" sequence="0" timestamp="1542186213000" analysisTimestamp="1542186215911" release="">
+  <Project projectName="">
+    <Jar>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Lang-43/src/java</Jar>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Lang-43/target/classes</AuxClasspathEntry>
+  </Project>
+  <BugInstance type="EQ_DOESNT_OVERRIDE_EQUALS" priority="2" rank="17" abbrev="Eq" category="STYLE" instanceHash="657b8a9573a33fe72c0ecccaedeb54d6" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Class doesn&apos;t override equals in superclass</ShortMessage>
+    <LongMessage>org.apache.commons.lang.text.ExtendedMessageFormat doesn&apos;t override java.text.MessageFormat.equals(Object)</LongMessage>
+    <Class classname="org.apache.commons.lang.text.ExtendedMessageFormat" primary="true">
+      <SourceLine classname="org.apache.commons.lang.text.ExtendedMessageFormat" start="90" end="472" sourcefile="ExtendedMessageFormat.java" sourcepath="org/apache/commons/lang/text/ExtendedMessageFormat.java">
+        <Message>At ExtendedMessageFormat.java:[lines 90-472]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.lang.text.ExtendedMessageFormat</Message>
+    </Class>
+    <SourceLine classname="org.apache.commons.lang.text.ExtendedMessageFormat" primary="true" start="1" end="1" startBytecode="0" endBytecode="0" sourcefile="ExtendedMessageFormat.java" sourcepath="org/apache/commons/lang/text/ExtendedMessageFormat.java">
+      <Message>At ExtendedMessageFormat.java:[line 1]</Message>
+    </SourceLine>
+    <Method classname="java.text.MessageFormat" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false" primary="true" role="METHOD_DID_YOU_MEAN_TO_OVERRIDE">
+      <SourceLine classname="java.text.MessageFormat" start="1102" end="1107" startBytecode="0" endBytecode="225" sourcefile="MessageFormat.java" sourcepath="java/text/MessageFormat.java"/>
+      <Message>Did you intend to override java.text.MessageFormat.equals(Object)</Message>
+    </Method>
+  </BugInstance>
+  <BugInstance type="SF_SWITCH_NO_DEFAULT" priority="2" rank="19" abbrev="SF" category="STYLE" instanceHash="a3bf40695689eadd6860b70886c7ab38" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Switch statement found where default case is missing</ShortMessage>
+    <LongMessage>Switch statement found in org.apache.commons.lang.text.ExtendedMessageFormat.parseFormatDescription(String, ParsePosition) where default case is missing</LongMessage>
+    <Class classname="org.apache.commons.lang.text.ExtendedMessageFormat" primary="true">
+      <SourceLine classname="org.apache.commons.lang.text.ExtendedMessageFormat" start="90" end="472" sourcefile="ExtendedMessageFormat.java" sourcepath="org/apache/commons/lang/text/ExtendedMessageFormat.java">
+        <Message>At ExtendedMessageFormat.java:[lines 90-472]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.lang.text.ExtendedMessageFormat</Message>
+    </Class>
+    <Method classname="org.apache.commons.lang.text.ExtendedMessageFormat" name="parseFormatDescription" signature="(Ljava/lang/String;Ljava/text/ParsePosition;)Ljava/lang/String;" isStatic="false" primary="true">
+      <SourceLine classname="org.apache.commons.lang.text.ExtendedMessageFormat" start="313" end="333" startBytecode="0" endBytecode="234" sourcefile="ExtendedMessageFormat.java" sourcepath="org/apache/commons/lang/text/ExtendedMessageFormat.java"/>
+      <Message>In method org.apache.commons.lang.text.ExtendedMessageFormat.parseFormatDescription(String, ParsePosition)</Message>
+    </Method>
+    <SourceLine classname="org.apache.commons.lang.text.ExtendedMessageFormat" primary="true" start="318" end="329" startBytecode="39" endBytecode="103" sourcefile="ExtendedMessageFormat.java" sourcepath="org/apache/commons/lang/text/ExtendedMessageFormat.java">
+      <Message>At ExtendedMessageFormat.java:[lines 318-329]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="UR_UNINIT_READ_CALLED_FROM_SUPER_CONSTRUCTOR" priority="2" rank="10" abbrev="UR" category="CORRECTNESS" instanceHash="cdaf33453a5c5d2e1d88941d1b1cddfc" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Uninitialized read of field method called from constructor of superclass</ShortMessage>
+    <LongMessage>registry isn&apos;t initialized in org.apache.commons.lang.text.ExtendedMessageFormat.applyPattern(String) when invoked from constructor for superclass</LongMessage>
+    <Class classname="org.apache.commons.lang.text.ExtendedMessageFormat" primary="true">
+      <SourceLine classname="org.apache.commons.lang.text.ExtendedMessageFormat" start="90" end="472" sourcefile="ExtendedMessageFormat.java" sourcepath="org/apache/commons/lang/text/ExtendedMessageFormat.java">
+        <Message>At ExtendedMessageFormat.java:[lines 90-472]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.lang.text.ExtendedMessageFormat</Message>
+    </Class>
+    <Method classname="org.apache.commons.lang.text.ExtendedMessageFormat" name="applyPattern" signature="(Ljava/lang/String;)V" isStatic="false" primary="true">
+      <SourceLine classname="org.apache.commons.lang.text.ExtendedMessageFormat" start="143" end="206" startBytecode="0" endBytecode="844" sourcefile="ExtendedMessageFormat.java" sourcepath="org/apache/commons/lang/text/ExtendedMessageFormat.java"/>
+      <Message>In method org.apache.commons.lang.text.ExtendedMessageFormat.applyPattern(String)</Message>
+    </Method>
+    <Field classname="org.apache.commons.lang.text.ExtendedMessageFormat" name="registry" signature="Ljava/util/Map;" isStatic="false" primary="true">
+      <SourceLine classname="org.apache.commons.lang.text.ExtendedMessageFormat" sourcefile="ExtendedMessageFormat.java" sourcepath="org/apache/commons/lang/text/ExtendedMessageFormat.java">
+        <Message>In ExtendedMessageFormat.java</Message>
+      </SourceLine>
+      <Message>Field org.apache.commons.lang.text.ExtendedMessageFormat.registry</Message>
+    </Field>
+    <Method classname="java.text.MessageFormat" name="&lt;init&gt;" signature="(Ljava/lang/String;)V" isStatic="false" role="METHOD_SUPERCLASS_CONSTRUCTOR">
+      <SourceLine classname="java.text.MessageFormat" start="360" end="363" startBytecode="0" endBytecode="111" sourcefile="MessageFormat.java" sourcepath="java/text/MessageFormat.java"/>
+      <Message>Superclass constructor is new java.text.MessageFormat(String)</Message>
+    </Method>
+    <SourceLine classname="java.text.MessageFormat" start="362" end="362" startBytecode="52" endBytecode="52" sourcefile="MessageFormat.java" sourcepath="java/text/MessageFormat.java" role="SOURCE_LINE_CALLED_FROM_SUPERCLASS_AT">
+      <Message>Call from superclass constructor at MessageFormat.java:[line 362]</Message>
+    </SourceLine>
+    <Method classname="org.apache.commons.lang.text.ExtendedMessageFormat" name="&lt;init&gt;" signature="(Ljava/lang/String;Ljava/util/Locale;Ljava/util/Map;)V" isStatic="false" role="METHOD_CONSTRUCTOR">
+      <SourceLine classname="org.apache.commons.lang.text.ExtendedMessageFormat" start="124" end="128" startBytecode="0" endBytecode="61" sourcefile="ExtendedMessageFormat.java" sourcepath="org/apache/commons/lang/text/ExtendedMessageFormat.java"/>
+      <Message>Constructor is new org.apache.commons.lang.text.ExtendedMessageFormat(String, Locale, Map)</Message>
+    </Method>
+    <SourceLine classname="org.apache.commons.lang.text.ExtendedMessageFormat" start="126" end="126" startBytecode="13" endBytecode="13" sourcefile="ExtendedMessageFormat.java" sourcepath="org/apache/commons/lang/text/ExtendedMessageFormat.java" role="SOURCE_LINE_FIELD_SET_TOO_LATE_AT">
+      <Message>Field set (too late) at ExtendedMessageFormat.java:[line 126]</Message>
+    </SourceLine>
+    <SourceLine classname="org.apache.commons.lang.text.ExtendedMessageFormat" primary="true" start="143" end="143" startBytecode="1" endBytecode="1" sourcefile="ExtendedMessageFormat.java" sourcepath="org/apache/commons/lang/text/ExtendedMessageFormat.java">
+      <Message>At ExtendedMessageFormat.java:[line 143]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="CORRECTNESS">
+    <Description>Correctness</Description>
+  </BugCategory>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="EQ_DOESNT_OVERRIDE_EQUALS" abbrev="Eq" category="STYLE">
+    <ShortDescription>Class doesn&apos;t override equals in superclass</ShortDescription>
+    <Details><![CDATA[
+
+  <p> This class extends a class that defines an equals method and adds fields, but doesn't
+define an equals method itself. Thus, equality on instances of this class will
+ignore the identity of the subclass and the added fields. Be sure this is what is intended,
+and that you don't need to override the equals method. Even if you don't need to override
+the equals method, consider overriding it anyway to document the fact
+that the equals method for the subclass just return the result of
+invoking super.equals(o).
+  </p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="UR_UNINIT_READ_CALLED_FROM_SUPER_CONSTRUCTOR" abbrev="UR" category="CORRECTNESS">
+    <ShortDescription>Uninitialized read of field method called from constructor of superclass</ShortDescription>
+    <Details><![CDATA[
+
+  <p> This method is invoked in the constructor of the superclass. At this point,
+    the fields of the class have not yet initialized.</p>
+<p>To make this more concrete, consider the following classes:</p>
+<pre><code>abstract class A {
+    int hashCode;
+    abstract Object getValue();
+
+    A() {
+        hashCode = getValue().hashCode();
+    }
+}
+
+class B extends A {
+    Object value;
+
+    B(Object v) {
+        this.value = v;
+    }
+
+    Object getValue() {
+        return value;
+    }
+}
+</code></pre>
+<p>When a <code>B</code> is constructed,
+the constructor for the <code>A</code> class is invoked
+<em>before</em> the constructor for <code>B</code> sets <code>value</code>.
+Thus, when the constructor for <code>A</code> invokes <code>getValue</code>,
+an uninitialized value is read for <code>value</code>.
+</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="SF_SWITCH_NO_DEFAULT" abbrev="SF" category="STYLE">
+    <ShortDescription>Switch statement found where default case is missing</ShortDescription>
+    <Details><![CDATA[
+
+  <p> This method contains a switch statement where default case is missing.
+  Usually you need to provide a default case.</p>
+  <p>Because the analysis only looks at the generated bytecode, this warning can be incorrect triggered if
+the default case is at the end of the switch statement and the switch statement doesn't contain break statements for other
+cases.
+
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="SF">
+    <Description>Switch case falls through</Description>
+  </BugCode>
+  <BugCode abbrev="Eq">
+    <Description>Problems with implementation of equals()</Description>
+  </BugCode>
+  <BugCode abbrev="UR">
+    <Description>Uninitialized read of field in constructor</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 14 Nov 2018 04:03:33 -0500" total_classes="1" referenced_classes="55" total_bugs="3" total_size="195" num_packages="1" java_version="1.8.0_121" vm_version="25.121-b13" cpu_seconds="9.66" clock_seconds="5.14" peak_mbytes="124.69" alloc_mbytes="1820.50" gc_seconds="0.07" priority_2="3">
+    <FileStats path="org/apache/commons/lang/text/ExtendedMessageFormat.java" bugCount="3" size="195" bugHash="4cf5e80d0cc165e039c0cf8291f71fd0"/>
+    <PackageStats package="org.apache.commons.lang.text" total_bugs="3" total_types="1" total_size="195" priority_2="3">
+      <ClassStats class="org.apache.commons.lang.text.ExtendedMessageFormat" sourceFile="ExtendedMessageFormat.java" interface="false" size="195" bugs="3" priority_2="3"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="671" invocations="527" avgMicrosecondsPerInvocation="1275" maxMicrosecondsPerInvocation="28601" standardDeviationMicrosecondsPerInvocation="2893"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="608" invocations="522" avgMicrosecondsPerInvocation="1165" maxMicrosecondsPerInvocation="52260" standardDeviationMicrosecondsPerInvocation="3708"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="315" invocations="55" avgMicrosecondsPerInvocation="5735" maxMicrosecondsPerInvocation="76699" standardDeviationMicrosecondsPerInvocation="13826"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="294" invocations="235" avgMicrosecondsPerInvocation="1252" maxMicrosecondsPerInvocation="46376" standardDeviationMicrosecondsPerInvocation="4169"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="194" invocations="55" avgMicrosecondsPerInvocation="3527" maxMicrosecondsPerInvocation="36194" standardDeviationMicrosecondsPerInvocation="7119"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="153" invocations="19" avgMicrosecondsPerInvocation="8103" maxMicrosecondsPerInvocation="36196" standardDeviationMicrosecondsPerInvocation="11738"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="145" invocations="479" avgMicrosecondsPerInvocation="304" maxMicrosecondsPerInvocation="29522" standardDeviationMicrosecondsPerInvocation="1798"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="100" invocations="19" avgMicrosecondsPerInvocation="5265" maxMicrosecondsPerInvocation="51361" standardDeviationMicrosecondsPerInvocation="11473"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="96" invocations="19" avgMicrosecondsPerInvocation="5088" maxMicrosecondsPerInvocation="18659" standardDeviationMicrosecondsPerInvocation="6684"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="86" invocations="55" avgMicrosecondsPerInvocation="1580" maxMicrosecondsPerInvocation="25423" standardDeviationMicrosecondsPerInvocation="4824"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="86" invocations="84" avgMicrosecondsPerInvocation="1029" maxMicrosecondsPerInvocation="45228" standardDeviationMicrosecondsPerInvocation="5125"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="85" invocations="55" avgMicrosecondsPerInvocation="1562" maxMicrosecondsPerInvocation="17293" standardDeviationMicrosecondsPerInvocation="3613"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="78" invocations="18" avgMicrosecondsPerInvocation="4387" maxMicrosecondsPerInvocation="27054" standardDeviationMicrosecondsPerInvocation="8307"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="77" invocations="19" avgMicrosecondsPerInvocation="4083" maxMicrosecondsPerInvocation="69720" standardDeviationMicrosecondsPerInvocation="15484"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="74" invocations="19" avgMicrosecondsPerInvocation="3940" maxMicrosecondsPerInvocation="28312" standardDeviationMicrosecondsPerInvocation="6412"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="72" invocations="19" avgMicrosecondsPerInvocation="3805" maxMicrosecondsPerInvocation="41256" standardDeviationMicrosecondsPerInvocation="9231"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="65" invocations="55" avgMicrosecondsPerInvocation="1189" maxMicrosecondsPerInvocation="31138" standardDeviationMicrosecondsPerInvocation="4225"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

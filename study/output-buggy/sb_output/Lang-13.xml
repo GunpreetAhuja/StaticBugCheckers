@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.1.0" sequence="0" timestamp="1542186054000" analysisTimestamp="1542186057222" release="">
+  <Project projectName="">
+    <Jar>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Lang-13/src/main/java</Jar>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Lang-13/target/classes</AuxClasspathEntry>
+  </Project>
+  <BugInstance type="DE_MIGHT_IGNORE" priority="2" rank="16" abbrev="DE" category="BAD_PRACTICE" instanceHash="dfb1d3dc2aa7899e326b83cdea511e7a" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="391">
+    <ShortMessage>Method might ignore exception</ShortMessage>
+    <LongMessage>org.apache.commons.lang3.SerializationUtils.deserialize(InputStream) might ignore java.io.IOException</LongMessage>
+    <Class classname="org.apache.commons.lang3.SerializationUtils" primary="true">
+      <SourceLine classname="org.apache.commons.lang3.SerializationUtils" start="59" end="222" sourcefile="SerializationUtils.java" sourcepath="org/apache/commons/lang3/SerializationUtils.java">
+        <Message>At SerializationUtils.java:[lines 59-222]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.lang3.SerializationUtils</Message>
+    </Class>
+    <Method classname="org.apache.commons.lang3.SerializationUtils" name="deserialize" signature="(Ljava/io/InputStream;)Ljava/lang/Object;" isStatic="true" primary="true">
+      <SourceLine classname="org.apache.commons.lang3.SerializationUtils" start="185" end="205" startBytecode="0" endBytecode="289" sourcefile="SerializationUtils.java" sourcepath="org/apache/commons/lang3/SerializationUtils.java"/>
+      <Message>In method org.apache.commons.lang3.SerializationUtils.deserialize(InputStream)</Message>
+    </Method>
+    <Class classname="java.io.IOException" role="CLASS_EXCEPTION">
+      <SourceLine classname="java.io.IOException" start="47" end="100" sourcefile="IOException.java" sourcepath="java/io/IOException.java">
+        <Message>At IOException.java:[lines 47-100]</Message>
+      </SourceLine>
+      <Message>Exception class java.io.IOException</Message>
+    </Class>
+    <SourceLine classname="org.apache.commons.lang3.SerializationUtils" primary="true" start="203" end="203" startBytecode="41" endBytecode="41" sourcefile="SerializationUtils.java" sourcepath="org/apache/commons/lang3/SerializationUtils.java">
+      <Message>At SerializationUtils.java:[line 203]</Message>
+    </SourceLine>
+    <SourceLine classname="org.apache.commons.lang3.SerializationUtils" primary="true" start="203" end="203" startBytecode="41" endBytecode="41" sourcefile="SerializationUtils.java" sourcepath="org/apache/commons/lang3/SerializationUtils.java">
+      <Message>At SerializationUtils.java:[line 203]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="BAD_PRACTICE">
+    <Description>Bad practice</Description>
+  </BugCategory>
+  <BugPattern type="DE_MIGHT_IGNORE" abbrev="DE" category="BAD_PRACTICE">
+    <ShortDescription>Method might ignore exception</ShortDescription>
+    <Details><![CDATA[
+
+  <p> This method might ignore an exception.&nbsp; In general, exceptions
+  should be handled or reported in some way, or they should be thrown
+  out of the method.</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="DE" cweid="391">
+    <Description>Dropped or ignored exception</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 14 Nov 2018 04:00:54 -0500" total_classes="2" referenced_classes="95" total_bugs="1" total_size="73" num_packages="1" java_version="1.8.0_121" vm_version="25.121-b13" cpu_seconds="7.91" clock_seconds="4.46" peak_mbytes="112.95" alloc_mbytes="1820.50" gc_seconds="0.06" priority_2="1">
+    <FileStats path="org/apache/commons/lang3/SerializationUtils.java" bugCount="1" size="73" bugHash="092540c1942c74c5190ac5bff6278e1b"/>
+    <PackageStats package="org.apache.commons.lang3" total_bugs="1" total_types="2" total_size="73" priority_2="1">
+      <ClassStats class="org.apache.commons.lang3.SerializationUtils" sourceFile="SerializationUtils.java" interface="false" size="62" bugs="1" priority_2="1"/>
+      <ClassStats class="org.apache.commons.lang3.SerializationUtils$ClassLoaderAwareObjectInputStream" sourceFile="SerializationUtils.java" interface="false" size="11" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="755" invocations="547" avgMicrosecondsPerInvocation="1381" maxMicrosecondsPerInvocation="37869" standardDeviationMicrosecondsPerInvocation="2961"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="566" invocations="545" avgMicrosecondsPerInvocation="1038" maxMicrosecondsPerInvocation="31940" standardDeviationMicrosecondsPerInvocation="3139"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="227" invocations="95" avgMicrosecondsPerInvocation="2397" maxMicrosecondsPerInvocation="55430" standardDeviationMicrosecondsPerInvocation="6527"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="210" invocations="95" avgMicrosecondsPerInvocation="2220" maxMicrosecondsPerInvocation="27358" standardDeviationMicrosecondsPerInvocation="5133"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="169" invocations="182" avgMicrosecondsPerInvocation="928" maxMicrosecondsPerInvocation="15876" standardDeviationMicrosecondsPerInvocation="2323"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="132" invocations="95" avgMicrosecondsPerInvocation="1392" maxMicrosecondsPerInvocation="28543" standardDeviationMicrosecondsPerInvocation="4265"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="125" invocations="504" avgMicrosecondsPerInvocation="248" maxMicrosecondsPerInvocation="29695" standardDeviationMicrosecondsPerInvocation="1454"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="122" invocations="6" avgMicrosecondsPerInvocation="20438" maxMicrosecondsPerInvocation="111859" standardDeviationMicrosecondsPerInvocation="40990"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="111" invocations="122" avgMicrosecondsPerInvocation="912" maxMicrosecondsPerInvocation="49828" standardDeviationMicrosecondsPerInvocation="4799"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="105" invocations="6" avgMicrosecondsPerInvocation="17609" maxMicrosecondsPerInvocation="87795" standardDeviationMicrosecondsPerInvocation="31489"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="67" invocations="95" avgMicrosecondsPerInvocation="713" maxMicrosecondsPerInvocation="20814" standardDeviationMicrosecondsPerInvocation="2526"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="63" invocations="8" avgMicrosecondsPerInvocation="7875" maxMicrosecondsPerInvocation="47999" standardDeviationMicrosecondsPerInvocation="15186"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="61" invocations="8" avgMicrosecondsPerInvocation="7743" maxMicrosecondsPerInvocation="19489" standardDeviationMicrosecondsPerInvocation="6092"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.1.0" sequence="0" timestamp="1542185524000" analysisTimestamp="1542185526962" release="">
+  <Project projectName="">
+    <Jar>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-132/src</Jar>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-132/build/classes</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-132/lib/args4j.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-132/lib/guava.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-132/lib/json.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-132/lib/jsr305.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-132/lib/protobuf-java.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-132/build/lib/rhino.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-132/lib/ant.jar</AuxClasspathEntry>
+  </Project>
+  <BugInstance type="SF_SWITCH_NO_DEFAULT" priority="2" rank="19" abbrev="SF" category="STYLE" instanceHash="fc23b135b6ec1ea60f4df8c44e3eff7b" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Switch statement found where default case is missing</ShortMessage>
+    <LongMessage>Switch statement found in com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax.makeForwardSlashBracketSafe(Node) where default case is missing</LongMessage>
+    <Class classname="com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax" start="40" end="1723" sourcefile="PeepholeSubstituteAlternateSyntax.java" sourcepath="com/google/javascript/jscomp/PeepholeSubstituteAlternateSyntax.java">
+        <Message>At PeepholeSubstituteAlternateSyntax.java:[lines 40-1723]</Message>
+      </SourceLine>
+      <Message>In class com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax</Message>
+    </Class>
+    <Method classname="com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax" name="makeForwardSlashBracketSafe" signature="(Lcom/google/javascript/rhino/Node;)Lcom/google/javascript/rhino/Node;" isStatic="true" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax" start="1642" end="1705" startBytecode="0" endBytecode="579" sourcefile="PeepholeSubstituteAlternateSyntax.java" sourcepath="com/google/javascript/jscomp/PeepholeSubstituteAlternateSyntax.java"/>
+      <Message>In method com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax.makeForwardSlashBracketSafe(Node)</Message>
+    </Method>
+    <SourceLine classname="com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax" primary="true" start="1690" end="1694" startBytecode="249" endBytecode="328" sourcefile="PeepholeSubstituteAlternateSyntax.java" sourcepath="com/google/javascript/jscomp/PeepholeSubstituteAlternateSyntax.java">
+      <Message>At PeepholeSubstituteAlternateSyntax.java:[lines 1690-1694]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="SF_SWITCH_NO_DEFAULT" priority="2" rank="19" abbrev="SF" category="STYLE" instanceHash="50b4d4a68c61ffde80ce60dcc168a26c" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Switch statement found where default case is missing</ShortMessage>
+    <LongMessage>Switch statement found in com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax.tryReduceReturn(Node) where default case is missing</LongMessage>
+    <Class classname="com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax" start="40" end="1723" sourcefile="PeepholeSubstituteAlternateSyntax.java" sourcepath="com/google/javascript/jscomp/PeepholeSubstituteAlternateSyntax.java">
+        <Message>At PeepholeSubstituteAlternateSyntax.java:[lines 40-1723]</Message>
+      </SourceLine>
+      <Message>In class com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax</Message>
+    </Class>
+    <Method classname="com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax" name="tryReduceReturn" signature="(Lcom/google/javascript/rhino/Node;)Lcom/google/javascript/rhino/Node;" isStatic="false" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax" start="419" end="440" startBytecode="0" endBytecode="175" sourcefile="PeepholeSubstituteAlternateSyntax.java" sourcepath="com/google/javascript/jscomp/PeepholeSubstituteAlternateSyntax.java"/>
+      <Message>In method com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax.tryReduceReturn(Node)</Message>
+    </Method>
+    <SourceLine classname="com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax" primary="true" start="422" end="434" startBytecode="13" endBytecode="89" sourcefile="PeepholeSubstituteAlternateSyntax.java" sourcepath="com/google/javascript/jscomp/PeepholeSubstituteAlternateSyntax.java">
+      <Message>At PeepholeSubstituteAlternateSyntax.java:[lines 422-434]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="SF_SWITCH_NO_DEFAULT" abbrev="SF" category="STYLE">
+    <ShortDescription>Switch statement found where default case is missing</ShortDescription>
+    <Details><![CDATA[
+
+  <p> This method contains a switch statement where default case is missing.
+  Usually you need to provide a default case.</p>
+  <p>Because the analysis only looks at the generated bytecode, this warning can be incorrect triggered if
+the default case is at the end of the switch statement and the switch statement doesn't contain break statements for other
+cases.
+
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="SF">
+    <Description>Switch case falls through</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 14 Nov 2018 03:52:04 -0500" total_classes="5" referenced_classes="51" total_bugs="2" total_size="841" num_packages="1" java_version="1.8.0_121" vm_version="25.121-b13" cpu_seconds="12.14" clock_seconds="6.93" peak_mbytes="189.68" alloc_mbytes="1820.50" gc_seconds="0.10" priority_2="2">
+    <FileStats path="com/google/javascript/jscomp/PeepholeSubstituteAlternateSyntax.java" bugCount="2" size="841" bugHash="d178f886676b102690bf09ade382fab6"/>
+    <PackageStats package="com.google.javascript.jscomp" total_bugs="2" total_types="5" total_size="841" priority_2="2">
+      <ClassStats class="com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax" sourceFile="PeepholeSubstituteAlternateSyntax.java" interface="false" size="808" bugs="2" priority_2="2"/>
+      <ClassStats class="com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax$1" sourceFile="PeepholeSubstituteAlternateSyntax.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax$2" sourceFile="PeepholeSubstituteAlternateSyntax.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax$3" sourceFile="PeepholeSubstituteAlternateSyntax.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax$FoldArrayAction" sourceFile="PeepholeSubstituteAlternateSyntax.java" interface="false" size="11" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="951" invocations="544" avgMicrosecondsPerInvocation="1748" maxMicrosecondsPerInvocation="69022" standardDeviationMicrosecondsPerInvocation="4242"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="582" invocations="539" avgMicrosecondsPerInvocation="1081" maxMicrosecondsPerInvocation="49975" standardDeviationMicrosecondsPerInvocation="3547"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="296" invocations="247" avgMicrosecondsPerInvocation="1199" maxMicrosecondsPerInvocation="54611" standardDeviationMicrosecondsPerInvocation="4823"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="292" invocations="51" avgMicrosecondsPerInvocation="5730" maxMicrosecondsPerInvocation="58275" standardDeviationMicrosecondsPerInvocation="12360"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="284" invocations="51" avgMicrosecondsPerInvocation="5571" maxMicrosecondsPerInvocation="83531" standardDeviationMicrosecondsPerInvocation="13674"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="214" invocations="49" avgMicrosecondsPerInvocation="4385" maxMicrosecondsPerInvocation="33737" standardDeviationMicrosecondsPerInvocation="7669"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="202" invocations="49" avgMicrosecondsPerInvocation="4123" maxMicrosecondsPerInvocation="40588" standardDeviationMicrosecondsPerInvocation="7803"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="187" invocations="49" avgMicrosecondsPerInvocation="3816" maxMicrosecondsPerInvocation="45107" standardDeviationMicrosecondsPerInvocation="8574"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="171" invocations="49" avgMicrosecondsPerInvocation="3507" maxMicrosecondsPerInvocation="21375" standardDeviationMicrosecondsPerInvocation="5252"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="165" invocations="49" avgMicrosecondsPerInvocation="3373" maxMicrosecondsPerInvocation="34577" standardDeviationMicrosecondsPerInvocation="6530"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="153" invocations="502" avgMicrosecondsPerInvocation="305" maxMicrosecondsPerInvocation="19351" standardDeviationMicrosecondsPerInvocation="1586"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="146" invocations="49" avgMicrosecondsPerInvocation="2991" maxMicrosecondsPerInvocation="75206" standardDeviationMicrosecondsPerInvocation="11687"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="133" invocations="49" avgMicrosecondsPerInvocation="2716" maxMicrosecondsPerInvocation="110561" standardDeviationMicrosecondsPerInvocation="15579"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="128" invocations="79" avgMicrosecondsPerInvocation="1626" maxMicrosecondsPerInvocation="70957" standardDeviationMicrosecondsPerInvocation="8170"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="113" invocations="49" avgMicrosecondsPerInvocation="2321" maxMicrosecondsPerInvocation="17742" standardDeviationMicrosecondsPerInvocation="3819"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="88" invocations="51" avgMicrosecondsPerInvocation="1727" maxMicrosecondsPerInvocation="27655" standardDeviationMicrosecondsPerInvocation="4540"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="68" invocations="51" avgMicrosecondsPerInvocation="1337" maxMicrosecondsPerInvocation="19575" standardDeviationMicrosecondsPerInvocation="3578"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="66" invocations="49" avgMicrosecondsPerInvocation="1362" maxMicrosecondsPerInvocation="35399" standardDeviationMicrosecondsPerInvocation="5062"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="62" invocations="51" avgMicrosecondsPerInvocation="1224" maxMicrosecondsPerInvocation="38408" standardDeviationMicrosecondsPerInvocation="5315"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

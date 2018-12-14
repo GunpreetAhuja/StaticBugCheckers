@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.1.0" sequence="0" timestamp="1542186369000" analysisTimestamp="1542186371672" release="">
+  <Project projectName="">
+    <Jar>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-104/src/java</Jar>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-104/target/classes</AuxClasspathEntry>
+  </Project>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 14 Nov 2018 04:06:09 -0500" total_classes="2" referenced_classes="17" total_bugs="0" total_size="65" num_packages="1" java_version="1.8.0_121" vm_version="25.121-b13" cpu_seconds="5.92" clock_seconds="3.55" peak_mbytes="105.08" alloc_mbytes="1820.50" gc_seconds="0.03">
+    <FileStats path="org/apache/commons/math/special/Gamma.java" bugCount="0" size="65"/>
+    <PackageStats package="org.apache.commons.math.special" total_bugs="0" total_types="2" total_size="65">
+      <ClassStats class="org.apache.commons.math.special.Gamma" sourceFile="Gamma.java" interface="false" size="56" bugs="0"/>
+      <ClassStats class="org.apache.commons.math.special.Gamma$1" sourceFile="Gamma.java" interface="false" size="9" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="502" invocations="308" avgMicrosecondsPerInvocation="1630" maxMicrosecondsPerInvocation="55874" standardDeviationMicrosecondsPerInvocation="5005"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="452" invocations="310" avgMicrosecondsPerInvocation="1458" maxMicrosecondsPerInvocation="37586" standardDeviationMicrosecondsPerInvocation="3500"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="166" invocations="17" avgMicrosecondsPerInvocation="9787" maxMicrosecondsPerInvocation="60304" standardDeviationMicrosecondsPerInvocation="17724"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="157" invocations="276" avgMicrosecondsPerInvocation="568" maxMicrosecondsPerInvocation="37292" standardDeviationMicrosecondsPerInvocation="2825"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="98" invocations="7" avgMicrosecondsPerInvocation="14063" maxMicrosecondsPerInvocation="94202" standardDeviationMicrosecondsPerInvocation="32721"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="93" invocations="44" avgMicrosecondsPerInvocation="2117" maxMicrosecondsPerInvocation="26986" standardDeviationMicrosecondsPerInvocation="4661"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="91" invocations="7" avgMicrosecondsPerInvocation="13113" maxMicrosecondsPerInvocation="69336" standardDeviationMicrosecondsPerInvocation="23260"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="86" invocations="17" avgMicrosecondsPerInvocation="5059" maxMicrosecondsPerInvocation="31887" standardDeviationMicrosecondsPerInvocation="8240"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="84" invocations="17" avgMicrosecondsPerInvocation="4941" maxMicrosecondsPerInvocation="61852" standardDeviationMicrosecondsPerInvocation="14381"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="68" invocations="7" avgMicrosecondsPerInvocation="9838" maxMicrosecondsPerInvocation="42536" standardDeviationMicrosecondsPerInvocation="14588"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="65" invocations="17" avgMicrosecondsPerInvocation="3831" maxMicrosecondsPerInvocation="40203" standardDeviationMicrosecondsPerInvocation="9796"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

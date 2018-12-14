@@ -1,0 +1,29 @@
+Found 3 issues
+
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-82/src/com/google/javascript/rhino/jstype/JSType.java:496: error: NULL_DEREFERENCE
+  object returned by `testForEquality(that)` could be null and is dereferenced at line 496.
+  494.      */
+  495.     public final boolean canTestForEqualityWith(JSType that) {
+  496. >     return this.testForEquality(that).equals(UNKNOWN);
+  497.     }
+  498.   
+
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-82/src/com/google/javascript/rhino/jstype/JSType.java:748: error: NULL_DEREFERENCE
+  object returned by `testForEquality(that)` could be null and is dereferenced at line 748.
+  746.   
+  747.       // other types
+  748. >     switch (this.testForEquality(that)) {
+  749.         case FALSE:
+  750.           return new TypePair(null, null);
+
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-82/src/com/google/javascript/rhino/jstype/JSType.java:781: error: NULL_DEREFERENCE
+  object returned by `testForEquality(that)` could be null and is dereferenced at line 781.
+  779.   
+  780.       // other types
+  781. >     switch (this.testForEquality(that)) {
+  782.         case TRUE:
+  783.           JSType noType = getNativeType(JSTypeNative.NO_TYPE);
+
+Summary of the reports
+
+  NULL_DEREFERENCE: 3

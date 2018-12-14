@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.1.0" sequence="0" timestamp="1542186629000" analysisTimestamp="1542186632403" release="">
+  <Project projectName="">
+    <Jar>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-6/src/main/java</Jar>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-6/target/classes</AuxClasspathEntry>
+  </Project>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 14 Nov 2018 04:10:29 -0500" total_classes="23" referenced_classes="137" total_bugs="0" total_size="1466" num_packages="4" java_version="1.8.0_121" vm_version="25.121-b13" cpu_seconds="16.76" clock_seconds="8.79" peak_mbytes="202.04" alloc_mbytes="1820.50" gc_seconds="0.12">
+    <FileStats path="org/apache/commons/math3/optim/BaseOptimizer.java" bugCount="0" size="54"/>
+    <FileStats path="org/apache/commons/math3/optim/nonlinear/scalar/gradient/NonLinearConjugateGradientOptimizer.java" bugCount="0" size="147"/>
+    <FileStats path="org/apache/commons/math3/optim/nonlinear/scalar/noderiv/CMAESOptimizer.java" bugCount="0" size="581"/>
+    <FileStats path="org/apache/commons/math3/optim/nonlinear/scalar/noderiv/PowellOptimizer.java" bugCount="0" size="142"/>
+    <FileStats path="org/apache/commons/math3/optim/nonlinear/scalar/noderiv/SimplexOptimizer.java" bugCount="0" size="65"/>
+    <FileStats path="org/apache/commons/math3/optim/nonlinear/vector/jacobian/GaussNewtonOptimizer.java" bugCount="0" size="70"/>
+    <FileStats path="org/apache/commons/math3/optim/nonlinear/vector/jacobian/LevenbergMarquardtOptimizer.java" bugCount="0" size="407"/>
+    <PackageStats package="org.apache.commons.math3.optim" total_bugs="0" total_types="4" total_size="54">
+      <ClassStats class="org.apache.commons.math3.optim.BaseOptimizer" sourceFile="BaseOptimizer.java" interface="false" size="41" bugs="0"/>
+      <ClassStats class="org.apache.commons.math3.optim.BaseOptimizer$1" sourceFile="BaseOptimizer.java" interface="false" size="1" bugs="0"/>
+      <ClassStats class="org.apache.commons.math3.optim.BaseOptimizer$MaxEvalCallback" sourceFile="BaseOptimizer.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="org.apache.commons.math3.optim.BaseOptimizer$MaxIterCallback" sourceFile="BaseOptimizer.java" interface="false" size="6" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="org.apache.commons.math3.optim.nonlinear.scalar.gradient" total_bugs="0" total_types="6" total_size="147">
+      <ClassStats class="org.apache.commons.math3.optim.nonlinear.scalar.gradient.NonLinearConjugateGradientOptimizer" sourceFile="NonLinearConjugateGradientOptimizer.java" interface="false" size="101" bugs="0"/>
+      <ClassStats class="org.apache.commons.math3.optim.nonlinear.scalar.gradient.NonLinearConjugateGradientOptimizer$1" sourceFile="NonLinearConjugateGradientOptimizer.java" interface="false" size="4" bugs="0"/>
+      <ClassStats class="org.apache.commons.math3.optim.nonlinear.scalar.gradient.NonLinearConjugateGradientOptimizer$BracketingStep" sourceFile="NonLinearConjugateGradientOptimizer.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="org.apache.commons.math3.optim.nonlinear.scalar.gradient.NonLinearConjugateGradientOptimizer$Formula" sourceFile="NonLinearConjugateGradientOptimizer.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="org.apache.commons.math3.optim.nonlinear.scalar.gradient.NonLinearConjugateGradientOptimizer$IdentityPreconditioner" sourceFile="NonLinearConjugateGradientOptimizer.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="org.apache.commons.math3.optim.nonlinear.scalar.gradient.NonLinearConjugateGradientOptimizer$LineSearchFunction" sourceFile="NonLinearConjugateGradientOptimizer.java" interface="false" size="18" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="org.apache.commons.math3.optim.nonlinear.scalar.noderiv" total_bugs="0" total_types="11" total_size="788">
+      <ClassStats class="org.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizer" sourceFile="CMAESOptimizer.java" interface="false" size="490" bugs="0"/>
+      <ClassStats class="org.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizer$DoubleIndex" sourceFile="CMAESOptimizer.java" interface="false" size="22" bugs="0"/>
+      <ClassStats class="org.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizer$FitnessFunction" sourceFile="CMAESOptimizer.java" interface="false" size="48" bugs="0"/>
+      <ClassStats class="org.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizer$PopulationSize" sourceFile="CMAESOptimizer.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="org.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizer$Sigma" sourceFile="CMAESOptimizer.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="org.apache.commons.math3.optim.nonlinear.scalar.noderiv.PowellOptimizer" sourceFile="PowellOptimizer.java" interface="false" size="110" bugs="0"/>
+      <ClassStats class="org.apache.commons.math3.optim.nonlinear.scalar.noderiv.PowellOptimizer$LineSearch" sourceFile="PowellOptimizer.java" interface="false" size="19" bugs="0"/>
+      <ClassStats class="org.apache.commons.math3.optim.nonlinear.scalar.noderiv.PowellOptimizer$LineSearch$1" sourceFile="PowellOptimizer.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="org.apache.commons.math3.optim.nonlinear.scalar.noderiv.SimplexOptimizer" sourceFile="SimplexOptimizer.java" interface="false" size="49" bugs="0"/>
+      <ClassStats class="org.apache.commons.math3.optim.nonlinear.scalar.noderiv.SimplexOptimizer$1" sourceFile="SimplexOptimizer.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="org.apache.commons.math3.optim.nonlinear.scalar.noderiv.SimplexOptimizer$2" sourceFile="SimplexOptimizer.java" interface="false" size="10" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="org.apache.commons.math3.optim.nonlinear.vector.jacobian" total_bugs="0" total_types="2" total_size="477">
+      <ClassStats class="org.apache.commons.math3.optim.nonlinear.vector.jacobian.GaussNewtonOptimizer" sourceFile="GaussNewtonOptimizer.java" interface="false" size="70" bugs="0"/>
+      <ClassStats class="org.apache.commons.math3.optim.nonlinear.vector.jacobian.LevenbergMarquardtOptimizer" sourceFile="LevenbergMarquardtOptimizer.java" interface="false" size="407" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="811" invocations="657" avgMicrosecondsPerInvocation="1235" maxMicrosecondsPerInvocation="31697" standardDeviationMicrosecondsPerInvocation="2522"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="717" invocations="654" avgMicrosecondsPerInvocation="1096" maxMicrosecondsPerInvocation="75561" standardDeviationMicrosecondsPerInvocation="4082"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="489" invocations="137" avgMicrosecondsPerInvocation="3572" maxMicrosecondsPerInvocation="103047" standardDeviationMicrosecondsPerInvocation="11646"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="424" invocations="101" avgMicrosecondsPerInvocation="4198" maxMicrosecondsPerInvocation="94444" standardDeviationMicrosecondsPerInvocation="13930"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="419" invocations="103" avgMicrosecondsPerInvocation="4071" maxMicrosecondsPerInvocation="95969" standardDeviationMicrosecondsPerInvocation="11843"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="370" invocations="521" avgMicrosecondsPerInvocation="711" maxMicrosecondsPerInvocation="19058" standardDeviationMicrosecondsPerInvocation="1939"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="358" invocations="137" avgMicrosecondsPerInvocation="2616" maxMicrosecondsPerInvocation="41784" standardDeviationMicrosecondsPerInvocation="6824"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="348" invocations="95" avgMicrosecondsPerInvocation="3669" maxMicrosecondsPerInvocation="66795" standardDeviationMicrosecondsPerInvocation="10747"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="300" invocations="92" avgMicrosecondsPerInvocation="3265" maxMicrosecondsPerInvocation="60893" standardDeviationMicrosecondsPerInvocation="8823"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="272" invocations="103" avgMicrosecondsPerInvocation="2640" maxMicrosecondsPerInvocation="45815" standardDeviationMicrosecondsPerInvocation="6990"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="169" invocations="7" avgMicrosecondsPerInvocation="24159" maxMicrosecondsPerInvocation="70964" standardDeviationMicrosecondsPerInvocation="28789"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="154" invocations="102" avgMicrosecondsPerInvocation="1519" maxMicrosecondsPerInvocation="124646" standardDeviationMicrosecondsPerInvocation="12286"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="137" invocations="181" avgMicrosecondsPerInvocation="761" maxMicrosecondsPerInvocation="24459" standardDeviationMicrosecondsPerInvocation="3294"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="134" invocations="101" avgMicrosecondsPerInvocation="1334" maxMicrosecondsPerInvocation="56187" standardDeviationMicrosecondsPerInvocation="5981"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="128" invocations="88" avgMicrosecondsPerInvocation="1460" maxMicrosecondsPerInvocation="40230" standardDeviationMicrosecondsPerInvocation="4756"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="113" invocations="101" avgMicrosecondsPerInvocation="1124" maxMicrosecondsPerInvocation="28550" standardDeviationMicrosecondsPerInvocation="3239"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="113" invocations="614" avgMicrosecondsPerInvocation="184" maxMicrosecondsPerInvocation="8768" standardDeviationMicrosecondsPerInvocation="645"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindUselessObjects" totalMilliseconds="109" invocations="7" avgMicrosecondsPerInvocation="15572" maxMicrosecondsPerInvocation="53339" standardDeviationMicrosecondsPerInvocation="22243"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="100" invocations="137" avgMicrosecondsPerInvocation="734" maxMicrosecondsPerInvocation="25492" standardDeviationMicrosecondsPerInvocation="2541"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="93" invocations="7" avgMicrosecondsPerInvocation="13315" maxMicrosecondsPerInvocation="45133" standardDeviationMicrosecondsPerInvocation="15141"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

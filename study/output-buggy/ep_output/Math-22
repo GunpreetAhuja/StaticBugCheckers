@@ -1,0 +1,96 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-22/src/main/java/org/apache/commons/math3/distribution/UniformRealDistribution.java:108: warning: [MissingOverride] density implements method in RealDistribution; expected @Override
+    public double density(double x) {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double density(double x) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-22/src/main/java/org/apache/commons/math3/distribution/UniformRealDistribution.java:116: warning: [MissingOverride] cumulativeProbability implements method in RealDistribution; expected @Override
+    public double cumulativeProbability(double x)  {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double cumulativeProbability(double x)  {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-22/src/main/java/org/apache/commons/math3/distribution/UniformRealDistribution.java:138: warning: [MissingOverride] getNumericalMean implements method in RealDistribution; expected @Override
+    public double getNumericalMean() {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double getNumericalMean() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-22/src/main/java/org/apache/commons/math3/distribution/UniformRealDistribution.java:148: warning: [MissingOverride] getNumericalVariance implements method in RealDistribution; expected @Override
+    public double getNumericalVariance() {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double getNumericalVariance() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-22/src/main/java/org/apache/commons/math3/distribution/UniformRealDistribution.java:161: warning: [MissingOverride] getSupportLowerBound implements method in RealDistribution; expected @Override
+    public double getSupportLowerBound() {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double getSupportLowerBound() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-22/src/main/java/org/apache/commons/math3/distribution/UniformRealDistribution.java:173: warning: [MissingOverride] getSupportUpperBound implements method in RealDistribution; expected @Override
+    public double getSupportUpperBound() {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double getSupportUpperBound() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-22/src/main/java/org/apache/commons/math3/distribution/UniformRealDistribution.java:178: warning: [MissingOverride] isSupportLowerBoundInclusive implements method in RealDistribution; expected @Override
+    public boolean isSupportLowerBoundInclusive() {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public boolean isSupportLowerBoundInclusive() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-22/src/main/java/org/apache/commons/math3/distribution/UniformRealDistribution.java:183: warning: [MissingOverride] isSupportUpperBoundInclusive implements method in RealDistribution; expected @Override
+    public boolean isSupportUpperBoundInclusive() {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public boolean isSupportUpperBoundInclusive() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-22/src/main/java/org/apache/commons/math3/distribution/UniformRealDistribution.java:194: warning: [MissingOverride] isSupportConnected implements method in RealDistribution; expected @Override
+    public boolean isSupportConnected() {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public boolean isSupportConnected() {'?
+Note: /Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-22/src/main/java/org/apache/commons/math3/distribution/UniformRealDistribution.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+9 warnings
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-22/src/main/java/org/apache/commons/math3/distribution/FDistribution.java:128: warning: [MissingOverride] density implements method in RealDistribution; expected @Override
+    public double density(double x) {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double density(double x) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-22/src/main/java/org/apache/commons/math3/distribution/FDistribution.java:152: warning: [MissingOverride] cumulativeProbability implements method in RealDistribution; expected @Override
+    public double cumulativeProbability(double x)  {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double cumulativeProbability(double x)  {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-22/src/main/java/org/apache/commons/math3/distribution/FDistribution.java:200: warning: [MissingOverride] getNumericalMean implements method in RealDistribution; expected @Override
+    public double getNumericalMean() {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double getNumericalMean() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-22/src/main/java/org/apache/commons/math3/distribution/FDistribution.java:223: warning: [MissingOverride] getNumericalVariance implements method in RealDistribution; expected @Override
+    public double getNumericalVariance() {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double getNumericalVariance() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-22/src/main/java/org/apache/commons/math3/distribution/FDistribution.java:257: warning: [MissingOverride] getSupportLowerBound implements method in RealDistribution; expected @Override
+    public double getSupportLowerBound() {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double getSupportLowerBound() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-22/src/main/java/org/apache/commons/math3/distribution/FDistribution.java:269: warning: [MissingOverride] getSupportUpperBound implements method in RealDistribution; expected @Override
+    public double getSupportUpperBound() {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double getSupportUpperBound() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-22/src/main/java/org/apache/commons/math3/distribution/FDistribution.java:274: warning: [MissingOverride] isSupportLowerBoundInclusive implements method in RealDistribution; expected @Override
+    public boolean isSupportLowerBoundInclusive() {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public boolean isSupportLowerBoundInclusive() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-22/src/main/java/org/apache/commons/math3/distribution/FDistribution.java:279: warning: [MissingOverride] isSupportUpperBoundInclusive implements method in RealDistribution; expected @Override
+    public boolean isSupportUpperBoundInclusive() {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public boolean isSupportUpperBoundInclusive() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-22/src/main/java/org/apache/commons/math3/distribution/FDistribution.java:290: warning: [MissingOverride] isSupportConnected implements method in RealDistribution; expected @Override
+    public boolean isSupportConnected() {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public boolean isSupportConnected() {'?
+Note: /Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-22/src/main/java/org/apache/commons/math3/distribution/FDistribution.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+9 warnings

@@ -1,0 +1,16 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-12/src/main/java/org/apache/commons/lang3/RandomStringUtils.java:257: warning: [OperatorPrecedence] Use grouping parenthesis to make the operator precedence explicit
+            if (letters && Character.isLetter(ch)
+                        ^
+    (see http://errorprone.info/bugpattern/OperatorPrecedence)
+  Did you mean 'if ((letters && Character.isLetter(ch))'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-12/src/main/java/org/apache/commons/lang3/RandomStringUtils.java:258: warning: [OperatorPrecedence] Use grouping parenthesis to make the operator precedence explicit
+                    || numbers && Character.isDigit(ch)
+                               ^
+    (see http://errorprone.info/bugpattern/OperatorPrecedence)
+  Did you mean '|| (numbers && Character.isDigit(ch))'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-12/src/main/java/org/apache/commons/lang3/RandomStringUtils.java:259: warning: [OperatorPrecedence] Use grouping parenthesis to make the operator precedence explicit
+                    || !letters && !numbers) {
+                                ^
+    (see http://errorprone.info/bugpattern/OperatorPrecedence)
+  Did you mean '|| (!letters && !numbers)) {'?
+3 warnings

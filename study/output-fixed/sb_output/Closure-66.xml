@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.1.0" sequence="0" timestamp="1542190142000" analysisTimestamp="1542190145453" release="">
+  <Project projectName="">
+    <Jar>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-66/src</Jar>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-66/build/classes</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-66/lib/args4j.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-66/lib/guava.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-66/lib/json.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-66/lib/jsr305.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-66/lib/libtrunk_rhino_parser_jarjared.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-66/lib/protobuf-java.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-66/lib/ant.jar</AuxClasspathEntry>
+  </Project>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" instanceHash="4eb36c46a67a5abec6cf6bf857fe16b8" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Dead store to local variable</ShortMessage>
+    <LongMessage>Dead store to $L4 in com.google.javascript.jscomp.TypeCheck.shouldTraverse(NodeTraversal, Node, Node)</LongMessage>
+    <Class classname="com.google.javascript.jscomp.TypeCheck" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.TypeCheck" start="59" end="1924" sourcefile="TypeCheck.java" sourcepath="com/google/javascript/jscomp/TypeCheck.java">
+        <Message>At TypeCheck.java:[lines 59-1924]</Message>
+      </SourceLine>
+      <Message>In class com.google.javascript.jscomp.TypeCheck</Message>
+    </Class>
+    <Method classname="com.google.javascript.jscomp.TypeCheck" name="shouldTraverse" signature="(Lcom/google/javascript/jscomp/NodeTraversal;Lcom/google/javascript/rhino/Node;Lcom/google/javascript/rhino/Node;)Z" isStatic="false" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.TypeCheck" start="425" end="448" startBytecode="0" endBytecode="48" sourcefile="TypeCheck.java" sourcepath="com/google/javascript/jscomp/TypeCheck.java"/>
+      <Message>In method com.google.javascript.jscomp.TypeCheck.shouldTraverse(NodeTraversal, Node, Node)</Message>
+    </Method>
+    <LocalVariable name="?" register="4" pc="31" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 4</Message>
+    </LocalVariable>
+    <SourceLine classname="com.google.javascript.jscomp.TypeCheck" primary="true" start="429" end="429" startBytecode="29" endBytecode="29" sourcefile="TypeCheck.java" sourcepath="com/google/javascript/jscomp/TypeCheck.java">
+      <Message>At TypeCheck.java:[line 429]</Message>
+    </SourceLine>
+    <SourceLine classname="com.google.javascript.jscomp.TypeCheck" start="431" end="431" startBytecode="44" endBytecode="44" sourcefile="TypeCheck.java" sourcepath="com/google/javascript/jscomp/TypeCheck.java" role="SOURCE_LINE_ANOTHER_INSTANCE">
+      <Message>Another occurrence at TypeCheck.java:[line 431]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.COPY_VALUE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="SF_SWITCH_NO_DEFAULT" priority="2" rank="19" abbrev="SF" category="STYLE" instanceHash="fadc70e511724999af3fce5b8999541a" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Switch statement found where default case is missing</ShortMessage>
+    <LongMessage>Switch statement found in com.google.javascript.jscomp.TypeCheck.checkNoTypeCheckSection(Node, boolean) where default case is missing</LongMessage>
+    <Class classname="com.google.javascript.jscomp.TypeCheck" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.TypeCheck" start="59" end="1924" sourcefile="TypeCheck.java" sourcepath="com/google/javascript/jscomp/TypeCheck.java">
+        <Message>At TypeCheck.java:[lines 59-1924]</Message>
+      </SourceLine>
+      <Message>In class com.google.javascript.jscomp.TypeCheck</Message>
+    </Class>
+    <Method classname="com.google.javascript.jscomp.TypeCheck" name="checkNoTypeCheckSection" signature="(Lcom/google/javascript/rhino/Node;Z)V" isStatic="false" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.TypeCheck" start="397" end="414" startBytecode="0" endBytecode="214" sourcefile="TypeCheck.java" sourcepath="com/google/javascript/jscomp/TypeCheck.java"/>
+      <Message>In method com.google.javascript.jscomp.TypeCheck.checkNoTypeCheckSection(Node, boolean)</Message>
+    </Method>
+    <SourceLine classname="com.google.javascript.jscomp.TypeCheck" primary="true" start="397" end="411" startBytecode="4" endBytecode="117" sourcefile="TypeCheck.java" sourcepath="com/google/javascript/jscomp/TypeCheck.java">
+      <Message>At TypeCheck.java:[lines 397-411]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="SF_SWITCH_NO_DEFAULT" priority="2" rank="19" abbrev="SF" category="STYLE" instanceHash="d37748d9e387a0e5abf342c59f139f4a" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Switch statement found where default case is missing</ShortMessage>
+    <LongMessage>Switch statement found in com.google.javascript.jscomp.TypeCheck.shouldTraverse(NodeTraversal, Node, Node) where default case is missing</LongMessage>
+    <Class classname="com.google.javascript.jscomp.TypeCheck" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.TypeCheck" start="59" end="1924" sourcefile="TypeCheck.java" sourcepath="com/google/javascript/jscomp/TypeCheck.java">
+        <Message>At TypeCheck.java:[lines 59-1924]</Message>
+      </SourceLine>
+      <Message>In class com.google.javascript.jscomp.TypeCheck</Message>
+    </Class>
+    <Method classname="com.google.javascript.jscomp.TypeCheck" name="shouldTraverse" signature="(Lcom/google/javascript/jscomp/NodeTraversal;Lcom/google/javascript/rhino/Node;Lcom/google/javascript/rhino/Node;)Z" isStatic="false" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.TypeCheck" start="425" end="448" startBytecode="0" endBytecode="194" sourcefile="TypeCheck.java" sourcepath="com/google/javascript/jscomp/TypeCheck.java"/>
+      <Message>In method com.google.javascript.jscomp.TypeCheck.shouldTraverse(NodeTraversal, Node, Node)</Message>
+    </Method>
+    <SourceLine classname="com.google.javascript.jscomp.TypeCheck" primary="true" start="426" end="440" startBytecode="10" endBytecode="112" sourcefile="TypeCheck.java" sourcepath="com/google/javascript/jscomp/TypeCheck.java">
+      <Message>At TypeCheck.java:[lines 426-440]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="DLS_DEAD_LOCAL_STORE" abbrev="DLS" category="STYLE">
+    <ShortDescription>Dead store to local variable</ShortDescription>
+    <Details><![CDATA[
+
+<p>
+This instruction assigns a value to a local variable,
+but the value is not read or used in any subsequent instruction.
+Often, this indicates an error, because the value computed is never
+used.
+</p>
+<p>
+Note that Sun's javac compiler often generates dead stores for
+final local variables.  Because SpotBugs is a bytecode-based tool,
+there is no easy way to eliminate these false positives.
+</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="SF_SWITCH_NO_DEFAULT" abbrev="SF" category="STYLE">
+    <ShortDescription>Switch statement found where default case is missing</ShortDescription>
+    <Details><![CDATA[
+
+  <p> This method contains a switch statement where default case is missing.
+  Usually you need to provide a default case.</p>
+  <p>Because the analysis only looks at the generated bytecode, this warning can be incorrect triggered if
+the default case is at the end of the switch statement and the switch statement doesn't contain break statements for other
+cases.
+
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="SF">
+    <Description>Switch case falls through</Description>
+  </BugCode>
+  <BugCode abbrev="DLS" cweid="563">
+    <Description>Dead local store</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 14 Nov 2018 05:09:02 -0500" total_classes="1" referenced_classes="68" total_bugs="3" total_size="870" num_packages="1" java_version="1.8.0_121" vm_version="25.121-b13" cpu_seconds="13.91" clock_seconds="7.37" peak_mbytes="192.67" alloc_mbytes="1820.50" gc_seconds="0.09" priority_2="3">
+    <FileStats path="com/google/javascript/jscomp/TypeCheck.java" bugCount="3" size="870" bugHash="af7262d9f6522afc75cbe13e927d411a"/>
+    <PackageStats package="com.google.javascript.jscomp" total_bugs="3" total_types="1" total_size="870" priority_2="3">
+      <ClassStats class="com.google.javascript.jscomp.TypeCheck" sourceFile="TypeCheck.java" interface="false" size="870" bugs="3" priority_2="3"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="1038" invocations="645" avgMicrosecondsPerInvocation="1610" maxMicrosecondsPerInvocation="57020" standardDeviationMicrosecondsPerInvocation="3398"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="674" invocations="644" avgMicrosecondsPerInvocation="1046" maxMicrosecondsPerInvocation="78535" standardDeviationMicrosecondsPerInvocation="4430"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="363" invocations="42" avgMicrosecondsPerInvocation="8663" maxMicrosecondsPerInvocation="62156" standardDeviationMicrosecondsPerInvocation="14455"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="348" invocations="42" avgMicrosecondsPerInvocation="8287" maxMicrosecondsPerInvocation="63430" standardDeviationMicrosecondsPerInvocation="14894"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="268" invocations="68" avgMicrosecondsPerInvocation="3951" maxMicrosecondsPerInvocation="40914" standardDeviationMicrosecondsPerInvocation="7769"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="263" invocations="68" avgMicrosecondsPerInvocation="3874" maxMicrosecondsPerInvocation="62337" standardDeviationMicrosecondsPerInvocation="8635"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="245" invocations="283" avgMicrosecondsPerInvocation="867" maxMicrosecondsPerInvocation="24887" standardDeviationMicrosecondsPerInvocation="2610"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="244" invocations="42" avgMicrosecondsPerInvocation="5819" maxMicrosecondsPerInvocation="28046" standardDeviationMicrosecondsPerInvocation="7315"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="184" invocations="42" avgMicrosecondsPerInvocation="4395" maxMicrosecondsPerInvocation="28008" standardDeviationMicrosecondsPerInvocation="6389"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="167" invocations="42" avgMicrosecondsPerInvocation="3982" maxMicrosecondsPerInvocation="46763" standardDeviationMicrosecondsPerInvocation="7892"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="166" invocations="42" avgMicrosecondsPerInvocation="3963" maxMicrosecondsPerInvocation="41363" standardDeviationMicrosecondsPerInvocation="7316"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="132" invocations="68" avgMicrosecondsPerInvocation="1955" maxMicrosecondsPerInvocation="82781" standardDeviationMicrosecondsPerInvocation="9940"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="122" invocations="42" avgMicrosecondsPerInvocation="2925" maxMicrosecondsPerInvocation="82431" standardDeviationMicrosecondsPerInvocation="12739"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="116" invocations="68" avgMicrosecondsPerInvocation="1715" maxMicrosecondsPerInvocation="18936" standardDeviationMicrosecondsPerInvocation="3523"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="114" invocations="609" avgMicrosecondsPerInvocation="188" maxMicrosecondsPerInvocation="10173" standardDeviationMicrosecondsPerInvocation="721"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="105" invocations="40" avgMicrosecondsPerInvocation="2643" maxMicrosecondsPerInvocation="17029" standardDeviationMicrosecondsPerInvocation="4570"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="94" invocations="68" avgMicrosecondsPerInvocation="1393" maxMicrosecondsPerInvocation="41243" standardDeviationMicrosecondsPerInvocation="5499"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="87" invocations="96" avgMicrosecondsPerInvocation="911" maxMicrosecondsPerInvocation="34791" standardDeviationMicrosecondsPerInvocation="3729"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

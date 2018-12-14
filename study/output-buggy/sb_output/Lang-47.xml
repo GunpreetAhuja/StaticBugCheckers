@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.1.0" sequence="0" timestamp="1542186230000" analysisTimestamp="1542186233046" release="">
+  <Project projectName="">
+    <Jar>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Lang-47/src/java</Jar>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Lang-47/target/classes</AuxClasspathEntry>
+  </Project>
+  <BugInstance type="CN_IDIOM" priority="2" rank="16" abbrev="CN" category="BAD_PRACTICE" instanceHash="cd68aab6a251bb55df4ea04e61fdd9f2" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="580">
+    <ShortMessage>Class implements Cloneable but does not define or use clone method</ShortMessage>
+    <LongMessage>Class org.apache.commons.lang.text.StrBuilder implements Cloneable but does not define or use clone method</LongMessage>
+    <Class classname="org.apache.commons.lang.text.StrBuilder" primary="true">
+      <SourceLine classname="org.apache.commons.lang.text.StrBuilder" start="98" end="2551" sourcefile="StrBuilder.java" sourcepath="org/apache/commons/lang/text/StrBuilder.java">
+        <Message>At StrBuilder.java:[lines 98-2551]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.lang.text.StrBuilder</Message>
+    </Class>
+    <SourceLine classname="org.apache.commons.lang.text.StrBuilder" start="98" end="2551" sourcefile="StrBuilder.java" sourcepath="org/apache/commons/lang/text/StrBuilder.java" synthetic="true">
+      <Message>At StrBuilder.java:[lines 98-2551]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="BAD_PRACTICE">
+    <Description>Bad practice</Description>
+  </BugCategory>
+  <BugPattern type="CN_IDIOM" abbrev="CN" category="BAD_PRACTICE">
+    <ShortDescription>Class implements Cloneable but does not define or use clone method</ShortDescription>
+    <Details><![CDATA[
+
+<p>
+   Class implements Cloneable but does not define or
+   use the clone method.</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="CN" cweid="580">
+    <Description>Bad implementation of cloneable idiom</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 14 Nov 2018 04:03:50 -0500" total_classes="4" referenced_classes="46" total_bugs="1" total_size="863" num_packages="1" java_version="1.8.0_121" vm_version="25.121-b13" cpu_seconds="10.71" clock_seconds="5.85" peak_mbytes="154.15" alloc_mbytes="1820.50" gc_seconds="0.05" priority_2="1">
+    <FileStats path="org/apache/commons/lang/text/StrBuilder.java" bugCount="1" size="863" bugHash="73ea3542391b2634c9aa84b1c770b316"/>
+    <PackageStats package="org.apache.commons.lang.text" total_bugs="1" total_types="4" total_size="863" priority_2="1">
+      <ClassStats class="org.apache.commons.lang.text.StrBuilder" sourceFile="StrBuilder.java" interface="false" size="780" bugs="1" priority_2="1"/>
+      <ClassStats class="org.apache.commons.lang.text.StrBuilder$StrBuilderReader" sourceFile="StrBuilder.java" interface="false" size="43" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang.text.StrBuilder$StrBuilderTokenizer" sourceFile="StrBuilder.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang.text.StrBuilder$StrBuilderWriter" sourceFile="StrBuilder.java" interface="false" size="25" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="598" invocations="454" avgMicrosecondsPerInvocation="1319" maxMicrosecondsPerInvocation="35583" standardDeviationMicrosecondsPerInvocation="3112"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="544" invocations="453" avgMicrosecondsPerInvocation="1201" maxMicrosecondsPerInvocation="75596" standardDeviationMicrosecondsPerInvocation="4500"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="272" invocations="329" avgMicrosecondsPerInvocation="828" maxMicrosecondsPerInvocation="52510" standardDeviationMicrosecondsPerInvocation="4018"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="209" invocations="132" avgMicrosecondsPerInvocation="1586" maxMicrosecondsPerInvocation="52960" standardDeviationMicrosecondsPerInvocation="5541"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="201" invocations="132" avgMicrosecondsPerInvocation="1528" maxMicrosecondsPerInvocation="42010" standardDeviationMicrosecondsPerInvocation="4839"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="195" invocations="132" avgMicrosecondsPerInvocation="1479" maxMicrosecondsPerInvocation="31368" standardDeviationMicrosecondsPerInvocation="5130"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="178" invocations="132" avgMicrosecondsPerInvocation="1349" maxMicrosecondsPerInvocation="21893" standardDeviationMicrosecondsPerInvocation="2941"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="175" invocations="46" avgMicrosecondsPerInvocation="3807" maxMicrosecondsPerInvocation="25430" standardDeviationMicrosecondsPerInvocation="6855"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="171" invocations="132" avgMicrosecondsPerInvocation="1301" maxMicrosecondsPerInvocation="44716" standardDeviationMicrosecondsPerInvocation="5030"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="148" invocations="46" avgMicrosecondsPerInvocation="3221" maxMicrosecondsPerInvocation="28114" standardDeviationMicrosecondsPerInvocation="5848"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindInconsistentSync2" totalMilliseconds="136" invocations="1" avgMicrosecondsPerInvocation="136468" maxMicrosecondsPerInvocation="136468" standardDeviationMicrosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="134" invocations="132" avgMicrosecondsPerInvocation="1017" maxMicrosecondsPerInvocation="93729" standardDeviationMicrosecondsPerInvocation="8133"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="130" invocations="132" avgMicrosecondsPerInvocation="988" maxMicrosecondsPerInvocation="29332" standardDeviationMicrosecondsPerInvocation="3155"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="126" invocations="420" avgMicrosecondsPerInvocation="300" maxMicrosecondsPerInvocation="31220" standardDeviationMicrosecondsPerInvocation="1844"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="87" invocations="46" avgMicrosecondsPerInvocation="1909" maxMicrosecondsPerInvocation="48142" standardDeviationMicrosecondsPerInvocation="7278"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.LiveLocalStoreDataflowFactory" totalMilliseconds="82" invocations="132" avgMicrosecondsPerInvocation="626" maxMicrosecondsPerInvocation="35303" standardDeviationMicrosecondsPerInvocation="3172"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="82" invocations="67" avgMicrosecondsPerInvocation="1231" maxMicrosecondsPerInvocation="39531" standardDeviationMicrosecondsPerInvocation="5207"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="67" invocations="46" avgMicrosecondsPerInvocation="1463" maxMicrosecondsPerInvocation="16924" standardDeviationMicrosecondsPerInvocation="3528"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindOpenStream" totalMilliseconds="66" invocations="1" avgMicrosecondsPerInvocation="66947" maxMicrosecondsPerInvocation="66947" standardDeviationMicrosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="64" invocations="46" avgMicrosecondsPerInvocation="1394" maxMicrosecondsPerInvocation="24960" standardDeviationMicrosecondsPerInvocation="3996"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="54" invocations="46" avgMicrosecondsPerInvocation="1184" maxMicrosecondsPerInvocation="25644" standardDeviationMicrosecondsPerInvocation="3835"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

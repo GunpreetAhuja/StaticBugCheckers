@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.1.0" sequence="0" timestamp="1542190560000" analysisTimestamp="1542190562804" release="">
+  <Project projectName="">
+    <Jar>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-50/src/java</Jar>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-50/target/classes</AuxClasspathEntry>
+  </Project>
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" rank="18" abbrev="Bx" category="PERFORMANCE" instanceHash="5a539545ee3b200961f88f7ef542d5ae" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Method invokes inefficient Number constructor; use static valueOf instead</ShortMessage>
+    <LongMessage>org.apache.commons.lang.time.FastDateFormat.getDateInstance(int, TimeZone, Locale) invokes inefficient new Integer(int) constructor; use Integer.valueOf(int) instead</LongMessage>
+    <Class classname="org.apache.commons.lang.time.FastDateFormat" primary="true">
+      <SourceLine classname="org.apache.commons.lang.time.FastDateFormat" start="110" end="1028" sourcefile="FastDateFormat.java" sourcepath="org/apache/commons/lang/time/FastDateFormat.java">
+        <Message>At FastDateFormat.java:[lines 110-1028]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.lang.time.FastDateFormat</Message>
+    </Class>
+    <Method classname="org.apache.commons.lang.time.FastDateFormat" name="getDateInstance" signature="(ILjava/util/TimeZone;Ljava/util/Locale;)Lorg/apache/commons/lang/time/FastDateFormat;" isStatic="true" primary="true">
+      <SourceLine classname="org.apache.commons.lang.time.FastDateFormat" start="280" end="303" startBytecode="0" endBytecode="263" sourcefile="FastDateFormat.java" sourcepath="org/apache/commons/lang/time/FastDateFormat.java"/>
+      <Message>In method org.apache.commons.lang.time.FastDateFormat.getDateInstance(int, TimeZone, Locale)</Message>
+    </Method>
+    <Method classname="java.lang.Integer" name="&lt;init&gt;" signature="(I)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Integer" start="849" end="851" startBytecode="0" endBytecode="41" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+      <Message>Called method new Integer(int)</Message>
+    </Method>
+    <Method classname="java.lang.Integer" name="valueOf" signature="(I)Ljava/lang/Integer;" isStatic="true" role="SHOULD_CALL">
+      <SourceLine classname="java.lang.Integer" start="830" end="832" startBytecode="0" endBytecode="72" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+      <Message>Should call Integer.valueOf(int) instead</Message>
+    </Method>
+    <SourceLine classname="org.apache.commons.lang.time.FastDateFormat" primary="true" start="280" end="280" startBytecode="5" endBytecode="5" sourcefile="FastDateFormat.java" sourcepath="org/apache/commons/lang/time/FastDateFormat.java">
+      <Message>At FastDateFormat.java:[line 280]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" rank="18" abbrev="Bx" category="PERFORMANCE" instanceHash="b184840e6dbd71bed0308a8d75560170" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Method invokes inefficient Number constructor; use static valueOf instead</ShortMessage>
+    <LongMessage>org.apache.commons.lang.time.FastDateFormat.getDateTimeInstance(int, int, TimeZone, Locale) invokes inefficient new Integer(int) constructor; use Integer.valueOf(int) instead</LongMessage>
+    <Class classname="org.apache.commons.lang.time.FastDateFormat" primary="true">
+      <SourceLine classname="org.apache.commons.lang.time.FastDateFormat" start="110" end="1028" sourcefile="FastDateFormat.java" sourcepath="org/apache/commons/lang/time/FastDateFormat.java">
+        <Message>At FastDateFormat.java:[lines 110-1028]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.lang.time.FastDateFormat</Message>
+    </Class>
+    <Method classname="org.apache.commons.lang.time.FastDateFormat" name="getDateTimeInstance" signature="(IILjava/util/TimeZone;Ljava/util/Locale;)Lorg/apache/commons/lang/time/FastDateFormat;" isStatic="true" primary="true">
+      <SourceLine classname="org.apache.commons.lang.time.FastDateFormat" start="459" end="481" startBytecode="0" endBytecode="287" sourcefile="FastDateFormat.java" sourcepath="org/apache/commons/lang/time/FastDateFormat.java"/>
+      <Message>In method org.apache.commons.lang.time.FastDateFormat.getDateTimeInstance(int, int, TimeZone, Locale)</Message>
+    </Method>
+    <Method classname="java.lang.Integer" name="&lt;init&gt;" signature="(I)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Integer" start="849" end="851" startBytecode="0" endBytecode="41" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+      <Message>Called method new Integer(int)</Message>
+    </Method>
+    <Method classname="java.lang.Integer" name="valueOf" signature="(I)Ljava/lang/Integer;" isStatic="true" role="SHOULD_CALL">
+      <SourceLine classname="java.lang.Integer" start="830" end="832" startBytecode="0" endBytecode="72" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+      <Message>Should call Integer.valueOf(int) instead</Message>
+    </Method>
+    <SourceLine classname="org.apache.commons.lang.time.FastDateFormat" primary="true" start="459" end="459" startBytecode="9" endBytecode="9" sourcefile="FastDateFormat.java" sourcepath="org/apache/commons/lang/time/FastDateFormat.java">
+      <Message>At FastDateFormat.java:[line 459]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" rank="18" abbrev="Bx" category="PERFORMANCE" instanceHash="2d9f0c5da143d3acec515fddbe4d51bc" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Method invokes inefficient Number constructor; use static valueOf instead</ShortMessage>
+    <LongMessage>org.apache.commons.lang.time.FastDateFormat.getTimeInstance(int, TimeZone, Locale) invokes inefficient new Integer(int) constructor; use Integer.valueOf(int) instead</LongMessage>
+    <Class classname="org.apache.commons.lang.time.FastDateFormat" primary="true">
+      <SourceLine classname="org.apache.commons.lang.time.FastDateFormat" start="110" end="1028" sourcefile="FastDateFormat.java" sourcepath="org/apache/commons/lang/time/FastDateFormat.java">
+        <Message>At FastDateFormat.java:[lines 110-1028]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.lang.time.FastDateFormat</Message>
+    </Class>
+    <Method classname="org.apache.commons.lang.time.FastDateFormat" name="getTimeInstance" signature="(ILjava/util/TimeZone;Ljava/util/Locale;)Lorg/apache/commons/lang/time/FastDateFormat;" isStatic="true" primary="true">
+      <SourceLine classname="org.apache.commons.lang.time.FastDateFormat" start="365" end="389" startBytecode="0" endBytecode="258" sourcefile="FastDateFormat.java" sourcepath="org/apache/commons/lang/time/FastDateFormat.java"/>
+      <Message>In method org.apache.commons.lang.time.FastDateFormat.getTimeInstance(int, TimeZone, Locale)</Message>
+    </Method>
+    <Method classname="java.lang.Integer" name="&lt;init&gt;" signature="(I)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Integer" start="849" end="851" startBytecode="0" endBytecode="41" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+      <Message>Called method new Integer(int)</Message>
+    </Method>
+    <Method classname="java.lang.Integer" name="valueOf" signature="(I)Ljava/lang/Integer;" isStatic="true" role="SHOULD_CALL">
+      <SourceLine classname="java.lang.Integer" start="830" end="832" startBytecode="0" endBytecode="72" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+      <Message>Should call Integer.valueOf(int) instead</Message>
+    </Method>
+    <SourceLine classname="org.apache.commons.lang.time.FastDateFormat" primary="true" start="365" end="365" startBytecode="5" endBytecode="5" sourcefile="FastDateFormat.java" sourcepath="org/apache/commons/lang/time/FastDateFormat.java">
+      <Message>At FastDateFormat.java:[line 365]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="PERFORMANCE">
+    <Description>Performance</Description>
+  </BugCategory>
+  <BugPattern type="DM_NUMBER_CTOR" abbrev="Bx" category="PERFORMANCE">
+    <ShortDescription>Method invokes inefficient Number constructor; use static valueOf instead</ShortDescription>
+    <Details><![CDATA[
+      
+      <p>
+      Using <code>new Integer(int)</code> is guaranteed to always result in a new object whereas
+      <code>Integer.valueOf(int)</code> allows caching of values to be done by the compiler, class library, or JVM.
+      Using of cached values avoids object allocation and the code will be faster.
+      </p>
+      <p>
+      Values between -128 and 127 are guaranteed to have corresponding cached instances
+      and using <code>valueOf</code> is approximately 3.5 times faster than using constructor.
+      For values outside the constant range the performance of both styles is the same.
+      </p>
+      <p>
+      Unless the class must be compatible with JVMs predating Java 1.5,
+      use either autoboxing or the <code>valueOf()</code> method when creating instances of
+      <code>Long</code>, <code>Integer</code>, <code>Short</code>, <code>Character</code>, and <code>Byte</code>.
+      </p>
+      
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="Bx">
+    <Description>Questionable Boxing of primitive value</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 14 Nov 2018 05:16:00 -0500" total_classes="18" referenced_classes="59" total_bugs="3" total_size="634" num_packages="1" java_version="1.8.0_121" vm_version="25.121-b13" cpu_seconds="9.93" clock_seconds="5.50" peak_mbytes="183.43" alloc_mbytes="1820.50" gc_seconds="0.06" priority_2="3">
+    <FileStats path="org/apache/commons/lang/time/FastDateFormat.java" bugCount="3" size="634" bugHash="1450896d29b821ce586168d7338c6d7b"/>
+    <PackageStats package="org.apache.commons.lang.time" total_bugs="3" total_types="18" total_size="634" priority_2="3">
+      <ClassStats class="org.apache.commons.lang.time.FastDateFormat" sourceFile="FastDateFormat.java" interface="false" size="327" bugs="3" priority_2="3"/>
+      <ClassStats class="org.apache.commons.lang.time.FastDateFormat$CharacterLiteral" sourceFile="FastDateFormat.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang.time.FastDateFormat$NumberRule" sourceFile="FastDateFormat.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang.time.FastDateFormat$PaddedNumberField" sourceFile="FastDateFormat.java" interface="false" size="29" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang.time.FastDateFormat$Pair" sourceFile="FastDateFormat.java" interface="false" size="23" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang.time.FastDateFormat$Rule" sourceFile="FastDateFormat.java" interface="true" size="3" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang.time.FastDateFormat$StringLiteral" sourceFile="FastDateFormat.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang.time.FastDateFormat$TextField" sourceFile="FastDateFormat.java" interface="false" size="19" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang.time.FastDateFormat$TimeZoneDisplayKey" sourceFile="FastDateFormat.java" interface="false" size="23" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang.time.FastDateFormat$TimeZoneNameRule" sourceFile="FastDateFormat.java" interface="false" size="35" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang.time.FastDateFormat$TimeZoneNumberRule" sourceFile="FastDateFormat.java" interface="false" size="28" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang.time.FastDateFormat$TwelveHourField" sourceFile="FastDateFormat.java" interface="false" size="17" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang.time.FastDateFormat$TwentyFourHourField" sourceFile="FastDateFormat.java" interface="false" size="17" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang.time.FastDateFormat$TwoDigitMonthField" sourceFile="FastDateFormat.java" interface="false" size="16" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang.time.FastDateFormat$TwoDigitNumberField" sourceFile="FastDateFormat.java" interface="false" size="17" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang.time.FastDateFormat$TwoDigitYearField" sourceFile="FastDateFormat.java" interface="false" size="16" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang.time.FastDateFormat$UnpaddedMonthField" sourceFile="FastDateFormat.java" interface="false" size="18" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang.time.FastDateFormat$UnpaddedNumberField" sourceFile="FastDateFormat.java" interface="false" size="22" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="725" invocations="500" avgMicrosecondsPerInvocation="1451" maxMicrosecondsPerInvocation="38881" standardDeviationMicrosecondsPerInvocation="4396"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="685" invocations="505" avgMicrosecondsPerInvocation="1357" maxMicrosecondsPerInvocation="29431" standardDeviationMicrosecondsPerInvocation="3072"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="352" invocations="59" avgMicrosecondsPerInvocation="5977" maxMicrosecondsPerInvocation="92117" standardDeviationMicrosecondsPerInvocation="14045"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="290" invocations="202" avgMicrosecondsPerInvocation="1437" maxMicrosecondsPerInvocation="38488" standardDeviationMicrosecondsPerInvocation="4747"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="227" invocations="59" avgMicrosecondsPerInvocation="3858" maxMicrosecondsPerInvocation="33990" standardDeviationMicrosecondsPerInvocation="6783"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="137" invocations="59" avgMicrosecondsPerInvocation="2337" maxMicrosecondsPerInvocation="25180" standardDeviationMicrosecondsPerInvocation="5744"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="131" invocations="44" avgMicrosecondsPerInvocation="2980" maxMicrosecondsPerInvocation="68817" standardDeviationMicrosecondsPerInvocation="10998"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="129" invocations="460" avgMicrosecondsPerInvocation="280" maxMicrosecondsPerInvocation="28818" standardDeviationMicrosecondsPerInvocation="1657"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="112" invocations="59" avgMicrosecondsPerInvocation="1904" maxMicrosecondsPerInvocation="38704" standardDeviationMicrosecondsPerInvocation="6361"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="103" invocations="43" avgMicrosecondsPerInvocation="2403" maxMicrosecondsPerInvocation="36926" standardDeviationMicrosecondsPerInvocation="6379"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="100" invocations="43" avgMicrosecondsPerInvocation="2338" maxMicrosecondsPerInvocation="26429" standardDeviationMicrosecondsPerInvocation="4710"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="100" invocations="43" avgMicrosecondsPerInvocation="2329" maxMicrosecondsPerInvocation="80963" standardDeviationMicrosecondsPerInvocation="12154"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="93" invocations="43" avgMicrosecondsPerInvocation="2164" maxMicrosecondsPerInvocation="46767" standardDeviationMicrosecondsPerInvocation="7084"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="82" invocations="43" avgMicrosecondsPerInvocation="1926" maxMicrosecondsPerInvocation="19136" standardDeviationMicrosecondsPerInvocation="3740"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="82" invocations="43" avgMicrosecondsPerInvocation="1924" maxMicrosecondsPerInvocation="39359" standardDeviationMicrosecondsPerInvocation="5986"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="81" invocations="92" avgMicrosecondsPerInvocation="885" maxMicrosecondsPerInvocation="37842" standardDeviationMicrosecondsPerInvocation="4060"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="80" invocations="38" avgMicrosecondsPerInvocation="2118" maxMicrosecondsPerInvocation="65825" standardDeviationMicrosecondsPerInvocation="10485"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

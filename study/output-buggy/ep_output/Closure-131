@@ -1,0 +1,6 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-131/src/com/google/javascript/rhino/TokenStream.java:185: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+            if (X!=null && X!=s && !X.equals(s)) return false;
+                            ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'if (X!=null && !X.equals(s) && !X.equals(s)) return false;'?
+1 warning

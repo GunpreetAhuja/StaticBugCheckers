@@ -1,0 +1,36 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-2/src/main/java/org/apache/commons/math3/distribution/HypergeometricDistribution.java:114: warning: [MissingOverride] cumulativeProbability implements method in IntegerDistribution; expected @Override
+    public double cumulativeProbability(int x) {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double cumulativeProbability(int x) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-2/src/main/java/org/apache/commons/math3/distribution/HypergeometricDistribution.java:195: warning: [MissingOverride] probability implements method in IntegerDistribution; expected @Override
+    public double probability(int x) {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double probability(int x) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-2/src/main/java/org/apache/commons/math3/distribution/HypergeometricDistribution.java:267: warning: [MissingOverride] getNumericalMean implements method in IntegerDistribution; expected @Override
+    public double getNumericalMean() {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double getNumericalMean() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-2/src/main/java/org/apache/commons/math3/distribution/HypergeometricDistribution.java:278: warning: [MissingOverride] getNumericalVariance implements method in IntegerDistribution; expected @Override
+    public double getNumericalVariance() {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double getNumericalVariance() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-2/src/main/java/org/apache/commons/math3/distribution/HypergeometricDistribution.java:307: warning: [MissingOverride] getSupportLowerBound implements method in IntegerDistribution; expected @Override
+    public int getSupportLowerBound() {
+               ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int getSupportLowerBound() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-2/src/main/java/org/apache/commons/math3/distribution/HypergeometricDistribution.java:320: warning: [MissingOverride] getSupportUpperBound implements method in IntegerDistribution; expected @Override
+    public int getSupportUpperBound() {
+               ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int getSupportUpperBound() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-2/src/main/java/org/apache/commons/math3/distribution/HypergeometricDistribution.java:331: warning: [MissingOverride] isSupportConnected implements method in IntegerDistribution; expected @Override
+    public boolean isSupportConnected() {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public boolean isSupportConnected() {'?
+7 warnings

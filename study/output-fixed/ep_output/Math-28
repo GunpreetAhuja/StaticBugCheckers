@@ -1,0 +1,11 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-28/src/main/java/org/apache/commons/math3/optimization/linear/SimplexSolver.java:145: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+                    for (; i < tableau.getWidth() - 1 && minRow != row; i++) {
+                                                                ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'for (; i < tableau.getWidth() - 1 && !Objects.equals(minRow, row); i++) {' or 'for (; i < tableau.getWidth() - 1 && !minRow.equals(row); i++) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-28/src/main/java/org/apache/commons/math3/optimization/linear/SimplexSolver.java:146: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+                        if (row == tableau.getBasicRow(i)) {
+                                ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'if (Objects.equals(row, tableau.getBasicRow(i))) {' or 'if (row.equals(tableau.getBasicRow(i))) {'?
+2 warnings

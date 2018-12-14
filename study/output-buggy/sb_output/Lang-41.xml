@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.1.0" sequence="0" timestamp="1542186203000" analysisTimestamp="1542186206760" release="">
+  <Project projectName="">
+    <Jar>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Lang-41/src/java</Jar>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Lang-41/target/classes</AuxClasspathEntry>
+  </Project>
+  <BugInstance type="WMI_WRONG_MAP_ITERATOR" priority="2" rank="18" abbrev="WMI" category="PERFORMANCE" instanceHash="2cd69c92685caa3e96bb8b387f30d6c0" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Inefficient use of keySet iterator instead of entrySet iterator</ShortMessage>
+    <LongMessage>org.apache.commons.lang.ClassUtils.&lt;static initializer for ClassUtils&gt;() makes inefficient use of keySet iterator instead of entrySet iterator</LongMessage>
+    <Class classname="org.apache.commons.lang.ClassUtils" primary="true">
+      <SourceLine classname="org.apache.commons.lang.ClassUtils" start="58" end="1014" sourcefile="ClassUtils.java" sourcepath="org/apache/commons/lang/ClassUtils.java">
+        <Message>At ClassUtils.java:[lines 58-1014]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.lang.ClassUtils</Message>
+    </Class>
+    <Method classname="org.apache.commons.lang.ClassUtils" name="&lt;clinit&gt;" signature="()V" isStatic="true" primary="true">
+      <SourceLine classname="org.apache.commons.lang.ClassUtils" start="58" end="132" startBytecode="0" endBytecode="461" sourcefile="ClassUtils.java" sourcepath="org/apache/commons/lang/ClassUtils.java"/>
+      <Message>In method org.apache.commons.lang.ClassUtils.&lt;static initializer for ClassUtils&gt;()</Message>
+    </Method>
+    <Field classname="org.apache.commons.lang.ClassUtils" name="primitiveWrapperMap" signature="Ljava/util/Map;" isStatic="true" primary="true">
+      <SourceLine classname="org.apache.commons.lang.ClassUtils" sourcefile="ClassUtils.java" sourcepath="org/apache/commons/lang/ClassUtils.java">
+        <Message>In ClassUtils.java</Message>
+      </SourceLine>
+      <Message>Field org.apache.commons.lang.ClassUtils.primitiveWrapperMap</Message>
+    </Field>
+    <SourceLine classname="org.apache.commons.lang.ClassUtils" primary="true" start="92" end="92" startBytecode="200" endBytecode="200" sourcefile="ClassUtils.java" sourcepath="org/apache/commons/lang/ClassUtils.java">
+      <Message>At ClassUtils.java:[line 92]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="PERFORMANCE">
+    <Description>Performance</Description>
+  </BugCategory>
+  <BugPattern type="WMI_WRONG_MAP_ITERATOR" abbrev="WMI" category="PERFORMANCE">
+    <ShortDescription>Inefficient use of keySet iterator instead of entrySet iterator</ShortDescription>
+    <Details><![CDATA[
+
+<p> This method accesses the value of a Map entry, using a key that was retrieved from
+a keySet iterator. It is more efficient to use an iterator on the entrySet of the map, to avoid the
+Map.get(key) lookup.</p>
+
+        ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="WMI">
+    <Description>Inefficient Map Iterator</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 14 Nov 2018 04:03:23 -0500" total_classes="1" referenced_classes="39" total_bugs="1" total_size="318" num_packages="1" java_version="1.8.0_121" vm_version="25.121-b13" cpu_seconds="9.15" clock_seconds="4.88" peak_mbytes="113.86" alloc_mbytes="1820.50" gc_seconds="0.04" priority_2="1">
+    <FileStats path="org/apache/commons/lang/ClassUtils.java" bugCount="1" size="318" bugHash="3886939f1eac7782415c501d4b5c9b96"/>
+    <PackageStats package="org.apache.commons.lang" total_bugs="1" total_types="1" total_size="318" priority_2="1">
+      <ClassStats class="org.apache.commons.lang.ClassUtils" sourceFile="ClassUtils.java" interface="false" size="318" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="607" invocations="420" avgMicrosecondsPerInvocation="1446" maxMicrosecondsPerInvocation="32719" standardDeviationMicrosecondsPerInvocation="3540"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="580" invocations="419" avgMicrosecondsPerInvocation="1385" maxMicrosecondsPerInvocation="57094" standardDeviationMicrosecondsPerInvocation="4574"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="268" invocations="39" avgMicrosecondsPerInvocation="6881" maxMicrosecondsPerInvocation="66625" standardDeviationMicrosecondsPerInvocation="12329"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="240" invocations="263" avgMicrosecondsPerInvocation="913" maxMicrosecondsPerInvocation="32249" standardDeviationMicrosecondsPerInvocation="3418"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="142" invocations="39" avgMicrosecondsPerInvocation="3641" maxMicrosecondsPerInvocation="36584" standardDeviationMicrosecondsPerInvocation="7565"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="129" invocations="37" avgMicrosecondsPerInvocation="3495" maxMicrosecondsPerInvocation="30080" standardDeviationMicrosecondsPerInvocation="5698"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="113" invocations="38" avgMicrosecondsPerInvocation="2976" maxMicrosecondsPerInvocation="23290" standardDeviationMicrosecondsPerInvocation="5516"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="111" invocations="379" avgMicrosecondsPerInvocation="294" maxMicrosecondsPerInvocation="30359" standardDeviationMicrosecondsPerInvocation="1767"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="102" invocations="37" avgMicrosecondsPerInvocation="2762" maxMicrosecondsPerInvocation="16616" standardDeviationMicrosecondsPerInvocation="3601"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="83" invocations="37" avgMicrosecondsPerInvocation="2266" maxMicrosecondsPerInvocation="14537" standardDeviationMicrosecondsPerInvocation="3432"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="80" invocations="39" avgMicrosecondsPerInvocation="2071" maxMicrosecondsPerInvocation="28638" standardDeviationMicrosecondsPerInvocation="5264"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="76" invocations="60" avgMicrosecondsPerInvocation="1272" maxMicrosecondsPerInvocation="29339" standardDeviationMicrosecondsPerInvocation="4346"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.ExplicitSerialization" totalMilliseconds="74" invocations="39" avgMicrosecondsPerInvocation="1897" maxMicrosecondsPerInvocation="40907" standardDeviationMicrosecondsPerInvocation="7529"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="70" invocations="37" avgMicrosecondsPerInvocation="1909" maxMicrosecondsPerInvocation="21331" standardDeviationMicrosecondsPerInvocation="4352"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="69" invocations="39" avgMicrosecondsPerInvocation="1788" maxMicrosecondsPerInvocation="40419" standardDeviationMicrosecondsPerInvocation="6421"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="67" invocations="37" avgMicrosecondsPerInvocation="1819" maxMicrosecondsPerInvocation="16816" standardDeviationMicrosecondsPerInvocation="4144"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="61" invocations="39" avgMicrosecondsPerInvocation="1583" maxMicrosecondsPerInvocation="33358" standardDeviationMicrosecondsPerInvocation="5366"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

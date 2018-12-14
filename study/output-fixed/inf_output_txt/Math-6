@@ -1,0 +1,19 @@
+No issues found
+No issues found
+No issues found
+Found 1 issue
+
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-6/src/main/java/org/apache/commons/math3/optim/nonlinear/scalar/noderiv/SimplexOptimizer.java:161: error: NULL_DEREFERENCE
+  object `previous` last assigned on line 154 could be null and is dereferenced at line 161.
+  159.                   boolean converged = true;
+  160.                   for (int i = 0; i < simplex.getSize(); i++) {
+  161. >                     PointValuePair prev = previous[i];
+  162.                       converged = converged &&
+  163.                           checker.converged(iteration, prev, simplex.getPoint(i));
+
+Summary of the reports
+
+  NULL_DEREFERENCE: 1
+No issues found
+No issues found
+No issues found

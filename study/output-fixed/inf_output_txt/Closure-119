@@ -1,0 +1,13 @@
+Found 1 issue
+
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-119/src/com/google/javascript/jscomp/GlobalNamespace.java:1029: error: CHECKERS_IMMUTABLE_CAST
+  Method getRefs() returns class com.google.common.collect.ImmutableList but the return type is class java.util.List. Make sure that users of this method do not try to modify the collection.
+  1027.       }
+  1028.   
+  1029. >     List<Ref> getRefs() {
+  1030.         return refs == null ? ImmutableList.<Ref>of() : refs;
+  1031.       }
+
+Summary of the reports
+
+  CHECKERS_IMMUTABLE_CAST: 1

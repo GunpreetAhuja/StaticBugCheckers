@@ -1,0 +1,13 @@
+Found 1 issue
+
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-78/src/com/google/javascript/jscomp/PeepholeFoldConstants.java:1346: error: NULL_DEREFERENCE
+  object `functionName` last assigned on line 1343 could be null and is dereferenced at line 1346.
+  1344.   
+  1345.       if ((arrayNode.getType() != Token.ARRAYLIT) ||
+  1346. >         !functionName.getString().equals("join")) {
+  1347.         return n;
+  1348.       }
+
+Summary of the reports
+
+  NULL_DEREFERENCE: 1

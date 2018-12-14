@@ -1,0 +1,41 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-62/src/main/java/org/apache/commons/math/optimization/univariate/MultiStartUnivariateRealOptimizer.java:81: warning: [MissingOverride] setConvergenceChecker implements method in BaseOptimizer; expected @Override
+    public void setConvergenceChecker(ConvergenceChecker<UnivariateRealPointValuePair> checker) {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void setConvergenceChecker(ConvergenceChecker<UnivariateRealPointValuePair> checker) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-62/src/main/java/org/apache/commons/math/optimization/univariate/MultiStartUnivariateRealOptimizer.java:88: warning: [MissingOverride] getConvergenceChecker implements method in BaseOptimizer; expected @Override
+    public ConvergenceChecker<UnivariateRealPointValuePair> getConvergenceChecker() {
+                                                            ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public ConvergenceChecker<UnivariateRealPointValuePair> getConvergenceChecker() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-62/src/main/java/org/apache/commons/math/optimization/univariate/MultiStartUnivariateRealOptimizer.java:93: warning: [MissingOverride] getMaxEvaluations implements method in BaseOptimizer; expected @Override
+    public int getMaxEvaluations() {
+               ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int getMaxEvaluations() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-62/src/main/java/org/apache/commons/math/optimization/univariate/MultiStartUnivariateRealOptimizer.java:98: warning: [MissingOverride] getEvaluations implements method in BaseOptimizer; expected @Override
+    public int getEvaluations() {
+               ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int getEvaluations() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-62/src/main/java/org/apache/commons/math/optimization/univariate/MultiStartUnivariateRealOptimizer.java:103: warning: [MissingOverride] setMaxEvaluations implements method in BaseOptimizer; expected @Override
+    public void setMaxEvaluations(int maxEvaluations) {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void setMaxEvaluations(int maxEvaluations) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-62/src/main/java/org/apache/commons/math/optimization/univariate/MultiStartUnivariateRealOptimizer.java:142: warning: [MissingOverride] optimize implements method in BaseUnivariateRealOptimizer; expected @Override
+    public UnivariateRealPointValuePair optimize(final FUNC f,
+                                        ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public UnivariateRealPointValuePair optimize(final FUNC f,'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-62/src/main/java/org/apache/commons/math/optimization/univariate/MultiStartUnivariateRealOptimizer.java:150: warning: [MissingOverride] optimize implements method in BaseUnivariateRealOptimizer; expected @Override
+    public UnivariateRealPointValuePair optimize(final FUNC f, final GoalType goal,
+                                        ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public UnivariateRealPointValuePair optimize(final FUNC f, final GoalType goal,'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-62/src/main/java/org/apache/commons/math/optimization/univariate/MultiStartUnivariateRealOptimizer.java:192: warning: [MissingOverride] compare implements method in Comparator; expected @Override
+                public int compare(final UnivariateRealPointValuePair o1,
+                           ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int compare(final UnivariateRealPointValuePair o1,'?
+8 warnings

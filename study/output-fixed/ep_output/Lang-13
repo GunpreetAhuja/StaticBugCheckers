@@ -1,0 +1,5 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-13/src/main/java/org/apache/commons/lang3/SerializationUtils.java:108: warning: [Finally] If you return or throw from a finally, then values returned or thrown from the try-catch block will be ignored. Consider using try-with-resources instead.
+                throw new SerializationException("IOException on closing cloned object data InputStream.", ex);
+                ^
+    (see http://errorprone.info/bugpattern/Finally)
+1 warning

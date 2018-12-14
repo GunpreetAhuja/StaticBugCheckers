@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.1.0" sequence="0" timestamp="1542190413000" analysisTimestamp="1542190415493" release="">
+  <Project projectName="">
+    <Jar>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-23/src/main/java</Jar>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-23/target/classes</AuxClasspathEntry>
+  </Project>
+  <BugInstance type="SF_SWITCH_NO_DEFAULT" priority="2" rank="19" abbrev="SF" category="STYLE" instanceHash="6e3b9b8d0c8ae84ec8e73de532b6d1e2" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Switch statement found where default case is missing</ShortMessage>
+    <LongMessage>Switch statement found in org.apache.commons.lang3.text.ExtendedMessageFormat.parseFormatDescription(String, ParsePosition) where default case is missing</LongMessage>
+    <Class classname="org.apache.commons.lang3.text.ExtendedMessageFormat" primary="true">
+      <SourceLine classname="org.apache.commons.lang3.text.ExtendedMessageFormat" start="92" end="534" sourcefile="ExtendedMessageFormat.java" sourcepath="org/apache/commons/lang3/text/ExtendedMessageFormat.java">
+        <Message>At ExtendedMessageFormat.java:[lines 92-534]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.lang3.text.ExtendedMessageFormat</Message>
+    </Class>
+    <Method classname="org.apache.commons.lang3.text.ExtendedMessageFormat" name="parseFormatDescription" signature="(Ljava/lang/String;Ljava/text/ParsePosition;)Ljava/lang/String;" isStatic="false" primary="true">
+      <SourceLine classname="org.apache.commons.lang3.text.ExtendedMessageFormat" start="374" end="394" startBytecode="0" endBytecode="234" sourcefile="ExtendedMessageFormat.java" sourcepath="org/apache/commons/lang3/text/ExtendedMessageFormat.java"/>
+      <Message>In method org.apache.commons.lang3.text.ExtendedMessageFormat.parseFormatDescription(String, ParsePosition)</Message>
+    </Method>
+    <SourceLine classname="org.apache.commons.lang3.text.ExtendedMessageFormat" primary="true" start="379" end="390" startBytecode="39" endBytecode="103" sourcefile="ExtendedMessageFormat.java" sourcepath="org/apache/commons/lang3/text/ExtendedMessageFormat.java">
+      <Message>At ExtendedMessageFormat.java:[lines 379-390]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="UR_UNINIT_READ_CALLED_FROM_SUPER_CONSTRUCTOR" priority="2" rank="10" abbrev="UR" category="CORRECTNESS" instanceHash="3e64531350e86819b349edff08bab1b1" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Uninitialized read of field method called from constructor of superclass</ShortMessage>
+    <LongMessage>registry isn&apos;t initialized in org.apache.commons.lang3.text.ExtendedMessageFormat.applyPattern(String) when invoked from constructor for superclass</LongMessage>
+    <Class classname="org.apache.commons.lang3.text.ExtendedMessageFormat" primary="true">
+      <SourceLine classname="org.apache.commons.lang3.text.ExtendedMessageFormat" start="92" end="534" sourcefile="ExtendedMessageFormat.java" sourcepath="org/apache/commons/lang3/text/ExtendedMessageFormat.java">
+        <Message>At ExtendedMessageFormat.java:[lines 92-534]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.lang3.text.ExtendedMessageFormat</Message>
+    </Class>
+    <Method classname="org.apache.commons.lang3.text.ExtendedMessageFormat" name="applyPattern" signature="(Ljava/lang/String;)V" isStatic="false" primary="true">
+      <SourceLine classname="org.apache.commons.lang3.text.ExtendedMessageFormat" start="147" end="210" startBytecode="0" endBytecode="844" sourcefile="ExtendedMessageFormat.java" sourcepath="org/apache/commons/lang3/text/ExtendedMessageFormat.java"/>
+      <Message>In method org.apache.commons.lang3.text.ExtendedMessageFormat.applyPattern(String)</Message>
+    </Method>
+    <Field classname="org.apache.commons.lang3.text.ExtendedMessageFormat" name="registry" signature="Ljava/util/Map;" isStatic="false" primary="true">
+      <SourceLine classname="org.apache.commons.lang3.text.ExtendedMessageFormat" sourcefile="ExtendedMessageFormat.java" sourcepath="org/apache/commons/lang3/text/ExtendedMessageFormat.java">
+        <Message>In ExtendedMessageFormat.java</Message>
+      </SourceLine>
+      <Message>Field org.apache.commons.lang3.text.ExtendedMessageFormat.registry</Message>
+    </Field>
+    <Method classname="java.text.MessageFormat" name="&lt;init&gt;" signature="(Ljava/lang/String;)V" isStatic="false" role="METHOD_SUPERCLASS_CONSTRUCTOR">
+      <SourceLine classname="java.text.MessageFormat" start="360" end="363" startBytecode="0" endBytecode="111" sourcefile="MessageFormat.java" sourcepath="java/text/MessageFormat.java"/>
+      <Message>Superclass constructor is new java.text.MessageFormat(String)</Message>
+    </Method>
+    <SourceLine classname="java.text.MessageFormat" start="362" end="362" startBytecode="52" endBytecode="52" sourcefile="MessageFormat.java" sourcepath="java/text/MessageFormat.java" role="SOURCE_LINE_CALLED_FROM_SUPERCLASS_AT">
+      <Message>Call from superclass constructor at MessageFormat.java:[line 362]</Message>
+    </SourceLine>
+    <Method classname="org.apache.commons.lang3.text.ExtendedMessageFormat" name="&lt;init&gt;" signature="(Ljava/lang/String;Ljava/util/Locale;Ljava/util/Map;)V" isStatic="false" role="METHOD_CONSTRUCTOR">
+      <SourceLine classname="org.apache.commons.lang3.text.ExtendedMessageFormat" start="126" end="130" startBytecode="0" endBytecode="61" sourcefile="ExtendedMessageFormat.java" sourcepath="org/apache/commons/lang3/text/ExtendedMessageFormat.java"/>
+      <Message>Constructor is new org.apache.commons.lang3.text.ExtendedMessageFormat(String, Locale, Map)</Message>
+    </Method>
+    <SourceLine classname="org.apache.commons.lang3.text.ExtendedMessageFormat" start="128" end="128" startBytecode="13" endBytecode="13" sourcefile="ExtendedMessageFormat.java" sourcepath="org/apache/commons/lang3/text/ExtendedMessageFormat.java" role="SOURCE_LINE_FIELD_SET_TOO_LATE_AT">
+      <Message>Field set (too late) at ExtendedMessageFormat.java:[line 128]</Message>
+    </SourceLine>
+    <SourceLine classname="org.apache.commons.lang3.text.ExtendedMessageFormat" primary="true" start="147" end="147" startBytecode="1" endBytecode="1" sourcefile="ExtendedMessageFormat.java" sourcepath="org/apache/commons/lang3/text/ExtendedMessageFormat.java">
+      <Message>At ExtendedMessageFormat.java:[line 147]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="CORRECTNESS">
+    <Description>Correctness</Description>
+  </BugCategory>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="UR_UNINIT_READ_CALLED_FROM_SUPER_CONSTRUCTOR" abbrev="UR" category="CORRECTNESS">
+    <ShortDescription>Uninitialized read of field method called from constructor of superclass</ShortDescription>
+    <Details><![CDATA[
+
+  <p> This method is invoked in the constructor of the superclass. At this point,
+    the fields of the class have not yet initialized.</p>
+<p>To make this more concrete, consider the following classes:</p>
+<pre><code>abstract class A {
+    int hashCode;
+    abstract Object getValue();
+
+    A() {
+        hashCode = getValue().hashCode();
+    }
+}
+
+class B extends A {
+    Object value;
+
+    B(Object v) {
+        this.value = v;
+    }
+
+    Object getValue() {
+        return value;
+    }
+}
+</code></pre>
+<p>When a <code>B</code> is constructed,
+the constructor for the <code>A</code> class is invoked
+<em>before</em> the constructor for <code>B</code> sets <code>value</code>.
+Thus, when the constructor for <code>A</code> invokes <code>getValue</code>,
+an uninitialized value is read for <code>value</code>.
+</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="SF_SWITCH_NO_DEFAULT" abbrev="SF" category="STYLE">
+    <ShortDescription>Switch statement found where default case is missing</ShortDescription>
+    <Details><![CDATA[
+
+  <p> This method contains a switch statement where default case is missing.
+  Usually you need to provide a default case.</p>
+  <p>Because the analysis only looks at the generated bytecode, this warning can be incorrect triggered if
+the default case is at the end of the switch statement and the switch statement doesn't contain break statements for other
+cases.
+
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="SF">
+    <Description>Switch case falls through</Description>
+  </BugCode>
+  <BugCode abbrev="UR">
+    <Description>Uninitialized read of field in constructor</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 14 Nov 2018 05:13:33 -0500" total_classes="1" referenced_classes="56" total_bugs="2" total_size="217" num_packages="1" java_version="1.8.0_121" vm_version="25.121-b13" cpu_seconds="9.79" clock_seconds="5.25" peak_mbytes="149.75" alloc_mbytes="1820.50" gc_seconds="0.05" priority_2="2">
+    <FileStats path="org/apache/commons/lang3/text/ExtendedMessageFormat.java" bugCount="2" size="217" bugHash="8c19988c7e7df8c1e5c4a6c285124442"/>
+    <PackageStats package="org.apache.commons.lang3.text" total_bugs="2" total_types="1" total_size="217" priority_2="2">
+      <ClassStats class="org.apache.commons.lang3.text.ExtendedMessageFormat" sourceFile="ExtendedMessageFormat.java" interface="false" size="217" bugs="2" priority_2="2"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="736" invocations="533" avgMicrosecondsPerInvocation="1382" maxMicrosecondsPerInvocation="32867" standardDeviationMicrosecondsPerInvocation="2641"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="639" invocations="528" avgMicrosecondsPerInvocation="1212" maxMicrosecondsPerInvocation="37250" standardDeviationMicrosecondsPerInvocation="3457"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="235" invocations="56" avgMicrosecondsPerInvocation="4202" maxMicrosecondsPerInvocation="39756" standardDeviationMicrosecondsPerInvocation="8617"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="229" invocations="237" avgMicrosecondsPerInvocation="966" maxMicrosecondsPerInvocation="32471" standardDeviationMicrosecondsPerInvocation="2852"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="202" invocations="56" avgMicrosecondsPerInvocation="3610" maxMicrosecondsPerInvocation="35157" standardDeviationMicrosecondsPerInvocation="7576"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="145" invocations="21" avgMicrosecondsPerInvocation="6909" maxMicrosecondsPerInvocation="41186" standardDeviationMicrosecondsPerInvocation="13576"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="142" invocations="21" avgMicrosecondsPerInvocation="6764" maxMicrosecondsPerInvocation="42244" standardDeviationMicrosecondsPerInvocation="10917"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="137" invocations="485" avgMicrosecondsPerInvocation="282" maxMicrosecondsPerInvocation="26947" standardDeviationMicrosecondsPerInvocation="1527"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="109" invocations="21" avgMicrosecondsPerInvocation="5210" maxMicrosecondsPerInvocation="25409" standardDeviationMicrosecondsPerInvocation="7732"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="103" invocations="21" avgMicrosecondsPerInvocation="4927" maxMicrosecondsPerInvocation="25183" standardDeviationMicrosecondsPerInvocation="7185"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="102" invocations="56" avgMicrosecondsPerInvocation="1826" maxMicrosecondsPerInvocation="34368" standardDeviationMicrosecondsPerInvocation="5794"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="97" invocations="21" avgMicrosecondsPerInvocation="4630" maxMicrosecondsPerInvocation="80104" standardDeviationMicrosecondsPerInvocation="16983"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="76" invocations="56" avgMicrosecondsPerInvocation="1357" maxMicrosecondsPerInvocation="24026" standardDeviationMicrosecondsPerInvocation="4223"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="73" invocations="87" avgMicrosecondsPerInvocation="840" maxMicrosecondsPerInvocation="22544" standardDeviationMicrosecondsPerInvocation="2867"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="73" invocations="56" avgMicrosecondsPerInvocation="1303" maxMicrosecondsPerInvocation="30851" standardDeviationMicrosecondsPerInvocation="4357"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="69" invocations="21" avgMicrosecondsPerInvocation="3301" maxMicrosecondsPerInvocation="20071" standardDeviationMicrosecondsPerInvocation="4936"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="68" invocations="56" avgMicrosecondsPerInvocation="1224" maxMicrosecondsPerInvocation="13303" standardDeviationMicrosecondsPerInvocation="3035"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

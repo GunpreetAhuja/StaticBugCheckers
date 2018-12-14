@@ -1,0 +1,81 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-24/src/main/java/org/apache/commons/lang3/math/NumberUtils.java:41: warning: [BoxedPrimitiveConstructor] valueOf or autoboxing provides better time and space performance
+    public static final Long LONG_ZERO = new Long(0L);
+                                         ^
+    (see http://errorprone.info/bugpattern/BoxedPrimitiveConstructor)
+  Did you mean 'public static final Long LONG_ZERO = 0L;'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-24/src/main/java/org/apache/commons/lang3/math/NumberUtils.java:43: warning: [BoxedPrimitiveConstructor] valueOf or autoboxing provides better time and space performance
+    public static final Long LONG_ONE = new Long(1L);
+                                        ^
+    (see http://errorprone.info/bugpattern/BoxedPrimitiveConstructor)
+  Did you mean 'public static final Long LONG_ONE = 1L;'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-24/src/main/java/org/apache/commons/lang3/math/NumberUtils.java:45: warning: [BoxedPrimitiveConstructor] valueOf or autoboxing provides better time and space performance
+    public static final Long LONG_MINUS_ONE = new Long(-1L);
+                                              ^
+    (see http://errorprone.info/bugpattern/BoxedPrimitiveConstructor)
+  Did you mean 'public static final Long LONG_MINUS_ONE = -1L;'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-24/src/main/java/org/apache/commons/lang3/math/NumberUtils.java:47: warning: [BoxedPrimitiveConstructor] valueOf or autoboxing provides better time and space performance
+    public static final Integer INTEGER_ZERO = new Integer(0);
+                                               ^
+    (see http://errorprone.info/bugpattern/BoxedPrimitiveConstructor)
+  Did you mean 'public static final Integer INTEGER_ZERO = 0;'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-24/src/main/java/org/apache/commons/lang3/math/NumberUtils.java:49: warning: [BoxedPrimitiveConstructor] valueOf or autoboxing provides better time and space performance
+    public static final Integer INTEGER_ONE = new Integer(1);
+                                              ^
+    (see http://errorprone.info/bugpattern/BoxedPrimitiveConstructor)
+  Did you mean 'public static final Integer INTEGER_ONE = 1;'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-24/src/main/java/org/apache/commons/lang3/math/NumberUtils.java:51: warning: [BoxedPrimitiveConstructor] valueOf or autoboxing provides better time and space performance
+    public static final Integer INTEGER_MINUS_ONE = new Integer(-1);
+                                                    ^
+    (see http://errorprone.info/bugpattern/BoxedPrimitiveConstructor)
+  Did you mean 'public static final Integer INTEGER_MINUS_ONE = -1;'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-24/src/main/java/org/apache/commons/lang3/math/NumberUtils.java:53: warning: [BoxedPrimitiveConstructor] valueOf or autoboxing provides better time and space performance
+    public static final Short SHORT_ZERO = new Short((short) 0);
+                                           ^
+    (see http://errorprone.info/bugpattern/BoxedPrimitiveConstructor)
+  Did you mean 'public static final Short SHORT_ZERO = (short) 0;'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-24/src/main/java/org/apache/commons/lang3/math/NumberUtils.java:55: warning: [BoxedPrimitiveConstructor] valueOf or autoboxing provides better time and space performance
+    public static final Short SHORT_ONE = new Short((short) 1);
+                                          ^
+    (see http://errorprone.info/bugpattern/BoxedPrimitiveConstructor)
+  Did you mean 'public static final Short SHORT_ONE = (short) 1;'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-24/src/main/java/org/apache/commons/lang3/math/NumberUtils.java:57: warning: [BoxedPrimitiveConstructor] valueOf or autoboxing provides better time and space performance
+    public static final Short SHORT_MINUS_ONE = new Short((short) -1);
+                                                ^
+    (see http://errorprone.info/bugpattern/BoxedPrimitiveConstructor)
+  Did you mean 'public static final Short SHORT_MINUS_ONE = (short) -1;'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-24/src/main/java/org/apache/commons/lang3/math/NumberUtils.java:65: warning: [BoxedPrimitiveConstructor] valueOf or autoboxing provides better time and space performance
+    public static final Double DOUBLE_ZERO = new Double(0.0d);
+                                             ^
+    (see http://errorprone.info/bugpattern/BoxedPrimitiveConstructor)
+  Did you mean 'public static final Double DOUBLE_ZERO = 0.0d;'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-24/src/main/java/org/apache/commons/lang3/math/NumberUtils.java:67: warning: [BoxedPrimitiveConstructor] valueOf or autoboxing provides better time and space performance
+    public static final Double DOUBLE_ONE = new Double(1.0d);
+                                            ^
+    (see http://errorprone.info/bugpattern/BoxedPrimitiveConstructor)
+  Did you mean 'public static final Double DOUBLE_ONE = 1.0d;'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-24/src/main/java/org/apache/commons/lang3/math/NumberUtils.java:69: warning: [BoxedPrimitiveConstructor] valueOf or autoboxing provides better time and space performance
+    public static final Double DOUBLE_MINUS_ONE = new Double(-1.0d);
+                                                  ^
+    (see http://errorprone.info/bugpattern/BoxedPrimitiveConstructor)
+  Did you mean 'public static final Double DOUBLE_MINUS_ONE = -1.0d;'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-24/src/main/java/org/apache/commons/lang3/math/NumberUtils.java:71: warning: [BoxedPrimitiveConstructor] valueOf or autoboxing provides better time and space performance
+    public static final Float FLOAT_ZERO = new Float(0.0f);
+                                           ^
+    (see http://errorprone.info/bugpattern/BoxedPrimitiveConstructor)
+  Did you mean 'public static final Float FLOAT_ZERO = 0.0f;'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-24/src/main/java/org/apache/commons/lang3/math/NumberUtils.java:73: warning: [BoxedPrimitiveConstructor] valueOf or autoboxing provides better time and space performance
+    public static final Float FLOAT_ONE = new Float(1.0f);
+                                          ^
+    (see http://errorprone.info/bugpattern/BoxedPrimitiveConstructor)
+  Did you mean 'public static final Float FLOAT_ONE = 1.0f;'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-24/src/main/java/org/apache/commons/lang3/math/NumberUtils.java:75: warning: [BoxedPrimitiveConstructor] valueOf or autoboxing provides better time and space performance
+    public static final Float FLOAT_MINUS_ONE = new Float(-1.0f);
+                                                ^
+    (see http://errorprone.info/bugpattern/BoxedPrimitiveConstructor)
+  Did you mean 'public static final Float FLOAT_MINUS_ONE = -1.0f;'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-24/src/main/java/org/apache/commons/lang3/math/NumberUtils.java:512: warning: [OperatorPrecedence] Use grouping parenthesis to make the operator precedence explicit
+                        && (numeric.charAt(0) == '-' && isDigits(numeric.substring(1)) || isDigits(numeric))) {
+                                                     ^
+    (see http://errorprone.info/bugpattern/OperatorPrecedence)
+  Did you mean '&& ((numeric.charAt(0) == '-' && isDigits(numeric.substring(1))) || isDigits(numeric))) {'?
+16 warnings

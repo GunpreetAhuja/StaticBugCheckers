@@ -1,0 +1,16 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Mockito-23/src/org/mockito/internal/stubbing/defaultanswers/ReturnsDeepStubs.java:47: warning: [MissingOverride] answer implements method in Answer; expected @Override
+    public Object answer(InvocationOnMock invocation) throws Throwable {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Object answer(InvocationOnMock invocation) throws Throwable {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Mockito-23/src/org/mockito/internal/stubbing/defaultanswers/ReturnsDeepStubs.java:128: warning: [MissingOverride] answer implements method in Answer; expected @Override
+            public Object answer(InvocationOnMock invocation) throws Throwable {
+                          ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Object answer(InvocationOnMock invocation) throws Throwable {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Mockito-23/src/org/mockito/internal/stubbing/defaultanswers/ReturnsDeepStubs.java:136: warning: [ClassCanBeStatic] Inner class is non-static but does not reference enclosing class
+	abstract class SerializableAnswer implements Answer<Object>, Serializable {
+	         ^
+    (see http://errorprone.info/bugpattern/ClassCanBeStatic)
+  Did you mean 'abstract static class SerializableAnswer implements Answer<Object>, Serializable {'?
+3 warnings

@@ -1,0 +1,13 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Mockito-6/src/org/mockito/Matchers.java:243: warning: [TypeParameterUnusedInFormals] Declaring a type parameter that is only used in the return type is a misuse of generics: operations on the type parameter are unchecked, it hides unsafe casts at invocations of the method, and it interacts badly with method overload resolution.
+    public static <T> T anyObject() {
+                        ^
+    (see http://errorprone.info/bugpattern/TypeParameterUnusedInFormals)
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Mockito-6/src/org/mockito/Matchers.java:270: warning: [TypeParameterUnusedInFormals] Declaring a type parameter that is only used in the return type is a misuse of generics: operations on the type parameter are unchecked, it hides unsafe casts at invocations of the method, and it interacts badly with method overload resolution.
+    public static <T> T anyVararg() {
+                        ^
+    (see http://errorprone.info/bugpattern/TypeParameterUnusedInFormals)
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Mockito-6/src/org/mockito/Matchers.java:308: warning: [TypeParameterUnusedInFormals] Declaring a type parameter that is only used in the return type is a misuse of generics: operations on the type parameter are unchecked, it hides unsafe casts at invocations of the method, and it interacts badly with method overload resolution.
+    public static <T> T any() {
+                        ^
+    (see http://errorprone.info/bugpattern/TypeParameterUnusedInFormals)
+3 warnings

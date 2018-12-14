@@ -1,0 +1,13 @@
+Found 1 issue
+
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Chart-19/source/org/jfree/chart/plot/CategoryPlot.java:2871: error: NULL_DEREFERENCE
+  object `currentDataset` last assigned on line 2861 could be null and is dereferenced at line 2871.
+  2869.               CategoryItemRendererState state = renderer.initialise(g2, dataArea,
+  2870.                       this, index, info);
+  2871. >             int columnCount = currentDataset.getColumnCount();
+  2872.               int rowCount = currentDataset.getRowCount();
+  2873.               int passCount = renderer.getPassCount();
+
+Summary of the reports
+
+  NULL_DEREFERENCE: 1

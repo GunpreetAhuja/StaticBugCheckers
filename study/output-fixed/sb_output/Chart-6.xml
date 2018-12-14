@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.1.0" sequence="0" timestamp="1542189609000" analysisTimestamp="1542189611833" release="">
+  <Project projectName="">
+    <Jar>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Chart-6/source</Jar>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Chart-6/build</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Chart-6/lib/servlet.jar</AuxClasspathEntry>
+  </Project>
+  <BugInstance type="EQ_OVERRIDING_EQUALS_NOT_SYMMETRIC" priority="2" rank="8" abbrev="Eq" category="CORRECTNESS" instanceHash="1c54d841563c9dc819047812e015c830" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>equals method overrides equals in superclass and may not be symmetric</ShortMessage>
+    <LongMessage>org.jfree.chart.util.ShapeList overrides equals in AbstractObjectList and may not be symmetric</LongMessage>
+    <Class classname="org.jfree.chart.util.ShapeList" primary="true">
+      <SourceLine classname="org.jfree.chart.util.ShapeList" start="59" end="176" sourcefile="ShapeList.java" sourcepath="org/jfree/chart/util/ShapeList.java">
+        <Message>At ShapeList.java:[lines 59-176]</Message>
+      </SourceLine>
+      <Message>In class org.jfree.chart.util.ShapeList</Message>
+    </Class>
+    <Method classname="org.jfree.chart.util.ShapeList" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false" primary="true">
+      <SourceLine classname="org.jfree.chart.util.ShapeList" start="105" end="118" startBytecode="0" endBytecode="154" sourcefile="ShapeList.java" sourcepath="org/jfree/chart/util/ShapeList.java"/>
+      <Message>In method org.jfree.chart.util.ShapeList.equals(Object)</Message>
+    </Method>
+    <Method classname="org.jfree.chart.util.AbstractObjectList" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false" role="METHOD_OVERRIDDEN">
+      <SourceLine classname="org.jfree.chart.util.AbstractObjectList" start="178" end="197" startBytecode="0" endBytecode="198" sourcefile="AbstractObjectList.java" sourcepath="org/jfree/chart/util/AbstractObjectList.java"/>
+      <Message>Overrides org.jfree.chart.util.AbstractObjectList.equals(Object)</Message>
+    </Method>
+    <SourceLine classname="org.jfree.chart.util.ShapeList" start="105" end="118" startBytecode="0" endBytecode="154" sourcefile="ShapeList.java" sourcepath="org/jfree/chart/util/ShapeList.java" synthetic="true">
+      <Message>At ShapeList.java:[lines 105-118]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="CORRECTNESS">
+    <Description>Correctness</Description>
+  </BugCategory>
+  <BugPattern type="EQ_OVERRIDING_EQUALS_NOT_SYMMETRIC" abbrev="Eq" category="CORRECTNESS">
+    <ShortDescription>equals method overrides equals in superclass and may not be symmetric</ShortDescription>
+    <Details><![CDATA[
+
+  <p> This class defines an equals method that overrides an equals method in a superclass. Both equals methods
+methods use <code>instanceof</code> in the determination of whether two objects are equal. This is fraught with peril,
+since it is important that the equals method is symmetrical (in other words, <code>a.equals(b) == b.equals(a)</code>).
+If B is a subtype of A, and A's equals method checks that the argument is an instanceof A, and B's equals method
+checks that the argument is an instanceof B, it is quite likely that the equivalence relation defined by these
+methods is not symmetric.
+</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="Eq">
+    <Description>Problems with implementation of equals()</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 14 Nov 2018 05:00:09 -0500" total_classes="1" referenced_classes="24" total_bugs="1" total_size="43" num_packages="1" java_version="1.8.0_121" vm_version="25.121-b13" cpu_seconds="7.12" clock_seconds="3.74" peak_mbytes="109.75" alloc_mbytes="1820.50" gc_seconds="0.05" priority_2="1">
+    <FileStats path="org/jfree/chart/util/ShapeList.java" bugCount="1" size="43" bugHash="691e37aac0ba347cf9d83ec5166b8c06"/>
+    <PackageStats package="org.jfree.chart.util" total_bugs="1" total_types="1" total_size="43" priority_2="1">
+      <ClassStats class="org.jfree.chart.util.ShapeList" sourceFile="ShapeList.java" interface="false" size="43" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="628" invocations="456" avgMicrosecondsPerInvocation="1377" maxMicrosecondsPerInvocation="30089" standardDeviationMicrosecondsPerInvocation="3704"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="598" invocations="460" avgMicrosecondsPerInvocation="1301" maxMicrosecondsPerInvocation="24910" standardDeviationMicrosecondsPerInvocation="2601"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="191" invocations="24" avgMicrosecondsPerInvocation="7987" maxMicrosecondsPerInvocation="45227" standardDeviationMicrosecondsPerInvocation="12112"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="121" invocations="133" avgMicrosecondsPerInvocation="910" maxMicrosecondsPerInvocation="19952" standardDeviationMicrosecondsPerInvocation="2330"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="120" invocations="417" avgMicrosecondsPerInvocation="288" maxMicrosecondsPerInvocation="21810" standardDeviationMicrosecondsPerInvocation="1537"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="94" invocations="24" avgMicrosecondsPerInvocation="3950" maxMicrosecondsPerInvocation="28349" standardDeviationMicrosecondsPerInvocation="6200"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="92" invocations="24" avgMicrosecondsPerInvocation="3869" maxMicrosecondsPerInvocation="29756" standardDeviationMicrosecondsPerInvocation="7848"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="91" invocations="47" avgMicrosecondsPerInvocation="1940" maxMicrosecondsPerInvocation="60696" standardDeviationMicrosecondsPerInvocation="8860"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.EqualsOperandShouldHaveClassCompatibleWithThis" totalMilliseconds="65" invocations="24" avgMicrosecondsPerInvocation="2713" maxMicrosecondsPerInvocation="35853" standardDeviationMicrosecondsPerInvocation="7983"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="49" invocations="8" avgMicrosecondsPerInvocation="6192" maxMicrosecondsPerInvocation="47184" standardDeviationMicrosecondsPerInvocation="15496"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

@@ -1,0 +1,2 @@
+Note: /Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-20/src/main/java/org/apache/commons/lang3/StringUtils.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.

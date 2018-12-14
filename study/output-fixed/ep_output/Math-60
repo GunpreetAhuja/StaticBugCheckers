@@ -1,0 +1,18 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-60/src/main/java/org/apache/commons/math/distribution/NormalDistributionImpl.java:94: warning: [MissingOverride] getMean implements method in NormalDistribution; expected @Override
+    public double getMean() {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double getMean() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-60/src/main/java/org/apache/commons/math/distribution/NormalDistributionImpl.java:101: warning: [MissingOverride] getStandardDeviation implements method in NormalDistribution; expected @Override
+    public double getStandardDeviation() {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double getStandardDeviation() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-60/src/main/java/org/apache/commons/math/distribution/NormalDistributionImpl.java:124: warning: [MissingOverride] cumulativeProbability implements method in Distribution; expected @Override
+    public double cumulativeProbability(double x) throws MathException {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double cumulativeProbability(double x) throws MathException {'?
+Note: /Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-60/src/main/java/org/apache/commons/math/distribution/NormalDistributionImpl.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+3 warnings

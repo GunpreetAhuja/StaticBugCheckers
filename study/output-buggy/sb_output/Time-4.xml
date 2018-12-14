@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.1.0" sequence="0" timestamp="1542187078000" analysisTimestamp="1542187080613" release="">
+  <Project projectName="">
+    <Jar>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-4/src/main/java</Jar>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-4/target/classes</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/framework/projects/Time/lib/org/joda/joda-convert/1.2/joda-convert-1.2.jar</AuxClasspathEntry>
+  </Project>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE" instanceHash="7dea6546d800d720a55e91b1a153a4ee" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="374">
+    <ShortMessage>May expose internal representation by incorporating reference to mutable object</ShortMessage>
+    <LongMessage>new org.joda.time.Partial(DateTimeFieldType[], int[], Chronology) may expose internal representation by storing an externally mutable object into Partial.iTypes</LongMessage>
+    <Class classname="org.joda.time.Partial" primary="true">
+      <SourceLine classname="org.joda.time.Partial" start="103" end="804" sourcefile="Partial.java" sourcepath="org/joda/time/Partial.java">
+        <Message>At Partial.java:[lines 103-804]</Message>
+      </SourceLine>
+      <Message>In class org.joda.time.Partial</Message>
+    </Class>
+    <Method classname="org.joda.time.Partial" name="&lt;init&gt;" signature="([Lorg/joda/time/DateTimeFieldType;[ILorg/joda/time/Chronology;)V" isStatic="false" primary="true">
+      <SourceLine classname="org.joda.time.Partial" start="190" end="249" startBytecode="0" endBytecode="806" sourcefile="Partial.java" sourcepath="org/joda/time/Partial.java"/>
+      <Message>In method new org.joda.time.Partial(DateTimeFieldType[], int[], Chronology)</Message>
+    </Method>
+    <Field classname="org.joda.time.Partial" name="iTypes" signature="[Lorg/joda/time/DateTimeFieldType;" isStatic="false" primary="true">
+      <SourceLine classname="org.joda.time.Partial" sourcefile="Partial.java" sourcepath="org/joda/time/Partial.java">
+        <Message>In Partial.java</Message>
+      </SourceLine>
+      <Message>Field org.joda.time.Partial.iTypes</Message>
+    </Field>
+    <LocalVariable name="?" register="1" pc="69" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="org.joda.time.Partial" primary="true" start="203" end="203" startBytecode="69" endBytecode="69" sourcefile="Partial.java" sourcepath="org/joda/time/Partial.java">
+      <Message>At Partial.java:[line 203]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE" instanceHash="ec33957c98b60b058790e650aa22fd83" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="374">
+    <ShortMessage>May expose internal representation by incorporating reference to mutable object</ShortMessage>
+    <LongMessage>new org.joda.time.Partial(DateTimeFieldType[], int[], Chronology) may expose internal representation by storing an externally mutable object into Partial.iValues</LongMessage>
+    <Class classname="org.joda.time.Partial" primary="true">
+      <SourceLine classname="org.joda.time.Partial" start="103" end="804" sourcefile="Partial.java" sourcepath="org/joda/time/Partial.java">
+        <Message>At Partial.java:[lines 103-804]</Message>
+      </SourceLine>
+      <Message>In class org.joda.time.Partial</Message>
+    </Class>
+    <Method classname="org.joda.time.Partial" name="&lt;init&gt;" signature="([Lorg/joda/time/DateTimeFieldType;[ILorg/joda/time/Chronology;)V" isStatic="false" primary="true">
+      <SourceLine classname="org.joda.time.Partial" start="190" end="249" startBytecode="0" endBytecode="806" sourcefile="Partial.java" sourcepath="org/joda/time/Partial.java"/>
+      <Message>In method new org.joda.time.Partial(DateTimeFieldType[], int[], Chronology)</Message>
+    </Method>
+    <Field classname="org.joda.time.Partial" name="iValues" signature="[I" isStatic="false" primary="true">
+      <SourceLine classname="org.joda.time.Partial" sourcefile="Partial.java" sourcepath="org/joda/time/Partial.java">
+        <Message>In Partial.java</Message>
+      </SourceLine>
+      <Message>Field org.joda.time.Partial.iValues</Message>
+    </Field>
+    <LocalVariable name="?" register="2" pc="74" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 2</Message>
+    </LocalVariable>
+    <SourceLine classname="org.joda.time.Partial" primary="true" start="204" end="204" startBytecode="74" endBytecode="74" sourcefile="Partial.java" sourcepath="org/joda/time/Partial.java">
+      <Message>At Partial.java:[line 204]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="MALICIOUS_CODE">
+    <Description>Malicious code vulnerability</Description>
+  </BugCategory>
+  <BugPattern type="EI_EXPOSE_REP2" abbrev="EI2" category="MALICIOUS_CODE" cweid="374">
+    <ShortDescription>May expose internal representation by incorporating reference to mutable object</ShortDescription>
+    <Details><![CDATA[
+
+  <p> This code stores a reference to an externally mutable object into the
+  internal representation of the object.&nbsp;
+   If instances
+   are accessed by untrusted code, and unchecked changes to
+   the mutable object would compromise security or other
+   important properties, you will need to do something different.
+  Storing a copy of the object is better approach in many situations.</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="EI2">
+    <Description>Storing reference to mutable object</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 14 Nov 2018 04:17:58 -0500" total_classes="2" referenced_classes="36" total_bugs="2" total_size="308" num_packages="1" java_version="1.8.0_121" vm_version="25.121-b13" cpu_seconds="8.74" clock_seconds="4.93" peak_mbytes="182.59" alloc_mbytes="1820.50" gc_seconds="0.06" priority_2="2">
+    <FileStats path="org/joda/time/Partial.java" bugCount="2" size="308" bugHash="414521290625556b28dae620b44dfd26"/>
+    <PackageStats package="org.joda.time" total_bugs="2" total_types="2" total_size="308" priority_2="2">
+      <ClassStats class="org.joda.time.Partial" sourceFile="Partial.java" interface="false" size="269" bugs="2" priority_2="2"/>
+      <ClassStats class="org.joda.time.Partial$Property" sourceFile="Partial.java" interface="false" size="39" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="673" invocations="482" avgMicrosecondsPerInvocation="1398" maxMicrosecondsPerInvocation="19692" standardDeviationMicrosecondsPerInvocation="2446"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="657" invocations="478" avgMicrosecondsPerInvocation="1375" maxMicrosecondsPerInvocation="37884" standardDeviationMicrosecondsPerInvocation="4173"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="211" invocations="33" avgMicrosecondsPerInvocation="6410" maxMicrosecondsPerInvocation="44836" standardDeviationMicrosecondsPerInvocation="10615"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="169" invocations="34" avgMicrosecondsPerInvocation="4997" maxMicrosecondsPerInvocation="49310" standardDeviationMicrosecondsPerInvocation="11653"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="169" invocations="36" avgMicrosecondsPerInvocation="4717" maxMicrosecondsPerInvocation="39069" standardDeviationMicrosecondsPerInvocation="7795"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="160" invocations="444" avgMicrosecondsPerInvocation="361" maxMicrosecondsPerInvocation="30856" standardDeviationMicrosecondsPerInvocation="2190"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="156" invocations="33" avgMicrosecondsPerInvocation="4755" maxMicrosecondsPerInvocation="146931" standardDeviationMicrosecondsPerInvocation="25136"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="132" invocations="35" avgMicrosecondsPerInvocation="3792" maxMicrosecondsPerInvocation="34255" standardDeviationMicrosecondsPerInvocation="7597"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="132" invocations="36" avgMicrosecondsPerInvocation="3672" maxMicrosecondsPerInvocation="33744" standardDeviationMicrosecondsPerInvocation="6635"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="128" invocations="33" avgMicrosecondsPerInvocation="3900" maxMicrosecondsPerInvocation="42324" standardDeviationMicrosecondsPerInvocation="9014"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="125" invocations="33" avgMicrosecondsPerInvocation="3805" maxMicrosecondsPerInvocation="50398" standardDeviationMicrosecondsPerInvocation="9809"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="103" invocations="190" avgMicrosecondsPerInvocation="543" maxMicrosecondsPerInvocation="11944" standardDeviationMicrosecondsPerInvocation="1325"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="102" invocations="33" avgMicrosecondsPerInvocation="3098" maxMicrosecondsPerInvocation="29787" standardDeviationMicrosecondsPerInvocation="6215"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="100" invocations="66" avgMicrosecondsPerInvocation="1518" maxMicrosecondsPerInvocation="49345" standardDeviationMicrosecondsPerInvocation="6708"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.LiveLocalStoreDataflowFactory" totalMilliseconds="60" invocations="33" avgMicrosecondsPerInvocation="1829" maxMicrosecondsPerInvocation="30974" standardDeviationMicrosecondsPerInvocation="5618"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

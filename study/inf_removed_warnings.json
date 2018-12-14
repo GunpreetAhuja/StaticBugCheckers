@@ -1,0 +1,129 @@
+[
+    {
+        "      Proj": "Chart-1",
+        "     Class": "org.jfree.chart.renderer.category.AbstractCategoryItemRenderer",
+        " Bug_Class": "PROVER",
+        "      Kind": "ERROR",
+        "  Bug_Type": "NULL_DEREFERENCE",
+        "       Msg": "object `dataset` last assigned on line 1796 could be null and is dereferenced at line 1800.",
+        "  Severity": "HIGH",
+        "Visibility": "user",
+        "     Lines": [
+            1792,
+            1795,
+            1796,
+            1797,
+            1800,
+            1790,
+            1791
+        ],
+        " Procedure": "LegendItemCollection AbstractCategoryItemRenderer.getLegendItems()"
+    },
+    {
+        "      Proj": "Chart-4",
+        "     Class": "org.jfree.chart.plot.XYPlot",
+        " Bug_Class": "PROVER",
+        "      Kind": "ERROR",
+        "  Bug_Type": "NULL_DEREFERENCE",
+        "       Msg": "object `r` last assigned on line 4473 could be null and is dereferenced at line 4493.",
+        "  Severity": "HIGH",
+        "Visibility": "user",
+        "     Lines": [
+            4480,
+            4451,
+            4452,
+            4425,
+            4427,
+            4428,
+            4493,
+            4429,
+            4430,
+            4433,
+            4434,
+            4469,
+            4470,
+            4471,
+            4472,
+            4473,
+            4474,
+            4475,
+            4479
+        ],
+        " Procedure": "Range XYPlot.getDataRange(ValueAxis)"
+    },
+    {
+        "      Proj": "Closure-82",
+        "     Class": "com.googlescript.rhino.jstype.JSType",
+        " Bug_Class": "PROVER",
+        "      Kind": "ERROR",
+        "  Bug_Type": "NULL_DEREFERENCE",
+        "       Msg": "object returned by `testForEquality(that)` could be null and is dereferenced at line 496.",
+        "  Severity": "HIGH",
+        "Visibility": "user",
+        "     Lines": [
+            496,
+            495
+        ],
+        " Procedure": "boolean JSType.canTestForEqualityWith(JSType)"
+    },
+    {
+        "      Proj": "Closure-82",
+        "     Class": "com.googlescript.rhino.jstype.JSType",
+        " Bug_Class": "PROVER",
+        "      Kind": "ERROR",
+        "  Bug_Type": "NULL_DEREFERENCE",
+        "       Msg": "object returned by `testForEquality(that)` could be null and is dereferenced at line 748.",
+        "  Severity": "HIGH",
+        "Visibility": "user",
+        "     Lines": [
+            748,
+            740,
+            742
+        ],
+        " Procedure": "JSType$TypePair JSType.getTypesUnderEquality(JSType)"
+    },
+    {
+        "      Proj": "Closure-82",
+        "     Class": "com.googlescript.rhino.jstype.JSType",
+        " Bug_Class": "PROVER",
+        "      Kind": "ERROR",
+        "  Bug_Type": "NULL_DEREFERENCE",
+        "       Msg": "object returned by `testForEquality(that)` could be null and is dereferenced at line 781.",
+        "  Severity": "HIGH",
+        "Visibility": "user",
+        "     Lines": [
+            773,
+            781,
+            775
+        ],
+        " Procedure": "JSType$TypePair JSType.getTypesUnderInequality(JSType)"
+    },
+    {
+        "      Proj": "Math-6",
+        "     Class": "",
+        " Bug_Class": "",
+        "      Kind": "",
+        "  Bug_Type": "NO_WARNING",
+        "       Msg": "",
+        "  Severity": "",
+        "Visibility": "",
+        "     Lines": "",
+        " Procedure": ""
+    },
+    {
+        "      Proj": "Math-83",
+        "     Class": "org.apache.commons.math.optimization.linear.SimplexTableau",
+        " Bug_Class": "PROVER",
+        "      Kind": "ERROR",
+        "  Bug_Type": "NULL_DEREFERENCE",
+        "       Msg": "object returned by `getBasicRow(this,(getArtificialVariableOffset()+artificialVar))` could be null and is dereferenced at line 249.",
+        "  Severity": "HIGH",
+        "Visibility": "user",
+        "     Lines": [
+            248,
+            249,
+            247
+        ],
+        " Procedure": "void SimplexTableau.initialize()"
+    }
+]

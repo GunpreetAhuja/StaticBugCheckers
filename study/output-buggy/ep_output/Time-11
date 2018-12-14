@@ -1,0 +1,25 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-11/src/main/java/org/joda/time/tz/ZoneInfoCompiler.java:369: warning: [DefaultCharset] Implicit use of the platform default charset, which can result in e.g. non-ASCII characters being silently replaced with '?' in many environments
+                BufferedReader in = new BufferedReader(new FileReader(sources[i]));
+                                                       ^
+    (see http://errorprone.info/bugpattern/DefaultCharset)
+  Did you mean 'BufferedReader in = Files.newBufferedReader(sources[i].toPath(), UTF_8);' or 'BufferedReader in = Files.newBufferedReader(sources[i].toPath(), Charset.defaultCharset());'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-11/src/main/java/org/joda/time/tz/ZoneInfoCompiler.java:634: warning: [MissingOverride] toString overrides method in Object; expected @Override
+        public String toString() {
+                      ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public String toString() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-11/src/main/java/org/joda/time/tz/ZoneInfoCompiler.java:701: warning: [MissingOverride] toString overrides method in Object; expected @Override
+        public String toString() {
+                      ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public String toString() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-11/src/main/java/org/joda/time/tz/ZoneInfoCompiler.java:793: warning: [AmbiguousMethodReference] This method's reference is ambiguous, its name and functional interface type are the same as: addToBuilder(Zone, DateTimeZoneBuilder, Map<String, RuleSet>)
+        public void addToBuilder(DateTimeZoneBuilder builder, Map<String, RuleSet> ruleSets) {
+                    ^
+    (see http://errorprone.info/bugpattern/AmbiguousMethodReference)
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-11/src/main/java/org/joda/time/tz/ZoneInfoCompiler.java:830: warning: [MissingOverride] toString overrides method in Object; expected @Override
+        public String toString() {
+                      ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public String toString() {'?
+5 warnings

@@ -1,0 +1,21 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-64/src/java/org/apache/commons/lang/enums/ValuedEnum.java:204: warning: non-varargs call of varargs method with inexact argument type for last parameter;
+            Method mth = other.getClass().getMethod("getValue", null);
+                                                                ^
+  cast to Class<?> for a varargs call
+  cast to Class<?>[] for a non-varargs call and to suppress this warning
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-64/src/java/org/apache/commons/lang/enums/ValuedEnum.java:205: warning: non-varargs call of varargs method with inexact argument type for last parameter;
+            Integer value = (Integer) mth.invoke(other, null);
+                                                        ^
+  cast to Object for a varargs call
+  cast to Object[] for a non-varargs call and to suppress this warning
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-64/src/java/org/apache/commons/lang/enums/ValuedEnum.java:182: warning: [MissingOverride] compareTo overrides method in Enum; expected @Override
+    public int compareTo(Object other) {
+               ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int compareTo(Object other) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-64/src/java/org/apache/commons/lang/enums/ValuedEnum.java:224: warning: [MissingOverride] toString overrides method in Enum; expected @Override
+    public String toString() {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public String toString() {'?
+4 warnings

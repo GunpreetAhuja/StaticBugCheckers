@@ -1,0 +1,51 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-67/src/com/google/javascript/jscomp/AnalyzePrototypeProperties.java:65: warning: [MutableConstantField] Constant field declarations should use the immutable type (such as ImmutableList) instead of the general collection interface type (such as List)
+  private static final Set<String> IMPLICITLY_USED_PROPERTIES =
+                          ^
+    (see http://errorprone.info/bugpattern/MutableConstantField)
+  Did you mean 'private static final ImmutableSet<String> IMPLICITLY_USED_PROPERTIES ='?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-67/src/com/google/javascript/jscomp/AnalyzePrototypeProperties.java:145: warning: [MissingOverride] process implements method in CompilerPass; expected @Override
+  public void process(Node externRoot, Node root) {
+              ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void process(Node externRoot, Node root) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-67/src/com/google/javascript/jscomp/AnalyzePrototypeProperties.java:205: warning: [MissingOverride] shouldTraverse implements method in Callback; expected @Override
+    public boolean shouldTraverse(NodeTraversal t, Node n, Node parent) {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public boolean shouldTraverse(NodeTraversal t, Node n, Node parent) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-67/src/com/google/javascript/jscomp/AnalyzePrototypeProperties.java:220: warning: [MissingOverride] visit implements method in Callback; expected @Override
+    public void visit(NodeTraversal t, Node n, Node parent) {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void visit(NodeTraversal t, Node n, Node parent) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-67/src/com/google/javascript/jscomp/AnalyzePrototypeProperties.java:310: warning: [OperatorPrecedence] Use grouping parenthesis to make the operator precedence explicit
+           n.getType() == Token.FUNCTION &&
+                                         ^
+    (see http://errorprone.info/bugpattern/OperatorPrecedence)
+  Did you mean '(n.getType() == Token.FUNCTION &&'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-67/src/com/google/javascript/jscomp/AnalyzePrototypeProperties.java:347: warning: [OperatorPrecedence] Use grouping parenthesis to make the operator precedence explicit
+          firstChild != null &&
+                             ^
+    (see http://errorprone.info/bugpattern/OperatorPrecedence)
+  Did you mean '(firstChild != null &&'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-67/src/com/google/javascript/jscomp/AnalyzePrototypeProperties.java:411: warning: [MissingOverride] visit implements method in Callback; expected @Override
+    public void visit(NodeTraversal t, Node n, Node parent) {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void visit(NodeTraversal t, Node n, Node parent) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-67/src/com/google/javascript/jscomp/AnalyzePrototypeProperties.java:421: warning: [MissingOverride] traverseEdge implements method in EdgeCallback; expected @Override
+    public boolean traverseEdge(NameInfo start, JSModule edge, NameInfo dest) {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public boolean traverseEdge(NameInfo start, JSModule edge, NameInfo dest) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-67/src/com/google/javascript/jscomp/AnalyzePrototypeProperties.java:462: warning: [ClassCanBeStatic] Inner class is non-static but does not reference enclosing class
+   class GlobalFunction implements Symbol {
+   ^
+    (see http://errorprone.info/bugpattern/ClassCanBeStatic)
+  Did you mean 'static class GlobalFunction implements Symbol {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-67/src/com/google/javascript/jscomp/AnalyzePrototypeProperties.java:605: warning: [ClassCanBeStatic] Inner class is non-static but does not reference enclosing class
+  private class NameContext {
+          ^
+    (see http://errorprone.info/bugpattern/ClassCanBeStatic)
+  Did you mean 'private static class NameContext {'?
+10 warnings

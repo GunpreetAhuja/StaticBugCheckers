@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.1.0" sequence="0" timestamp="1542189654000" analysisTimestamp="1542189657985" release="">
+  <Project projectName="">
+    <Jar>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-103/src</Jar>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-103/build/classes</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-103/lib/ant_deploy.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-103/lib/google_common_deploy.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-103/lib/hamcrest-core-1.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-103/lib/junit4-core.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-103/lib/junit4-legacy.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-103/lib/libtrunk_rhino_parser_jarjared.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-103/lib/protobuf_deploy.jar</AuxClasspathEntry>
+  </Project>
+  <BugInstance type="SF_SWITCH_NO_DEFAULT" priority="2" rank="19" abbrev="SF" category="STYLE" instanceHash="a20ce8776ac0e9a699fd547e848d8440" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Switch statement found where default case is missing</ShortMessage>
+    <LongMessage>Switch statement found in com.google.javascript.jscomp.ControlFlowAnalysis.shouldTraverse(NodeTraversal, Node, Node) where default case is missing</LongMessage>
+    <Class classname="com.google.javascript.jscomp.ControlFlowAnalysis" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.ControlFlowAnalysis" start="42" end="936" sourcefile="ControlFlowAnalysis.java" sourcepath="com/google/javascript/jscomp/ControlFlowAnalysis.java">
+        <Message>At ControlFlowAnalysis.java:[lines 42-936]</Message>
+      </SourceLine>
+      <Message>In class com.google.javascript.jscomp.ControlFlowAnalysis</Message>
+    </Class>
+    <Method classname="com.google.javascript.jscomp.ControlFlowAnalysis" name="shouldTraverse" signature="(Lcom/google/javascript/jscomp/NodeTraversal;Lcom/google/javascript/rhino/Node;Lcom/google/javascript/rhino/Node;)Z" isStatic="false" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.ControlFlowAnalysis" start="216" end="287" startBytecode="0" endBytecode="525" sourcefile="ControlFlowAnalysis.java" sourcepath="com/google/javascript/jscomp/ControlFlowAnalysis.java"/>
+      <Message>In method com.google.javascript.jscomp.ControlFlowAnalysis.shouldTraverse(NodeTraversal, Node, Node)</Message>
+    </Method>
+    <SourceLine classname="com.google.javascript.jscomp.ControlFlowAnalysis" primary="true" start="247" end="283" startBytecode="113" endBytecode="382" sourcefile="ControlFlowAnalysis.java" sourcepath="com/google/javascript/jscomp/ControlFlowAnalysis.java">
+      <Message>At ControlFlowAnalysis.java:[lines 247-283]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" instanceHash="3e31cf3e4984ecc5b25b0ab26bd3dfe7" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Dead store to local variable</ShortMessage>
+    <LongMessage>Dead store to $L3 in com.google.javascript.jscomp.DisambiguateProperties.process(Node, Node)</LongMessage>
+    <Class classname="com.google.javascript.jscomp.DisambiguateProperties" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.DisambiguateProperties" start="77" end="552" sourcefile="DisambiguateProperties.java" sourcepath="com/google/javascript/jscomp/DisambiguateProperties.java">
+        <Message>At DisambiguateProperties.java:[lines 77-552]</Message>
+      </SourceLine>
+      <Message>In class com.google.javascript.jscomp.DisambiguateProperties</Message>
+    </Class>
+    <Method classname="com.google.javascript.jscomp.DisambiguateProperties" name="process" signature="(Lcom/google/javascript/rhino/Node;Lcom/google/javascript/rhino/Node;)V" isStatic="false" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.DisambiguateProperties" start="279" end="288" startBytecode="0" endBytecode="46" sourcefile="DisambiguateProperties.java" sourcepath="com/google/javascript/jscomp/DisambiguateProperties.java"/>
+      <Message>In method com.google.javascript.jscomp.DisambiguateProperties.process(Node, Node)</Message>
+    </Method>
+    <LocalVariable name="?" register="3" pc="67" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 3</Message>
+    </LocalVariable>
+    <SourceLine classname="com.google.javascript.jscomp.DisambiguateProperties" primary="true" start="284" end="284" startBytecode="66" endBytecode="66" sourcefile="DisambiguateProperties.java" sourcepath="com/google/javascript/jscomp/DisambiguateProperties.java">
+      <Message>At DisambiguateProperties.java:[line 284]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.TWO_STORES_MULTIPLE_LOADS" value="true"/>
+  </BugInstance>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="DLS_DEAD_LOCAL_STORE" abbrev="DLS" category="STYLE">
+    <ShortDescription>Dead store to local variable</ShortDescription>
+    <Details><![CDATA[
+
+<p>
+This instruction assigns a value to a local variable,
+but the value is not read or used in any subsequent instruction.
+Often, this indicates an error, because the value computed is never
+used.
+</p>
+<p>
+Note that Sun's javac compiler often generates dead stores for
+final local variables.  Because SpotBugs is a bytecode-based tool,
+there is no easy way to eliminate these false positives.
+</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="SF_SWITCH_NO_DEFAULT" abbrev="SF" category="STYLE">
+    <ShortDescription>Switch statement found where default case is missing</ShortDescription>
+    <Details><![CDATA[
+
+  <p> This method contains a switch statement where default case is missing.
+  Usually you need to provide a default case.</p>
+  <p>Because the analysis only looks at the generated bytecode, this warning can be incorrect triggered if
+the default case is at the end of the switch statement and the switch statement doesn't contain break statements for other
+cases.
+
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="SF">
+    <Description>Switch case falls through</Description>
+  </BugCode>
+  <BugCode abbrev="DLS" cweid="563">
+    <Description>Dead local store</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 14 Nov 2018 05:00:54 -0500" total_classes="14" referenced_classes="128" total_bugs="2" total_size="965" num_packages="1" java_version="1.8.0_121" vm_version="25.121-b13" cpu_seconds="13.43" clock_seconds="7.26" peak_mbytes="188.79" alloc_mbytes="1820.50" gc_seconds="0.14" priority_2="2">
+    <FileStats path="com/google/javascript/jscomp/ControlFlowAnalysis.java" bugCount="1" size="452" bugHash="fd72a4e12322f79c2cff2eb0da708ed0"/>
+    <FileStats path="com/google/javascript/jscomp/DisambiguateProperties.java" bugCount="1" size="513" bugHash="d88d8c5ca59d5f99a9d7798701cc4100"/>
+    <PackageStats package="com.google.javascript.jscomp" total_bugs="2" total_types="14" total_size="965" priority_2="2">
+      <ClassStats class="com.google.javascript.jscomp.ControlFlowAnalysis" sourceFile="ControlFlowAnalysis.java" interface="false" size="414" bugs="1" priority_2="1"/>
+      <ClassStats class="com.google.javascript.jscomp.ControlFlowAnalysis$1" sourceFile="ControlFlowAnalysis.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.ControlFlowAnalysis$AstControlFlowGraph" sourceFile="ControlFlowAnalysis.java" interface="false" size="17" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.ControlFlowAnalysis$AstControlFlowGraph$1" sourceFile="ControlFlowAnalysis.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.ControlFlowAnalysis$AstControlFlowGraph$2" sourceFile="ControlFlowAnalysis.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.DisambiguateProperties" sourceFile="DisambiguateProperties.java" interface="false" size="108" bugs="1" priority_2="1"/>
+      <ClassStats class="com.google.javascript.jscomp.DisambiguateProperties$1" sourceFile="DisambiguateProperties.java" interface="false" size="1" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.DisambiguateProperties$AbstractScopingCallback" sourceFile="DisambiguateProperties.java" interface="false" size="19" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.DisambiguateProperties$ConcreteTypeSystem" sourceFile="DisambiguateProperties.java" interface="false" size="103" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.DisambiguateProperties$FindExternProperties" sourceFile="DisambiguateProperties.java" interface="false" size="17" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.DisambiguateProperties$FindRenameableProperties" sourceFile="DisambiguateProperties.java" interface="false" size="47" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.DisambiguateProperties$JSTypeSystem" sourceFile="DisambiguateProperties.java" interface="false" size="126" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.DisambiguateProperties$Property" sourceFile="DisambiguateProperties.java" interface="false" size="79" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.DisambiguateProperties$TypeSystem" sourceFile="DisambiguateProperties.java" interface="true" size="13" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="1087" invocations="805" avgMicrosecondsPerInvocation="1350" maxMicrosecondsPerInvocation="36191" standardDeviationMicrosecondsPerInvocation="2637"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="731" invocations="803" avgMicrosecondsPerInvocation="910" maxMicrosecondsPerInvocation="67499" standardDeviationMicrosecondsPerInvocation="4018"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="319" invocations="128" avgMicrosecondsPerInvocation="2492" maxMicrosecondsPerInvocation="41445" standardDeviationMicrosecondsPerInvocation="5682"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="246" invocations="49" avgMicrosecondsPerInvocation="5028" maxMicrosecondsPerInvocation="47733" standardDeviationMicrosecondsPerInvocation="9529"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="230" invocations="403" avgMicrosecondsPerInvocation="571" maxMicrosecondsPerInvocation="19423" standardDeviationMicrosecondsPerInvocation="1547"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="225" invocations="49" avgMicrosecondsPerInvocation="4592" maxMicrosecondsPerInvocation="44715" standardDeviationMicrosecondsPerInvocation="8479"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="222" invocations="128" avgMicrosecondsPerInvocation="1738" maxMicrosecondsPerInvocation="35541" standardDeviationMicrosecondsPerInvocation="3849"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="218" invocations="49" avgMicrosecondsPerInvocation="4451" maxMicrosecondsPerInvocation="53491" standardDeviationMicrosecondsPerInvocation="9316"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="186" invocations="49" avgMicrosecondsPerInvocation="3812" maxMicrosecondsPerInvocation="48113" standardDeviationMicrosecondsPerInvocation="8189"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="176" invocations="767" avgMicrosecondsPerInvocation="230" maxMicrosecondsPerInvocation="27044" standardDeviationMicrosecondsPerInvocation="1431"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="157" invocations="128" avgMicrosecondsPerInvocation="1233" maxMicrosecondsPerInvocation="41582" standardDeviationMicrosecondsPerInvocation="4816"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="149" invocations="128" avgMicrosecondsPerInvocation="1167" maxMicrosecondsPerInvocation="44968" standardDeviationMicrosecondsPerInvocation="5154"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="121" invocations="49" avgMicrosecondsPerInvocation="2480" maxMicrosecondsPerInvocation="47388" standardDeviationMicrosecondsPerInvocation="7073"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="109" invocations="49" avgMicrosecondsPerInvocation="2244" maxMicrosecondsPerInvocation="22417" standardDeviationMicrosecondsPerInvocation="3585"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="92" invocations="46" avgMicrosecondsPerInvocation="2009" maxMicrosecondsPerInvocation="28470" standardDeviationMicrosecondsPerInvocation="4559"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="88" invocations="49" avgMicrosecondsPerInvocation="1801" maxMicrosecondsPerInvocation="71122" standardDeviationMicrosecondsPerInvocation="10014"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="88" invocations="128" avgMicrosecondsPerInvocation="689" maxMicrosecondsPerInvocation="28577" standardDeviationMicrosecondsPerInvocation="3030"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="78" invocations="128" avgMicrosecondsPerInvocation="611" maxMicrosecondsPerInvocation="20855" standardDeviationMicrosecondsPerInvocation="2042"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

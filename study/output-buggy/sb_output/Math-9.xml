@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.1.0" sequence="0" timestamp="1542186774000" analysisTimestamp="1542186777239" release="">
+  <Project projectName="">
+    <Jar>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-9/src/main/java</Jar>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-9/target/classes</AuxClasspathEntry>
+  </Project>
+  <BugInstance type="CNT_ROUGH_CONSTANT_VALUE" priority="2" rank="16" abbrev="CNT" category="BAD_PRACTICE" instanceHash="25aa69db5d115a81ce0945fb2f90965a" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Rough value of known constant found</ShortMessage>
+    <LongMessage>Rough value of Math.PI found: 3.141592653489793</LongMessage>
+    <Class classname="org.apache.commons.math3.geometry.euclidean.threed.Line" primary="true">
+      <SourceLine classname="org.apache.commons.math3.geometry.euclidean.threed.Line" start="41" end="223" sourcefile="Line.java" sourcepath="org/apache/commons/math3/geometry/euclidean/threed/Line.java">
+        <Message>At Line.java:[lines 41-223]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.math3.geometry.euclidean.threed.Line</Message>
+    </Class>
+    <Method classname="org.apache.commons.math3.geometry.euclidean.threed.Line" name="isSimilarTo" signature="(Lorg/apache/commons/math3/geometry/euclidean/threed/Line;)Z" isStatic="false" primary="true">
+      <SourceLine classname="org.apache.commons.math3.geometry.euclidean.threed.Line" start="146" end="147" startBytecode="0" endBytecode="87" sourcefile="Line.java" sourcepath="org/apache/commons/math3/geometry/euclidean/threed/Line.java"/>
+      <Message>In method org.apache.commons.math3.geometry.euclidean.threed.Line.isSimilarTo(Line)</Message>
+    </Method>
+    <String value="3.141592653489793">
+      <Message>Value 3.141592653489793</Message>
+    </String>
+    <String value="Math.PI">
+      <Message>Value Math.PI</Message>
+    </String>
+    <SourceLine classname="org.apache.commons.math3.geometry.euclidean.threed.Line" primary="true" start="147" end="147" startBytecode="21" endBytecode="21" sourcefile="Line.java" sourcepath="org/apache/commons/math3/geometry/euclidean/threed/Line.java">
+      <Message>At Line.java:[line 147]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="BAD_PRACTICE">
+    <Description>Bad practice</Description>
+  </BugCategory>
+  <BugPattern type="CNT_ROUGH_CONSTANT_VALUE" abbrev="CNT" category="BAD_PRACTICE">
+    <ShortDescription>Rough value of known constant found</ShortDescription>
+    <Details><![CDATA[
+      
+    <p>It's recommended to use the predefined library constant for code clarity and better precision.</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="CNT">
+    <Description>Rough value of known constant</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 14 Nov 2018 04:12:54 -0500" total_classes="1" referenced_classes="20" total_bugs="1" total_size="68" num_packages="1" java_version="1.8.0_121" vm_version="25.121-b13" cpu_seconds="7.14" clock_seconds="3.61" peak_mbytes="129.04" alloc_mbytes="1820.50" gc_seconds="0.03" priority_2="1">
+    <FileStats path="org/apache/commons/math3/geometry/euclidean/threed/Line.java" bugCount="1" size="68" bugHash="c64166451754fd65883ec2fd16f45f11"/>
+    <PackageStats package="org.apache.commons.math3.geometry.euclidean.threed" total_bugs="1" total_types="1" total_size="68" priority_2="1">
+      <ClassStats class="org.apache.commons.math3.geometry.euclidean.threed.Line" sourceFile="Line.java" interface="false" size="68" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="485" invocations="348" avgMicrosecondsPerInvocation="1393" maxMicrosecondsPerInvocation="34914" standardDeviationMicrosecondsPerInvocation="3970"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="480" invocations="350" avgMicrosecondsPerInvocation="1374" maxMicrosecondsPerInvocation="46586" standardDeviationMicrosecondsPerInvocation="3588"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="114" invocations="20" avgMicrosecondsPerInvocation="5740" maxMicrosecondsPerInvocation="20066" standardDeviationMicrosecondsPerInvocation="6963"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="113" invocations="20" avgMicrosecondsPerInvocation="5668" maxMicrosecondsPerInvocation="29135" standardDeviationMicrosecondsPerInvocation="8291"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="113" invocations="45" avgMicrosecondsPerInvocation="2518" maxMicrosecondsPerInvocation="74336" standardDeviationMicrosecondsPerInvocation="11047"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="105" invocations="315" avgMicrosecondsPerInvocation="334" maxMicrosecondsPerInvocation="27913" standardDeviationMicrosecondsPerInvocation="1705"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="105" invocations="60" avgMicrosecondsPerInvocation="1755" maxMicrosecondsPerInvocation="28248" standardDeviationMicrosecondsPerInvocation="4402"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="91" invocations="19" avgMicrosecondsPerInvocation="4829" maxMicrosecondsPerInvocation="56342" standardDeviationMicrosecondsPerInvocation="12955"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="72" invocations="20" avgMicrosecondsPerInvocation="3643" maxMicrosecondsPerInvocation="23487" standardDeviationMicrosecondsPerInvocation="6166"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="65" invocations="17" avgMicrosecondsPerInvocation="3824" maxMicrosecondsPerInvocation="15845" standardDeviationMicrosecondsPerInvocation="4384"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="62" invocations="19" avgMicrosecondsPerInvocation="3298" maxMicrosecondsPerInvocation="55287" standardDeviationMicrosecondsPerInvocation="12282"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="60" invocations="19" avgMicrosecondsPerInvocation="3200" maxMicrosecondsPerInvocation="18195" standardDeviationMicrosecondsPerInvocation="5390"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CheckRelaxingNullnessAnnotation" totalMilliseconds="48" invocations="1" avgMicrosecondsPerInvocation="48244" maxMicrosecondsPerInvocation="48244" standardDeviationMicrosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="47" invocations="19" avgMicrosecondsPerInvocation="2515" maxMicrosecondsPerInvocation="35668" standardDeviationMicrosecondsPerInvocation="7832"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindUseOfNonSerializableValue" totalMilliseconds="47" invocations="1" avgMicrosecondsPerInvocation="47478" maxMicrosecondsPerInvocation="47478" standardDeviationMicrosecondsPerInvocation="0"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

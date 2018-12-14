@@ -1,0 +1,13 @@
+Found 1 issue
+
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-4/source/org/jfree/chart/plot/XYPlot.java:4493: error: NULL_DEREFERENCE
+  object `r` last assigned on line 4473 could be null and is dereferenced at line 4493.
+  4491.                   }
+  4492.                   
+  4493. >                     Collection c = r.getAnnotations();
+  4494.                       Iterator i = c.iterator();
+  4495.                       while (i.hasNext()) {
+
+Summary of the reports
+
+  NULL_DEREFERENCE: 1

@@ -1,0 +1,396 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-20/src/main/java/org/joda/time/format/DateTimeFormatterBuilder.java:1173: warning: [MissingOverride] estimatePrintedLength implements method in DateTimePrinter; expected @Override
+        public int estimatePrintedLength() {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int estimatePrintedLength() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-20/src/main/java/org/joda/time/format/DateTimeFormatterBuilder.java:1177: warning: [MissingOverride] printTo implements method in DateTimePrinter; expected @Override
+        public void printTo(
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void printTo('?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-20/src/main/java/org/joda/time/format/DateTimeFormatterBuilder.java:1183: warning: [MissingOverride] printTo implements method in DateTimePrinter; expected @Override
+        public void printTo(
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void printTo('?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-20/src/main/java/org/joda/time/format/DateTimeFormatterBuilder.java:1189: warning: [MissingOverride] printTo implements method in DateTimePrinter; expected @Override
+        public void printTo(StringBuffer buf, ReadablePartial partial, Locale locale) {
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void printTo(StringBuffer buf, ReadablePartial partial, Locale locale) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-20/src/main/java/org/joda/time/format/DateTimeFormatterBuilder.java:1193: warning: [MissingOverride] printTo implements method in DateTimePrinter; expected @Override
+        public void printTo(Writer out, ReadablePartial partial, Locale locale) throws IOException {
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void printTo(Writer out, ReadablePartial partial, Locale locale) throws IOException {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-20/src/main/java/org/joda/time/format/DateTimeFormatterBuilder.java:1197: warning: [MissingOverride] estimateParsedLength implements method in DateTimeParser; expected @Override
+        public int estimateParsedLength() {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int estimateParsedLength() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-20/src/main/java/org/joda/time/format/DateTimeFormatterBuilder.java:1201: warning: [MissingOverride] parseInto implements method in DateTimeParser; expected @Override
+        public int parseInto(DateTimeParserBucket bucket, String text, int position) {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int parseInto(DateTimeParserBucket bucket, String text, int position) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-20/src/main/java/org/joda/time/format/DateTimeFormatterBuilder.java:1236: warning: [MissingOverride] estimatePrintedLength implements method in DateTimePrinter; expected @Override
+        public int estimatePrintedLength() {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int estimatePrintedLength() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-20/src/main/java/org/joda/time/format/DateTimeFormatterBuilder.java:1240: warning: [MissingOverride] printTo implements method in DateTimePrinter; expected @Override
+        public void printTo(
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void printTo('?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-20/src/main/java/org/joda/time/format/DateTimeFormatterBuilder.java:1246: warning: [MissingOverride] printTo implements method in DateTimePrinter; expected @Override
+        public void printTo(
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void printTo('?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-20/src/main/java/org/joda/time/format/DateTimeFormatterBuilder.java:1252: warning: [MissingOverride] printTo implements method in DateTimePrinter; expected @Override
+        public void printTo(StringBuffer buf, ReadablePartial partial, Locale locale) {
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void printTo(StringBuffer buf, ReadablePartial partial, Locale locale) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-20/src/main/java/org/joda/time/format/DateTimeFormatterBuilder.java:1256: warning: [MissingOverride] printTo implements method in DateTimePrinter; expected @Override
+        public void printTo(Writer out, ReadablePartial partial, Locale locale) throws IOException {
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void printTo(Writer out, ReadablePartial partial, Locale locale) throws IOException {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-20/src/main/java/org/joda/time/format/DateTimeFormatterBuilder.java:1260: warning: [MissingOverride] estimateParsedLength implements method in DateTimeParser; expected @Override
+        public int estimateParsedLength() {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int estimateParsedLength() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-20/src/main/java/org/joda/time/format/DateTimeFormatterBuilder.java:1264: warning: [MissingOverride] parseInto implements method in DateTimeParser; expected @Override
+        public int parseInto(DateTimeParserBucket bucket, String text, int position) {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int parseInto(DateTimeParserBucket bucket, String text, int position) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-20/src/main/java/org/joda/time/format/DateTimeFormatterBuilder.java:1287: warning: [MissingOverride] estimateParsedLength implements method in DateTimeParser; expected @Override
+        public int estimateParsedLength() {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int estimateParsedLength() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-20/src/main/java/org/joda/time/format/DateTimeFormatterBuilder.java:1291: warning: [MissingOverride] parseInto implements method in DateTimeParser; expected @Override
+        public int parseInto(DateTimeParserBucket bucket, String text, int position) {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int parseInto(DateTimeParserBucket bucket, String text, int position) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-20/src/main/java/org/joda/time/format/DateTimeFormatterBuilder.java:1366: warning: [MissingOverride] estimatePrintedLength implements method in DateTimePrinter; expected @Override
+        public int estimatePrintedLength() {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int estimatePrintedLength() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-20/src/main/java/org/joda/time/format/DateTimeFormatterBuilder.java:1370: warning: [MissingOverride] printTo implements method in DateTimePrinter; expected @Override
+        public void printTo(
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void printTo('?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-20/src/main/java/org/joda/time/format/DateTimeFormatterBuilder.java:1381: warning: [MissingOverride] printTo implements method in DateTimePrinter; expected @Override
+        public void printTo(
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void printTo('?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-20/src/main/java/org/joda/time/format/DateTimeFormatterBuilder.java:1392: warning: [MissingOverride] printTo implements method in DateTimePrinter; expected @Override
+        public void printTo(StringBuffer buf, ReadablePartial partial, Locale locale) {
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void printTo(StringBuffer buf, ReadablePartial partial, Locale locale) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-20/src/main/java/org/joda/time/format/DateTimeFormatterBuilder.java:1404: warning: [MissingOverride] printTo implements method in DateTimePrinter; expected @Override
+        public void printTo(Writer out, ReadablePartial partial, Locale locale) throws IOException {
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void printTo(Writer out, ReadablePartial partial, Locale locale) throws IOException {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-20/src/main/java/org/joda/time/format/DateTimeFormatterBuilder.java:1429: warning: [MissingOverride] estimatePrintedLength implements method in DateTimePrinter; expected @Override
+        public int estimatePrintedLength() {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int estimatePrintedLength() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-20/src/main/java/org/joda/time/format/DateTimeFormatterBuilder.java:1433: warning: [MissingOverride] printTo implements method in DateTimePrinter; expected @Override
+        public void printTo(
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void printTo('?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-20/src/main/java/org/joda/time/format/DateTimeFormatterBuilder.java:1444: warning: [MissingOverride] printTo implements method in DateTimePrinter; expected @Override
+        public void printTo(
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void printTo('?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-20/src/main/java/org/joda/time/format/DateTimeFormatterBuilder.java:1455: warning: [MissingOverride] printTo implements method in DateTimePrinter; expected @Override
+        public void printTo(StringBuffer buf, ReadablePartial partial, Locale locale) {
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void printTo(StringBuffer buf, ReadablePartial partial, Locale locale) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-20/src/main/java/org/joda/time/format/DateTimeFormatterBuilder.java:1467: warning: [MissingOverride] printTo implements method in DateTimePrinter; expected @Override
+        public void printTo(Writer out, ReadablePartial partial, Locale locale) throws IOException {
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void printTo(Writer out, ReadablePartial partial, Locale locale) throws IOException {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-20/src/main/java/org/joda/time/format/DateTimeFormatterBuilder.java:1487: warning: [MissingOverride] parseInto overrides method in NumberFormatter; expected @Override
+        public int parseInto(DateTimeParserBucket bucket, String text, int position) {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int parseInto(DateTimeParserBucket bucket, String text, int position) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-20/src/main/java/org/joda/time/format/DateTimeFormatterBuilder.java:1529: warning: [MissingOverride] estimateParsedLength implements method in DateTimeParser; expected @Override
+        public int estimateParsedLength() {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int estimateParsedLength() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-20/src/main/java/org/joda/time/format/DateTimeFormatterBuilder.java:1533: warning: [MissingOverride] parseInto implements method in DateTimeParser; expected @Override
+        public int parseInto(DateTimeParserBucket bucket, String text, int position) {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int parseInto(DateTimeParserBucket bucket, String text, int position) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-20/src/main/java/org/joda/time/format/DateTimeFormatterBuilder.java:1632: warning: [MissingOverride] estimatePrintedLength implements method in DateTimePrinter; expected @Override
+        public int estimatePrintedLength() {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int estimatePrintedLength() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-20/src/main/java/org/joda/time/format/DateTimeFormatterBuilder.java:1636: warning: [MissingOverride] printTo implements method in DateTimePrinter; expected @Override
+        public void printTo(
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void printTo('?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-20/src/main/java/org/joda/time/format/DateTimeFormatterBuilder.java:1648: warning: [MissingOverride] printTo implements method in DateTimePrinter; expected @Override
+        public void printTo(
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void printTo('?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-20/src/main/java/org/joda/time/format/DateTimeFormatterBuilder.java:1672: warning: [MissingOverride] printTo implements method in DateTimePrinter; expected @Override
+        public void printTo(StringBuffer buf, ReadablePartial partial, Locale locale) {
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void printTo(StringBuffer buf, ReadablePartial partial, Locale locale) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-20/src/main/java/org/joda/time/format/DateTimeFormatterBuilder.java:1682: warning: [MissingOverride] printTo implements method in DateTimePrinter; expected @Override
+        public void printTo(Writer out, ReadablePartial partial, Locale locale) throws IOException {
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void printTo(Writer out, ReadablePartial partial, Locale locale) throws IOException {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-20/src/main/java/org/joda/time/format/DateTimeFormatterBuilder.java:1721: warning: [MissingOverride] estimatePrintedLength implements method in DateTimePrinter; expected @Override
+        public int estimatePrintedLength() {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int estimatePrintedLength() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-20/src/main/java/org/joda/time/format/DateTimeFormatterBuilder.java:1725: warning: [MissingOverride] printTo implements method in DateTimePrinter; expected @Override
+        public void printTo(
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void printTo('?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-20/src/main/java/org/joda/time/format/DateTimeFormatterBuilder.java:1735: warning: [MissingOverride] printTo implements method in DateTimePrinter; expected @Override
+        public void printTo(
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void printTo('?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-20/src/main/java/org/joda/time/format/DateTimeFormatterBuilder.java:1745: warning: [MissingOverride] printTo implements method in DateTimePrinter; expected @Override
+        public void printTo(StringBuffer buf, ReadablePartial partial, Locale locale) {
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void printTo(StringBuffer buf, ReadablePartial partial, Locale locale) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-20/src/main/java/org/joda/time/format/DateTimeFormatterBuilder.java:1753: warning: [MissingOverride] printTo implements method in DateTimePrinter; expected @Override
+        public void printTo(Writer out, ReadablePartial partial, Locale locale) throws IOException {
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void printTo(Writer out, ReadablePartial partial, Locale locale) throws IOException {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-20/src/main/java/org/joda/time/format/DateTimeFormatterBuilder.java:1783: warning: [MissingOverride] estimateParsedLength implements method in DateTimeParser; expected @Override
+        public int estimateParsedLength() {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int estimateParsedLength() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-20/src/main/java/org/joda/time/format/DateTimeFormatterBuilder.java:1788: warning: [MissingOverride] parseInto implements method in DateTimeParser; expected @Override
+        public int parseInto(DateTimeParserBucket bucket, String text, int position) {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override @SuppressWarnings("unchecked")'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-20/src/main/java/org/joda/time/format/DateTimeFormatterBuilder.java:1867: warning: [MissingOverride] estimatePrintedLength implements method in DateTimePrinter; expected @Override
+        public int estimatePrintedLength() {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int estimatePrintedLength() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-20/src/main/java/org/joda/time/format/DateTimeFormatterBuilder.java:1871: warning: [MissingOverride] printTo implements method in DateTimePrinter; expected @Override
+        public void printTo(
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void printTo('?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-20/src/main/java/org/joda/time/format/DateTimeFormatterBuilder.java:1881: warning: [MissingOverride] printTo implements method in DateTimePrinter; expected @Override
+        public void printTo(
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void printTo('?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-20/src/main/java/org/joda/time/format/DateTimeFormatterBuilder.java:1887: warning: [MissingOverride] printTo implements method in DateTimePrinter; expected @Override
+        public void printTo(StringBuffer buf, ReadablePartial partial, Locale locale) {
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void printTo(StringBuffer buf, ReadablePartial partial, Locale locale) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-20/src/main/java/org/joda/time/format/DateTimeFormatterBuilder.java:1898: warning: [MissingOverride] printTo implements method in DateTimePrinter; expected @Override
+        public void printTo(Writer out, ReadablePartial partial, Locale locale) throws IOException {
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void printTo(Writer out, ReadablePartial partial, Locale locale) throws IOException {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-20/src/main/java/org/joda/time/format/DateTimeFormatterBuilder.java:2025: warning: [MissingOverride] estimateParsedLength implements method in DateTimeParser; expected @Override
+        public int estimateParsedLength() {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int estimateParsedLength() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-20/src/main/java/org/joda/time/format/DateTimeFormatterBuilder.java:2029: warning: [MissingOverride] parseInto implements method in DateTimeParser; expected @Override
+        public int parseInto(DateTimeParserBucket bucket, String text, int position) {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int parseInto(DateTimeParserBucket bucket, String text, int position) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-20/src/main/java/org/joda/time/format/DateTimeFormatterBuilder.java:2098: warning: [MissingOverride] estimatePrintedLength implements method in DateTimePrinter; expected @Override
+        public int estimatePrintedLength() {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int estimatePrintedLength() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-20/src/main/java/org/joda/time/format/DateTimeFormatterBuilder.java:2099: warning: [OperatorPrecedence] Use grouping parenthesis to make the operator precedence explicit
+            int est = 1 + iMinFields << 1;
+                        ^
+    (see http://errorprone.info/bugpattern/OperatorPrecedence)
+  Did you mean 'int est = (1 + iMinFields) << 1;'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-20/src/main/java/org/joda/time/format/DateTimeFormatterBuilder.java:2109: warning: [MissingOverride] printTo implements method in DateTimePrinter; expected @Override
+        public void printTo(
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void printTo('?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-20/src/main/java/org/joda/time/format/DateTimeFormatterBuilder.java:2168: warning: [MissingOverride] printTo implements method in DateTimePrinter; expected @Override
+        public void printTo(
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void printTo('?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-20/src/main/java/org/joda/time/format/DateTimeFormatterBuilder.java:2227: warning: [MissingOverride] printTo implements method in DateTimePrinter; expected @Override
+        public void printTo(StringBuffer buf, ReadablePartial partial, Locale locale) {
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void printTo(StringBuffer buf, ReadablePartial partial, Locale locale) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-20/src/main/java/org/joda/time/format/DateTimeFormatterBuilder.java:2231: warning: [MissingOverride] printTo implements method in DateTimePrinter; expected @Override
+        public void printTo(Writer out, ReadablePartial partial, Locale locale) throws IOException {
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void printTo(Writer out, ReadablePartial partial, Locale locale) throws IOException {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-20/src/main/java/org/joda/time/format/DateTimeFormatterBuilder.java:2235: warning: [MissingOverride] estimateParsedLength implements method in DateTimeParser; expected @Override
+        public int estimateParsedLength() {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int estimateParsedLength() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-20/src/main/java/org/joda/time/format/DateTimeFormatterBuilder.java:2239: warning: [MissingOverride] parseInto implements method in DateTimeParser; expected @Override
+        public int parseInto(DateTimeParserBucket bucket, String text, int position) {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int parseInto(DateTimeParserBucket bucket, String text, int position) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-20/src/main/java/org/joda/time/format/DateTimeFormatterBuilder.java:2444: warning: [MissingOverride] estimatePrintedLength implements method in DateTimePrinter; expected @Override
+        public int estimatePrintedLength() {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int estimatePrintedLength() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-20/src/main/java/org/joda/time/format/DateTimeFormatterBuilder.java:2448: warning: [MissingOverride] printTo implements method in DateTimePrinter; expected @Override
+        public void printTo(
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void printTo('?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-20/src/main/java/org/joda/time/format/DateTimeFormatterBuilder.java:2454: warning: [MissingOverride] printTo implements method in DateTimePrinter; expected @Override
+        public void printTo(
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void printTo('?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-20/src/main/java/org/joda/time/format/DateTimeFormatterBuilder.java:2473: warning: [MissingOverride] printTo implements method in DateTimePrinter; expected @Override
+        public void printTo(StringBuffer buf, ReadablePartial partial, Locale locale) {
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void printTo(StringBuffer buf, ReadablePartial partial, Locale locale) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-20/src/main/java/org/joda/time/format/DateTimeFormatterBuilder.java:2477: warning: [MissingOverride] printTo implements method in DateTimePrinter; expected @Override
+        public void printTo(Writer out, ReadablePartial partial, Locale locale) throws IOException {
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void printTo(Writer out, ReadablePartial partial, Locale locale) throws IOException {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-20/src/main/java/org/joda/time/format/DateTimeFormatterBuilder.java:2481: warning: [MissingOverride] estimateParsedLength implements method in DateTimeParser; expected @Override
+        public int estimateParsedLength() {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int estimateParsedLength() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-20/src/main/java/org/joda/time/format/DateTimeFormatterBuilder.java:2485: warning: [MissingOverride] parseInto implements method in DateTimeParser; expected @Override
+        public int parseInto(DateTimeParserBucket bucket, String text, int position) {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int parseInto(DateTimeParserBucket bucket, String text, int position) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-20/src/main/java/org/joda/time/format/DateTimeFormatterBuilder.java:2512: warning: [MissingOverride] estimatePrintedLength implements method in DateTimePrinter; expected @Override
+        public int estimatePrintedLength() {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int estimatePrintedLength() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-20/src/main/java/org/joda/time/format/DateTimeFormatterBuilder.java:2516: warning: [MissingOverride] printTo implements method in DateTimePrinter; expected @Override
+        public void printTo(
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void printTo('?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-20/src/main/java/org/joda/time/format/DateTimeFormatterBuilder.java:2522: warning: [MissingOverride] printTo implements method in DateTimePrinter; expected @Override
+        public void printTo(
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void printTo('?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-20/src/main/java/org/joda/time/format/DateTimeFormatterBuilder.java:2528: warning: [MissingOverride] printTo implements method in DateTimePrinter; expected @Override
+        public void printTo(StringBuffer buf, ReadablePartial partial, Locale locale) {
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void printTo(StringBuffer buf, ReadablePartial partial, Locale locale) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-20/src/main/java/org/joda/time/format/DateTimeFormatterBuilder.java:2532: warning: [MissingOverride] printTo implements method in DateTimePrinter; expected @Override
+        public void printTo(Writer out, ReadablePartial partial, Locale locale) throws IOException {
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void printTo(Writer out, ReadablePartial partial, Locale locale) throws IOException {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-20/src/main/java/org/joda/time/format/DateTimeFormatterBuilder.java:2536: warning: [MissingOverride] estimateParsedLength implements method in DateTimeParser; expected @Override
+        public int estimateParsedLength() {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int estimateParsedLength() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-20/src/main/java/org/joda/time/format/DateTimeFormatterBuilder.java:2540: warning: [MissingOverride] parseInto implements method in DateTimeParser; expected @Override
+        public int parseInto(DateTimeParserBucket bucket, String text, int position) {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int parseInto(DateTimeParserBucket bucket, String text, int position) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-20/src/main/java/org/joda/time/format/DateTimeFormatterBuilder.java:2607: warning: [MissingOverride] estimatePrintedLength implements method in DateTimePrinter; expected @Override
+        public int estimatePrintedLength() {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int estimatePrintedLength() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-20/src/main/java/org/joda/time/format/DateTimeFormatterBuilder.java:2611: warning: [MissingOverride] printTo implements method in DateTimePrinter; expected @Override
+        public void printTo(
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void printTo('?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-20/src/main/java/org/joda/time/format/DateTimeFormatterBuilder.java:2630: warning: [MissingOverride] printTo implements method in DateTimePrinter; expected @Override
+        public void printTo(
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void printTo('?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-20/src/main/java/org/joda/time/format/DateTimeFormatterBuilder.java:2649: warning: [MissingOverride] printTo implements method in DateTimePrinter; expected @Override
+        public void printTo(StringBuffer buf, ReadablePartial partial, Locale locale) {
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void printTo(StringBuffer buf, ReadablePartial partial, Locale locale) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-20/src/main/java/org/joda/time/format/DateTimeFormatterBuilder.java:2666: warning: [MissingOverride] printTo implements method in DateTimePrinter; expected @Override
+        public void printTo(Writer out, ReadablePartial partial, Locale locale) throws IOException {
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void printTo(Writer out, ReadablePartial partial, Locale locale) throws IOException {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-20/src/main/java/org/joda/time/format/DateTimeFormatterBuilder.java:2683: warning: [MissingOverride] estimateParsedLength implements method in DateTimeParser; expected @Override
+        public int estimateParsedLength() {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int estimateParsedLength() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-20/src/main/java/org/joda/time/format/DateTimeFormatterBuilder.java:2687: warning: [MissingOverride] parseInto implements method in DateTimeParser; expected @Override
+        public int parseInto(DateTimeParserBucket bucket, String text, int position) {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int parseInto(DateTimeParserBucket bucket, String text, int position) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-20/src/main/java/org/joda/time/format/DateTimeFormatterBuilder.java:2767: warning: [MissingOverride] estimateParsedLength implements method in DateTimeParser; expected @Override
+        public int estimateParsedLength() {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int estimateParsedLength() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-20/src/main/java/org/joda/time/format/DateTimeFormatterBuilder.java:2771: warning: [MissingOverride] parseInto implements method in DateTimeParser; expected @Override
+        public int parseInto(DateTimeParserBucket bucket, String text, int position) {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int parseInto(DateTimeParserBucket bucket, String text, int position) {'?
+79 warnings

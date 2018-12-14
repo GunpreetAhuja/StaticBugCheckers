@@ -1,0 +1,21 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-32/src/main/java/org/apache/commons/math3/geometry/euclidean/twod/PolygonsSet.java:385: warning: [MissingOverride] compareTo implements method in Comparable; expected @Override
+        public int compareTo(final ComparableSegment o) {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int compareTo(final ComparableSegment o) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-32/src/main/java/org/apache/commons/math3/geometry/euclidean/twod/PolygonsSet.java:422: warning: [MissingOverride] visitOrder implements method in BSPTreeVisitor; expected @Override
+        public Order visitOrder(final BSPTree<Euclidean2D> node) {
+                     ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Order visitOrder(final BSPTree<Euclidean2D> node) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-32/src/main/java/org/apache/commons/math3/geometry/euclidean/twod/PolygonsSet.java:427: warning: [MissingOverride] visitInternalNode implements method in BSPTreeVisitor; expected @Override
+        public void visitInternalNode(final BSPTree<Euclidean2D> node) {
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void visitInternalNode(final BSPTree<Euclidean2D> node) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-32/src/main/java/org/apache/commons/math3/geometry/euclidean/twod/PolygonsSet.java:439: warning: [MissingOverride] visitLeafNode implements method in BSPTreeVisitor; expected @Override
+        public void visitLeafNode(final BSPTree<Euclidean2D> node) {
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void visitLeafNode(final BSPTree<Euclidean2D> node) {'?
+4 warnings

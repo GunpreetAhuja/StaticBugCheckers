@@ -1,0 +1,16 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Mockito-30/src/org/mockito/internal/stubbing/defaultanswers/ReturnsSmartNulls.java:43: warning: [ClassCanBeStatic] Inner class is non-static but does not reference enclosing class
+    private final class ThrowingInterceptor implements MethodInterceptor {
+                  ^
+    (see http://errorprone.info/bugpattern/ClassCanBeStatic)
+  Did you mean 'private static final class ThrowingInterceptor implements MethodInterceptor {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Mockito-30/src/org/mockito/internal/stubbing/defaultanswers/ReturnsSmartNulls.java:51: warning: [MissingOverride] intercept implements method in MethodInterceptor; expected @Override
+        public Object intercept(Object obj, Method method, Object[] args, MethodProxy proxy) throws Throwable {
+                      ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Object intercept(Object obj, Method method, Object[] args, MethodProxy proxy) throws Throwable {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Mockito-30/src/org/mockito/internal/stubbing/defaultanswers/ReturnsSmartNulls.java:68: warning: [MissingOverride] answer implements method in Answer; expected @Override
+    public Object answer(final InvocationOnMock invocation) throws Throwable {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Object answer(final InvocationOnMock invocation) throws Throwable {'?
+3 warnings

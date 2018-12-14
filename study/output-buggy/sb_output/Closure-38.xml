@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.1.0" sequence="0" timestamp="1542185675000" analysisTimestamp="1542185678652" release="">
+  <Project projectName="">
+    <Jar>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-38/src</Jar>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-38/build/classes</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-38/lib/args4j.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-38/lib/guava.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-38/lib/json.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-38/lib/jsr305.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-38/lib/protobuf-java.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-38/build/lib/rhino.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-38/lib/ant.jar</AuxClasspathEntry>
+  </Project>
+  <BugInstance type="FE_FLOATING_POINT_EQUALITY" priority="1" rank="15" abbrev="FE" category="STYLE" instanceHash="db5584e80e58679f23b70fe9e5ed6311" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Test for floating point equality</ShortMessage>
+    <LongMessage>Test for floating point equality in com.google.javascript.jscomp.CodeConsumer.addNumber(double)</LongMessage>
+    <Class classname="com.google.javascript.jscomp.CodeConsumer" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.CodeConsumer" start="29" end="299" sourcefile="CodeConsumer.java" sourcepath="com/google/javascript/jscomp/CodeConsumer.java">
+        <Message>At CodeConsumer.java:[lines 29-299]</Message>
+      </SourceLine>
+      <Message>In class com.google.javascript.jscomp.CodeConsumer</Message>
+    </Class>
+    <Method classname="com.google.javascript.jscomp.CodeConsumer" name="addNumber" signature="(D)V" isStatic="false" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.CodeConsumer" start="243" end="267" startBytecode="0" endBytecode="286" sourcefile="CodeConsumer.java" sourcepath="com/google/javascript/jscomp/CodeConsumer.java"/>
+      <Message>In method com.google.javascript.jscomp.CodeConsumer.addNumber(double)</Message>
+    </Method>
+    <SourceLine classname="com.google.javascript.jscomp.CodeConsumer" primary="true" start="254" end="254" startBytecode="87" endBytecode="87" sourcefile="CodeConsumer.java" sourcepath="com/google/javascript/jscomp/CodeConsumer.java">
+      <Message>At CodeConsumer.java:[line 254]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="ICAST_IDIV_CAST_TO_DOUBLE" priority="2" rank="17" abbrev="ICAST" category="STYLE" instanceHash="35a91ce2fb6771c98ef1ef42bc632971" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="192">
+    <ShortMessage>Integral division result cast to double or float</ShortMessage>
+    <LongMessage>Integral division result cast to double or float in com.google.javascript.jscomp.CodeConsumer.addNumber(double)</LongMessage>
+    <Class classname="com.google.javascript.jscomp.CodeConsumer" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.CodeConsumer" start="29" end="299" sourcefile="CodeConsumer.java" sourcepath="com/google/javascript/jscomp/CodeConsumer.java">
+        <Message>At CodeConsumer.java:[lines 29-299]</Message>
+      </SourceLine>
+      <Message>In class com.google.javascript.jscomp.CodeConsumer</Message>
+    </Class>
+    <Method classname="com.google.javascript.jscomp.CodeConsumer" name="addNumber" signature="(D)V" isStatic="false" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.CodeConsumer" start="243" end="267" startBytecode="0" endBytecode="286" sourcefile="CodeConsumer.java" sourcepath="com/google/javascript/jscomp/CodeConsumer.java"/>
+      <Message>In method com.google.javascript.jscomp.CodeConsumer.addNumber(double)</Message>
+    </Method>
+    <SourceLine classname="com.google.javascript.jscomp.CodeConsumer" primary="true" start="254" end="254" startBytecode="70" endBytecode="70" sourcefile="CodeConsumer.java" sourcepath="com/google/javascript/jscomp/CodeConsumer.java">
+      <Message>At CodeConsumer.java:[line 254]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" rank="18" abbrev="UrF" category="PERFORMANCE" instanceHash="a2a3affa4dd48163cfd5015ac639c0ed" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Unread field</ShortMessage>
+    <LongMessage>Unread field: com.google.javascript.jscomp.CodeConsumer.sawFunction</LongMessage>
+    <Class classname="com.google.javascript.jscomp.CodeConsumer" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.CodeConsumer" start="29" end="299" sourcefile="CodeConsumer.java" sourcepath="com/google/javascript/jscomp/CodeConsumer.java">
+        <Message>At CodeConsumer.java:[lines 29-299]</Message>
+      </SourceLine>
+      <Message>In class com.google.javascript.jscomp.CodeConsumer</Message>
+    </Class>
+    <Field classname="com.google.javascript.jscomp.CodeConsumer" name="sawFunction" signature="Z" isStatic="false" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.CodeConsumer" sourcefile="CodeConsumer.java" sourcepath="com/google/javascript/jscomp/CodeConsumer.java">
+        <Message>In CodeConsumer.java</Message>
+      </SourceLine>
+      <Message>Field com.google.javascript.jscomp.CodeConsumer.sawFunction</Message>
+    </Field>
+    <SourceLine classname="com.google.javascript.jscomp.CodeConsumer" primary="true" start="32" end="32" startBytecode="16" endBytecode="16" sourcefile="CodeConsumer.java" sourcepath="com/google/javascript/jscomp/CodeConsumer.java">
+      <Message>At CodeConsumer.java:[line 32]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="PERFORMANCE">
+    <Description>Performance</Description>
+  </BugCategory>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="ICAST_IDIV_CAST_TO_DOUBLE" abbrev="ICAST" category="STYLE">
+    <ShortDescription>Integral division result cast to double or float</ShortDescription>
+    <Details><![CDATA[
+
+<p>
+This code casts the result of an integral division (e.g., int or long division)
+operation to double or
+float.
+Doing division on integers truncates the result
+to the integer value closest to zero.  The fact that the result
+was cast to double suggests that this precision should have been retained.
+What was probably meant was to cast one or both of the operands to
+double <em>before</em> performing the division.  Here is an example:
+</p>
+<pre><code>int x = 2;
+int y = 5;
+// Wrong: yields result 0.0
+double value1 = x / y;
+
+// Right: yields result 0.4
+double value2 = x / (double) y;
+</code></pre>
+
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="FE_FLOATING_POINT_EQUALITY" abbrev="FE" category="STYLE">
+    <ShortDescription>Test for floating point equality</ShortDescription>
+    <Details><![CDATA[
+   
+    <p>
+    This operation compares two floating point values for equality.
+    Because floating point calculations may involve rounding,
+   calculated float and double values may not be accurate.
+    For values that must be precise, such as monetary values,
+   consider using a fixed-precision type such as BigDecimal.
+    For values that need not be precise, consider comparing for equality
+    within some range, for example:
+    <code>if ( Math.abs(x - y) &lt; .0000001 )</code>.
+   See the Java Language Specification, section 4.2.4.
+    </p>
+    
+     ]]></Details>
+  </BugPattern>
+  <BugPattern type="URF_UNREAD_FIELD" abbrev="UrF" category="PERFORMANCE">
+    <ShortDescription>Unread field</ShortDescription>
+    <Details><![CDATA[
+
+  <p> This field is never read.&nbsp; Consider removing it from the class.</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="UrF">
+    <Description>Unread field</Description>
+  </BugCode>
+  <BugCode abbrev="ICAST" cweid="192">
+    <Description>Casting from integer values</Description>
+  </BugCode>
+  <BugCode abbrev="FE">
+    <Description>Test for floating point equality</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 14 Nov 2018 03:54:35 -0500" total_classes="1" referenced_classes="13" total_bugs="3" total_size="150" num_packages="1" java_version="1.8.0_121" vm_version="25.121-b13" cpu_seconds="6.83" clock_seconds="3.34" peak_mbytes="118.50" alloc_mbytes="1820.50" gc_seconds="0.02" priority_2="2" priority_1="1">
+    <FileStats path="com/google/javascript/jscomp/CodeConsumer.java" bugCount="3" size="150" bugHash="c359c6c4b1ec3a5d73a7c00b64451295"/>
+    <PackageStats package="com.google.javascript.jscomp" total_bugs="3" total_types="1" total_size="150" priority_2="2" priority_1="1">
+      <ClassStats class="com.google.javascript.jscomp.CodeConsumer" sourceFile="CodeConsumer.java" interface="false" size="150" bugs="3" priority_2="2" priority_1="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="399" invocations="314" avgMicrosecondsPerInvocation="1272" maxMicrosecondsPerInvocation="26954" standardDeviationMicrosecondsPerInvocation="3130"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="394" invocations="315" avgMicrosecondsPerInvocation="1251" maxMicrosecondsPerInvocation="23192" standardDeviationMicrosecondsPerInvocation="2278"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="155" invocations="13" avgMicrosecondsPerInvocation="11993" maxMicrosecondsPerInvocation="57289" standardDeviationMicrosecondsPerInvocation="14879"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="84" invocations="13" avgMicrosecondsPerInvocation="6478" maxMicrosecondsPerInvocation="25343" standardDeviationMicrosecondsPerInvocation="7675"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="72" invocations="100" avgMicrosecondsPerInvocation="728" maxMicrosecondsPerInvocation="8667" standardDeviationMicrosecondsPerInvocation="1342"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="60" invocations="32" avgMicrosecondsPerInvocation="1880" maxMicrosecondsPerInvocation="23529" standardDeviationMicrosecondsPerInvocation="5086"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="59" invocations="282" avgMicrosecondsPerInvocation="212" maxMicrosecondsPerInvocation="2664" standardDeviationMicrosecondsPerInvocation="383"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="53" invocations="32" avgMicrosecondsPerInvocation="1681" maxMicrosecondsPerInvocation="15626" standardDeviationMicrosecondsPerInvocation="3789"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="51" invocations="34" avgMicrosecondsPerInvocation="1515" maxMicrosecondsPerInvocation="45169" standardDeviationMicrosecondsPerInvocation="7607"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="50" invocations="13" avgMicrosecondsPerInvocation="3862" maxMicrosecondsPerInvocation="17071" standardDeviationMicrosecondsPerInvocation="5441"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="48" invocations="13" avgMicrosecondsPerInvocation="3724" maxMicrosecondsPerInvocation="24756" standardDeviationMicrosecondsPerInvocation="6808"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref" totalMilliseconds="40" invocations="1" avgMicrosecondsPerInvocation="40408" maxMicrosecondsPerInvocation="40408" standardDeviationMicrosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="39" invocations="32" avgMicrosecondsPerInvocation="1234" maxMicrosecondsPerInvocation="9548" standardDeviationMicrosecondsPerInvocation="2302"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="39" invocations="32" avgMicrosecondsPerInvocation="1226" maxMicrosecondsPerInvocation="7659" standardDeviationMicrosecondsPerInvocation="2192"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="38" invocations="13" avgMicrosecondsPerInvocation="2978" maxMicrosecondsPerInvocation="20601" standardDeviationMicrosecondsPerInvocation="5385"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="37" invocations="32" avgMicrosecondsPerInvocation="1166" maxMicrosecondsPerInvocation="17728" standardDeviationMicrosecondsPerInvocation="3191"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="36" invocations="13" avgMicrosecondsPerInvocation="2842" maxMicrosecondsPerInvocation="16913" standardDeviationMicrosecondsPerInvocation="4393"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="36" invocations="26" avgMicrosecondsPerInvocation="1419" maxMicrosecondsPerInvocation="20722" standardDeviationMicrosecondsPerInvocation="4040"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

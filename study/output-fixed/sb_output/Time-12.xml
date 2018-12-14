@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.1.0" sequence="0" timestamp="1542191309000" analysisTimestamp="1542191312877" release="">
+  <Project projectName="">
+    <Jar>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-12/src/main/java</Jar>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-12/build/classes</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/framework/projects/Time/lib/joda-convert-1.2.jar</AuxClasspathEntry>
+  </Project>
+  <BugInstance type="HE_EQUALS_NO_HASHCODE" priority="2" rank="16" abbrev="HE" category="BAD_PRACTICE" instanceHash="f0fc7b61b51f1b6e117bfd1643189b66" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Class defines equals() but not hashCode()</ShortMessage>
+    <LongMessage>org.joda.time.LocalDateTime defines equals but not hashCode</LongMessage>
+    <Class classname="org.joda.time.LocalDateTime" primary="true">
+      <SourceLine classname="org.joda.time.LocalDateTime" start="80" end="2049" sourcefile="LocalDateTime.java" sourcepath="org/joda/time/LocalDateTime.java">
+        <Message>At LocalDateTime.java:[lines 80-2049]</Message>
+      </SourceLine>
+      <Message>In class org.joda.time.LocalDateTime</Message>
+    </Class>
+    <Method classname="org.joda.time.LocalDateTime" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false" primary="true">
+      <SourceLine classname="org.joda.time.LocalDateTime" start="669" end="678" startBytecode="0" endBytecode="124" sourcefile="LocalDateTime.java" sourcepath="org/joda/time/LocalDateTime.java"/>
+      <Message>In method org.joda.time.LocalDateTime.equals(Object)</Message>
+    </Method>
+    <SourceLine classname="org.joda.time.LocalDateTime" start="669" end="678" startBytecode="0" endBytecode="124" sourcefile="LocalDateTime.java" sourcepath="org/joda/time/LocalDateTime.java" synthetic="true">
+      <Message>At LocalDateTime.java:[lines 669-678]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="BAD_PRACTICE">
+    <Description>Bad practice</Description>
+  </BugCategory>
+  <BugPattern type="HE_EQUALS_NO_HASHCODE" abbrev="HE" category="BAD_PRACTICE">
+    <ShortDescription>Class defines equals() but not hashCode()</ShortDescription>
+    <Details><![CDATA[
+
+  <p> This class overrides <code>equals(Object)</code>, but does not
+  override <code>hashCode()</code>.&nbsp; Therefore, the class may violate the
+  invariant that equal objects must have equal hashcodes.</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="HE">
+    <Description>Equal objects must have equal hashcodes</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 14 Nov 2018 05:28:29 -0500" total_classes="4" referenced_classes="59" total_bugs="1" total_size="951" num_packages="1" java_version="1.8.0_121" vm_version="25.121-b13" cpu_seconds="12.56" clock_seconds="6.83" peak_mbytes="182.99" alloc_mbytes="1820.50" gc_seconds="0.07" priority_2="1">
+    <FileStats path="org/joda/time/LocalDate.java" bugCount="0" size="456"/>
+    <FileStats path="org/joda/time/LocalDateTime.java" bugCount="1" size="495" bugHash="dc3003a3f48f9ad70f7c0bf39fdac94e"/>
+    <PackageStats package="org.joda.time" total_bugs="1" total_types="4" total_size="951" priority_2="1">
+      <ClassStats class="org.joda.time.LocalDate" sourceFile="LocalDate.java" interface="false" size="406" bugs="0"/>
+      <ClassStats class="org.joda.time.LocalDate$Property" sourceFile="LocalDate.java" interface="false" size="50" bugs="0"/>
+      <ClassStats class="org.joda.time.LocalDateTime" sourceFile="LocalDateTime.java" interface="false" size="443" bugs="1" priority_2="1"/>
+      <ClassStats class="org.joda.time.LocalDateTime$Property" sourceFile="LocalDateTime.java" interface="false" size="52" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="752" invocations="549" avgMicrosecondsPerInvocation="1371" maxMicrosecondsPerInvocation="72355" standardDeviationMicrosecondsPerInvocation="4953"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="739" invocations="555" avgMicrosecondsPerInvocation="1331" maxMicrosecondsPerInvocation="28837" standardDeviationMicrosecondsPerInvocation="2918"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="252" invocations="59" avgMicrosecondsPerInvocation="4283" maxMicrosecondsPerInvocation="43322" standardDeviationMicrosecondsPerInvocation="7757"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="242" invocations="59" avgMicrosecondsPerInvocation="4117" maxMicrosecondsPerInvocation="62671" standardDeviationMicrosecondsPerInvocation="9330"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="223" invocations="215" avgMicrosecondsPerInvocation="1040" maxMicrosecondsPerInvocation="28744" standardDeviationMicrosecondsPerInvocation="3536"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="208" invocations="322" avgMicrosecondsPerInvocation="647" maxMicrosecondsPerInvocation="34650" standardDeviationMicrosecondsPerInvocation="3018"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="176" invocations="215" avgMicrosecondsPerInvocation="821" maxMicrosecondsPerInvocation="28988" standardDeviationMicrosecondsPerInvocation="2915"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="169" invocations="215" avgMicrosecondsPerInvocation="788" maxMicrosecondsPerInvocation="23548" standardDeviationMicrosecondsPerInvocation="2277"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="139" invocations="213" avgMicrosecondsPerInvocation="653" maxMicrosecondsPerInvocation="25761" standardDeviationMicrosecondsPerInvocation="2055"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="125" invocations="93" avgMicrosecondsPerInvocation="1352" maxMicrosecondsPerInvocation="46013" standardDeviationMicrosecondsPerInvocation="5805"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="122" invocations="215" avgMicrosecondsPerInvocation="569" maxMicrosecondsPerInvocation="18876" standardDeviationMicrosecondsPerInvocation="1631"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="117" invocations="215" avgMicrosecondsPerInvocation="547" maxMicrosecondsPerInvocation="19027" standardDeviationMicrosecondsPerInvocation="1925"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="115" invocations="59" avgMicrosecondsPerInvocation="1965" maxMicrosecondsPerInvocation="46883" standardDeviationMicrosecondsPerInvocation="6673"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="100" invocations="510" avgMicrosecondsPerInvocation="197" maxMicrosecondsPerInvocation="18903" standardDeviationMicrosecondsPerInvocation="920"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="94" invocations="59" avgMicrosecondsPerInvocation="1600" maxMicrosecondsPerInvocation="38001" standardDeviationMicrosecondsPerInvocation="5353"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.LiveLocalStoreDataflowFactory" totalMilliseconds="94" invocations="213" avgMicrosecondsPerInvocation="442" maxMicrosecondsPerInvocation="39019" standardDeviationMicrosecondsPerInvocation="3042"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="89" invocations="59" avgMicrosecondsPerInvocation="1512" maxMicrosecondsPerInvocation="28195" standardDeviationMicrosecondsPerInvocation="4559"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.LockDataflowFactory" totalMilliseconds="87" invocations="215" avgMicrosecondsPerInvocation="407" maxMicrosecondsPerInvocation="19638" standardDeviationMicrosecondsPerInvocation="1873"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="77" invocations="59" avgMicrosecondsPerInvocation="1310" maxMicrosecondsPerInvocation="18808" standardDeviationMicrosecondsPerInvocation="2926"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="74" invocations="215" avgMicrosecondsPerInvocation="344" maxMicrosecondsPerInvocation="46744" standardDeviationMicrosecondsPerInvocation="3178"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison" totalMilliseconds="72" invocations="2" avgMicrosecondsPerInvocation="36074" maxMicrosecondsPerInvocation="64375" standardDeviationMicrosecondsPerInvocation="28301"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="66" invocations="59" avgMicrosecondsPerInvocation="1125" maxMicrosecondsPerInvocation="19181" standardDeviationMicrosecondsPerInvocation="2718"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.TypeQualifierNullnessAnnotationDatabase" totalMilliseconds="63" invocations="2977" avgMicrosecondsPerInvocation="21" maxMicrosecondsPerInvocation="20878" standardDeviationMicrosecondsPerInvocation="503"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.SerializableIdiom" totalMilliseconds="62" invocations="2" avgMicrosecondsPerInvocation="31458" maxMicrosecondsPerInvocation="57547" standardDeviationMicrosecondsPerInvocation="26088"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

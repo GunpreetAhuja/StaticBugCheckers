@@ -1,0 +1,6 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-18/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java:871: warning: [MissingOverride] compareTo implements method in Comparable; expected @Override
+        public int compareTo(DoubleIndex o) {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int compareTo(DoubleIndex o) {'?
+1 warning

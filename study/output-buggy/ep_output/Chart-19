@@ -1,0 +1,317 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-19/source/org/jfree/chart/plot/CategoryPlot.java:3554: warning: [EqualsHashCode] Classes that override equals should also override hashCode.
+    public boolean equals(Object obj) {
+                   ^
+    (see http://errorprone.info/bugpattern/EqualsHashCode)
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-19/source/org/jfree/chart/plot/CategoryPlot.java:523: warning: [MissingOverride] getPlotType implements method in Plot; expected @Override
+    public String getPlotType() {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public String getPlotType() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-19/source/org/jfree/chart/plot/CategoryPlot.java:534: warning: [MissingOverride] getOrientation implements method in Zoomable; expected @Override
+    public PlotOrientation getOrientation() {
+                           ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public PlotOrientation getOrientation() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-19/source/org/jfree/chart/plot/CategoryPlot.java:1227: warning: [BoxedPrimitiveConstructor] valueOf or autoboxing provides better time and space performance
+        this.datasetToDomainAxisMap.set(index, new Integer(axisIndex));  
+                                               ^
+    (see http://errorprone.info/bugpattern/BoxedPrimitiveConstructor)
+  Did you mean 'this.datasetToDomainAxisMap.set(index, Integer.valueOf(axisIndex));'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-19/source/org/jfree/chart/plot/CategoryPlot.java:1260: warning: [BoxedPrimitiveConstructor] valueOf or autoboxing provides better time and space performance
+        this.datasetToRangeAxisMap.set(index, new Integer(axisIndex));
+                                              ^
+    (see http://errorprone.info/bugpattern/BoxedPrimitiveConstructor)
+  Did you mean 'this.datasetToRangeAxisMap.set(index, Integer.valueOf(axisIndex));'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-19/source/org/jfree/chart/plot/CategoryPlot.java:1753: warning: [MissingOverride] getLegendItems overrides method in Plot; expected @Override
+    public LegendItemCollection getLegendItems() {
+                                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public LegendItemCollection getLegendItems() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-19/source/org/jfree/chart/plot/CategoryPlot.java:1787: warning: [MissingOverride] handleClick overrides method in Plot; expected @Override
+    public void handleClick(int x, int y, PlotRenderingInfo info) {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void handleClick(int x, int y, PlotRenderingInfo info) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-19/source/org/jfree/chart/plot/CategoryPlot.java:1793: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+            if (this.orientation == PlotOrientation.HORIZONTAL) {
+                                 ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'if (Objects.equals(this.orientation, PlotOrientation.HORIZONTAL)) {' or 'if (this.orientation.equals(PlotOrientation.HORIZONTAL)) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-19/source/org/jfree/chart/plot/CategoryPlot.java:1796: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+            else if (this.orientation == PlotOrientation.VERTICAL) {
+                                      ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'else if (Objects.equals(this.orientation, PlotOrientation.VERTICAL)) {' or 'else if (this.orientation.equals(PlotOrientation.VERTICAL)) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-19/source/org/jfree/chart/plot/CategoryPlot.java:1818: warning: [MissingOverride] zoom overrides method in Plot; expected @Override
+    public void zoom(double percent) {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void zoom(double percent) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-19/source/org/jfree/chart/plot/CategoryPlot.java:1839: warning: [MissingOverride] datasetChanged overrides method in Plot; expected @Override
+    public void datasetChanged(DatasetChangeEvent event) {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void datasetChanged(DatasetChangeEvent event) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-19/source/org/jfree/chart/plot/CategoryPlot.java:1864: warning: [MissingOverride] rendererChanged implements method in RendererChangeListener; expected @Override
+    public void rendererChanged(RendererChangeEvent event) {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void rendererChanged(RendererChangeEvent event) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-19/source/org/jfree/chart/plot/CategoryPlot.java:1929: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+        if (layer == Layer.FOREGROUND) {
+                  ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'if (layer.equals(Layer.FOREGROUND)) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-19/source/org/jfree/chart/plot/CategoryPlot.java:1931: warning: [BoxedPrimitiveConstructor] valueOf or autoboxing provides better time and space performance
+                    new Integer(index));
+                    ^
+    (see http://errorprone.info/bugpattern/BoxedPrimitiveConstructor)
+  Did you mean 'Integer.valueOf(index));'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-19/source/org/jfree/chart/plot/CategoryPlot.java:1934: warning: [BoxedPrimitiveConstructor] valueOf or autoboxing provides better time and space performance
+                this.foregroundDomainMarkers.put(new Integer(index), markers);
+                                                 ^
+    (see http://errorprone.info/bugpattern/BoxedPrimitiveConstructor)
+  Did you mean 'this.foregroundDomainMarkers.put(Integer.valueOf(index), markers);'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-19/source/org/jfree/chart/plot/CategoryPlot.java:1938: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+        else if (layer == Layer.BACKGROUND) {
+                       ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'else if (layer.equals(Layer.BACKGROUND)) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-19/source/org/jfree/chart/plot/CategoryPlot.java:1940: warning: [BoxedPrimitiveConstructor] valueOf or autoboxing provides better time and space performance
+                    new Integer(index));
+                    ^
+    (see http://errorprone.info/bugpattern/BoxedPrimitiveConstructor)
+  Did you mean 'Integer.valueOf(index));'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-19/source/org/jfree/chart/plot/CategoryPlot.java:1943: warning: [BoxedPrimitiveConstructor] valueOf or autoboxing provides better time and space performance
+                this.backgroundDomainMarkers.put(new Integer(index), markers);
+                                                 ^
+    (see http://errorprone.info/bugpattern/BoxedPrimitiveConstructor)
+  Did you mean 'this.backgroundDomainMarkers.put(Integer.valueOf(index), markers);'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-19/source/org/jfree/chart/plot/CategoryPlot.java:2001: warning: [BoxedPrimitiveConstructor] valueOf or autoboxing provides better time and space performance
+        Integer key = new Integer(index);
+                      ^
+    (see http://errorprone.info/bugpattern/BoxedPrimitiveConstructor)
+  Did you mean 'Integer key = index;'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-19/source/org/jfree/chart/plot/CategoryPlot.java:2002: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+        if (layer == Layer.FOREGROUND) {
+                  ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'if (Objects.equals(layer, Layer.FOREGROUND)) {' or 'if (layer.equals(Layer.FOREGROUND)) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-19/source/org/jfree/chart/plot/CategoryPlot.java:2005: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+        else if (layer == Layer.BACKGROUND) {
+                       ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'else if (Objects.equals(layer, Layer.BACKGROUND)) {' or 'else if (layer.equals(Layer.BACKGROUND)) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-19/source/org/jfree/chart/plot/CategoryPlot.java:2022: warning: [BoxedPrimitiveConstructor] valueOf or autoboxing provides better time and space performance
+        Integer key = new Integer(index);
+                      ^
+    (see http://errorprone.info/bugpattern/BoxedPrimitiveConstructor)
+  Did you mean 'Integer key = index;'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-19/source/org/jfree/chart/plot/CategoryPlot.java:2088: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+        if (layer == Layer.FOREGROUND) {
+                  ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'if (Objects.equals(layer, Layer.FOREGROUND)) {' or 'if (layer.equals(Layer.FOREGROUND)) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-19/source/org/jfree/chart/plot/CategoryPlot.java:2090: warning: [BoxedPrimitiveConstructor] valueOf or autoboxing provides better time and space performance
+                    new Integer(index));
+                    ^
+    (see http://errorprone.info/bugpattern/BoxedPrimitiveConstructor)
+  Did you mean 'Integer.valueOf(index));'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-19/source/org/jfree/chart/plot/CategoryPlot.java:2093: warning: [BoxedPrimitiveConstructor] valueOf or autoboxing provides better time and space performance
+                this.foregroundRangeMarkers.put(new Integer(index), markers);
+                                                ^
+    (see http://errorprone.info/bugpattern/BoxedPrimitiveConstructor)
+  Did you mean 'this.foregroundRangeMarkers.put(Integer.valueOf(index), markers);'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-19/source/org/jfree/chart/plot/CategoryPlot.java:2097: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+        else if (layer == Layer.BACKGROUND) {
+                       ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'else if (Objects.equals(layer, Layer.BACKGROUND)) {' or 'else if (layer.equals(Layer.BACKGROUND)) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-19/source/org/jfree/chart/plot/CategoryPlot.java:2099: warning: [BoxedPrimitiveConstructor] valueOf or autoboxing provides better time and space performance
+                    new Integer(index));
+                    ^
+    (see http://errorprone.info/bugpattern/BoxedPrimitiveConstructor)
+  Did you mean 'Integer.valueOf(index));'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-19/source/org/jfree/chart/plot/CategoryPlot.java:2102: warning: [BoxedPrimitiveConstructor] valueOf or autoboxing provides better time and space performance
+                this.backgroundRangeMarkers.put(new Integer(index), markers);
+                                                ^
+    (see http://errorprone.info/bugpattern/BoxedPrimitiveConstructor)
+  Did you mean 'this.backgroundRangeMarkers.put(Integer.valueOf(index), markers);'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-19/source/org/jfree/chart/plot/CategoryPlot.java:2162: warning: [BoxedPrimitiveConstructor] valueOf or autoboxing provides better time and space performance
+        Integer key = new Integer(index);
+                      ^
+    (see http://errorprone.info/bugpattern/BoxedPrimitiveConstructor)
+  Did you mean 'Integer key = index;'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-19/source/org/jfree/chart/plot/CategoryPlot.java:2163: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+        if (layer == Layer.FOREGROUND) {
+                  ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'if (Objects.equals(layer, Layer.FOREGROUND)) {' or 'if (layer.equals(Layer.FOREGROUND)) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-19/source/org/jfree/chart/plot/CategoryPlot.java:2166: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+        else if (layer == Layer.BACKGROUND) {
+                       ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'else if (Objects.equals(layer, Layer.BACKGROUND)) {' or 'else if (layer.equals(Layer.BACKGROUND)) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-19/source/org/jfree/chart/plot/CategoryPlot.java:2183: warning: [BoxedPrimitiveConstructor] valueOf or autoboxing provides better time and space performance
+        Integer key = new Integer(index);
+                      ^
+    (see http://errorprone.info/bugpattern/BoxedPrimitiveConstructor)
+  Did you mean 'Integer key = index;'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-19/source/org/jfree/chart/plot/CategoryPlot.java:2443: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+            if (this.orientation == PlotOrientation.HORIZONTAL) {
+                                 ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'if (Objects.equals(this.orientation, PlotOrientation.HORIZONTAL)) {' or 'if (this.orientation.equals(PlotOrientation.HORIZONTAL)) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-19/source/org/jfree/chart/plot/CategoryPlot.java:2449: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+            else if (this.orientation == PlotOrientation.VERTICAL) {
+                                      ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'else if (Objects.equals(this.orientation, PlotOrientation.VERTICAL)) {' or 'else if (this.orientation.equals(PlotOrientation.VERTICAL)) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-19/source/org/jfree/chart/plot/CategoryPlot.java:2498: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+            if (this.orientation == PlotOrientation.HORIZONTAL) {
+                                 ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'if (Objects.equals(this.orientation, PlotOrientation.HORIZONTAL)) {' or 'if (this.orientation.equals(PlotOrientation.HORIZONTAL)) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-19/source/org/jfree/chart/plot/CategoryPlot.java:2504: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+            else if (this.orientation == PlotOrientation.VERTICAL) {
+                                      ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'else if (Objects.equals(this.orientation, PlotOrientation.VERTICAL)) {' or 'else if (this.orientation.equals(PlotOrientation.VERTICAL)) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-19/source/org/jfree/chart/plot/CategoryPlot.java:2557: warning: [MissingOverride] draw implements method in Plot; expected @Override
+    public void draw(Graphics2D g2, Rectangle2D area, 
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void draw(Graphics2D g2, Rectangle2D area,'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-19/source/org/jfree/chart/plot/CategoryPlot.java:2634: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+        if (order == DatasetRenderingOrder.FORWARD) {
+                  ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'if (Objects.equals(order, DatasetRenderingOrder.FORWARD)) {' or 'if (order.equals(DatasetRenderingOrder.FORWARD)) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-19/source/org/jfree/chart/plot/CategoryPlot.java:2739: warning: [MissingOverride] drawBackground overrides method in Plot; expected @Override
+    public void drawBackground(Graphics2D g2, Rectangle2D area) {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void drawBackground(Graphics2D g2, Rectangle2D area) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-19/source/org/jfree/chart/plot/CategoryPlot.java:2869: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+                if (this.columnRenderingOrder == SortOrder.ASCENDING) {
+                                              ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'if (Objects.equals(this.columnRenderingOrder, SortOrder.ASCENDING)) {' or 'if (this.columnRenderingOrder.equals(SortOrder.ASCENDING)) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-19/source/org/jfree/chart/plot/CategoryPlot.java:2871: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+                        if (this.rowRenderingOrder == SortOrder.ASCENDING) {
+                                                   ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'if (Objects.equals(this.rowRenderingOrder, SortOrder.ASCENDING)) {' or 'if (this.rowRenderingOrder.equals(SortOrder.ASCENDING)) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-19/source/org/jfree/chart/plot/CategoryPlot.java:2889: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+                        if (this.rowRenderingOrder == SortOrder.ASCENDING) {
+                                                   ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'if (Objects.equals(this.rowRenderingOrder, SortOrder.ASCENDING)) {' or 'if (this.rowRenderingOrder.equals(SortOrder.ASCENDING)) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-19/source/org/jfree/chart/plot/CategoryPlot.java:3080: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+        if (this.orientation == PlotOrientation.HORIZONTAL) {
+                             ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'if (Objects.equals(this.orientation, PlotOrientation.HORIZONTAL)) {' or 'if (this.orientation.equals(PlotOrientation.HORIZONTAL)) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-19/source/org/jfree/chart/plot/CategoryPlot.java:3084: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+        else if (this.orientation == PlotOrientation.VERTICAL) {
+                                  ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'else if (Objects.equals(this.orientation, PlotOrientation.VERTICAL)) {' or 'else if (this.orientation.equals(PlotOrientation.VERTICAL)) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-19/source/org/jfree/chart/plot/CategoryPlot.java:3115: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+        if (orientation == PlotOrientation.HORIZONTAL) {
+                        ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'if (Objects.equals(orientation, PlotOrientation.HORIZONTAL)) {' or 'if (orientation.equals(PlotOrientation.HORIZONTAL)) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-19/source/org/jfree/chart/plot/CategoryPlot.java:3142: warning: [MissingOverride] getDataRange implements method in ValueAxisPlot; expected @Override
+    public Range getDataRange(ValueAxis axis) {
+                 ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Range getDataRange(ValueAxis axis) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-19/source/org/jfree/chart/plot/CategoryPlot.java:3151: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+        else if (axis == getRangeAxis()) {
+                      ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'else if (Objects.equals(axis, getRangeAxis())) {' or 'else if (axis.equals(getRangeAxis())) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-19/source/org/jfree/chart/plot/CategoryPlot.java:3379: warning: [MissingOverride] isDomainZoomable implements method in Zoomable; expected @Override
+    public boolean isDomainZoomable() {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public boolean isDomainZoomable() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-19/source/org/jfree/chart/plot/CategoryPlot.java:3390: warning: [MissingOverride] isRangeZoomable implements method in Zoomable; expected @Override
+    public boolean isRangeZoomable() {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public boolean isRangeZoomable() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-19/source/org/jfree/chart/plot/CategoryPlot.java:3402: warning: [MissingOverride] zoomDomainAxes implements method in Zoomable; expected @Override
+    public void zoomDomainAxes(double factor, PlotRenderingInfo state, 
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void zoomDomainAxes(double factor, PlotRenderingInfo state,'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-19/source/org/jfree/chart/plot/CategoryPlot.java:3416: warning: [MissingOverride] zoomDomainAxes implements method in Zoomable; expected @Override
+    public void zoomDomainAxes(double lowerPercent, double upperPercent, 
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void zoomDomainAxes(double lowerPercent, double upperPercent,'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-19/source/org/jfree/chart/plot/CategoryPlot.java:3434: warning: [MissingOverride] zoomDomainAxes implements method in Zoomable; expected @Override
+    public void zoomDomainAxes(double factor, PlotRenderingInfo info,
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void zoomDomainAxes(double factor, PlotRenderingInfo info,'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-19/source/org/jfree/chart/plot/CategoryPlot.java:3446: warning: [MissingOverride] zoomRangeAxes implements method in Zoomable; expected @Override
+    public void zoomRangeAxes(double factor, PlotRenderingInfo state, 
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void zoomRangeAxes(double factor, PlotRenderingInfo state,'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-19/source/org/jfree/chart/plot/CategoryPlot.java:3465: warning: [MissingOverride] zoomRangeAxes implements method in Zoomable; expected @Override
+    public void zoomRangeAxes(double factor, PlotRenderingInfo info,
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void zoomRangeAxes(double factor, PlotRenderingInfo info,'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-19/source/org/jfree/chart/plot/CategoryPlot.java:3476: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+                    if (this.orientation == PlotOrientation.HORIZONTAL) {
+                                         ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'if (Objects.equals(this.orientation, PlotOrientation.HORIZONTAL)) {' or 'if (this.orientation.equals(PlotOrientation.HORIZONTAL)) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-19/source/org/jfree/chart/plot/CategoryPlot.java:3498: warning: [MissingOverride] zoomRangeAxes implements method in Zoomable; expected @Override
+    public void zoomRangeAxes(double lowerPercent, double upperPercent, 
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void zoomRangeAxes(double lowerPercent, double upperPercent,'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-19/source/org/jfree/chart/plot/CategoryPlot.java:3554: warning: [MissingOverride] equals overrides method in Plot; expected @Override
+    public boolean equals(Object obj) {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public boolean equals(Object obj) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-19/source/org/jfree/chart/plot/CategoryPlot.java:3568: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+        if (this.orientation != that.orientation) {
+                             ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'if (!Objects.equals(this.orientation, that.orientation)) {' or 'if (!this.orientation.equals(that.orientation)) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-19/source/org/jfree/chart/plot/CategoryPlot.java:3600: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+        if (this.renderingOrder != that.renderingOrder) {
+                                ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'if (!Objects.equals(this.renderingOrder, that.renderingOrder)) {' or 'if (!this.renderingOrder.equals(that.renderingOrder)) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-19/source/org/jfree/chart/plot/CategoryPlot.java:3603: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+        if (this.columnRenderingOrder != that.columnRenderingOrder) {
+                                      ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'if (!Objects.equals(this.columnRenderingOrder, that.columnRenderingOrder)) {' or 'if (!this.columnRenderingOrder.equals(that.columnRenderingOrder)) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-19/source/org/jfree/chart/plot/CategoryPlot.java:3606: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+        if (this.rowRenderingOrder != that.rowRenderingOrder) {
+                                   ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'if (!Objects.equals(this.rowRenderingOrder, that.rowRenderingOrder)) {' or 'if (!this.rowRenderingOrder.equals(that.rowRenderingOrder)) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-19/source/org/jfree/chart/plot/CategoryPlot.java:3612: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+        if (this.domainGridlinePosition != that.domainGridlinePosition) {
+                                        ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'if (!Objects.equals(this.domainGridlinePosition, that.domainGridlinePosition)) {' or 'if (!this.domainGridlinePosition.equals(that.domainGridlinePosition)) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-19/source/org/jfree/chart/plot/CategoryPlot.java:3689: warning: [MissingOverride] clone overrides method in Plot; expected @Override
+    public Object clone() throws CloneNotSupportedException {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Object clone() throws CloneNotSupportedException {'?
+Note: /Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-19/source/org/jfree/chart/plot/CategoryPlot.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+63 warnings

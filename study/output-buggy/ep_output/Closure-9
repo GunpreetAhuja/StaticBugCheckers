@@ -1,0 +1,6 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-9/src/com/google/javascript/jscomp/ProcessCommonJSModules.java:256: warning: [ClassCanBeStatic] Inner class is non-static but does not reference enclosing class
+  private class SuffixVarsCallback extends AbstractPostOrderCallback {
+          ^
+    (see http://errorprone.info/bugpattern/ClassCanBeStatic)
+  Did you mean 'private static class SuffixVarsCallback extends AbstractPostOrderCallback {'?
+1 warning

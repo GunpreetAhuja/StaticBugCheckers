@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.1.0" sequence="0" timestamp="1542186474000" analysisTimestamp="1542186477477" release="">
+  <Project projectName="">
+    <Jar>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-30/src/main/java</Jar>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-30/target/classes</AuxClasspathEntry>
+  </Project>
+  <BugInstance type="ICAST_IDIV_CAST_TO_DOUBLE" priority="2" rank="17" abbrev="ICAST" category="STYLE" instanceHash="a7e701ffdde2eb2fca52d257de773b9f" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="192">
+    <ShortMessage>Integral division result cast to double or float</ShortMessage>
+    <LongMessage>Integral division result cast to double or float in org.apache.commons.math3.stat.inference.MannWhitneyUTest.mannWhitneyU(double[], double[])</LongMessage>
+    <Class classname="org.apache.commons.math3.stat.inference.MannWhitneyUTest" primary="true">
+      <SourceLine classname="org.apache.commons.math3.stat.inference.MannWhitneyUTest" start="44" end="231" sourcefile="MannWhitneyUTest.java" sourcepath="org/apache/commons/math3/stat/inference/MannWhitneyUTest.java">
+        <Message>At MannWhitneyUTest.java:[lines 44-231]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.math3.stat.inference.MannWhitneyUTest</Message>
+    </Class>
+    <Method classname="org.apache.commons.math3.stat.inference.MannWhitneyUTest" name="mannWhitneyU" signature="([D[D)D" isStatic="false" primary="true">
+      <SourceLine classname="org.apache.commons.math3.stat.inference.MannWhitneyUTest" start="129" end="155" startBytecode="0" endBytecode="180" sourcefile="MannWhitneyUTest.java" sourcepath="org/apache/commons/math3/stat/inference/MannWhitneyUTest.java"/>
+      <Message>In method org.apache.commons.math3.stat.inference.MannWhitneyUTest.mannWhitneyU(double[], double[])</Message>
+    </Method>
+    <SourceLine classname="org.apache.commons.math3.stat.inference.MannWhitneyUTest" primary="true" start="148" end="148" startBytecode="63" endBytecode="63" sourcefile="MannWhitneyUTest.java" sourcepath="org/apache/commons/math3/stat/inference/MannWhitneyUTest.java">
+      <Message>At MannWhitneyUTest.java:[line 148]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="ICAST_IDIV_CAST_TO_DOUBLE" abbrev="ICAST" category="STYLE">
+    <ShortDescription>Integral division result cast to double or float</ShortDescription>
+    <Details><![CDATA[
+
+<p>
+This code casts the result of an integral division (e.g., int or long division)
+operation to double or
+float.
+Doing division on integers truncates the result
+to the integer value closest to zero.  The fact that the result
+was cast to double suggests that this precision should have been retained.
+What was probably meant was to cast one or both of the operands to
+double <em>before</em> performing the division.  Here is an example:
+</p>
+<pre><code>int x = 2;
+int y = 5;
+// Wrong: yields result 0.0
+double value1 = x / y;
+
+// Right: yields result 0.4
+double value2 = x / (double) y;
+</code></pre>
+
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="ICAST" cweid="192">
+    <Description>Casting from integer values</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 14 Nov 2018 04:07:54 -0500" total_classes="1" referenced_classes="19" total_bugs="1" total_size="43" num_packages="1" java_version="1.8.0_121" vm_version="25.121-b13" cpu_seconds="6.58" clock_seconds="3.92" peak_mbytes="104.15" alloc_mbytes="1820.50" gc_seconds="0.05" priority_2="1">
+    <FileStats path="org/apache/commons/math3/stat/inference/MannWhitneyUTest.java" bugCount="1" size="43" bugHash="2fba763a8f907a2bf61cb0ec010fcd47"/>
+    <PackageStats package="org.apache.commons.math3.stat.inference" total_bugs="1" total_types="1" total_size="43" priority_2="1">
+      <ClassStats class="org.apache.commons.math3.stat.inference.MannWhitneyUTest" sourceFile="MannWhitneyUTest.java" interface="false" size="43" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="559" invocations="361" avgMicrosecondsPerInvocation="1549" maxMicrosecondsPerInvocation="35173" standardDeviationMicrosecondsPerInvocation="3474"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="489" invocations="360" avgMicrosecondsPerInvocation="1360" maxMicrosecondsPerInvocation="43126" standardDeviationMicrosecondsPerInvocation="4167"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="150" invocations="19" avgMicrosecondsPerInvocation="7903" maxMicrosecondsPerInvocation="29112" standardDeviationMicrosecondsPerInvocation="10042"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="130" invocations="19" avgMicrosecondsPerInvocation="6846" maxMicrosecondsPerInvocation="32810" standardDeviationMicrosecondsPerInvocation="10580"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="119" invocations="7" avgMicrosecondsPerInvocation="17127" maxMicrosecondsPerInvocation="117047" standardDeviationMicrosecondsPerInvocation="40793"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="117" invocations="325" avgMicrosecondsPerInvocation="362" maxMicrosecondsPerInvocation="28889" standardDeviationMicrosecondsPerInvocation="1985"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="77" invocations="7" avgMicrosecondsPerInvocation="11136" maxMicrosecondsPerInvocation="28302" standardDeviationMicrosecondsPerInvocation="11656"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="75" invocations="7" avgMicrosecondsPerInvocation="10760" maxMicrosecondsPerInvocation="43354" standardDeviationMicrosecondsPerInvocation="14424"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="56" invocations="55" avgMicrosecondsPerInvocation="1025" maxMicrosecondsPerInvocation="5039" standardDeviationMicrosecondsPerInvocation="1154"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="53" invocations="19" avgMicrosecondsPerInvocation="2800" maxMicrosecondsPerInvocation="26174" standardDeviationMicrosecondsPerInvocation="6827"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="52" invocations="38" avgMicrosecondsPerInvocation="1370" maxMicrosecondsPerInvocation="27815" standardDeviationMicrosecondsPerInvocation="4535"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="51" invocations="19" avgMicrosecondsPerInvocation="2736" maxMicrosecondsPerInvocation="16179" standardDeviationMicrosecondsPerInvocation="4532"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

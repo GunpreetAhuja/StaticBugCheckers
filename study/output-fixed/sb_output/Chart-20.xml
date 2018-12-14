@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.1.0" sequence="0" timestamp="1542189558000" analysisTimestamp="1542189561349" release="">
+  <Project projectName="">
+    <Jar>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Chart-20/source</Jar>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Chart-20/build</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Chart-20/lib/servlet.jar</AuxClasspathEntry>
+  </Project>
+  <BugInstance type="HE_EQUALS_USE_HASHCODE" priority="1" rank="14" abbrev="HE" category="BAD_PRACTICE" instanceHash="5d711c54b5eb4abbdebd6d149b34bfd" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Class defines equals() and uses Object.hashCode()</ShortMessage>
+    <LongMessage>org.jfree.chart.plot.ValueMarker defines equals and uses Object.hashCode()</LongMessage>
+    <Class classname="org.jfree.chart.plot.ValueMarker" primary="true">
+      <SourceLine classname="org.jfree.chart.plot.ValueMarker" start="68" end="154" sourcefile="ValueMarker.java" sourcepath="org/jfree/chart/plot/ValueMarker.java">
+        <Message>At ValueMarker.java:[lines 68-154]</Message>
+      </SourceLine>
+      <Message>In class org.jfree.chart.plot.ValueMarker</Message>
+    </Class>
+    <Method classname="org.jfree.chart.plot.ValueMarker" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false" primary="true">
+      <SourceLine classname="org.jfree.chart.plot.ValueMarker" start="141" end="154" startBytecode="0" endBytecode="123" sourcefile="ValueMarker.java" sourcepath="org/jfree/chart/plot/ValueMarker.java"/>
+      <Message>In method org.jfree.chart.plot.ValueMarker.equals(Object)</Message>
+    </Method>
+    <SourceLine classname="org.jfree.chart.plot.ValueMarker" start="141" end="154" startBytecode="0" endBytecode="123" sourcefile="ValueMarker.java" sourcepath="org/jfree/chart/plot/ValueMarker.java" synthetic="true">
+      <Message>At ValueMarker.java:[lines 141-154]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="BAD_PRACTICE">
+    <Description>Bad practice</Description>
+  </BugCategory>
+  <BugPattern type="HE_EQUALS_USE_HASHCODE" abbrev="HE" category="BAD_PRACTICE">
+    <ShortDescription>Class defines equals() and uses Object.hashCode()</ShortDescription>
+    <Details><![CDATA[
+
+  <p> This class overrides <code>equals(Object)</code>, but does not
+  override <code>hashCode()</code>, and inherits the implementation of
+  <code>hashCode()</code> from <code>java.lang.Object</code> (which returns
+  the identity hash code, an arbitrary value assigned to the object
+  by the VM).&nbsp; Therefore, the class is very likely to violate the
+  invariant that equal objects must have equal hashcodes.</p>
+
+<p>If you don't think instances of this class will ever be inserted into a HashMap/HashTable,
+the recommended <code>hashCode</code> implementation to use is:</p>
+<pre><code>public int hashCode() {
+    assert false : "hashCode not designed";
+    return 42; // any arbitrary constant will do
+}
+</code></pre>
+
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="HE">
+    <Description>Equal objects must have equal hashcodes</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 14 Nov 2018 04:59:18 -0500" total_classes="1" referenced_classes="32" total_bugs="1" total_size="30" num_packages="1" java_version="1.8.0_121" vm_version="25.121-b13" cpu_seconds="6.82" clock_seconds="3.75" peak_mbytes="109.18" alloc_mbytes="1820.50" gc_seconds="0.06" priority_1="1">
+    <FileStats path="org/jfree/chart/plot/ValueMarker.java" bugCount="1" size="30" bugHash="b1a77f9a3a2c9a7120806c2969130e59"/>
+    <PackageStats package="org.jfree.chart.plot" total_bugs="1" total_types="1" total_size="30" priority_1="1">
+      <ClassStats class="org.jfree.chart.plot.ValueMarker" sourceFile="ValueMarker.java" interface="false" size="30" bugs="1" priority_1="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="704" invocations="453" avgMicrosecondsPerInvocation="1554" maxMicrosecondsPerInvocation="56904" standardDeviationMicrosecondsPerInvocation="5485"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="504" invocations="457" avgMicrosecondsPerInvocation="1104" maxMicrosecondsPerInvocation="33694" standardDeviationMicrosecondsPerInvocation="2702"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="201" invocations="32" avgMicrosecondsPerInvocation="6293" maxMicrosecondsPerInvocation="68016" standardDeviationMicrosecondsPerInvocation="14267"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="158" invocations="414" avgMicrosecondsPerInvocation="382" maxMicrosecondsPerInvocation="28693" standardDeviationMicrosecondsPerInvocation="2292"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="143" invocations="79" avgMicrosecondsPerInvocation="1819" maxMicrosecondsPerInvocation="35058" standardDeviationMicrosecondsPerInvocation="5006"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="137" invocations="32" avgMicrosecondsPerInvocation="4291" maxMicrosecondsPerInvocation="37284" standardDeviationMicrosecondsPerInvocation="8509"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="88" invocations="32" avgMicrosecondsPerInvocation="2778" maxMicrosecondsPerInvocation="25305" standardDeviationMicrosecondsPerInvocation="6427"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="69" invocations="6" avgMicrosecondsPerInvocation="11576" maxMicrosecondsPerInvocation="67800" standardDeviationMicrosecondsPerInvocation="25144"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="69" invocations="59" avgMicrosecondsPerInvocation="1176" maxMicrosecondsPerInvocation="37346" standardDeviationMicrosecondsPerInvocation="5060"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

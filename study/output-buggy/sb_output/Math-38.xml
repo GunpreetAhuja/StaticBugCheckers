@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.1.0" sequence="0" timestamp="1542186509000" analysisTimestamp="1542186512554" release="">
+  <Project projectName="">
+    <Jar>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-38/src/main/java</Jar>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-38/target/classes</AuxClasspathEntry>
+  </Project>
+  <BugInstance type="FE_FLOATING_POINT_EQUALITY" priority="1" rank="15" abbrev="FE" category="STYLE" instanceHash="a3ce5586e6c3ad91966aaa666b6de0ff" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Test for floating point equality</ShortMessage>
+    <LongMessage>Test for floating point equality in org.apache.commons.math.optimization.direct.BOBYQAOptimizer.altmov(int, double)</LongMessage>
+    <Class classname="org.apache.commons.math.optimization.direct.BOBYQAOptimizer" primary="true">
+      <SourceLine classname="org.apache.commons.math.optimization.direct.BOBYQAOptimizer" start="52" end="2466" sourcefile="BOBYQAOptimizer.java" sourcepath="org/apache/commons/math/optimization/direct/BOBYQAOptimizer.java">
+        <Message>At BOBYQAOptimizer.java:[lines 52-2466]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.math.optimization.direct.BOBYQAOptimizer</Message>
+    </Class>
+    <Method classname="org.apache.commons.math.optimization.direct.BOBYQAOptimizer" name="altmov" signature="(ID)[D" isStatic="false" primary="true">
+      <SourceLine classname="org.apache.commons.math.optimization.direct.BOBYQAOptimizer" start="1260" end="1557" startBytecode="0" endBytecode="3482" sourcefile="BOBYQAOptimizer.java" sourcepath="org/apache/commons/math/optimization/direct/BOBYQAOptimizer.java"/>
+      <Message>In method org.apache.commons.math.optimization.direct.BOBYQAOptimizer.altmov(int, double)</Message>
+    </Method>
+    <SourceLine classname="org.apache.commons.math.optimization.direct.BOBYQAOptimizer" primary="true" start="1460" end="1460" startBytecode="1420" endBytecode="1420" sourcefile="BOBYQAOptimizer.java" sourcepath="org/apache/commons/math/optimization/direct/BOBYQAOptimizer.java">
+      <Message>At BOBYQAOptimizer.java:[line 1460]</Message>
+    </SourceLine>
+    <SourceLine classname="org.apache.commons.math.optimization.direct.BOBYQAOptimizer" start="1487" end="1487" startBytecode="1628" endBytecode="1628" sourcefile="BOBYQAOptimizer.java" sourcepath="org/apache/commons/math/optimization/direct/BOBYQAOptimizer.java" role="SOURCE_LINE_ANOTHER_INSTANCE">
+      <Message>Another occurrence at BOBYQAOptimizer.java:[line 1487]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="SF_SWITCH_FALLTHROUGH" priority="2" rank="17" abbrev="SF" category="STYLE" instanceHash="d91b819d8e8d01a759aa9e0491b0a097" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="484">
+    <ShortMessage>Switch statement found where one case falls through to the next case</ShortMessage>
+    <LongMessage>Switch statement found in org.apache.commons.math.optimization.direct.BOBYQAOptimizer.bobyqb(double[], double[]) where one case falls through to the next case</LongMessage>
+    <Class classname="org.apache.commons.math.optimization.direct.BOBYQAOptimizer" primary="true">
+      <SourceLine classname="org.apache.commons.math.optimization.direct.BOBYQAOptimizer" start="52" end="2466" sourcefile="BOBYQAOptimizer.java" sourcepath="org/apache/commons/math/optimization/direct/BOBYQAOptimizer.java">
+        <Message>At BOBYQAOptimizer.java:[lines 52-2466]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.math.optimization.direct.BOBYQAOptimizer</Message>
+    </Class>
+    <Method classname="org.apache.commons.math.optimization.direct.BOBYQAOptimizer" name="bobyqb" signature="([D[D)D" isStatic="false" primary="true">
+      <SourceLine classname="org.apache.commons.math.optimization.direct.BOBYQAOptimizer" start="376" end="1217" startBytecode="0" endBytecode="9844" sourcefile="BOBYQAOptimizer.java" sourcepath="org/apache/commons/math/optimization/direct/BOBYQAOptimizer.java"/>
+      <Message>In method org.apache.commons.math.optimization.direct.BOBYQAOptimizer.bobyqb(double[], double[])</Message>
+    </Method>
+    <SourceLine classname="org.apache.commons.math.optimization.direct.BOBYQAOptimizer" primary="true" start="545" end="555" startBytecode="1011" endBytecode="1014" sourcefile="BOBYQAOptimizer.java" sourcepath="org/apache/commons/math/optimization/direct/BOBYQAOptimizer.java">
+      <Message>At BOBYQAOptimizer.java:[lines 545-555]</Message>
+    </SourceLine>
+    <SourceLine classname="org.apache.commons.math.optimization.direct.BOBYQAOptimizer" start="1115" end="1118" startBytecode="5227" endBytecode="5229" sourcefile="BOBYQAOptimizer.java" sourcepath="org/apache/commons/math/optimization/direct/BOBYQAOptimizer.java" role="SOURCE_LINE_ANOTHER_INSTANCE">
+      <Message>Another occurrence at BOBYQAOptimizer.java:[lines 1115-1118]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="SF_SWITCH_FALLTHROUGH" priority="2" rank="17" abbrev="SF" category="STYLE" instanceHash="d744759471e58f1556626b3f32b06a48" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="484">
+    <ShortMessage>Switch statement found where one case falls through to the next case</ShortMessage>
+    <LongMessage>Switch statement found in org.apache.commons.math.optimization.direct.BOBYQAOptimizer.trsbox(double, ArrayRealVector, ArrayRealVector, ArrayRealVector, ArrayRealVector, ArrayRealVector) where one case falls through to the next case</LongMessage>
+    <Class classname="org.apache.commons.math.optimization.direct.BOBYQAOptimizer" primary="true">
+      <SourceLine classname="org.apache.commons.math.optimization.direct.BOBYQAOptimizer" start="52" end="2466" sourcefile="BOBYQAOptimizer.java" sourcepath="org/apache/commons/math/optimization/direct/BOBYQAOptimizer.java">
+        <Message>At BOBYQAOptimizer.java:[lines 52-2466]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.math.optimization.direct.BOBYQAOptimizer</Message>
+    </Class>
+    <Method classname="org.apache.commons.math.optimization.direct.BOBYQAOptimizer" name="trsbox" signature="(DLorg/apache/commons/math/linear/ArrayRealVector;Lorg/apache/commons/math/linear/ArrayRealVector;Lorg/apache/commons/math/linear/ArrayRealVector;Lorg/apache/commons/math/linear/ArrayRealVector;Lorg/apache/commons/math/linear/ArrayRealVector;)[D" isStatic="false" primary="true">
+      <SourceLine classname="org.apache.commons.math.optimization.direct.BOBYQAOptimizer" start="1812" end="2275" startBytecode="0" endBytecode="5445" sourcefile="BOBYQAOptimizer.java" sourcepath="org/apache/commons/math/optimization/direct/BOBYQAOptimizer.java"/>
+      <Message>In method org.apache.commons.math.optimization.direct.BOBYQAOptimizer.trsbox(double, ArrayRealVector, ArrayRealVector, ArrayRealVector, ArrayRealVector, ArrayRealVector)</Message>
+    </Method>
+    <SourceLine classname="org.apache.commons.math.optimization.direct.BOBYQAOptimizer" primary="true" start="1881" end="1884" startBytecode="378" endBytecode="380" sourcefile="BOBYQAOptimizer.java" sourcepath="org/apache/commons/math/optimization/direct/BOBYQAOptimizer.java">
+      <Message>At BOBYQAOptimizer.java:[lines 1881-1884]</Message>
+    </SourceLine>
+    <SourceLine classname="org.apache.commons.math.optimization.direct.BOBYQAOptimizer" start="2026" end="2034" startBytecode="1216" endBytecode="1218" sourcefile="BOBYQAOptimizer.java" sourcepath="org/apache/commons/math/optimization/direct/BOBYQAOptimizer.java" role="SOURCE_LINE_ANOTHER_INSTANCE">
+      <Message>Another occurrence at BOBYQAOptimizer.java:[lines 2026-2034]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="SF_SWITCH_FALLTHROUGH" abbrev="SF" category="STYLE" cweid="484">
+    <ShortDescription>Switch statement found where one case falls through to the next case</ShortDescription>
+    <Details><![CDATA[
+
+  <p> This method contains a switch statement where one case branch will fall through to the next case.
+  Usually you need to end this case with a break or return.</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="FE_FLOATING_POINT_EQUALITY" abbrev="FE" category="STYLE">
+    <ShortDescription>Test for floating point equality</ShortDescription>
+    <Details><![CDATA[
+   
+    <p>
+    This operation compares two floating point values for equality.
+    Because floating point calculations may involve rounding,
+   calculated float and double values may not be accurate.
+    For values that must be precise, such as monetary values,
+   consider using a fixed-precision type such as BigDecimal.
+    For values that need not be precise, consider comparing for equality
+    within some range, for example:
+    <code>if ( Math.abs(x - y) &lt; .0000001 )</code>.
+   See the Java Language Specification, section 4.2.4.
+    </p>
+    
+     ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="SF">
+    <Description>Switch case falls through</Description>
+  </BugCode>
+  <BugCode abbrev="FE">
+    <Description>Test for floating point equality</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 14 Nov 2018 04:08:29 -0500" total_classes="2" referenced_classes="64" total_bugs="3" total_size="1255" num_packages="1" java_version="1.8.0_121" vm_version="25.121-b13" cpu_seconds="16.92" clock_seconds="9.48" peak_mbytes="249.35" alloc_mbytes="1820.50" gc_seconds="0.13" priority_2="2" priority_1="1">
+    <FileStats path="org/apache/commons/math/optimization/direct/BOBYQAOptimizer.java" bugCount="3" size="1255" bugHash="fc9edb71070cec854de0cabb1da84d64"/>
+    <PackageStats package="org.apache.commons.math.optimization.direct" total_bugs="3" total_types="2" total_size="1255" priority_2="2" priority_1="1">
+      <ClassStats class="org.apache.commons.math.optimization.direct.BOBYQAOptimizer" sourceFile="BOBYQAOptimizer.java" interface="false" size="1249" bugs="3" priority_2="2" priority_1="1"/>
+      <ClassStats class="org.apache.commons.math.optimization.direct.BOBYQAOptimizer$PathIsExploredException" sourceFile="BOBYQAOptimizer.java" interface="false" size="6" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="811" invocations="15" avgMicrosecondsPerInvocation="54115" maxMicrosecondsPerInvocation="342417" standardDeviationMicrosecondsPerInvocation="103976"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="791" invocations="574" avgMicrosecondsPerInvocation="1378" maxMicrosecondsPerInvocation="29663" standardDeviationMicrosecondsPerInvocation="3070"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="757" invocations="15" avgMicrosecondsPerInvocation="50491" maxMicrosecondsPerInvocation="505479" standardDeviationMicrosecondsPerInvocation="124752"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="709" invocations="571" avgMicrosecondsPerInvocation="1243" maxMicrosecondsPerInvocation="103249" standardDeviationMicrosecondsPerInvocation="5300"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="541" invocations="15" avgMicrosecondsPerInvocation="36113" maxMicrosecondsPerInvocation="174070" standardDeviationMicrosecondsPerInvocation="59868"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="471" invocations="273" avgMicrosecondsPerInvocation="1725" maxMicrosecondsPerInvocation="96158" standardDeviationMicrosecondsPerInvocation="7794"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="376" invocations="64" avgMicrosecondsPerInvocation="5881" maxMicrosecondsPerInvocation="54711" standardDeviationMicrosecondsPerInvocation="10879"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="289" invocations="15" avgMicrosecondsPerInvocation="19325" maxMicrosecondsPerInvocation="152589" standardDeviationMicrosecondsPerInvocation="37556"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="279" invocations="15" avgMicrosecondsPerInvocation="18658" maxMicrosecondsPerInvocation="100778" standardDeviationMicrosecondsPerInvocation="32751"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="263" invocations="1" avgMicrosecondsPerInvocation="263652" maxMicrosecondsPerInvocation="263652" standardDeviationMicrosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="238" invocations="64" avgMicrosecondsPerInvocation="3731" maxMicrosecondsPerInvocation="74534" standardDeviationMicrosecondsPerInvocation="11074"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="227" invocations="13" avgMicrosecondsPerInvocation="17506" maxMicrosecondsPerInvocation="135970" standardDeviationMicrosecondsPerInvocation="35081"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="164" invocations="530" avgMicrosecondsPerInvocation="310" maxMicrosecondsPerInvocation="28918" standardDeviationMicrosecondsPerInvocation="1741"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="143" invocations="15" avgMicrosecondsPerInvocation="9598" maxMicrosecondsPerInvocation="53544" standardDeviationMicrosecondsPerInvocation="15809"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.LiveLocalStoreDataflowFactory" totalMilliseconds="138" invocations="14" avgMicrosecondsPerInvocation="9924" maxMicrosecondsPerInvocation="104947" standardDeviationMicrosecondsPerInvocation="26611"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="121" invocations="15" avgMicrosecondsPerInvocation="8133" maxMicrosecondsPerInvocation="46457" standardDeviationMicrosecondsPerInvocation="13010"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

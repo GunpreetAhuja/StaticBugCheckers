@@ -1,0 +1,11 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-96/src/java/org/apache/commons/math/complex/Complex.java:245: warning: [MissingOverride] equals overrides method in Object; expected @Override
+    public boolean equals(Object other) {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public boolean equals(Object other) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-96/src/java/org/apache/commons/math/complex/Complex.java:276: warning: [MissingOverride] hashCode overrides method in Object; expected @Override
+    public int hashCode() {
+               ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int hashCode() {'?
+2 warnings

@@ -1,0 +1,26 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Mockito-13/src/org/mockito/internal/MockHandler.java:58: warning: [MissingOverride] handle implements method in MockitoInvocationHandler; expected @Override
+    public Object handle(Invocation invocation) throws Throwable {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Object handle(Invocation invocation) throws Throwable {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Mockito-13/src/org/mockito/internal/MockHandler.java:108: warning: [MissingOverride] voidMethodStubbable implements method in MockHandlerInterface; expected @Override
+    public VoidMethodStubbable<T> voidMethodStubbable(T mock) {
+                                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public VoidMethodStubbable<T> voidMethodStubbable(T mock) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Mockito-13/src/org/mockito/internal/MockHandler.java:112: warning: [MissingOverride] getMockSettings implements method in MockHandlerInterface; expected @Override
+    public MockSettingsImpl getMockSettings() {
+                            ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public MockSettingsImpl getMockSettings() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Mockito-13/src/org/mockito/internal/MockHandler.java:117: warning: [MissingOverride] setAnswersForStubbing implements method in MockHandlerInterface; expected @Override
+    public void setAnswersForStubbing(List<Answer> answers) {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override @SuppressWarnings("unchecked")'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Mockito-13/src/org/mockito/internal/MockHandler.java:121: warning: [MissingOverride] getInvocationContainer implements method in MockHandlerInterface; expected @Override
+    public InvocationContainer getInvocationContainer() {
+                               ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public InvocationContainer getInvocationContainer() {'?
+5 warnings

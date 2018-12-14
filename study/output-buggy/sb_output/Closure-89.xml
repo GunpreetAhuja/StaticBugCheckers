@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.1.0" sequence="0" timestamp="1542185972000" analysisTimestamp="1542185974908" release="">
+  <Project projectName="">
+    <Jar>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-89/src</Jar>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-89/build/classes</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-89/lib/ant-launcher.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-89/lib/ant.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-89/lib/args4j.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-89/lib/guava.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-89/lib/json.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-89/lib/jsr305.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-89/lib/junit.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-89/lib/libtrunk_rhino_parser_jarjared.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-89/lib/protobuf-java.jar</AuxClasspathEntry>
+  </Project>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" instanceHash="c58be62e75f367f5ad70d2ede2b63d66" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Dead store to local variable</ShortMessage>
+    <LongMessage>Dead store to $L8 in com.google.javascript.jscomp.CollapseProperties.updateSimpleDeclaration(String, GlobalNamespace$Name, GlobalNamespace$Ref)</LongMessage>
+    <Class classname="com.google.javascript.jscomp.CollapseProperties" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.CollapseProperties" start="71" end="851" sourcefile="CollapseProperties.java" sourcepath="com/google/javascript/jscomp/CollapseProperties.java">
+        <Message>At CollapseProperties.java:[lines 71-851]</Message>
+      </SourceLine>
+      <Message>In class com.google.javascript.jscomp.CollapseProperties</Message>
+    </Class>
+    <Method classname="com.google.javascript.jscomp.CollapseProperties" name="updateSimpleDeclaration" signature="(Ljava/lang/String;Lcom/google/javascript/jscomp/GlobalNamespace$Name;Lcom/google/javascript/jscomp/GlobalNamespace$Ref;)V" isStatic="false" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.CollapseProperties" start="478" end="540" startBytecode="0" endBytecode="97" sourcefile="CollapseProperties.java" sourcepath="com/google/javascript/jscomp/CollapseProperties.java"/>
+      <Message>In method com.google.javascript.jscomp.CollapseProperties.updateSimpleDeclaration(String, GlobalNamespace$Name, GlobalNamespace$Ref)</Message>
+    </Method>
+    <LocalVariable name="?" register="8" pc="39" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 8</Message>
+    </LocalVariable>
+    <SourceLine classname="com.google.javascript.jscomp.CollapseProperties" primary="true" start="482" end="482" startBytecode="37" endBytecode="37" sourcefile="CollapseProperties.java" sourcepath="com/google/javascript/jscomp/CollapseProperties.java">
+      <Message>At CollapseProperties.java:[line 482]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="NP_UNWRITTEN_FIELD" priority="2" rank="8" abbrev="NP" category="CORRECTNESS" instanceHash="552e85d8bee58b96aabf9456b5992856" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="476">
+    <ShortMessage>Read of unwritten field</ShortMessage>
+    <LongMessage>Read of unwritten field scope in com.google.javascript.jscomp.CollapseProperties.inlineAliasIfPossible(GlobalNamespace$Ref, GlobalNamespace)</LongMessage>
+    <Class classname="com.google.javascript.jscomp.CollapseProperties" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.CollapseProperties" start="71" end="851" sourcefile="CollapseProperties.java" sourcepath="com/google/javascript/jscomp/CollapseProperties.java">
+        <Message>At CollapseProperties.java:[lines 71-851]</Message>
+      </SourceLine>
+      <Message>In class com.google.javascript.jscomp.CollapseProperties</Message>
+    </Class>
+    <Method classname="com.google.javascript.jscomp.CollapseProperties" name="inlineAliasIfPossible" signature="(Lcom/google/javascript/jscomp/GlobalNamespace$Ref;Lcom/google/javascript/jscomp/GlobalNamespace;)Z" isStatic="false" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.CollapseProperties" start="196" end="235" startBytecode="0" endBytecode="421" sourcefile="CollapseProperties.java" sourcepath="com/google/javascript/jscomp/CollapseProperties.java"/>
+      <Message>In method com.google.javascript.jscomp.CollapseProperties.inlineAliasIfPossible(GlobalNamespace$Ref, GlobalNamespace)</Message>
+    </Method>
+    <Field classname="com.google.javascript.jscomp.GlobalNamespace$Ref" name="scope" signature="Lcom/google/javascript/jscomp/Scope;" isStatic="false" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.GlobalNamespace$Ref" sourcefile="GlobalNamespace.java" sourcepath="com/google/javascript/jscomp/GlobalNamespace.java">
+        <Message>In GlobalNamespace.java</Message>
+      </SourceLine>
+      <Message>Field com.google.javascript.jscomp.GlobalNamespace$Ref.scope</Message>
+    </Field>
+    <SourceLine classname="com.google.javascript.jscomp.CollapseProperties" primary="true" start="200" end="200" startBytecode="29" endBytecode="29" sourcefile="CollapseProperties.java" sourcepath="com/google/javascript/jscomp/CollapseProperties.java">
+      <Message>At CollapseProperties.java:[line 200]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="NP_UNWRITTEN_FIELD" priority="2" rank="8" abbrev="NP" category="CORRECTNESS" instanceHash="881ffedd5f79db868e19a3dc9441cf92" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="476">
+    <ShortMessage>Read of unwritten field</ShortMessage>
+    <LongMessage>Read of unwritten field scope in com.google.javascript.jscomp.CollapseProperties.inlineAliases(GlobalNamespace)</LongMessage>
+    <Class classname="com.google.javascript.jscomp.CollapseProperties" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.CollapseProperties" start="71" end="851" sourcefile="CollapseProperties.java" sourcepath="com/google/javascript/jscomp/CollapseProperties.java">
+        <Message>At CollapseProperties.java:[lines 71-851]</Message>
+      </SourceLine>
+      <Message>In class com.google.javascript.jscomp.CollapseProperties</Message>
+    </Class>
+    <Method classname="com.google.javascript.jscomp.CollapseProperties" name="inlineAliases" signature="(Lcom/google/javascript/jscomp/GlobalNamespace;)V" isStatic="false" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.CollapseProperties" start="160" end="189" startBytecode="0" endBytecode="293" sourcefile="CollapseProperties.java" sourcepath="com/google/javascript/jscomp/CollapseProperties.java"/>
+      <Message>In method com.google.javascript.jscomp.CollapseProperties.inlineAliases(GlobalNamespace)</Message>
+    </Method>
+    <Field classname="com.google.javascript.jscomp.GlobalNamespace$Ref" name="scope" signature="Lcom/google/javascript/jscomp/Scope;" isStatic="false" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.GlobalNamespace$Ref" sourcefile="GlobalNamespace.java" sourcepath="com/google/javascript/jscomp/GlobalNamespace.java">
+        <Message>In GlobalNamespace.java</Message>
+      </SourceLine>
+      <Message>Field com.google.javascript.jscomp.GlobalNamespace$Ref.scope</Message>
+    </Field>
+    <SourceLine classname="com.google.javascript.jscomp.CollapseProperties" primary="true" start="170" end="170" startBytecode="109" endBytecode="109" sourcefile="CollapseProperties.java" sourcepath="com/google/javascript/jscomp/CollapseProperties.java">
+      <Message>At CollapseProperties.java:[line 170]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="SF_SWITCH_NO_DEFAULT" priority="2" rank="19" abbrev="SF" category="STYLE" instanceHash="dc31ea150c79857297f5533fb7e8b519" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Switch statement found where default case is missing</ShortMessage>
+    <LongMessage>Switch statement found in com.google.javascript.jscomp.CollapseProperties.updateObjLitOrFunctionDeclaration(GlobalNamespace$Name, String) where default case is missing</LongMessage>
+    <Class classname="com.google.javascript.jscomp.CollapseProperties" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.CollapseProperties" start="71" end="851" sourcefile="CollapseProperties.java" sourcepath="com/google/javascript/jscomp/CollapseProperties.java">
+        <Message>At CollapseProperties.java:[lines 71-851]</Message>
+      </SourceLine>
+      <Message>In class com.google.javascript.jscomp.CollapseProperties</Message>
+    </Class>
+    <Method classname="com.google.javascript.jscomp.CollapseProperties" name="updateObjLitOrFunctionDeclaration" signature="(Lcom/google/javascript/jscomp/GlobalNamespace$Name;Ljava/lang/String;)V" isStatic="false" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.CollapseProperties" start="553" end="564" startBytecode="0" endBytecode="130" sourcefile="CollapseProperties.java" sourcepath="com/google/javascript/jscomp/CollapseProperties.java"/>
+      <Message>In method com.google.javascript.jscomp.CollapseProperties.updateObjLitOrFunctionDeclaration(GlobalNamespace$Name, String)</Message>
+    </Method>
+    <SourceLine classname="com.google.javascript.jscomp.CollapseProperties" primary="true" start="553" end="561" startBytecode="13" endBytecode="69" sourcefile="CollapseProperties.java" sourcepath="com/google/javascript/jscomp/CollapseProperties.java">
+      <Message>At CollapseProperties.java:[lines 553-561]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="CORRECTNESS">
+    <Description>Correctness</Description>
+  </BugCategory>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="DLS_DEAD_LOCAL_STORE" abbrev="DLS" category="STYLE">
+    <ShortDescription>Dead store to local variable</ShortDescription>
+    <Details><![CDATA[
+
+<p>
+This instruction assigns a value to a local variable,
+but the value is not read or used in any subsequent instruction.
+Often, this indicates an error, because the value computed is never
+used.
+</p>
+<p>
+Note that Sun's javac compiler often generates dead stores for
+final local variables.  Because SpotBugs is a bytecode-based tool,
+there is no easy way to eliminate these false positives.
+</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="NP_UNWRITTEN_FIELD" abbrev="NP" category="CORRECTNESS">
+    <ShortDescription>Read of unwritten field</ShortDescription>
+    <Details><![CDATA[
+
+  <p> The program is dereferencing a field that does not seem to ever have a non-null value written to it.
+Unless the field is initialized via some mechanism not seen by the analysis,
+dereferencing this value will generate a null pointer exception.
+</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="SF_SWITCH_NO_DEFAULT" abbrev="SF" category="STYLE">
+    <ShortDescription>Switch statement found where default case is missing</ShortDescription>
+    <Details><![CDATA[
+
+  <p> This method contains a switch statement where default case is missing.
+  Usually you need to provide a default case.</p>
+  <p>Because the analysis only looks at the generated bytecode, this warning can be incorrect triggered if
+the default case is at the end of the switch statement and the switch statement doesn't contain break statements for other
+cases.
+
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="NP" cweid="476">
+    <Description>Null pointer dereference</Description>
+  </BugCode>
+  <BugCode abbrev="SF">
+    <Description>Switch case falls through</Description>
+  </BugCode>
+  <BugCode abbrev="DLS" cweid="563">
+    <Description>Dead local store</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 14 Nov 2018 03:59:32 -0500" total_classes="10" referenced_classes="81" total_bugs="4" total_size="867" num_packages="1" java_version="1.8.0_121" vm_version="25.121-b13" cpu_seconds="11.62" clock_seconds="5.83" peak_mbytes="185.20" alloc_mbytes="1820.50" gc_seconds="0.06" priority_2="4">
+    <FileStats path="com/google/javascript/jscomp/CollapseProperties.java" bugCount="4" size="354" bugHash="64657914421bf6268ccf2a0ac8e0e94d"/>
+    <FileStats path="com/google/javascript/jscomp/GlobalNamespace.java" bugCount="0" size="513"/>
+    <PackageStats package="com.google.javascript.jscomp" total_bugs="4" total_types="10" total_size="867" priority_2="4">
+      <ClassStats class="com.google.javascript.jscomp.CollapseProperties" sourceFile="CollapseProperties.java" interface="false" size="343" bugs="4" priority_2="4"/>
+      <ClassStats class="com.google.javascript.jscomp.CollapseProperties$1" sourceFile="CollapseProperties.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.GlobalNamespace" sourceFile="GlobalNamespace.java" interface="false" size="62" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.GlobalNamespace$1" sourceFile="GlobalNamespace.java" interface="false" size="4" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.GlobalNamespace$BuildGlobalNamespace" sourceFile="GlobalNamespace.java" interface="false" size="210" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.GlobalNamespace$Name" sourceFile="GlobalNamespace.java" interface="false" size="144" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.GlobalNamespace$Name$Type" sourceFile="GlobalNamespace.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.GlobalNamespace$NodeFilter" sourceFile="GlobalNamespace.java" interface="false" size="17" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.GlobalNamespace$Ref" sourceFile="GlobalNamespace.java" interface="false" size="44" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.GlobalNamespace$Ref$Type" sourceFile="GlobalNamespace.java" interface="false" size="19" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="895" invocations="618" avgMicrosecondsPerInvocation="1448" maxMicrosecondsPerInvocation="33695" standardDeviationMicrosecondsPerInvocation="2770"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="659" invocations="615" avgMicrosecondsPerInvocation="1071" maxMicrosecondsPerInvocation="42063" standardDeviationMicrosecondsPerInvocation="3631"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="233" invocations="41" avgMicrosecondsPerInvocation="5701" maxMicrosecondsPerInvocation="34991" standardDeviationMicrosecondsPerInvocation="9651"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="224" invocations="41" avgMicrosecondsPerInvocation="5486" maxMicrosecondsPerInvocation="39278" standardDeviationMicrosecondsPerInvocation="8437"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="215" invocations="81" avgMicrosecondsPerInvocation="2656" maxMicrosecondsPerInvocation="25155" standardDeviationMicrosecondsPerInvocation="4895"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="182" invocations="41" avgMicrosecondsPerInvocation="4456" maxMicrosecondsPerInvocation="39524" standardDeviationMicrosecondsPerInvocation="8069"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="175" invocations="41" avgMicrosecondsPerInvocation="4289" maxMicrosecondsPerInvocation="33653" standardDeviationMicrosecondsPerInvocation="7021"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="151" invocations="81" avgMicrosecondsPerInvocation="1871" maxMicrosecondsPerInvocation="15198" standardDeviationMicrosecondsPerInvocation="3541"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="134" invocations="283" avgMicrosecondsPerInvocation="475" maxMicrosecondsPerInvocation="8298" standardDeviationMicrosecondsPerInvocation="962"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="118" invocations="41" avgMicrosecondsPerInvocation="2884" maxMicrosecondsPerInvocation="53543" standardDeviationMicrosecondsPerInvocation="8166"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="107" invocations="581" avgMicrosecondsPerInvocation="184" maxMicrosecondsPerInvocation="7475" standardDeviationMicrosecondsPerInvocation="545"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="96" invocations="41" avgMicrosecondsPerInvocation="2343" maxMicrosecondsPerInvocation="25186" standardDeviationMicrosecondsPerInvocation="4366"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="91" invocations="41" avgMicrosecondsPerInvocation="2228" maxMicrosecondsPerInvocation="76097" standardDeviationMicrosecondsPerInvocation="11684"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="81" invocations="81" avgMicrosecondsPerInvocation="1007" maxMicrosecondsPerInvocation="12068" standardDeviationMicrosecondsPerInvocation="2079"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindOpenStream" totalMilliseconds="69" invocations="2" avgMicrosecondsPerInvocation="34773" maxMicrosecondsPerInvocation="69428" standardDeviationMicrosecondsPerInvocation="34654"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="66" invocations="104" avgMicrosecondsPerInvocation="640" maxMicrosecondsPerInvocation="21081" standardDeviationMicrosecondsPerInvocation="2248"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="65" invocations="35" avgMicrosecondsPerInvocation="1867" maxMicrosecondsPerInvocation="21600" standardDeviationMicrosecondsPerInvocation="3694"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

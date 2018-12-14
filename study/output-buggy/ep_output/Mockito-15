@@ -1,0 +1,16 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Mockito-15/src/org/mockito/internal/configuration/injection/FinalMockCandidateFilter.java:18: warning: [MissingOverride] filterCandidate implements method in MockCandidateFilter; expected @Override
+    public OngoingInjecter filterCandidate(final Collection<Object> mocks, final Field field, final Object fieldInstance) {
+                           ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public OngoingInjecter filterCandidate(final Collection<Object> mocks, final Field field, final Object fieldInstance) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Mockito-15/src/org/mockito/internal/configuration/injection/FinalMockCandidateFilter.java:23: warning: [MissingOverride] thenInject implements method in OngoingInjecter; expected @Override
+                public boolean thenInject() {
+                               ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public boolean thenInject() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Mockito-15/src/org/mockito/internal/configuration/injection/FinalMockCandidateFilter.java:35: warning: [MissingOverride] thenInject implements method in OngoingInjecter; expected @Override
+            public boolean thenInject() {
+                           ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public boolean thenInject() {'?
+3 warnings

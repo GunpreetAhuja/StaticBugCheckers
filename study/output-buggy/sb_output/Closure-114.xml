@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.1.0" sequence="0" timestamp="1542185421000" analysisTimestamp="1542185424274" release="">
+  <Project projectName="">
+    <Jar>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-114/src</Jar>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-114/build/classes</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-114/lib/args4j.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-114/lib/guava.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-114/lib/json.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-114/lib/jsr305.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-114/lib/protobuf-java.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-114/build/lib/rhino.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-114/lib/ant.jar</AuxClasspathEntry>
+  </Project>
+  <BugInstance type="NP_UNWRITTEN_FIELD" priority="2" rank="8" abbrev="NP" category="CORRECTNESS" instanceHash="40258466c0609e5fc305019960231bf5" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="476">
+    <ShortMessage>Read of unwritten field</ShortMessage>
+    <LongMessage>Read of unwritten field prototypeNames in com.google.javascript.jscomp.NameAnalyzer.countOf(NameAnalyzer$TriState, NameAnalyzer$TriState)</LongMessage>
+    <Class classname="com.google.javascript.jscomp.NameAnalyzer" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.NameAnalyzer" start="78" end="1884" sourcefile="NameAnalyzer.java" sourcepath="com/google/javascript/jscomp/NameAnalyzer.java">
+        <Message>At NameAnalyzer.java:[lines 78-1884]</Message>
+      </SourceLine>
+      <Message>In class com.google.javascript.jscomp.NameAnalyzer</Message>
+    </Class>
+    <Method classname="com.google.javascript.jscomp.NameAnalyzer" name="countOf" signature="(Lcom/google/javascript/jscomp/NameAnalyzer$TriState;Lcom/google/javascript/jscomp/NameAnalyzer$TriState;)I" isStatic="false" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.NameAnalyzer" start="1654" end="1671" startBytecode="0" endBytecode="268" sourcefile="NameAnalyzer.java" sourcepath="com/google/javascript/jscomp/NameAnalyzer.java"/>
+      <Message>In method com.google.javascript.jscomp.NameAnalyzer.countOf(NameAnalyzer$TriState, NameAnalyzer$TriState)</Message>
+    </Method>
+    <Field classname="com.google.javascript.jscomp.NameAnalyzer$JsName" name="prototypeNames" signature="Ljava/util/List;" isStatic="false" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.NameAnalyzer$JsName" sourcefile="NameAnalyzer.java" sourcepath="com/google/javascript/jscomp/NameAnalyzer.java">
+        <Message>In NameAnalyzer.java</Message>
+      </SourceLine>
+      <Message>Field com.google.javascript.jscomp.NameAnalyzer$JsName.prototypeNames</Message>
+    </Field>
+    <SourceLine classname="com.google.javascript.jscomp.NameAnalyzer" primary="true" start="1657" end="1657" startBytecode="45" endBytecode="45" sourcefile="NameAnalyzer.java" sourcepath="com/google/javascript/jscomp/NameAnalyzer.java">
+      <Message>At NameAnalyzer.java:[line 1657]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="NP_UNWRITTEN_FIELD" priority="2" rank="8" abbrev="NP" category="CORRECTNESS" instanceHash="f447585aa4042b762da57bff773df95f" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="476">
+    <ShortMessage>Read of unwritten field</ShortMessage>
+    <LongMessage>Read of unwritten field prototypeNames in com.google.javascript.jscomp.NameAnalyzer.getHtmlReport()</LongMessage>
+    <Class classname="com.google.javascript.jscomp.NameAnalyzer" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.NameAnalyzer" start="78" end="1884" sourcefile="NameAnalyzer.java" sourcepath="com/google/javascript/jscomp/NameAnalyzer.java">
+        <Message>At NameAnalyzer.java:[lines 78-1884]</Message>
+      </SourceLine>
+      <Message>In class com.google.javascript.jscomp.NameAnalyzer</Message>
+    </Class>
+    <Method classname="com.google.javascript.jscomp.NameAnalyzer" name="getHtmlReport" signature="()Ljava/lang/String;" isStatic="false" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.NameAnalyzer" start="1215" end="1283" startBytecode="0" endBytecode="931" sourcefile="NameAnalyzer.java" sourcepath="com/google/javascript/jscomp/NameAnalyzer.java"/>
+      <Message>In method com.google.javascript.jscomp.NameAnalyzer.getHtmlReport()</Message>
+    </Method>
+    <Field classname="com.google.javascript.jscomp.NameAnalyzer$JsName" name="prototypeNames" signature="Ljava/util/List;" isStatic="false" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.NameAnalyzer$JsName" sourcefile="NameAnalyzer.java" sourcepath="com/google/javascript/jscomp/NameAnalyzer.java">
+        <Message>In NameAnalyzer.java</Message>
+      </SourceLine>
+      <Message>Field com.google.javascript.jscomp.NameAnalyzer$JsName.prototypeNames</Message>
+    </Field>
+    <SourceLine classname="com.google.javascript.jscomp.NameAnalyzer" primary="true" start="1238" end="1238" startBytecode="308" endBytecode="308" sourcefile="NameAnalyzer.java" sourcepath="com/google/javascript/jscomp/NameAnalyzer.java">
+      <Message>At NameAnalyzer.java:[line 1238]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="NP_UNWRITTEN_FIELD" priority="2" rank="8" abbrev="NP" category="CORRECTNESS" instanceHash="1279771b6f8aba8604e7f43954f68d11" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="476">
+    <ShortMessage>Read of unwritten field</ShortMessage>
+    <LongMessage>Read of unwritten field names in com.google.javascript.jscomp.NameAnalyzer.recordAlias(String, String)</LongMessage>
+    <Class classname="com.google.javascript.jscomp.NameAnalyzer" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.NameAnalyzer" start="78" end="1884" sourcefile="NameAnalyzer.java" sourcepath="com/google/javascript/jscomp/NameAnalyzer.java">
+        <Message>At NameAnalyzer.java:[lines 78-1884]</Message>
+      </SourceLine>
+      <Message>In class com.google.javascript.jscomp.NameAnalyzer</Message>
+    </Class>
+    <Method classname="com.google.javascript.jscomp.NameAnalyzer" name="recordAlias" signature="(Ljava/lang/String;Ljava/lang/String;)V" isStatic="false" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.NameAnalyzer" start="1140" end="1171" startBytecode="0" endBytecode="342" sourcefile="NameAnalyzer.java" sourcepath="com/google/javascript/jscomp/NameAnalyzer.java"/>
+      <Message>In method com.google.javascript.jscomp.NameAnalyzer.recordAlias(String, String)</Message>
+    </Method>
+    <Field classname="com.google.javascript.jscomp.NameAnalyzer$AliasSet" name="names" signature="Ljava/util/Set;" isStatic="false" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.NameAnalyzer$AliasSet" sourcefile="NameAnalyzer.java" sourcepath="com/google/javascript/jscomp/NameAnalyzer.java">
+        <Message>In NameAnalyzer.java</Message>
+      </SourceLine>
+      <Message>Field com.google.javascript.jscomp.NameAnalyzer$AliasSet.names</Message>
+    </Field>
+    <SourceLine classname="com.google.javascript.jscomp.NameAnalyzer" primary="true" start="1158" end="1158" startBytecode="86" endBytecode="86" sourcefile="NameAnalyzer.java" sourcepath="com/google/javascript/jscomp/NameAnalyzer.java">
+      <Message>At NameAnalyzer.java:[line 1158]</Message>
+    </SourceLine>
+    <SourceLine classname="com.google.javascript.jscomp.NameAnalyzer" start="1164" end="1164" startBytecode="159" endBytecode="159" sourcefile="NameAnalyzer.java" sourcepath="com/google/javascript/jscomp/NameAnalyzer.java" role="SOURCE_LINE_ANOTHER_INSTANCE">
+      <Message>Another occurrence at NameAnalyzer.java:[line 1164]</Message>
+    </SourceLine>
+    <SourceLine classname="com.google.javascript.jscomp.NameAnalyzer" start="1159" end="1159" startBytecode="97" endBytecode="97" sourcefile="NameAnalyzer.java" sourcepath="com/google/javascript/jscomp/NameAnalyzer.java" role="SOURCE_LINE_ANOTHER_INSTANCE">
+      <Message>Another occurrence at NameAnalyzer.java:[line 1159]</Message>
+    </SourceLine>
+    <SourceLine classname="com.google.javascript.jscomp.NameAnalyzer" start="1167" end="1167" startBytecode="178" endBytecode="178" sourcefile="NameAnalyzer.java" sourcepath="com/google/javascript/jscomp/NameAnalyzer.java" role="SOURCE_LINE_ANOTHER_INSTANCE">
+      <Message>Another occurrence at NameAnalyzer.java:[line 1167]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="NP_UNWRITTEN_FIELD" priority="2" rank="8" abbrev="NP" category="CORRECTNESS" instanceHash="c27880cc75e7c2c56a59aa441b899ca0" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="476">
+    <ShortMessage>Read of unwritten field</ShortMessage>
+    <LongMessage>Read of unwritten field names in com.google.javascript.jscomp.NameAnalyzer.referenceAliases()</LongMessage>
+    <Class classname="com.google.javascript.jscomp.NameAnalyzer" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.NameAnalyzer" start="78" end="1884" sourcefile="NameAnalyzer.java" sourcepath="com/google/javascript/jscomp/NameAnalyzer.java">
+        <Message>At NameAnalyzer.java:[lines 78-1884]</Message>
+      </SourceLine>
+      <Message>In class com.google.javascript.jscomp.NameAnalyzer</Message>
+    </Class>
+    <Method classname="com.google.javascript.jscomp.NameAnalyzer" name="referenceAliases" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.NameAnalyzer" start="1355" end="1363" startBytecode="0" endBytecode="215" sourcefile="NameAnalyzer.java" sourcepath="com/google/javascript/jscomp/NameAnalyzer.java"/>
+      <Message>In method com.google.javascript.jscomp.NameAnalyzer.referenceAliases()</Message>
+    </Method>
+    <Field classname="com.google.javascript.jscomp.NameAnalyzer$AliasSet" name="names" signature="Ljava/util/Set;" isStatic="false" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.NameAnalyzer$AliasSet" sourcefile="NameAnalyzer.java" sourcepath="com/google/javascript/jscomp/NameAnalyzer.java">
+        <Message>In NameAnalyzer.java</Message>
+      </SourceLine>
+      <Message>Field com.google.javascript.jscomp.NameAnalyzer$AliasSet.names</Message>
+    </Field>
+    <SourceLine classname="com.google.javascript.jscomp.NameAnalyzer" primary="true" start="1358" end="1358" startBytecode="75" endBytecode="75" sourcefile="NameAnalyzer.java" sourcepath="com/google/javascript/jscomp/NameAnalyzer.java">
+      <Message>At NameAnalyzer.java:[line 1358]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="CORRECTNESS">
+    <Description>Correctness</Description>
+  </BugCategory>
+  <BugPattern type="NP_UNWRITTEN_FIELD" abbrev="NP" category="CORRECTNESS">
+    <ShortDescription>Read of unwritten field</ShortDescription>
+    <Details><![CDATA[
+
+  <p> The program is dereferencing a field that does not seem to ever have a non-null value written to it.
+Unless the field is initialized via some mechanism not seen by the analysis,
+dereferencing this value will generate a null pointer exception.
+</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="NP" cweid="476">
+    <Description>Null pointer dereference</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 14 Nov 2018 03:50:21 -0500" total_classes="21" referenced_classes="109" total_bugs="4" total_size="943" num_packages="1" java_version="1.8.0_121" vm_version="25.121-b13" cpu_seconds="12.64" clock_seconds="6.71" peak_mbytes="160.82" alloc_mbytes="1820.50" gc_seconds="0.07" priority_2="4">
+    <FileStats path="com/google/javascript/jscomp/NameAnalyzer.java" bugCount="4" size="943" bugHash="703a95ff6044f3f6e0645e4d2527b081"/>
+    <PackageStats package="com.google.javascript.jscomp" total_bugs="4" total_types="21" total_size="943" priority_2="4">
+      <ClassStats class="com.google.javascript.jscomp.NameAnalyzer" sourceFile="NameAnalyzer.java" interface="false" size="423" bugs="4" priority_2="4"/>
+      <ClassStats class="com.google.javascript.jscomp.NameAnalyzer$1" sourceFile="NameAnalyzer.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.NameAnalyzer$AliasSet" sourceFile="NameAnalyzer.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.NameAnalyzer$ClassDefiningFunctionNode" sourceFile="NameAnalyzer.java" interface="false" size="14" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.NameAnalyzer$FindDeclarationsAndSetters" sourceFile="NameAnalyzer.java" interface="false" size="59" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.NameAnalyzer$FindDependencyScopes" sourceFile="NameAnalyzer.java" interface="false" size="55" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.NameAnalyzer$FindReferences" sourceFile="NameAnalyzer.java" interface="false" size="160" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.NameAnalyzer$FindReferences$NodeAccumulator" sourceFile="NameAnalyzer.java" interface="false" size="26" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.NameAnalyzer$HoistVariableAndFunctionDeclarations" sourceFile="NameAnalyzer.java" interface="false" size="16" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.NameAnalyzer$InstanceOfCheckNode" sourceFile="NameAnalyzer.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.NameAnalyzer$JsName" sourceFile="NameAnalyzer.java" interface="false" size="30" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.NameAnalyzer$JsNameRefNode" sourceFile="NameAnalyzer.java" interface="false" size="26" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.NameAnalyzer$NameInformation" sourceFile="NameAnalyzer.java" interface="false" size="17" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.NameAnalyzer$ProcessExternals" sourceFile="NameAnalyzer.java" interface="false" size="16" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.NameAnalyzer$PrototypeSetNode" sourceFile="NameAnalyzer.java" interface="false" size="14" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.NameAnalyzer$RefNode" sourceFile="NameAnalyzer.java" interface="true" size="3" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.NameAnalyzer$RefType" sourceFile="NameAnalyzer.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.NameAnalyzer$ReferencePropagationCallback" sourceFile="NameAnalyzer.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.NameAnalyzer$RemoveListener" sourceFile="NameAnalyzer.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.NameAnalyzer$SpecialReferenceNode" sourceFile="NameAnalyzer.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.NameAnalyzer$TriState" sourceFile="NameAnalyzer.java" interface="false" size="13" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="1110" invocations="723" avgMicrosecondsPerInvocation="1535" maxMicrosecondsPerInvocation="46666" standardDeviationMicrosecondsPerInvocation="3661"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="651" invocations="720" avgMicrosecondsPerInvocation="905" maxMicrosecondsPerInvocation="52277" standardDeviationMicrosecondsPerInvocation="2992"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="294" invocations="109" avgMicrosecondsPerInvocation="2697" maxMicrosecondsPerInvocation="48531" standardDeviationMicrosecondsPerInvocation="6124"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="237" invocations="338" avgMicrosecondsPerInvocation="703" maxMicrosecondsPerInvocation="26642" standardDeviationMicrosecondsPerInvocation="2026"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="233" invocations="109" avgMicrosecondsPerInvocation="2146" maxMicrosecondsPerInvocation="24596" standardDeviationMicrosecondsPerInvocation="4706"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="214" invocations="41" avgMicrosecondsPerInvocation="5234" maxMicrosecondsPerInvocation="49288" standardDeviationMicrosecondsPerInvocation="9746"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="199" invocations="41" avgMicrosecondsPerInvocation="4856" maxMicrosecondsPerInvocation="36633" standardDeviationMicrosecondsPerInvocation="9136"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="196" invocations="43" avgMicrosecondsPerInvocation="4558" maxMicrosecondsPerInvocation="37566" standardDeviationMicrosecondsPerInvocation="8669"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="166" invocations="41" avgMicrosecondsPerInvocation="4058" maxMicrosecondsPerInvocation="30586" standardDeviationMicrosecondsPerInvocation="7819"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="156" invocations="41" avgMicrosecondsPerInvocation="3815" maxMicrosecondsPerInvocation="23507" standardDeviationMicrosecondsPerInvocation="6025"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="102" invocations="35" avgMicrosecondsPerInvocation="2929" maxMicrosecondsPerInvocation="29114" standardDeviationMicrosecondsPerInvocation="6759"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="101" invocations="136" avgMicrosecondsPerInvocation="748" maxMicrosecondsPerInvocation="33602" standardDeviationMicrosecondsPerInvocation="3525"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="97" invocations="109" avgMicrosecondsPerInvocation="889" maxMicrosecondsPerInvocation="31634" standardDeviationMicrosecondsPerInvocation="4017"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="93" invocations="41" avgMicrosecondsPerInvocation="2282" maxMicrosecondsPerInvocation="46888" standardDeviationMicrosecondsPerInvocation="7232"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="90" invocations="41" avgMicrosecondsPerInvocation="2206" maxMicrosecondsPerInvocation="69879" standardDeviationMicrosecondsPerInvocation="10747"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="85" invocations="109" avgMicrosecondsPerInvocation="786" maxMicrosecondsPerInvocation="18762" standardDeviationMicrosecondsPerInvocation="2299"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="82" invocations="684" avgMicrosecondsPerInvocation="120" maxMicrosecondsPerInvocation="3967" standardDeviationMicrosecondsPerInvocation="271"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="81" invocations="109" avgMicrosecondsPerInvocation="749" maxMicrosecondsPerInvocation="25962" standardDeviationMicrosecondsPerInvocation="2677"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

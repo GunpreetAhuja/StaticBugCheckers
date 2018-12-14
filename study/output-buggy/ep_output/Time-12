@@ -1,0 +1,137 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-12/src/main/java/org/joda/time/LocalDate.java:475: warning: [MissingOverride] size implements method in ReadablePartial; expected @Override
+    public int size() {
+               ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int size() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-12/src/main/java/org/joda/time/LocalDate.java:488: warning: [MissingOverride] getField implements method in AbstractPartial; expected @Override
+    protected DateTimeField getField(int index, Chronology chrono) {
+                            ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override protected DateTimeField getField(int index, Chronology chrono) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-12/src/main/java/org/joda/time/LocalDate.java:513: warning: [MissingOverride] getValue implements method in ReadablePartial; expected @Override
+    public int getValue(int index) {
+               ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int getValue(int index) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-12/src/main/java/org/joda/time/LocalDate.java:541: warning: [MissingOverride] get overrides method in AbstractPartial; expected @Override
+    public int get(DateTimeFieldType fieldType) {
+               ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int get(DateTimeFieldType fieldType) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-12/src/main/java/org/joda/time/LocalDate.java:559: warning: [MissingOverride] isSupported overrides method in AbstractPartial; expected @Override
+    public boolean isSupported(DateTimeFieldType type) {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public boolean isSupported(DateTimeFieldType type) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-12/src/main/java/org/joda/time/LocalDate.java:599: warning: [MissingOverride] getLocalMillis implements method in BaseLocal; expected @Override
+    protected long getLocalMillis() {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override protected long getLocalMillis() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-12/src/main/java/org/joda/time/LocalDate.java:608: warning: [MissingOverride] getChronology implements method in ReadablePartial; expected @Override
+    public Chronology getChronology() {
+                      ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Chronology getChronology() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-12/src/main/java/org/joda/time/LocalDate.java:620: warning: [MissingOverride] equals overrides method in AbstractPartial; expected @Override
+    public boolean equals(Object partial) {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public boolean equals(Object partial) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-12/src/main/java/org/joda/time/LocalDate.java:639: warning: [MissingOverride] hashCode overrides method in AbstractPartial; expected @Override
+    public int hashCode() {
+               ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int hashCode() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-12/src/main/java/org/joda/time/LocalDate.java:664: warning: [MissingOverride] compareTo overrides method in AbstractPartial; expected @Override
+    public int compareTo(ReadablePartial partial) {
+               ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int compareTo(ReadablePartial partial) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-12/src/main/java/org/joda/time/LocalDate.java:1804: warning: [MissingOverride] toString implements method in ReadablePartial; expected @Override
+    public String toString() {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override @ToString'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-12/src/main/java/org/joda/time/LocalDate.java:1908: warning: [MissingOverride] getField implements method in AbstractReadableInstantFieldProperty; expected @Override
+        public DateTimeField getField() {
+                             ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public DateTimeField getField() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-12/src/main/java/org/joda/time/LocalDate.java:1917: warning: [MissingOverride] getMillis implements method in AbstractReadableInstantFieldProperty; expected @Override
+        protected long getMillis() {
+                       ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override protected long getMillis() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-12/src/main/java/org/joda/time/LocalDate.java:1927: warning: [MissingOverride] getChronology overrides method in AbstractReadableInstantFieldProperty; expected @Override
+        protected Chronology getChronology() {
+                             ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override protected Chronology getChronology() {'?
+14 warnings
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-12/src/main/java/org/joda/time/LocalDateTime.java:528: warning: [MissingOverride] size implements method in ReadablePartial; expected @Override
+    public int size() {
+               ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int size() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-12/src/main/java/org/joda/time/LocalDateTime.java:541: warning: [MissingOverride] getField implements method in AbstractPartial; expected @Override
+    protected DateTimeField getField(int index, Chronology chrono) {
+                            ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override protected DateTimeField getField(int index, Chronology chrono) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-12/src/main/java/org/joda/time/LocalDateTime.java:566: warning: [MissingOverride] getValue implements method in ReadablePartial; expected @Override
+    public int getValue(int index) {
+               ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int getValue(int index) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-12/src/main/java/org/joda/time/LocalDateTime.java:596: warning: [MissingOverride] get overrides method in AbstractPartial; expected @Override
+    public int get(DateTimeFieldType type) {
+               ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int get(DateTimeFieldType type) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-12/src/main/java/org/joda/time/LocalDateTime.java:611: warning: [MissingOverride] isSupported overrides method in AbstractPartial; expected @Override
+    public boolean isSupported(DateTimeFieldType type) {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public boolean isSupported(DateTimeFieldType type) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-12/src/main/java/org/joda/time/LocalDateTime.java:640: warning: [MissingOverride] getLocalMillis implements method in BaseLocal; expected @Override
+    protected long getLocalMillis() {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override protected long getLocalMillis() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-12/src/main/java/org/joda/time/LocalDateTime.java:649: warning: [MissingOverride] getChronology implements method in ReadablePartial; expected @Override
+    public Chronology getChronology() {
+                      ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Chronology getChronology() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-12/src/main/java/org/joda/time/LocalDateTime.java:661: warning: [MissingOverride] equals overrides method in AbstractPartial; expected @Override
+    public boolean equals(Object partial) {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public boolean equals(Object partial) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-12/src/main/java/org/joda/time/LocalDateTime.java:691: warning: [MissingOverride] compareTo overrides method in AbstractPartial; expected @Override
+    public int compareTo(ReadablePartial partial) {
+               ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int compareTo(ReadablePartial partial) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-12/src/main/java/org/joda/time/LocalDateTime.java:2015: warning: [MissingOverride] toString implements method in ReadablePartial; expected @Override
+    public String toString() {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override @ToString'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-12/src/main/java/org/joda/time/LocalDateTime.java:2120: warning: [MissingOverride] getField implements method in AbstractReadableInstantFieldProperty; expected @Override
+        public DateTimeField getField() {
+                             ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public DateTimeField getField() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-12/src/main/java/org/joda/time/LocalDateTime.java:2129: warning: [MissingOverride] getMillis implements method in AbstractReadableInstantFieldProperty; expected @Override
+        protected long getMillis() {
+                       ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override protected long getMillis() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-12/src/main/java/org/joda/time/LocalDateTime.java:2139: warning: [MissingOverride] getChronology overrides method in AbstractReadableInstantFieldProperty; expected @Override
+        protected Chronology getChronology() {
+                             ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override protected Chronology getChronology() {'?
+13 warnings

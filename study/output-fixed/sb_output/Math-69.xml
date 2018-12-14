@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.1.0" sequence="0" timestamp="1542190980000" analysisTimestamp="1542190983513" release="">
+  <Project projectName="">
+    <Jar>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-69/src/main/java</Jar>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-69/target/classes</AuxClasspathEntry>
+  </Project>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 14 Nov 2018 05:23:00 -0500" total_classes="1" referenced_classes="19" total_bugs="0" total_size="91" num_packages="1" java_version="1.8.0_121" vm_version="25.121-b13" cpu_seconds="7.21" clock_seconds="4.22" peak_mbytes="109.06" alloc_mbytes="1820.50" gc_seconds="0.07">
+    <FileStats path="org/apache/commons/math/stat/correlation/PearsonsCorrelation.java" bugCount="0" size="91"/>
+    <PackageStats package="org.apache.commons.math.stat.correlation" total_bugs="0" total_types="1" total_size="91">
+      <ClassStats class="org.apache.commons.math.stat.correlation.PearsonsCorrelation" sourceFile="PearsonsCorrelation.java" interface="false" size="91" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="607" invocations="366" avgMicrosecondsPerInvocation="1659" maxMicrosecondsPerInvocation="65291" standardDeviationMicrosecondsPerInvocation="5546"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="575" invocations="367" avgMicrosecondsPerInvocation="1568" maxMicrosecondsPerInvocation="33928" standardDeviationMicrosecondsPerInvocation="3551"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="171" invocations="38" avgMicrosecondsPerInvocation="4521" maxMicrosecondsPerInvocation="82594" standardDeviationMicrosecondsPerInvocation="17126"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="144" invocations="119" avgMicrosecondsPerInvocation="1213" maxMicrosecondsPerInvocation="14419" standardDeviationMicrosecondsPerInvocation="2516"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="143" invocations="19" avgMicrosecondsPerInvocation="7577" maxMicrosecondsPerInvocation="44306" standardDeviationMicrosecondsPerInvocation="10933"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="126" invocations="13" avgMicrosecondsPerInvocation="9753" maxMicrosecondsPerInvocation="37628" standardDeviationMicrosecondsPerInvocation="12930"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="126" invocations="13" avgMicrosecondsPerInvocation="9711" maxMicrosecondsPerInvocation="120923" standardDeviationMicrosecondsPerInvocation="32106"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="123" invocations="19" avgMicrosecondsPerInvocation="6522" maxMicrosecondsPerInvocation="27709" standardDeviationMicrosecondsPerInvocation="7935"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="109" invocations="333" avgMicrosecondsPerInvocation="328" maxMicrosecondsPerInvocation="12332" standardDeviationMicrosecondsPerInvocation="1100"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="90" invocations="13" avgMicrosecondsPerInvocation="6935" maxMicrosecondsPerInvocation="34611" standardDeviationMicrosecondsPerInvocation="9986"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="84" invocations="19" avgMicrosecondsPerInvocation="4471" maxMicrosecondsPerInvocation="26743" standardDeviationMicrosecondsPerInvocation="8223"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="69" invocations="13" avgMicrosecondsPerInvocation="5352" maxMicrosecondsPerInvocation="41100" standardDeviationMicrosecondsPerInvocation="10793"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

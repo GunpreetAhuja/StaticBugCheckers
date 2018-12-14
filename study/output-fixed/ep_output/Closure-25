@@ -1,0 +1,21 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-25/src/com/google/javascript/jscomp/TypeInference.java:156: error: [MissingCasesInEnumSwitch] Non-exhaustive switch; either add a default or handle the remaining cases: UNCOND, ON_EX, SYN_BLOCK
+      switch (branch) {
+      ^
+    (see http://errorprone.info/bugpattern/MissingCasesInEnumSwitch)
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-25/src/com/google/javascript/jscomp/TypeInference.java:1132: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+      if (type != narrowed) {
+               ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'if (!type.equals(narrowed)) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-25/src/com/google/javascript/jscomp/TypeInference.java:1337: warning: [OperatorPrecedence] Use grouping parenthesis to make the operator precedence explicit
+      if (nodeType == Token.AND && outcome ||
+                                ^
+    (see http://errorprone.info/bugpattern/OperatorPrecedence)
+  Did you mean 'if ((nodeType == Token.AND && outcome) ||'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-25/src/com/google/javascript/jscomp/TypeInference.java:1338: warning: [OperatorPrecedence] Use grouping parenthesis to make the operator precedence explicit
+          nodeType == Token.OR && !outcome) {
+                               ^
+    (see http://errorprone.info/bugpattern/OperatorPrecedence)
+  Did you mean '(nodeType == Token.OR && !outcome)) {'?
+1 error
+3 warnings

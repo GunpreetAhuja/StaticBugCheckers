@@ -1,0 +1,46 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-27/src/main/java/org/apache/commons/math3/fraction/Fraction.java:306: warning: [MissingOverride] compareTo implements method in Comparable; expected @Override
+    public int compareTo(Fraction object) {
+               ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int compareTo(Fraction object) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-27/src/main/java/org/apache/commons/math3/fraction/Fraction.java:405: warning: [MissingOverride] negate implements method in FieldElement; expected @Override
+    public Fraction negate() {
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Fraction negate() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-27/src/main/java/org/apache/commons/math3/fraction/Fraction.java:416: warning: [MissingOverride] reciprocal implements method in FieldElement; expected @Override
+    public Fraction reciprocal() {
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Fraction reciprocal() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-27/src/main/java/org/apache/commons/math3/fraction/Fraction.java:430: warning: [MissingOverride] add implements method in FieldElement; expected @Override
+    public Fraction add(Fraction fraction) {
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Fraction add(Fraction fraction) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-27/src/main/java/org/apache/commons/math3/fraction/Fraction.java:453: warning: [MissingOverride] subtract implements method in FieldElement; expected @Override
+    public Fraction subtract(Fraction fraction) {
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Fraction subtract(Fraction fraction) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-27/src/main/java/org/apache/commons/math3/fraction/Fraction.java:533: warning: [MissingOverride] multiply implements method in FieldElement; expected @Override
+    public Fraction multiply(Fraction fraction) {
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Fraction multiply(Fraction fraction) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-27/src/main/java/org/apache/commons/math3/fraction/Fraction.java:554: warning: [MissingOverride] multiply implements method in FieldElement; expected @Override
+    public Fraction multiply(final int i) {
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Fraction multiply(final int i) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-27/src/main/java/org/apache/commons/math3/fraction/Fraction.java:568: warning: [MissingOverride] divide implements method in FieldElement; expected @Override
+    public Fraction divide(Fraction fraction) {
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Fraction divide(Fraction fraction) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-27/src/main/java/org/apache/commons/math3/fraction/Fraction.java:662: warning: [MissingOverride] getField implements method in FieldElement; expected @Override
+    public FractionField getField() {
+                         ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public FractionField getField() {'?
+9 warnings

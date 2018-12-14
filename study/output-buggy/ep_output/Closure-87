@@ -1,0 +1,16 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-87/src/com/google/javascript/jscomp/PeepholeSubstituteAlternateSyntax.java:174: warning: [OperatorPrecedence] Use grouping parenthesis to make the operator precedence explicit
+            result.checkTreeEqualsSilent(follow.getFirstChild())) &&
+                                                                  ^
+    (see http://errorprone.info/bugpattern/OperatorPrecedence)
+  Did you mean '((result != null && follow.hasChildren() &&'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-87/src/com/google/javascript/jscomp/PeepholeSubstituteAlternateSyntax.java:735: warning: [OperatorPrecedence] Use grouping parenthesis to make the operator precedence explicit
+          if (type == Token.OR && !rval ||
+                               ^
+    (see http://errorprone.info/bugpattern/OperatorPrecedence)
+  Did you mean 'if ((type == Token.OR && !rval) ||'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-87/src/com/google/javascript/jscomp/PeepholeSubstituteAlternateSyntax.java:736: warning: [OperatorPrecedence] Use grouping parenthesis to make the operator precedence explicit
+              type == Token.AND && rval) {
+                                ^
+    (see http://errorprone.info/bugpattern/OperatorPrecedence)
+  Did you mean '(type == Token.AND && rval)) {'?
+3 warnings

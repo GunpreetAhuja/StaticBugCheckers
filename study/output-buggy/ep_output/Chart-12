@@ -1,0 +1,57 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-12/source/org/jfree/chart/plot/MultiplePiePlot.java:561: warning: [EqualsHashCode] Classes that override equals should also override hashCode.
+    public boolean equals(Object obj) {
+                   ^
+    (see http://errorprone.info/bugpattern/EqualsHashCode)
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-12/source/org/jfree/chart/plot/MultiplePiePlot.java:329: warning: [MissingOverride] getPlotType implements method in Plot; expected @Override
+    public String getPlotType() {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public String getPlotType() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-12/source/org/jfree/chart/plot/MultiplePiePlot.java:344: warning: [MissingOverride] draw implements method in Plot; expected @Override
+    public void draw(Graphics2D g2,
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void draw(Graphics2D g2,'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-12/source/org/jfree/chart/plot/MultiplePiePlot.java:364: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+        if (this.dataExtractOrder == TableOrder.BY_ROW) {
+                                  ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'if (Objects.equals(this.dataExtractOrder, TableOrder.BY_ROW)) {' or 'if (this.dataExtractOrder.equals(TableOrder.BY_ROW)) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-12/source/org/jfree/chart/plot/MultiplePiePlot.java:400: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+            if (this.dataExtractOrder == TableOrder.BY_ROW) {
+                                      ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'if (Objects.equals(this.dataExtractOrder, TableOrder.BY_ROW)) {' or 'if (this.dataExtractOrder.equals(TableOrder.BY_ROW)) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-12/source/org/jfree/chart/plot/MultiplePiePlot.java:473: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+        if (this.dataExtractOrder == TableOrder.BY_ROW) {
+                                  ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'if (Objects.equals(this.dataExtractOrder, TableOrder.BY_ROW)) {' or 'if (this.dataExtractOrder.equals(TableOrder.BY_ROW)) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-12/source/org/jfree/chart/plot/MultiplePiePlot.java:509: warning: [MissingOverride] getLegendItems overrides method in Plot; expected @Override
+    public LegendItemCollection getLegendItems() {
+                                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public LegendItemCollection getLegendItems() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-12/source/org/jfree/chart/plot/MultiplePiePlot.java:517: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+            if (this.dataExtractOrder == TableOrder.BY_ROW) {
+                                      ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'if (Objects.equals(this.dataExtractOrder, TableOrder.BY_ROW)) {' or 'if (this.dataExtractOrder.equals(TableOrder.BY_ROW)) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-12/source/org/jfree/chart/plot/MultiplePiePlot.java:520: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+            else if (this.dataExtractOrder == TableOrder.BY_COLUMN) {
+                                           ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'else if (Objects.equals(this.dataExtractOrder, TableOrder.BY_COLUMN)) {' or 'else if (this.dataExtractOrder.equals(TableOrder.BY_COLUMN)) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-12/source/org/jfree/chart/plot/MultiplePiePlot.java:561: warning: [MissingOverride] equals overrides method in Plot; expected @Override
+    public boolean equals(Object obj) {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public boolean equals(Object obj) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-12/source/org/jfree/chart/plot/MultiplePiePlot.java:569: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+        if (this.dataExtractOrder != that.dataExtractOrder) {
+                                  ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'if (!Objects.equals(this.dataExtractOrder, that.dataExtractOrder)) {' or 'if (!this.dataExtractOrder.equals(that.dataExtractOrder)) {'?
+Note: /Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-12/source/org/jfree/chart/plot/MultiplePiePlot.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+11 warnings

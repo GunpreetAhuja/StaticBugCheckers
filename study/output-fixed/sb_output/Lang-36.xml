@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.1.0" sequence="0" timestamp="1542190480000" analysisTimestamp="1542190483064" release="">
+  <Project projectName="">
+    <Jar>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-36/src/java</Jar>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-36/target/classes</AuxClasspathEntry>
+  </Project>
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" rank="18" abbrev="Bx" category="PERFORMANCE" instanceHash="3e97b3e896ce7592be385969bdff38d0" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Method invokes inefficient Number constructor; use static valueOf instead</ShortMessage>
+    <LongMessage>org.apache.commons.lang3.math.NumberUtils.&lt;static initializer for NumberUtils&gt;() invokes inefficient new Integer(int) constructor; use Integer.valueOf(int) instead</LongMessage>
+    <Class classname="org.apache.commons.lang3.math.NumberUtils" primary="true">
+      <SourceLine classname="org.apache.commons.lang3.math.NumberUtils" start="41" end="1413" sourcefile="NumberUtils.java" sourcepath="org/apache/commons/lang3/math/NumberUtils.java">
+        <Message>At NumberUtils.java:[lines 41-1413]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.lang3.math.NumberUtils</Message>
+    </Class>
+    <Method classname="org.apache.commons.lang3.math.NumberUtils" name="&lt;clinit&gt;" signature="()V" isStatic="true" primary="true">
+      <SourceLine classname="org.apache.commons.lang3.math.NumberUtils" start="41" end="75" startBytecode="0" endBytecode="283" sourcefile="NumberUtils.java" sourcepath="org/apache/commons/lang3/math/NumberUtils.java"/>
+      <Message>In method org.apache.commons.lang3.math.NumberUtils.&lt;static initializer for NumberUtils&gt;()</Message>
+    </Method>
+    <Method classname="java.lang.Integer" name="&lt;init&gt;" signature="(I)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Integer" start="849" end="851" startBytecode="0" endBytecode="41" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+      <Message>Called method new Integer(int)</Message>
+    </Method>
+    <Method classname="java.lang.Integer" name="valueOf" signature="(I)Ljava/lang/Integer;" isStatic="true" role="SHOULD_CALL">
+      <SourceLine classname="java.lang.Integer" start="830" end="832" startBytecode="0" endBytecode="72" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+      <Message>Should call Integer.valueOf(int) instead</Message>
+    </Method>
+    <SourceLine classname="org.apache.commons.lang3.math.NumberUtils" primary="true" start="47" end="47" startBytecode="40" endBytecode="40" sourcefile="NumberUtils.java" sourcepath="org/apache/commons/lang3/math/NumberUtils.java">
+      <Message>At NumberUtils.java:[line 47]</Message>
+    </SourceLine>
+    <SourceLine classname="org.apache.commons.lang3.math.NumberUtils" start="49" end="49" startBytecode="51" endBytecode="51" sourcefile="NumberUtils.java" sourcepath="org/apache/commons/lang3/math/NumberUtils.java" role="SOURCE_LINE_ANOTHER_INSTANCE">
+      <Message>Another occurrence at NumberUtils.java:[line 49]</Message>
+    </SourceLine>
+    <SourceLine classname="org.apache.commons.lang3.math.NumberUtils" start="51" end="51" startBytecode="62" endBytecode="62" sourcefile="NumberUtils.java" sourcepath="org/apache/commons/lang3/math/NumberUtils.java" role="SOURCE_LINE_ANOTHER_INSTANCE">
+      <Message>Another occurrence at NumberUtils.java:[line 51]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" rank="18" abbrev="Bx" category="PERFORMANCE" instanceHash="79b3ca6d8acbef5603ddc1071d093818" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Method invokes inefficient Number constructor; use static valueOf instead</ShortMessage>
+    <LongMessage>org.apache.commons.lang3.math.NumberUtils.&lt;static initializer for NumberUtils&gt;() invokes inefficient new Long(long) constructor; use Long.valueOf(long) instead</LongMessage>
+    <Class classname="org.apache.commons.lang3.math.NumberUtils" primary="true">
+      <SourceLine classname="org.apache.commons.lang3.math.NumberUtils" start="41" end="1413" sourcefile="NumberUtils.java" sourcepath="org/apache/commons/lang3/math/NumberUtils.java">
+        <Message>At NumberUtils.java:[lines 41-1413]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.lang3.math.NumberUtils</Message>
+    </Class>
+    <Method classname="org.apache.commons.lang3.math.NumberUtils" name="&lt;clinit&gt;" signature="()V" isStatic="true" primary="true">
+      <SourceLine classname="org.apache.commons.lang3.math.NumberUtils" start="41" end="75" startBytecode="0" endBytecode="283" sourcefile="NumberUtils.java" sourcepath="org/apache/commons/lang3/math/NumberUtils.java"/>
+      <Message>In method org.apache.commons.lang3.math.NumberUtils.&lt;static initializer for NumberUtils&gt;()</Message>
+    </Method>
+    <Method classname="java.lang.Long" name="&lt;init&gt;" signature="(J)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Long" start="947" end="949" startBytecode="0" endBytecode="41" sourcefile="Long.java" sourcepath="java/lang/Long.java"/>
+      <Message>Called method new Long(long)</Message>
+    </Method>
+    <Method classname="java.lang.Long" name="valueOf" signature="(J)Ljava/lang/Long;" isStatic="true" role="SHOULD_CALL">
+      <SourceLine classname="java.lang.Long" start="837" end="840" startBytecode="0" endBytecode="76" sourcefile="Long.java" sourcepath="java/lang/Long.java"/>
+      <Message>Should call Long.valueOf(long) instead</Message>
+    </Method>
+    <SourceLine classname="org.apache.commons.lang3.math.NumberUtils" primary="true" start="41" end="41" startBytecode="5" endBytecode="5" sourcefile="NumberUtils.java" sourcepath="org/apache/commons/lang3/math/NumberUtils.java">
+      <Message>At NumberUtils.java:[line 41]</Message>
+    </SourceLine>
+    <SourceLine classname="org.apache.commons.lang3.math.NumberUtils" start="43" end="43" startBytecode="16" endBytecode="16" sourcefile="NumberUtils.java" sourcepath="org/apache/commons/lang3/math/NumberUtils.java" role="SOURCE_LINE_ANOTHER_INSTANCE">
+      <Message>Another occurrence at NumberUtils.java:[line 43]</Message>
+    </SourceLine>
+    <SourceLine classname="org.apache.commons.lang3.math.NumberUtils" start="45" end="45" startBytecode="29" endBytecode="29" sourcefile="NumberUtils.java" sourcepath="org/apache/commons/lang3/math/NumberUtils.java" role="SOURCE_LINE_ANOTHER_INSTANCE">
+      <Message>Another occurrence at NumberUtils.java:[line 45]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" rank="18" abbrev="Bx" category="PERFORMANCE" instanceHash="af44204afe18d63bf2bb0193123c3c66" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Method invokes inefficient Number constructor; use static valueOf instead</ShortMessage>
+    <LongMessage>org.apache.commons.lang3.math.NumberUtils.&lt;static initializer for NumberUtils&gt;() invokes inefficient new Short(short) constructor; use Short.valueOf(short) instead</LongMessage>
+    <Class classname="org.apache.commons.lang3.math.NumberUtils" primary="true">
+      <SourceLine classname="org.apache.commons.lang3.math.NumberUtils" start="41" end="1413" sourcefile="NumberUtils.java" sourcepath="org/apache/commons/lang3/math/NumberUtils.java">
+        <Message>At NumberUtils.java:[lines 41-1413]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.lang3.math.NumberUtils</Message>
+    </Class>
+    <Method classname="org.apache.commons.lang3.math.NumberUtils" name="&lt;clinit&gt;" signature="()V" isStatic="true" primary="true">
+      <SourceLine classname="org.apache.commons.lang3.math.NumberUtils" start="41" end="75" startBytecode="0" endBytecode="283" sourcefile="NumberUtils.java" sourcepath="org/apache/commons/lang3/math/NumberUtils.java"/>
+      <Message>In method org.apache.commons.lang3.math.NumberUtils.&lt;static initializer for NumberUtils&gt;()</Message>
+    </Method>
+    <Method classname="java.lang.Short" name="&lt;init&gt;" signature="(S)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Short" start="303" end="305" startBytecode="0" endBytecode="41" sourcefile="Short.java" sourcepath="java/lang/Short.java"/>
+      <Message>Called method new Short(short)</Message>
+    </Method>
+    <Method classname="java.lang.Short" name="valueOf" signature="(S)Ljava/lang/Short;" isStatic="true" role="SHOULD_CALL">
+      <SourceLine classname="java.lang.Short" start="232" end="236" startBytecode="0" endBytecode="81" sourcefile="Short.java" sourcepath="java/lang/Short.java"/>
+      <Message>Should call Short.valueOf(short) instead</Message>
+    </Method>
+    <SourceLine classname="org.apache.commons.lang3.math.NumberUtils" primary="true" start="53" end="53" startBytecode="73" endBytecode="73" sourcefile="NumberUtils.java" sourcepath="org/apache/commons/lang3/math/NumberUtils.java">
+      <Message>At NumberUtils.java:[line 53]</Message>
+    </SourceLine>
+    <SourceLine classname="org.apache.commons.lang3.math.NumberUtils" start="55" end="55" startBytecode="84" endBytecode="84" sourcefile="NumberUtils.java" sourcepath="org/apache/commons/lang3/math/NumberUtils.java" role="SOURCE_LINE_ANOTHER_INSTANCE">
+      <Message>Another occurrence at NumberUtils.java:[line 55]</Message>
+    </SourceLine>
+    <SourceLine classname="org.apache.commons.lang3.math.NumberUtils" start="57" end="57" startBytecode="95" endBytecode="95" sourcefile="NumberUtils.java" sourcepath="org/apache/commons/lang3/math/NumberUtils.java" role="SOURCE_LINE_ANOTHER_INSTANCE">
+      <Message>Another occurrence at NumberUtils.java:[line 57]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="SF_SWITCH_FALLTHROUGH" priority="2" rank="17" abbrev="SF" category="STYLE" instanceHash="9ced27956403011d4dfc04e1c028a4fb" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="484">
+    <ShortMessage>Switch statement found where one case falls through to the next case</ShortMessage>
+    <LongMessage>Switch statement found in org.apache.commons.lang3.math.NumberUtils.createNumber(String) where one case falls through to the next case</LongMessage>
+    <Class classname="org.apache.commons.lang3.math.NumberUtils" primary="true">
+      <SourceLine classname="org.apache.commons.lang3.math.NumberUtils" start="41" end="1413" sourcefile="NumberUtils.java" sourcepath="org/apache/commons/lang3/math/NumberUtils.java">
+        <Message>At NumberUtils.java:[lines 41-1413]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.lang3.math.NumberUtils</Message>
+    </Class>
+    <Method classname="org.apache.commons.lang3.math.NumberUtils" name="createNumber" signature="(Ljava/lang/String;)Ljava/lang/Number;" isStatic="true" primary="true">
+      <SourceLine classname="org.apache.commons.lang3.math.NumberUtils" start="449" end="591" startBytecode="0" endBytecode="1321" sourcefile="NumberUtils.java" sourcepath="org/apache/commons/lang3/math/NumberUtils.java"/>
+      <Message>In method org.apache.commons.lang3.math.NumberUtils.createNumber(String)</Message>
+    </Method>
+    <SourceLine classname="org.apache.commons.lang3.math.NumberUtils" primary="true" start="525" end="532" startBytecode="457" endBytecode="459" sourcefile="NumberUtils.java" sourcepath="org/apache/commons/lang3/math/NumberUtils.java">
+      <Message>At NumberUtils.java:[lines 525-532]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="SF_SWITCH_NO_DEFAULT" priority="2" rank="19" abbrev="SF" category="STYLE" instanceHash="fa2d0315b27cedf1fd9ee1e6e1f3616f" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Switch statement found where default case is missing</ShortMessage>
+    <LongMessage>Switch statement found in org.apache.commons.lang3.math.NumberUtils.createNumber(String) where default case is missing</LongMessage>
+    <Class classname="org.apache.commons.lang3.math.NumberUtils" primary="true">
+      <SourceLine classname="org.apache.commons.lang3.math.NumberUtils" start="41" end="1413" sourcefile="NumberUtils.java" sourcepath="org/apache/commons/lang3/math/NumberUtils.java">
+        <Message>At NumberUtils.java:[lines 41-1413]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.lang3.math.NumberUtils</Message>
+    </Class>
+    <Method classname="org.apache.commons.lang3.math.NumberUtils" name="createNumber" signature="(Ljava/lang/String;)Ljava/lang/Number;" isStatic="true" primary="true">
+      <SourceLine classname="org.apache.commons.lang3.math.NumberUtils" start="449" end="591" startBytecode="0" endBytecode="1321" sourcefile="NumberUtils.java" sourcepath="org/apache/commons/lang3/math/NumberUtils.java"/>
+      <Message>In method org.apache.commons.lang3.math.NumberUtils.createNumber(String)</Message>
+    </Method>
+    <SourceLine classname="org.apache.commons.lang3.math.NumberUtils" primary="true" start="500" end="541" startBytecode="282" endBytecode="505" sourcefile="NumberUtils.java" sourcepath="org/apache/commons/lang3/math/NumberUtils.java">
+      <Message>At NumberUtils.java:[lines 500-541]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="PERFORMANCE">
+    <Description>Performance</Description>
+  </BugCategory>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="SF_SWITCH_FALLTHROUGH" abbrev="SF" category="STYLE" cweid="484">
+    <ShortDescription>Switch statement found where one case falls through to the next case</ShortDescription>
+    <Details><![CDATA[
+
+  <p> This method contains a switch statement where one case branch will fall through to the next case.
+  Usually you need to end this case with a break or return.</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="DM_NUMBER_CTOR" abbrev="Bx" category="PERFORMANCE">
+    <ShortDescription>Method invokes inefficient Number constructor; use static valueOf instead</ShortDescription>
+    <Details><![CDATA[
+      
+      <p>
+      Using <code>new Integer(int)</code> is guaranteed to always result in a new object whereas
+      <code>Integer.valueOf(int)</code> allows caching of values to be done by the compiler, class library, or JVM.
+      Using of cached values avoids object allocation and the code will be faster.
+      </p>
+      <p>
+      Values between -128 and 127 are guaranteed to have corresponding cached instances
+      and using <code>valueOf</code> is approximately 3.5 times faster than using constructor.
+      For values outside the constant range the performance of both styles is the same.
+      </p>
+      <p>
+      Unless the class must be compatible with JVMs predating Java 1.5,
+      use either autoboxing or the <code>valueOf()</code> method when creating instances of
+      <code>Long</code>, <code>Integer</code>, <code>Short</code>, <code>Character</code>, and <code>Byte</code>.
+      </p>
+      
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="SF_SWITCH_NO_DEFAULT" abbrev="SF" category="STYLE">
+    <ShortDescription>Switch statement found where default case is missing</ShortDescription>
+    <Details><![CDATA[
+
+  <p> This method contains a switch statement where default case is missing.
+  Usually you need to provide a default case.</p>
+  <p>Because the analysis only looks at the generated bytecode, this warning can be incorrect triggered if
+the default case is at the end of the switch statement and the switch statement doesn't contain break statements for other
+cases.
+
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="SF">
+    <Description>Switch case falls through</Description>
+  </BugCode>
+  <BugCode abbrev="Bx">
+    <Description>Questionable Boxing of primitive value</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 14 Nov 2018 05:14:40 -0500" total_classes="1" referenced_classes="22" total_bugs="5" total_size="441" num_packages="1" java_version="1.8.0_121" vm_version="25.121-b13" cpu_seconds="9.15" clock_seconds="5.25" peak_mbytes="116.14" alloc_mbytes="1820.50" gc_seconds="0.10" priority_2="5">
+    <FileStats path="org/apache/commons/lang3/math/NumberUtils.java" bugCount="5" size="441" bugHash="1a9f3c4d0a8083a0629e377992ddd169"/>
+    <PackageStats package="org.apache.commons.lang3.math" total_bugs="5" total_types="1" total_size="441" priority_2="5">
+      <ClassStats class="org.apache.commons.lang3.math.NumberUtils" sourceFile="NumberUtils.java" interface="false" size="441" bugs="5" priority_2="5"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="641" invocations="353" avgMicrosecondsPerInvocation="1817" maxMicrosecondsPerInvocation="101390" standardDeviationMicrosecondsPerInvocation="7241"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="521" invocations="354" avgMicrosecondsPerInvocation="1472" maxMicrosecondsPerInvocation="28439" standardDeviationMicrosecondsPerInvocation="3157"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="231" invocations="22" avgMicrosecondsPerInvocation="10532" maxMicrosecondsPerInvocation="50221" standardDeviationMicrosecondsPerInvocation="14335"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="218" invocations="257" avgMicrosecondsPerInvocation="849" maxMicrosecondsPerInvocation="23255" standardDeviationMicrosecondsPerInvocation="2527"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="212" invocations="48" avgMicrosecondsPerInvocation="4428" maxMicrosecondsPerInvocation="39656" standardDeviationMicrosecondsPerInvocation="9399"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="198" invocations="318" avgMicrosecondsPerInvocation="625" maxMicrosecondsPerInvocation="35861" standardDeviationMicrosecondsPerInvocation="3087"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="150" invocations="48" avgMicrosecondsPerInvocation="3139" maxMicrosecondsPerInvocation="59264" standardDeviationMicrosecondsPerInvocation="9020"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="141" invocations="48" avgMicrosecondsPerInvocation="2954" maxMicrosecondsPerInvocation="62444" standardDeviationMicrosecondsPerInvocation="9513"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="133" invocations="48" avgMicrosecondsPerInvocation="2782" maxMicrosecondsPerInvocation="119934" standardDeviationMicrosecondsPerInvocation="17097"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="129" invocations="38" avgMicrosecondsPerInvocation="3396" maxMicrosecondsPerInvocation="53167" standardDeviationMicrosecondsPerInvocation="9641"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="122" invocations="48" avgMicrosecondsPerInvocation="2550" maxMicrosecondsPerInvocation="72229" standardDeviationMicrosecondsPerInvocation="10490"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="108" invocations="22" avgMicrosecondsPerInvocation="4929" maxMicrosecondsPerInvocation="32390" standardDeviationMicrosecondsPerInvocation="8204"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="106" invocations="48" avgMicrosecondsPerInvocation="2211" maxMicrosecondsPerInvocation="42508" standardDeviationMicrosecondsPerInvocation="6496"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="105" invocations="22" avgMicrosecondsPerInvocation="4792" maxMicrosecondsPerInvocation="30004" standardDeviationMicrosecondsPerInvocation="8164"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="99" invocations="48" avgMicrosecondsPerInvocation="2070" maxMicrosecondsPerInvocation="37320" standardDeviationMicrosecondsPerInvocation="6851"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NumberConstructor" totalMilliseconds="87" invocations="1" avgMicrosecondsPerInvocation="87680" maxMicrosecondsPerInvocation="87680" standardDeviationMicrosecondsPerInvocation="0"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

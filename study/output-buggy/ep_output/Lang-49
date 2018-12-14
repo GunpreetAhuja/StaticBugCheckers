@@ -1,0 +1,41 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Lang-49/src/java/org/apache/commons/lang/math/Fraction.java:419: warning: [MissingOverride] intValue implements method in Number; expected @Override
+    public int intValue() {
+               ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int intValue() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Lang-49/src/java/org/apache/commons/lang/math/Fraction.java:429: warning: [MissingOverride] longValue implements method in Number; expected @Override
+    public long longValue() {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public long longValue() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Lang-49/src/java/org/apache/commons/lang/math/Fraction.java:439: warning: [MissingOverride] floatValue implements method in Number; expected @Override
+    public float floatValue() {
+                 ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public float floatValue() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Lang-49/src/java/org/apache/commons/lang/math/Fraction.java:449: warning: [MissingOverride] doubleValue implements method in Number; expected @Override
+    public double doubleValue() {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double doubleValue() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Lang-49/src/java/org/apache/commons/lang/math/Fraction.java:829: warning: [MissingOverride] equals overrides method in Object; expected @Override
+    public boolean equals(Object obj) {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public boolean equals(Object obj) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Lang-49/src/java/org/apache/commons/lang/math/Fraction.java:846: warning: [MissingOverride] hashCode overrides method in Object; expected @Override
+    public int hashCode() {
+               ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int hashCode() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Lang-49/src/java/org/apache/commons/lang/math/Fraction.java:866: warning: [MissingOverride] compareTo implements method in Comparable; expected @Override
+    public int compareTo(Object object) {
+               ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int compareTo(Object object) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Lang-49/src/java/org/apache/commons/lang/math/Fraction.java:894: warning: [MissingOverride] toString overrides method in Object; expected @Override
+    public String toString() {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public String toString() {'?
+8 warnings

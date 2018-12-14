@@ -1,0 +1,23 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-14/src/main/java/org/apache/commons/lang3/StringUtils.java:2944: warning: [OperatorPrecedence] Use grouping parenthesis to make the operator precedence explicit
+        if (match || preserveAllTokens && lastMatch) {
+                                       ^
+    (see http://errorprone.info/bugpattern/OperatorPrecedence)
+  Did you mean 'if (match || (preserveAllTokens && lastMatch)) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-14/src/main/java/org/apache/commons/lang3/StringUtils.java:3120: warning: [OperatorPrecedence] Use grouping parenthesis to make the operator precedence explicit
+        if (match || preserveAllTokens && lastMatch) {
+                                       ^
+    (see http://errorprone.info/bugpattern/OperatorPrecedence)
+  Did you mean 'if (match || (preserveAllTokens && lastMatch)) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-14/src/main/java/org/apache/commons/lang3/StringUtils.java:5946: warning: [OperatorPrecedence] Use grouping parenthesis to make the operator precedence explicit
+        if (allStringsNull || longestStrLen == 0 && !anyStringNull) {
+                                                 ^
+    (see http://errorprone.info/bugpattern/OperatorPrecedence)
+  Did you mean 'if (allStringsNull || (longestStrLen == 0 && !anyStringNull)) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-14/src/main/java/org/apache/commons/lang3/StringUtils.java:6588: warning: [DefaultCharset] Implicit use of the platform default charset, which can result in e.g. non-ASCII characters being silently replaced with '?' in many environments
+        return charsetName == null ? new String(bytes) : new String(bytes, charsetName);
+                                     ^
+    (see http://errorprone.info/bugpattern/DefaultCharset)
+  Did you mean 'return charsetName == null ? new String(bytes, UTF_8) : new String(bytes, charsetName);' or 'return charsetName == null ? new String(bytes, Charset.defaultCharset()) : new String(bytes, charsetName);'?
+Note: /Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-14/src/main/java/org/apache/commons/lang3/StringUtils.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+4 warnings

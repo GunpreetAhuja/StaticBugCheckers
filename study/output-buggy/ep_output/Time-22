@@ -1,0 +1,21 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-22/src/main/java/org/joda/time/base/BasePeriod.java:302: warning: [MissingOverride] getPeriodType implements method in ReadablePeriod; expected @Override
+    public PeriodType getPeriodType() {
+                      ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public PeriodType getPeriodType() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-22/src/main/java/org/joda/time/base/BasePeriod.java:312: warning: [MissingOverride] size implements method in ReadablePeriod; expected @Override
+    public int size() {
+               ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int size() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-22/src/main/java/org/joda/time/base/BasePeriod.java:323: warning: [MissingOverride] getFieldType implements method in ReadablePeriod; expected @Override
+    public DurationFieldType getFieldType(int index) {
+                             ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public DurationFieldType getFieldType(int index) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-22/src/main/java/org/joda/time/base/BasePeriod.java:334: warning: [MissingOverride] getValue implements method in ReadablePeriod; expected @Override
+    public int getValue(int index) {
+               ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int getValue(int index) {'?
+4 warnings

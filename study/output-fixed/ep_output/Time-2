@@ -1,0 +1,162 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-2/src/main/java/org/joda/time/Partial.java:310: warning: [MissingOverride] size implements method in ReadablePartial; expected @Override
+    public int size() {
+               ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int size() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-2/src/main/java/org/joda/time/Partial.java:322: warning: [MissingOverride] getChronology implements method in ReadablePartial; expected @Override
+    public Chronology getChronology() {
+                      ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Chronology getChronology() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-2/src/main/java/org/joda/time/Partial.java:334: warning: [MissingOverride] getField implements method in AbstractPartial; expected @Override
+    protected DateTimeField getField(int index, Chronology chrono) {
+                            ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override protected DateTimeField getField(int index, Chronology chrono) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-2/src/main/java/org/joda/time/Partial.java:345: warning: [MissingOverride] getFieldType overrides method in AbstractPartial; expected @Override
+    public DateTimeFieldType getFieldType(int index) {
+                             ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public DateTimeFieldType getFieldType(int index) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-2/src/main/java/org/joda/time/Partial.java:357: warning: [MissingOverride] getFieldTypes overrides method in AbstractPartial; expected @Override
+    public DateTimeFieldType[] getFieldTypes() {
+                               ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public DateTimeFieldType[] getFieldTypes() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-2/src/main/java/org/joda/time/Partial.java:369: warning: [MissingOverride] getValue implements method in ReadablePartial; expected @Override
+    public int getValue(int index) {
+               ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int getValue(int index) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-2/src/main/java/org/joda/time/Partial.java:382: warning: [MissingOverride] getValues overrides method in AbstractPartial; expected @Override
+    public int[] getValues() {
+                 ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int[] getValues() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-2/src/main/java/org/joda/time/Partial.java:742: warning: [MissingOverride] toString implements method in ReadablePartial; expected @Override
+    public String toString() {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public String toString() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-2/src/main/java/org/joda/time/Partial.java:848: warning: [MissingOverride] getField implements method in AbstractPartialFieldProperty; expected @Override
+        public DateTimeField getField() {
+                             ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public DateTimeField getField() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-2/src/main/java/org/joda/time/Partial.java:857: warning: [MissingOverride] getReadablePartial implements method in AbstractPartialFieldProperty; expected @Override
+        protected ReadablePartial getReadablePartial() {
+                                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override protected ReadablePartial getReadablePartial() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-2/src/main/java/org/joda/time/Partial.java:875: warning: [MissingOverride] get implements method in AbstractPartialFieldProperty; expected @Override
+        public int get() {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int get() {'?
+11 warnings
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-2/src/main/java/org/joda/time/field/UnsupportedDurationField.java:78: warning: [MissingOverride] getType implements method in DurationField; expected @Override
+    public final DurationFieldType getType() {
+                                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public final DurationFieldType getType() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-2/src/main/java/org/joda/time/field/UnsupportedDurationField.java:82: warning: [MissingOverride] getName implements method in DurationField; expected @Override
+    public String getName() {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public String getName() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-2/src/main/java/org/joda/time/field/UnsupportedDurationField.java:91: warning: [MissingOverride] isSupported implements method in DurationField; expected @Override
+    public boolean isSupported() {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public boolean isSupported() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-2/src/main/java/org/joda/time/field/UnsupportedDurationField.java:100: warning: [MissingOverride] isPrecise implements method in DurationField; expected @Override
+    public boolean isPrecise() {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public boolean isPrecise() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-2/src/main/java/org/joda/time/field/UnsupportedDurationField.java:109: warning: [MissingOverride] getValue implements method in DurationField; expected @Override
+    public int getValue(long duration) {
+               ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int getValue(long duration) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-2/src/main/java/org/joda/time/field/UnsupportedDurationField.java:118: warning: [MissingOverride] getValueAsLong implements method in DurationField; expected @Override
+    public long getValueAsLong(long duration) {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public long getValueAsLong(long duration) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-2/src/main/java/org/joda/time/field/UnsupportedDurationField.java:127: warning: [MissingOverride] getValue implements method in DurationField; expected @Override
+    public int getValue(long duration, long instant) {
+               ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int getValue(long duration, long instant) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-2/src/main/java/org/joda/time/field/UnsupportedDurationField.java:136: warning: [MissingOverride] getValueAsLong implements method in DurationField; expected @Override
+    public long getValueAsLong(long duration, long instant) {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public long getValueAsLong(long duration, long instant) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-2/src/main/java/org/joda/time/field/UnsupportedDurationField.java:145: warning: [MissingOverride] getMillis implements method in DurationField; expected @Override
+    public long getMillis(int value) {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public long getMillis(int value) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-2/src/main/java/org/joda/time/field/UnsupportedDurationField.java:154: warning: [MissingOverride] getMillis implements method in DurationField; expected @Override
+    public long getMillis(long value) {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public long getMillis(long value) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-2/src/main/java/org/joda/time/field/UnsupportedDurationField.java:163: warning: [MissingOverride] getMillis implements method in DurationField; expected @Override
+    public long getMillis(int value, long instant) {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public long getMillis(int value, long instant) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-2/src/main/java/org/joda/time/field/UnsupportedDurationField.java:172: warning: [MissingOverride] getMillis implements method in DurationField; expected @Override
+    public long getMillis(long value, long instant) {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public long getMillis(long value, long instant) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-2/src/main/java/org/joda/time/field/UnsupportedDurationField.java:181: warning: [MissingOverride] add implements method in DurationField; expected @Override
+    public long add(long instant, int value) {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public long add(long instant, int value) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-2/src/main/java/org/joda/time/field/UnsupportedDurationField.java:190: warning: [MissingOverride] add implements method in DurationField; expected @Override
+    public long add(long instant, long value) {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public long add(long instant, long value) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-2/src/main/java/org/joda/time/field/UnsupportedDurationField.java:199: warning: [MissingOverride] getDifference implements method in DurationField; expected @Override
+    public int getDifference(long minuendInstant, long subtrahendInstant) {
+               ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int getDifference(long minuendInstant, long subtrahendInstant) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-2/src/main/java/org/joda/time/field/UnsupportedDurationField.java:208: warning: [MissingOverride] getDifferenceAsLong implements method in DurationField; expected @Override
+    public long getDifferenceAsLong(long minuendInstant, long subtrahendInstant) {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public long getDifferenceAsLong(long minuendInstant, long subtrahendInstant) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-2/src/main/java/org/joda/time/field/UnsupportedDurationField.java:217: warning: [MissingOverride] getUnitMillis implements method in DurationField; expected @Override
+    public long getUnitMillis() {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public long getUnitMillis() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-2/src/main/java/org/joda/time/field/UnsupportedDurationField.java:226: warning: [MissingOverride] compareTo implements method in Comparable; expected @Override
+    public int compareTo(DurationField durationField) {
+               ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int compareTo(DurationField durationField) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-2/src/main/java/org/joda/time/field/UnsupportedDurationField.java:240: warning: [MissingOverride] equals overrides method in Object; expected @Override
+    public boolean equals(Object obj) {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public boolean equals(Object obj) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-2/src/main/java/org/joda/time/field/UnsupportedDurationField.java:258: warning: [MissingOverride] hashCode overrides method in Object; expected @Override
+    public int hashCode() {
+               ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int hashCode() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-2/src/main/java/org/joda/time/field/UnsupportedDurationField.java:267: warning: [MissingOverride] toString implements method in DurationField; expected @Override
+    public String toString() {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public String toString() {'?
+21 warnings

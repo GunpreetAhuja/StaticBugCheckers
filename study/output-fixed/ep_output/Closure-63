@@ -1,0 +1,21 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-63/src/com/google/javascript/jscomp/LightweightMessageFormatter.java:58: warning: [MissingOverride] formatError implements method in MessageFormatter; expected @Override
+  public String formatError(JSError error) {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public String formatError(JSError error) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-63/src/com/google/javascript/jscomp/LightweightMessageFormatter.java:62: warning: [MissingOverride] formatWarning implements method in MessageFormatter; expected @Override
+  public String formatWarning(JSError warning) {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public String formatWarning(JSError warning) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-63/src/com/google/javascript/jscomp/LightweightMessageFormatter.java:121: warning: [MissingOverride] formatLine implements method in ExcerptFormatter; expected @Override
+    public String formatLine(String line, int lineNumber) {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public String formatLine(String line, int lineNumber) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-63/src/com/google/javascript/jscomp/LightweightMessageFormatter.java:125: warning: [MissingOverride] formatRegion implements method in ExcerptFormatter; expected @Override
+    public String formatRegion(Region region) {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public String formatRegion(Region region) {'?
+4 warnings

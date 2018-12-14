@@ -1,0 +1,14 @@
+Found 1 issue
+
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-101/src/com/google/javascript/jscomp/CommandLineRunner.java:472: error: RESOURCE_LEAK
+  resource of type `java.util.zip.ZipInputStream` acquired to `zip` by call to `new()` at line 466 is not released after line 472.
+**Note**: potential exception at line 468
+  470.         externs.add(JSSourceFile.fromInputStream(entry.getName(), entryStream));
+  471.       }
+  472. >     return externs;
+  473.     }
+  474.   
+
+Summary of the reports
+
+  RESOURCE_LEAK: 1

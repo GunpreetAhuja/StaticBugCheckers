@@ -1,0 +1,11 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Lang-64/src/java/org/apache/commons/lang/enums/ValuedEnum.java:182: warning: [MissingOverride] compareTo overrides method in Enum; expected @Override
+    public int compareTo(Object other) {
+               ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int compareTo(Object other) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Lang-64/src/java/org/apache/commons/lang/enums/ValuedEnum.java:203: warning: [MissingOverride] toString overrides method in Enum; expected @Override
+    public String toString() {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public String toString() {'?
+2 warnings

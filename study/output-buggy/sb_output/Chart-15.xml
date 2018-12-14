@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.1.0" sequence="0" timestamp="1542185219000" analysisTimestamp="1542185222651" release="">
+  <Project projectName="">
+    <Jar>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-15/source</Jar>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-15/build</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-15/lib/servlet.jar</AuxClasspathEntry>
+  </Project>
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" rank="18" abbrev="Bx" category="PERFORMANCE" instanceHash="57e1d4b93b4a32f0798f3ac3c7930f65" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Method invokes inefficient Number constructor; use static valueOf instead</ShortMessage>
+    <LongMessage>org.jfree.chart.plot.PiePlot.getSectionKey(int) invokes inefficient new Integer(int) constructor; use Integer.valueOf(int) instead</LongMessage>
+    <Class classname="org.jfree.chart.plot.PiePlot" primary="true">
+      <SourceLine classname="org.jfree.chart.plot.PiePlot" start="246" end="3033" sourcefile="PiePlot.java" sourcepath="org/jfree/chart/plot/PiePlot.java">
+        <Message>At PiePlot.java:[lines 246-3033]</Message>
+      </SourceLine>
+      <Message>In class org.jfree.chart.plot.PiePlot</Message>
+    </Class>
+    <Method classname="org.jfree.chart.plot.PiePlot" name="getSectionKey" signature="(I)Ljava/lang/Comparable;" isStatic="false" primary="true">
+      <SourceLine classname="org.jfree.chart.plot.PiePlot" start="873" end="882" startBytecode="0" endBytecode="114" sourcefile="PiePlot.java" sourcepath="org/jfree/chart/plot/PiePlot.java"/>
+      <Message>In method org.jfree.chart.plot.PiePlot.getSectionKey(int)</Message>
+    </Method>
+    <Method classname="java.lang.Integer" name="&lt;init&gt;" signature="(I)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Integer" start="849" end="851" startBytecode="0" endBytecode="41" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+      <Message>Called method new Integer(int)</Message>
+    </Method>
+    <Method classname="java.lang.Integer" name="valueOf" signature="(I)Ljava/lang/Integer;" isStatic="true" role="SHOULD_CALL">
+      <SourceLine classname="java.lang.Integer" start="830" end="832" startBytecode="0" endBytecode="72" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+      <Message>Should call Integer.valueOf(int) instead</Message>
+    </Method>
+    <SourceLine classname="org.jfree.chart.plot.PiePlot" primary="true" start="880" end="880" startBytecode="46" endBytecode="46" sourcefile="PiePlot.java" sourcepath="org/jfree/chart/plot/PiePlot.java">
+      <Message>At PiePlot.java:[line 880]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="HE_EQUALS_USE_HASHCODE" priority="1" rank="14" abbrev="HE" category="BAD_PRACTICE" instanceHash="7e57882076436fe40542cbcc9ae7824f" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Class defines equals() and uses Object.hashCode()</ShortMessage>
+    <LongMessage>org.jfree.chart.plot.PiePlot defines equals and uses Object.hashCode()</LongMessage>
+    <Class classname="org.jfree.chart.plot.PiePlot" primary="true">
+      <SourceLine classname="org.jfree.chart.plot.PiePlot" start="246" end="3033" sourcefile="PiePlot.java" sourcepath="org/jfree/chart/plot/PiePlot.java">
+        <Message>At PiePlot.java:[lines 246-3033]</Message>
+      </SourceLine>
+      <Message>In class org.jfree.chart.plot.PiePlot</Message>
+    </Class>
+    <Method classname="org.jfree.chart.plot.PiePlot" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false" primary="true">
+      <SourceLine classname="org.jfree.chart.plot.PiePlot" start="2798" end="2951" startBytecode="0" endBytecode="1085" sourcefile="PiePlot.java" sourcepath="org/jfree/chart/plot/PiePlot.java"/>
+      <Message>In method org.jfree.chart.plot.PiePlot.equals(Object)</Message>
+    </Method>
+    <SourceLine classname="org.jfree.chart.plot.PiePlot" start="2798" end="2951" startBytecode="0" endBytecode="1085" sourcefile="PiePlot.java" sourcepath="org/jfree/chart/plot/PiePlot.java" synthetic="true">
+      <Message>At PiePlot.java:[lines 2798-2951]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="MS_SHOULD_BE_FINAL" priority="1" rank="16" abbrev="MS" category="MALICIOUS_CODE" instanceHash="6c71f5bdfaaef9406943e37bf1cc7826" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="218">
+    <ShortMessage>Field isn&apos;t final but should be</ShortMessage>
+    <LongMessage>org.jfree.chart.plot.PiePlot.localizationResources isn&apos;t final but should be</LongMessage>
+    <Class classname="org.jfree.chart.plot.PiePlot" primary="true">
+      <SourceLine classname="org.jfree.chart.plot.PiePlot" start="246" end="3033" sourcefile="PiePlot.java" sourcepath="org/jfree/chart/plot/PiePlot.java">
+        <Message>At PiePlot.java:[lines 246-3033]</Message>
+      </SourceLine>
+      <Message>In class org.jfree.chart.plot.PiePlot</Message>
+    </Class>
+    <Field classname="org.jfree.chart.plot.PiePlot" name="localizationResources" signature="Ljava/util/ResourceBundle;" isStatic="true" primary="true">
+      <SourceLine classname="org.jfree.chart.plot.PiePlot" sourcefile="PiePlot.java" sourcepath="org/jfree/chart/plot/PiePlot.java">
+        <Message>In PiePlot.java</Message>
+      </SourceLine>
+      <Message>Field org.jfree.chart.plot.PiePlot.localizationResources</Message>
+    </Field>
+    <SourceLine classname="org.jfree.chart.plot.PiePlot" primary="true" start="457" end="457" startBytecode="87" endBytecode="87" sourcefile="PiePlot.java" sourcepath="org/jfree/chart/plot/PiePlot.java">
+      <Message>At PiePlot.java:[line 457]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="BAD_PRACTICE">
+    <Description>Bad practice</Description>
+  </BugCategory>
+  <BugCategory category="MALICIOUS_CODE">
+    <Description>Malicious code vulnerability</Description>
+  </BugCategory>
+  <BugCategory category="PERFORMANCE">
+    <Description>Performance</Description>
+  </BugCategory>
+  <BugPattern type="MS_SHOULD_BE_FINAL" abbrev="MS" category="MALICIOUS_CODE">
+    <ShortDescription>Field isn&apos;t final but should be</ShortDescription>
+    <Details><![CDATA[
+
+   <p>
+This static field public but not final, and
+could be changed by malicious code or
+        by accident from another package.
+        The field could be made final to avoid
+        this vulnerability.</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="HE_EQUALS_USE_HASHCODE" abbrev="HE" category="BAD_PRACTICE">
+    <ShortDescription>Class defines equals() and uses Object.hashCode()</ShortDescription>
+    <Details><![CDATA[
+
+  <p> This class overrides <code>equals(Object)</code>, but does not
+  override <code>hashCode()</code>, and inherits the implementation of
+  <code>hashCode()</code> from <code>java.lang.Object</code> (which returns
+  the identity hash code, an arbitrary value assigned to the object
+  by the VM).&nbsp; Therefore, the class is very likely to violate the
+  invariant that equal objects must have equal hashcodes.</p>
+
+<p>If you don't think instances of this class will ever be inserted into a HashMap/HashTable,
+the recommended <code>hashCode</code> implementation to use is:</p>
+<pre><code>public int hashCode() {
+    assert false : "hashCode not designed";
+    return 42; // any arbitrary constant will do
+}
+</code></pre>
+
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="DM_NUMBER_CTOR" abbrev="Bx" category="PERFORMANCE">
+    <ShortDescription>Method invokes inefficient Number constructor; use static valueOf instead</ShortDescription>
+    <Details><![CDATA[
+      
+      <p>
+      Using <code>new Integer(int)</code> is guaranteed to always result in a new object whereas
+      <code>Integer.valueOf(int)</code> allows caching of values to be done by the compiler, class library, or JVM.
+      Using of cached values avoids object allocation and the code will be faster.
+      </p>
+      <p>
+      Values between -128 and 127 are guaranteed to have corresponding cached instances
+      and using <code>valueOf</code> is approximately 3.5 times faster than using constructor.
+      For values outside the constant range the performance of both styles is the same.
+      </p>
+      <p>
+      Unless the class must be compatible with JVMs predating Java 1.5,
+      use either autoboxing or the <code>valueOf()</code> method when creating instances of
+      <code>Long</code>, <code>Integer</code>, <code>Short</code>, <code>Character</code>, and <code>Byte</code>.
+      </p>
+      
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="Bx">
+    <Description>Questionable Boxing of primitive value</Description>
+  </BugCode>
+  <BugCode abbrev="MS" cweid="218">
+    <Description>Mutable static field</Description>
+  </BugCode>
+  <BugCode abbrev="HE">
+    <Description>Equal objects must have equal hashcodes</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 14 Nov 2018 03:46:59 -0500" total_classes="1" referenced_classes="104" total_bugs="3" total_size="1010" num_packages="1" java_version="1.8.0_121" vm_version="25.121-b13" cpu_seconds="13.27" clock_seconds="7.75" peak_mbytes="200.28" alloc_mbytes="1820.50" gc_seconds="0.11" priority_2="1" priority_1="2">
+    <FileStats path="org/jfree/chart/plot/PiePlot.java" bugCount="3" size="1010" bugHash="3c56476a4419f23ef29713309a9a8759"/>
+    <PackageStats package="org.jfree.chart.plot" total_bugs="3" total_types="1" total_size="1010" priority_2="1" priority_1="2">
+      <ClassStats class="org.jfree.chart.plot.PiePlot" sourceFile="PiePlot.java" interface="false" size="1010" bugs="3" priority_2="1" priority_1="2"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="851" invocations="649" avgMicrosecondsPerInvocation="1311" maxMicrosecondsPerInvocation="41576" standardDeviationMicrosecondsPerInvocation="3187"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="786" invocations="644" avgMicrosecondsPerInvocation="1221" maxMicrosecondsPerInvocation="85845" standardDeviationMicrosecondsPerInvocation="4895"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="328" invocations="115" avgMicrosecondsPerInvocation="2858" maxMicrosecondsPerInvocation="48662" standardDeviationMicrosecondsPerInvocation="8676"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="317" invocations="115" avgMicrosecondsPerInvocation="2758" maxMicrosecondsPerInvocation="52123" standardDeviationMicrosecondsPerInvocation="7928"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="304" invocations="116" avgMicrosecondsPerInvocation="2629" maxMicrosecondsPerInvocation="44734" standardDeviationMicrosecondsPerInvocation="7530"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="247" invocations="104" avgMicrosecondsPerInvocation="2379" maxMicrosecondsPerInvocation="25793" standardDeviationMicrosecondsPerInvocation="4798"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="221" invocations="115" avgMicrosecondsPerInvocation="1924" maxMicrosecondsPerInvocation="27264" standardDeviationMicrosecondsPerInvocation="4588"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="214" invocations="314" avgMicrosecondsPerInvocation="684" maxMicrosecondsPerInvocation="24025" standardDeviationMicrosecondsPerInvocation="2212"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="208" invocations="115" avgMicrosecondsPerInvocation="1809" maxMicrosecondsPerInvocation="26212" standardDeviationMicrosecondsPerInvocation="4511"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="204" invocations="115" avgMicrosecondsPerInvocation="1781" maxMicrosecondsPerInvocation="145952" standardDeviationMicrosecondsPerInvocation="13675"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="172" invocations="115" avgMicrosecondsPerInvocation="1503" maxMicrosecondsPerInvocation="26235" standardDeviationMicrosecondsPerInvocation="3277"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="153" invocations="104" avgMicrosecondsPerInvocation="1472" maxMicrosecondsPerInvocation="18015" standardDeviationMicrosecondsPerInvocation="2678"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="136" invocations="156" avgMicrosecondsPerInvocation="876" maxMicrosecondsPerInvocation="48179" standardDeviationMicrosecondsPerInvocation="4888"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="135" invocations="605" avgMicrosecondsPerInvocation="223" maxMicrosecondsPerInvocation="33019" standardDeviationMicrosecondsPerInvocation="1449"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindOpenStream" totalMilliseconds="128" invocations="1" avgMicrosecondsPerInvocation="128045" maxMicrosecondsPerInvocation="128045" standardDeviationMicrosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="95" invocations="74" avgMicrosecondsPerInvocation="1290" maxMicrosecondsPerInvocation="28976" standardDeviationMicrosecondsPerInvocation="4271"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="90" invocations="1" avgMicrosecondsPerInvocation="90534" maxMicrosecondsPerInvocation="90534" standardDeviationMicrosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="84" invocations="104" avgMicrosecondsPerInvocation="811" maxMicrosecondsPerInvocation="17635" standardDeviationMicrosecondsPerInvocation="2520"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="74" invocations="104" avgMicrosecondsPerInvocation="719" maxMicrosecondsPerInvocation="13532" standardDeviationMicrosecondsPerInvocation="1860"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="57" invocations="104" avgMicrosecondsPerInvocation="556" maxMicrosecondsPerInvocation="17210" standardDeviationMicrosecondsPerInvocation="1784"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="56" invocations="104" avgMicrosecondsPerInvocation="547" maxMicrosecondsPerInvocation="28593" standardDeviationMicrosecondsPerInvocation="2989"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

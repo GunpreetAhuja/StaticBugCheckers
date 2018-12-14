@@ -1,0 +1,36 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Mockito-11/src/org/mockito/internal/creation/DelegatingMethod.java:21: warning: [MissingOverride] getExceptionTypes implements method in MockitoMethod; expected @Override
+    public Class<?>[] getExceptionTypes() {
+                      ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Class<?>[] getExceptionTypes() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Mockito-11/src/org/mockito/internal/creation/DelegatingMethod.java:25: warning: [MissingOverride] getJavaMethod implements method in MockitoMethod; expected @Override
+    public Method getJavaMethod() {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Method getJavaMethod() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Mockito-11/src/org/mockito/internal/creation/DelegatingMethod.java:29: warning: [MissingOverride] getName implements method in MockitoMethod; expected @Override
+    public String getName() {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public String getName() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Mockito-11/src/org/mockito/internal/creation/DelegatingMethod.java:33: warning: [MissingOverride] getParameterTypes implements method in MockitoMethod; expected @Override
+    public Class<?>[] getParameterTypes() {
+                      ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Class<?>[] getParameterTypes() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Mockito-11/src/org/mockito/internal/creation/DelegatingMethod.java:37: warning: [MissingOverride] getReturnType implements method in MockitoMethod; expected @Override
+    public Class<?> getReturnType() {
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Class<?> getReturnType() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Mockito-11/src/org/mockito/internal/creation/DelegatingMethod.java:41: warning: [MissingOverride] isVarArgs implements method in MockitoMethod; expected @Override
+    public boolean isVarArgs() {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public boolean isVarArgs() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Mockito-11/src/org/mockito/internal/creation/DelegatingMethod.java:45: warning: [MissingOverride] isAbstract implements method in AbstractAwareMethod; expected @Override
+    public boolean isAbstract() {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public boolean isAbstract() {'?
+7 warnings

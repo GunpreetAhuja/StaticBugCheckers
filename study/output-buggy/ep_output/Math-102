@@ -1,0 +1,48 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-102/src/java/org/apache/commons/math/stat/inference/ChiSquareTestImpl.java:64: warning: [MissingOverride] chiSquare implements method in ChiSquareTest; expected @Override
+    public double chiSquare(double[] expected, long[] observed)
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double chiSquare(double[] expected, long[] observed)'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-102/src/java/org/apache/commons/math/stat/inference/ChiSquareTestImpl.java:95: warning: [MissingOverride] chiSquareTest implements method in ChiSquareTest; expected @Override
+    public double chiSquareTest(double[] expected, long[] observed)
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double chiSquareTest(double[] expected, long[] observed)'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-102/src/java/org/apache/commons/math/stat/inference/ChiSquareTestImpl.java:116: warning: [MissingOverride] chiSquareTest implements method in ChiSquareTest; expected @Override
+    public boolean chiSquareTest(double[] expected, long[] observed, 
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public boolean chiSquareTest(double[] expected, long[] observed,'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-102/src/java/org/apache/commons/math/stat/inference/ChiSquareTestImpl.java:130: warning: [MissingOverride] chiSquare implements method in ChiSquareTest; expected @Override
+    public double chiSquare(long[][] counts) throws IllegalArgumentException {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double chiSquare(long[][] counts) throws IllegalArgumentException {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-102/src/java/org/apache/commons/math/stat/inference/ChiSquareTestImpl.java:167: warning: [MissingOverride] chiSquareTest implements method in ChiSquareTest; expected @Override
+    public double chiSquareTest(long[][] counts)
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double chiSquareTest(long[][] counts)'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-102/src/java/org/apache/commons/math/stat/inference/ChiSquareTestImpl.java:183: warning: [MissingOverride] chiSquareTest implements method in ChiSquareTest; expected @Override
+    public boolean chiSquareTest(long[][] counts, double alpha)
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public boolean chiSquareTest(long[][] counts, double alpha)'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-102/src/java/org/apache/commons/math/stat/inference/ChiSquareTestImpl.java:197: warning: [MissingOverride] chiSquareDataSetsComparison implements method in UnknownDistributionChiSquareTest; expected @Override
+    public double chiSquareDataSetsComparison(long[] observed1, long[] observed2)
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double chiSquareDataSetsComparison(long[] observed1, long[] observed2)'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-102/src/java/org/apache/commons/math/stat/inference/ChiSquareTestImpl.java:259: warning: [MissingOverride] chiSquareTestDataSetsComparison implements method in UnknownDistributionChiSquareTest; expected @Override
+    public double chiSquareTestDataSetsComparison(long[] observed1, long[] observed2)
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double chiSquareTestDataSetsComparison(long[] observed1, long[] observed2)'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-102/src/java/org/apache/commons/math/stat/inference/ChiSquareTestImpl.java:275: warning: [MissingOverride] chiSquareTestDataSetsComparison implements method in UnknownDistributionChiSquareTest; expected @Override
+    public boolean chiSquareTestDataSetsComparison(long[] observed1, long[] observed2,
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public boolean chiSquareTestDataSetsComparison(long[] observed1, long[] observed2,'?
+Note: /Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-102/src/java/org/apache/commons/math/stat/inference/ChiSquareTestImpl.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+9 warnings

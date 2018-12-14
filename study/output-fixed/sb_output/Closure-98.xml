@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.1.0" sequence="0" timestamp="1542190336000" analysisTimestamp="1542190338678" release="">
+  <Project projectName="">
+    <Jar>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-98/src</Jar>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-98/build/classes</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-98/lib/ant_deploy.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-98/lib/args4j_deploy.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-98/lib/google_common_deploy.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-98/lib/hamcrest-core-1.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-98/lib/junit.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-98/lib/libtrunk_rhino_parser_jarjared.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-98/lib/protobuf_deploy.jar</AuxClasspathEntry>
+  </Project>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 14 Nov 2018 05:12:16 -0500" total_classes="6" referenced_classes="54" total_bugs="0" total_size="255" num_packages="1" java_version="1.8.0_121" vm_version="25.121-b13" cpu_seconds="8.09" clock_seconds="4.50" peak_mbytes="112.16" alloc_mbytes="1820.50" gc_seconds="0.04">
+    <FileStats path="com/google/javascript/jscomp/ReferenceCollectingCallback.java" bugCount="0" size="255"/>
+    <PackageStats package="com.google.javascript.jscomp" total_bugs="0" total_types="6" total_size="255">
+      <ClassStats class="com.google.javascript.jscomp.ReferenceCollectingCallback" sourceFile="ReferenceCollectingCallback.java" interface="false" size="61" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.ReferenceCollectingCallback$1" sourceFile="ReferenceCollectingCallback.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.ReferenceCollectingCallback$BasicBlock" sourceFile="ReferenceCollectingCallback.java" interface="false" size="28" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.ReferenceCollectingCallback$Behavior" sourceFile="ReferenceCollectingCallback.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.ReferenceCollectingCallback$Reference" sourceFile="ReferenceCollectingCallback.java" interface="false" size="69" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.ReferenceCollectingCallback$ReferenceCollection" sourceFile="ReferenceCollectingCallback.java" interface="false" size="90" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="797" invocations="588" avgMicrosecondsPerInvocation="1356" maxMicrosecondsPerInvocation="22924" standardDeviationMicrosecondsPerInvocation="2241"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="729" invocations="587" avgMicrosecondsPerInvocation="1243" maxMicrosecondsPerInvocation="67789" standardDeviationMicrosecondsPerInvocation="4815"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="303" invocations="54" avgMicrosecondsPerInvocation="5621" maxMicrosecondsPerInvocation="77916" standardDeviationMicrosecondsPerInvocation="12677"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="153" invocations="54" avgMicrosecondsPerInvocation="2836" maxMicrosecondsPerInvocation="23623" standardDeviationMicrosecondsPerInvocation="4957"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="137" invocations="556" avgMicrosecondsPerInvocation="247" maxMicrosecondsPerInvocation="38083" standardDeviationMicrosecondsPerInvocation="1786"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="126" invocations="210" avgMicrosecondsPerInvocation="604" maxMicrosecondsPerInvocation="19445" standardDeviationMicrosecondsPerInvocation="1543"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="117" invocations="11" avgMicrosecondsPerInvocation="10665" maxMicrosecondsPerInvocation="112662" standardDeviationMicrosecondsPerInvocation="32257"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="95" invocations="78" avgMicrosecondsPerInvocation="1222" maxMicrosecondsPerInvocation="66539" standardDeviationMicrosecondsPerInvocation="7482"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="84" invocations="54" avgMicrosecondsPerInvocation="1573" maxMicrosecondsPerInvocation="25679" standardDeviationMicrosecondsPerInvocation="4844"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="67" invocations="11" avgMicrosecondsPerInvocation="6171" maxMicrosecondsPerInvocation="27471" standardDeviationMicrosecondsPerInvocation="9099"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

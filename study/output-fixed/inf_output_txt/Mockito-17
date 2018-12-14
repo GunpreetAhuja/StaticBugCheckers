@@ -1,0 +1,14 @@
+Found 1 issue
+
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Mockito-17/src/org/mockito/internal/util/MockUtil.java:77: error: NULL_DEREFERENCE
+  object returned by `getInterceptor(this,mock)` could be null and is dereferenced at line 77.
+  75.   
+  76.           if (isMockitoMock(mock)) {
+  77. >             return (MockHandlerInterface) getInterceptor(mock).getHandler();
+  78.           } else {
+  79.               throw new NotAMockException("Argument should be a mock, but is: " + mock.getClass());
+
+Summary of the reports
+
+  NULL_DEREFERENCE: 1
+No issues found

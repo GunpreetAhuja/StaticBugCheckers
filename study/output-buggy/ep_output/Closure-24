@@ -1,0 +1,16 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-24/src/com/google/javascript/jscomp/ScopedAliases.java:148: warning: [ClassCanBeStatic] Inner class is non-static but does not reference enclosing class
+  private class AliasedNode implements AliasUsage {
+          ^
+    (see http://errorprone.info/bugpattern/ClassCanBeStatic)
+  Did you mean 'private static class AliasedNode implements AliasUsage {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-24/src/com/google/javascript/jscomp/ScopedAliases.java:165: warning: [ClassCanBeStatic] Inner class is non-static but does not reference enclosing class
+  private class AliasedTypeNode implements AliasUsage {
+          ^
+    (see http://errorprone.info/bugpattern/ClassCanBeStatic)
+  Did you mean 'private static class AliasedTypeNode implements AliasUsage {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-24/src/com/google/javascript/jscomp/ScopedAliases.java:337: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+        if (lexicalVar != null && lexicalVar == aliases.get(name)) {
+                                             ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'if (lexicalVar != null && lexicalVar.equals(aliases.get(name))) {'?
+3 warnings

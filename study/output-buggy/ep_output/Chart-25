@@ -1,0 +1,21 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-25/source/org/jfree/chart/renderer/category/StatisticalBarRenderer.java:188: warning: [MissingOverride] drawItem overrides method in BarRenderer; expected @Override
+    public void drawItem(Graphics2D g2,
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void drawItem(Graphics2D g2,'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-25/source/org/jfree/chart/renderer/category/StatisticalBarRenderer.java:207: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+        if (orientation == PlotOrientation.HORIZONTAL) {
+                        ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'if (Objects.equals(orientation, PlotOrientation.HORIZONTAL)) {' or 'if (orientation.equals(PlotOrientation.HORIZONTAL)) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-25/source/org/jfree/chart/renderer/category/StatisticalBarRenderer.java:211: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+        else if (orientation == PlotOrientation.VERTICAL) {
+                             ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'else if (Objects.equals(orientation, PlotOrientation.VERTICAL)) {' or 'else if (orientation.equals(PlotOrientation.VERTICAL)) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-25/source/org/jfree/chart/renderer/category/StatisticalBarRenderer.java:509: warning: [MissingOverride] equals overrides method in BarRenderer; expected @Override
+    public boolean equals(Object obj) {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public boolean equals(Object obj) {'?
+4 warnings

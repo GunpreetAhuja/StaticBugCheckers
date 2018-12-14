@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.1.0" sequence="0" timestamp="1542185655000" analysisTimestamp="1542185657977" release="">
+  <Project projectName="">
+    <Jar>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-35/src</Jar>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-35/build/classes</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-35/lib/args4j.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-35/lib/guava.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-35/lib/json.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-35/lib/jsr305.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-35/lib/protobuf-java.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-35/build/lib/rhino.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-35/lib/ant.jar</AuxClasspathEntry>
+  </Project>
+  <BugInstance type="SF_SWITCH_NO_DEFAULT" priority="2" rank="19" abbrev="SF" category="STYLE" instanceHash="dd0878b072e1b657d7d40d846cfe1fee" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Switch statement found where default case is missing</ShortMessage>
+    <LongMessage>Switch statement found in com.google.javascript.jscomp.TypeInference.branchedFlowThrough(Node, FlowScope) where default case is missing</LongMessage>
+    <Class classname="com.google.javascript.jscomp.TypeInference" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.TypeInference" start="56" end="1411" sourcefile="TypeInference.java" sourcepath="com/google/javascript/jscomp/TypeInference.java">
+        <Message>At TypeInference.java:[lines 56-1411]</Message>
+      </SourceLine>
+      <Message>In class com.google.javascript.jscomp.TypeInference</Message>
+    </Class>
+    <Method classname="com.google.javascript.jscomp.TypeInference" name="branchedFlowThrough" signature="(Lcom/google/javascript/rhino/Node;Lcom/google/javascript/jscomp/FlowScope;)Ljava/util/List;" isStatic="false" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.TypeInference" start="143" end="246" startBytecode="0" endBytecode="1212" sourcefile="TypeInference.java" sourcepath="com/google/javascript/jscomp/TypeInference.java"/>
+      <Message>In method com.google.javascript.jscomp.TypeInference.branchedFlowThrough(Node, FlowScope)</Message>
+    </Method>
+    <SourceLine classname="com.google.javascript.jscomp.TypeInference" primary="true" start="154" end="237" startBytecode="93" endBytecode="473" sourcefile="TypeInference.java" sourcepath="com/google/javascript/jscomp/TypeInference.java">
+      <Message>At TypeInference.java:[lines 154-237]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="SF_SWITCH_NO_DEFAULT" priority="2" rank="19" abbrev="SF" category="STYLE" instanceHash="c564d433de97073a7267eb58f981b9e8" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Switch statement found where default case is missing</ShortMessage>
+    <LongMessage>Switch statement found in com.google.javascript.jscomp.TypeInference.traverse(Node, FlowScope) where default case is missing</LongMessage>
+    <Class classname="com.google.javascript.jscomp.TypeInference" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.TypeInference" start="56" end="1411" sourcefile="TypeInference.java" sourcepath="com/google/javascript/jscomp/TypeInference.java">
+        <Message>At TypeInference.java:[lines 56-1411]</Message>
+      </SourceLine>
+      <Message>In class com.google.javascript.jscomp.TypeInference</Message>
+    </Class>
+    <Method classname="com.google.javascript.jscomp.TypeInference" name="traverse" signature="(Lcom/google/javascript/rhino/Node;Lcom/google/javascript/jscomp/FlowScope;)Lcom/google/javascript/jscomp/FlowScope;" isStatic="false" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.TypeInference" start="250" end="411" startBytecode="0" endBytecode="1289" sourcefile="TypeInference.java" sourcepath="com/google/javascript/jscomp/TypeInference.java"/>
+      <Message>In method com.google.javascript.jscomp.TypeInference.traverse(Node, FlowScope)</Message>
+    </Method>
+    <SourceLine classname="com.google.javascript.jscomp.TypeInference" primary="true" start="250" end="391" startBytecode="4" endBytecode="881" sourcefile="TypeInference.java" sourcepath="com/google/javascript/jscomp/TypeInference.java">
+      <Message>At TypeInference.java:[lines 250-391]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="SF_SWITCH_NO_DEFAULT" priority="2" rank="19" abbrev="SF" category="STYLE" instanceHash="2a4aa5bc51ab10fad996dd43b358dca5" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Switch statement found where default case is missing</ShortMessage>
+    <LongMessage>Switch statement found in com.google.javascript.jscomp.TypeInference.updateScopeForTypeChange(FlowScope, Node, JSType, JSType) where default case is missing</LongMessage>
+    <Class classname="com.google.javascript.jscomp.TypeInference" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.TypeInference" start="56" end="1411" sourcefile="TypeInference.java" sourcepath="com/google/javascript/jscomp/TypeInference.java">
+        <Message>At TypeInference.java:[lines 56-1411]</Message>
+      </SourceLine>
+      <Message>In class com.google.javascript.jscomp.TypeInference</Message>
+    </Class>
+    <Method classname="com.google.javascript.jscomp.TypeInference" name="updateScopeForTypeChange" signature="(Lcom/google/javascript/jscomp/FlowScope;Lcom/google/javascript/rhino/Node;Lcom/google/javascript/rhino/jstype/JSType;Lcom/google/javascript/rhino/jstype/JSType;)V" isStatic="false" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.TypeInference" start="465" end="506" startBytecode="0" endBytecode="565" sourcefile="TypeInference.java" sourcepath="com/google/javascript/jscomp/TypeInference.java"/>
+      <Message>In method com.google.javascript.jscomp.TypeInference.updateScopeForTypeChange(FlowScope, Node, JSType, JSType)</Message>
+    </Method>
+    <SourceLine classname="com.google.javascript.jscomp.TypeInference" primary="true" start="466" end="503" startBytecode="10" endBytecode="198" sourcefile="TypeInference.java" sourcepath="com/google/javascript/jscomp/TypeInference.java">
+      <Message>At TypeInference.java:[lines 466-503]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="SF_SWITCH_NO_DEFAULT" abbrev="SF" category="STYLE">
+    <ShortDescription>Switch statement found where default case is missing</ShortDescription>
+    <Details><![CDATA[
+
+  <p> This method contains a switch statement where default case is missing.
+  Usually you need to provide a default case.</p>
+  <p>Because the analysis only looks at the generated bytecode, this warning can be incorrect triggered if
+the default case is at the end of the switch statement and the switch statement doesn't contain break statements for other
+cases.
+
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="SF">
+    <Description>Switch case falls through</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 14 Nov 2018 03:54:15 -0500" total_classes="3" referenced_classes="64" total_bugs="3" total_size="699" num_packages="1" java_version="1.8.0_121" vm_version="25.121-b13" cpu_seconds="12.22" clock_seconds="6.83" peak_mbytes="190.84" alloc_mbytes="1820.50" gc_seconds="0.11" priority_2="3">
+    <FileStats path="com/google/javascript/jscomp/TypeInference.java" bugCount="3" size="699" bugHash="67d3af8eba8d92718a431fb3556189c6"/>
+    <PackageStats package="com.google.javascript.jscomp" total_bugs="3" total_types="3" total_size="699" priority_2="3">
+      <ClassStats class="com.google.javascript.jscomp.TypeInference" sourceFile="TypeInference.java" interface="false" size="670" bugs="3" priority_2="3"/>
+      <ClassStats class="com.google.javascript.jscomp.TypeInference$1" sourceFile="TypeInference.java" interface="false" size="4" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.TypeInference$BooleanOutcomePair" sourceFile="TypeInference.java" interface="false" size="25" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="849" invocations="555" avgMicrosecondsPerInvocation="1530" maxMicrosecondsPerInvocation="31307" standardDeviationMicrosecondsPerInvocation="2948"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="592" invocations="552" avgMicrosecondsPerInvocation="1073" maxMicrosecondsPerInvocation="40980" standardDeviationMicrosecondsPerInvocation="3373"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="389" invocations="45" avgMicrosecondsPerInvocation="8644" maxMicrosecondsPerInvocation="125481" standardDeviationMicrosecondsPerInvocation="19280"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="299" invocations="47" avgMicrosecondsPerInvocation="6371" maxMicrosecondsPerInvocation="51368" standardDeviationMicrosecondsPerInvocation="11773"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="266" invocations="64" avgMicrosecondsPerInvocation="4170" maxMicrosecondsPerInvocation="45736" standardDeviationMicrosecondsPerInvocation="8578"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="263" invocations="49" avgMicrosecondsPerInvocation="5381" maxMicrosecondsPerInvocation="48490" standardDeviationMicrosecondsPerInvocation="10690"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="218" invocations="64" avgMicrosecondsPerInvocation="3421" maxMicrosecondsPerInvocation="38324" standardDeviationMicrosecondsPerInvocation="6321"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="202" invocations="275" avgMicrosecondsPerInvocation="735" maxMicrosecondsPerInvocation="18815" standardDeviationMicrosecondsPerInvocation="2056"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="202" invocations="49" avgMicrosecondsPerInvocation="4125" maxMicrosecondsPerInvocation="34795" standardDeviationMicrosecondsPerInvocation="7781"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="186" invocations="49" avgMicrosecondsPerInvocation="3803" maxMicrosecondsPerInvocation="27534" standardDeviationMicrosecondsPerInvocation="6264"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="155" invocations="49" avgMicrosecondsPerInvocation="3177" maxMicrosecondsPerInvocation="43344" standardDeviationMicrosecondsPerInvocation="7991"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="121" invocations="47" avgMicrosecondsPerInvocation="2580" maxMicrosecondsPerInvocation="35119" standardDeviationMicrosecondsPerInvocation="6870"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="103" invocations="95" avgMicrosecondsPerInvocation="1092" maxMicrosecondsPerInvocation="33393" standardDeviationMicrosecondsPerInvocation="4450"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="98" invocations="518" avgMicrosecondsPerInvocation="189" maxMicrosecondsPerInvocation="16700" standardDeviationMicrosecondsPerInvocation="1001"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="94" invocations="64" avgMicrosecondsPerInvocation="1477" maxMicrosecondsPerInvocation="22100" standardDeviationMicrosecondsPerInvocation="3839"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="87" invocations="49" avgMicrosecondsPerInvocation="1778" maxMicrosecondsPerInvocation="73412" standardDeviationMicrosecondsPerInvocation="10347"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="81" invocations="64" avgMicrosecondsPerInvocation="1265" maxMicrosecondsPerInvocation="15291" standardDeviationMicrosecondsPerInvocation="3112"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="68" invocations="64" avgMicrosecondsPerInvocation="1071" maxMicrosecondsPerInvocation="18513" standardDeviationMicrosecondsPerInvocation="2843"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

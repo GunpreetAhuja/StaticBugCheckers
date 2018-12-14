@@ -1,0 +1,16 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-6/source/org/jfree/chart/util/ShapeList.java:92: warning: [MissingOverride] clone overrides method in AbstractObjectList; expected @Override
+    public Object clone() throws CloneNotSupportedException {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Object clone() throws CloneNotSupportedException {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-6/source/org/jfree/chart/util/ShapeList.java:103: warning: [MissingOverride] equals overrides method in AbstractObjectList; expected @Override
+    public boolean equals(Object obj) {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public boolean equals(Object obj) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-6/source/org/jfree/chart/util/ShapeList.java:120: warning: [MissingOverride] hashCode overrides method in AbstractObjectList; expected @Override
+    public int hashCode() {
+               ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int hashCode() {'?
+3 warnings

@@ -1,0 +1,76 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-49/src/main/java/org/apache/commons/math/linear/OpenMapRealVector.java:277: warning: [MissingOverride] append implements method in RealVector; expected @Override
+    public OpenMapRealVector append(RealVector v) {
+                             ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public OpenMapRealVector append(RealVector v) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-49/src/main/java/org/apache/commons/math/linear/OpenMapRealVector.java:285: warning: [MissingOverride] append implements method in RealVector; expected @Override
+    public OpenMapRealVector append(double d) {
+                             ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public OpenMapRealVector append(double d) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-49/src/main/java/org/apache/commons/math/linear/OpenMapRealVector.java:292: warning: [MissingOverride] append implements method in RealVector; expected @Override
+    public OpenMapRealVector append(double[] a) {
+                             ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public OpenMapRealVector append(double[] a) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-49/src/main/java/org/apache/commons/math/linear/OpenMapRealVector.java:342: warning: [MissingOverride] ebeDivide implements method in RealVector; expected @Override
+    public OpenMapRealVector ebeDivide(RealVector v) {
+                             ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public OpenMapRealVector ebeDivide(RealVector v) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-49/src/main/java/org/apache/commons/math/linear/OpenMapRealVector.java:367: warning: [MissingOverride] ebeMultiply implements method in RealVector; expected @Override
+    public OpenMapRealVector ebeMultiply(RealVector v) {
+                             ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public OpenMapRealVector ebeMultiply(RealVector v) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-49/src/main/java/org/apache/commons/math/linear/OpenMapRealVector.java:392: warning: [MissingOverride] getSubVector implements method in RealVector; expected @Override
+    public OpenMapRealVector getSubVector(int index, int n) {
+                             ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public OpenMapRealVector getSubVector(int index, int n) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-49/src/main/java/org/apache/commons/math/linear/OpenMapRealVector.java:421: warning: [MissingOverride] getDimension implements method in RealVector; expected @Override
+    public int getDimension() {
+               ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int getDimension() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-49/src/main/java/org/apache/commons/math/linear/OpenMapRealVector.java:478: warning: [MissingOverride] getEntry implements method in RealVector; expected @Override
+    public double getEntry(int index) {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double getEntry(int index) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-49/src/main/java/org/apache/commons/math/linear/OpenMapRealVector.java:588: warning: [MissingOverride] isInfinite implements method in RealVector; expected @Override
+    public boolean isInfinite() {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public boolean isInfinite() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-49/src/main/java/org/apache/commons/math/linear/OpenMapRealVector.java:605: warning: [MissingOverride] isNaN implements method in RealVector; expected @Override
+    public boolean isNaN() {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public boolean isNaN() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-49/src/main/java/org/apache/commons/math/linear/OpenMapRealVector.java:649: warning: [MissingOverride] projection implements method in RealVector; expected @Override
+    public RealVector projection(RealVector v) {
+                      ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public RealVector projection(RealVector v) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-49/src/main/java/org/apache/commons/math/linear/OpenMapRealVector.java:662: warning: [MissingOverride] setEntry implements method in RealVector; expected @Override
+    public void setEntry(int index, double value) {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void setEntry(int index, double value) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-49/src/main/java/org/apache/commons/math/linear/OpenMapRealVector.java:910: warning: [MissingOverride] hasNext implements method in Iterator; expected @Override
+        public boolean hasNext() {
+                       ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public boolean hasNext() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-49/src/main/java/org/apache/commons/math/linear/OpenMapRealVector.java:915: warning: [MissingOverride] next implements method in Iterator; expected @Override
+        public Entry next() {
+                     ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Entry next() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-49/src/main/java/org/apache/commons/math/linear/OpenMapRealVector.java:921: warning: [MissingOverride] remove implements method in Iterator; expected @Override
+        public void remove() {
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void remove() {'?
+15 warnings

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.1.0" sequence="0" timestamp="1542190662000" analysisTimestamp="1542190664799" release="">
+  <Project projectName="">
+    <Jar>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-100/src/java</Jar>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-100/target/classes</AuxClasspathEntry>
+  </Project>
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" rank="18" abbrev="Bx" category="PERFORMANCE" instanceHash="d67a5900ae65c00f5b3d09a8f8d3bae4" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Method invokes inefficient Number constructor; use static valueOf instead</ShortMessage>
+    <LongMessage>org.apache.commons.math.estimation.AbstractEstimator.guessParametersErrors(EstimationProblem) invokes inefficient new Integer(int) constructor; use Integer.valueOf(int) instead</LongMessage>
+    <Class classname="org.apache.commons.math.estimation.AbstractEstimator" primary="true">
+      <SourceLine classname="org.apache.commons.math.estimation.AbstractEstimator" start="38" end="241" sourcefile="AbstractEstimator.java" sourcepath="org/apache/commons/math/estimation/AbstractEstimator.java">
+        <Message>At AbstractEstimator.java:[lines 38-241]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.math.estimation.AbstractEstimator</Message>
+    </Class>
+    <Method classname="org.apache.commons.math.estimation.AbstractEstimator" name="guessParametersErrors" signature="(Lorg/apache/commons/math/estimation/EstimationProblem;)[D" isStatic="false" primary="true">
+      <SourceLine classname="org.apache.commons.math.estimation.AbstractEstimator" start="201" end="213" startBytecode="0" endBytecode="231" sourcefile="AbstractEstimator.java" sourcepath="org/apache/commons/math/estimation/AbstractEstimator.java"/>
+      <Message>In method org.apache.commons.math.estimation.AbstractEstimator.guessParametersErrors(EstimationProblem)</Message>
+    </Method>
+    <Method classname="java.lang.Integer" name="&lt;init&gt;" signature="(I)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Integer" start="849" end="851" startBytecode="0" endBytecode="41" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+      <Message>Called method new Integer(int)</Message>
+    </Method>
+    <Method classname="java.lang.Integer" name="valueOf" signature="(I)Ljava/lang/Integer;" isStatic="true" role="SHOULD_CALL">
+      <SourceLine classname="java.lang.Integer" start="830" end="832" startBytecode="0" endBytecode="72" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+      <Message>Should call Integer.valueOf(int) instead</Message>
+    </Method>
+    <SourceLine classname="org.apache.commons.math.estimation.AbstractEstimator" primary="true" start="204" end="204" startBytecode="38" endBytecode="38" sourcefile="AbstractEstimator.java" sourcepath="org/apache/commons/math/estimation/AbstractEstimator.java">
+      <Message>At AbstractEstimator.java:[line 204]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" rank="18" abbrev="Bx" category="PERFORMANCE" instanceHash="636df8328b14a4b7be14b08120c76b4f" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Method invokes inefficient Number constructor; use static valueOf instead</ShortMessage>
+    <LongMessage>org.apache.commons.math.estimation.AbstractEstimator.updateResidualsAndCost() invokes inefficient new Integer(int) constructor; use Integer.valueOf(int) instead</LongMessage>
+    <Class classname="org.apache.commons.math.estimation.AbstractEstimator" primary="true">
+      <SourceLine classname="org.apache.commons.math.estimation.AbstractEstimator" start="38" end="241" sourcefile="AbstractEstimator.java" sourcepath="org/apache/commons/math/estimation/AbstractEstimator.java">
+        <Message>At AbstractEstimator.java:[lines 38-241]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.math.estimation.AbstractEstimator</Message>
+    </Class>
+    <Method classname="org.apache.commons.math.estimation.AbstractEstimator" name="updateResidualsAndCost" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.apache.commons.math.estimation.AbstractEstimator" start="99" end="113" startBytecode="0" endBytecode="216" sourcefile="AbstractEstimator.java" sourcepath="org/apache/commons/math/estimation/AbstractEstimator.java"/>
+      <Message>In method org.apache.commons.math.estimation.AbstractEstimator.updateResidualsAndCost()</Message>
+    </Method>
+    <Method classname="java.lang.Integer" name="&lt;init&gt;" signature="(I)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Integer" start="849" end="851" startBytecode="0" endBytecode="41" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+      <Message>Called method new Integer(int)</Message>
+    </Method>
+    <Method classname="java.lang.Integer" name="valueOf" signature="(I)Ljava/lang/Integer;" isStatic="true" role="SHOULD_CALL">
+      <SourceLine classname="java.lang.Integer" start="830" end="832" startBytecode="0" endBytecode="72" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+      <Message>Should call Integer.valueOf(int) instead</Message>
+    </Method>
+    <SourceLine classname="org.apache.commons.math.estimation.AbstractEstimator" primary="true" start="100" end="100" startBytecode="38" endBytecode="38" sourcefile="AbstractEstimator.java" sourcepath="org/apache/commons/math/estimation/AbstractEstimator.java">
+      <Message>At AbstractEstimator.java:[line 100]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="PERFORMANCE">
+    <Description>Performance</Description>
+  </BugCategory>
+  <BugPattern type="DM_NUMBER_CTOR" abbrev="Bx" category="PERFORMANCE">
+    <ShortDescription>Method invokes inefficient Number constructor; use static valueOf instead</ShortDescription>
+    <Details><![CDATA[
+      
+      <p>
+      Using <code>new Integer(int)</code> is guaranteed to always result in a new object whereas
+      <code>Integer.valueOf(int)</code> allows caching of values to be done by the compiler, class library, or JVM.
+      Using of cached values avoids object allocation and the code will be faster.
+      </p>
+      <p>
+      Values between -128 and 127 are guaranteed to have corresponding cached instances
+      and using <code>valueOf</code> is approximately 3.5 times faster than using constructor.
+      For values outside the constant range the performance of both styles is the same.
+      </p>
+      <p>
+      Unless the class must be compatible with JVMs predating Java 1.5,
+      use either autoboxing or the <code>valueOf()</code> method when creating instances of
+      <code>Long</code>, <code>Integer</code>, <code>Short</code>, <code>Character</code>, and <code>Byte</code>.
+      </p>
+      
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="Bx">
+    <Description>Questionable Boxing of primitive value</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 14 Nov 2018 05:17:42 -0500" total_classes="1" referenced_classes="21" total_bugs="2" total_size="97" num_packages="1" java_version="1.8.0_121" vm_version="25.121-b13" cpu_seconds="7.19" clock_seconds="4.33" peak_mbytes="112.78" alloc_mbytes="1820.50" gc_seconds="0.06" priority_2="2">
+    <FileStats path="org/apache/commons/math/estimation/AbstractEstimator.java" bugCount="2" size="97" bugHash="214e5d0311ffae5f7e3d876fb06c4822"/>
+    <PackageStats package="org.apache.commons.math.estimation" total_bugs="2" total_types="1" total_size="97" priority_2="2">
+      <ClassStats class="org.apache.commons.math.estimation.AbstractEstimator" sourceFile="AbstractEstimator.java" interface="false" size="97" bugs="2" priority_2="2"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="594" invocations="364" avgMicrosecondsPerInvocation="1632" maxMicrosecondsPerInvocation="36558" standardDeviationMicrosecondsPerInvocation="3784"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="494" invocations="363" avgMicrosecondsPerInvocation="1361" maxMicrosecondsPerInvocation="34444" standardDeviationMicrosecondsPerInvocation="3815"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="146" invocations="331" avgMicrosecondsPerInvocation="441" maxMicrosecondsPerInvocation="22574" standardDeviationMicrosecondsPerInvocation="2014"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="135" invocations="163" avgMicrosecondsPerInvocation="833" maxMicrosecondsPerInvocation="19300" standardDeviationMicrosecondsPerInvocation="2185"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="126" invocations="21" avgMicrosecondsPerInvocation="6001" maxMicrosecondsPerInvocation="49695" standardDeviationMicrosecondsPerInvocation="11095"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="119" invocations="21" avgMicrosecondsPerInvocation="5694" maxMicrosecondsPerInvocation="22637" standardDeviationMicrosecondsPerInvocation="6973"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="116" invocations="13" avgMicrosecondsPerInvocation="8961" maxMicrosecondsPerInvocation="97447" standardDeviationMicrosecondsPerInvocation="25807"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="113" invocations="37" avgMicrosecondsPerInvocation="3065" maxMicrosecondsPerInvocation="49928" standardDeviationMicrosecondsPerInvocation="8780"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="109" invocations="12" avgMicrosecondsPerInvocation="9124" maxMicrosecondsPerInvocation="78935" standardDeviationMicrosecondsPerInvocation="21248"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="97" invocations="12" avgMicrosecondsPerInvocation="8085" maxMicrosecondsPerInvocation="42414" standardDeviationMicrosecondsPerInvocation="11722"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="76" invocations="12" avgMicrosecondsPerInvocation="6354" maxMicrosecondsPerInvocation="61700" standardDeviationMicrosecondsPerInvocation="16737"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.LiveLocalStoreDataflowFactory" totalMilliseconds="76" invocations="12" avgMicrosecondsPerInvocation="6353" maxMicrosecondsPerInvocation="50722" standardDeviationMicrosecondsPerInvocation="14129"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="69" invocations="21" avgMicrosecondsPerInvocation="3329" maxMicrosecondsPerInvocation="34500" standardDeviationMicrosecondsPerInvocation="7504"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="69" invocations="12" avgMicrosecondsPerInvocation="5818" maxMicrosecondsPerInvocation="44035" standardDeviationMicrosecondsPerInvocation="11705"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="62" invocations="12" avgMicrosecondsPerInvocation="5220" maxMicrosecondsPerInvocation="46148" standardDeviationMicrosecondsPerInvocation="12441"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="55" invocations="12" avgMicrosecondsPerInvocation="4608" maxMicrosecondsPerInvocation="18408" standardDeviationMicrosecondsPerInvocation="5926"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

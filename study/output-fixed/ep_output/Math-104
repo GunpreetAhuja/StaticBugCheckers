@@ -1,0 +1,86 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-104/src/java/org/apache/commons/math/special/Gamma.java:42: warning: [FloatingPointLiteralPrecision] Floating point literal loses precision
+        0.99999999999999709182,
+        ^
+    (see http://errorprone.info/bugpattern/FloatingPointLiteralPrecision)
+  Did you mean '0.9999999999999971,'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-104/src/java/org/apache/commons/math/special/Gamma.java:43: warning: [FloatingPointLiteralPrecision] Floating point literal loses precision
+        57.156235665862923517,
+        ^
+    (see http://errorprone.info/bugpattern/FloatingPointLiteralPrecision)
+  Did you mean '57.15623566586292,'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-104/src/java/org/apache/commons/math/special/Gamma.java:44: warning: [FloatingPointLiteralPrecision] Floating point literal loses precision
+        -59.597960355475491248,
+         ^
+    (see http://errorprone.info/bugpattern/FloatingPointLiteralPrecision)
+  Did you mean '-59.59796035547549,'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-104/src/java/org/apache/commons/math/special/Gamma.java:45: warning: [FloatingPointLiteralPrecision] Floating point literal loses precision
+        14.136097974741747174,
+        ^
+    (see http://errorprone.info/bugpattern/FloatingPointLiteralPrecision)
+  Did you mean '14.136097974741746,'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-104/src/java/org/apache/commons/math/special/Gamma.java:46: warning: [FloatingPointLiteralPrecision] Floating point literal loses precision
+        -0.49191381609762019978,
+         ^
+    (see http://errorprone.info/bugpattern/FloatingPointLiteralPrecision)
+  Did you mean '-0.4919138160976202,'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-104/src/java/org/apache/commons/math/special/Gamma.java:47: warning: [FloatingPointLiteralPrecision] Floating point literal loses precision
+        .33994649984811888699e-4,
+        ^
+    (see http://errorprone.info/bugpattern/FloatingPointLiteralPrecision)
+  Did you mean '0.00003399464998481189,'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-104/src/java/org/apache/commons/math/special/Gamma.java:48: warning: [FloatingPointLiteralPrecision] Floating point literal loses precision
+        .46523628927048575665e-4,
+        ^
+    (see http://errorprone.info/bugpattern/FloatingPointLiteralPrecision)
+  Did you mean '0.00004652362892704858,'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-104/src/java/org/apache/commons/math/special/Gamma.java:49: warning: [FloatingPointLiteralPrecision] Floating point literal loses precision
+        -.98374475304879564677e-4,
+         ^
+    (see http://errorprone.info/bugpattern/FloatingPointLiteralPrecision)
+  Did you mean '-0.00009837447530487956,'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-104/src/java/org/apache/commons/math/special/Gamma.java:50: warning: [FloatingPointLiteralPrecision] Floating point literal loses precision
+        .15808870322491248884e-3,
+        ^
+    (see http://errorprone.info/bugpattern/FloatingPointLiteralPrecision)
+  Did you mean '0.0001580887032249125,'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-104/src/java/org/apache/commons/math/special/Gamma.java:51: warning: [FloatingPointLiteralPrecision] Floating point literal loses precision
+        -.21026444172410488319e-3,
+         ^
+    (see http://errorprone.info/bugpattern/FloatingPointLiteralPrecision)
+  Did you mean '-0.00021026444172410488,'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-104/src/java/org/apache/commons/math/special/Gamma.java:52: warning: [FloatingPointLiteralPrecision] Floating point literal loses precision
+        .21743961811521264320e-3,
+        ^
+    (see http://errorprone.info/bugpattern/FloatingPointLiteralPrecision)
+  Did you mean '0.00021743961811521265,'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-104/src/java/org/apache/commons/math/special/Gamma.java:53: warning: [FloatingPointLiteralPrecision] Floating point literal loses precision
+        -.16431810653676389022e-3,
+         ^
+    (see http://errorprone.info/bugpattern/FloatingPointLiteralPrecision)
+  Did you mean '-0.0001643181065367639,'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-104/src/java/org/apache/commons/math/special/Gamma.java:54: warning: [FloatingPointLiteralPrecision] Floating point literal loses precision
+        .84418223983852743293e-4,
+        ^
+    (see http://errorprone.info/bugpattern/FloatingPointLiteralPrecision)
+  Did you mean '0.00008441822398385275,'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-104/src/java/org/apache/commons/math/special/Gamma.java:55: warning: [FloatingPointLiteralPrecision] Floating point literal loses precision
+        -.26190838401581408670e-4,
+         ^
+    (see http://errorprone.info/bugpattern/FloatingPointLiteralPrecision)
+  Did you mean '-0.000026190838401581408,'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-104/src/java/org/apache/commons/math/special/Gamma.java:56: warning: [FloatingPointLiteralPrecision] Floating point literal loses precision
+        .36899182659531622704e-5,
+        ^
+    (see http://errorprone.info/bugpattern/FloatingPointLiteralPrecision)
+  Did you mean '0.0000036899182659531625,'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-104/src/java/org/apache/commons/math/special/Gamma.java:247: warning: [MissingOverride] getA implements method in ContinuedFraction; expected @Override
+                protected double getA(int n, double x) {
+                                 ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override protected double getA(int n, double x) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-104/src/java/org/apache/commons/math/special/Gamma.java:251: warning: [MissingOverride] getB implements method in ContinuedFraction; expected @Override
+                protected double getB(int n, double x) {
+                                 ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override protected double getB(int n, double x) {'?
+17 warnings

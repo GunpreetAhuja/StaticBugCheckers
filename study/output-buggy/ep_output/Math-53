@@ -1,0 +1,26 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-53/src/main/java/org/apache/commons/math/complex/Complex.java:150: warning: [MissingOverride] add implements method in FieldElement; expected @Override
+    public Complex add(Complex rhs)
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Complex add(Complex rhs)'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-53/src/main/java/org/apache/commons/math/complex/Complex.java:213: warning: [MissingOverride] divide implements method in FieldElement; expected @Override
+    public Complex divide(Complex rhs)
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Complex divide(Complex rhs)'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-53/src/main/java/org/apache/commons/math/complex/Complex.java:362: warning: [MissingOverride] multiply implements method in FieldElement; expected @Override
+    public Complex multiply(Complex rhs)
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Complex multiply(Complex rhs)'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-53/src/main/java/org/apache/commons/math/complex/Complex.java:449: warning: [MissingOverride] subtract implements method in FieldElement; expected @Override
+    public Complex subtract(Complex rhs)
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Complex subtract(Complex rhs)'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-53/src/main/java/org/apache/commons/math/complex/Complex.java:1011: warning: [MissingOverride] getField implements method in FieldElement; expected @Override
+    public ComplexField getField() {
+                        ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public ComplexField getField() {'?
+5 warnings

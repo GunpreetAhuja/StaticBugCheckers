@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.1.0" sequence="0" timestamp="1542186987000" analysisTimestamp="1542186989447" release="">
+  <Project projectName="">
+    <Jar>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-11/src/main/java</Jar>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-11/target/classes</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/framework/projects/Time/lib/org/joda/joda-convert/1.2/joda-convert-1.2.jar</AuxClasspathEntry>
+  </Project>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="da20fba076eaf0890e998444239a78" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in org.joda.time.tz.ZoneInfoCompiler.compile(File, File[]): new java.io.FileReader(File)</LongMessage>
+    <Class classname="org.joda.time.tz.ZoneInfoCompiler" primary="true">
+      <SourceLine classname="org.joda.time.tz.ZoneInfoCompiler" start="68" end="519" sourcefile="ZoneInfoCompiler.java" sourcepath="org/joda/time/tz/ZoneInfoCompiler.java">
+        <Message>At ZoneInfoCompiler.java:[lines 68-519]</Message>
+      </SourceLine>
+      <Message>In class org.joda.time.tz.ZoneInfoCompiler</Message>
+    </Class>
+    <Method classname="org.joda.time.tz.ZoneInfoCompiler" name="compile" signature="(Ljava/io/File;[Ljava/io/File;)Ljava/util/Map;" isStatic="false" primary="true">
+      <SourceLine classname="org.joda.time.tz.ZoneInfoCompiler" start="367" end="460" startBytecode="0" endBytecode="1199" sourcefile="ZoneInfoCompiler.java" sourcepath="org/joda/time/tz/ZoneInfoCompiler.java"/>
+      <Message>In method org.joda.time.tz.ZoneInfoCompiler.compile(File, File[])</Message>
+    </Method>
+    <Method classname="java.io.FileReader" name="&lt;init&gt;" signature="(Ljava/io/File;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.FileReader" start="72" end="73" startBytecode="0" endBytecode="40" sourcefile="FileReader.java" sourcepath="java/io/FileReader.java"/>
+      <Message>Called method new java.io.FileReader(File)</Message>
+    </Method>
+    <SourceLine classname="org.joda.time.tz.ZoneInfoCompiler" primary="true" start="369" end="369" startBytecode="23" endBytecode="23" sourcefile="ZoneInfoCompiler.java" sourcepath="org/joda/time/tz/ZoneInfoCompiler.java">
+      <Message>At ZoneInfoCompiler.java:[line 369]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="RV_RETURN_VALUE_IGNORED_BAD_PRACTICE" priority="2" rank="16" abbrev="RV" category="BAD_PRACTICE" instanceHash="4a7b49f5f02d818fb35122740db7f494" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="253">
+    <ShortMessage>Method ignores exceptional return value</ShortMessage>
+    <LongMessage>Exceptional return value of java.io.File.mkdirs() ignored in org.joda.time.tz.ZoneInfoCompiler.compile(File, File[])</LongMessage>
+    <Class classname="org.joda.time.tz.ZoneInfoCompiler" primary="true">
+      <SourceLine classname="org.joda.time.tz.ZoneInfoCompiler" start="68" end="519" sourcefile="ZoneInfoCompiler.java" sourcepath="org/joda/time/tz/ZoneInfoCompiler.java">
+        <Message>At ZoneInfoCompiler.java:[lines 68-519]</Message>
+      </SourceLine>
+      <Message>In class org.joda.time.tz.ZoneInfoCompiler</Message>
+    </Class>
+    <Method classname="org.joda.time.tz.ZoneInfoCompiler" name="compile" signature="(Ljava/io/File;[Ljava/io/File;)Ljava/util/Map;" isStatic="false" primary="true">
+      <SourceLine classname="org.joda.time.tz.ZoneInfoCompiler" start="367" end="460" startBytecode="0" endBytecode="1199" sourcefile="ZoneInfoCompiler.java" sourcepath="org/joda/time/tz/ZoneInfoCompiler.java"/>
+      <Message>In method org.joda.time.tz.ZoneInfoCompiler.compile(File, File[])</Message>
+    </Method>
+    <Method classname="java.io.File" name="mkdirs" signature="()Z" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.File" start="1340" end="1354" startBytecode="0" endBytecode="182" sourcefile="File.java" sourcepath="java/io/File.java"/>
+      <Message>Called method java.io.File.mkdirs()</Message>
+    </Method>
+    <SourceLine classname="org.joda.time.tz.ZoneInfoCompiler" primary="true" start="403" end="403" startBytecode="310" endBytecode="310" sourcefile="ZoneInfoCompiler.java" sourcepath="org/joda/time/tz/ZoneInfoCompiler.java">
+      <Message>At ZoneInfoCompiler.java:[line 403]</Message>
+    </SourceLine>
+    <SourceLine classname="org.joda.time.tz.ZoneInfoCompiler" start="445" end="445" startBytecode="623" endBytecode="623" sourcefile="ZoneInfoCompiler.java" sourcepath="org/joda/time/tz/ZoneInfoCompiler.java" role="SOURCE_LINE_ANOTHER_INSTANCE">
+      <Message>Another occurrence at ZoneInfoCompiler.java:[line 445]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="BAD_PRACTICE">
+    <Description>Bad practice</Description>
+  </BugCategory>
+  <BugCategory category="I18N">
+    <Description>Internationalization</Description>
+  </BugCategory>
+  <BugPattern type="DM_DEFAULT_ENCODING" abbrev="Dm" category="I18N">
+    <ShortDescription>Reliance on default encoding</ShortDescription>
+    <Details><![CDATA[
+
+<p> Found a call to a method which will perform a byte to String (or String to byte) conversion, and will assume that the default platform encoding is suitable. This will cause the application behaviour to vary between platforms. Use an alternative API and specify a charset name or Charset object explicitly.  </p>
+
+      ]]></Details>
+  </BugPattern>
+  <BugPattern type="RV_RETURN_VALUE_IGNORED_BAD_PRACTICE" abbrev="RV" category="BAD_PRACTICE" cweid="253">
+    <ShortDescription>Method ignores exceptional return value</ShortDescription>
+    <Details><![CDATA[
+
+   <p> This method returns a value that is not checked. The return value should be checked
+since it can indicate an unusual or unexpected function execution. For
+example, the <code>File.delete()</code> method returns false
+if the file could not be successfully deleted (rather than
+throwing an Exception).
+If you don't check the result, you won't notice if the method invocation
+signals unexpected behavior by returning an atypical return value.
+</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="RV" cweid="440">
+    <Description>Bad use of return value from method</Description>
+  </BugCode>
+  <BugCode abbrev="Dm">
+    <Description>Dubious method used</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 14 Nov 2018 04:16:27 -0500" total_classes="5" referenced_classes="59" total_bugs="2" total_size="460" num_packages="1" java_version="1.8.0_121" vm_version="25.121-b13" cpu_seconds="11.22" clock_seconds="6.03" peak_mbytes="184.94" alloc_mbytes="1820.50" gc_seconds="0.07" priority_2="1" priority_1="1">
+    <FileStats path="org/joda/time/tz/ZoneInfoCompiler.java" bugCount="2" size="460" bugHash="a7bc5a6b0317ded6cfcbc70aef3ed570"/>
+    <PackageStats package="org.joda.time.tz" total_bugs="2" total_types="5" total_size="460" priority_2="1" priority_1="1">
+      <ClassStats class="org.joda.time.tz.ZoneInfoCompiler" sourceFile="ZoneInfoCompiler.java" interface="false" size="269" bugs="2" priority_2="1" priority_1="1"/>
+      <ClassStats class="org.joda.time.tz.ZoneInfoCompiler$DateTimeOfYear" sourceFile="ZoneInfoCompiler.java" interface="false" size="76" bugs="0"/>
+      <ClassStats class="org.joda.time.tz.ZoneInfoCompiler$Rule" sourceFile="ZoneInfoCompiler.java" interface="false" size="42" bugs="0"/>
+      <ClassStats class="org.joda.time.tz.ZoneInfoCompiler$RuleSet" sourceFile="ZoneInfoCompiler.java" interface="false" size="17" bugs="0"/>
+      <ClassStats class="org.joda.time.tz.ZoneInfoCompiler$Zone" sourceFile="ZoneInfoCompiler.java" interface="false" size="56" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="845" invocations="566" avgMicrosecondsPerInvocation="1493" maxMicrosecondsPerInvocation="33892" standardDeviationMicrosecondsPerInvocation="3169"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="747" invocations="565" avgMicrosecondsPerInvocation="1322" maxMicrosecondsPerInvocation="42267" standardDeviationMicrosecondsPerInvocation="4141"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.StreamResourceTracker" totalMilliseconds="246" invocations="21" avgMicrosecondsPerInvocation="11750" maxMicrosecondsPerInvocation="36297" standardDeviationMicrosecondsPerInvocation="11090"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="216" invocations="59" avgMicrosecondsPerInvocation="3668" maxMicrosecondsPerInvocation="36355" standardDeviationMicrosecondsPerInvocation="6596"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="199" invocations="17" avgMicrosecondsPerInvocation="11709" maxMicrosecondsPerInvocation="82968" standardDeviationMicrosecondsPerInvocation="21315"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="167" invocations="17" avgMicrosecondsPerInvocation="9845" maxMicrosecondsPerInvocation="68984" standardDeviationMicrosecondsPerInvocation="18167"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="165" invocations="18" avgMicrosecondsPerInvocation="9212" maxMicrosecondsPerInvocation="50732" standardDeviationMicrosecondsPerInvocation="14298"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="165" invocations="17" avgMicrosecondsPerInvocation="9720" maxMicrosecondsPerInvocation="58223" standardDeviationMicrosecondsPerInvocation="17777"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="147" invocations="59" avgMicrosecondsPerInvocation="2504" maxMicrosecondsPerInvocation="15939" standardDeviationMicrosecondsPerInvocation="3335"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="145" invocations="17" avgMicrosecondsPerInvocation="8544" maxMicrosecondsPerInvocation="130281" standardDeviationMicrosecondsPerInvocation="30490"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="136" invocations="172" avgMicrosecondsPerInvocation="795" maxMicrosecondsPerInvocation="17832" standardDeviationMicrosecondsPerInvocation="1881"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="107" invocations="17" avgMicrosecondsPerInvocation="6314" maxMicrosecondsPerInvocation="34857" standardDeviationMicrosecondsPerInvocation="9072"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="104" invocations="86" avgMicrosecondsPerInvocation="1214" maxMicrosecondsPerInvocation="26512" standardDeviationMicrosecondsPerInvocation="3948"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="103" invocations="532" avgMicrosecondsPerInvocation="193" maxMicrosecondsPerInvocation="10607" standardDeviationMicrosecondsPerInvocation="633"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="100" invocations="59" avgMicrosecondsPerInvocation="1697" maxMicrosecondsPerInvocation="35895" standardDeviationMicrosecondsPerInvocation="5330"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="86" invocations="59" avgMicrosecondsPerInvocation="1466" maxMicrosecondsPerInvocation="19035" standardDeviationMicrosecondsPerInvocation="3772"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="85" invocations="59" avgMicrosecondsPerInvocation="1456" maxMicrosecondsPerInvocation="35482" standardDeviationMicrosecondsPerInvocation="4813"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="73" invocations="59" avgMicrosecondsPerInvocation="1241" maxMicrosecondsPerInvocation="19148" standardDeviationMicrosecondsPerInvocation="2742"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

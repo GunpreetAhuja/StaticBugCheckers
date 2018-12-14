@@ -1,0 +1,11 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Lang-51/src/java/org/apache/commons/lang/BooleanUtils.java:656: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+        if (str == "true") {
+                ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'if ("true".equals(str)) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Lang-51/src/java/org/apache/commons/lang/BooleanUtils.java:683: error: [FallThrough] Execution may fall through from the previous case; add a `// fall through` comment before this line if it was deliberate
+            case 4: {
+            ^
+    (see http://errorprone.info/bugpattern/FallThrough)
+1 error
+1 warning

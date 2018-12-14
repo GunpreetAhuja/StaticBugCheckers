@@ -1,0 +1,11 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-97/src/java/org/apache/commons/math/analysis/BrentSolver.java:64: warning: [MissingOverride] solve implements method in UnivariateRealSolver; expected @Override
+    public double solve(double min, double max, double initial)
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double solve(double min, double max, double initial)'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-97/src/java/org/apache/commons/math/analysis/BrentSolver.java:125: warning: [MissingOverride] solve implements method in UnivariateRealSolver; expected @Override
+    public double solve(double min, double max) throws MaxIterationsExceededException, 
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double solve(double min, double max) throws MaxIterationsExceededException,'?
+2 warnings

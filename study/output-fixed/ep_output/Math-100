@@ -1,0 +1,36 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-100/src/java/org/apache/commons/math/estimation/AbstractEstimator.java:101: warning: [BoxedPrimitiveConstructor] valueOf or autoboxing provides better time and space performance
+                                          new Object[] { new Integer(maxCostEval) });
+                                                         ^
+    (see http://errorprone.info/bugpattern/BoxedPrimitiveConstructor)
+  Did you mean 'new Object[] { maxCostEval });'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-100/src/java/org/apache/commons/math/estimation/AbstractEstimator.java:126: warning: [MissingOverride] getRMS implements method in Estimator; expected @Override
+    public double getRMS(EstimationProblem problem) {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double getRMS(EstimationProblem problem) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-100/src/java/org/apache/commons/math/estimation/AbstractEstimator.java:158: warning: [MissingOverride] getCovariances implements method in Estimator; expected @Override
+    public double[][] getCovariances(EstimationProblem problem)
+                      ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double[][] getCovariances(EstimationProblem problem)'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-100/src/java/org/apache/commons/math/estimation/AbstractEstimator.java:199: warning: [MissingOverride] guessParametersErrors implements method in Estimator; expected @Override
+    public double[] guessParametersErrors(EstimationProblem problem)
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double[] guessParametersErrors(EstimationProblem problem)'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-100/src/java/org/apache/commons/math/estimation/AbstractEstimator.java:205: warning: [BoxedPrimitiveConstructor] valueOf or autoboxing provides better time and space performance
+                                          new Object[] { new Integer(m), new Integer(p)});
+                                                         ^
+    (see http://errorprone.info/bugpattern/BoxedPrimitiveConstructor)
+  Did you mean 'new Object[] { m, new Integer(p)});'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-100/src/java/org/apache/commons/math/estimation/AbstractEstimator.java:205: warning: [BoxedPrimitiveConstructor] valueOf or autoboxing provides better time and space performance
+                                          new Object[] { new Integer(m), new Integer(p)});
+                                                                         ^
+    (see http://errorprone.info/bugpattern/BoxedPrimitiveConstructor)
+  Did you mean 'new Object[] { new Integer(m), p});'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-100/src/java/org/apache/commons/math/estimation/AbstractEstimator.java:257: warning: [MissingOverride] estimate implements method in Estimator; expected @Override
+    public abstract void estimate(EstimationProblem problem)
+                         ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public abstract void estimate(EstimationProblem problem)'?
+7 warnings

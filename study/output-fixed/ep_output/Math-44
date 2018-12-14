@@ -1,0 +1,76 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-44/src/main/java/org/apache/commons/math/ode/AbstractIntegrator.java:104: warning: [MissingOverride] getName implements method in ODEIntegrator; expected @Override
+    public String getName() {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public String getName() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-44/src/main/java/org/apache/commons/math/ode/AbstractIntegrator.java:109: warning: [MissingOverride] addStepHandler implements method in ODEIntegrator; expected @Override
+    public void addStepHandler(final StepHandler handler) {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void addStepHandler(final StepHandler handler) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-44/src/main/java/org/apache/commons/math/ode/AbstractIntegrator.java:114: warning: [MissingOverride] getStepHandlers implements method in ODEIntegrator; expected @Override
+    public Collection<StepHandler> getStepHandlers() {
+                                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Collection<StepHandler> getStepHandlers() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-44/src/main/java/org/apache/commons/math/ode/AbstractIntegrator.java:119: warning: [MissingOverride] clearStepHandlers implements method in ODEIntegrator; expected @Override
+    public void clearStepHandlers() {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void clearStepHandlers() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-44/src/main/java/org/apache/commons/math/ode/AbstractIntegrator.java:124: warning: [MissingOverride] addEventHandler implements method in ODEIntegrator; expected @Override
+    public void addEventHandler(final EventHandler handler,
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void addEventHandler(final EventHandler handler,'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-44/src/main/java/org/apache/commons/math/ode/AbstractIntegrator.java:134: warning: [MissingOverride] addEventHandler implements method in ODEIntegrator; expected @Override
+    public void addEventHandler(final EventHandler handler,
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void addEventHandler(final EventHandler handler,'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-44/src/main/java/org/apache/commons/math/ode/AbstractIntegrator.java:144: warning: [MissingOverride] getEventHandlers implements method in ODEIntegrator; expected @Override
+    public Collection<EventHandler> getEventHandlers() {
+                                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Collection<EventHandler> getEventHandlers() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-44/src/main/java/org/apache/commons/math/ode/AbstractIntegrator.java:153: warning: [MissingOverride] clearEventHandlers implements method in ODEIntegrator; expected @Override
+    public void clearEventHandlers() {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void clearEventHandlers() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-44/src/main/java/org/apache/commons/math/ode/AbstractIntegrator.java:158: warning: [MissingOverride] getCurrentStepStart implements method in ODEIntegrator; expected @Override
+    public double getCurrentStepStart() {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double getCurrentStepStart() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-44/src/main/java/org/apache/commons/math/ode/AbstractIntegrator.java:163: warning: [MissingOverride] getCurrentSignedStepsize implements method in ODEIntegrator; expected @Override
+    public double getCurrentSignedStepsize() {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double getCurrentSignedStepsize() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-44/src/main/java/org/apache/commons/math/ode/AbstractIntegrator.java:168: warning: [MissingOverride] setMaxEvaluations implements method in ODEIntegrator; expected @Override
+    public void setMaxEvaluations(int maxEvaluations) {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void setMaxEvaluations(int maxEvaluations) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-44/src/main/java/org/apache/commons/math/ode/AbstractIntegrator.java:173: warning: [MissingOverride] getMaxEvaluations implements method in ODEIntegrator; expected @Override
+    public int getMaxEvaluations() {
+               ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int getMaxEvaluations() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-44/src/main/java/org/apache/commons/math/ode/AbstractIntegrator.java:178: warning: [MissingOverride] getEvaluations implements method in ODEIntegrator; expected @Override
+    public int getEvaluations() {
+               ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int getEvaluations() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-44/src/main/java/org/apache/commons/math/ode/AbstractIntegrator.java:196: warning: [MissingOverride] integrate implements method in FirstOrderIntegrator; expected @Override
+    public double integrate(final FirstOrderDifferentialEquations equations,
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double integrate(final FirstOrderDifferentialEquations equations,'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-44/src/main/java/org/apache/commons/math/ode/AbstractIntegrator.java:294: warning: [MissingOverride] compare implements method in Comparator; expected @Override
+                public int compare(EventState es0, EventState es1) {
+                           ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int compare(EventState es0, EventState es1) {'?
+15 warnings

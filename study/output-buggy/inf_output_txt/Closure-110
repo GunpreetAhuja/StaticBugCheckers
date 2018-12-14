@@ -1,0 +1,26 @@
+Found 1 issue
+
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-110/src/com/google/javascript/rhino/Node.java:989: error: NULL_DEREFERENCE
+  object `x` last assigned on line 982 could be null and is dereferenced at line 989.
+  987.           switch (type) {
+  988.             default:
+  989. >             value = x.toString();
+  990.               break;
+  991.           }
+
+Summary of the reports
+
+  NULL_DEREFERENCE: 1
+Found 1 issue
+
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-110/src/com/google/javascript/jscomp/ScopedAliases.java:406: error: NULL_DEREFERENCE
+  object returned by `newDecl.getFirstChild()` could be null and is dereferenced at line 406.
+  404.                   .useSourceInfoIfMissingFromForTree(n);
+  405.               NodeUtil.setDebugInformation(
+  406. >                 newDecl.getFirstChild().getFirstChild(), n, name);
+  407.   
+  408.                 grandparent.addChildBefore(newDecl, varNode);
+
+Summary of the reports
+
+  NULL_DEREFERENCE: 1

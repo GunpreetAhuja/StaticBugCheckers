@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.1.0" sequence="0" timestamp="1542186795000" analysisTimestamp="1542186798483" release="">
+  <Project projectName="">
+    <Jar>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-94/src/java</Jar>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-94/target/classes</AuxClasspathEntry>
+  </Project>
+  <BugInstance type="FE_FLOATING_POINT_EQUALITY" priority="1" rank="15" abbrev="FE" category="STYLE" instanceHash="e66d1ecdae99f49f50c60b1b411eb85a" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Test for floating point equality</ShortMessage>
+    <LongMessage>Test for floating point equality in org.apache.commons.math.util.MathUtils.roundUnscaled(double, double, int)</LongMessage>
+    <Class classname="org.apache.commons.math.util.MathUtils" primary="true">
+      <SourceLine classname="org.apache.commons.math.util.MathUtils" start="63" end="1067" sourcefile="MathUtils.java" sourcepath="org/apache/commons/math/util/MathUtils.java">
+        <Message>At MathUtils.java:[lines 63-1067]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.math.util.MathUtils</Message>
+    </Class>
+    <Method classname="org.apache.commons.math.util.MathUtils" name="roundUnscaled" signature="(DDI)D" isStatic="true" primary="true">
+      <SourceLine classname="org.apache.commons.math.util.MathUtils" start="852" end="918" startBytecode="0" endBytecode="561" sourcefile="MathUtils.java" sourcepath="org/apache/commons/math/util/MathUtils.java"/>
+      <Message>In method org.apache.commons.math.util.MathUtils.roundUnscaled(double, double, int)</Message>
+    </Method>
+    <SourceLine classname="org.apache.commons.math.util.MathUtils" primary="true" start="888" end="888" startBytecode="237" endBytecode="237" sourcefile="MathUtils.java" sourcepath="org/apache/commons/math/util/MathUtils.java">
+      <Message>At MathUtils.java:[line 888]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="FE_FLOATING_POINT_EQUALITY" abbrev="FE" category="STYLE">
+    <ShortDescription>Test for floating point equality</ShortDescription>
+    <Details><![CDATA[
+   
+    <p>
+    This operation compares two floating point values for equality.
+    Because floating point calculations may involve rounding,
+   calculated float and double values may not be accurate.
+    For values that must be precise, such as monetary values,
+   consider using a fixed-precision type such as BigDecimal.
+    For values that need not be precise, consider comparing for equality
+    within some range, for example:
+    <code>if ( Math.abs(x - y) &lt; .0000001 )</code>.
+   See the Java Language Specification, section 4.2.4.
+    </p>
+    
+     ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="FE">
+    <Description>Test for floating point equality</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 14 Nov 2018 04:13:15 -0500" total_classes="1" referenced_classes="18" total_bugs="1" total_size="278" num_packages="1" java_version="1.8.0_121" vm_version="25.121-b13" cpu_seconds="7.63" clock_seconds="4.20" peak_mbytes="113.36" alloc_mbytes="1820.50" gc_seconds="0.07" priority_1="1">
+    <FileStats path="org/apache/commons/math/util/MathUtils.java" bugCount="1" size="278" bugHash="4176ef67c5a29b4943ddea483f454586"/>
+    <PackageStats package="org.apache.commons.math.util" total_bugs="1" total_types="1" total_size="278" priority_1="1">
+      <ClassStats class="org.apache.commons.math.util.MathUtils" sourceFile="MathUtils.java" interface="false" size="278" bugs="1" priority_1="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="482" invocations="357" avgMicrosecondsPerInvocation="1351" maxMicrosecondsPerInvocation="30440" standardDeviationMicrosecondsPerInvocation="3088"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="399" invocations="356" avgMicrosecondsPerInvocation="1122" maxMicrosecondsPerInvocation="43191" standardDeviationMicrosecondsPerInvocation="3118"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="252" invocations="18" avgMicrosecondsPerInvocation="14043" maxMicrosecondsPerInvocation="51180" standardDeviationMicrosecondsPerInvocation="18954"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="185" invocations="191" avgMicrosecondsPerInvocation="973" maxMicrosecondsPerInvocation="29740" standardDeviationMicrosecondsPerInvocation="3016"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="136" invocations="18" avgMicrosecondsPerInvocation="7585" maxMicrosecondsPerInvocation="103193" standardDeviationMicrosecondsPerInvocation="23335"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="107" invocations="18" avgMicrosecondsPerInvocation="5976" maxMicrosecondsPerInvocation="34660" standardDeviationMicrosecondsPerInvocation="10271"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="106" invocations="43" avgMicrosecondsPerInvocation="2481" maxMicrosecondsPerInvocation="91445" standardDeviationMicrosecondsPerInvocation="13743"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="104" invocations="43" avgMicrosecondsPerInvocation="2423" maxMicrosecondsPerInvocation="28542" standardDeviationMicrosecondsPerInvocation="6430"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="102" invocations="43" avgMicrosecondsPerInvocation="2387" maxMicrosecondsPerInvocation="31280" standardDeviationMicrosecondsPerInvocation="5508"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="87" invocations="43" avgMicrosecondsPerInvocation="2031" maxMicrosecondsPerInvocation="31635" standardDeviationMicrosecondsPerInvocation="5833"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="78" invocations="324" avgMicrosecondsPerInvocation="242" maxMicrosecondsPerInvocation="9882" standardDeviationMicrosecondsPerInvocation="730"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="73" invocations="18" avgMicrosecondsPerInvocation="4107" maxMicrosecondsPerInvocation="30223" standardDeviationMicrosecondsPerInvocation="7305"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="70" invocations="43" avgMicrosecondsPerInvocation="1634" maxMicrosecondsPerInvocation="20936" standardDeviationMicrosecondsPerInvocation="3455"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="63" invocations="43" avgMicrosecondsPerInvocation="1485" maxMicrosecondsPerInvocation="11153" standardDeviationMicrosecondsPerInvocation="2750"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="53" invocations="43" avgMicrosecondsPerInvocation="1248" maxMicrosecondsPerInvocation="14747" standardDeviationMicrosecondsPerInvocation="2441"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NumberConstructor" totalMilliseconds="48" invocations="1" avgMicrosecondsPerInvocation="48985" maxMicrosecondsPerInvocation="48985" standardDeviationMicrosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNonShortCircuit" totalMilliseconds="45" invocations="1" avgMicrosecondsPerInvocation="45611" maxMicrosecondsPerInvocation="45611" standardDeviationMicrosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="45" invocations="18" avgMicrosecondsPerInvocation="2528" maxMicrosecondsPerInvocation="22526" standardDeviationMicrosecondsPerInvocation="5143"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ClassContextClassAnalysisEngine" totalMilliseconds="44" invocations="18" avgMicrosecondsPerInvocation="2469" maxMicrosecondsPerInvocation="44160" standardDeviationMicrosecondsPerInvocation="10111"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

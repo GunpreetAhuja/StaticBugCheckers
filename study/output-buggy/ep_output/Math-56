@@ -1,0 +1,21 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-56/src/main/java/org/apache/commons/math/util/MultidimensionalCounter.java:92: warning: [MissingOverride] hasNext implements method in Iterator; expected @Override
+        public boolean hasNext() {
+                       ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public boolean hasNext() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-56/src/main/java/org/apache/commons/math/util/MultidimensionalCounter.java:105: warning: [MissingOverride] next implements method in Iterator; expected @Override
+        public Integer next() {
+                       ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Integer next() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-56/src/main/java/org/apache/commons/math/util/MultidimensionalCounter.java:153: warning: [MissingOverride] remove implements method in Iterator; expected @Override
+        public void remove() {
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void remove() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-56/src/main/java/org/apache/commons/math/util/MultidimensionalCounter.java:195: warning: [MissingOverride] iterator implements method in Iterable; expected @Override
+    public Iterator iterator() {
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Iterator iterator() {'?
+4 warnings

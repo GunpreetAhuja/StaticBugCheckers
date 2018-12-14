@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.1.0" sequence="0" timestamp="1542185887000" analysisTimestamp="1542185890333" release="">
+  <Project projectName="">
+    <Jar>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-74/src</Jar>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-74/build/classes</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-74/lib/args4j.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-74/lib/guava.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-74/lib/json.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-74/lib/jsr305.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-74/lib/libtrunk_rhino_parser_jarjared.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-74/lib/protobuf-java.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-74/lib/ant.jar</AuxClasspathEntry>
+  </Project>
+  <BugInstance type="FE_FLOATING_POINT_EQUALITY" priority="1" rank="15" abbrev="FE" category="STYLE" instanceHash="86931a5323b88f29783176a16477ce27" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Test for floating point equality</ShortMessage>
+    <LongMessage>Test for floating point equality in com.google.javascript.jscomp.PeepholeFoldConstants.performArithmeticOp(int, Node, Node)</LongMessage>
+    <Class classname="com.google.javascript.jscomp.PeepholeFoldConstants" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.PeepholeFoldConstants" start="33" end="1703" sourcefile="PeepholeFoldConstants.java" sourcepath="com/google/javascript/jscomp/PeepholeFoldConstants.java">
+        <Message>At PeepholeFoldConstants.java:[lines 33-1703]</Message>
+      </SourceLine>
+      <Message>In class com.google.javascript.jscomp.PeepholeFoldConstants</Message>
+    </Class>
+    <Method classname="com.google.javascript.jscomp.PeepholeFoldConstants" name="performArithmeticOp" signature="(ILcom/google/javascript/rhino/Node;Lcom/google/javascript/rhino/Node;)Lcom/google/javascript/rhino/Node;" isStatic="false" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.PeepholeFoldConstants" start="667" end="743" startBytecode="0" endBytecode="662" sourcefile="PeepholeFoldConstants.java" sourcepath="com/google/javascript/jscomp/PeepholeFoldConstants.java"/>
+      <Message>In method com.google.javascript.jscomp.PeepholeFoldConstants.performArithmeticOp(int, Node, Node)</Message>
+    </Method>
+    <SourceLine classname="com.google.javascript.jscomp.PeepholeFoldConstants" primary="true" start="737" end="737" startBytecode="351" endBytecode="351" sourcefile="PeepholeFoldConstants.java" sourcepath="com/google/javascript/jscomp/PeepholeFoldConstants.java">
+      <Message>At PeepholeFoldConstants.java:[line 737]</Message>
+    </SourceLine>
+    <SourceLine classname="com.google.javascript.jscomp.PeepholeFoldConstants" start="739" end="739" startBytecode="368" endBytecode="368" sourcefile="PeepholeFoldConstants.java" sourcepath="com/google/javascript/jscomp/PeepholeFoldConstants.java" role="SOURCE_LINE_ANOTHER_INSTANCE">
+      <Message>Another occurrence at PeepholeFoldConstants.java:[line 739]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="NP_BOOLEAN_RETURN_NULL" priority="2" rank="14" abbrev="NP" category="BAD_PRACTICE" instanceHash="4db59999749f107e59c893f4fd03a5c0" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="476">
+    <ShortMessage>Method with Boolean return type returns explicit null</ShortMessage>
+    <LongMessage>com.google.javascript.jscomp.PeepholeFoldConstants.compareAsNumbers(int, Node, Node) has Boolean return type and returns explicit null</LongMessage>
+    <Class classname="com.google.javascript.jscomp.PeepholeFoldConstants" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.PeepholeFoldConstants" start="33" end="1703" sourcefile="PeepholeFoldConstants.java" sourcepath="com/google/javascript/jscomp/PeepholeFoldConstants.java">
+        <Message>At PeepholeFoldConstants.java:[lines 33-1703]</Message>
+      </SourceLine>
+      <Message>In class com.google.javascript.jscomp.PeepholeFoldConstants</Message>
+    </Class>
+    <Method classname="com.google.javascript.jscomp.PeepholeFoldConstants" name="compareAsNumbers" signature="(ILcom/google/javascript/rhino/Node;Lcom/google/javascript/rhino/Node;)Ljava/lang/Boolean;" isStatic="false" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.PeepholeFoldConstants" start="1080" end="1113" startBytecode="0" endBytecode="479" sourcefile="PeepholeFoldConstants.java" sourcepath="com/google/javascript/jscomp/PeepholeFoldConstants.java"/>
+      <Message>In method com.google.javascript.jscomp.PeepholeFoldConstants.compareAsNumbers(int, Node, Node)</Message>
+    </Method>
+    <SourceLine classname="com.google.javascript.jscomp.PeepholeFoldConstants" primary="true" start="1082" end="1082" startBytecode="12" endBytecode="12" sourcefile="PeepholeFoldConstants.java" sourcepath="com/google/javascript/jscomp/PeepholeFoldConstants.java">
+      <Message>At PeepholeFoldConstants.java:[line 1082]</Message>
+    </SourceLine>
+    <SourceLine classname="com.google.javascript.jscomp.PeepholeFoldConstants" start="1086" end="1086" startBytecode="25" endBytecode="25" sourcefile="PeepholeFoldConstants.java" sourcepath="com/google/javascript/jscomp/PeepholeFoldConstants.java" role="SOURCE_LINE_ANOTHER_INSTANCE">
+      <Message>Another occurrence at PeepholeFoldConstants.java:[line 1086]</Message>
+    </SourceLine>
+    <SourceLine classname="com.google.javascript.jscomp.PeepholeFoldConstants" start="1111" end="1111" startBytecode="295" endBytecode="295" sourcefile="PeepholeFoldConstants.java" sourcepath="com/google/javascript/jscomp/PeepholeFoldConstants.java" role="SOURCE_LINE_ANOTHER_INSTANCE">
+      <Message>Another occurrence at PeepholeFoldConstants.java:[line 1111]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="SF_SWITCH_NO_DEFAULT" priority="2" rank="19" abbrev="SF" category="STYLE" instanceHash="3f8e1c86f6767a0a12ae160bbf2d1cf0" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Switch statement found where default case is missing</ShortMessage>
+    <LongMessage>Switch statement found in com.google.javascript.jscomp.PeepholeFoldConstants.tryFoldTypeof(Node) where default case is missing</LongMessage>
+    <Class classname="com.google.javascript.jscomp.PeepholeFoldConstants" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.PeepholeFoldConstants" start="33" end="1703" sourcefile="PeepholeFoldConstants.java" sourcepath="com/google/javascript/jscomp/PeepholeFoldConstants.java">
+        <Message>At PeepholeFoldConstants.java:[lines 33-1703]</Message>
+      </SourceLine>
+      <Message>In class com.google.javascript.jscomp.PeepholeFoldConstants</Message>
+    </Class>
+    <Method classname="com.google.javascript.jscomp.PeepholeFoldConstants" name="tryFoldTypeof" signature="(Lcom/google/javascript/rhino/Node;)Lcom/google/javascript/rhino/Node;" isStatic="false" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.PeepholeFoldConstants" start="274" end="322" startBytecode="0" endBytecode="367" sourcefile="PeepholeFoldConstants.java" sourcepath="com/google/javascript/jscomp/PeepholeFoldConstants.java"/>
+      <Message>In method com.google.javascript.jscomp.PeepholeFoldConstants.tryFoldTypeof(Node)</Message>
+    </Method>
+    <SourceLine classname="com.google.javascript.jscomp.PeepholeFoldConstants" primary="true" start="283" end="309" startBytecode="42" endBytecode="182" sourcefile="PeepholeFoldConstants.java" sourcepath="com/google/javascript/jscomp/PeepholeFoldConstants.java">
+      <Message>At PeepholeFoldConstants.java:[lines 283-309]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="SF_SWITCH_NO_DEFAULT" priority="2" rank="19" abbrev="SF" category="STYLE" instanceHash="def3a1b79f50c66548c8722257f49f3f" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Switch statement found where default case is missing</ShortMessage>
+    <LongMessage>Switch statement found in com.google.javascript.jscomp.PeepholeFoldConstants.tryReduceOperandsForOp(Node) where default case is missing</LongMessage>
+    <Class classname="com.google.javascript.jscomp.PeepholeFoldConstants" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.PeepholeFoldConstants" start="33" end="1703" sourcefile="PeepholeFoldConstants.java" sourcepath="com/google/javascript/jscomp/PeepholeFoldConstants.java">
+        <Message>At PeepholeFoldConstants.java:[lines 33-1703]</Message>
+      </SourceLine>
+      <Message>In class com.google.javascript.jscomp.PeepholeFoldConstants</Message>
+    </Class>
+    <Method classname="com.google.javascript.jscomp.PeepholeFoldConstants" name="tryReduceOperandsForOp" signature="(Lcom/google/javascript/rhino/Node;)V" isStatic="false" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.PeepholeFoldConstants" start="177" end="214" startBytecode="0" endBytecode="494" sourcefile="PeepholeFoldConstants.java" sourcepath="com/google/javascript/jscomp/PeepholeFoldConstants.java"/>
+      <Message>In method com.google.javascript.jscomp.PeepholeFoldConstants.tryReduceOperandsForOp(Node)</Message>
+    </Method>
+    <SourceLine classname="com.google.javascript.jscomp.PeepholeFoldConstants" primary="true" start="177" end="211" startBytecode="4" endBytecode="423" sourcefile="PeepholeFoldConstants.java" sourcepath="com/google/javascript/jscomp/PeepholeFoldConstants.java">
+      <Message>At PeepholeFoldConstants.java:[lines 177-211]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="BAD_PRACTICE">
+    <Description>Bad practice</Description>
+  </BugCategory>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="FE_FLOATING_POINT_EQUALITY" abbrev="FE" category="STYLE">
+    <ShortDescription>Test for floating point equality</ShortDescription>
+    <Details><![CDATA[
+   
+    <p>
+    This operation compares two floating point values for equality.
+    Because floating point calculations may involve rounding,
+   calculated float and double values may not be accurate.
+    For values that must be precise, such as monetary values,
+   consider using a fixed-precision type such as BigDecimal.
+    For values that need not be precise, consider comparing for equality
+    within some range, for example:
+    <code>if ( Math.abs(x - y) &lt; .0000001 )</code>.
+   See the Java Language Specification, section 4.2.4.
+    </p>
+    
+     ]]></Details>
+  </BugPattern>
+  <BugPattern type="NP_BOOLEAN_RETURN_NULL" abbrev="NP" category="BAD_PRACTICE">
+    <ShortDescription>Method with Boolean return type returns explicit null</ShortDescription>
+    <Details><![CDATA[
+       
+       <p>
+    A method that returns either Boolean.TRUE, Boolean.FALSE or null is an accident waiting to happen.
+    This method can be invoked as though it returned a value of type boolean, and
+    the compiler will insert automatic unboxing of the Boolean value. If a null value is returned,
+    this will result in a NullPointerException.
+       </p>
+       
+       ]]></Details>
+  </BugPattern>
+  <BugPattern type="SF_SWITCH_NO_DEFAULT" abbrev="SF" category="STYLE">
+    <ShortDescription>Switch statement found where default case is missing</ShortDescription>
+    <Details><![CDATA[
+
+  <p> This method contains a switch statement where default case is missing.
+  Usually you need to provide a default case.</p>
+  <p>Because the analysis only looks at the generated bytecode, this warning can be incorrect triggered if
+the default case is at the end of the switch statement and the switch statement doesn't contain break statements for other
+cases.
+
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="NP" cweid="476">
+    <Description>Null pointer dereference</Description>
+  </BugCode>
+  <BugCode abbrev="SF">
+    <Description>Switch case falls through</Description>
+  </BugCode>
+  <BugCode abbrev="FE">
+    <Description>Test for floating point equality</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 14 Nov 2018 03:58:07 -0500" total_classes="1" referenced_classes="37" total_bugs="4" total_size="846" num_packages="1" java_version="1.8.0_121" vm_version="25.121-b13" cpu_seconds="12.45" clock_seconds="6.43" peak_mbytes="192.78" alloc_mbytes="1820.50" gc_seconds="0.10" priority_2="3" priority_1="1">
+    <FileStats path="com/google/javascript/jscomp/PeepholeFoldConstants.java" bugCount="4" size="846" bugHash="36595542cbbe4eeb5aa581ceb3aaa3e5"/>
+    <PackageStats package="com.google.javascript.jscomp" total_bugs="4" total_types="1" total_size="846" priority_2="3" priority_1="1">
+      <ClassStats class="com.google.javascript.jscomp.PeepholeFoldConstants" sourceFile="PeepholeFoldConstants.java" interface="false" size="846" bugs="4" priority_2="3" priority_1="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="844" invocations="618" avgMicrosecondsPerInvocation="1367" maxMicrosecondsPerInvocation="31302" standardDeviationMicrosecondsPerInvocation="2230"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="714" invocations="614" avgMicrosecondsPerInvocation="1164" maxMicrosecondsPerInvocation="65902" standardDeviationMicrosecondsPerInvocation="4518"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="282" invocations="37" avgMicrosecondsPerInvocation="7648" maxMicrosecondsPerInvocation="73472" standardDeviationMicrosecondsPerInvocation="14055"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="268" invocations="37" avgMicrosecondsPerInvocation="7265" maxMicrosecondsPerInvocation="51245" standardDeviationMicrosecondsPerInvocation="13124"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="255" invocations="37" avgMicrosecondsPerInvocation="6914" maxMicrosecondsPerInvocation="63666" standardDeviationMicrosecondsPerInvocation="12316"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="203" invocations="37" avgMicrosecondsPerInvocation="5502" maxMicrosecondsPerInvocation="54359" standardDeviationMicrosecondsPerInvocation="9723"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="189" invocations="37" avgMicrosecondsPerInvocation="5119" maxMicrosecondsPerInvocation="30994" standardDeviationMicrosecondsPerInvocation="8250"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="186" invocations="37" avgMicrosecondsPerInvocation="5028" maxMicrosecondsPerInvocation="32353" standardDeviationMicrosecondsPerInvocation="6846"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="172" invocations="580" avgMicrosecondsPerInvocation="297" maxMicrosecondsPerInvocation="39818" standardDeviationMicrosecondsPerInvocation="1940"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="156" invocations="37" avgMicrosecondsPerInvocation="4222" maxMicrosecondsPerInvocation="24449" standardDeviationMicrosecondsPerInvocation="5620"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="148" invocations="37" avgMicrosecondsPerInvocation="4024" maxMicrosecondsPerInvocation="107389" standardDeviationMicrosecondsPerInvocation="17310"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="141" invocations="37" avgMicrosecondsPerInvocation="3826" maxMicrosecondsPerInvocation="35060" standardDeviationMicrosecondsPerInvocation="5974"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="118" invocations="214" avgMicrosecondsPerInvocation="554" maxMicrosecondsPerInvocation="8621" standardDeviationMicrosecondsPerInvocation="957"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="91" invocations="37" avgMicrosecondsPerInvocation="2463" maxMicrosecondsPerInvocation="40212" standardDeviationMicrosecondsPerInvocation="7046"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueRangeAnalysisFactory" totalMilliseconds="76" invocations="37" avgMicrosecondsPerInvocation="2079" maxMicrosecondsPerInvocation="44982" standardDeviationMicrosecondsPerInvocation="7381"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="75" invocations="37" avgMicrosecondsPerInvocation="2048" maxMicrosecondsPerInvocation="33108" standardDeviationMicrosecondsPerInvocation="5562"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CheckRelaxingNullnessAnnotation" totalMilliseconds="71" invocations="1" avgMicrosecondsPerInvocation="71872" maxMicrosecondsPerInvocation="71872" standardDeviationMicrosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="65" invocations="37" avgMicrosecondsPerInvocation="1774" maxMicrosecondsPerInvocation="15532" standardDeviationMicrosecondsPerInvocation="3098"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="61" invocations="64" avgMicrosecondsPerInvocation="954" maxMicrosecondsPerInvocation="23544" standardDeviationMicrosecondsPerInvocation="3024"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

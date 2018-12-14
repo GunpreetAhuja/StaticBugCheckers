@@ -1,0 +1,105 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-13/source/org/jfree/chart/block/BorderArrangement.java:509: warning: [EqualsHashCode] Classes that override equals should also override hashCode.
+    public boolean equals(Object obj) {
+                   ^
+    (see http://errorprone.info/bugpattern/EqualsHashCode)
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-13/source/org/jfree/chart/block/BorderArrangement.java:96: warning: [MissingOverride] add implements method in Arrangement; expected @Override
+    public void add(Block block, Object key) {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void add(Block block, Object key) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-13/source/org/jfree/chart/block/BorderArrangement.java:103: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+            if (edge == RectangleEdge.TOP) {
+                     ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'if (edge.equals(RectangleEdge.TOP)) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-13/source/org/jfree/chart/block/BorderArrangement.java:106: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+            else if (edge == RectangleEdge.BOTTOM) {
+                          ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'else if (edge.equals(RectangleEdge.BOTTOM)) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-13/source/org/jfree/chart/block/BorderArrangement.java:109: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+            else if (edge == RectangleEdge.LEFT) {
+                          ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'else if (edge.equals(RectangleEdge.LEFT)) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-13/source/org/jfree/chart/block/BorderArrangement.java:112: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+            else if (edge == RectangleEdge.RIGHT) {
+                          ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'else if (edge.equals(RectangleEdge.RIGHT)) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-13/source/org/jfree/chart/block/BorderArrangement.java:128: warning: [MissingOverride] arrange implements method in Arrangement; expected @Override
+    public Size2D arrange(BlockContainer container,
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Size2D arrange(BlockContainer container,'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-13/source/org/jfree/chart/block/BorderArrangement.java:136: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+        if (w == LengthConstraintType.NONE) {
+              ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'if (Objects.equals(w, LengthConstraintType.NONE)) {' or 'if (w.equals(LengthConstraintType.NONE)) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-13/source/org/jfree/chart/block/BorderArrangement.java:137: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+            if (h == LengthConstraintType.NONE) {
+                  ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'if (Objects.equals(h, LengthConstraintType.NONE)) {' or 'if (h.equals(LengthConstraintType.NONE)) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-13/source/org/jfree/chart/block/BorderArrangement.java:140: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+            else if (h == LengthConstraintType.FIXED) {
+                       ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'else if (Objects.equals(h, LengthConstraintType.FIXED)) {' or 'else if (h.equals(LengthConstraintType.FIXED)) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-13/source/org/jfree/chart/block/BorderArrangement.java:143: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+            else if (h == LengthConstraintType.RANGE) {
+                       ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'else if (Objects.equals(h, LengthConstraintType.RANGE)) {' or 'else if (h.equals(LengthConstraintType.RANGE)) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-13/source/org/jfree/chart/block/BorderArrangement.java:147: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+        else if (w == LengthConstraintType.FIXED) {
+                   ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'else if (Objects.equals(w, LengthConstraintType.FIXED)) {' or 'else if (w.equals(LengthConstraintType.FIXED)) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-13/source/org/jfree/chart/block/BorderArrangement.java:148: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+            if (h == LengthConstraintType.NONE) {
+                  ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'if (Objects.equals(h, LengthConstraintType.NONE)) {' or 'if (h.equals(LengthConstraintType.NONE)) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-13/source/org/jfree/chart/block/BorderArrangement.java:151: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+            else if (h == LengthConstraintType.FIXED) {
+                       ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'else if (Objects.equals(h, LengthConstraintType.FIXED)) {' or 'else if (h.equals(LengthConstraintType.FIXED)) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-13/source/org/jfree/chart/block/BorderArrangement.java:154: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+            else if (h == LengthConstraintType.RANGE) {
+                       ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'else if (Objects.equals(h, LengthConstraintType.RANGE)) {' or 'else if (h.equals(LengthConstraintType.RANGE)) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-13/source/org/jfree/chart/block/BorderArrangement.java:158: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+        else if (w == LengthConstraintType.RANGE) {
+                   ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'else if (Objects.equals(w, LengthConstraintType.RANGE)) {' or 'else if (w.equals(LengthConstraintType.RANGE)) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-13/source/org/jfree/chart/block/BorderArrangement.java:159: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+            if (h == LengthConstraintType.NONE) {
+                  ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'if (Objects.equals(h, LengthConstraintType.NONE)) {' or 'if (h.equals(LengthConstraintType.NONE)) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-13/source/org/jfree/chart/block/BorderArrangement.java:162: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+            else if (h == LengthConstraintType.FIXED) {
+                       ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'else if (Objects.equals(h, LengthConstraintType.FIXED)) {' or 'else if (h.equals(LengthConstraintType.FIXED)) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-13/source/org/jfree/chart/block/BorderArrangement.java:165: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+            else if (h == LengthConstraintType.RANGE) {
+                       ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'else if (Objects.equals(h, LengthConstraintType.RANGE)) {' or 'else if (h.equals(LengthConstraintType.RANGE)) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-13/source/org/jfree/chart/block/BorderArrangement.java:494: warning: [MissingOverride] clear implements method in Arrangement; expected @Override
+    public void clear() {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void clear() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-13/source/org/jfree/chart/block/BorderArrangement.java:509: warning: [MissingOverride] equals overrides method in Object; expected @Override
+    public boolean equals(Object obj) {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public boolean equals(Object obj) {'?
+21 warnings

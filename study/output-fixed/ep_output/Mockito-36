@@ -1,0 +1,51 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Mockito-36/src/org/mockito/internal/invocation/Invocation.java:58: warning: [OperatorPrecedence] Use grouping parenthesis to make the operator precedence explicit
+        if (!isVarArgs || args[args.length - 1] != null && !args[args.length - 1].getClass().isArray()) {
+                                                        ^
+    (see http://errorprone.info/bugpattern/OperatorPrecedence)
+  Did you mean 'if (!isVarArgs || (args[args.length - 1] != null && !args[args.length - 1].getClass().isArray())) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Mockito-36/src/org/mockito/internal/invocation/Invocation.java:77: warning: [MissingOverride] getMock implements method in InvocationOnMock; expected @Override
+    public Object getMock() {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Object getMock() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Mockito-36/src/org/mockito/internal/invocation/Invocation.java:81: warning: [MissingOverride] getMethod implements method in InvocationOnMock; expected @Override
+    public MockitoMethod getMethod() {
+                         ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public MockitoMethod getMethod() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Mockito-36/src/org/mockito/internal/invocation/Invocation.java:85: warning: [MissingOverride] getArguments implements method in InvocationOnMock; expected @Override
+    public Object[] getArguments() {
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Object[] getArguments() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Mockito-36/src/org/mockito/internal/invocation/Invocation.java:101: warning: [MissingOverride] equals overrides method in Object; expected @Override
+    public boolean equals(Object o) {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public boolean equals(Object o) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Mockito-36/src/org/mockito/internal/invocation/Invocation.java:115: warning: [MissingOverride] hashCode overrides method in Object; expected @Override
+    public int hashCode() {
+               ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int hashCode() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Mockito-36/src/org/mockito/internal/invocation/Invocation.java:119: warning: [MissingOverride] toString implements method in PrintableInvocation; expected @Override
+    public String toString() {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public String toString() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Mockito-36/src/org/mockito/internal/invocation/Invocation.java:190: warning: [MissingOverride] getLocation implements method in PrintableInvocation; expected @Override
+    public Location getLocation() {
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Location getLocation() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Mockito-36/src/org/mockito/internal/invocation/Invocation.java:202: warning: [MissingOverride] callRealMethod implements method in InvocationOnMock; expected @Override
+    public Object callRealMethod() throws Throwable {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Object callRealMethod() throws Throwable {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Mockito-36/src/org/mockito/internal/invocation/Invocation.java:209: warning: [MissingOverride] toString implements method in PrintingFriendlyInvocation; expected @Override
+    public String toString(PrintSettings printSettings) {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public String toString(PrintSettings printSettings) {'?
+10 warnings

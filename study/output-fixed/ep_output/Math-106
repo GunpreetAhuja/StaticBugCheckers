@@ -1,0 +1,11 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-106/src/java/org/apache/commons/math/fraction/ProperFractionFormat.java:86: warning: [MissingOverride] format overrides method in FractionFormat; expected @Override
+    public StringBuffer format(Fraction fraction, StringBuffer toAppendTo,
+                        ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public StringBuffer format(Fraction fraction, StringBuffer toAppendTo,'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-106/src/java/org/apache/commons/math/fraction/ProperFractionFormat.java:130: warning: [MissingOverride] parse overrides method in FractionFormat; expected @Override
+    public Fraction parse(String source, ParsePosition pos) {
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Fraction parse(String source, ParsePosition pos) {'?
+2 warnings

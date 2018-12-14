@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.1.0" sequence="0" timestamp="1542185273000" analysisTimestamp="1542185276280" release="">
+  <Project projectName="">
+    <Jar>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-24/source</Jar>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-24/build</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-24/lib/servlet.jar</AuxClasspathEntry>
+  </Project>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" instanceHash="6c5b05ef9f2278d84636ee990d2b020c" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Dead store to local variable</ShortMessage>
+    <LongMessage>Dead store to $L3 in org.jfree.chart.renderer.GrayPaintScale.getPaint(double)</LongMessage>
+    <Class classname="org.jfree.chart.renderer.GrayPaintScale" primary="true">
+      <SourceLine classname="org.jfree.chart.renderer.GrayPaintScale" start="72" end="170" sourcefile="GrayPaintScale.java" sourcepath="org/jfree/chart/renderer/GrayPaintScale.java">
+        <Message>At GrayPaintScale.java:[lines 72-170]</Message>
+      </SourceLine>
+      <Message>In class org.jfree.chart.renderer.GrayPaintScale</Message>
+    </Class>
+    <Method classname="org.jfree.chart.renderer.GrayPaintScale" name="getPaint" signature="(D)Ljava/awt/Paint;" isStatic="false" primary="true">
+      <SourceLine classname="org.jfree.chart.renderer.GrayPaintScale" start="124" end="128" startBytecode="0" endBytecode="30" sourcefile="GrayPaintScale.java" sourcepath="org/jfree/chart/renderer/GrayPaintScale.java"/>
+      <Message>In method org.jfree.chart.renderer.GrayPaintScale.getPaint(double)</Message>
+    </Method>
+    <LocalVariable name="?" register="3" pc="18" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 3</Message>
+    </LocalVariable>
+    <SourceLine classname="org.jfree.chart.renderer.GrayPaintScale" primary="true" start="125" end="125" startBytecode="17" endBytecode="17" sourcefile="GrayPaintScale.java" sourcepath="org/jfree/chart/renderer/GrayPaintScale.java">
+      <Message>At GrayPaintScale.java:[line 125]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.TWO_STORES_MULTIPLE_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="HE_EQUALS_USE_HASHCODE" priority="1" rank="14" abbrev="HE" category="BAD_PRACTICE" instanceHash="9a8a709b0d102d90b5bb265785762c04" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Class defines equals() and uses Object.hashCode()</ShortMessage>
+    <LongMessage>org.jfree.chart.renderer.GrayPaintScale defines equals and uses Object.hashCode()</LongMessage>
+    <Class classname="org.jfree.chart.renderer.GrayPaintScale" primary="true">
+      <SourceLine classname="org.jfree.chart.renderer.GrayPaintScale" start="72" end="170" sourcefile="GrayPaintScale.java" sourcepath="org/jfree/chart/renderer/GrayPaintScale.java">
+        <Message>At GrayPaintScale.java:[lines 72-170]</Message>
+      </SourceLine>
+      <Message>In class org.jfree.chart.renderer.GrayPaintScale</Message>
+    </Class>
+    <Method classname="org.jfree.chart.renderer.GrayPaintScale" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false" primary="true">
+      <SourceLine classname="org.jfree.chart.renderer.GrayPaintScale" start="145" end="158" startBytecode="0" endBytecode="127" sourcefile="GrayPaintScale.java" sourcepath="org/jfree/chart/renderer/GrayPaintScale.java"/>
+      <Message>In method org.jfree.chart.renderer.GrayPaintScale.equals(Object)</Message>
+    </Method>
+    <SourceLine classname="org.jfree.chart.renderer.GrayPaintScale" start="145" end="158" startBytecode="0" endBytecode="127" sourcefile="GrayPaintScale.java" sourcepath="org/jfree/chart/renderer/GrayPaintScale.java" synthetic="true">
+      <Message>At GrayPaintScale.java:[lines 145-158]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="BAD_PRACTICE">
+    <Description>Bad practice</Description>
+  </BugCategory>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="DLS_DEAD_LOCAL_STORE" abbrev="DLS" category="STYLE">
+    <ShortDescription>Dead store to local variable</ShortDescription>
+    <Details><![CDATA[
+
+<p>
+This instruction assigns a value to a local variable,
+but the value is not read or used in any subsequent instruction.
+Often, this indicates an error, because the value computed is never
+used.
+</p>
+<p>
+Note that Sun's javac compiler often generates dead stores for
+final local variables.  Because SpotBugs is a bytecode-based tool,
+there is no easy way to eliminate these false positives.
+</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="HE_EQUALS_USE_HASHCODE" abbrev="HE" category="BAD_PRACTICE">
+    <ShortDescription>Class defines equals() and uses Object.hashCode()</ShortDescription>
+    <Details><![CDATA[
+
+  <p> This class overrides <code>equals(Object)</code>, but does not
+  override <code>hashCode()</code>, and inherits the implementation of
+  <code>hashCode()</code> from <code>java.lang.Object</code> (which returns
+  the identity hash code, an arbitrary value assigned to the object
+  by the VM).&nbsp; Therefore, the class is very likely to violate the
+  invariant that equal objects must have equal hashcodes.</p>
+
+<p>If you don't think instances of this class will ever be inserted into a HashMap/HashTable,
+the recommended <code>hashCode</code> implementation to use is:</p>
+<pre><code>public int hashCode() {
+    assert false : "hashCode not designed";
+    return 42; // any arbitrary constant will do
+}
+</code></pre>
+
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="DLS" cweid="563">
+    <Description>Dead local store</Description>
+  </BugCode>
+  <BugCode abbrev="HE">
+    <Description>Equal objects must have equal hashcodes</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 14 Nov 2018 03:47:53 -0500" total_classes="1" referenced_classes="16" total_bugs="2" total_size="35" num_packages="1" java_version="1.8.0_121" vm_version="25.121-b13" cpu_seconds="6.24" clock_seconds="3.53" peak_mbytes="108.41" alloc_mbytes="1820.50" gc_seconds="0.04" priority_2="1" priority_1="1">
+    <FileStats path="org/jfree/chart/renderer/GrayPaintScale.java" bugCount="2" size="35" bugHash="b6c29432e9d49aa3e928faea7163cc6c"/>
+    <PackageStats package="org.jfree.chart.renderer" total_bugs="2" total_types="1" total_size="35" priority_2="1" priority_1="1">
+      <ClassStats class="org.jfree.chart.renderer.GrayPaintScale" sourceFile="GrayPaintScale.java" interface="false" size="35" bugs="2" priority_2="1" priority_1="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="500" invocations="328" avgMicrosecondsPerInvocation="1525" maxMicrosecondsPerInvocation="42545" standardDeviationMicrosecondsPerInvocation="4480"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="479" invocations="331" avgMicrosecondsPerInvocation="1448" maxMicrosecondsPerInvocation="30682" standardDeviationMicrosecondsPerInvocation="3182"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="131" invocations="16" avgMicrosecondsPerInvocation="8209" maxMicrosecondsPerInvocation="66208" standardDeviationMicrosecondsPerInvocation="16152"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="106" invocations="16" avgMicrosecondsPerInvocation="6673" maxMicrosecondsPerInvocation="50208" standardDeviationMicrosecondsPerInvocation="15288"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="95" invocations="70" avgMicrosecondsPerInvocation="1362" maxMicrosecondsPerInvocation="26068" standardDeviationMicrosecondsPerInvocation="3710"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="78" invocations="7" avgMicrosecondsPerInvocation="11206" maxMicrosecondsPerInvocation="76123" standardDeviationMicrosecondsPerInvocation="26503"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="76" invocations="16" avgMicrosecondsPerInvocation="4801" maxMicrosecondsPerInvocation="18292" standardDeviationMicrosecondsPerInvocation="6798"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="67" invocations="296" avgMicrosecondsPerInvocation="227" maxMicrosecondsPerInvocation="6190" standardDeviationMicrosecondsPerInvocation="508"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="65" invocations="7" avgMicrosecondsPerInvocation="9353" maxMicrosecondsPerInvocation="58384" standardDeviationMicrosecondsPerInvocation="20036"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CloneIdiom" totalMilliseconds="64" invocations="1" avgMicrosecondsPerInvocation="64497" maxMicrosecondsPerInvocation="64497" standardDeviationMicrosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="59" invocations="32" avgMicrosecondsPerInvocation="1848" maxMicrosecondsPerInvocation="30742" standardDeviationMicrosecondsPerInvocation="6220"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="57" invocations="7" avgMicrosecondsPerInvocation="8183" maxMicrosecondsPerInvocation="52855" standardDeviationMicrosecondsPerInvocation="18244"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

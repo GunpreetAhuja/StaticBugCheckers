@@ -1,0 +1,16 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-7/src/main/java/org/joda/time/format/DateTimeFormatter.java:190: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+        if (locale == getLocale() || (locale != null && locale.equals(getLocale()))) {
+                   ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'if (Objects.equals(locale, getLocale()) || (locale != null && locale.equals(getLocale()))) {' or 'if (locale.equals(getLocale()) || (locale != null && locale.equals(getLocale()))) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-7/src/main/java/org/joda/time/format/DateTimeFormatter.java:322: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+        if (iZone == zone) {
+                  ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'if (Objects.equals(iZone, zone)) {' or 'if (iZone.equals(zone)) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-7/src/main/java/org/joda/time/format/DateTimeFormatter.java:369: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+        if (iPivotYear == pivotYear || (iPivotYear != null && iPivotYear.equals(pivotYear))) {
+                       ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'if (Objects.equals(iPivotYear, pivotYear) || (iPivotYear != null && iPivotYear.equals(pivotYear))) {' or 'if (iPivotYear.equals(pivotYear) || (iPivotYear != null && iPivotYear.equals(pivotYear))) {'?
+3 warnings

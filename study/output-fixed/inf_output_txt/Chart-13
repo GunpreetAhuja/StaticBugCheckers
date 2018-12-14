@@ -1,0 +1,13 @@
+Found 1 issue
+
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Chart-13/source/org/jfree/chart/block/BorderArrangement.java:170: error: NULL_DEREFERENCE
+  object `contentSize` last assigned on line 133 could be null and is dereferenced at line 170.
+  168.               }
+  169.           }
+  170. >         return new Size2D(container.calculateTotalWidth(contentSize.getWidth()),
+  171.                   container.calculateTotalHeight(contentSize.getHeight()));
+  172.       }
+
+Summary of the reports
+
+  NULL_DEREFERENCE: 1

@@ -1,0 +1,6 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-66/src/main/java/org/apache/commons/math/optimization/univariate/BrentOptimizer.java:55: warning: [MissingOverride] doOptimize implements method in AbstractUnivariateRealOptimizer; expected @Override
+    protected double doOptimize()
+                     ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override protected double doOptimize()'?
+1 warning

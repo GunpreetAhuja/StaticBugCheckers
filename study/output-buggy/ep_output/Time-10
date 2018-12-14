@@ -1,0 +1,61 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-10/src/main/java/org/joda/time/base/BaseSingleFieldPeriod.java:193: warning: [MissingOverride] getPeriodType implements method in ReadablePeriod; expected @Override
+    public abstract PeriodType getPeriodType();
+                               ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public abstract PeriodType getPeriodType();'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-10/src/main/java/org/joda/time/base/BaseSingleFieldPeriod.java:201: warning: [MissingOverride] size implements method in ReadablePeriod; expected @Override
+    public int size() {
+               ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int size() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-10/src/main/java/org/joda/time/base/BaseSingleFieldPeriod.java:215: warning: [MissingOverride] getFieldType implements method in ReadablePeriod; expected @Override
+    public DurationFieldType getFieldType(int index) {
+                             ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public DurationFieldType getFieldType(int index) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-10/src/main/java/org/joda/time/base/BaseSingleFieldPeriod.java:231: warning: [MissingOverride] getValue implements method in ReadablePeriod; expected @Override
+    public int getValue(int index) {
+               ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int getValue(int index) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-10/src/main/java/org/joda/time/base/BaseSingleFieldPeriod.java:247: warning: [MissingOverride] get implements method in ReadablePeriod; expected @Override
+    public int get(DurationFieldType type) {
+               ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int get(DurationFieldType type) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-10/src/main/java/org/joda/time/base/BaseSingleFieldPeriod.java:260: warning: [MissingOverride] isSupported implements method in ReadablePeriod; expected @Override
+    public boolean isSupported(DurationFieldType type) {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public boolean isSupported(DurationFieldType type) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-10/src/main/java/org/joda/time/base/BaseSingleFieldPeriod.java:271: warning: [MissingOverride] toPeriod implements method in ReadablePeriod; expected @Override
+    public Period toPeriod() {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Period toPeriod() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-10/src/main/java/org/joda/time/base/BaseSingleFieldPeriod.java:283: warning: [MissingOverride] toMutablePeriod implements method in ReadablePeriod; expected @Override
+    public MutablePeriod toMutablePeriod() {
+                         ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public MutablePeriod toMutablePeriod() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-10/src/main/java/org/joda/time/base/BaseSingleFieldPeriod.java:299: warning: [MissingOverride] equals implements method in ReadablePeriod; expected @Override
+    public boolean equals(Object period) {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public boolean equals(Object period) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-10/src/main/java/org/joda/time/base/BaseSingleFieldPeriod.java:307: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+        return (other.getPeriodType() == getPeriodType() && other.getValue(0) == getValue());
+                                      ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'return (Objects.equals(other.getPeriodType(), getPeriodType()) && other.getValue(0) == getValue());' or 'return (other.getPeriodType().equals(getPeriodType()) && other.getValue(0) == getValue());'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-10/src/main/java/org/joda/time/base/BaseSingleFieldPeriod.java:315: warning: [MissingOverride] hashCode implements method in ReadablePeriod; expected @Override
+    public int hashCode() {
+               ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int hashCode() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-10/src/main/java/org/joda/time/base/BaseSingleFieldPeriod.java:330: warning: [MissingOverride] compareTo implements method in Comparable; expected @Override
+    public int compareTo(BaseSingleFieldPeriod other) {
+               ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int compareTo(BaseSingleFieldPeriod other) {'?
+12 warnings

@@ -1,0 +1,6 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-39/src/com/google/javascript/rhino/jstype/PrototypeObjectType.java:326: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+    return propertyType != nativePropertyType;
+                        ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'return !Objects.equals(propertyType, nativePropertyType);' or 'return !propertyType.equals(nativePropertyType);'?
+1 warning

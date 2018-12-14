@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.1.0" sequence="0" timestamp="1542186854000" analysisTimestamp="1542186857526" release="">
+  <Project projectName="">
+    <Jar>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Mockito-17/src</Jar>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Mockito-17/target/classes</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/framework/projects/Mockito/lib/asm-all-5.0.4.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/framework/projects/Mockito/lib/assertj-core-2.1.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/framework/projects/Mockito/lib/cglib-and-asm-1.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/framework/projects/Mockito/lib/cobertura-2.0.3.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/framework/projects/Mockito/lib/fest-assert-1.3.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/framework/projects/Mockito/lib/fest-util-1.1.4.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/framework/projects/Mockito/lib/hamcrest-all-1.3.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/framework/projects/Mockito/lib/hamcrest-core-1.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/framework/projects/Mockito/lib/objenesis-2.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/framework/projects/Mockito/lib/objenesis-2.2.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/framework/projects/Mockito/lib/powermock-reflect-1.2.5.jar</AuxClasspathEntry>
+  </Project>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE" instanceHash="2f96440e41ce957e50cb1d79ccc9af21" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="374">
+    <ShortMessage>May expose internal representation by returning reference to mutable object</ShortMessage>
+    <LongMessage>org.mockito.internal.creation.MockSettingsImpl.getExtraInterfaces() may expose internal representation by returning MockSettingsImpl.extraInterfaces</LongMessage>
+    <Class classname="org.mockito.internal.creation.MockSettingsImpl" primary="true">
+      <SourceLine classname="org.mockito.internal.creation.MockSettingsImpl" start="12" end="79" sourcefile="MockSettingsImpl.java" sourcepath="org/mockito/internal/creation/MockSettingsImpl.java">
+        <Message>At MockSettingsImpl.java:[lines 12-79]</Message>
+      </SourceLine>
+      <Message>In class org.mockito.internal.creation.MockSettingsImpl</Message>
+    </Class>
+    <Method classname="org.mockito.internal.creation.MockSettingsImpl" name="getExtraInterfaces" signature="()[Ljava/lang/Class;" isStatic="false" primary="true">
+      <SourceLine classname="org.mockito.internal.creation.MockSettingsImpl" start="46" end="46" startBytecode="0" endBytecode="28" sourcefile="MockSettingsImpl.java" sourcepath="org/mockito/internal/creation/MockSettingsImpl.java"/>
+      <Message>In method org.mockito.internal.creation.MockSettingsImpl.getExtraInterfaces()</Message>
+    </Method>
+    <Field classname="org.mockito.internal.creation.MockSettingsImpl" name="extraInterfaces" signature="[Ljava/lang/Class;" isStatic="false" primary="true">
+      <SourceLine classname="org.mockito.internal.creation.MockSettingsImpl" sourcefile="MockSettingsImpl.java" sourcepath="org/mockito/internal/creation/MockSettingsImpl.java">
+        <Message>In MockSettingsImpl.java</Message>
+      </SourceLine>
+      <Message>Field org.mockito.internal.creation.MockSettingsImpl.extraInterfaces</Message>
+    </Field>
+    <SourceLine classname="org.mockito.internal.creation.MockSettingsImpl" primary="true" start="46" end="46" startBytecode="4" endBytecode="4" sourcefile="MockSettingsImpl.java" sourcepath="org/mockito/internal/creation/MockSettingsImpl.java">
+      <Message>At MockSettingsImpl.java:[line 46]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="MALICIOUS_CODE">
+    <Description>Malicious code vulnerability</Description>
+  </BugCategory>
+  <BugPattern type="EI_EXPOSE_REP" abbrev="EI" category="MALICIOUS_CODE" cweid="374">
+    <ShortDescription>May expose internal representation by returning reference to mutable object</ShortDescription>
+    <Details><![CDATA[
+
+  <p> Returning a reference to a mutable object value stored in one of the object's fields
+  exposes the internal representation of the object.&nbsp;
+   If instances
+   are accessed by untrusted code, and unchecked changes to
+   the mutable object would compromise security or other
+   important properties, you will need to do something different.
+  Returning a new copy of the object is better approach in many situations.</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="EI">
+    <Description>Method returning array may expose internal representation</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 14 Nov 2018 04:14:14 -0500" total_classes="2" referenced_classes="31" total_bugs="1" total_size="91" num_packages="2" java_version="1.8.0_121" vm_version="25.121-b13" cpu_seconds="7.55" clock_seconds="4.00" peak_mbytes="110.42" alloc_mbytes="1820.50" gc_seconds="0.07" priority_2="1">
+    <FileStats path="org/mockito/internal/creation/MockSettingsImpl.java" bugCount="1" size="43" bugHash="6ff32b7f1b4ae50cdeab50ec0802126a"/>
+    <FileStats path="org/mockito/internal/util/MockUtil.java" bugCount="0" size="48"/>
+    <PackageStats package="org.mockito.internal.creation" total_bugs="1" total_types="1" total_size="43" priority_2="1">
+      <ClassStats class="org.mockito.internal.creation.MockSettingsImpl" sourceFile="MockSettingsImpl.java" interface="false" size="43" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <PackageStats package="org.mockito.internal.util" total_bugs="0" total_types="1" total_size="48">
+      <ClassStats class="org.mockito.internal.util.MockUtil" sourceFile="MockUtil.java" interface="false" size="48" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="769" invocations="509" avgMicrosecondsPerInvocation="1511" maxMicrosecondsPerInvocation="58701" standardDeviationMicrosecondsPerInvocation="3801"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="576" invocations="505" avgMicrosecondsPerInvocation="1141" maxMicrosecondsPerInvocation="67356" standardDeviationMicrosecondsPerInvocation="4344"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="163" invocations="473" avgMicrosecondsPerInvocation="346" maxMicrosecondsPerInvocation="31138" standardDeviationMicrosecondsPerInvocation="1990"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="140" invocations="31" avgMicrosecondsPerInvocation="4547" maxMicrosecondsPerInvocation="35460" standardDeviationMicrosecondsPerInvocation="7802"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="121" invocations="158" avgMicrosecondsPerInvocation="767" maxMicrosecondsPerInvocation="35640" standardDeviationMicrosecondsPerInvocation="3087"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="91" invocations="21" avgMicrosecondsPerInvocation="4335" maxMicrosecondsPerInvocation="35149" standardDeviationMicrosecondsPerInvocation="8607"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="88" invocations="79" avgMicrosecondsPerInvocation="1119" maxMicrosecondsPerInvocation="57036" standardDeviationMicrosecondsPerInvocation="6545"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="82" invocations="31" avgMicrosecondsPerInvocation="2655" maxMicrosecondsPerInvocation="18256" standardDeviationMicrosecondsPerInvocation="4589"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="78" invocations="21" avgMicrosecondsPerInvocation="3742" maxMicrosecondsPerInvocation="72559" standardDeviationMicrosecondsPerInvocation="15393"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="64" invocations="31" avgMicrosecondsPerInvocation="2087" maxMicrosecondsPerInvocation="30678" standardDeviationMicrosecondsPerInvocation="5581"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindReturnRef" totalMilliseconds="56" invocations="2" avgMicrosecondsPerInvocation="28158" maxMicrosecondsPerInvocation="55858" standardDeviationMicrosecondsPerInvocation="27700"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.ExplicitSerialization" totalMilliseconds="54" invocations="31" avgMicrosecondsPerInvocation="1770" maxMicrosecondsPerInvocation="54633" standardDeviationMicrosecondsPerInvocation="9651"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="50" invocations="22" avgMicrosecondsPerInvocation="2303" maxMicrosecondsPerInvocation="15352" standardDeviationMicrosecondsPerInvocation="3617"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

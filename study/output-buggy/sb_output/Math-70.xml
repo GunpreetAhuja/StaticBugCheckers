@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.1.0" sequence="0" timestamp="1542186680000" analysisTimestamp="1542186683906" release="">
+  <Project projectName="">
+    <Jar>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-70/src/main/java</Jar>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-70/target/classes</AuxClasspathEntry>
+  </Project>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 14 Nov 2018 04:11:20 -0500" total_classes="1" referenced_classes="23" total_bugs="0" total_size="30" num_packages="1" java_version="1.8.0_121" vm_version="25.121-b13" cpu_seconds="5.89" clock_seconds="2.73" peak_mbytes="97.64" alloc_mbytes="1820.50" gc_seconds="0.03">
+    <FileStats path="org/apache/commons/math/analysis/solvers/BisectionSolver.java" bugCount="0" size="30"/>
+    <PackageStats package="org.apache.commons.math.analysis.solvers" total_bugs="0" total_types="1" total_size="30">
+      <ClassStats class="org.apache.commons.math.analysis.solvers.BisectionSolver" sourceFile="BisectionSolver.java" interface="false" size="30" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="445" invocations="337" avgMicrosecondsPerInvocation="1322" maxMicrosecondsPerInvocation="73330" standardDeviationMicrosecondsPerInvocation="4775"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="384" invocations="341" avgMicrosecondsPerInvocation="1126" maxMicrosecondsPerInvocation="33260" standardDeviationMicrosecondsPerInvocation="2168"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="125" invocations="23" avgMicrosecondsPerInvocation="5455" maxMicrosecondsPerInvocation="48728" standardDeviationMicrosecondsPerInvocation="12046"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="76" invocations="304" avgMicrosecondsPerInvocation="250" maxMicrosecondsPerInvocation="20499" standardDeviationMicrosecondsPerInvocation="1215"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="68" invocations="23" avgMicrosecondsPerInvocation="2981" maxMicrosecondsPerInvocation="21044" standardDeviationMicrosecondsPerInvocation="5246"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="68" invocations="23" avgMicrosecondsPerInvocation="2957" maxMicrosecondsPerInvocation="29732" standardDeviationMicrosecondsPerInvocation="6522"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="62" invocations="6" avgMicrosecondsPerInvocation="10339" maxMicrosecondsPerInvocation="59932" standardDeviationMicrosecondsPerInvocation="22182"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="55" invocations="23" avgMicrosecondsPerInvocation="2426" maxMicrosecondsPerInvocation="17652" standardDeviationMicrosecondsPerInvocation="4541"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="52" invocations="38" avgMicrosecondsPerInvocation="1387" maxMicrosecondsPerInvocation="20661" standardDeviationMicrosecondsPerInvocation="4007"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="48" invocations="23" avgMicrosecondsPerInvocation="2127" maxMicrosecondsPerInvocation="31555" standardDeviationMicrosecondsPerInvocation="6606"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="46" invocations="42" avgMicrosecondsPerInvocation="1106" maxMicrosecondsPerInvocation="5414" standardDeviationMicrosecondsPerInvocation="1304"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

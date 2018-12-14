@@ -1,0 +1,192 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-25/src/main/java/org/apache/commons/lang3/text/translate/EntityArrays.java:41: error: unmappable character (0xA9) for encoding UTF-8
+        {"\u00A9", "&copy;"}, // � - copyright sign
+                                 ^
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-25/src/main/java/org/apache/commons/lang3/text/translate/EntityArrays.java:46: error: unmappable character (0xAE) for encoding UTF-8
+        {"\u00AE", "&reg;"}, // � - registered trademark sign
+                                ^
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-25/src/main/java/org/apache/commons/lang3/text/translate/EntityArrays.java:64: error: unmappable character (0xC0) for encoding UTF-8
+        {"\u00C0", "&Agrave;"}, // � - uppercase A, grave accent
+                                   ^
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-25/src/main/java/org/apache/commons/lang3/text/translate/EntityArrays.java:65: error: unmappable character (0xC1) for encoding UTF-8
+        {"\u00C1", "&Aacute;"}, // � - uppercase A, acute accent
+                                   ^
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-25/src/main/java/org/apache/commons/lang3/text/translate/EntityArrays.java:66: error: unmappable character (0xC2) for encoding UTF-8
+        {"\u00C2", "&Acirc;"}, // � - uppercase A, circumflex accent
+                                  ^
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-25/src/main/java/org/apache/commons/lang3/text/translate/EntityArrays.java:67: error: unmappable character (0xC3) for encoding UTF-8
+        {"\u00C3", "&Atilde;"}, // � - uppercase A, tilde
+                                   ^
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-25/src/main/java/org/apache/commons/lang3/text/translate/EntityArrays.java:68: error: unmappable character (0xC4) for encoding UTF-8
+        {"\u00C4", "&Auml;"}, // � - uppercase A, umlaut
+                                 ^
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-25/src/main/java/org/apache/commons/lang3/text/translate/EntityArrays.java:69: error: unmappable character (0xC5) for encoding UTF-8
+        {"\u00C5", "&Aring;"}, // � - uppercase A, ring
+                                  ^
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-25/src/main/java/org/apache/commons/lang3/text/translate/EntityArrays.java:70: error: unmappable character (0xC6) for encoding UTF-8
+        {"\u00C6", "&AElig;"}, // � - uppercase AE
+                                  ^
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-25/src/main/java/org/apache/commons/lang3/text/translate/EntityArrays.java:71: error: unmappable character (0xC7) for encoding UTF-8
+        {"\u00C7", "&Ccedil;"}, // � - uppercase C, cedilla
+                                   ^
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-25/src/main/java/org/apache/commons/lang3/text/translate/EntityArrays.java:72: error: unmappable character (0xC8) for encoding UTF-8
+        {"\u00C8", "&Egrave;"}, // � - uppercase E, grave accent
+                                   ^
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-25/src/main/java/org/apache/commons/lang3/text/translate/EntityArrays.java:73: error: unmappable character (0xC9) for encoding UTF-8
+        {"\u00C9", "&Eacute;"}, // � - uppercase E, acute accent
+                                   ^
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-25/src/main/java/org/apache/commons/lang3/text/translate/EntityArrays.java:74: error: unmappable character (0xCA) for encoding UTF-8
+        {"\u00CA", "&Ecirc;"}, // � - uppercase E, circumflex accent
+                                  ^
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-25/src/main/java/org/apache/commons/lang3/text/translate/EntityArrays.java:75: error: unmappable character (0xCB) for encoding UTF-8
+        {"\u00CB", "&Euml;"}, // � - uppercase E, umlaut
+                                 ^
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-25/src/main/java/org/apache/commons/lang3/text/translate/EntityArrays.java:76: error: unmappable character (0xCC) for encoding UTF-8
+        {"\u00CC", "&Igrave;"}, // � - uppercase I, grave accent
+                                   ^
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-25/src/main/java/org/apache/commons/lang3/text/translate/EntityArrays.java:77: error: unmappable character (0xCD) for encoding UTF-8
+        {"\u00CD", "&Iacute;"}, // � - uppercase I, acute accent
+                                   ^
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-25/src/main/java/org/apache/commons/lang3/text/translate/EntityArrays.java:78: error: unmappable character (0xCE) for encoding UTF-8
+        {"\u00CE", "&Icirc;"}, // � - uppercase I, circumflex accent
+                                  ^
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-25/src/main/java/org/apache/commons/lang3/text/translate/EntityArrays.java:79: error: unmappable character (0xCF) for encoding UTF-8
+        {"\u00CF", "&Iuml;"}, // � - uppercase I, umlaut
+                                 ^
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-25/src/main/java/org/apache/commons/lang3/text/translate/EntityArrays.java:80: error: unmappable character (0xD0) for encoding UTF-8
+        {"\u00D0", "&ETH;"}, // � - uppercase Eth, Icelandic
+                                ^
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-25/src/main/java/org/apache/commons/lang3/text/translate/EntityArrays.java:81: error: unmappable character (0xD1) for encoding UTF-8
+        {"\u00D1", "&Ntilde;"}, // � - uppercase N, tilde
+                                   ^
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-25/src/main/java/org/apache/commons/lang3/text/translate/EntityArrays.java:82: error: unmappable character (0xD2) for encoding UTF-8
+        {"\u00D2", "&Ograve;"}, // � - uppercase O, grave accent
+                                   ^
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-25/src/main/java/org/apache/commons/lang3/text/translate/EntityArrays.java:83: error: unmappable character (0xD3) for encoding UTF-8
+        {"\u00D3", "&Oacute;"}, // � - uppercase O, acute accent
+                                   ^
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-25/src/main/java/org/apache/commons/lang3/text/translate/EntityArrays.java:84: error: unmappable character (0xD4) for encoding UTF-8
+        {"\u00D4", "&Ocirc;"}, // � - uppercase O, circumflex accent
+                                  ^
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-25/src/main/java/org/apache/commons/lang3/text/translate/EntityArrays.java:85: error: unmappable character (0xD5) for encoding UTF-8
+        {"\u00D5", "&Otilde;"}, // � - uppercase O, tilde
+                                   ^
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-25/src/main/java/org/apache/commons/lang3/text/translate/EntityArrays.java:86: error: unmappable character (0xD6) for encoding UTF-8
+        {"\u00D6", "&Ouml;"}, // � - uppercase O, umlaut
+                                 ^
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-25/src/main/java/org/apache/commons/lang3/text/translate/EntityArrays.java:88: error: unmappable character (0xD8) for encoding UTF-8
+        {"\u00D8", "&Oslash;"}, // � - uppercase O, slash
+                                   ^
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-25/src/main/java/org/apache/commons/lang3/text/translate/EntityArrays.java:89: error: unmappable character (0xD9) for encoding UTF-8
+        {"\u00D9", "&Ugrave;"}, // � - uppercase U, grave accent
+                                   ^
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-25/src/main/java/org/apache/commons/lang3/text/translate/EntityArrays.java:90: error: unmappable character (0xDA) for encoding UTF-8
+        {"\u00DA", "&Uacute;"}, // � - uppercase U, acute accent
+                                   ^
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-25/src/main/java/org/apache/commons/lang3/text/translate/EntityArrays.java:91: error: unmappable character (0xDB) for encoding UTF-8
+        {"\u00DB", "&Ucirc;"}, // � - uppercase U, circumflex accent
+                                  ^
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-25/src/main/java/org/apache/commons/lang3/text/translate/EntityArrays.java:92: error: unmappable character (0xDC) for encoding UTF-8
+        {"\u00DC", "&Uuml;"}, // � - uppercase U, umlaut
+                                 ^
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-25/src/main/java/org/apache/commons/lang3/text/translate/EntityArrays.java:93: error: unmappable character (0xDD) for encoding UTF-8
+        {"\u00DD", "&Yacute;"}, // � - uppercase Y, acute accent
+                                   ^
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-25/src/main/java/org/apache/commons/lang3/text/translate/EntityArrays.java:94: error: unmappable character (0xDE) for encoding UTF-8
+        {"\u00DE", "&THORN;"}, // � - uppercase THORN, Icelandic
+                                  ^
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-25/src/main/java/org/apache/commons/lang3/text/translate/EntityArrays.java:95: error: unmappable character (0xDF) for encoding UTF-8
+        {"\u00DF", "&szlig;"}, // � - lowercase sharps, German
+                                  ^
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-25/src/main/java/org/apache/commons/lang3/text/translate/EntityArrays.java:96: error: unmappable character (0xE0) for encoding UTF-8
+        {"\u00E0", "&agrave;"}, // � - lowercase a, grave accent
+                                   ^
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-25/src/main/java/org/apache/commons/lang3/text/translate/EntityArrays.java:97: error: unmappable character (0xE1) for encoding UTF-8
+        {"\u00E1", "&aacute;"}, // � - lowercase a, acute accent
+                                   ^
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-25/src/main/java/org/apache/commons/lang3/text/translate/EntityArrays.java:98: error: unmappable character (0xE2) for encoding UTF-8
+        {"\u00E2", "&acirc;"}, // � - lowercase a, circumflex accent
+                                  ^
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-25/src/main/java/org/apache/commons/lang3/text/translate/EntityArrays.java:99: error: unmappable character (0xE3) for encoding UTF-8
+        {"\u00E3", "&atilde;"}, // � - lowercase a, tilde
+                                   ^
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-25/src/main/java/org/apache/commons/lang3/text/translate/EntityArrays.java:100: error: unmappable character (0xE4) for encoding UTF-8
+        {"\u00E4", "&auml;"}, // � - lowercase a, umlaut
+                                 ^
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-25/src/main/java/org/apache/commons/lang3/text/translate/EntityArrays.java:101: error: unmappable character (0xE5) for encoding UTF-8
+        {"\u00E5", "&aring;"}, // � - lowercase a, ring
+                                  ^
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-25/src/main/java/org/apache/commons/lang3/text/translate/EntityArrays.java:102: error: unmappable character (0xE6) for encoding UTF-8
+        {"\u00E6", "&aelig;"}, // � - lowercase ae
+                                  ^
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-25/src/main/java/org/apache/commons/lang3/text/translate/EntityArrays.java:103: error: unmappable character (0xE7) for encoding UTF-8
+        {"\u00E7", "&ccedil;"}, // � - lowercase c, cedilla
+                                   ^
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-25/src/main/java/org/apache/commons/lang3/text/translate/EntityArrays.java:104: error: unmappable character (0xE8) for encoding UTF-8
+        {"\u00E8", "&egrave;"}, // � - lowercase e, grave accent
+                                   ^
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-25/src/main/java/org/apache/commons/lang3/text/translate/EntityArrays.java:105: error: unmappable character (0xE9) for encoding UTF-8
+        {"\u00E9", "&eacute;"}, // � - lowercase e, acute accent
+                                   ^
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-25/src/main/java/org/apache/commons/lang3/text/translate/EntityArrays.java:106: error: unmappable character (0xEA) for encoding UTF-8
+        {"\u00EA", "&ecirc;"}, // � - lowercase e, circumflex accent
+                                  ^
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-25/src/main/java/org/apache/commons/lang3/text/translate/EntityArrays.java:107: error: unmappable character (0xEB) for encoding UTF-8
+        {"\u00EB", "&euml;"}, // � - lowercase e, umlaut
+                                 ^
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-25/src/main/java/org/apache/commons/lang3/text/translate/EntityArrays.java:108: error: unmappable character (0xEC) for encoding UTF-8
+        {"\u00EC", "&igrave;"}, // � - lowercase i, grave accent
+                                   ^
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-25/src/main/java/org/apache/commons/lang3/text/translate/EntityArrays.java:109: error: unmappable character (0xED) for encoding UTF-8
+        {"\u00ED", "&iacute;"}, // � - lowercase i, acute accent
+                                   ^
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-25/src/main/java/org/apache/commons/lang3/text/translate/EntityArrays.java:110: error: unmappable character (0xEE) for encoding UTF-8
+        {"\u00EE", "&icirc;"}, // � - lowercase i, circumflex accent
+                                  ^
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-25/src/main/java/org/apache/commons/lang3/text/translate/EntityArrays.java:111: error: unmappable character (0xEF) for encoding UTF-8
+        {"\u00EF", "&iuml;"}, // � - lowercase i, umlaut
+                                 ^
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-25/src/main/java/org/apache/commons/lang3/text/translate/EntityArrays.java:112: error: unmappable character (0xF0) for encoding UTF-8
+        {"\u00F0", "&eth;"}, // � - lowercase eth, Icelandic
+                                ^
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-25/src/main/java/org/apache/commons/lang3/text/translate/EntityArrays.java:113: error: unmappable character (0xF1) for encoding UTF-8
+        {"\u00F1", "&ntilde;"}, // � - lowercase n, tilde
+                                   ^
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-25/src/main/java/org/apache/commons/lang3/text/translate/EntityArrays.java:114: error: unmappable character (0xF2) for encoding UTF-8
+        {"\u00F2", "&ograve;"}, // � - lowercase o, grave accent
+                                   ^
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-25/src/main/java/org/apache/commons/lang3/text/translate/EntityArrays.java:115: error: unmappable character (0xF3) for encoding UTF-8
+        {"\u00F3", "&oacute;"}, // � - lowercase o, acute accent
+                                   ^
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-25/src/main/java/org/apache/commons/lang3/text/translate/EntityArrays.java:116: error: unmappable character (0xF4) for encoding UTF-8
+        {"\u00F4", "&ocirc;"}, // � - lowercase o, circumflex accent
+                                  ^
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-25/src/main/java/org/apache/commons/lang3/text/translate/EntityArrays.java:117: error: unmappable character (0xF5) for encoding UTF-8
+        {"\u00F5", "&otilde;"}, // � - lowercase o, tilde
+                                   ^
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-25/src/main/java/org/apache/commons/lang3/text/translate/EntityArrays.java:118: error: unmappable character (0xF6) for encoding UTF-8
+        {"\u00F6", "&ouml;"}, // � - lowercase o, umlaut
+                                 ^
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-25/src/main/java/org/apache/commons/lang3/text/translate/EntityArrays.java:120: error: unmappable character (0xF8) for encoding UTF-8
+        {"\u00F8", "&oslash;"}, // � - lowercase o, slash
+                                   ^
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-25/src/main/java/org/apache/commons/lang3/text/translate/EntityArrays.java:121: error: unmappable character (0xF9) for encoding UTF-8
+        {"\u00F9", "&ugrave;"}, // � - lowercase u, grave accent
+                                   ^
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-25/src/main/java/org/apache/commons/lang3/text/translate/EntityArrays.java:122: error: unmappable character (0xFA) for encoding UTF-8
+        {"\u00FA", "&uacute;"}, // � - lowercase u, acute accent
+                                   ^
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-25/src/main/java/org/apache/commons/lang3/text/translate/EntityArrays.java:123: error: unmappable character (0xFB) for encoding UTF-8
+        {"\u00FB", "&ucirc;"}, // � - lowercase u, circumflex accent
+                                  ^
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-25/src/main/java/org/apache/commons/lang3/text/translate/EntityArrays.java:124: error: unmappable character (0xFC) for encoding UTF-8
+        {"\u00FC", "&uuml;"}, // � - lowercase u, umlaut
+                                 ^
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-25/src/main/java/org/apache/commons/lang3/text/translate/EntityArrays.java:125: error: unmappable character (0xFD) for encoding UTF-8
+        {"\u00FD", "&yacute;"}, // � - lowercase y, acute accent
+                                   ^
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-25/src/main/java/org/apache/commons/lang3/text/translate/EntityArrays.java:126: error: unmappable character (0xFE) for encoding UTF-8
+        {"\u00FE", "&thorn;"}, // � - lowercase thorn, Icelandic
+                                  ^
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-25/src/main/java/org/apache/commons/lang3/text/translate/EntityArrays.java:127: error: unmappable character (0xFF) for encoding UTF-8
+        {"\u00FF", "&yuml;"}, // � - lowercase y, umlaut
+                                 ^

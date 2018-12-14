@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.1.0" sequence="0" timestamp="1542185334000" analysisTimestamp="1542185337223" release="">
+  <Project projectName="">
+    <Jar>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-100/src</Jar>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-100/build/classes</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-100/lib/ant_deploy.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-100/lib/args4j_deploy.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-100/lib/google_common_deploy.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-100/lib/hamcrest-core-1.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-100/lib/junit.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-100/lib/libtrunk_rhino_parser_jarjared.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-100/lib/protobuf_deploy.jar</AuxClasspathEntry>
+  </Project>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" instanceHash="2526544766672086c1121b4db5e1bc6a" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Dead store to local variable</ShortMessage>
+    <LongMessage>Dead store to $L5 in com.google.javascript.jscomp.CheckGlobalThis.shouldTraverse(NodeTraversal, Node, Node)</LongMessage>
+    <Class classname="com.google.javascript.jscomp.CheckGlobalThis" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.CheckGlobalThis" start="61" end="174" sourcefile="CheckGlobalThis.java" sourcepath="com/google/javascript/jscomp/CheckGlobalThis.java">
+        <Message>At CheckGlobalThis.java:[lines 61-174]</Message>
+      </SourceLine>
+      <Message>In class com.google.javascript.jscomp.CheckGlobalThis</Message>
+    </Class>
+    <Method classname="com.google.javascript.jscomp.CheckGlobalThis" name="shouldTraverse" signature="(Lcom/google/javascript/jscomp/NodeTraversal;Lcom/google/javascript/rhino/Node;Lcom/google/javascript/rhino/Node;)Z" isStatic="false" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.CheckGlobalThis" start="86" end="127" startBytecode="0" endBytecode="64" sourcefile="CheckGlobalThis.java" sourcepath="com/google/javascript/jscomp/CheckGlobalThis.java"/>
+      <Message>In method com.google.javascript.jscomp.CheckGlobalThis.shouldTraverse(NodeTraversal, Node, Node)</Message>
+    </Method>
+    <LocalVariable name="?" register="5" pc="65" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 5</Message>
+    </LocalVariable>
+    <SourceLine classname="com.google.javascript.jscomp.CheckGlobalThis" primary="true" start="103" end="103" startBytecode="63" endBytecode="63" sourcefile="CheckGlobalThis.java" sourcepath="com/google/javascript/jscomp/CheckGlobalThis.java">
+      <Message>At CheckGlobalThis.java:[line 103]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="DLS_DEAD_LOCAL_STORE" abbrev="DLS" category="STYLE">
+    <ShortDescription>Dead store to local variable</ShortDescription>
+    <Details><![CDATA[
+
+<p>
+This instruction assigns a value to a local variable,
+but the value is not read or used in any subsequent instruction.
+Often, this indicates an error, because the value computed is never
+used.
+</p>
+<p>
+Note that Sun's javac compiler often generates dead stores for
+final local variables.  Because SpotBugs is a bytecode-based tool,
+there is no easy way to eliminate these false positives.
+</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="DLS" cweid="563">
+    <Description>Dead local store</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 14 Nov 2018 03:48:54 -0500" total_classes="1" referenced_classes="42" total_bugs="1" total_size="53" num_packages="1" java_version="1.8.0_121" vm_version="25.121-b13" cpu_seconds="7.56" clock_seconds="4.07" peak_mbytes="110.69" alloc_mbytes="1820.50" gc_seconds="0.04" priority_2="1">
+    <FileStats path="com/google/javascript/jscomp/CheckGlobalThis.java" bugCount="1" size="53" bugHash="0afdc0ceb2dafaa058488531c3176eb3"/>
+    <PackageStats package="com.google.javascript.jscomp" total_bugs="1" total_types="1" total_size="53" priority_2="1">
+      <ClassStats class="com.google.javascript.jscomp.CheckGlobalThis" sourceFile="CheckGlobalThis.java" interface="false" size="53" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="784" invocations="524" avgMicrosecondsPerInvocation="1497" maxMicrosecondsPerInvocation="19595" standardDeviationMicrosecondsPerInvocation="2436"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="625" invocations="523" avgMicrosecondsPerInvocation="1195" maxMicrosecondsPerInvocation="74762" standardDeviationMicrosecondsPerInvocation="4607"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="182" invocations="42" avgMicrosecondsPerInvocation="4356" maxMicrosecondsPerInvocation="37039" standardDeviationMicrosecondsPerInvocation="8019"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="145" invocations="64" avgMicrosecondsPerInvocation="2279" maxMicrosecondsPerInvocation="77775" standardDeviationMicrosecondsPerInvocation="10699"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="143" invocations="162" avgMicrosecondsPerInvocation="884" maxMicrosecondsPerInvocation="17276" standardDeviationMicrosecondsPerInvocation="2163"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="122" invocations="42" avgMicrosecondsPerInvocation="2906" maxMicrosecondsPerInvocation="26481" standardDeviationMicrosecondsPerInvocation="4970"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="94" invocations="490" avgMicrosecondsPerInvocation="193" maxMicrosecondsPerInvocation="17771" standardDeviationMicrosecondsPerInvocation="940"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="54" invocations="42" avgMicrosecondsPerInvocation="1307" maxMicrosecondsPerInvocation="12785" standardDeviationMicrosecondsPerInvocation="2427"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="52" invocations="1" avgMicrosecondsPerInvocation="52515" maxMicrosecondsPerInvocation="52515" standardDeviationMicrosecondsPerInvocation="0"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

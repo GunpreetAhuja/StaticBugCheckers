@@ -1,0 +1,9 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-30/src/com/google/javascript/jscomp/MustBeReachingVariableDef.java:78: warning: [EqualsHashCode] Classes that override equals should also override hashCode.
+    public boolean equals(Object other) {
+                   ^
+    (see http://errorprone.info/bugpattern/EqualsHashCode)
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-30/src/com/google/javascript/jscomp/MustBeReachingVariableDef.java:141: warning: [EqualsHashCode] Classes that override equals should also override hashCode.
+    public boolean equals(Object other) {
+                   ^
+    (see http://errorprone.info/bugpattern/EqualsHashCode)
+2 warnings

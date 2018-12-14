@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.1.0" sequence="0" timestamp="1542185262000" analysisTimestamp="1542185265108" release="">
+  <Project projectName="">
+    <Jar>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-21/source</Jar>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-21/build</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-21/lib/servlet.jar</AuxClasspathEntry>
+  </Project>
+  <BugInstance type="HE_EQUALS_USE_HASHCODE" priority="1" rank="14" abbrev="HE" category="BAD_PRACTICE" instanceHash="652897a5367fea75093c7494c7426750" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Class defines equals() and uses Object.hashCode()</ShortMessage>
+    <LongMessage>org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset defines equals and uses Object.hashCode()</LongMessage>
+    <Class classname="org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset" primary="true">
+      <SourceLine classname="org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset" start="106" end="774" sourcefile="DefaultBoxAndWhiskerCategoryDataset.java" sourcepath="org/jfree/data/statistics/DefaultBoxAndWhiskerCategoryDataset.java">
+        <Message>At DefaultBoxAndWhiskerCategoryDataset.java:[lines 106-774]</Message>
+      </SourceLine>
+      <Message>In class org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset</Message>
+    </Class>
+    <Method classname="org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false" primary="true">
+      <SourceLine classname="org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset" start="752" end="760" startBytecode="0" endBytecode="86" sourcefile="DefaultBoxAndWhiskerCategoryDataset.java" sourcepath="org/jfree/data/statistics/DefaultBoxAndWhiskerCategoryDataset.java"/>
+      <Message>In method org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset.equals(Object)</Message>
+    </Method>
+    <SourceLine classname="org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset" start="752" end="760" startBytecode="0" endBytecode="86" sourcefile="DefaultBoxAndWhiskerCategoryDataset.java" sourcepath="org/jfree/data/statistics/DefaultBoxAndWhiskerCategoryDataset.java" synthetic="true">
+      <Message>At DefaultBoxAndWhiskerCategoryDataset.java:[lines 752-760]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="BAD_PRACTICE">
+    <Description>Bad practice</Description>
+  </BugCategory>
+  <BugPattern type="HE_EQUALS_USE_HASHCODE" abbrev="HE" category="BAD_PRACTICE">
+    <ShortDescription>Class defines equals() and uses Object.hashCode()</ShortDescription>
+    <Details><![CDATA[
+
+  <p> This class overrides <code>equals(Object)</code>, but does not
+  override <code>hashCode()</code>, and inherits the implementation of
+  <code>hashCode()</code> from <code>java.lang.Object</code> (which returns
+  the identity hash code, an arbitrary value assigned to the object
+  by the VM).&nbsp; Therefore, the class is very likely to violate the
+  invariant that equal objects must have equal hashcodes.</p>
+
+<p>If you don't think instances of this class will ever be inserted into a HashMap/HashTable,
+the recommended <code>hashCode</code> implementation to use is:</p>
+<pre><code>public int hashCode() {
+    assert false : "hashCode not designed";
+    return 42; // any arbitrary constant will do
+}
+</code></pre>
+
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="HE">
+    <Description>Equal objects must have equal hashcodes</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 14 Nov 2018 03:47:42 -0500" total_classes="1" referenced_classes="40" total_bugs="1" total_size="208" num_packages="1" java_version="1.8.0_121" vm_version="25.121-b13" cpu_seconds="7.71" clock_seconds="4.19" peak_mbytes="114.16" alloc_mbytes="1820.50" gc_seconds="0.07" priority_1="1">
+    <FileStats path="org/jfree/data/statistics/DefaultBoxAndWhiskerCategoryDataset.java" bugCount="1" size="208" bugHash="bfb5013022b6e9d4d75cdf5f8bac1829"/>
+    <PackageStats package="org.jfree.data.statistics" total_bugs="1" total_types="1" total_size="208" priority_1="1">
+      <ClassStats class="org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset" sourceFile="DefaultBoxAndWhiskerCategoryDataset.java" interface="false" size="208" bugs="1" priority_1="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="652" invocations="432" avgMicrosecondsPerInvocation="1511" maxMicrosecondsPerInvocation="46581" standardDeviationMicrosecondsPerInvocation="3909"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="522" invocations="426" avgMicrosecondsPerInvocation="1226" maxMicrosecondsPerInvocation="31456" standardDeviationMicrosecondsPerInvocation="3594"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="210" invocations="40" avgMicrosecondsPerInvocation="5264" maxMicrosecondsPerInvocation="72586" standardDeviationMicrosecondsPerInvocation="13104"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="150" invocations="40" avgMicrosecondsPerInvocation="3757" maxMicrosecondsPerInvocation="31204" standardDeviationMicrosecondsPerInvocation="7780"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="128" invocations="163" avgMicrosecondsPerInvocation="786" maxMicrosecondsPerInvocation="25585" standardDeviationMicrosecondsPerInvocation="2409"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="122" invocations="387" avgMicrosecondsPerInvocation="315" maxMicrosecondsPerInvocation="12673" standardDeviationMicrosecondsPerInvocation="1124"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="120" invocations="38" avgMicrosecondsPerInvocation="3159" maxMicrosecondsPerInvocation="44437" standardDeviationMicrosecondsPerInvocation="8387"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="118" invocations="38" avgMicrosecondsPerInvocation="3130" maxMicrosecondsPerInvocation="78161" standardDeviationMicrosecondsPerInvocation="12628"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="98" invocations="38" avgMicrosecondsPerInvocation="2602" maxMicrosecondsPerInvocation="24502" standardDeviationMicrosecondsPerInvocation="5240"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="91" invocations="38" avgMicrosecondsPerInvocation="2410" maxMicrosecondsPerInvocation="64945" standardDeviationMicrosecondsPerInvocation="10313"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="69" invocations="38" avgMicrosecondsPerInvocation="1823" maxMicrosecondsPerInvocation="31144" standardDeviationMicrosecondsPerInvocation="5554"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="67" invocations="38" avgMicrosecondsPerInvocation="1772" maxMicrosecondsPerInvocation="61339" standardDeviationMicrosecondsPerInvocation="9794"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="64" invocations="40" avgMicrosecondsPerInvocation="1621" maxMicrosecondsPerInvocation="31794" standardDeviationMicrosecondsPerInvocation="5678"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="63" invocations="73" avgMicrosecondsPerInvocation="864" maxMicrosecondsPerInvocation="18942" standardDeviationMicrosecondsPerInvocation="3118"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

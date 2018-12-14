@@ -1,0 +1,16 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-40/src/com/google/javascript/jscomp/NameAnalyzer.java:112: warning: [MutableConstantField] Constant field declarations should use the immutable type (such as ImmutableList) instead of the general collection interface type (such as List)
+  static final Set<String> DEFAULT_GLOBAL_NAMES = ImmutableSet.of(
+                  ^
+    (see http://errorprone.info/bugpattern/MutableConstantField)
+  Did you mean 'static final ImmutableSet<String> DEFAULT_GLOBAL_NAMES = ImmutableSet.of('?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-40/src/com/google/javascript/jscomp/NameAnalyzer.java:372: warning: [ClassCanBeStatic] Inner class is non-static but does not reference enclosing class
+  private abstract class SpecialReferenceNode implements RefNode {
+                   ^
+    (see http://errorprone.info/bugpattern/ClassCanBeStatic)
+  Did you mean 'private abstract static class SpecialReferenceNode implements RefNode {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-40/src/com/google/javascript/jscomp/NameAnalyzer.java:820: warning: [OperatorPrecedence] Use grouping parenthesis to make the operator precedence explicit
+            NodeUtil.isGet(n) && !parent.isGetProp())) {
+                              ^
+    (see http://errorprone.info/bugpattern/OperatorPrecedence)
+  Did you mean '(NodeUtil.isGet(n) && !parent.isGetProp()))) {'?
+3 warnings

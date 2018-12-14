@@ -1,0 +1,282 @@
+[
+    {
+        " Proj": "Chart-21",
+        "Class": "org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset",
+        " Type": "warning",
+        "  Cat": "EqualsHashCode",
+        "  Msg": "Classes that override equals should also override hashCode.",
+        " Code": "    public boolean equals(Object obj) {",
+        " Mark": "                   ^",
+        " Line": 751
+    },
+    {
+        " Proj": "Chart-21",
+        "Class": "org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset",
+        " Type": "warning",
+        "  Cat": "MissingOverride",
+        "  Msg": "equals overrides method in Object; expected @Override",
+        " Code": "    public boolean equals(Object obj) {",
+        " Mark": "                   ^",
+        " Line": 751
+    },
+    {
+        " Proj": "Chart-21",
+        "Class": "org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset",
+        " Type": "warning",
+        "  Cat": "MissingOverride",
+        "  Msg": "clone implements method in PublicCloneable; expected @Override",
+        " Code": "    public Object clone() throws CloneNotSupportedException {",
+        " Mark": "                  ^",
+        " Line": 770
+    },
+    {
+        " Proj": "Chart-23",
+        "Class": "org.jfree.chart.renderer.category.MinMaxCategoryRenderer",
+        " Type": "warning",
+        "  Cat": "MissingOverride",
+        "  Msg": "paintIcon implements method in Icon; expected @Override",
+        " Code": "          public void paintIcon(Component c, Graphics g, int x, int y) {",
+        " Mark": "                      ^",
+        " Line": 452
+    },
+    {
+        " Proj": "Chart-8",
+        "Class": "org.jfree.data.time.Week",
+        " Type": "error",
+        "  Cat": "ChainingConstructorIgnoresParameter",
+        "  Msg": "The called constructor accepts a parameter with the same name and type as one of its caller's parameters, but its caller doesn't pass that parameter to it.  It's likely that it was intended to.",
+        " Code": "        this(time, RegularTimePeriod.DEFAULT_TIME_ZONE, Locale.getDefault());",
+        " Mark": "            ^",
+        " Line": 175
+    },
+    {
+        " Proj": "Lang-51",
+        "Class": "org.apache.commons.lang.BooleanUtils",
+        " Type": "error",
+        "  Cat": "FallThrough",
+        "  Msg": "Execution may fall through from the previous case; add a `// fall through` comment before this line if it was deliberate",
+        " Code": "            case 4: {",
+        " Mark": "            ^",
+        " Line": 683
+    },
+    {
+        " Proj": "Lang-64",
+        "Class": "org.apache.commons.lang.enums.ValuedEnum",
+        " Type": "warning",
+        "  Cat": "MissingOverride",
+        "  Msg": "compareTo overrides method in Enum; expected @Override",
+        " Code": "    public int compareTo(Object other) {",
+        " Mark": "               ^",
+        " Line": 182
+    },
+    {
+        " Proj": "Lang-64",
+        "Class": "org.apache.commons.lang.enums.ValuedEnum",
+        " Type": "warning",
+        "  Cat": "MissingOverride",
+        "  Msg": "toString overrides method in Enum; expected @Override",
+        " Code": "    public String toString() {",
+        " Mark": "                  ^",
+        " Line": 203
+    },
+    {
+        " Proj": "Math-102",
+        "Class": "org.apache.commons.math.stat.inference.ChiSquareTestImpl",
+        " Type": "warning",
+        "  Cat": "MissingOverride",
+        "  Msg": "chiSquareTest implements method in ChiSquareTest; expected @Override",
+        " Code": "    public double chiSquareTest(double[] expected, long[] observed)",
+        " Mark": "                  ^",
+        " Line": 95
+    },
+    {
+        " Proj": "Math-103",
+        "Class": "org.apache.commons.math.distribution.NormalDistributionImpl",
+        " Type": "warning",
+        "  Cat": "MissingOverride",
+        "  Msg": "cumulativeProbability implements method in Distribution; expected @Override",
+        " Code": "    public double cumulativeProbability(double x) throws MathException {",
+        " Mark": "                  ^",
+        " Line": 108
+    },
+    {
+        " Proj": "Math-17",
+        "Class": "org.apache.commons.math3.dfp.Dfp",
+        " Type": "warning",
+        "  Cat": "MissingOverride",
+        "  Msg": "multiply implements method in FieldElement; expected @Override",
+        " Code": "    public Dfp multiply(final int x) {",
+        " Mark": "               ^",
+        " Line": 1602
+    },
+    {
+        " Proj": "Math-66",
+        "Class": "org.apache.commons.math.optimization.univariate.BrentOptimizer",
+        " Type": "warning",
+        "  Cat": "MissingOverride",
+        "  Msg": "optimize overrides method in AbstractUnivariateRealOptimizer; expected @Override",
+        " Code": "    public double optimize(final UnivariateRealFunction f, final GoalType goalType, final double min, final double max, final double startValue) throws MaxIterationsExceededException, FunctionEvaluationException {",
+        " Mark": "                  ^",
+        " Line": 59
+    },
+    {
+        " Proj": "Math-66",
+        "Class": "org.apache.commons.math.optimization.univariate.BrentOptimizer",
+        " Type": "warning",
+        "  Cat": "MissingOverride",
+        "  Msg": "optimize overrides method in AbstractUnivariateRealOptimizer; expected @Override",
+        " Code": "    public double optimize(final UnivariateRealFunction f, final GoalType goalType, final double min, final double max) throws MaxIterationsExceededException, FunctionEvaluationException {",
+        " Mark": "                  ^",
+        " Line": 65
+    },
+    {
+        " Proj": "Math-77",
+        "Class": "org.apache.commons.math.linear.OpenMapRealVector",
+        " Type": "warning",
+        "  Cat": "MissingOverride",
+        "  Msg": "getLInfNorm overrides method in AbstractRealVector; expected @Override",
+        " Code": "    public double getLInfNorm() {",
+        " Mark": "                  ^",
+        " Line": 498
+    },
+    {
+        " Proj": "Math-78",
+        "Class": "org.apache.commons.math.ode.events.EventState",
+        " Type": "warning",
+        "  Cat": "MissingOverride",
+        "  Msg": "value implements method in UnivariateRealFunction; expected @Override",
+        " Code": "                        public double value(final double t) throws FunctionEvaluationException {",
+        " Mark": "                                      ^",
+        " Line": 204
+    },
+    {
+        " Proj": "Mockito-17",
+        "Class": "org.mockito.internal.creation.MockSettingsImpl",
+        " Type": "warning",
+        "  Cat": "MissingOverride",
+        "  Msg": "serializable implements method in MockSettings; expected @Override",
+        " Code": "    public MockSettings serializable() {",
+        " Mark": "                        ^",
+        " Line": 21
+    },
+    {
+        " Proj": "Mockito-17",
+        "Class": "org.mockito.internal.creation.MockSettingsImpl",
+        " Type": "warning",
+        "  Cat": "MissingOverride",
+        "  Msg": "extraInterfaces implements method in MockSettings; expected @Override",
+        " Code": "    public MockSettings extraInterfaces(Class<?>... extraInterfaces) {",
+        " Mark": "                        ^",
+        " Line": 25
+    },
+    {
+        " Proj": "Mockito-19",
+        "Class": "org.mockito.internal.configuration.injection.filter.FinalMockCandidateFilter",
+        " Type": "warning",
+        "  Cat": "MissingOverride",
+        "  Msg": "filterCandidate implements method in MockCandidateFilter; expected @Override",
+        " Code": "    public OngoingInjecter filterCandidate(final Collection<Object> mocks, final Field field, final Object fieldInstance) {",
+        " Mark": "                           ^",
+        " Line": 23
+    },
+    {
+        " Proj": "Mockito-19",
+        "Class": "org.mockito.internal.configuration.injection.filter.TypeBasedCandidateFilter",
+        " Type": "warning",
+        "  Cat": "MissingOverride",
+        "  Msg": "filterCandidate implements method in MockCandidateFilter; expected @Override",
+        " Code": "    public OngoingInjecter filterCandidate(Collection<Object> mocks, Field field, Object fieldInstance) {",
+        " Mark": "                           ^",
+        " Line": 20
+    },
+    {
+        " Proj": "Mockito-25",
+        "Class": "org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs",
+        " Type": "warning",
+        "  Cat": "MissingOverride",
+        "  Msg": "answer implements method in Answer; expected @Override",
+        " Code": "            public Object answer(InvocationOnMock invocation) throws Throwable {",
+        " Mark": "                          ^",
+        " Line": 86
+    },
+    {
+        " Proj": "Mockito-33",
+        "Class": "org.mockito.internal.invocation.InvocationMatcher",
+        " Type": "warning",
+        "  Cat": "MissingOverride",
+        "  Msg": "getLocation implements method in PrintableInvocation; expected @Override",
+        " Code": "    public Location getLocation() {",
+        " Mark": "                    ^",
+        " Line": 102
+    },
+    {
+        " Proj": "Mockito-33",
+        "Class": "org.mockito.internal.invocation.InvocationMatcher",
+        " Type": "warning",
+        "  Cat": "MissingOverride",
+        "  Msg": "toString implements method in PrintingFriendlyInvocation; expected @Override",
+        " Code": "    public String toString(PrintSettings printSettings) {",
+        " Mark": "                  ^",
+        " Line": 106
+    },
+    {
+        " Proj": "Mockito-33",
+        "Class": "org.mockito.internal.invocation.InvocationMatcher",
+        " Type": "warning",
+        "  Cat": "MissingOverride",
+        "  Msg": "captureArgumentsFrom implements method in CapturesArgumensFromInvocation; expected @Override",
+        " Code": "    public void captureArgumentsFrom(Invocation i) {",
+        " Mark": "                ^",
+        " Line": 110
+    },
+    {
+        " Proj": "Mockito-36",
+        "Class": "org.mockito.internal.invocation.Invocation",
+        " Type": "warning",
+        "  Cat": "MissingOverride",
+        "  Msg": "toString implements method in PrintingFriendlyInvocation; expected @Override",
+        " Code": "    public String toString(PrintSettings printSettings) {",
+        " Mark": "                  ^",
+        " Line": 205
+    },
+    {
+        " Proj": "Time-2",
+        "Class": "org.joda.time.field.UnsupportedDurationField",
+        " Type": "warning",
+        "  Cat": "MissingOverride",
+        "  Msg": "compareTo implements method in Comparable; expected @Override",
+        " Code": "    public int compareTo(DurationField durationField) {",
+        " Mark": "               ^",
+        " Line": 226
+    },
+    {
+        " Proj": "Time-3",
+        "Class": "org.joda.time.MutableDateTime",
+        " Type": "warning",
+        "  Cat": "MissingOverride",
+        "  Msg": "setDayOfYear implements method in ReadWritableDateTime; expected @Override",
+        " Code": "    public void setDayOfYear(final int dayOfYear) {",
+        " Mark": "                ^",
+        " Line": 733
+    },
+    {
+        " Proj": "Time-3",
+        "Class": "org.joda.time.MutableDateTime",
+        " Type": "warning",
+        "  Cat": "MissingOverride",
+        "  Msg": "setHourOfDay implements method in ReadWritableDateTime; expected @Override",
+        " Code": "    public void setHourOfDay(final int hourOfDay) {",
+        " Mark": "                ^",
+        " Line": 774
+    },
+    {
+        " Proj": "Time-6",
+        "Class": "org.joda.time.chrono.GJChronology",
+        " Type": "warning",
+        "  Cat": "MissingOverride",
+        "  Msg": "getDifference overrides method in CutoverField; expected @Override",
+        " Code": "        public int getDifference(long minuendInstant, long subtrahendInstant) {",
+        " Mark": "                   ^",
+        " Line": 1017
+    }
+]

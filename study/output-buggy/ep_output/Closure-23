@@ -1,0 +1,16 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-23/src/com/google/javascript/jscomp/PeepholeFoldConstants.java:576: warning: [OperatorPrecedence] Use grouping parenthesis to make the operator precedence explicit
+      if (lval && type == Token.OR ||
+               ^
+    (see http://errorprone.info/bugpattern/OperatorPrecedence)
+  Did you mean 'if ((lval && type == Token.OR) ||'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-23/src/com/google/javascript/jscomp/PeepholeFoldConstants.java:577: warning: [OperatorPrecedence] Use grouping parenthesis to make the operator precedence explicit
+          !lval && type == Token.AND) {
+                ^
+    (see http://errorprone.info/bugpattern/OperatorPrecedence)
+  Did you mean '(!lval && type == Token.AND)) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-23/src/com/google/javascript/jscomp/PeepholeFoldConstants.java:1171: error: [MissingCasesInEnumSwitch] Non-exhaustive switch; either add a default or handle the remaining cases: UNKNOWN
+      switch (value) {
+      ^
+    (see http://errorprone.info/bugpattern/MissingCasesInEnumSwitch)
+1 error
+2 warnings

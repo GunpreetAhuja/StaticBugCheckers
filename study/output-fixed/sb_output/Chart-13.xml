@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.1.0" sequence="0" timestamp="1542189513000" analysisTimestamp="1542189515849" release="">
+  <Project projectName="">
+    <Jar>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Chart-13/source</Jar>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Chart-13/build</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Chart-13/lib/servlet.jar</AuxClasspathEntry>
+  </Project>
+  <BugInstance type="HE_EQUALS_USE_HASHCODE" priority="1" rank="14" abbrev="HE" category="BAD_PRACTICE" instanceHash="647274b48d88c16735c2a393479eb7d5" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Class defines equals() and uses Object.hashCode()</ShortMessage>
+    <LongMessage>org.jfree.chart.block.BorderArrangement defines equals and uses Object.hashCode()</LongMessage>
+    <Class classname="org.jfree.chart.block.BorderArrangement" primary="true">
+      <SourceLine classname="org.jfree.chart.block.BorderArrangement" start="86" end="532" sourcefile="BorderArrangement.java" sourcepath="org/jfree/chart/block/BorderArrangement.java">
+        <Message>At BorderArrangement.java:[lines 86-532]</Message>
+      </SourceLine>
+      <Message>In class org.jfree.chart.block.BorderArrangement</Message>
+    </Class>
+    <Method classname="org.jfree.chart.block.BorderArrangement" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false" primary="true">
+      <SourceLine classname="org.jfree.chart.block.BorderArrangement" start="510" end="532" startBytecode="0" endBytecode="206" sourcefile="BorderArrangement.java" sourcepath="org/jfree/chart/block/BorderArrangement.java"/>
+      <Message>In method org.jfree.chart.block.BorderArrangement.equals(Object)</Message>
+    </Method>
+    <SourceLine classname="org.jfree.chart.block.BorderArrangement" start="510" end="532" startBytecode="0" endBytecode="206" sourcefile="BorderArrangement.java" sourcepath="org/jfree/chart/block/BorderArrangement.java" synthetic="true">
+      <Message>At BorderArrangement.java:[lines 510-532]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="NP_NULL_ON_SOME_PATH" priority="2" rank="8" abbrev="NP" category="CORRECTNESS" instanceHash="47f73d2bcc8743114f4d62fa0503e67" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="476">
+    <ShortMessage>Possible null pointer dereference</ShortMessage>
+    <LongMessage>Possible null pointer dereference of ? in org.jfree.chart.block.BorderArrangement.arrange(BlockContainer, Graphics2D, RectangleConstraint)</LongMessage>
+    <Class classname="org.jfree.chart.block.BorderArrangement" primary="true">
+      <SourceLine classname="org.jfree.chart.block.BorderArrangement" start="86" end="532" sourcefile="BorderArrangement.java" sourcepath="org/jfree/chart/block/BorderArrangement.java">
+        <Message>At BorderArrangement.java:[lines 86-532]</Message>
+      </SourceLine>
+      <Message>In class org.jfree.chart.block.BorderArrangement</Message>
+    </Class>
+    <Method classname="org.jfree.chart.block.BorderArrangement" name="arrange" signature="(Lorg/jfree/chart/block/BlockContainer;Ljava/awt/Graphics2D;Lorg/jfree/chart/block/RectangleConstraint;)Lorg/jfree/chart/util/Size2D;" isStatic="false" primary="true">
+      <SourceLine classname="org.jfree.chart.block.BorderArrangement" start="131" end="170" startBytecode="0" endBytecode="442" sourcefile="BorderArrangement.java" sourcepath="org/jfree/chart/block/BorderArrangement.java"/>
+      <Message>In method org.jfree.chart.block.BorderArrangement.arrange(BlockContainer, Graphics2D, RectangleConstraint)</Message>
+    </Method>
+    <LocalVariable name="?" register="5" pc="71" role="LOCAL_VARIABLE_VALUE_OF">
+      <Message>Value loaded from ?</Message>
+    </LocalVariable>
+    <SourceLine classname="org.jfree.chart.block.BorderArrangement" primary="true" start="170" end="170" startBytecode="233" endBytecode="233" sourcefile="BorderArrangement.java" sourcepath="org/jfree/chart/block/BorderArrangement.java" role="SOURCE_LINE_DEREF">
+      <Message>Dereferenced at BorderArrangement.java:[line 170]</Message>
+    </SourceLine>
+    <SourceLine classname="org.jfree.chart.block.BorderArrangement" start="133" end="133" startBytecode="7" endBytecode="7" sourcefile="BorderArrangement.java" sourcepath="org/jfree/chart/block/BorderArrangement.java" role="SOURCE_LINE_NULL_VALUE">
+      <Message>Null value at BorderArrangement.java:[line 133]</Message>
+    </SourceLine>
+    <SourceLine classname="org.jfree.chart.block.BorderArrangement" start="143" end="143" startBytecode="74" endBytecode="74" sourcefile="BorderArrangement.java" sourcepath="org/jfree/chart/block/BorderArrangement.java" role="SOURCE_LINE_KNOWN_NULL">
+      <Message>Known null at BorderArrangement.java:[line 143]</Message>
+    </SourceLine>
+    <SourceLine classname="org.jfree.chart.block.BorderArrangement" start="154" end="154" startBytecode="143" endBytecode="143" sourcefile="BorderArrangement.java" sourcepath="org/jfree/chart/block/BorderArrangement.java" role="SOURCE_LINE_KNOWN_NULL">
+      <Message>Known null at BorderArrangement.java:[line 154]</Message>
+    </SourceLine>
+    <SourceLine classname="org.jfree.chart.block.BorderArrangement" start="158" end="158" startBytecode="163" endBytecode="163" sourcefile="BorderArrangement.java" sourcepath="org/jfree/chart/block/BorderArrangement.java" role="SOURCE_LINE_KNOWN_NULL">
+      <Message>Known null at BorderArrangement.java:[line 158]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.NullDerefProperty.LONG_RANGE_NULL_SOURCE" value="true"/>
+  </BugInstance>
+  <BugCategory category="BAD_PRACTICE">
+    <Description>Bad practice</Description>
+  </BugCategory>
+  <BugCategory category="CORRECTNESS">
+    <Description>Correctness</Description>
+  </BugCategory>
+  <BugPattern type="NP_NULL_ON_SOME_PATH" abbrev="NP" category="CORRECTNESS">
+    <ShortDescription>Possible null pointer dereference</ShortDescription>
+    <Details><![CDATA[
+
+<p> There is a branch of statement that, <em>if executed,</em>  guarantees that
+a null value will be dereferenced, which
+would generate a <code>NullPointerException</code> when the code is executed.
+Of course, the problem might be that the branch or statement is infeasible and that
+the null pointer exception can't ever be executed; deciding that is beyond the ability of SpotBugs.
+</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="HE_EQUALS_USE_HASHCODE" abbrev="HE" category="BAD_PRACTICE">
+    <ShortDescription>Class defines equals() and uses Object.hashCode()</ShortDescription>
+    <Details><![CDATA[
+
+  <p> This class overrides <code>equals(Object)</code>, but does not
+  override <code>hashCode()</code>, and inherits the implementation of
+  <code>hashCode()</code> from <code>java.lang.Object</code> (which returns
+  the identity hash code, an arbitrary value assigned to the object
+  by the VM).&nbsp; Therefore, the class is very likely to violate the
+  invariant that equal objects must have equal hashcodes.</p>
+
+<p>If you don't think instances of this class will ever be inserted into a HashMap/HashTable,
+the recommended <code>hashCode</code> implementation to use is:</p>
+<pre><code>public int hashCode() {
+    assert false : "hashCode not designed";
+    return 42; // any arbitrary constant will do
+}
+</code></pre>
+
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="NP" cweid="476">
+    <Description>Null pointer dereference</Description>
+  </BugCode>
+  <BugCode abbrev="HE">
+    <Description>Equal objects must have equal hashcodes</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 14 Nov 2018 04:58:33 -0500" total_classes="1" referenced_classes="25" total_bugs="2" total_size="246" num_packages="1" java_version="1.8.0_121" vm_version="25.121-b13" cpu_seconds="8.14" clock_seconds="4.37" peak_mbytes="114.00" alloc_mbytes="1820.50" gc_seconds="0.07" priority_2="1" priority_1="1">
+    <FileStats path="org/jfree/chart/block/BorderArrangement.java" bugCount="2" size="246" bugHash="7161e2881bff2abfd086214c87784430"/>
+    <PackageStats package="org.jfree.chart.block" total_bugs="2" total_types="1" total_size="246" priority_2="1" priority_1="1">
+      <ClassStats class="org.jfree.chart.block.BorderArrangement" sourceFile="BorderArrangement.java" interface="false" size="246" bugs="2" priority_2="1" priority_1="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="479" invocations="364" avgMicrosecondsPerInvocation="1316" maxMicrosecondsPerInvocation="50895" standardDeviationMicrosecondsPerInvocation="4384"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="439" invocations="367" avgMicrosecondsPerInvocation="1197" maxMicrosecondsPerInvocation="21616" standardDeviationMicrosecondsPerInvocation="2401"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="151" invocations="10" avgMicrosecondsPerInvocation="15194" maxMicrosecondsPerInvocation="82573" standardDeviationMicrosecondsPerInvocation="23487"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="144" invocations="10" avgMicrosecondsPerInvocation="14466" maxMicrosecondsPerInvocation="37675" standardDeviationMicrosecondsPerInvocation="12683"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="130" invocations="73" avgMicrosecondsPerInvocation="1790" maxMicrosecondsPerInvocation="29523" standardDeviationMicrosecondsPerInvocation="4618"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="130" invocations="10" avgMicrosecondsPerInvocation="13034" maxMicrosecondsPerInvocation="46335" standardDeviationMicrosecondsPerInvocation="16245"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="128" invocations="25" avgMicrosecondsPerInvocation="5122" maxMicrosecondsPerInvocation="44139" standardDeviationMicrosecondsPerInvocation="9544"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="108" invocations="49" avgMicrosecondsPerInvocation="2222" maxMicrosecondsPerInvocation="44561" standardDeviationMicrosecondsPerInvocation="7117"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="107" invocations="10" avgMicrosecondsPerInvocation="10744" maxMicrosecondsPerInvocation="24850" standardDeviationMicrosecondsPerInvocation="9729"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="106" invocations="331" avgMicrosecondsPerInvocation="322" maxMicrosecondsPerInvocation="24623" standardDeviationMicrosecondsPerInvocation="1628"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="93" invocations="10" avgMicrosecondsPerInvocation="9328" maxMicrosecondsPerInvocation="20415" standardDeviationMicrosecondsPerInvocation="8073"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="82" invocations="10" avgMicrosecondsPerInvocation="8299" maxMicrosecondsPerInvocation="65683" standardDeviationMicrosecondsPerInvocation="19256"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="69" invocations="25" avgMicrosecondsPerInvocation="2793" maxMicrosecondsPerInvocation="15974" standardDeviationMicrosecondsPerInvocation="3610"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="59" invocations="25" avgMicrosecondsPerInvocation="2382" maxMicrosecondsPerInvocation="29453" standardDeviationMicrosecondsPerInvocation="6419"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="58" invocations="10" avgMicrosecondsPerInvocation="5804" maxMicrosecondsPerInvocation="18069" standardDeviationMicrosecondsPerInvocation="4825"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="55" invocations="25" avgMicrosecondsPerInvocation="2224" maxMicrosecondsPerInvocation="17880" standardDeviationMicrosecondsPerInvocation="4062"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="48" invocations="25" avgMicrosecondsPerInvocation="1959" maxMicrosecondsPerInvocation="11469" standardDeviationMicrosecondsPerInvocation="3690"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="45" invocations="10" avgMicrosecondsPerInvocation="4513" maxMicrosecondsPerInvocation="21876" standardDeviationMicrosecondsPerInvocation="6731"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="43" invocations="25" avgMicrosecondsPerInvocation="1724" maxMicrosecondsPerInvocation="26815" standardDeviationMicrosecondsPerInvocation="5440"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

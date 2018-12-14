@@ -1,0 +1,26 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Mockito-17/src/org/mockito/internal/creation/MockSettingsImpl.java:21: warning: [MissingOverride] serializable implements method in MockSettings; expected @Override
+    public MockSettings serializable() {
+                        ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public MockSettings serializable() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Mockito-17/src/org/mockito/internal/creation/MockSettingsImpl.java:25: warning: [MissingOverride] extraInterfaces implements method in MockSettings; expected @Override
+    public MockSettings extraInterfaces(Class<?>... extraInterfaces) {
+                        ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public MockSettings extraInterfaces(Class<?>... extraInterfaces) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Mockito-17/src/org/mockito/internal/creation/MockSettingsImpl.java:53: warning: [MissingOverride] name implements method in MockSettings; expected @Override
+    public MockSettings name(String name) {
+                        ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public MockSettings name(String name) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Mockito-17/src/org/mockito/internal/creation/MockSettingsImpl.java:58: warning: [MissingOverride] spiedInstance implements method in MockSettings; expected @Override
+    public MockSettings spiedInstance(Object spiedInstance) {
+                        ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public MockSettings spiedInstance(Object spiedInstance) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Mockito-17/src/org/mockito/internal/creation/MockSettingsImpl.java:64: warning: [MissingOverride] defaultAnswer implements method in MockSettings; expected @Override
+    public MockSettings defaultAnswer(Answer defaultAnswer) {
+                        ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override @SuppressWarnings("unchecked")'?
+5 warnings

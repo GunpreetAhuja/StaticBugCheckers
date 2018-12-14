@@ -1,0 +1,6 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-75/src/main/java/org/apache/commons/math/stat/Frequency.java:560: warning: [MissingOverride] compare implements method in Comparator; expected @Override
+        public int compare(Comparable<T> o1, Comparable<T> o2) {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override @SuppressWarnings("unchecked")'?
+1 warning

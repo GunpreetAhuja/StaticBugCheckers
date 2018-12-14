@@ -1,0 +1,18 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Lang-63/src/java/org/apache/commons/lang/time/DurationFormatUtils.java:593: warning: [MissingOverride] equals overrides method in Object; expected @Override
+        public boolean equals(Object obj2) {
+                       ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public boolean equals(Object obj2) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Lang-63/src/java/org/apache/commons/lang/time/DurationFormatUtils.java:621: warning: [MissingOverride] hashCode overrides method in Object; expected @Override
+        public int hashCode() {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int hashCode() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Lang-63/src/java/org/apache/commons/lang/time/DurationFormatUtils.java:630: warning: [MissingOverride] toString overrides method in Object; expected @Override
+        public String toString() {
+                      ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public String toString() {'?
+Note: /Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Lang-63/src/java/org/apache/commons/lang/time/DurationFormatUtils.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+3 warnings

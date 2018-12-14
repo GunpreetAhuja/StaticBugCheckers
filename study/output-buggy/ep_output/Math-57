@@ -1,0 +1,6 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-57/src/main/java/org/apache/commons/math/stat/clustering/KMeansPlusPlusClusterer.java:180: warning: [NarrowingCompoundAssignment] Compound assignments from double to int hide lossy casts
+                sum += d * d;
+                    ^
+    (see http://errorprone.info/bugpattern/NarrowingCompoundAssignment)
+  Did you mean 'sum = (int) (sum + d * d);'?
+1 warning

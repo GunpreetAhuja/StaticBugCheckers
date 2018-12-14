@@ -1,0 +1,11 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-9/src/main/java/org/apache/commons/math3/geometry/euclidean/threed/Line.java:127: warning: [MissingOverride] toSubSpace implements method in Embedding; expected @Override
+    public Vector1D toSubSpace(final Vector<Euclidean3D> point) {
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Vector1D toSubSpace(final Vector<Euclidean3D> point) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-9/src/main/java/org/apache/commons/math3/geometry/euclidean/threed/Line.java:134: warning: [MissingOverride] toSpace implements method in Embedding; expected @Override
+    public Vector3D toSpace(final Vector<Euclidean1D> point) {
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Vector3D toSpace(final Vector<Euclidean1D> point) {'?
+2 warnings

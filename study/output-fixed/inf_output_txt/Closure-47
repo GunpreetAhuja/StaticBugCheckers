@@ -1,0 +1,14 @@
+No issues found
+Found 1 issue
+
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-47/src/com/google/debugging/sourcemap/SourceMapConsumerV3.java:526: error: NULL_DEREFERENCE
+  object `lineToCollectionMap` last assigned on line 522 could be null and is dereferenced at line 526.
+  524.               int sourceLine = entry.getSourceLine();
+  525.   
+  526. >             if (!lineToCollectionMap.containsKey(sourceLine)) {
+  527.                 lineToCollectionMap.put(sourceLine,
+  528.                     new ArrayList<OriginalMapping>(1));
+
+Summary of the reports
+
+  NULL_DEREFERENCE: 1

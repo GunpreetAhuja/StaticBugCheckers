@@ -1,0 +1,11 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-117/src/com/google/javascript/jscomp/TypeValidator.java:544: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+        varType != typeRegistry.getNativeType(UNKNOWN_TYPE) &&
+                ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean '!varType.equals(typeRegistry.getNativeType(UNKNOWN_TYPE)) &&'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-117/src/com/google/javascript/jscomp/TypeValidator.java:546: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+        newType != typeRegistry.getNativeType(UNKNOWN_TYPE)) {
+                ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean '!newType.equals(typeRegistry.getNativeType(UNKNOWN_TYPE))) {'?
+2 warnings

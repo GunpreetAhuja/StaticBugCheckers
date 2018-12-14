@@ -1,0 +1,13 @@
+Found 1 issue
+
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-67/src/com/google/javascript/jscomp/AnalyzePrototypeProperties.java:298: error: NULL_DEREFERENCE
+  object `def` last assigned on line 290 could be null and is dereferenced at line 298.
+  296.           }
+  297.         }
+  298. >       if (!def.equals(info)) {
+  299.           symbolGraph.connect(def, module, info);
+  300.         }
+
+Summary of the reports
+
+  NULL_DEREFERENCE: 1

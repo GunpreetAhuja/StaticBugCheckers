@@ -1,0 +1,170 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-21/source/org/jfree/data/statistics/DefaultBoxAndWhiskerCategoryDataset.java:751: warning: [EqualsHashCode] Classes that override equals should also override hashCode.
+    public boolean equals(Object obj) {
+                   ^
+    (see http://errorprone.info/bugpattern/EqualsHashCode)
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-21/source/org/jfree/data/statistics/DefaultBoxAndWhiskerCategoryDataset.java:218: warning: [MissingOverride] getValue implements method in Values2D; expected @Override
+    public Number getValue(int row, int column) {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Number getValue(int row, int column) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-21/source/org/jfree/data/statistics/DefaultBoxAndWhiskerCategoryDataset.java:233: warning: [MissingOverride] getValue implements method in KeyedValues2D; expected @Override
+    public Number getValue(Comparable rowKey, Comparable columnKey) {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Number getValue(Comparable rowKey, Comparable columnKey) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-21/source/org/jfree/data/statistics/DefaultBoxAndWhiskerCategoryDataset.java:247: warning: [MissingOverride] getMeanValue implements method in BoxAndWhiskerCategoryDataset; expected @Override
+    public Number getMeanValue(int row, int column) {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Number getMeanValue(int row, int column) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-21/source/org/jfree/data/statistics/DefaultBoxAndWhiskerCategoryDataset.java:269: warning: [MissingOverride] getMeanValue implements method in BoxAndWhiskerCategoryDataset; expected @Override
+    public Number getMeanValue(Comparable rowKey, Comparable columnKey) {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Number getMeanValue(Comparable rowKey, Comparable columnKey) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-21/source/org/jfree/data/statistics/DefaultBoxAndWhiskerCategoryDataset.java:289: warning: [MissingOverride] getMedianValue implements method in BoxAndWhiskerCategoryDataset; expected @Override
+    public Number getMedianValue(int row, int column) {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Number getMedianValue(int row, int column) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-21/source/org/jfree/data/statistics/DefaultBoxAndWhiskerCategoryDataset.java:309: warning: [MissingOverride] getMedianValue implements method in BoxAndWhiskerCategoryDataset; expected @Override
+    public Number getMedianValue(Comparable rowKey, Comparable columnKey) {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Number getMedianValue(Comparable rowKey, Comparable columnKey) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-21/source/org/jfree/data/statistics/DefaultBoxAndWhiskerCategoryDataset.java:329: warning: [MissingOverride] getQ1Value implements method in BoxAndWhiskerCategoryDataset; expected @Override
+    public Number getQ1Value(int row, int column) {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Number getQ1Value(int row, int column) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-21/source/org/jfree/data/statistics/DefaultBoxAndWhiskerCategoryDataset.java:349: warning: [MissingOverride] getQ1Value implements method in BoxAndWhiskerCategoryDataset; expected @Override
+    public Number getQ1Value(Comparable rowKey, Comparable columnKey) {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Number getQ1Value(Comparable rowKey, Comparable columnKey) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-21/source/org/jfree/data/statistics/DefaultBoxAndWhiskerCategoryDataset.java:369: warning: [MissingOverride] getQ3Value implements method in BoxAndWhiskerCategoryDataset; expected @Override
+    public Number getQ3Value(int row, int column) {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Number getQ3Value(int row, int column) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-21/source/org/jfree/data/statistics/DefaultBoxAndWhiskerCategoryDataset.java:389: warning: [MissingOverride] getQ3Value implements method in BoxAndWhiskerCategoryDataset; expected @Override
+    public Number getQ3Value(Comparable rowKey, Comparable columnKey) {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Number getQ3Value(Comparable rowKey, Comparable columnKey) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-21/source/org/jfree/data/statistics/DefaultBoxAndWhiskerCategoryDataset.java:408: warning: [MissingOverride] getColumnIndex implements method in KeyedValues2D; expected @Override
+    public int getColumnIndex(Comparable key) {
+               ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int getColumnIndex(Comparable key) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-21/source/org/jfree/data/statistics/DefaultBoxAndWhiskerCategoryDataset.java:421: warning: [MissingOverride] getColumnKey implements method in KeyedValues2D; expected @Override
+    public Comparable getColumnKey(int column) {
+                      ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Comparable getColumnKey(int column) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-21/source/org/jfree/data/statistics/DefaultBoxAndWhiskerCategoryDataset.java:432: warning: [MissingOverride] getColumnKeys implements method in KeyedValues2D; expected @Override
+    public List getColumnKeys() {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public List getColumnKeys() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-21/source/org/jfree/data/statistics/DefaultBoxAndWhiskerCategoryDataset.java:445: warning: [MissingOverride] getRowIndex implements method in KeyedValues2D; expected @Override
+    public int getRowIndex(Comparable key) {
+               ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int getRowIndex(Comparable key) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-21/source/org/jfree/data/statistics/DefaultBoxAndWhiskerCategoryDataset.java:458: warning: [MissingOverride] getRowKey implements method in KeyedValues2D; expected @Override
+    public Comparable getRowKey(int row) {
+                      ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Comparable getRowKey(int row) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-21/source/org/jfree/data/statistics/DefaultBoxAndWhiskerCategoryDataset.java:469: warning: [MissingOverride] getRowKeys implements method in KeyedValues2D; expected @Override
+    public List getRowKeys() {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public List getRowKeys() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-21/source/org/jfree/data/statistics/DefaultBoxAndWhiskerCategoryDataset.java:480: warning: [MissingOverride] getRowCount implements method in Values2D; expected @Override
+    public int getRowCount() {
+               ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int getRowCount() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-21/source/org/jfree/data/statistics/DefaultBoxAndWhiskerCategoryDataset.java:491: warning: [MissingOverride] getColumnCount implements method in Values2D; expected @Override
+    public int getColumnCount() {
+               ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int getColumnCount() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-21/source/org/jfree/data/statistics/DefaultBoxAndWhiskerCategoryDataset.java:505: warning: [MissingOverride] getRangeLowerBound implements method in RangeInfo; expected @Override
+    public double getRangeLowerBound(boolean includeInterval) {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double getRangeLowerBound(boolean includeInterval) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-21/source/org/jfree/data/statistics/DefaultBoxAndWhiskerCategoryDataset.java:519: warning: [MissingOverride] getRangeUpperBound implements method in RangeInfo; expected @Override
+    public double getRangeUpperBound(boolean includeInterval) {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double getRangeUpperBound(boolean includeInterval) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-21/source/org/jfree/data/statistics/DefaultBoxAndWhiskerCategoryDataset.java:531: warning: [MissingOverride] getRangeBounds implements method in RangeInfo; expected @Override
+    public Range getRangeBounds(boolean includeInterval) {
+                 ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Range getRangeBounds(boolean includeInterval) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-21/source/org/jfree/data/statistics/DefaultBoxAndWhiskerCategoryDataset.java:545: warning: [MissingOverride] getMinRegularValue implements method in BoxAndWhiskerCategoryDataset; expected @Override
+    public Number getMinRegularValue(int row, int column) {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Number getMinRegularValue(int row, int column) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-21/source/org/jfree/data/statistics/DefaultBoxAndWhiskerCategoryDataset.java:565: warning: [MissingOverride] getMinRegularValue implements method in BoxAndWhiskerCategoryDataset; expected @Override
+    public Number getMinRegularValue(Comparable rowKey, Comparable columnKey) {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Number getMinRegularValue(Comparable rowKey, Comparable columnKey) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-21/source/org/jfree/data/statistics/DefaultBoxAndWhiskerCategoryDataset.java:585: warning: [MissingOverride] getMaxRegularValue implements method in BoxAndWhiskerCategoryDataset; expected @Override
+    public Number getMaxRegularValue(int row, int column) {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Number getMaxRegularValue(int row, int column) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-21/source/org/jfree/data/statistics/DefaultBoxAndWhiskerCategoryDataset.java:605: warning: [MissingOverride] getMaxRegularValue implements method in BoxAndWhiskerCategoryDataset; expected @Override
+    public Number getMaxRegularValue(Comparable rowKey, Comparable columnKey) {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Number getMaxRegularValue(Comparable rowKey, Comparable columnKey) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-21/source/org/jfree/data/statistics/DefaultBoxAndWhiskerCategoryDataset.java:625: warning: [MissingOverride] getMinOutlier implements method in BoxAndWhiskerCategoryDataset; expected @Override
+    public Number getMinOutlier(int row, int column) {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Number getMinOutlier(int row, int column) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-21/source/org/jfree/data/statistics/DefaultBoxAndWhiskerCategoryDataset.java:645: warning: [MissingOverride] getMinOutlier implements method in BoxAndWhiskerCategoryDataset; expected @Override
+    public Number getMinOutlier(Comparable rowKey, Comparable columnKey) {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Number getMinOutlier(Comparable rowKey, Comparable columnKey) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-21/source/org/jfree/data/statistics/DefaultBoxAndWhiskerCategoryDataset.java:665: warning: [MissingOverride] getMaxOutlier implements method in BoxAndWhiskerCategoryDataset; expected @Override
+    public Number getMaxOutlier(int row, int column) {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Number getMaxOutlier(int row, int column) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-21/source/org/jfree/data/statistics/DefaultBoxAndWhiskerCategoryDataset.java:685: warning: [MissingOverride] getMaxOutlier implements method in BoxAndWhiskerCategoryDataset; expected @Override
+    public Number getMaxOutlier(Comparable rowKey, Comparable columnKey) {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Number getMaxOutlier(Comparable rowKey, Comparable columnKey) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-21/source/org/jfree/data/statistics/DefaultBoxAndWhiskerCategoryDataset.java:705: warning: [MissingOverride] getOutliers implements method in BoxAndWhiskerCategoryDataset; expected @Override
+    public List getOutliers(int row, int column) {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public List getOutliers(int row, int column) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-21/source/org/jfree/data/statistics/DefaultBoxAndWhiskerCategoryDataset.java:725: warning: [MissingOverride] getOutliers implements method in BoxAndWhiskerCategoryDataset; expected @Override
+    public List getOutliers(Comparable rowKey, Comparable columnKey) {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public List getOutliers(Comparable rowKey, Comparable columnKey) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-21/source/org/jfree/data/statistics/DefaultBoxAndWhiskerCategoryDataset.java:751: warning: [MissingOverride] equals overrides method in Object; expected @Override
+    public boolean equals(Object obj) {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public boolean equals(Object obj) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-21/source/org/jfree/data/statistics/DefaultBoxAndWhiskerCategoryDataset.java:770: warning: [MissingOverride] clone implements method in PublicCloneable; expected @Override
+    public Object clone() throws CloneNotSupportedException {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Object clone() throws CloneNotSupportedException {'?
+34 warnings

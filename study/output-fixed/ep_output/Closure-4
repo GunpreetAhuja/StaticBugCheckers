@@ -1,0 +1,6 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-4/src/com/google/javascript/rhino/jstype/NamedType.java:323: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+        ((EnumElementType) referencedType).getPrimitiveType() == this) {
+                                                              ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'Objects.equals(((EnumElementType) referencedType).getPrimitiveType(), this)) {' or '((EnumElementType) referencedType).getPrimitiveType().equals(this)) {'?
+1 warning

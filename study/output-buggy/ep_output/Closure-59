@@ -1,0 +1,66 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-59/src/com/google/javascript/jscomp/Compiler.java:68: warning: [JavaLangClash] com.google.javascript.jscomp.Compiler clashes with java.lang.Compiler
+public class Compiler extends AbstractCompiler {
+       ^
+  
+    (see http://errorprone.info/bugpattern/JavaLangClash)
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-59/src/com/google/javascript/jscomp/Compiler.java:556: warning: [MissingOverride] call implements method in Callable; expected @Override
+      public Result call() throws Exception {
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Result call() throws Exception {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-59/src/com/google/javascript/jscomp/Compiler.java:593: warning: [MissingOverride] run implements method in Runnable; expected @Override
+      public void run() {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void run() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-59/src/com/google/javascript/jscomp/Compiler.java:614: warning: [ThreadJoinLoop] Thread.join needs to be surrounded by a loop until it succeeds, as in Uninterruptibles.joinUninterruptibly.
+          th.join();
+                 ^
+    (see http://errorprone.info/bugpattern/ThreadJoinLoop)
+  Did you mean 'Uninterruptibles.joinUninterruptibly(th);'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-59/src/com/google/javascript/jscomp/Compiler.java:936: warning: [MissingOverride] get implements method in Supplier; expected @Override
+      public String get() {
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public String get() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-59/src/com/google/javascript/jscomp/Compiler.java:1321: warning: [MissingOverride] call implements method in Callable; expected @Override
+      public String call() throws Exception {
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public String call() throws Exception {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-59/src/com/google/javascript/jscomp/Compiler.java:1346: warning: [MissingOverride] call implements method in Callable; expected @Override
+      public String[] call() throws Exception {
+                      ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public String[] call() throws Exception {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-59/src/com/google/javascript/jscomp/Compiler.java:1371: warning: [MissingOverride] call implements method in Callable; expected @Override
+      public String call() throws Exception {
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public String call() throws Exception {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-59/src/com/google/javascript/jscomp/Compiler.java:1397: warning: [MissingOverride] call implements method in Callable; expected @Override
+      public String[] call() throws Exception {
+                      ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public String[] call() throws Exception {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-59/src/com/google/javascript/jscomp/Compiler.java:1433: warning: [MissingOverride] call implements method in Callable; expected @Override
+      public Void call() throws Exception {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Void call() throws Exception {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-59/src/com/google/javascript/jscomp/Compiler.java:1712: error: [MissingCasesInEnumSwitch] Non-exhaustive switch; either add a default or handle the remaining cases: ECMASCRIPT3
+    switch (options.getLanguageIn()) {
+    ^
+    (see http://errorprone.info/bugpattern/MissingCasesInEnumSwitch)
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-59/src/com/google/javascript/jscomp/Compiler.java:1859: warning: [MissingOverride] getSourceLine implements method in SourceExcerptProvider; expected @Override
+  public String getSourceLine(String sourceName, int lineNumber) {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public String getSourceLine(String sourceName, int lineNumber) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-59/src/com/google/javascript/jscomp/Compiler.java:1870: warning: [MissingOverride] getSourceRegion implements method in SourceExcerptProvider; expected @Override
+  public Region getSourceRegion(String sourceName, int lineNumber) {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Region getSourceRegion(String sourceName, int lineNumber) {'?
+1 error
+12 warnings

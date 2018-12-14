@@ -1,0 +1,76 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-80/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java:254: warning: [MissingOverride] getV implements method in EigenDecomposition; expected @Override
+    public RealMatrix getV()
+                      ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public RealMatrix getV()'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-80/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java:277: warning: [MissingOverride] getD implements method in EigenDecomposition; expected @Override
+    public RealMatrix getD()
+                      ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public RealMatrix getD()'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-80/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java:287: warning: [MissingOverride] getVT implements method in EigenDecomposition; expected @Override
+    public RealMatrix getVT()
+                      ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public RealMatrix getVT()'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-80/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java:310: warning: [MissingOverride] getRealEigenvalues implements method in EigenDecomposition; expected @Override
+    public double[] getRealEigenvalues()
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double[] getRealEigenvalues()'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-80/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java:316: warning: [MissingOverride] getRealEigenvalue implements method in EigenDecomposition; expected @Override
+    public double getRealEigenvalue(final int i)
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double getRealEigenvalue(final int i)'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-80/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java:322: warning: [MissingOverride] getImagEigenvalues implements method in EigenDecomposition; expected @Override
+    public double[] getImagEigenvalues()
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double[] getImagEigenvalues()'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-80/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java:328: warning: [MissingOverride] getImagEigenvalue implements method in EigenDecomposition; expected @Override
+    public double getImagEigenvalue(final int i)
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double getImagEigenvalue(final int i)'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-80/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java:334: warning: [MissingOverride] getEigenvector implements method in EigenDecomposition; expected @Override
+    public RealVector getEigenvector(final int i)
+                      ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public RealVector getEigenvector(final int i)'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-80/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java:346: warning: [MissingOverride] getDeterminant implements method in EigenDecomposition; expected @Override
+    public double getDeterminant() {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double getDeterminant() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-80/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java:355: warning: [MissingOverride] getSolver implements method in EigenDecomposition; expected @Override
+    public DecompositionSolver getSolver() {
+                               ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public DecompositionSolver getSolver() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-80/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java:395: warning: [MissingOverride] solve implements method in DecompositionSolver; expected @Override
+        public double[] solve(final double[] b)
+                        ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double[] solve(final double[] b)'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-80/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java:431: warning: [MissingOverride] solve implements method in DecompositionSolver; expected @Override
+        public RealVector solve(final RealVector b)
+                          ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public RealVector solve(final RealVector b)'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-80/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java:467: warning: [MissingOverride] solve implements method in DecompositionSolver; expected @Override
+        public RealMatrix solve(final RealMatrix b)
+                          ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public RealMatrix solve(final RealMatrix b)'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-80/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java:506: warning: [MissingOverride] isNonSingular implements method in DecompositionSolver; expected @Override
+        public boolean isNonSingular() {
+                       ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public boolean isNonSingular() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-80/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java:519: warning: [MissingOverride] getInverse implements method in DecompositionSolver; expected @Override
+        public RealMatrix getInverse()
+                          ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public RealMatrix getInverse()'?
+15 warnings

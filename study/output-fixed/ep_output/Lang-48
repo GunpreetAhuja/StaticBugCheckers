@@ -1,0 +1,5 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-48/src/java/org/apache/commons/lang/builder/EqualsBuilder.java:381: error: incompatible types: Object cannot be converted to BigDecimal
+                isEquals = (((java.math.BigDecimal)lhs).compareTo(rhs) == 0);
+                                                                  ^
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+1 error

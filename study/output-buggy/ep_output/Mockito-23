@@ -1,0 +1,11 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Mockito-23/src/org/mockito/internal/stubbing/defaultanswers/ReturnsDeepStubs.java:47: warning: [MissingOverride] answer implements method in Answer; expected @Override
+    public Object answer(InvocationOnMock invocation) throws Throwable {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Object answer(InvocationOnMock invocation) throws Throwable {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Mockito-23/src/org/mockito/internal/stubbing/defaultanswers/ReturnsDeepStubs.java:115: warning: [MissingOverride] answer implements method in Answer; expected @Override
+            public Object answer(InvocationOnMock invocation) throws Throwable {
+                          ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Object answer(InvocationOnMock invocation) throws Throwable {'?
+2 warnings

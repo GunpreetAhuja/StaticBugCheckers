@@ -1,0 +1,6 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-56/src/com/google/javascript/jscomp/SourceFile.java:452: warning: [DefaultCharset] Implicit use of the platform default charset, which can result in e.g. non-ASCII characters being silently replaced with '?' in many environments
+        return new FileReader(file);
+               ^
+    (see http://errorprone.info/bugpattern/DefaultCharset)
+  Did you mean 'return Files.newReader(file, UTF_8);' or 'return Files.newReader(file, Charset.defaultCharset());'?
+1 warning

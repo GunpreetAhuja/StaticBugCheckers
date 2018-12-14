@@ -1,0 +1,16 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-48/src/main/java/org/apache/commons/math/analysis/solvers/BaseSecantSolver.java:107: warning: [MissingOverride] solve implements method in BracketedUnivariateRealSolver; expected @Override
+    public double solve(final int maxEval, final UnivariateRealFunction f,
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double solve(final int maxEval, final UnivariateRealFunction f,'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-48/src/main/java/org/apache/commons/math/analysis/solvers/BaseSecantSolver.java:114: warning: [MissingOverride] solve implements method in BracketedUnivariateRealSolver; expected @Override
+    public double solve(final int maxEval, final UnivariateRealFunction f,
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double solve(final int maxEval, final UnivariateRealFunction f,'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-48/src/main/java/org/apache/commons/math/analysis/solvers/BaseSecantSolver.java:129: warning: [MissingOverride] doSolve implements method in BaseAbstractUnivariateRealSolver; expected @Override
+    protected final double doSolve() {
+                           ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override protected final double doSolve() {'?
+3 warnings

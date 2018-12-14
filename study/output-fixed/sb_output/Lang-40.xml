@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.1.0" sequence="0" timestamp="1542190510000" analysisTimestamp="1542190513197" release="">
+  <Project projectName="">
+    <Jar>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-40/src/java</Jar>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-40/target/classes</AuxClasspathEntry>
+  </Project>
+  <BugInstance type="ES_COMPARING_PARAMETER_STRING_WITH_EQ" priority="1" rank="14" abbrev="ES" category="BAD_PRACTICE" instanceHash="c0b6cc5a8cf88ab9ce5484ae5062c9f5" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="597">
+    <ShortMessage>Comparison of String parameter using == or !=</ShortMessage>
+    <LongMessage>Comparison of String parameter using == or != in org.apache.commons.lang.StringUtils.indexOfDifference(String, String) </LongMessage>
+    <Class classname="org.apache.commons.lang.StringUtils" primary="true">
+      <SourceLine classname="org.apache.commons.lang.StringUtils" start="168" end="5771" sourcefile="StringUtils.java" sourcepath="org/apache/commons/lang/StringUtils.java">
+        <Message>At StringUtils.java:[lines 168-5771]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.lang.StringUtils</Message>
+    </Class>
+    <Method classname="org.apache.commons.lang.StringUtils" name="indexOfDifference" signature="(Ljava/lang/String;Ljava/lang/String;)I" isStatic="true" primary="true">
+      <SourceLine classname="org.apache.commons.lang.StringUtils" start="5298" end="5313" startBytecode="0" endBytecode="42" sourcefile="StringUtils.java" sourcepath="org/apache/commons/lang/StringUtils.java"/>
+      <Message>In method org.apache.commons.lang.StringUtils.indexOfDifference(String, String)</Message>
+    </Method>
+    <Type descriptor="Ljava/lang/String;" role="TYPE_FOUND">
+      <SourceLine classname="java.lang.String" start="111" end="3141" sourcefile="String.java" sourcepath="java/lang/String.java">
+        <Message>At String.java:[lines 111-3141]</Message>
+      </SourceLine>
+      <Message>Actual type String</Message>
+    </Type>
+    <LocalVariable name="?" register="1" pc="1" role="LOCAL_VARIABLE_VALUE_OF">
+      <Message>Value loaded from ?</Message>
+    </LocalVariable>
+    <SourceLine classname="org.apache.commons.lang.StringUtils" primary="true" start="5298" end="5298" startBytecode="2" endBytecode="2" sourcefile="StringUtils.java" sourcepath="org/apache/commons/lang/StringUtils.java">
+      <Message>At StringUtils.java:[line 5298]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.RefComparisonWarningProperty.STATIC_AND_PARAMETER_IN_PUBLIC_METHOD" value="true"/>
+  </BugInstance>
+  <BugCategory category="BAD_PRACTICE">
+    <Description>Bad practice</Description>
+  </BugCategory>
+  <BugPattern type="ES_COMPARING_PARAMETER_STRING_WITH_EQ" abbrev="ES" category="BAD_PRACTICE">
+    <ShortDescription>Comparison of String parameter using == or !=</ShortDescription>
+    <Details><![CDATA[
+
+  <p>This code compares a <code>java.lang.String</code> parameter for reference
+equality using the == or != operators. Requiring callers to
+pass only String constants or interned strings to a method is unnecessarily
+fragile, and rarely leads to measurable performance gains. Consider
+using the <code>equals(Object)</code> method instead.</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="ES" cweid="597">
+    <Description>Checking String equality using == or !=</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 14 Nov 2018 05:15:10 -0500" total_classes="1" referenced_classes="23" total_bugs="1" total_size="1255" num_packages="1" java_version="1.8.0_121" vm_version="25.121-b13" cpu_seconds="11.48" clock_seconds="6.56" peak_mbytes="191.86" alloc_mbytes="1820.50" gc_seconds="0.07" priority_1="1">
+    <FileStats path="org/apache/commons/lang/StringUtils.java" bugCount="1" size="1255" bugHash="2d2bdf9d520752b907790b6abdd8a319"/>
+    <PackageStats package="org.apache.commons.lang" total_bugs="1" total_types="1" total_size="1255" priority_1="1">
+      <ClassStats class="org.apache.commons.lang.StringUtils" sourceFile="StringUtils.java" interface="false" size="1255" bugs="1" priority_1="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="581" invocations="391" avgMicrosecondsPerInvocation="1486" maxMicrosecondsPerInvocation="37695" standardDeviationMicrosecondsPerInvocation="3880"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="557" invocations="390" avgMicrosecondsPerInvocation="1429" maxMicrosecondsPerInvocation="130286" standardDeviationMicrosecondsPerInvocation="7319"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="353" invocations="150" avgMicrosecondsPerInvocation="2358" maxMicrosecondsPerInvocation="47003" standardDeviationMicrosecondsPerInvocation="6746"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="328" invocations="150" avgMicrosecondsPerInvocation="2188" maxMicrosecondsPerInvocation="37189" standardDeviationMicrosecondsPerInvocation="4984"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="312" invocations="150" avgMicrosecondsPerInvocation="2085" maxMicrosecondsPerInvocation="57881" standardDeviationMicrosecondsPerInvocation="6123"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="253" invocations="150" avgMicrosecondsPerInvocation="1687" maxMicrosecondsPerInvocation="38285" standardDeviationMicrosecondsPerInvocation="4350"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="252" invocations="150" avgMicrosecondsPerInvocation="1681" maxMicrosecondsPerInvocation="73672" standardDeviationMicrosecondsPerInvocation="6928"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="194" invocations="334" avgMicrosecondsPerInvocation="581" maxMicrosecondsPerInvocation="29932" standardDeviationMicrosecondsPerInvocation="2258"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="188" invocations="23" avgMicrosecondsPerInvocation="8204" maxMicrosecondsPerInvocation="79505" standardDeviationMicrosecondsPerInvocation="16773"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.LiveLocalStoreDataflowFactory" totalMilliseconds="149" invocations="150" avgMicrosecondsPerInvocation="998" maxMicrosecondsPerInvocation="30072" standardDeviationMicrosecondsPerInvocation="3844"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="137" invocations="150" avgMicrosecondsPerInvocation="917" maxMicrosecondsPerInvocation="31095" standardDeviationMicrosecondsPerInvocation="3266"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="130" invocations="150" avgMicrosecondsPerInvocation="870" maxMicrosecondsPerInvocation="88998" standardDeviationMicrosecondsPerInvocation="7284"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="125" invocations="350" avgMicrosecondsPerInvocation="359" maxMicrosecondsPerInvocation="29267" standardDeviationMicrosecondsPerInvocation="1906"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="88" invocations="1" avgMicrosecondsPerInvocation="88734" maxMicrosecondsPerInvocation="88734" standardDeviationMicrosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="82" invocations="23" avgMicrosecondsPerInvocation="3605" maxMicrosecondsPerInvocation="41667" standardDeviationMicrosecondsPerInvocation="8435"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="79" invocations="148" avgMicrosecondsPerInvocation="538" maxMicrosecondsPerInvocation="18690" standardDeviationMicrosecondsPerInvocation="1843"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="76" invocations="23" avgMicrosecondsPerInvocation="3304" maxMicrosecondsPerInvocation="40893" standardDeviationMicrosecondsPerInvocation="8813"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="70" invocations="1" avgMicrosecondsPerInvocation="70371" maxMicrosecondsPerInvocation="70371" standardDeviationMicrosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="68" invocations="41" avgMicrosecondsPerInvocation="1680" maxMicrosecondsPerInvocation="27953" standardDeviationMicrosecondsPerInvocation="4935"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="57" invocations="23" avgMicrosecondsPerInvocation="2520" maxMicrosecondsPerInvocation="38439" standardDeviationMicrosecondsPerInvocation="7748"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="56" invocations="23" avgMicrosecondsPerInvocation="2459" maxMicrosecondsPerInvocation="27795" standardDeviationMicrosecondsPerInvocation="5982"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueRangeAnalysisFactory" totalMilliseconds="55" invocations="150" avgMicrosecondsPerInvocation="372" maxMicrosecondsPerInvocation="13510" standardDeviationMicrosecondsPerInvocation="1390"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="52" invocations="23" avgMicrosecondsPerInvocation="2291" maxMicrosecondsPerInvocation="20761" standardDeviationMicrosecondsPerInvocation="5209"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

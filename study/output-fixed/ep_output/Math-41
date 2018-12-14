@@ -1,0 +1,16 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-41/src/main/java/org/apache/commons/math/stat/descriptive/moment/Variance.java:195: warning: [MissingOverride] getN implements method in StorelessUnivariateStatistic; expected @Override
+    public long getN() {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public long getN() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-41/src/main/java/org/apache/commons/math/stat/descriptive/moment/Variance.java:313: warning: [MissingOverride] evaluate implements method in WeightedEvaluation; expected @Override
+    public double evaluate(final double[] values, final double[] weights,
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double evaluate(final double[] values, final double[] weights,'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-41/src/main/java/org/apache/commons/math/stat/descriptive/moment/Variance.java:369: warning: [MissingOverride] evaluate implements method in WeightedEvaluation; expected @Override
+    public double evaluate(final double[] values, final double[] weights) {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double evaluate(final double[] values, final double[] weights) {'?
+3 warnings

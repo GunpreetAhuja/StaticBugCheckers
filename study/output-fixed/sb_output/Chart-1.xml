@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.1.0" sequence="0" timestamp="1542189497000" analysisTimestamp="1542189499849" release="">
+  <Project projectName="">
+    <Jar>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Chart-1/source</Jar>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Chart-1/build</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Chart-1/lib/servlet.jar</AuxClasspathEntry>
+  </Project>
+  <BugInstance type="NP_NULL_ON_SOME_PATH" priority="2" rank="8" abbrev="NP" category="CORRECTNESS" instanceHash="8cb5212d97e187eb3c2d5faa76694589" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="476">
+    <ShortMessage>Possible null pointer dereference</ShortMessage>
+    <LongMessage>Possible null pointer dereference of ? in org.jfree.chart.renderer.category.AbstractCategoryItemRenderer.drawDomainMarker(Graphics2D, CategoryPlot, CategoryAxis, CategoryMarker, Rectangle2D)</LongMessage>
+    <Class classname="org.jfree.chart.renderer.category.AbstractCategoryItemRenderer" primary="true">
+      <SourceLine classname="org.jfree.chart.renderer.category.AbstractCategoryItemRenderer" start="249" end="1991" sourcefile="AbstractCategoryItemRenderer.java" sourcepath="org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java">
+        <Message>At AbstractCategoryItemRenderer.java:[lines 249-1991]</Message>
+      </SourceLine>
+      <Message>In class org.jfree.chart.renderer.category.AbstractCategoryItemRenderer</Message>
+    </Class>
+    <Method classname="org.jfree.chart.renderer.category.AbstractCategoryItemRenderer" name="drawDomainMarker" signature="(Ljava/awt/Graphics2D;Lorg/jfree/chart/plot/CategoryPlot;Lorg/jfree/chart/axis/CategoryAxis;Lorg/jfree/chart/plot/CategoryMarker;Ljava/awt/geom/Rectangle2D;)V" isStatic="false" primary="true">
+      <SourceLine classname="org.jfree.chart.renderer.category.AbstractCategoryItemRenderer" start="1100" end="1166" startBytecode="0" endBytecode="781" sourcefile="AbstractCategoryItemRenderer.java" sourcepath="org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java"/>
+      <Message>In method org.jfree.chart.renderer.category.AbstractCategoryItemRenderer.drawDomainMarker(Graphics2D, CategoryPlot, CategoryAxis, CategoryMarker, Rectangle2D)</Message>
+    </Method>
+    <LocalVariable name="?" register="14" pc="131" role="LOCAL_VARIABLE_VALUE_OF">
+      <Message>Value loaded from ?</Message>
+    </LocalVariable>
+    <SourceLine classname="org.jfree.chart.renderer.category.AbstractCategoryItemRenderer" primary="true" start="1129" end="1129" startBytecode="186" endBytecode="186" sourcefile="AbstractCategoryItemRenderer.java" sourcepath="org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java" role="SOURCE_LINE_DEREF">
+      <Message>Dereferenced at AbstractCategoryItemRenderer.java:[line 1129]</Message>
+    </SourceLine>
+    <SourceLine classname="org.jfree.chart.renderer.category.AbstractCategoryItemRenderer" start="1117" end="1117" startBytecode="92" endBytecode="92" sourcefile="AbstractCategoryItemRenderer.java" sourcepath="org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java" role="SOURCE_LINE_NULL_VALUE">
+      <Message>Null value at AbstractCategoryItemRenderer.java:[line 1117]</Message>
+    </SourceLine>
+    <SourceLine classname="org.jfree.chart.renderer.category.AbstractCategoryItemRenderer" start="1122" end="1122" startBytecode="134" endBytecode="134" sourcefile="AbstractCategoryItemRenderer.java" sourcepath="org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java" role="SOURCE_LINE_KNOWN_NULL">
+      <Message>Known null at AbstractCategoryItemRenderer.java:[line 1122]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="CORRECTNESS">
+    <Description>Correctness</Description>
+  </BugCategory>
+  <BugPattern type="NP_NULL_ON_SOME_PATH" abbrev="NP" category="CORRECTNESS">
+    <ShortDescription>Possible null pointer dereference</ShortDescription>
+    <Details><![CDATA[
+
+<p> There is a branch of statement that, <em>if executed,</em>  guarantees that
+a null value will be dereferenced, which
+would generate a <code>NullPointerException</code> when the code is executed.
+Of course, the problem might be that the branch or statement is infeasible and that
+the null pointer exception can't ever be executed; deciding that is beyond the ability of SpotBugs.
+</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="NP" cweid="476">
+    <Description>Null pointer dereference</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 14 Nov 2018 04:58:17 -0500" total_classes="1" referenced_classes="108" total_bugs="1" total_size="656" num_packages="1" java_version="1.8.0_121" vm_version="25.121-b13" cpu_seconds="12.92" clock_seconds="6.45" peak_mbytes="191.35" alloc_mbytes="1820.50" gc_seconds="0.09" priority_2="1">
+    <FileStats path="org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java" bugCount="1" size="656" bugHash="cbb8a3a40fc034fd8f58358101726d6f"/>
+    <PackageStats package="org.jfree.chart.renderer.category" total_bugs="1" total_types="1" total_size="656" priority_2="1">
+      <ClassStats class="org.jfree.chart.renderer.category.AbstractCategoryItemRenderer" sourceFile="AbstractCategoryItemRenderer.java" interface="false" size="656" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="774" invocations="727" avgMicrosecondsPerInvocation="1065" maxMicrosecondsPerInvocation="24186" standardDeviationMicrosecondsPerInvocation="2200"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="688" invocations="722" avgMicrosecondsPerInvocation="953" maxMicrosecondsPerInvocation="47772" standardDeviationMicrosecondsPerInvocation="3392"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="368" invocations="108" avgMicrosecondsPerInvocation="3409" maxMicrosecondsPerInvocation="52717" standardDeviationMicrosecondsPerInvocation="7827"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="276" invocations="108" avgMicrosecondsPerInvocation="2556" maxMicrosecondsPerInvocation="30066" standardDeviationMicrosecondsPerInvocation="5606"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="253" invocations="345" avgMicrosecondsPerInvocation="734" maxMicrosecondsPerInvocation="12250" standardDeviationMicrosecondsPerInvocation="1376"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="174" invocations="66" avgMicrosecondsPerInvocation="2637" maxMicrosecondsPerInvocation="30433" standardDeviationMicrosecondsPerInvocation="5686"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="167" invocations="683" avgMicrosecondsPerInvocation="245" maxMicrosecondsPerInvocation="22427" standardDeviationMicrosecondsPerInvocation="1522"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="152" invocations="66" avgMicrosecondsPerInvocation="2317" maxMicrosecondsPerInvocation="68613" standardDeviationMicrosecondsPerInvocation="8553"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="140" invocations="67" avgMicrosecondsPerInvocation="2091" maxMicrosecondsPerInvocation="25277" standardDeviationMicrosecondsPerInvocation="3911"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="137" invocations="108" avgMicrosecondsPerInvocation="1270" maxMicrosecondsPerInvocation="53137" standardDeviationMicrosecondsPerInvocation="5583"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="136" invocations="66" avgMicrosecondsPerInvocation="2072" maxMicrosecondsPerInvocation="47587" standardDeviationMicrosecondsPerInvocation="6835"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="131" invocations="66" avgMicrosecondsPerInvocation="1991" maxMicrosecondsPerInvocation="106032" standardDeviationMicrosecondsPerInvocation="12926"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="117" invocations="66" avgMicrosecondsPerInvocation="1776" maxMicrosecondsPerInvocation="27386" standardDeviationMicrosecondsPerInvocation="4394"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="110" invocations="67" avgMicrosecondsPerInvocation="1648" maxMicrosecondsPerInvocation="23084" standardDeviationMicrosecondsPerInvocation="3027"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="105" invocations="108" avgMicrosecondsPerInvocation="973" maxMicrosecondsPerInvocation="43810" standardDeviationMicrosecondsPerInvocation="4349"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="92" invocations="178" avgMicrosecondsPerInvocation="518" maxMicrosecondsPerInvocation="33254" standardDeviationMicrosecondsPerInvocation="2694"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="87" invocations="108" avgMicrosecondsPerInvocation="813" maxMicrosecondsPerInvocation="15447" standardDeviationMicrosecondsPerInvocation="2141"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

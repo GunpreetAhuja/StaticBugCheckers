@@ -1,0 +1,16 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-61/src/main/java/org/apache/commons/math/distribution/PoissonDistributionImpl.java:129: warning: [MissingOverride] getMean implements method in PoissonDistribution; expected @Override
+    public double getMean() {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double getMean() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-61/src/main/java/org/apache/commons/math/distribution/PoissonDistributionImpl.java:140: warning: [MissingOverride] probability implements method in IntegerDistribution; expected @Override
+    public double probability(int x) {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double probability(int x) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-61/src/main/java/org/apache/commons/math/distribution/PoissonDistributionImpl.java:189: warning: [MissingOverride] normalApproximateProbability implements method in PoissonDistribution; expected @Override
+    public double normalApproximateProbability(int x) throws MathException {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double normalApproximateProbability(int x) throws MathException {'?
+3 warnings

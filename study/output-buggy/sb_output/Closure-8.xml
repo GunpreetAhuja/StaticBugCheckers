@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.1.0" sequence="0" timestamp="1542185919000" analysisTimestamp="1542185922537" release="">
+  <Project projectName="">
+    <Jar>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-8/src</Jar>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-8/build/classes</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-8/lib/args4j.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-8/lib/guava.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-8/lib/json.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-8/lib/jsr305.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-8/lib/protobuf-java.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-8/build/lib/rhino.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-8/lib/ant.jar</AuxClasspathEntry>
+  </Project>
+  <BugInstance type="NP_UNWRITTEN_FIELD" priority="2" rank="8" abbrev="NP" category="CORRECTNESS" instanceHash="5823897121e6cc428fe8295e26746121" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="476">
+    <ShortMessage>Read of unwritten field</ShortMessage>
+    <LongMessage>Read of unwritten field parent in com.google.javascript.jscomp.CollapseVariableDeclarations.applyCollapses()</LongMessage>
+    <Class classname="com.google.javascript.jscomp.CollapseVariableDeclarations" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.CollapseVariableDeclarations" start="64" end="245" sourcefile="CollapseVariableDeclarations.java" sourcepath="com/google/javascript/jscomp/CollapseVariableDeclarations.java">
+        <Message>At CollapseVariableDeclarations.java:[lines 64-245]</Message>
+      </SourceLine>
+      <Message>In class com.google.javascript.jscomp.CollapseVariableDeclarations</Message>
+    </Class>
+    <Method classname="com.google.javascript.jscomp.CollapseVariableDeclarations" name="applyCollapses" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.CollapseVariableDeclarations" start="210" end="245" startBytecode="0" endBytecode="412" sourcefile="CollapseVariableDeclarations.java" sourcepath="com/google/javascript/jscomp/CollapseVariableDeclarations.java"/>
+      <Message>In method com.google.javascript.jscomp.CollapseVariableDeclarations.applyCollapses()</Message>
+    </Method>
+    <Field classname="com.google.javascript.jscomp.CollapseVariableDeclarations$Collapse" name="parent" signature="Lcom/google/javascript/rhino/Node;" isStatic="false" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.CollapseVariableDeclarations$Collapse" sourcefile="CollapseVariableDeclarations.java" sourcepath="com/google/javascript/jscomp/CollapseVariableDeclarations.java">
+        <Message>In CollapseVariableDeclarations.java</Message>
+      </SourceLine>
+      <Message>Field com.google.javascript.jscomp.CollapseVariableDeclarations$Collapse.parent</Message>
+    </Field>
+    <SourceLine classname="com.google.javascript.jscomp.CollapseVariableDeclarations" primary="true" start="214" end="214" startBytecode="57" endBytecode="57" sourcefile="CollapseVariableDeclarations.java" sourcepath="com/google/javascript/jscomp/CollapseVariableDeclarations.java">
+      <Message>At CollapseVariableDeclarations.java:[line 214]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="CORRECTNESS">
+    <Description>Correctness</Description>
+  </BugCategory>
+  <BugPattern type="NP_UNWRITTEN_FIELD" abbrev="NP" category="CORRECTNESS">
+    <ShortDescription>Read of unwritten field</ShortDescription>
+    <Details><![CDATA[
+
+  <p> The program is dereferencing a field that does not seem to ever have a non-null value written to it.
+Unless the field is initialized via some mechanism not seen by the analysis,
+dereferencing this value will generate a null pointer exception.
+</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="NP" cweid="476">
+    <Description>Null pointer dereference</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 14 Nov 2018 03:58:39 -0500" total_classes="4" referenced_classes="51" total_bugs="1" total_size="107" num_packages="1" java_version="1.8.0_121" vm_version="25.121-b13" cpu_seconds="8.75" clock_seconds="4.45" peak_mbytes="127.47" alloc_mbytes="1820.50" gc_seconds="0.06" priority_2="1">
+    <FileStats path="com/google/javascript/jscomp/CollapseVariableDeclarations.java" bugCount="1" size="107" bugHash="713bbd179f9557d2f0210fda5cdd0f2c"/>
+    <PackageStats package="com.google.javascript.jscomp" total_bugs="1" total_types="4" total_size="107" priority_2="1">
+      <ClassStats class="com.google.javascript.jscomp.CollapseVariableDeclarations" sourceFile="CollapseVariableDeclarations.java" interface="false" size="50" bugs="1" priority_2="1"/>
+      <ClassStats class="com.google.javascript.jscomp.CollapseVariableDeclarations$1" sourceFile="CollapseVariableDeclarations.java" interface="false" size="1" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.CollapseVariableDeclarations$Collapse" sourceFile="CollapseVariableDeclarations.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.CollapseVariableDeclarations$GatherCollapses" sourceFile="CollapseVariableDeclarations.java" interface="false" size="46" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="910" invocations="619" avgMicrosecondsPerInvocation="1471" maxMicrosecondsPerInvocation="28271" standardDeviationMicrosecondsPerInvocation="2733"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="671" invocations="618" avgMicrosecondsPerInvocation="1087" maxMicrosecondsPerInvocation="62852" standardDeviationMicrosecondsPerInvocation="3932"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="177" invocations="51" avgMicrosecondsPerInvocation="3478" maxMicrosecondsPerInvocation="45158" standardDeviationMicrosecondsPerInvocation="7264"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="174" invocations="51" avgMicrosecondsPerInvocation="3418" maxMicrosecondsPerInvocation="34833" standardDeviationMicrosecondsPerInvocation="6580"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="125" invocations="204" avgMicrosecondsPerInvocation="613" maxMicrosecondsPerInvocation="8970" standardDeviationMicrosecondsPerInvocation="1171"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="120" invocations="51" avgMicrosecondsPerInvocation="2364" maxMicrosecondsPerInvocation="90497" standardDeviationMicrosecondsPerInvocation="12590"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="88" invocations="586" avgMicrosecondsPerInvocation="150" maxMicrosecondsPerInvocation="5227" standardDeviationMicrosecondsPerInvocation="372"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="59" invocations="5" avgMicrosecondsPerInvocation="11967" maxMicrosecondsPerInvocation="29114" standardDeviationMicrosecondsPerInvocation="13031"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="58" invocations="74" avgMicrosecondsPerInvocation="785" maxMicrosecondsPerInvocation="26398" standardDeviationMicrosecondsPerInvocation="3140"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="57" invocations="5" avgMicrosecondsPerInvocation="11497" maxMicrosecondsPerInvocation="53601" standardDeviationMicrosecondsPerInvocation="21085"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="57" invocations="51" avgMicrosecondsPerInvocation="1120" maxMicrosecondsPerInvocation="16432" standardDeviationMicrosecondsPerInvocation="2521"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

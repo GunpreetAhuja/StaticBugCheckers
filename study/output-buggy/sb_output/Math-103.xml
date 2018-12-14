@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.1.0" sequence="0" timestamp="1542186362000" analysisTimestamp="1542186365345" release="">
+  <Project projectName="">
+    <Jar>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-103/src/java</Jar>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-103/target/classes</AuxClasspathEntry>
+  </Project>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 14 Nov 2018 04:06:02 -0500" total_classes="1" referenced_classes="24" total_bugs="0" total_size="52" num_packages="1" java_version="1.8.0_121" vm_version="25.121-b13" cpu_seconds="5.87" clock_seconds="2.89" peak_mbytes="106.83" alloc_mbytes="1820.50" gc_seconds="0.05">
+    <FileStats path="org/apache/commons/math/distribution/NormalDistributionImpl.java" bugCount="0" size="52"/>
+    <PackageStats package="org.apache.commons.math.distribution" total_bugs="0" total_types="1" total_size="52">
+      <ClassStats class="org.apache.commons.math.distribution.NormalDistributionImpl" sourceFile="NormalDistributionImpl.java" interface="false" size="52" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="531" invocations="332" avgMicrosecondsPerInvocation="1599" maxMicrosecondsPerInvocation="50228" standardDeviationMicrosecondsPerInvocation="4377"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="502" invocations="328" avgMicrosecondsPerInvocation="1530" maxMicrosecondsPerInvocation="51473" standardDeviationMicrosecondsPerInvocation="4664"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="100" invocations="24" avgMicrosecondsPerInvocation="4192" maxMicrosecondsPerInvocation="26852" standardDeviationMicrosecondsPerInvocation="6941"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="97" invocations="70" avgMicrosecondsPerInvocation="1393" maxMicrosecondsPerInvocation="28896" standardDeviationMicrosecondsPerInvocation="3566"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="79" invocations="296" avgMicrosecondsPerInvocation="268" maxMicrosecondsPerInvocation="11609" standardDeviationMicrosecondsPerInvocation="835"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="63" invocations="24" avgMicrosecondsPerInvocation="2626" maxMicrosecondsPerInvocation="27042" standardDeviationMicrosecondsPerInvocation="5908"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="55" invocations="43" avgMicrosecondsPerInvocation="1281" maxMicrosecondsPerInvocation="35452" standardDeviationMicrosecondsPerInvocation="5383"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="46" invocations="11" avgMicrosecondsPerInvocation="4260" maxMicrosecondsPerInvocation="44100" standardDeviationMicrosecondsPerInvocation="12599"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="44" invocations="24" avgMicrosecondsPerInvocation="1835" maxMicrosecondsPerInvocation="19221" standardDeviationMicrosecondsPerInvocation="4756"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

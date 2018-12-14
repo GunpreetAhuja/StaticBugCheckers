@@ -1,0 +1,67 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Chart-15/source/org/jfree/chart/plot/PiePlot.java:2802: warning: [EqualsHashCode] Classes that override equals should also override hashCode.
+    public boolean equals(Object obj) {
+                   ^
+    (see http://errorprone.info/bugpattern/EqualsHashCode)
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Chart-15/source/org/jfree/chart/plot/PiePlot.java:880: warning: [BoxedPrimitiveConstructor] valueOf or autoboxing provides better time and space performance
+            key = new Integer(section);
+                  ^
+    (see http://errorprone.info/bugpattern/BoxedPrimitiveConstructor)
+  Did you mean 'key = section;'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Chart-15/source/org/jfree/chart/plot/PiePlot.java:1368: warning: [BoxedPrimitiveConstructor] valueOf or autoboxing provides better time and space performance
+        this.explodePercentages.put(key, new Double(percent));
+                                         ^
+    (see http://errorprone.info/bugpattern/BoxedPrimitiveConstructor)
+  Did you mean 'this.explodePercentages.put(key, Double.valueOf(percent));'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Chart-15/source/org/jfree/chart/plot/PiePlot.java:2074: warning: [MissingOverride] draw implements method in Plot; expected @Override
+    public void draw(Graphics2D g2, Rectangle2D area, Point2D anchor,
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void draw(Graphics2D g2, Rectangle2D area, Point2D anchor,'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Chart-15/source/org/jfree/chart/plot/PiePlot.java:2264: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+        if (this.direction == Rotation.CLOCKWISE) {
+                           ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'if (Objects.equals(this.direction, Rotation.CLOCKWISE)) {' or 'if (this.direction.equals(Rotation.CLOCKWISE)) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Chart-15/source/org/jfree/chart/plot/PiePlot.java:2268: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+        else if (this.direction == Rotation.ANTICLOCKWISE) {
+                                ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'else if (Objects.equals(this.direction, Rotation.ANTICLOCKWISE)) {' or 'else if (this.direction.equals(Rotation.ANTICLOCKWISE)) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Chart-15/source/org/jfree/chart/plot/PiePlot.java:2477: warning: [BoxedPrimitiveConstructor] valueOf or autoboxing provides better time and space performance
+                    leftKeys.addValue(key, new Double(mid));
+                                           ^
+    (see http://errorprone.info/bugpattern/BoxedPrimitiveConstructor)
+  Did you mean 'leftKeys.addValue(key, Double.valueOf(mid));'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Chart-15/source/org/jfree/chart/plot/PiePlot.java:2480: warning: [BoxedPrimitiveConstructor] valueOf or autoboxing provides better time and space performance
+                    rightKeys.addValue(key, new Double(mid));
+                                            ^
+    (see http://errorprone.info/bugpattern/BoxedPrimitiveConstructor)
+  Did you mean 'rightKeys.addValue(key, Double.valueOf(mid));'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Chart-15/source/org/jfree/chart/plot/PiePlot.java:2614: warning: [MissingOverride] getLegendItems overrides method in Plot; expected @Override
+    public LegendItemCollection getLegendItems() {
+                                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public LegendItemCollection getLegendItems() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Chart-15/source/org/jfree/chart/plot/PiePlot.java:2680: warning: [MissingOverride] getPlotType implements method in Plot; expected @Override
+    public String getPlotType() {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public String getPlotType() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Chart-15/source/org/jfree/chart/plot/PiePlot.java:2802: warning: [MissingOverride] equals overrides method in Plot; expected @Override
+    public boolean equals(Object obj) {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public boolean equals(Object obj) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Chart-15/source/org/jfree/chart/plot/PiePlot.java:2825: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+        if (this.direction != that.direction) {
+                           ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'if (!Objects.equals(this.direction, that.direction)) {' or 'if (!this.direction.equals(that.direction)) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Chart-15/source/org/jfree/chart/plot/PiePlot.java:2967: warning: [MissingOverride] clone overrides method in Plot; expected @Override
+    public Object clone() throws CloneNotSupportedException {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Object clone() throws CloneNotSupportedException {'?
+Note: /Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Chart-15/source/org/jfree/chart/plot/PiePlot.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+13 warnings

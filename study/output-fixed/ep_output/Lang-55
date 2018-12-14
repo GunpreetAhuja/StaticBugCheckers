@@ -1,0 +1,6 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-55/src/java/org/apache/commons/lang/time/StopWatch.java:248: warning: [MissingOverride] toString overrides method in Object; expected @Override
+    public String toString() {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public String toString() {'?
+1 warning

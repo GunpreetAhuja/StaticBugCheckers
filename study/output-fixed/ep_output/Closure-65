@@ -1,0 +1,11 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-65/src/com/google/javascript/jscomp/CodeGenerator.java:52: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+    if (outputCharset == null || outputCharset == Charsets.US_ASCII) {
+                                               ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'if (outputCharset == null || outputCharset.equals(Charsets.US_ASCII)) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-65/src/com/google/javascript/jscomp/CodeGenerator.java:521: warning: [OperatorPrecedence] Use grouping parenthesis to make the operator precedence explicit
+            || n.getBooleanProp(Node.FREE_CALL) && NodeUtil.isGet(first)) {
+                                                ^
+    (see http://errorprone.info/bugpattern/OperatorPrecedence)
+  Did you mean '|| (n.getBooleanProp(Node.FREE_CALL) && NodeUtil.isGet(first))) {'?
+2 warnings

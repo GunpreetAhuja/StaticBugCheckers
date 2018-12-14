@@ -1,0 +1,16 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Mockito-1/src/org/mockito/internal/invocation/InvocationMatcher.java:55: warning: [MissingOverride] toString implements method in DescribedInvocation; expected @Override
+    public String toString() {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public String toString() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Mockito-1/src/org/mockito/internal/invocation/InvocationMatcher.java:116: warning: [MissingOverride] getLocation implements method in DescribedInvocation; expected @Override
+    public Location getLocation() {
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Location getLocation() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Mockito-1/src/org/mockito/internal/invocation/InvocationMatcher.java:120: warning: [MissingOverride] captureArgumentsFrom implements method in CapturesArgumensFromInvocation; expected @Override
+    public void captureArgumentsFrom(Invocation invocation) {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void captureArgumentsFrom(Invocation invocation) {'?
+3 warnings

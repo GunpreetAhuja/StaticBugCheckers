@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.1.0" sequence="0" timestamp="1542186385000" analysisTimestamp="1542186388060" release="">
+  <Project projectName="">
+    <Jar>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-13/src/main/java</Jar>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-13/target/classes</AuxClasspathEntry>
+  </Project>
+  <BugInstance type="URF_UNREAD_PUBLIC_OR_PROTECTED_FIELD" priority="2" rank="18" abbrev="UrF" category="STYLE" instanceHash="9ae129218587773888be2da3672ad6c1" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Unread public/protected field</ShortMessage>
+    <LongMessage>Unread public/protected field: org.apache.commons.math3.optimization.general.AbstractLeastSquaresOptimizer.weightedResidualJacobian</LongMessage>
+    <Class classname="org.apache.commons.math3.optimization.general.AbstractLeastSquaresOptimizer" primary="true">
+      <SourceLine classname="org.apache.commons.math3.optimization.general.AbstractLeastSquaresOptimizer" start="62" end="563" sourcefile="AbstractLeastSquaresOptimizer.java" sourcepath="org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.java">
+        <Message>At AbstractLeastSquaresOptimizer.java:[lines 62-563]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.math3.optimization.general.AbstractLeastSquaresOptimizer</Message>
+    </Class>
+    <Field classname="org.apache.commons.math3.optimization.general.AbstractLeastSquaresOptimizer" name="weightedResidualJacobian" signature="[[D" isStatic="false" primary="true">
+      <SourceLine classname="org.apache.commons.math3.optimization.general.AbstractLeastSquaresOptimizer" sourcefile="AbstractLeastSquaresOptimizer.java" sourcepath="org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.java">
+        <Message>In AbstractLeastSquaresOptimizer.java</Message>
+      </SourceLine>
+      <Message>Field org.apache.commons.math3.optimization.general.AbstractLeastSquaresOptimizer.weightedResidualJacobian</Message>
+    </Field>
+    <SourceLine classname="org.apache.commons.math3.optimization.general.AbstractLeastSquaresOptimizer" primary="true" start="155" end="155" startBytecode="24" endBytecode="24" sourcefile="AbstractLeastSquaresOptimizer.java" sourcepath="org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.java">
+      <Message>At AbstractLeastSquaresOptimizer.java:[line 155]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_PUBLIC_OR_PROTECTED_FIELD" priority="2" rank="18" abbrev="UrF" category="STYLE" instanceHash="f55fb5a97c13e62dd3269eba81b8dcc6" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Unread public/protected field</ShortMessage>
+    <LongMessage>Unread public/protected field: org.apache.commons.math3.optimization.general.AbstractLeastSquaresOptimizer.weightedResiduals</LongMessage>
+    <Class classname="org.apache.commons.math3.optimization.general.AbstractLeastSquaresOptimizer" primary="true">
+      <SourceLine classname="org.apache.commons.math3.optimization.general.AbstractLeastSquaresOptimizer" start="62" end="563" sourcefile="AbstractLeastSquaresOptimizer.java" sourcepath="org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.java">
+        <Message>At AbstractLeastSquaresOptimizer.java:[lines 62-563]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.math3.optimization.general.AbstractLeastSquaresOptimizer</Message>
+    </Class>
+    <Field classname="org.apache.commons.math3.optimization.general.AbstractLeastSquaresOptimizer" name="weightedResiduals" signature="[D" isStatic="false" primary="true">
+      <SourceLine classname="org.apache.commons.math3.optimization.general.AbstractLeastSquaresOptimizer" sourcefile="AbstractLeastSquaresOptimizer.java" sourcepath="org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.java">
+        <Message>In AbstractLeastSquaresOptimizer.java</Message>
+      </SourceLine>
+      <Message>Field org.apache.commons.math3.optimization.general.AbstractLeastSquaresOptimizer.weightedResiduals</Message>
+    </Field>
+    <SourceLine classname="org.apache.commons.math3.optimization.general.AbstractLeastSquaresOptimizer" primary="true" start="213" end="213" startBytecode="53" endBytecode="53" sourcefile="AbstractLeastSquaresOptimizer.java" sourcepath="org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.java">
+      <Message>At AbstractLeastSquaresOptimizer.java:[line 213]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="URF_UNREAD_PUBLIC_OR_PROTECTED_FIELD" abbrev="UrF" category="STYLE">
+    <ShortDescription>Unread public/protected field</ShortDescription>
+    <Details><![CDATA[
+
+  <p> This field is never read.&nbsp;
+The field is public or protected, so perhaps
+    it is intended to be used with classes not seen as part of the analysis. If not,
+consider removing it from the class.</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="UrF">
+    <Description>Unread field</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 14 Nov 2018 04:06:25 -0500" total_classes="1" referenced_classes="43" total_bugs="2" total_size="116" num_packages="1" java_version="1.8.0_121" vm_version="25.121-b13" cpu_seconds="8.46" clock_seconds="4.28" peak_mbytes="157.42" alloc_mbytes="1820.50" gc_seconds="0.04" priority_2="2">
+    <FileStats path="org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.java" bugCount="2" size="116" bugHash="05f2b77d82ceeba132668885ce37959d"/>
+    <PackageStats package="org.apache.commons.math3.optimization.general" total_bugs="2" total_types="1" total_size="116" priority_2="2">
+      <ClassStats class="org.apache.commons.math3.optimization.general.AbstractLeastSquaresOptimizer" sourceFile="AbstractLeastSquaresOptimizer.java" interface="false" size="116" bugs="2" priority_2="2"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="709" invocations="453" avgMicrosecondsPerInvocation="1566" maxMicrosecondsPerInvocation="41479" standardDeviationMicrosecondsPerInvocation="3652"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="517" invocations="449" avgMicrosecondsPerInvocation="1152" maxMicrosecondsPerInvocation="54115" standardDeviationMicrosecondsPerInvocation="4150"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="165" invocations="43" avgMicrosecondsPerInvocation="3840" maxMicrosecondsPerInvocation="47821" standardDeviationMicrosecondsPerInvocation="8182"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="114" invocations="156" avgMicrosecondsPerInvocation="733" maxMicrosecondsPerInvocation="13279" standardDeviationMicrosecondsPerInvocation="1517"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="111" invocations="23" avgMicrosecondsPerInvocation="4829" maxMicrosecondsPerInvocation="52396" standardDeviationMicrosecondsPerInvocation="10878"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="110" invocations="414" avgMicrosecondsPerInvocation="267" maxMicrosecondsPerInvocation="19075" standardDeviationMicrosecondsPerInvocation="1226"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="110" invocations="43" avgMicrosecondsPerInvocation="2577" maxMicrosecondsPerInvocation="27557" standardDeviationMicrosecondsPerInvocation="5066"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="105" invocations="23" avgMicrosecondsPerInvocation="4582" maxMicrosecondsPerInvocation="98305" standardDeviationMicrosecondsPerInvocation="19985"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="77" invocations="78" avgMicrosecondsPerInvocation="999" maxMicrosecondsPerInvocation="50746" standardDeviationMicrosecondsPerInvocation="5717"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="59" invocations="23" avgMicrosecondsPerInvocation="2604" maxMicrosecondsPerInvocation="14934" standardDeviationMicrosecondsPerInvocation="3500"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="58" invocations="24" avgMicrosecondsPerInvocation="2458" maxMicrosecondsPerInvocation="24249" standardDeviationMicrosecondsPerInvocation="5187"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="51" invocations="23" avgMicrosecondsPerInvocation="2233" maxMicrosecondsPerInvocation="11847" standardDeviationMicrosecondsPerInvocation="3284"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="51" invocations="43" avgMicrosecondsPerInvocation="1191" maxMicrosecondsPerInvocation="9120" standardDeviationMicrosecondsPerInvocation="2177"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

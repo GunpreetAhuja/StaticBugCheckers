@@ -1,0 +1,21 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Mockito-33/src/org/mockito/internal/invocation/InvocationMatcher.java:52: warning: [MissingOverride] toString implements method in PrintableInvocation; expected @Override
+    public String toString() {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public String toString() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Mockito-33/src/org/mockito/internal/invocation/InvocationMatcher.java:113: warning: [MissingOverride] getLocation implements method in PrintableInvocation; expected @Override
+    public Location getLocation() {
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Location getLocation() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Mockito-33/src/org/mockito/internal/invocation/InvocationMatcher.java:117: warning: [MissingOverride] toString implements method in PrintingFriendlyInvocation; expected @Override
+    public String toString(PrintSettings printSettings) {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public String toString(PrintSettings printSettings) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Mockito-33/src/org/mockito/internal/invocation/InvocationMatcher.java:121: warning: [MissingOverride] captureArgumentsFrom implements method in CapturesArgumensFromInvocation; expected @Override
+    public void captureArgumentsFrom(Invocation i) {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void captureArgumentsFrom(Invocation i) {'?
+4 warnings

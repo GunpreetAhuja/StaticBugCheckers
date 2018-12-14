@@ -1,0 +1,26 @@
+Found 1 issue
+
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-110/src/com/google/javascript/jscomp/ScopedAliases.java:397: error: NULL_DEREFERENCE
+  object `value` last assigned on line 371 could be null and is dereferenced at line 397.
+  395.               // function, and the programmer is using the hoisting.
+  396.               Node newName = IR.name("").useSourceInfoFrom(existingName);
+  397. >             value.replaceChild(existingName, newName);
+  398.   
+  399.               varNode = IR.var(existingName).useSourceInfoFrom(existingName);
+
+Summary of the reports
+
+  NULL_DEREFERENCE: 1
+Found 1 issue
+
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-110/src/com/google/javascript/rhino/Node.java:992: error: NULL_DEREFERENCE
+  object `x` last assigned on line 985 could be null and is dereferenced at line 992.
+  990.           switch (type) {
+  991.             default:
+  992. >             value = x.toString();
+  993.               break;
+  994.           }
+
+Summary of the reports
+
+  NULL_DEREFERENCE: 1

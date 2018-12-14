@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.1.0" sequence="0" timestamp="1542190076000" analysisTimestamp="1542190079319" release="">
+  <Project projectName="">
+    <Jar>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-55/src</Jar>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-55/build/classes</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-55/lib/args4j.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-55/lib/guava.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-55/lib/json.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-55/lib/jsr305.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-55/lib/protobuf-java.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-55/build/lib/rhino.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-55/lib/ant.jar</AuxClasspathEntry>
+  </Project>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 14 Nov 2018 05:07:56 -0500" total_classes="11" referenced_classes="56" total_bugs="0" total_size="229" num_packages="1" java_version="1.8.0_121" vm_version="25.121-b13" cpu_seconds="8.54" clock_seconds="4.74" peak_mbytes="182.63" alloc_mbytes="1820.50" gc_seconds="0.07">
+    <FileStats path="com/google/javascript/jscomp/FunctionRewriter.java" bugCount="0" size="229"/>
+    <PackageStats package="com.google.javascript.jscomp" total_bugs="0" total_types="11" total_size="229">
+      <ClassStats class="com.google.javascript.jscomp.FunctionRewriter" sourceFile="FunctionRewriter.java" interface="false" size="42" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.FunctionRewriter$1" sourceFile="FunctionRewriter.java" interface="false" size="1" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.FunctionRewriter$EmptyFunctionReducer" sourceFile="FunctionRewriter.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.FunctionRewriter$GetterReducer" sourceFile="FunctionRewriter.java" interface="false" size="26" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.FunctionRewriter$IdentityReducer" sourceFile="FunctionRewriter.java" interface="false" size="26" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.FunctionRewriter$Reducer" sourceFile="FunctionRewriter.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.FunctionRewriter$Reduction" sourceFile="FunctionRewriter.java" interface="false" size="18" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.FunctionRewriter$ReductionGatherer" sourceFile="FunctionRewriter.java" interface="false" size="19" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.FunctionRewriter$ReturnConstantReducer" sourceFile="FunctionRewriter.java" interface="false" size="22" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.FunctionRewriter$SetterReducer" sourceFile="FunctionRewriter.java" interface="false" size="39" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.FunctionRewriter$SingleReturnStatementReducer" sourceFile="FunctionRewriter.java" interface="false" size="11" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="1071" invocations="584" avgMicrosecondsPerInvocation="1834" maxMicrosecondsPerInvocation="57570" standardDeviationMicrosecondsPerInvocation="4409"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="682" invocations="583" avgMicrosecondsPerInvocation="1171" maxMicrosecondsPerInvocation="31922" standardDeviationMicrosecondsPerInvocation="3634"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="296" invocations="56" avgMicrosecondsPerInvocation="5298" maxMicrosecondsPerInvocation="92114" standardDeviationMicrosecondsPerInvocation="14356"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="139" invocations="77" avgMicrosecondsPerInvocation="1805" maxMicrosecondsPerInvocation="63691" standardDeviationMicrosecondsPerInvocation="8399"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="131" invocations="180" avgMicrosecondsPerInvocation="729" maxMicrosecondsPerInvocation="20429" standardDeviationMicrosecondsPerInvocation="1941"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="122" invocations="56" avgMicrosecondsPerInvocation="2194" maxMicrosecondsPerInvocation="13956" standardDeviationMicrosecondsPerInvocation="3687"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="107" invocations="552" avgMicrosecondsPerInvocation="195" maxMicrosecondsPerInvocation="25580" standardDeviationMicrosecondsPerInvocation="1152"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="86" invocations="56" avgMicrosecondsPerInvocation="1548" maxMicrosecondsPerInvocation="30393" standardDeviationMicrosecondsPerInvocation="5092"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="76" invocations="56" avgMicrosecondsPerInvocation="1360" maxMicrosecondsPerInvocation="41833" standardDeviationMicrosecondsPerInvocation="5615"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

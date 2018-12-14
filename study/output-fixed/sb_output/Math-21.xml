@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.1.0" sequence="0" timestamp="1542190742000" analysisTimestamp="1542190745825" release="">
+  <Project projectName="">
+    <Jar>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-21/src/main/java</Jar>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-21/target/classes</AuxClasspathEntry>
+  </Project>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 14 Nov 2018 05:19:02 -0500" total_classes="1" referenced_classes="13" total_bugs="0" total_size="61" num_packages="1" java_version="1.8.0_121" vm_version="25.121-b13" cpu_seconds="7.06" clock_seconds="3.81" peak_mbytes="110.31" alloc_mbytes="1820.50" gc_seconds="0.06">
+    <FileStats path="org/apache/commons/math3/linear/RectangularCholeskyDecomposition.java" bugCount="0" size="61"/>
+    <PackageStats package="org.apache.commons.math3.linear" total_bugs="0" total_types="1" total_size="61">
+      <ClassStats class="org.apache.commons.math3.linear.RectangularCholeskyDecomposition" sourceFile="RectangularCholeskyDecomposition.java" interface="false" size="61" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="611" invocations="349" avgMicrosecondsPerInvocation="1752" maxMicrosecondsPerInvocation="62449" standardDeviationMicrosecondsPerInvocation="5118"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="432" invocations="348" avgMicrosecondsPerInvocation="1244" maxMicrosecondsPerInvocation="43356" standardDeviationMicrosecondsPerInvocation="4187"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="145" invocations="13" avgMicrosecondsPerInvocation="11155" maxMicrosecondsPerInvocation="60944" standardDeviationMicrosecondsPerInvocation="16723"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="120" invocations="56" avgMicrosecondsPerInvocation="2147" maxMicrosecondsPerInvocation="35563" standardDeviationMicrosecondsPerInvocation="5186"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="120" invocations="3" avgMicrosecondsPerInvocation="40043" maxMicrosecondsPerInvocation="119727" standardDeviationMicrosecondsPerInvocation="56345"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="114" invocations="3" avgMicrosecondsPerInvocation="38150" maxMicrosecondsPerInvocation="109176" standardDeviationMicrosecondsPerInvocation="50265"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="98" invocations="316" avgMicrosecondsPerInvocation="311" maxMicrosecondsPerInvocation="24085" standardDeviationMicrosecondsPerInvocation="1635"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="87" invocations="3" avgMicrosecondsPerInvocation="29251" maxMicrosecondsPerInvocation="87512" standardDeviationMicrosecondsPerInvocation="41196"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="75" invocations="13" avgMicrosecondsPerInvocation="5789" maxMicrosecondsPerInvocation="23219" standardDeviationMicrosecondsPerInvocation="6635"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="67" invocations="31" avgMicrosecondsPerInvocation="2168" maxMicrosecondsPerInvocation="34078" standardDeviationMicrosecondsPerInvocation="6384"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="66" invocations="13" avgMicrosecondsPerInvocation="5106" maxMicrosecondsPerInvocation="45474" standardDeviationMicrosecondsPerInvocation="11844"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

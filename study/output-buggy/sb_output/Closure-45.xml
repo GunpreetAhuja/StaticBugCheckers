@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.1.0" sequence="0" timestamp="1542185714000" analysisTimestamp="1542185718006" release="">
+  <Project projectName="">
+    <Jar>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-45/src</Jar>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-45/build/classes</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-45/lib/args4j.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-45/lib/guava.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-45/lib/json.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-45/lib/jsr305.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-45/lib/protobuf-java.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-45/build/lib/rhino.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-45/lib/ant.jar</AuxClasspathEntry>
+  </Project>
+  <BugInstance type="NP_UNWRITTEN_FIELD" priority="2" rank="8" abbrev="NP" category="CORRECTNESS" instanceHash="aa9abf2924c371f53e15431794f57eeb" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="476">
+    <ShortMessage>Read of unwritten field</ShortMessage>
+    <LongMessage>Read of unwritten field assignNode in com.google.javascript.jscomp.RemoveUnusedVars.interpretAssigns()</LongMessage>
+    <Class classname="com.google.javascript.jscomp.RemoveUnusedVars" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.RemoveUnusedVars" start="69" end="846" sourcefile="RemoveUnusedVars.java" sourcepath="com/google/javascript/jscomp/RemoveUnusedVars.java">
+        <Message>At RemoveUnusedVars.java:[lines 69-846]</Message>
+      </SourceLine>
+      <Message>In class com.google.javascript.jscomp.RemoveUnusedVars</Message>
+    </Class>
+    <Method classname="com.google.javascript.jscomp.RemoveUnusedVars" name="interpretAssigns" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.RemoveUnusedVars" start="705" end="749" startBytecode="0" endBytecode="459" sourcefile="RemoveUnusedVars.java" sourcepath="com/google/javascript/jscomp/RemoveUnusedVars.java"/>
+      <Message>In method com.google.javascript.jscomp.RemoveUnusedVars.interpretAssigns()</Message>
+    </Method>
+    <Field classname="com.google.javascript.jscomp.RemoveUnusedVars$Assign" name="assignNode" signature="Lcom/google/javascript/rhino/Node;" isStatic="false" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.RemoveUnusedVars$Assign" sourcefile="RemoveUnusedVars.java" sourcepath="com/google/javascript/jscomp/RemoveUnusedVars.java">
+        <Message>In RemoveUnusedVars.java</Message>
+      </SourceLine>
+      <Message>Field com.google.javascript.jscomp.RemoveUnusedVars$Assign.assignNode</Message>
+    </Field>
+    <SourceLine classname="com.google.javascript.jscomp.RemoveUnusedVars" primary="true" start="736" end="736" startBytecode="183" endBytecode="183" sourcefile="RemoveUnusedVars.java" sourcepath="com/google/javascript/jscomp/RemoveUnusedVars.java">
+      <Message>At RemoveUnusedVars.java:[line 736]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="NP_UNWRITTEN_FIELD" priority="2" rank="8" abbrev="NP" category="CORRECTNESS" instanceHash="5a996bd43b98fc7ec9f8431b5c5b3015" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="476">
+    <ShortMessage>Read of unwritten field</ShortMessage>
+    <LongMessage>Read of unwritten field nameNode in com.google.javascript.jscomp.RemoveUnusedVars.traverseNode(Node, Node, Scope)</LongMessage>
+    <Class classname="com.google.javascript.jscomp.RemoveUnusedVars" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.RemoveUnusedVars" start="69" end="846" sourcefile="RemoveUnusedVars.java" sourcepath="com/google/javascript/jscomp/RemoveUnusedVars.java">
+        <Message>At RemoveUnusedVars.java:[lines 69-846]</Message>
+      </SourceLine>
+      <Message>In class com.google.javascript.jscomp.RemoveUnusedVars</Message>
+    </Class>
+    <Method classname="com.google.javascript.jscomp.RemoveUnusedVars" name="traverseNode" signature="(Lcom/google/javascript/rhino/Node;Lcom/google/javascript/rhino/Node;Lcom/google/javascript/jscomp/Scope;)V" isStatic="false" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.RemoveUnusedVars" start="193" end="296" startBytecode="0" endBytecode="850" sourcefile="RemoveUnusedVars.java" sourcepath="com/google/javascript/jscomp/RemoveUnusedVars.java"/>
+      <Message>In method com.google.javascript.jscomp.RemoveUnusedVars.traverseNode(Node, Node, Scope)</Message>
+    </Method>
+    <Field classname="com.google.javascript.jscomp.RemoveUnusedVars$Assign" name="nameNode" signature="Lcom/google/javascript/rhino/Node;" isStatic="false" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.RemoveUnusedVars$Assign" sourcefile="RemoveUnusedVars.java" sourcepath="com/google/javascript/jscomp/RemoveUnusedVars.java">
+        <Message>In RemoveUnusedVars.java</Message>
+      </SourceLine>
+      <Message>Field com.google.javascript.jscomp.RemoveUnusedVars$Assign.nameNode</Message>
+    </Field>
+    <SourceLine classname="com.google.javascript.jscomp.RemoveUnusedVars" primary="true" start="215" end="215" startBytecode="135" endBytecode="135" sourcefile="RemoveUnusedVars.java" sourcepath="com/google/javascript/jscomp/RemoveUnusedVars.java">
+      <Message>At RemoveUnusedVars.java:[line 215]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="SF_SWITCH_NO_DEFAULT" priority="2" rank="19" abbrev="SF" category="STYLE" instanceHash="b9963b1219fce55c79d2967b25032232" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Switch statement found where default case is missing</ShortMessage>
+    <LongMessage>Switch statement found in com.google.javascript.jscomp.RemoveUnusedVars.traverseNode(Node, Node, Scope) where default case is missing</LongMessage>
+    <Class classname="com.google.javascript.jscomp.RemoveUnusedVars" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.RemoveUnusedVars" start="69" end="846" sourcefile="RemoveUnusedVars.java" sourcepath="com/google/javascript/jscomp/RemoveUnusedVars.java">
+        <Message>At RemoveUnusedVars.java:[lines 69-846]</Message>
+      </SourceLine>
+      <Message>In class com.google.javascript.jscomp.RemoveUnusedVars</Message>
+    </Class>
+    <Method classname="com.google.javascript.jscomp.RemoveUnusedVars" name="traverseNode" signature="(Lcom/google/javascript/rhino/Node;Lcom/google/javascript/rhino/Node;Lcom/google/javascript/jscomp/Scope;)V" isStatic="false" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.RemoveUnusedVars" start="193" end="296" startBytecode="0" endBytecode="850" sourcefile="RemoveUnusedVars.java" sourcepath="com/google/javascript/jscomp/RemoveUnusedVars.java"/>
+      <Message>In method com.google.javascript.jscomp.RemoveUnusedVars.traverseNode(Node, Node, Scope)</Message>
+    </Method>
+    <SourceLine classname="com.google.javascript.jscomp.RemoveUnusedVars" primary="true" start="195" end="286" startBytecode="11" endBytecode="499" sourcefile="RemoveUnusedVars.java" sourcepath="com/google/javascript/jscomp/RemoveUnusedVars.java">
+      <Message>At RemoveUnusedVars.java:[lines 195-286]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="CORRECTNESS">
+    <Description>Correctness</Description>
+  </BugCategory>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="NP_UNWRITTEN_FIELD" abbrev="NP" category="CORRECTNESS">
+    <ShortDescription>Read of unwritten field</ShortDescription>
+    <Details><![CDATA[
+
+  <p> The program is dereferencing a field that does not seem to ever have a non-null value written to it.
+Unless the field is initialized via some mechanism not seen by the analysis,
+dereferencing this value will generate a null pointer exception.
+</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="SF_SWITCH_NO_DEFAULT" abbrev="SF" category="STYLE">
+    <ShortDescription>Switch statement found where default case is missing</ShortDescription>
+    <Details><![CDATA[
+
+  <p> This method contains a switch statement where default case is missing.
+  Usually you need to provide a default case.</p>
+  <p>Because the analysis only looks at the generated bytecode, this warning can be incorrect triggered if
+the default case is at the end of the switch statement and the switch statement doesn't contain break statements for other
+cases.
+
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="NP" cweid="476">
+    <Description>Null pointer dereference</Description>
+  </BugCode>
+  <BugCode abbrev="SF">
+    <Description>Switch case falls through</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 14 Nov 2018 03:55:14 -0500" total_classes="4" referenced_classes="45" total_bugs="3" total_size="447" num_packages="1" java_version="1.8.0_121" vm_version="25.121-b13" cpu_seconds="9.75" clock_seconds="4.91" peak_mbytes="115.09" alloc_mbytes="1820.50" gc_seconds="0.06" priority_2="3">
+    <FileStats path="com/google/javascript/jscomp/RemoveUnusedVars.java" bugCount="3" size="447" bugHash="7822cfb2cfb81f79bc4c7a36e529f31f"/>
+    <PackageStats package="com.google.javascript.jscomp" total_bugs="3" total_types="4" total_size="447" priority_2="3">
+      <ClassStats class="com.google.javascript.jscomp.RemoveUnusedVars" sourceFile="RemoveUnusedVars.java" interface="false" size="245" bugs="3" priority_2="3"/>
+      <ClassStats class="com.google.javascript.jscomp.RemoveUnusedVars$Assign" sourceFile="RemoveUnusedVars.java" interface="false" size="49" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.RemoveUnusedVars$CallSiteOptimizer" sourceFile="RemoveUnusedVars.java" interface="false" size="137" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.RemoveUnusedVars$Continuation" sourceFile="RemoveUnusedVars.java" interface="false" size="16" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="614" invocations="528" avgMicrosecondsPerInvocation="1164" maxMicrosecondsPerInvocation="29035" standardDeviationMicrosecondsPerInvocation="1888"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="529" invocations="527" avgMicrosecondsPerInvocation="1005" maxMicrosecondsPerInvocation="57917" standardDeviationMicrosecondsPerInvocation="3247"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="208" invocations="45" avgMicrosecondsPerInvocation="4623" maxMicrosecondsPerInvocation="61965" standardDeviationMicrosecondsPerInvocation="10323"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="171" invocations="17" avgMicrosecondsPerInvocation="10081" maxMicrosecondsPerInvocation="147732" standardDeviationMicrosecondsPerInvocation="34499"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="152" invocations="17" avgMicrosecondsPerInvocation="8984" maxMicrosecondsPerInvocation="46826" standardDeviationMicrosecondsPerInvocation="12640"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="142" invocations="17" avgMicrosecondsPerInvocation="8407" maxMicrosecondsPerInvocation="37330" standardDeviationMicrosecondsPerInvocation="10440"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="140" invocations="207" avgMicrosecondsPerInvocation="677" maxMicrosecondsPerInvocation="32150" standardDeviationMicrosecondsPerInvocation="2433"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="120" invocations="45" avgMicrosecondsPerInvocation="2667" maxMicrosecondsPerInvocation="16108" standardDeviationMicrosecondsPerInvocation="3562"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="108" invocations="495" avgMicrosecondsPerInvocation="219" maxMicrosecondsPerInvocation="17954" standardDeviationMicrosecondsPerInvocation="947"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="105" invocations="17" avgMicrosecondsPerInvocation="6212" maxMicrosecondsPerInvocation="30701" standardDeviationMicrosecondsPerInvocation="8752"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="101" invocations="17" avgMicrosecondsPerInvocation="5943" maxMicrosecondsPerInvocation="32422" standardDeviationMicrosecondsPerInvocation="8751"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="82" invocations="45" avgMicrosecondsPerInvocation="1839" maxMicrosecondsPerInvocation="26766" standardDeviationMicrosecondsPerInvocation="4996"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="82" invocations="45" avgMicrosecondsPerInvocation="1824" maxMicrosecondsPerInvocation="34370" standardDeviationMicrosecondsPerInvocation="5215"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="77" invocations="17" avgMicrosecondsPerInvocation="4554" maxMicrosecondsPerInvocation="24836" standardDeviationMicrosecondsPerInvocation="6884"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="70" invocations="68" avgMicrosecondsPerInvocation="1037" maxMicrosecondsPerInvocation="21155" standardDeviationMicrosecondsPerInvocation="3037"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="61" invocations="45" avgMicrosecondsPerInvocation="1372" maxMicrosecondsPerInvocation="29661" standardDeviationMicrosecondsPerInvocation="4390"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="52" invocations="17" avgMicrosecondsPerInvocation="3117" maxMicrosecondsPerInvocation="25870" standardDeviationMicrosecondsPerInvocation="6080"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

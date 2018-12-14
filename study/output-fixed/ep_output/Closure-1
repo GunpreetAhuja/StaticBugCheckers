@@ -1,0 +1,6 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-1/src/com/google/javascript/jscomp/RemoveUnusedVars.java:830: warning: [OperatorPrecedence] Use grouping parenthesis to make the operator precedence explicit
+          toRemove.isParamList() &&
+                                 ^
+    (see http://errorprone.info/bugpattern/OperatorPrecedence)
+  Did you mean '(toRemove.isParamList() &&'?
+1 warning

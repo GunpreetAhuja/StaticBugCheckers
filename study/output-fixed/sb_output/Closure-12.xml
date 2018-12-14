@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.1.0" sequence="0" timestamp="1542189757000" analysisTimestamp="1542189759926" release="">
+  <Project projectName="">
+    <Jar>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-12/src</Jar>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-12/build/classes</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-12/lib/args4j.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-12/lib/guava.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-12/lib/json.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-12/lib/jsr305.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-12/lib/protobuf-java.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-12/build/lib/rhino.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-12/lib/ant.jar</AuxClasspathEntry>
+  </Project>
+  <BugInstance type="NP_UNWRITTEN_FIELD" priority="2" rank="8" abbrev="NP" category="CORRECTNESS" instanceHash="a8f0cf658ed6109ab24b96e267c9db" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="476">
+    <ShortMessage>Read of unwritten field</ShortMessage>
+    <LongMessage>Read of unwritten field mayUseMap in com.google.javascript.jscomp.MaybeReachingVariableUse.addToUseIfLocal(String, Node, MaybeReachingVariableUse$ReachingUses)</LongMessage>
+    <Class classname="com.google.javascript.jscomp.MaybeReachingVariableUse" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.MaybeReachingVariableUse" start="44" end="300" sourcefile="MaybeReachingVariableUse.java" sourcepath="com/google/javascript/jscomp/MaybeReachingVariableUse.java">
+        <Message>At MaybeReachingVariableUse.java:[lines 44-300]</Message>
+      </SourceLine>
+      <Message>In class com.google.javascript.jscomp.MaybeReachingVariableUse</Message>
+    </Class>
+    <Method classname="com.google.javascript.jscomp.MaybeReachingVariableUse" name="addToUseIfLocal" signature="(Ljava/lang/String;Lcom/google/javascript/rhino/Node;Lcom/google/javascript/jscomp/MaybeReachingVariableUse$ReachingUses;)V" isStatic="false" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.MaybeReachingVariableUse" start="262" end="269" startBytecode="0" endBytecode="115" sourcefile="MaybeReachingVariableUse.java" sourcepath="com/google/javascript/jscomp/MaybeReachingVariableUse.java"/>
+      <Message>In method com.google.javascript.jscomp.MaybeReachingVariableUse.addToUseIfLocal(String, Node, MaybeReachingVariableUse$ReachingUses)</Message>
+    </Method>
+    <Field classname="com.google.javascript.jscomp.MaybeReachingVariableUse$ReachingUses" name="mayUseMap" signature="Lcom/google/common/collect/Multimap;" isStatic="false" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.MaybeReachingVariableUse$ReachingUses" sourcefile="MaybeReachingVariableUse.java" sourcepath="com/google/javascript/jscomp/MaybeReachingVariableUse.java">
+        <Message>In MaybeReachingVariableUse.java</Message>
+      </SourceLine>
+      <Message>Field com.google.javascript.jscomp.MaybeReachingVariableUse$ReachingUses.mayUseMap</Message>
+    </Field>
+    <SourceLine classname="com.google.javascript.jscomp.MaybeReachingVariableUse" primary="true" start="267" end="267" startBytecode="49" endBytecode="49" sourcefile="MaybeReachingVariableUse.java" sourcepath="com/google/javascript/jscomp/MaybeReachingVariableUse.java">
+      <Message>At MaybeReachingVariableUse.java:[line 267]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="NP_UNWRITTEN_FIELD" priority="2" rank="8" abbrev="NP" category="CORRECTNESS" instanceHash="cb5529459037453b7ffd6d62ba960610" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="476">
+    <ShortMessage>Read of unwritten field</ShortMessage>
+    <LongMessage>Read of unwritten field mayUseMap in com.google.javascript.jscomp.MaybeReachingVariableUse.getUses(String, Node)</LongMessage>
+    <Class classname="com.google.javascript.jscomp.MaybeReachingVariableUse" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.MaybeReachingVariableUse" start="44" end="300" sourcefile="MaybeReachingVariableUse.java" sourcepath="com/google/javascript/jscomp/MaybeReachingVariableUse.java">
+        <Message>At MaybeReachingVariableUse.java:[lines 44-300]</Message>
+      </SourceLine>
+      <Message>In class com.google.javascript.jscomp.MaybeReachingVariableUse</Message>
+    </Class>
+    <Method classname="com.google.javascript.jscomp.MaybeReachingVariableUse" name="getUses" signature="(Ljava/lang/String;Lcom/google/javascript/rhino/Node;)Ljava/util/Collection;" isStatic="false" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.MaybeReachingVariableUse" start="297" end="300" startBytecode="0" endBytecode="85" sourcefile="MaybeReachingVariableUse.java" sourcepath="com/google/javascript/jscomp/MaybeReachingVariableUse.java"/>
+      <Message>In method com.google.javascript.jscomp.MaybeReachingVariableUse.getUses(String, Node)</Message>
+    </Method>
+    <Field classname="com.google.javascript.jscomp.MaybeReachingVariableUse$ReachingUses" name="mayUseMap" signature="Lcom/google/common/collect/Multimap;" isStatic="false" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.MaybeReachingVariableUse$ReachingUses" sourcefile="MaybeReachingVariableUse.java" sourcepath="com/google/javascript/jscomp/MaybeReachingVariableUse.java">
+        <Message>In MaybeReachingVariableUse.java</Message>
+      </SourceLine>
+      <Message>Field com.google.javascript.jscomp.MaybeReachingVariableUse$ReachingUses.mayUseMap</Message>
+    </Field>
+    <SourceLine classname="com.google.javascript.jscomp.MaybeReachingVariableUse" primary="true" start="300" end="300" startBytecode="44" endBytecode="44" sourcefile="MaybeReachingVariableUse.java" sourcepath="com/google/javascript/jscomp/MaybeReachingVariableUse.java">
+      <Message>At MaybeReachingVariableUse.java:[line 300]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="NP_UNWRITTEN_FIELD" priority="2" rank="8" abbrev="NP" category="CORRECTNESS" instanceHash="d832aa196965d8851843e6cfc4a794a7" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="476">
+    <ShortMessage>Read of unwritten field</ShortMessage>
+    <LongMessage>Read of unwritten field mayUseMap in com.google.javascript.jscomp.MaybeReachingVariableUse.removeFromUseIfLocal(String, MaybeReachingVariableUse$ReachingUses)</LongMessage>
+    <Class classname="com.google.javascript.jscomp.MaybeReachingVariableUse" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.MaybeReachingVariableUse" start="44" end="300" sourcefile="MaybeReachingVariableUse.java" sourcepath="com/google/javascript/jscomp/MaybeReachingVariableUse.java">
+        <Message>At MaybeReachingVariableUse.java:[lines 44-300]</Message>
+      </SourceLine>
+      <Message>In class com.google.javascript.jscomp.MaybeReachingVariableUse</Message>
+    </Class>
+    <Method classname="com.google.javascript.jscomp.MaybeReachingVariableUse" name="removeFromUseIfLocal" signature="(Ljava/lang/String;Lcom/google/javascript/jscomp/MaybeReachingVariableUse$ReachingUses;)V" isStatic="false" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.MaybeReachingVariableUse" start="277" end="284" startBytecode="0" endBytecode="109" sourcefile="MaybeReachingVariableUse.java" sourcepath="com/google/javascript/jscomp/MaybeReachingVariableUse.java"/>
+      <Message>In method com.google.javascript.jscomp.MaybeReachingVariableUse.removeFromUseIfLocal(String, MaybeReachingVariableUse$ReachingUses)</Message>
+    </Method>
+    <Field classname="com.google.javascript.jscomp.MaybeReachingVariableUse$ReachingUses" name="mayUseMap" signature="Lcom/google/common/collect/Multimap;" isStatic="false" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.MaybeReachingVariableUse$ReachingUses" sourcefile="MaybeReachingVariableUse.java" sourcepath="com/google/javascript/jscomp/MaybeReachingVariableUse.java">
+        <Message>In MaybeReachingVariableUse.java</Message>
+      </SourceLine>
+      <Message>Field com.google.javascript.jscomp.MaybeReachingVariableUse$ReachingUses.mayUseMap</Message>
+    </Field>
+    <SourceLine classname="com.google.javascript.jscomp.MaybeReachingVariableUse" primary="true" start="282" end="282" startBytecode="43" endBytecode="43" sourcefile="MaybeReachingVariableUse.java" sourcepath="com/google/javascript/jscomp/MaybeReachingVariableUse.java">
+      <Message>At MaybeReachingVariableUse.java:[line 282]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="CORRECTNESS">
+    <Description>Correctness</Description>
+  </BugCategory>
+  <BugPattern type="NP_UNWRITTEN_FIELD" abbrev="NP" category="CORRECTNESS">
+    <ShortDescription>Read of unwritten field</ShortDescription>
+    <Details><![CDATA[
+
+  <p> The program is dereferencing a field that does not seem to ever have a non-null value written to it.
+Unless the field is initialized via some mechanism not seen by the analysis,
+dereferencing this value will generate a null pointer exception.
+</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="NP" cweid="476">
+    <Description>Null pointer dereference</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 14 Nov 2018 05:02:37 -0500" total_classes="4" referenced_classes="54" total_bugs="3" total_size="121" num_packages="1" java_version="1.8.0_121" vm_version="25.121-b13" cpu_seconds="8.58" clock_seconds="4.87" peak_mbytes="112.22" alloc_mbytes="1820.50" gc_seconds="0.06" priority_2="3">
+    <FileStats path="com/google/javascript/jscomp/MaybeReachingVariableUse.java" bugCount="3" size="121" bugHash="15a5a8e8e492e08409cc4a84c7a4d040"/>
+    <PackageStats package="com.google.javascript.jscomp" total_bugs="3" total_types="4" total_size="121" priority_2="3">
+      <ClassStats class="com.google.javascript.jscomp.MaybeReachingVariableUse" sourceFile="MaybeReachingVariableUse.java" interface="false" size="94" bugs="3" priority_2="3"/>
+      <ClassStats class="com.google.javascript.jscomp.MaybeReachingVariableUse$1" sourceFile="MaybeReachingVariableUse.java" interface="false" size="1" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.MaybeReachingVariableUse$ReachingUses" sourceFile="MaybeReachingVariableUse.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.MaybeReachingVariableUse$ReachingUsesJoinOp" sourceFile="MaybeReachingVariableUse.java" interface="false" size="11" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="728" invocations="493" avgMicrosecondsPerInvocation="1478" maxMicrosecondsPerInvocation="62131" standardDeviationMicrosecondsPerInvocation="4909"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="637" invocations="498" avgMicrosecondsPerInvocation="1280" maxMicrosecondsPerInvocation="30356" standardDeviationMicrosecondsPerInvocation="2634"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="236" invocations="54" avgMicrosecondsPerInvocation="4376" maxMicrosecondsPerInvocation="54649" standardDeviationMicrosecondsPerInvocation="10023"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="204" invocations="54" avgMicrosecondsPerInvocation="3783" maxMicrosecondsPerInvocation="40960" standardDeviationMicrosecondsPerInvocation="8735"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="201" invocations="166" avgMicrosecondsPerInvocation="1214" maxMicrosecondsPerInvocation="39934" standardDeviationMicrosecondsPerInvocation="4474"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="135" invocations="13" avgMicrosecondsPerInvocation="10431" maxMicrosecondsPerInvocation="112992" standardDeviationMicrosecondsPerInvocation="30066"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="124" invocations="11" avgMicrosecondsPerInvocation="11286" maxMicrosecondsPerInvocation="79694" standardDeviationMicrosecondsPerInvocation="22186"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="115" invocations="461" avgMicrosecondsPerInvocation="250" maxMicrosecondsPerInvocation="17975" standardDeviationMicrosecondsPerInvocation="1202"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="96" invocations="13" avgMicrosecondsPerInvocation="7454" maxMicrosecondsPerInvocation="45965" standardDeviationMicrosecondsPerInvocation="13521"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="88" invocations="13" avgMicrosecondsPerInvocation="6772" maxMicrosecondsPerInvocation="48512" standardDeviationMicrosecondsPerInvocation="13032"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="65" invocations="54" avgMicrosecondsPerInvocation="1220" maxMicrosecondsPerInvocation="31683" standardDeviationMicrosecondsPerInvocation="4444"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="61" invocations="13" avgMicrosecondsPerInvocation="4758" maxMicrosecondsPerInvocation="41402" standardDeviationMicrosecondsPerInvocation="11105"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

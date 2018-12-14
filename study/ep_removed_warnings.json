@@ -1,0 +1,102 @@
+[
+    {
+        " Proj": "Chart-8",
+        "Class": "org.jfree.data.time.Week",
+        " Type": "error",
+        "  Cat": "ChainingConstructorIgnoresParameter",
+        "  Msg": "The called constructor accepts a parameter with the same name and type as one of its caller's parameters, but its caller doesn't pass that parameter to it.  It's likely that it was intended to.",
+        " Code": "        this(time, RegularTimePeriod.DEFAULT_TIME_ZONE, Locale.getDefault());",
+        " Mark": "            ^",
+        " Line": 175
+    },
+    {
+        " Proj": "Lang-48",
+        "Class": "",
+        " Type": "",
+        "  Cat": "NO_WARNING",
+        "  Msg": "",
+        " Code": "",
+        " Mark": "",
+        " Line": -1
+    },
+    {
+        " Proj": "Lang-51",
+        "Class": "org.apache.commons.lang.BooleanUtils",
+        " Type": "error",
+        "  Cat": "FallThrough",
+        "  Msg": "Execution may fall through from the previous case; add a `// fall through` comment before this line if it was deliberate",
+        " Code": "            case 4: {",
+        " Mark": "            ^",
+        " Line": 683
+    },
+    {
+        " Proj": "Lang-62",
+        "Class": "org.apache.commons.lang.Entities",
+        " Type": "error",
+        "  Cat": "FallThrough",
+        "  Msg": "Execution may fall through from the previous case; add a `// fall through` comment before this line if it was deliberate",
+        " Code": "                                    default : {",
+        " Mark": "                                    ^",
+        " Line": 921
+    },
+    {
+        " Proj": "Math-57",
+        "Class": "org.apache.commons.math.stat.clustering.KMeansPlusPlusClusterer",
+        " Type": "warning",
+        "  Cat": "NarrowingCompoundAssignment",
+        "  Msg": "Compound assignments from double to int hide lossy casts",
+        " Code": "                sum += d * d;",
+        " Mark": "                    ^",
+        " Line": 180
+    },
+    {
+        " Proj": "Math-66",
+        "Class": "org.apache.commons.math.optimization.univariate.BrentOptimizer",
+        " Type": "warning",
+        "  Cat": "MissingOverride",
+        "  Msg": "optimize overrides method in AbstractUnivariateRealOptimizer; expected @Override",
+        " Code": "    public double optimize(final UnivariateRealFunction f, final GoalType goalType, final double min, final double max, final double startValue) throws MaxIterationsExceededException, FunctionEvaluationException {",
+        " Mark": "                  ^",
+        " Line": 59
+    },
+    {
+        " Proj": "Math-66",
+        "Class": "org.apache.commons.math.optimization.univariate.BrentOptimizer",
+        " Type": "warning",
+        "  Cat": "MissingOverride",
+        "  Msg": "optimize overrides method in AbstractUnivariateRealOptimizer; expected @Override",
+        " Code": "    public double optimize(final UnivariateRealFunction f, final GoalType goalType, final double min, final double max) throws MaxIterationsExceededException, FunctionEvaluationException {",
+        " Mark": "                  ^",
+        " Line": 65
+    },
+    {
+        " Proj": "Math-77",
+        "Class": "org.apache.commons.math.linear.OpenMapRealVector",
+        " Type": "warning",
+        "  Cat": "MissingOverride",
+        "  Msg": "getLInfNorm overrides method in AbstractRealVector; expected @Override",
+        " Code": "    public double getLInfNorm() {",
+        " Mark": "                  ^",
+        " Line": 498
+    },
+    {
+        " Proj": "Mockito-19",
+        "Class": "org.mockito.internal.configuration.injection.filter.TypeBasedCandidateFilter",
+        " Type": "warning",
+        "  Cat": "MissingOverride",
+        "  Msg": "filterCandidate implements method in MockCandidateFilter; expected @Override",
+        " Code": "    public OngoingInjecter filterCandidate(Collection<Object> mocks, Field field, Object fieldInstance) {",
+        " Mark": "                           ^",
+        " Line": 20
+    },
+    {
+        " Proj": "Mockito-19",
+        "Class": "org.mockito.internal.configuration.injection.filter.FinalMockCandidateFilter",
+        " Type": "warning",
+        "  Cat": "MissingOverride",
+        "  Msg": "filterCandidate implements method in MockCandidateFilter; expected @Override",
+        " Code": "    public OngoingInjecter filterCandidate(final Collection<Object> mocks, final Field field, final Object fieldInstance) {",
+        " Mark": "                           ^",
+        " Line": 23
+    }
+]

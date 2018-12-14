@@ -1,0 +1,11 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-15/src/main/java/org/apache/commons/lang3/reflect/TypeUtils.java:157: warning: [OperatorPrecedence] Use grouping parenthesis to make the operator precedence explicit
+                    && isAssignable(((GenericArrayType) type).getGenericComponentType(), toClass
+                    ^
+    (see http://errorprone.info/bugpattern/OperatorPrecedence)
+  Did you mean '|| (toClass.isArray()'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-15/src/main/java/org/apache/commons/lang3/reflect/TypeUtils.java:1082: warning: [OperatorPrecedence] Use grouping parenthesis to make the operator precedence explicit
+        return type instanceof GenericArrayType || type instanceof Class<?> && ((Class<?>) type).isArray();
+                                                                            ^
+    (see http://errorprone.info/bugpattern/OperatorPrecedence)
+  Did you mean 'return type instanceof GenericArrayType || (type instanceof Class<?> && ((Class<?>) type).isArray());'?
+2 warnings

@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.1.0" sequence="0" timestamp="1542189688000" analysisTimestamp="1542189690630" release="">
+  <Project projectName="">
+    <Jar>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-109/src</Jar>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-109/build/classes</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-109/lib/args4j.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-109/lib/guava.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-109/lib/json.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-109/lib/jsr305.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-109/lib/protobuf-java.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-109/build/lib/rhino.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-109/lib/ant.jar</AuxClasspathEntry>
+  </Project>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="b55e502ab3071be3c2f4419bccf9799" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Dead store to local variable</ShortMessage>
+    <LongMessage>Dead store to $L1 in com.google.javascript.jscomp.parsing.JsDocInfoParser.parseResultType(JsDocToken)</LongMessage>
+    <Class classname="com.google.javascript.jscomp.parsing.JsDocInfoParser" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.parsing.JsDocInfoParser" start="48" end="2581" sourcefile="JsDocInfoParser.java" sourcepath="com/google/javascript/jscomp/parsing/JsDocInfoParser.java">
+        <Message>At JsDocInfoParser.java:[lines 48-2581]</Message>
+      </SourceLine>
+      <Message>In class com.google.javascript.jscomp.parsing.JsDocInfoParser</Message>
+    </Class>
+    <Method classname="com.google.javascript.jscomp.parsing.JsDocInfoParser" name="parseResultType" signature="(Lcom/google/javascript/jscomp/parsing/JsDocToken;)Lcom/google/javascript/rhino/Node;" isStatic="false" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.parsing.JsDocInfoParser" start="2157" end="2168" startBytecode="0" endBytecode="36" sourcefile="JsDocInfoParser.java" sourcepath="com/google/javascript/jscomp/parsing/JsDocInfoParser.java"/>
+      <Message>In method com.google.javascript.jscomp.parsing.JsDocInfoParser.parseResultType(JsDocToken)</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="26" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="com.google.javascript.jscomp.parsing.JsDocInfoParser" primary="true" start="2162" end="2162" startBytecode="25" endBytecode="25" sourcefile="JsDocInfoParser.java" sourcepath="com/google/javascript/jscomp/parsing/JsDocInfoParser.java">
+      <Message>At JsDocInfoParser.java:[line 2162]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.IS_PARAMETER" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.PARAM_DEAD_ON_ENTRY" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" instanceHash="1ee8c0c490a41894eec43223b588adae" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Dead store to local variable</ShortMessage>
+    <LongMessage>Dead store to $L4 in com.google.javascript.jscomp.parsing.JsDocInfoParser.parseAnnotation(JsDocToken, List)</LongMessage>
+    <Class classname="com.google.javascript.jscomp.parsing.JsDocInfoParser" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.parsing.JsDocInfoParser" start="48" end="2581" sourcefile="JsDocInfoParser.java" sourcepath="com/google/javascript/jscomp/parsing/JsDocInfoParser.java">
+        <Message>At JsDocInfoParser.java:[lines 48-2581]</Message>
+      </SourceLine>
+      <Message>In class com.google.javascript.jscomp.parsing.JsDocInfoParser</Message>
+    </Class>
+    <Method classname="com.google.javascript.jscomp.parsing.JsDocInfoParser" name="parseAnnotation" signature="(Lcom/google/javascript/jscomp/parsing/JsDocToken;Ljava/util/List;)Lcom/google/javascript/jscomp/parsing/JsDocToken;" isStatic="false" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.parsing.JsDocInfoParser" start="292" end="1075" startBytecode="0" endBytecode="1674" sourcefile="JsDocInfoParser.java" sourcepath="com/google/javascript/jscomp/parsing/JsDocInfoParser.java"/>
+      <Message>In method com.google.javascript.jscomp.parsing.JsDocInfoParser.parseAnnotation(JsDocToken, List)</Message>
+    </Method>
+    <LocalVariable name="?" register="4" pc="2119" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 4</Message>
+    </LocalVariable>
+    <SourceLine classname="com.google.javascript.jscomp.parsing.JsDocInfoParser" primary="true" start="597" end="597" startBytecode="1777" endBytecode="1777" sourcefile="JsDocInfoParser.java" sourcepath="com/google/javascript/jscomp/parsing/JsDocInfoParser.java">
+      <Message>At JsDocInfoParser.java:[line 597]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.BASE_VALUE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.MANY_STORES" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="IP_PARAMETER_IS_DEAD_BUT_OVERWRITTEN" priority="1" rank="6" abbrev="IP" category="CORRECTNESS" instanceHash="26a184a55262ed55d6def0b38804ab61" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>A parameter is dead upon entry to a method but overwritten</ShortMessage>
+    <LongMessage>The parameter $L1 to com.google.javascript.jscomp.parsing.JsDocInfoParser.parseResultType(JsDocToken) is dead upon entry but overwritten</LongMessage>
+    <Class classname="com.google.javascript.jscomp.parsing.JsDocInfoParser" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.parsing.JsDocInfoParser" start="48" end="2581" sourcefile="JsDocInfoParser.java" sourcepath="com/google/javascript/jscomp/parsing/JsDocInfoParser.java">
+        <Message>At JsDocInfoParser.java:[lines 48-2581]</Message>
+      </SourceLine>
+      <Message>In class com.google.javascript.jscomp.parsing.JsDocInfoParser</Message>
+    </Class>
+    <Method classname="com.google.javascript.jscomp.parsing.JsDocInfoParser" name="parseResultType" signature="(Lcom/google/javascript/jscomp/parsing/JsDocToken;)Lcom/google/javascript/rhino/Node;" isStatic="false" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.parsing.JsDocInfoParser" start="2157" end="2168" startBytecode="0" endBytecode="36" sourcefile="JsDocInfoParser.java" sourcepath="com/google/javascript/jscomp/parsing/JsDocInfoParser.java"/>
+      <Message>In method com.google.javascript.jscomp.parsing.JsDocInfoParser.parseResultType(JsDocToken)</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="26" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="com.google.javascript.jscomp.parsing.JsDocInfoParser" primary="true" start="2162" end="2162" startBytecode="25" endBytecode="25" sourcefile="JsDocInfoParser.java" sourcepath="com/google/javascript/jscomp/parsing/JsDocInfoParser.java">
+      <Message>At JsDocInfoParser.java:[line 2162]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="SBSC_USE_STRINGBUFFER_CONCATENATION" priority="2" rank="18" abbrev="SBSC" category="PERFORMANCE" instanceHash="eefa53fc6cbf044d657d46fc1d7dccf9" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Method concatenates strings using + in a loop</ShortMessage>
+    <LongMessage>com.google.javascript.jscomp.parsing.JsDocInfoParser.parseTypeName(JsDocToken) concatenates strings using + in a loop</LongMessage>
+    <Class classname="com.google.javascript.jscomp.parsing.JsDocInfoParser" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.parsing.JsDocInfoParser" start="48" end="2581" sourcefile="JsDocInfoParser.java" sourcepath="com/google/javascript/jscomp/parsing/JsDocInfoParser.java">
+        <Message>At JsDocInfoParser.java:[lines 48-2581]</Message>
+      </SourceLine>
+      <Message>In class com.google.javascript.jscomp.parsing.JsDocInfoParser</Message>
+    </Class>
+    <Method classname="com.google.javascript.jscomp.parsing.JsDocInfoParser" name="parseTypeName" signature="(Lcom/google/javascript/jscomp/parsing/JsDocToken;)Lcom/google/javascript/rhino/Node;" isStatic="false" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.parsing.JsDocInfoParser" start="1952" end="1985" startBytecode="0" endBytecode="333" sourcefile="JsDocInfoParser.java" sourcepath="com/google/javascript/jscomp/parsing/JsDocInfoParser.java"/>
+      <Message>In method com.google.javascript.jscomp.parsing.JsDocInfoParser.parseTypeName(JsDocToken)</Message>
+    </Method>
+    <SourceLine classname="com.google.javascript.jscomp.parsing.JsDocInfoParser" primary="true" start="1964" end="1964" startBytecode="81" endBytecode="81" sourcefile="JsDocInfoParser.java" sourcepath="com/google/javascript/jscomp/parsing/JsDocInfoParser.java">
+      <Message>At JsDocInfoParser.java:[line 1964]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="SF_SWITCH_NO_DEFAULT" priority="2" rank="19" abbrev="SF" category="STYLE" instanceHash="3344d4b6d4a3df0d07965acc5efa4c7c" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Switch statement found where default case is missing</ShortMessage>
+    <LongMessage>Switch statement found in com.google.javascript.jscomp.parsing.JsDocInfoParser.parseAnnotation(JsDocToken, List) where default case is missing</LongMessage>
+    <Class classname="com.google.javascript.jscomp.parsing.JsDocInfoParser" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.parsing.JsDocInfoParser" start="48" end="2581" sourcefile="JsDocInfoParser.java" sourcepath="com/google/javascript/jscomp/parsing/JsDocInfoParser.java">
+        <Message>At JsDocInfoParser.java:[lines 48-2581]</Message>
+      </SourceLine>
+      <Message>In class com.google.javascript.jscomp.parsing.JsDocInfoParser</Message>
+    </Class>
+    <Method classname="com.google.javascript.jscomp.parsing.JsDocInfoParser" name="parseAnnotation" signature="(Lcom/google/javascript/jscomp/parsing/JsDocToken;Ljava/util/List;)Lcom/google/javascript/jscomp/parsing/JsDocToken;" isStatic="false" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.parsing.JsDocInfoParser" start="292" end="1075" startBytecode="0" endBytecode="6973" sourcefile="JsDocInfoParser.java" sourcepath="com/google/javascript/jscomp/parsing/JsDocInfoParser.java"/>
+      <Message>In method com.google.javascript.jscomp.parsing.JsDocInfoParser.parseAnnotation(JsDocToken, List)</Message>
+    </Method>
+    <SourceLine classname="com.google.javascript.jscomp.parsing.JsDocInfoParser" primary="true" start="978" end="1064" startBytecode="3518" endBytecode="3888" sourcefile="JsDocInfoParser.java" sourcepath="com/google/javascript/jscomp/parsing/JsDocInfoParser.java">
+      <Message>At JsDocInfoParser.java:[lines 978-1064]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="CORRECTNESS">
+    <Description>Correctness</Description>
+  </BugCategory>
+  <BugCategory category="PERFORMANCE">
+    <Description>Performance</Description>
+  </BugCategory>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="DLS_DEAD_LOCAL_STORE" abbrev="DLS" category="STYLE">
+    <ShortDescription>Dead store to local variable</ShortDescription>
+    <Details><![CDATA[
+
+<p>
+This instruction assigns a value to a local variable,
+but the value is not read or used in any subsequent instruction.
+Often, this indicates an error, because the value computed is never
+used.
+</p>
+<p>
+Note that Sun's javac compiler often generates dead stores for
+final local variables.  Because SpotBugs is a bytecode-based tool,
+there is no easy way to eliminate these false positives.
+</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="SBSC_USE_STRINGBUFFER_CONCATENATION" abbrev="SBSC" category="PERFORMANCE">
+    <ShortDescription>Method concatenates strings using + in a loop</ShortDescription>
+    <Details><![CDATA[
+
+<p> The method seems to be building a String using concatenation in a loop.
+In each iteration, the String is converted to a StringBuffer/StringBuilder,
+   appended to, and converted back to a String.
+   This can lead to a cost quadratic in the number of iterations,
+   as the growing string is recopied in each iteration. </p>
+
+<p>Better performance can be obtained by using
+a StringBuffer (or StringBuilder in Java 1.5) explicitly.</p>
+
+<p> For example:</p>
+<pre><code>// This is bad
+String s = "";
+for (int i = 0; i &lt; field.length; ++i) {
+    s = s + field[i];
+}
+
+// This is better
+StringBuffer buf = new StringBuffer();
+for (int i = 0; i &lt; field.length; ++i) {
+    buf.append(field[i]);
+}
+String s = buf.toString();
+</code></pre>
+
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="IP_PARAMETER_IS_DEAD_BUT_OVERWRITTEN" abbrev="IP" category="CORRECTNESS" cweid="563">
+    <ShortDescription>A parameter is dead upon entry to a method but overwritten</ShortDescription>
+    <Details><![CDATA[
+
+<p>
+The initial value of this parameter is ignored, and the parameter
+is overwritten here. This often indicates a mistaken belief that
+the write to the parameter will be conveyed back to
+the caller.
+</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="SF_SWITCH_NO_DEFAULT" abbrev="SF" category="STYLE">
+    <ShortDescription>Switch statement found where default case is missing</ShortDescription>
+    <Details><![CDATA[
+
+  <p> This method contains a switch statement where default case is missing.
+  Usually you need to provide a default case.</p>
+  <p>Because the analysis only looks at the generated bytecode, this warning can be incorrect triggered if
+the default case is at the end of the switch statement and the switch statement doesn't contain break statements for other
+cases.
+
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="SF">
+    <Description>Switch case falls through</Description>
+  </BugCode>
+  <BugCode abbrev="IP">
+    <Description>Ignored parameter</Description>
+  </BugCode>
+  <BugCode abbrev="SBSC">
+    <Description>String concatenation in loop using + operator</Description>
+  </BugCode>
+  <BugCode abbrev="DLS" cweid="563">
+    <Description>Dead local store</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 14 Nov 2018 05:01:28 -0500" total_classes="7" referenced_classes="59" total_bugs="5" total_size="1276" num_packages="1" java_version="1.8.0_121" vm_version="25.121-b13" cpu_seconds="14.23" clock_seconds="7.75" peak_mbytes="194.36" alloc_mbytes="1820.50" gc_seconds="0.12" priority_2="3" priority_1="2">
+    <FileStats path="com/google/javascript/jscomp/parsing/JsDocInfoParser.java" bugCount="5" size="1276" bugHash="88c5c84e8de7dbcfa393b934f12e0271"/>
+    <PackageStats package="com.google.javascript.jscomp.parsing" total_bugs="5" total_types="7" total_size="1276" priority_2="3" priority_1="2">
+      <ClassStats class="com.google.javascript.jscomp.parsing.JsDocInfoParser" sourceFile="JsDocInfoParser.java" interface="false" size="1199" bugs="5" priority_2="3" priority_1="2"/>
+      <ClassStats class="com.google.javascript.jscomp.parsing.JsDocInfoParser$1" sourceFile="JsDocInfoParser.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.parsing.JsDocInfoParser$ErrorReporterParser" sourceFile="JsDocInfoParser.java" interface="false" size="24" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.parsing.JsDocInfoParser$ExtendedTypeInfo" sourceFile="JsDocInfoParser.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.parsing.JsDocInfoParser$ExtractionInfo" sourceFile="JsDocInfoParser.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.parsing.JsDocInfoParser$State" sourceFile="JsDocInfoParser.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.parsing.JsDocInfoParser$WhitespaceOption" sourceFile="JsDocInfoParser.java" interface="false" size="13" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="706" invocations="495" avgMicrosecondsPerInvocation="1427" maxMicrosecondsPerInvocation="24198" standardDeviationMicrosecondsPerInvocation="2618"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="659" invocations="494" avgMicrosecondsPerInvocation="1334" maxMicrosecondsPerInvocation="77008" standardDeviationMicrosecondsPerInvocation="4940"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="333" invocations="73" avgMicrosecondsPerInvocation="4568" maxMicrosecondsPerInvocation="56057" standardDeviationMicrosecondsPerInvocation="10375"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="270" invocations="73" avgMicrosecondsPerInvocation="3710" maxMicrosecondsPerInvocation="61650" standardDeviationMicrosecondsPerInvocation="8698"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="263" invocations="73" avgMicrosecondsPerInvocation="3615" maxMicrosecondsPerInvocation="47544" standardDeviationMicrosecondsPerInvocation="8417"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="259" invocations="73" avgMicrosecondsPerInvocation="3554" maxMicrosecondsPerInvocation="124305" standardDeviationMicrosecondsPerInvocation="14551"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="237" invocations="59" avgMicrosecondsPerInvocation="4032" maxMicrosecondsPerInvocation="58899" standardDeviationMicrosecondsPerInvocation="10790"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="215" invocations="59" avgMicrosecondsPerInvocation="3646" maxMicrosecondsPerInvocation="40183" standardDeviationMicrosecondsPerInvocation="7133"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="203" invocations="221" avgMicrosecondsPerInvocation="922" maxMicrosecondsPerInvocation="37902" standardDeviationMicrosecondsPerInvocation="3190"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="196" invocations="73" avgMicrosecondsPerInvocation="2697" maxMicrosecondsPerInvocation="38034" standardDeviationMicrosecondsPerInvocation="6153"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="170" invocations="73" avgMicrosecondsPerInvocation="2330" maxMicrosecondsPerInvocation="92604" standardDeviationMicrosecondsPerInvocation="11783"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="150" invocations="456" avgMicrosecondsPerInvocation="330" maxMicrosecondsPerInvocation="19790" standardDeviationMicrosecondsPerInvocation="1629"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindOpenStream" totalMilliseconds="149" invocations="1" avgMicrosecondsPerInvocation="149001" maxMicrosecondsPerInvocation="149001" standardDeviationMicrosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="125" invocations="67" avgMicrosecondsPerInvocation="1875" maxMicrosecondsPerInvocation="55648" standardDeviationMicrosecondsPerInvocation="7247"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="118" invocations="73" avgMicrosecondsPerInvocation="1623" maxMicrosecondsPerInvocation="36348" standardDeviationMicrosecondsPerInvocation="4632"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="99" invocations="84" avgMicrosecondsPerInvocation="1188" maxMicrosecondsPerInvocation="32984" standardDeviationMicrosecondsPerInvocation="4152"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="90" invocations="73" avgMicrosecondsPerInvocation="1238" maxMicrosecondsPerInvocation="35804" standardDeviationMicrosecondsPerInvocation="4551"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.DuplicateBranches" totalMilliseconds="86" invocations="1" avgMicrosecondsPerInvocation="86931" maxMicrosecondsPerInvocation="86931" standardDeviationMicrosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="85" invocations="1" avgMicrosecondsPerInvocation="85325" maxMicrosecondsPerInvocation="85325" standardDeviationMicrosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueRangeAnalysisFactory" totalMilliseconds="79" invocations="73" avgMicrosecondsPerInvocation="1086" maxMicrosecondsPerInvocation="67181" standardDeviationMicrosecondsPerInvocation="7797"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="75" invocations="59" avgMicrosecondsPerInvocation="1282" maxMicrosecondsPerInvocation="35711" standardDeviationMicrosecondsPerInvocation="4633"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.SwitchFallthrough" totalMilliseconds="74" invocations="1" avgMicrosecondsPerInvocation="74408" maxMicrosecondsPerInvocation="74408" standardDeviationMicrosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="65" invocations="59" avgMicrosecondsPerInvocation="1106" maxMicrosecondsPerInvocation="14575" standardDeviationMicrosecondsPerInvocation="2479"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindPuzzlers" totalMilliseconds="64" invocations="1" avgMicrosecondsPerInvocation="64866" maxMicrosecondsPerInvocation="64866" standardDeviationMicrosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.LiveLocalStoreDataflowFactory" totalMilliseconds="63" invocations="71" avgMicrosecondsPerInvocation="894" maxMicrosecondsPerInvocation="31710" standardDeviationMicrosecondsPerInvocation="3995"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

@@ -1,0 +1,51 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-23/source/org/jfree/chart/renderer/category/MinMaxCategoryRenderer.java:330: warning: [MissingOverride] drawItem implements method in CategoryItemRenderer; expected @Override
+    public void drawItem(Graphics2D g2, CategoryItemRendererState state,
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void drawItem(Graphics2D g2, CategoryItemRendererState state,'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-23/source/org/jfree/chart/renderer/category/MinMaxCategoryRenderer.java:349: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+            if (orient == PlotOrientation.VERTICAL) {
+                       ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'if (Objects.equals(orient, PlotOrientation.VERTICAL)) {' or 'if (orient.equals(PlotOrientation.VERTICAL)) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-23/source/org/jfree/chart/renderer/category/MinMaxCategoryRenderer.java:373: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+                    if (orient == PlotOrientation.VERTICAL) {
+                               ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'if (Objects.equals(orient, PlotOrientation.VERTICAL)) {' or 'if (orient.equals(PlotOrientation.VERTICAL)) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-23/source/org/jfree/chart/renderer/category/MinMaxCategoryRenderer.java:406: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+                        if (orient == PlotOrientation.VERTICAL) {
+                                   ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'if (Objects.equals(orient, PlotOrientation.VERTICAL)) {' or 'if (orient.equals(PlotOrientation.VERTICAL)) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-23/source/org/jfree/chart/renderer/category/MinMaxCategoryRenderer.java:452: warning: [MissingOverride] paintIcon implements method in Icon; expected @Override
+          public void paintIcon(Component c, Graphics g, int x, int y) {
+                      ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void paintIcon(Component c, Graphics g, int x, int y) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-23/source/org/jfree/chart/renderer/category/MinMaxCategoryRenderer.java:466: warning: [MissingOverride] getIconWidth implements method in Icon; expected @Override
+        public int getIconWidth() {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int getIconWidth() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-23/source/org/jfree/chart/renderer/category/MinMaxCategoryRenderer.java:470: warning: [MissingOverride] getIconHeight implements method in Icon; expected @Override
+        public int getIconHeight() {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int getIconHeight() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-23/source/org/jfree/chart/renderer/category/MinMaxCategoryRenderer.java:492: warning: [MissingOverride] paintIcon implements method in Icon; expected @Override
+            public void paintIcon(Component c, Graphics g, int x, int y) {
+                        ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void paintIcon(Component c, Graphics g, int x, int y) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-23/source/org/jfree/chart/renderer/category/MinMaxCategoryRenderer.java:504: warning: [MissingOverride] getIconWidth implements method in Icon; expected @Override
+            public int getIconWidth() {
+                       ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int getIconWidth() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-23/source/org/jfree/chart/renderer/category/MinMaxCategoryRenderer.java:508: warning: [MissingOverride] getIconHeight implements method in Icon; expected @Override
+            public int getIconHeight() {
+                       ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int getIconHeight() {'?
+10 warnings

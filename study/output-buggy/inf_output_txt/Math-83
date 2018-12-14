@@ -1,0 +1,13 @@
+Found 1 issue
+
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-83/src/main/java/org/apache/commons/math/optimization/linear/SimplexTableau.java:249: error: NULL_DEREFERENCE
+  object returned by `getBasicRow(this,(getArtificialVariableOffset()+artificialVar))` could be null and is dereferenced at line 249.
+  247.       private void initialize() {
+  248.           for (int artificialVar = 0; artificialVar < numArtificialVariables; artificialVar++) {
+  249. >             int row = getBasicRow(getArtificialVariableOffset() + artificialVar);
+  250.               subtractRow(0, row, 1.0);
+  251.           }
+
+Summary of the reports
+
+  NULL_DEREFERENCE: 1

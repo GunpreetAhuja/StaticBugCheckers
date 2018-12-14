@@ -1,0 +1,6 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-71/src/main/java/org/apache/commons/math/ode/nonstiff/RungeKuttaIntegrator.java:95: warning: [MissingOverride] integrate implements method in FirstOrderIntegrator; expected @Override
+  public double integrate(final FirstOrderDifferentialEquations equations,
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double integrate(final FirstOrderDifferentialEquations equations,'?
+1 warning

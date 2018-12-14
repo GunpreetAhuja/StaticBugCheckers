@@ -1,0 +1,464 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-4/source/org/jfree/chart/plot/XYPlot.java:5309: warning: [EqualsHashCode] Classes that override equals should also override hashCode.
+    public boolean equals(Object obj) {
+                   ^
+    (see http://errorprone.info/bugpattern/EqualsHashCode)
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-4/source/org/jfree/chart/plot/XYPlot.java:717: warning: [MissingOverride] getPlotType implements method in Plot; expected @Override
+    public String getPlotType() {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public String getPlotType() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-4/source/org/jfree/chart/plot/XYPlot.java:728: warning: [MissingOverride] getOrientation implements method in Zoomable; expected @Override
+    public PlotOrientation getOrientation() {
+                           ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public PlotOrientation getOrientation() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-4/source/org/jfree/chart/plot/XYPlot.java:744: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+        if (orientation != this.orientation) {
+                        ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'if (!orientation.equals(this.orientation)) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-4/source/org/jfree/chart/plot/XYPlot.java:1464: warning: [BoxedPrimitiveConstructor] valueOf or autoboxing provides better time and space performance
+        axisIndices.add(new Integer(axisIndex));
+                        ^
+    (see http://errorprone.info/bugpattern/BoxedPrimitiveConstructor)
+  Did you mean 'axisIndices.add(Integer.valueOf(axisIndex));'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-4/source/org/jfree/chart/plot/XYPlot.java:1483: warning: [BoxedPrimitiveConstructor] valueOf or autoboxing provides better time and space performance
+        Integer key = new Integer(index);
+                      ^
+    (see http://errorprone.info/bugpattern/BoxedPrimitiveConstructor)
+  Did you mean 'Integer key = index;'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-4/source/org/jfree/chart/plot/XYPlot.java:1500: warning: [BoxedPrimitiveConstructor] valueOf or autoboxing provides better time and space performance
+        axisIndices.add(new Integer(axisIndex));
+                        ^
+    (see http://errorprone.info/bugpattern/BoxedPrimitiveConstructor)
+  Did you mean 'axisIndices.add(Integer.valueOf(axisIndex));'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-4/source/org/jfree/chart/plot/XYPlot.java:1519: warning: [BoxedPrimitiveConstructor] valueOf or autoboxing provides better time and space performance
+        Integer key = new Integer(index);
+                      ^
+    (see http://errorprone.info/bugpattern/BoxedPrimitiveConstructor)
+  Did you mean 'Integer key = index;'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-4/source/org/jfree/chart/plot/XYPlot.java:2518: warning: [BoxedPrimitiveConstructor] valueOf or autoboxing provides better time and space performance
+        Integer key = new Integer(index);
+                      ^
+    (see http://errorprone.info/bugpattern/BoxedPrimitiveConstructor)
+  Did you mean 'Integer key = index;'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-4/source/org/jfree/chart/plot/XYPlot.java:2589: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+        if (layer == Layer.FOREGROUND) {
+                  ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'if (layer.equals(Layer.FOREGROUND)) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-4/source/org/jfree/chart/plot/XYPlot.java:2591: warning: [BoxedPrimitiveConstructor] valueOf or autoboxing provides better time and space performance
+                    new Integer(index));
+                    ^
+    (see http://errorprone.info/bugpattern/BoxedPrimitiveConstructor)
+  Did you mean 'Integer.valueOf(index));'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-4/source/org/jfree/chart/plot/XYPlot.java:2594: warning: [BoxedPrimitiveConstructor] valueOf or autoboxing provides better time and space performance
+                this.foregroundDomainMarkers.put(new Integer(index), markers);
+                                                 ^
+    (see http://errorprone.info/bugpattern/BoxedPrimitiveConstructor)
+  Did you mean 'this.foregroundDomainMarkers.put(Integer.valueOf(index), markers);'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-4/source/org/jfree/chart/plot/XYPlot.java:2598: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+        else if (layer == Layer.BACKGROUND) {
+                       ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'else if (layer.equals(Layer.BACKGROUND)) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-4/source/org/jfree/chart/plot/XYPlot.java:2600: warning: [BoxedPrimitiveConstructor] valueOf or autoboxing provides better time and space performance
+                    new Integer(index));
+                    ^
+    (see http://errorprone.info/bugpattern/BoxedPrimitiveConstructor)
+  Did you mean 'Integer.valueOf(index));'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-4/source/org/jfree/chart/plot/XYPlot.java:2603: warning: [BoxedPrimitiveConstructor] valueOf or autoboxing provides better time and space performance
+                this.backgroundDomainMarkers.put(new Integer(index), markers);
+                                                 ^
+    (see http://errorprone.info/bugpattern/BoxedPrimitiveConstructor)
+  Did you mean 'this.backgroundDomainMarkers.put(Integer.valueOf(index), markers);'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-4/source/org/jfree/chart/plot/XYPlot.java:2678: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+        if (layer == Layer.FOREGROUND) {
+                  ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'if (Objects.equals(layer, Layer.FOREGROUND)) {' or 'if (layer.equals(Layer.FOREGROUND)) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-4/source/org/jfree/chart/plot/XYPlot.java:2680: warning: [BoxedPrimitiveConstructor] valueOf or autoboxing provides better time and space performance
+                    new Integer(index));
+                    ^
+    (see http://errorprone.info/bugpattern/BoxedPrimitiveConstructor)
+  Did you mean 'Integer.valueOf(index));'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-4/source/org/jfree/chart/plot/XYPlot.java:2684: warning: [BoxedPrimitiveConstructor] valueOf or autoboxing provides better time and space performance
+                    new Integer(index));
+                    ^
+    (see http://errorprone.info/bugpattern/BoxedPrimitiveConstructor)
+  Did you mean 'Integer.valueOf(index));'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-4/source/org/jfree/chart/plot/XYPlot.java:2790: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+        if (layer == Layer.FOREGROUND) {
+                  ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'if (Objects.equals(layer, Layer.FOREGROUND)) {' or 'if (layer.equals(Layer.FOREGROUND)) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-4/source/org/jfree/chart/plot/XYPlot.java:2792: warning: [BoxedPrimitiveConstructor] valueOf or autoboxing provides better time and space performance
+                    new Integer(index));
+                    ^
+    (see http://errorprone.info/bugpattern/BoxedPrimitiveConstructor)
+  Did you mean 'Integer.valueOf(index));'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-4/source/org/jfree/chart/plot/XYPlot.java:2795: warning: [BoxedPrimitiveConstructor] valueOf or autoboxing provides better time and space performance
+                this.foregroundRangeMarkers.put(new Integer(index), markers);
+                                                ^
+    (see http://errorprone.info/bugpattern/BoxedPrimitiveConstructor)
+  Did you mean 'this.foregroundRangeMarkers.put(Integer.valueOf(index), markers);'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-4/source/org/jfree/chart/plot/XYPlot.java:2799: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+        else if (layer == Layer.BACKGROUND) {
+                       ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'else if (Objects.equals(layer, Layer.BACKGROUND)) {' or 'else if (layer.equals(Layer.BACKGROUND)) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-4/source/org/jfree/chart/plot/XYPlot.java:2801: warning: [BoxedPrimitiveConstructor] valueOf or autoboxing provides better time and space performance
+                    new Integer(index));
+                    ^
+    (see http://errorprone.info/bugpattern/BoxedPrimitiveConstructor)
+  Did you mean 'Integer.valueOf(index));'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-4/source/org/jfree/chart/plot/XYPlot.java:2804: warning: [BoxedPrimitiveConstructor] valueOf or autoboxing provides better time and space performance
+                this.backgroundRangeMarkers.put(new Integer(index), markers);
+                                                ^
+    (see http://errorprone.info/bugpattern/BoxedPrimitiveConstructor)
+  Did you mean 'this.backgroundRangeMarkers.put(Integer.valueOf(index), markers);'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-4/source/org/jfree/chart/plot/XYPlot.java:2821: warning: [BoxedPrimitiveConstructor] valueOf or autoboxing provides better time and space performance
+        Integer key = new Integer(index);
+                      ^
+    (see http://errorprone.info/bugpattern/BoxedPrimitiveConstructor)
+  Did you mean 'Integer key = index;'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-4/source/org/jfree/chart/plot/XYPlot.java:2917: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+        if (layer == Layer.FOREGROUND) {
+                  ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'if (Objects.equals(layer, Layer.FOREGROUND)) {' or 'if (layer.equals(Layer.FOREGROUND)) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-4/source/org/jfree/chart/plot/XYPlot.java:2919: warning: [BoxedPrimitiveConstructor] valueOf or autoboxing provides better time and space performance
+                    new Integer(index));
+                    ^
+    (see http://errorprone.info/bugpattern/BoxedPrimitiveConstructor)
+  Did you mean 'Integer.valueOf(index));'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-4/source/org/jfree/chart/plot/XYPlot.java:2923: warning: [BoxedPrimitiveConstructor] valueOf or autoboxing provides better time and space performance
+                    new Integer(index));
+                    ^
+    (see http://errorprone.info/bugpattern/BoxedPrimitiveConstructor)
+  Did you mean 'Integer.valueOf(index));'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-4/source/org/jfree/chart/plot/XYPlot.java:3064: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+            if (this.orientation == PlotOrientation.HORIZONTAL) {
+                                 ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'if (Objects.equals(this.orientation, PlotOrientation.HORIZONTAL)) {' or 'if (this.orientation.equals(PlotOrientation.HORIZONTAL)) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-4/source/org/jfree/chart/plot/XYPlot.java:3070: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+            else if (this.orientation == PlotOrientation.VERTICAL) {
+                                      ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'else if (Objects.equals(this.orientation, PlotOrientation.VERTICAL)) {' or 'else if (this.orientation.equals(PlotOrientation.VERTICAL)) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-4/source/org/jfree/chart/plot/XYPlot.java:3111: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+            if (this.orientation == PlotOrientation.HORIZONTAL) {
+                                 ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'if (Objects.equals(this.orientation, PlotOrientation.HORIZONTAL)) {' or 'if (this.orientation.equals(PlotOrientation.HORIZONTAL)) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-4/source/org/jfree/chart/plot/XYPlot.java:3117: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+            else if (this.orientation == PlotOrientation.VERTICAL) {
+                                      ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'else if (Objects.equals(this.orientation, PlotOrientation.VERTICAL)) {' or 'else if (this.orientation.equals(PlotOrientation.VERTICAL)) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-4/source/org/jfree/chart/plot/XYPlot.java:3150: warning: [MissingOverride] draw implements method in Plot; expected @Override
+    public void draw(Graphics2D g2, Rectangle2D area, Point2D anchor,
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void draw(Graphics2D g2, Rectangle2D area, Point2D anchor,'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-4/source/org/jfree/chart/plot/XYPlot.java:3198: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+                if (orient == PlotOrientation.VERTICAL) {
+                           ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'if (Objects.equals(orient, PlotOrientation.VERTICAL)) {' or 'if (orient.equals(PlotOrientation.VERTICAL)) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-4/source/org/jfree/chart/plot/XYPlot.java:3211: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+                if (orient == PlotOrientation.VERTICAL) {
+                           ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'if (Objects.equals(orient, PlotOrientation.VERTICAL)) {' or 'if (orient.equals(PlotOrientation.VERTICAL)) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-4/source/org/jfree/chart/plot/XYPlot.java:3273: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+        if (order == DatasetRenderingOrder.FORWARD) {
+                  ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'if (Objects.equals(order, DatasetRenderingOrder.FORWARD)) {' or 'if (order.equals(DatasetRenderingOrder.FORWARD)) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-4/source/org/jfree/chart/plot/XYPlot.java:3305: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+        else if (order == DatasetRenderingOrder.REVERSE) {
+                       ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'else if (Objects.equals(order, DatasetRenderingOrder.REVERSE)) {' or 'else if (order.equals(DatasetRenderingOrder.REVERSE)) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-4/source/org/jfree/chart/plot/XYPlot.java:3349: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+            if (orient == PlotOrientation.VERTICAL) {
+                       ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'if (Objects.equals(orient, PlotOrientation.VERTICAL)) {' or 'if (orient.equals(PlotOrientation.VERTICAL)) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-4/source/org/jfree/chart/plot/XYPlot.java:3371: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+            if (orient == PlotOrientation.VERTICAL) {
+                       ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'if (Objects.equals(orient, PlotOrientation.VERTICAL)) {' or 'if (orient.equals(PlotOrientation.VERTICAL)) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-4/source/org/jfree/chart/plot/XYPlot.java:3411: warning: [MissingOverride] drawBackground overrides method in Plot; expected @Override
+    public void drawBackground(Graphics2D g2, Rectangle2D area) {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void drawBackground(Graphics2D g2, Rectangle2D area) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-4/source/org/jfree/chart/plot/XYPlot.java:3461: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+                if (this.orientation == PlotOrientation.HORIZONTAL) {
+                                     ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'if (Objects.equals(this.orientation, PlotOrientation.HORIZONTAL)) {' or 'if (this.orientation.equals(PlotOrientation.HORIZONTAL)) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-4/source/org/jfree/chart/plot/XYPlot.java:3476: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+                if (this.orientation == PlotOrientation.HORIZONTAL) {
+                                     ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'if (Objects.equals(this.orientation, PlotOrientation.HORIZONTAL)) {' or 'if (this.orientation.equals(PlotOrientation.HORIZONTAL)) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-4/source/org/jfree/chart/plot/XYPlot.java:3491: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+                if (this.orientation == PlotOrientation.HORIZONTAL) {
+                                     ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'if (Objects.equals(this.orientation, PlotOrientation.HORIZONTAL)) {' or 'if (this.orientation.equals(PlotOrientation.HORIZONTAL)) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-4/source/org/jfree/chart/plot/XYPlot.java:3506: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+                if (this.orientation == PlotOrientation.HORIZONTAL) {
+                                     ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'if (Objects.equals(this.orientation, PlotOrientation.HORIZONTAL)) {' or 'if (this.orientation.equals(PlotOrientation.HORIZONTAL)) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-4/source/org/jfree/chart/plot/XYPlot.java:3732: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+            if (seriesOrder == SeriesRenderingOrder.REVERSE) {
+                            ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'if (Objects.equals(seriesOrder, SeriesRenderingOrder.REVERSE)) {' or 'if (seriesOrder.equals(SeriesRenderingOrder.REVERSE)) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-4/source/org/jfree/chart/plot/XYPlot.java:3816: warning: [BoxedPrimitiveConstructor] valueOf or autoboxing provides better time and space performance
+                new Integer(index));
+                ^
+    (see http://errorprone.info/bugpattern/BoxedPrimitiveConstructor)
+  Did you mean 'Integer.valueOf(index));'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-4/source/org/jfree/chart/plot/XYPlot.java:3843: warning: [BoxedPrimitiveConstructor] valueOf or autoboxing provides better time and space performance
+                new Integer(index));
+                ^
+    (see http://errorprone.info/bugpattern/BoxedPrimitiveConstructor)
+  Did you mean 'Integer.valueOf(index));'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-4/source/org/jfree/chart/plot/XYPlot.java:3881: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+                if ((tick.getTickType() == TickType.MINOR)
+                                        ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'if ((Objects.equals(tick.getTickType(), TickType.MINOR))' or 'if ((tick.getTickType().equals(TickType.MINOR))'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-4/source/org/jfree/chart/plot/XYPlot.java:3887: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+                else if ((tick.getTickType() == TickType.MAJOR)
+                                             ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'else if ((Objects.equals(tick.getTickType(), TickType.MAJOR))' or 'else if ((tick.getTickType().equals(TickType.MAJOR))'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-4/source/org/jfree/chart/plot/XYPlot.java:3932: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+                    if ((tick.getTickType() == TickType.MINOR)
+                                            ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'if ((Objects.equals(tick.getTickType(), TickType.MINOR))' or 'if ((tick.getTickType().equals(TickType.MINOR))'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-4/source/org/jfree/chart/plot/XYPlot.java:3938: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+                    else if ((tick.getTickType() == TickType.MAJOR)
+                                                 ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'else if ((Objects.equals(tick.getTickType(), TickType.MAJOR))' or 'else if ((tick.getTickType().equals(TickType.MAJOR))'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-4/source/org/jfree/chart/plot/XYPlot.java:4113: warning: [BoxedPrimitiveConstructor] valueOf or autoboxing provides better time and space performance
+        Integer key = new Integer(index);
+                      ^
+    (see http://errorprone.info/bugpattern/BoxedPrimitiveConstructor)
+  Did you mean 'Integer key = index;'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-4/source/org/jfree/chart/plot/XYPlot.java:4114: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+        if (layer == Layer.FOREGROUND) {
+                  ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'if (Objects.equals(layer, Layer.FOREGROUND)) {' or 'if (layer.equals(Layer.FOREGROUND)) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-4/source/org/jfree/chart/plot/XYPlot.java:4117: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+        else if (layer == Layer.BACKGROUND) {
+                       ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'else if (Objects.equals(layer, Layer.BACKGROUND)) {' or 'else if (layer.equals(Layer.BACKGROUND)) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-4/source/org/jfree/chart/plot/XYPlot.java:4139: warning: [BoxedPrimitiveConstructor] valueOf or autoboxing provides better time and space performance
+        Integer key = new Integer(index);
+                      ^
+    (see http://errorprone.info/bugpattern/BoxedPrimitiveConstructor)
+  Did you mean 'Integer key = index;'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-4/source/org/jfree/chart/plot/XYPlot.java:4140: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+        if (layer == Layer.FOREGROUND) {
+                  ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'if (Objects.equals(layer, Layer.FOREGROUND)) {' or 'if (layer.equals(Layer.FOREGROUND)) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-4/source/org/jfree/chart/plot/XYPlot.java:4143: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+        else if (layer == Layer.BACKGROUND) {
+                       ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'else if (Objects.equals(layer, Layer.BACKGROUND)) {' or 'else if (layer.equals(Layer.BACKGROUND)) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-4/source/org/jfree/chart/plot/XYPlot.java:4167: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+        if (getOrientation() == PlotOrientation.HORIZONTAL) {
+                             ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'if (Objects.equals(getOrientation(), PlotOrientation.HORIZONTAL)) {' or 'if (getOrientation().equals(PlotOrientation.HORIZONTAL)) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-4/source/org/jfree/chart/plot/XYPlot.java:4200: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+            if (orientation == PlotOrientation.VERTICAL) {
+                            ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'if (Objects.equals(orientation, PlotOrientation.VERTICAL)) {' or 'if (orientation.equals(PlotOrientation.VERTICAL)) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-4/source/org/jfree/chart/plot/XYPlot.java:4232: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+        if (getOrientation() == PlotOrientation.HORIZONTAL) {
+                             ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'if (Objects.equals(getOrientation(), PlotOrientation.HORIZONTAL)) {' or 'if (getOrientation().equals(PlotOrientation.HORIZONTAL)) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-4/source/org/jfree/chart/plot/XYPlot.java:4266: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+            if (orientation == PlotOrientation.HORIZONTAL) {
+                            ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'if (Objects.equals(orientation, PlotOrientation.HORIZONTAL)) {' or 'if (orientation.equals(PlotOrientation.HORIZONTAL)) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-4/source/org/jfree/chart/plot/XYPlot.java:4292: warning: [MissingOverride] handleClick overrides method in Plot; expected @Override
+    public void handleClick(int x, int y, PlotRenderingInfo info) {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void handleClick(int x, int y, PlotRenderingInfo info) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-4/source/org/jfree/chart/plot/XYPlot.java:4329: warning: [BoxedPrimitiveConstructor] valueOf or autoboxing provides better time and space performance
+                    new Integer(i));
+                    ^
+    (see http://errorprone.info/bugpattern/BoxedPrimitiveConstructor)
+  Did you mean 'Integer.valueOf(i));'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-4/source/org/jfree/chart/plot/XYPlot.java:4359: warning: [BoxedPrimitiveConstructor] valueOf or autoboxing provides better time and space performance
+                    new Integer(i));
+                    ^
+    (see http://errorprone.info/bugpattern/BoxedPrimitiveConstructor)
+  Did you mean 'Integer.valueOf(i));'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-4/source/org/jfree/chart/plot/XYPlot.java:4425: warning: [MissingOverride] getDataRange implements method in ValueAxisPlot; expected @Override
+    public Range getDataRange(ValueAxis axis) {
+                 ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Range getDataRange(ValueAxis axis) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-4/source/org/jfree/chart/plot/XYPlot.java:4437: warning: [BoxedPrimitiveConstructor] valueOf or autoboxing provides better time and space performance
+                    new Integer(domainIndex)));
+                    ^
+    (see http://errorprone.info/bugpattern/BoxedPrimitiveConstructor)
+  Did you mean 'Integer.valueOf(domainIndex)));'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-4/source/org/jfree/chart/plot/XYPlot.java:4455: warning: [BoxedPrimitiveConstructor] valueOf or autoboxing provides better time and space performance
+                    new Integer(rangeIndex)));
+                    ^
+    (see http://errorprone.info/bugpattern/BoxedPrimitiveConstructor)
+  Did you mean 'Integer.valueOf(rangeIndex)));'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-4/source/org/jfree/chart/plot/XYPlot.java:4528: warning: [MissingOverride] datasetChanged overrides method in Plot; expected @Override
+    public void datasetChanged(DatasetChangeEvent event) {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void datasetChanged(DatasetChangeEvent event) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-4/source/org/jfree/chart/plot/XYPlot.java:4546: warning: [MissingOverride] rendererChanged implements method in RendererChangeListener; expected @Override
+    public void rendererChanged(RendererChangeEvent event) {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void rendererChanged(RendererChangeEvent event) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-4/source/org/jfree/chart/plot/XYPlot.java:4957: warning: [MissingOverride] isDomainPannable implements method in Pannable; expected @Override
+    public boolean isDomainPannable() {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public boolean isDomainPannable() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-4/source/org/jfree/chart/plot/XYPlot.java:4981: warning: [MissingOverride] isRangePannable implements method in Pannable; expected @Override
+    public boolean isRangePannable() {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public boolean isRangePannable() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-4/source/org/jfree/chart/plot/XYPlot.java:5006: warning: [MissingOverride] panDomainAxes implements method in Pannable; expected @Override
+    public void panDomainAxes(double percent, PlotRenderingInfo info,
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void panDomainAxes(double percent, PlotRenderingInfo info,'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-4/source/org/jfree/chart/plot/XYPlot.java:5033: warning: [MissingOverride] panRangeAxes implements method in Pannable; expected @Override
+    public void panRangeAxes(double percent, PlotRenderingInfo info,
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void panRangeAxes(double percent, PlotRenderingInfo info,'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-4/source/org/jfree/chart/plot/XYPlot.java:5060: warning: [MissingOverride] zoomDomainAxes implements method in Zoomable; expected @Override
+    public void zoomDomainAxes(double factor, PlotRenderingInfo info,
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void zoomDomainAxes(double factor, PlotRenderingInfo info,'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-4/source/org/jfree/chart/plot/XYPlot.java:5078: warning: [MissingOverride] zoomDomainAxes implements method in Zoomable; expected @Override
+    public void zoomDomainAxes(double factor, PlotRenderingInfo info,
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void zoomDomainAxes(double factor, PlotRenderingInfo info,'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-4/source/org/jfree/chart/plot/XYPlot.java:5089: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+                    if (this.orientation == PlotOrientation.HORIZONTAL) {
+                                         ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'if (Objects.equals(this.orientation, PlotOrientation.HORIZONTAL)) {' or 'if (this.orientation.equals(PlotOrientation.HORIZONTAL)) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-4/source/org/jfree/chart/plot/XYPlot.java:5117: warning: [MissingOverride] zoomDomainAxes implements method in Zoomable; expected @Override
+    public void zoomDomainAxes(double lowerPercent, double upperPercent,
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void zoomDomainAxes(double lowerPercent, double upperPercent,'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-4/source/org/jfree/chart/plot/XYPlot.java:5136: warning: [MissingOverride] zoomRangeAxes implements method in Zoomable; expected @Override
+    public void zoomRangeAxes(double factor, PlotRenderingInfo info,
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void zoomRangeAxes(double factor, PlotRenderingInfo info,'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-4/source/org/jfree/chart/plot/XYPlot.java:5155: warning: [MissingOverride] zoomRangeAxes implements method in Zoomable; expected @Override
+    public void zoomRangeAxes(double factor, PlotRenderingInfo info,
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void zoomRangeAxes(double factor, PlotRenderingInfo info,'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-4/source/org/jfree/chart/plot/XYPlot.java:5166: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+                    if (this.orientation == PlotOrientation.HORIZONTAL) {
+                                         ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'if (Objects.equals(this.orientation, PlotOrientation.HORIZONTAL)) {' or 'if (this.orientation.equals(PlotOrientation.HORIZONTAL)) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-4/source/org/jfree/chart/plot/XYPlot.java:5190: warning: [MissingOverride] zoomRangeAxes implements method in Zoomable; expected @Override
+    public void zoomRangeAxes(double lowerPercent, double upperPercent,
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void zoomRangeAxes(double lowerPercent, double upperPercent,'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-4/source/org/jfree/chart/plot/XYPlot.java:5208: warning: [MissingOverride] isDomainZoomable implements method in Zoomable; expected @Override
+    public boolean isDomainZoomable() {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public boolean isDomainZoomable() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-4/source/org/jfree/chart/plot/XYPlot.java:5220: warning: [MissingOverride] isRangeZoomable implements method in Zoomable; expected @Override
+    public boolean isRangeZoomable() {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public boolean isRangeZoomable() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-4/source/org/jfree/chart/plot/XYPlot.java:5271: warning: [MissingOverride] getLegendItems overrides method in Plot; expected @Override
+    public LegendItemCollection getLegendItems() {
+                                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public LegendItemCollection getLegendItems() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-4/source/org/jfree/chart/plot/XYPlot.java:5309: warning: [MissingOverride] equals overrides method in Plot; expected @Override
+    public boolean equals(Object obj) {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public boolean equals(Object obj) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-4/source/org/jfree/chart/plot/XYPlot.java:5320: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+        if (this.orientation != that.orientation) {
+                             ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'if (!Objects.equals(this.orientation, that.orientation)) {' or 'if (!this.orientation.equals(that.orientation)) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-4/source/org/jfree/chart/plot/XYPlot.java:5520: warning: [MissingOverride] clone overrides method in Plot; expected @Override
+    public Object clone() throws CloneNotSupportedException {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Object clone() throws CloneNotSupportedException {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-4/source/org/jfree/chart/plot/XYPlot.java:5713: warning: [MissingOverride] canSelectByPoint implements method in Selectable; expected @Override
+    public boolean canSelectByPoint() {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public boolean canSelectByPoint() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-4/source/org/jfree/chart/plot/XYPlot.java:5725: warning: [MissingOverride] canSelectByRegion implements method in Selectable; expected @Override
+    public boolean canSelectByRegion() {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public boolean canSelectByRegion() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-4/source/org/jfree/chart/plot/XYPlot.java:5734: warning: [MissingOverride] select implements method in Selectable; expected @Override
+    public void select(double x, double y, Rectangle2D dataArea,
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void select(double x, double y, Rectangle2D dataArea,'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-4/source/org/jfree/chart/plot/XYPlot.java:5748: warning: [MissingOverride] select implements method in Selectable; expected @Override
+    public void select(GeneralPath region, Rectangle2D dataArea,
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void select(GeneralPath region, Rectangle2D dataArea,'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-4/source/org/jfree/chart/plot/XYPlot.java:5847: warning: [MissingOverride] clearSelection implements method in Selectable; expected @Override
+    public void clearSelection() {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void clearSelection() {'?
+Note: /Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-4/source/org/jfree/chart/plot/XYPlot.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: /Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-4/source/org/jfree/chart/plot/XYPlot.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+92 warnings

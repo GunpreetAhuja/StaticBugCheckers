@@ -1,0 +1,13 @@
+Found 1 issue
+
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-18/src/com/google/javascript/jscomp/Compiler.java:1086: error: NULL_DEREFERENCE
+  object returned by `newInput.getAstRoot(this)` could be null and is dereferenced at line 1086.
+  1084.       Preconditions.checkState(
+  1085.           newInput.getInputId().equals(oldInput.getInputId()));
+  1086. >     InputId inputIdOnAst = newInput.getAstRoot(this).getInputId();
+  1087.       Preconditions.checkState(newInput.getInputId().equals(inputIdOnAst));
+  1088.   
+
+Summary of the reports
+
+  NULL_DEREFERENCE: 1

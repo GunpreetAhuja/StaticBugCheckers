@@ -1,0 +1,13 @@
+Found 1 issue
+
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Chart-1/source/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java:1129: error: NULL_DEREFERENCE
+  object `line` last assigned on line 1117 could be null and is dereferenced at line 1129.
+  1127.               g2.setStroke(marker.getStroke());
+  1128.               g2.draw(line);
+  1129. >             bounds = line.getBounds2D();
+  1130.           }
+  1131.           else {
+
+Summary of the reports
+
+  NULL_DEREFERENCE: 1

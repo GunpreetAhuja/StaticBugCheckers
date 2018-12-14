@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.1.0" sequence="0" timestamp="1542190292000" analysisTimestamp="1542190295517" release="">
+  <Project projectName="">
+    <Jar>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-90/src</Jar>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-90/build/classes</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-90/lib/ant_deploy.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-90/lib/args4j_deploy.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-90/lib/guava-r06.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-90/lib/hamcrest-core-1.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-90/lib/json.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-90/lib/jsr305.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-90/lib/junit.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-90/lib/libtrunk_rhino_parser_jarjared.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-90/lib/protobuf-java-2.3.0.jar</AuxClasspathEntry>
+  </Project>
+  <BugInstance type="BC_VACUOUS_INSTANCEOF" priority="2" rank="17" abbrev="BC" category="STYLE" instanceHash="d15be442542a5886b55fc7917faca454" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="571">
+    <ShortMessage>instanceof will always return true</ShortMessage>
+    <LongMessage>instanceof will always return true for all non-null values in com.google.javascript.jscomp.FunctionTypeBuilder.inferInheritance(JSDocInfo), since all com.google.javascript.rhino.jstype.FunctionType are instances of com.google.javascript.rhino.jstype.FunctionType</LongMessage>
+    <Class classname="com.google.javascript.jscomp.FunctionTypeBuilder" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.FunctionTypeBuilder" start="65" end="725" sourcefile="FunctionTypeBuilder.java" sourcepath="com/google/javascript/jscomp/FunctionTypeBuilder.java">
+        <Message>At FunctionTypeBuilder.java:[lines 65-725]</Message>
+      </SourceLine>
+      <Message>In class com.google.javascript.jscomp.FunctionTypeBuilder</Message>
+    </Class>
+    <Method classname="com.google.javascript.jscomp.FunctionTypeBuilder" name="inferInheritance" signature="(Lcom/google/javascript/rhino/JSDocInfo;)Lcom/google/javascript/jscomp/FunctionTypeBuilder;" isStatic="false" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.FunctionTypeBuilder" start="344" end="386" startBytecode="0" endBytecode="131" sourcefile="FunctionTypeBuilder.java" sourcepath="com/google/javascript/jscomp/FunctionTypeBuilder.java"/>
+      <Message>In method com.google.javascript.jscomp.FunctionTypeBuilder.inferInheritance(JSDocInfo)</Message>
+    </Method>
+    <Type descriptor="Lcom/google/javascript/rhino/jstype/FunctionType;" role="TYPE_FOUND">
+      <SourceLine classname="com.google.javascript.rhino.jstype.FunctionType" start="65" end="945" sourcefile="FunctionType.java" sourcepath="com/google/javascript/rhino/jstype/FunctionType.java">
+        <Message>At FunctionType.java:[lines 65-945]</Message>
+      </SourceLine>
+      <Message>Actual type com.google.javascript.rhino.jstype.FunctionType</Message>
+    </Type>
+    <Type descriptor="Lcom/google/javascript/rhino/jstype/FunctionType;" role="TYPE_EXPECTED">
+      <SourceLine classname="com.google.javascript.rhino.jstype.FunctionType" start="65" end="945" sourcefile="FunctionType.java" sourcepath="com/google/javascript/rhino/jstype/FunctionType.java">
+        <Message>At FunctionType.java:[lines 65-945]</Message>
+      </SourceLine>
+      <Message>Expected com.google.javascript.rhino.jstype.FunctionType</Message>
+    </Type>
+    <SourceLine classname="com.google.javascript.jscomp.FunctionTypeBuilder" primary="true" start="374" end="374" startBytecode="226" endBytecode="226" sourcefile="FunctionTypeBuilder.java" sourcepath="com/google/javascript/jscomp/FunctionTypeBuilder.java">
+      <Message>At FunctionTypeBuilder.java:[line 374]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="BC_VACUOUS_INSTANCEOF" abbrev="BC" category="STYLE" cweid="571">
+    <ShortDescription>instanceof will always return true</ShortDescription>
+    <Details><![CDATA[
+
+<p>
+This instanceof test will always return true (unless the value being tested is null).
+Although this is safe, make sure it isn't
+an indication of some misunderstanding or some other logic error.
+If you really want to test the value for being null, perhaps it would be clearer to do
+better to do a null test rather than an instanceof test.
+</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="BC">
+    <Description>Bad casts of object references</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 14 Nov 2018 05:11:32 -0500" total_classes="7" referenced_classes="85" total_bugs="1" total_size="818" num_packages="2" java_version="1.8.0_121" vm_version="25.121-b13" cpu_seconds="13.39" clock_seconds="7.07" peak_mbytes="190.77" alloc_mbytes="1820.50" gc_seconds="0.10" priority_2="1">
+    <FileStats path="com/google/javascript/jscomp/FunctionTypeBuilder.java" bugCount="1" size="376" bugHash="99177f7ad5d1542cbaad93da5559092f"/>
+    <FileStats path="com/google/javascript/rhino/jstype/FunctionType.java" bugCount="0" size="442"/>
+    <PackageStats package="com.google.javascript.jscomp" total_bugs="1" total_types="5" total_size="376" priority_2="1">
+      <ClassStats class="com.google.javascript.jscomp.FunctionTypeBuilder" sourceFile="FunctionTypeBuilder.java" interface="false" size="331" bugs="1" priority_2="1"/>
+      <ClassStats class="com.google.javascript.jscomp.FunctionTypeBuilder$1" sourceFile="FunctionTypeBuilder.java" interface="false" size="1" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.FunctionTypeBuilder$ExtendedTypeValidator" sourceFile="FunctionTypeBuilder.java" interface="false" size="16" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.FunctionTypeBuilder$ImplementedTypeValidator" sourceFile="FunctionTypeBuilder.java" interface="false" size="16" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.FunctionTypeBuilder$ThisTypeValidator" sourceFile="FunctionTypeBuilder.java" interface="false" size="12" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="com.google.javascript.rhino.jstype" total_bugs="0" total_types="2" total_size="442">
+      <ClassStats class="com.google.javascript.rhino.jstype.FunctionType" sourceFile="FunctionType.java" interface="false" size="429" bugs="0"/>
+      <ClassStats class="com.google.javascript.rhino.jstype.FunctionType$Kind" sourceFile="FunctionType.java" interface="false" size="13" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="991" invocations="654" avgMicrosecondsPerInvocation="1515" maxMicrosecondsPerInvocation="57941" standardDeviationMicrosecondsPerInvocation="3431"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="702" invocations="648" avgMicrosecondsPerInvocation="1083" maxMicrosecondsPerInvocation="92722" standardDeviationMicrosecondsPerInvocation="4883"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="351" invocations="85" avgMicrosecondsPerInvocation="4132" maxMicrosecondsPerInvocation="43187" standardDeviationMicrosecondsPerInvocation="8960"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="275" invocations="85" avgMicrosecondsPerInvocation="3237" maxMicrosecondsPerInvocation="35481" standardDeviationMicrosecondsPerInvocation="6260"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="220" invocations="95" avgMicrosecondsPerInvocation="2320" maxMicrosecondsPerInvocation="30909" standardDeviationMicrosecondsPerInvocation="4799"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="195" invocations="95" avgMicrosecondsPerInvocation="2057" maxMicrosecondsPerInvocation="54715" standardDeviationMicrosecondsPerInvocation="6481"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="182" invocations="96" avgMicrosecondsPerInvocation="1903" maxMicrosecondsPerInvocation="40965" standardDeviationMicrosecondsPerInvocation="4774"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="164" invocations="611" avgMicrosecondsPerInvocation="269" maxMicrosecondsPerInvocation="35484" standardDeviationMicrosecondsPerInvocation="1875"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="162" invocations="95" avgMicrosecondsPerInvocation="1714" maxMicrosecondsPerInvocation="37386" standardDeviationMicrosecondsPerInvocation="4396"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="161" invocations="80" avgMicrosecondsPerInvocation="2018" maxMicrosecondsPerInvocation="17070" standardDeviationMicrosecondsPerInvocation="3642"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="161" invocations="84" avgMicrosecondsPerInvocation="1917" maxMicrosecondsPerInvocation="31358" standardDeviationMicrosecondsPerInvocation="4238"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="158" invocations="95" avgMicrosecondsPerInvocation="1666" maxMicrosecondsPerInvocation="122884" standardDeviationMicrosecondsPerInvocation="12592"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="157" invocations="81" avgMicrosecondsPerInvocation="1943" maxMicrosecondsPerInvocation="53985" standardDeviationMicrosecondsPerInvocation="6998"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="156" invocations="331" avgMicrosecondsPerInvocation="473" maxMicrosecondsPerInvocation="17720" standardDeviationMicrosecondsPerInvocation="1269"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="120" invocations="85" avgMicrosecondsPerInvocation="1417" maxMicrosecondsPerInvocation="36568" standardDeviationMicrosecondsPerInvocation="4805"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="75" invocations="85" avgMicrosecondsPerInvocation="883" maxMicrosecondsPerInvocation="19889" standardDeviationMicrosecondsPerInvocation="2913"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="73" invocations="85" avgMicrosecondsPerInvocation="862" maxMicrosecondsPerInvocation="15806" standardDeviationMicrosecondsPerInvocation="1982"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="59" invocations="120" avgMicrosecondsPerInvocation="492" maxMicrosecondsPerInvocation="23653" standardDeviationMicrosecondsPerInvocation="2216"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

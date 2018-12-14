@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.1.0" sequence="0" timestamp="1542186074000" analysisTimestamp="1542186076994" release="">
+  <Project projectName="">
+    <Jar>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Lang-17/src/main/java</Jar>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Lang-17/target/classes</AuxClasspathEntry>
+  </Project>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 14 Nov 2018 04:01:14 -0500" total_classes="1" referenced_classes="19" total_bugs="0" total_size="40" num_packages="1" java_version="1.8.0_121" vm_version="25.121-b13" cpu_seconds="6.36" clock_seconds="3.31" peak_mbytes="112.03" alloc_mbytes="1820.50" gc_seconds="0.05">
+    <FileStats path="org/apache/commons/lang3/text/translate/CharSequenceTranslator.java" bugCount="0" size="40"/>
+    <PackageStats package="org.apache.commons.lang3.text.translate" total_bugs="0" total_types="1" total_size="40">
+      <ClassStats class="org.apache.commons.lang3.text.translate.CharSequenceTranslator" sourceFile="CharSequenceTranslator.java" interface="false" size="40" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="555" invocations="379" avgMicrosecondsPerInvocation="1466" maxMicrosecondsPerInvocation="39857" standardDeviationMicrosecondsPerInvocation="2957"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="479" invocations="378" avgMicrosecondsPerInvocation="1267" maxMicrosecondsPerInvocation="29589" standardDeviationMicrosecondsPerInvocation="3505"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="175" invocations="19" avgMicrosecondsPerInvocation="9213" maxMicrosecondsPerInvocation="76972" standardDeviationMicrosecondsPerInvocation="18132"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="107" invocations="6" avgMicrosecondsPerInvocation="17894" maxMicrosecondsPerInvocation="103759" standardDeviationMicrosecondsPerInvocation="38405"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="106" invocations="344" avgMicrosecondsPerInvocation="309" maxMicrosecondsPerInvocation="19693" standardDeviationMicrosecondsPerInvocation="1321"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="102" invocations="73" avgMicrosecondsPerInvocation="1400" maxMicrosecondsPerInvocation="15918" standardDeviationMicrosecondsPerInvocation="3085"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="92" invocations="5" avgMicrosecondsPerInvocation="18547" maxMicrosecondsPerInvocation="48543" standardDeviationMicrosecondsPerInvocation="20199"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="72" invocations="19" avgMicrosecondsPerInvocation="3831" maxMicrosecondsPerInvocation="28835" standardDeviationMicrosecondsPerInvocation="6799"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="68" invocations="6" avgMicrosecondsPerInvocation="11375" maxMicrosecondsPerInvocation="46952" standardDeviationMicrosecondsPerInvocation="16099"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="65" invocations="19" avgMicrosecondsPerInvocation="3431" maxMicrosecondsPerInvocation="26469" standardDeviationMicrosecondsPerInvocation="7611"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="55" invocations="6" avgMicrosecondsPerInvocation="9222" maxMicrosecondsPerInvocation="22558" standardDeviationMicrosecondsPerInvocation="9054"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

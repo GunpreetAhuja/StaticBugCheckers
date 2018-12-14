@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.1.0" sequence="0" timestamp="1542186578000" analysisTimestamp="1542186580530" release="">
+  <Project projectName="">
+    <Jar>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-50/src/main/java</Jar>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-50/target/classes</AuxClasspathEntry>
+  </Project>
+  <BugInstance type="FE_FLOATING_POINT_EQUALITY" priority="1" rank="15" abbrev="FE" category="STYLE" instanceHash="7cda38bfb038d5bd76abb5c0a27a6876" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Test for floating point equality</ShortMessage>
+    <LongMessage>Test for floating point equality in org.apache.commons.math.analysis.solvers.BaseSecantSolver.doSolve()</LongMessage>
+    <Class classname="org.apache.commons.math.analysis.solvers.BaseSecantSolver" primary="true">
+      <SourceLine classname="org.apache.commons.math.analysis.solvers.BaseSecantSolver" start="68" end="252" sourcefile="BaseSecantSolver.java" sourcepath="org/apache/commons/math/analysis/solvers/BaseSecantSolver.java">
+        <Message>At BaseSecantSolver.java:[lines 68-252]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.math.analysis.solvers.BaseSecantSolver</Message>
+    </Class>
+    <Method classname="org.apache.commons.math.analysis.solvers.BaseSecantSolver" name="doSolve" signature="()D" isStatic="false" primary="true">
+      <SourceLine classname="org.apache.commons.math.analysis.solvers.BaseSecantSolver" start="130" end="252" startBytecode="0" endBytecode="793" sourcefile="BaseSecantSolver.java" sourcepath="org/apache/commons/math/analysis/solvers/BaseSecantSolver.java"/>
+      <Message>In method org.apache.commons.math.analysis.solvers.BaseSecantSolver.doSolve()</Message>
+    </Method>
+    <SourceLine classname="org.apache.commons.math.analysis.solvers.BaseSecantSolver" primary="true" start="187" end="187" startBytecode="203" endBytecode="203" sourcefile="BaseSecantSolver.java" sourcepath="org/apache/commons/math/analysis/solvers/BaseSecantSolver.java">
+      <Message>At BaseSecantSolver.java:[line 187]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="FE_FLOATING_POINT_EQUALITY" abbrev="FE" category="STYLE">
+    <ShortDescription>Test for floating point equality</ShortDescription>
+    <Details><![CDATA[
+   
+    <p>
+    This operation compares two floating point values for equality.
+    Because floating point calculations may involve rounding,
+   calculated float and double values may not be accurate.
+    For values that must be precise, such as monetary values,
+   consider using a fixed-precision type such as BigDecimal.
+    For values that need not be precise, consider comparing for equality
+    within some range, for example:
+    <code>if ( Math.abs(x - y) &lt; .0000001 )</code>.
+   See the Java Language Specification, section 4.2.4.
+    </p>
+    
+     ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="FE">
+    <Description>Test for floating point equality</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 14 Nov 2018 04:09:38 -0500" total_classes="3" referenced_classes="38" total_bugs="1" total_size="99" num_packages="1" java_version="1.8.0_121" vm_version="25.121-b13" cpu_seconds="7.12" clock_seconds="4.11" peak_mbytes="128.50" alloc_mbytes="1820.50" gc_seconds="0.02" priority_1="1">
+    <FileStats path="org/apache/commons/math/analysis/solvers/BaseSecantSolver.java" bugCount="1" size="99" bugHash="f01b5035f7a4fef289c81f212780361c"/>
+    <PackageStats package="org.apache.commons.math.analysis.solvers" total_bugs="1" total_types="3" total_size="99" priority_1="1">
+      <ClassStats class="org.apache.commons.math.analysis.solvers.BaseSecantSolver" sourceFile="BaseSecantSolver.java" interface="false" size="80" bugs="1" priority_1="1"/>
+      <ClassStats class="org.apache.commons.math.analysis.solvers.BaseSecantSolver$1" sourceFile="BaseSecantSolver.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="org.apache.commons.math.analysis.solvers.BaseSecantSolver$Method" sourceFile="BaseSecantSolver.java" interface="false" size="13" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="612" invocations="364" avgMicrosecondsPerInvocation="1684" maxMicrosecondsPerInvocation="45528" standardDeviationMicrosecondsPerInvocation="4358"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="469" invocations="360" avgMicrosecondsPerInvocation="1305" maxMicrosecondsPerInvocation="36650" standardDeviationMicrosecondsPerInvocation="3964"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="190" invocations="112" avgMicrosecondsPerInvocation="1697" maxMicrosecondsPerInvocation="31919" standardDeviationMicrosecondsPerInvocation="4340"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="153" invocations="38" avgMicrosecondsPerInvocation="4048" maxMicrosecondsPerInvocation="44653" standardDeviationMicrosecondsPerInvocation="9793"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="110" invocations="7" avgMicrosecondsPerInvocation="15854" maxMicrosecondsPerInvocation="106761" standardDeviationMicrosecondsPerInvocation="37121"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="106" invocations="38" avgMicrosecondsPerInvocation="2792" maxMicrosecondsPerInvocation="39845" standardDeviationMicrosecondsPerInvocation="8189"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="99" invocations="326" avgMicrosecondsPerInvocation="306" maxMicrosecondsPerInvocation="16863" standardDeviationMicrosecondsPerInvocation="1349"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="88" invocations="7" avgMicrosecondsPerInvocation="12646" maxMicrosecondsPerInvocation="41381" standardDeviationMicrosecondsPerInvocation="17146"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="86" invocations="64" avgMicrosecondsPerInvocation="1348" maxMicrosecondsPerInvocation="56796" standardDeviationMicrosecondsPerInvocation="7120"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="82" invocations="38" avgMicrosecondsPerInvocation="2179" maxMicrosecondsPerInvocation="19504" standardDeviationMicrosecondsPerInvocation="4754"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="80" invocations="7" avgMicrosecondsPerInvocation="11498" maxMicrosecondsPerInvocation="53082" standardDeviationMicrosecondsPerInvocation="18836"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="61" invocations="7" avgMicrosecondsPerInvocation="8848" maxMicrosecondsPerInvocation="40970" standardDeviationMicrosecondsPerInvocation="14419"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="56" invocations="38" avgMicrosecondsPerInvocation="1481" maxMicrosecondsPerInvocation="30068" standardDeviationMicrosecondsPerInvocation="4986"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="55" invocations="7" avgMicrosecondsPerInvocation="7986" maxMicrosecondsPerInvocation="35232" standardDeviationMicrosecondsPerInvocation="12060"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

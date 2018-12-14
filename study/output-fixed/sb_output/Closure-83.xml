@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.1.0" sequence="0" timestamp="1542190246000" analysisTimestamp="1542190249065" release="">
+  <Project projectName="">
+    <Jar>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-83/src</Jar>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-83/build/classes</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-83/lib/args4j.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-83/lib/guava.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-83/lib/jsr305.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-83/lib/libtrunk_rhino_parser_jarjared.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-83/lib/protobuf-java.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-83/lib/ant.jar</AuxClasspathEntry>
+  </Project>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 14 Nov 2018 05:10:46 -0500" total_classes="5" referenced_classes="111" total_bugs="0" total_size="309" num_packages="1" java_version="1.8.0_121" vm_version="25.121-b13" cpu_seconds="12.71" clock_seconds="6.63" peak_mbytes="191.51" alloc_mbytes="1820.50" gc_seconds="0.09">
+    <FileStats path="com/google/javascript/jscomp/CommandLineRunner.java" bugCount="0" size="309"/>
+    <PackageStats package="com.google.javascript.jscomp" total_bugs="0" total_types="5" total_size="309">
+      <ClassStats class="com.google.javascript.jscomp.CommandLineRunner" sourceFile="CommandLineRunner.java" interface="false" size="128" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.CommandLineRunner$1" sourceFile="CommandLineRunner.java" interface="false" size="4" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.CommandLineRunner$Flags" sourceFile="CommandLineRunner.java" interface="false" size="129" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.CommandLineRunner$Flags$BooleanOptionHandler" sourceFile="CommandLineRunner.java" interface="false" size="28" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.CommandLineRunner$FormattingOption" sourceFile="CommandLineRunner.java" interface="false" size="20" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="1174" invocations="946" avgMicrosecondsPerInvocation="1242" maxMicrosecondsPerInvocation="36959" standardDeviationMicrosecondsPerInvocation="2310"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="808" invocations="942" avgMicrosecondsPerInvocation="858" maxMicrosecondsPerInvocation="66813" standardDeviationMicrosecondsPerInvocation="3251"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="452" invocations="111" avgMicrosecondsPerInvocation="4075" maxMicrosecondsPerInvocation="72477" standardDeviationMicrosecondsPerInvocation="9703"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="326" invocations="111" avgMicrosecondsPerInvocation="2939" maxMicrosecondsPerInvocation="27748" standardDeviationMicrosecondsPerInvocation="5441"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="299" invocations="316" avgMicrosecondsPerInvocation="946" maxMicrosecondsPerInvocation="21729" standardDeviationMicrosecondsPerInvocation="2420"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="207" invocations="901" avgMicrosecondsPerInvocation="230" maxMicrosecondsPerInvocation="34851" standardDeviationMicrosecondsPerInvocation="1630"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="126" invocations="11" avgMicrosecondsPerInvocation="11482" maxMicrosecondsPerInvocation="39631" standardDeviationMicrosecondsPerInvocation="12319"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="125" invocations="150" avgMicrosecondsPerInvocation="839" maxMicrosecondsPerInvocation="59757" standardDeviationMicrosecondsPerInvocation="4995"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="122" invocations="111" avgMicrosecondsPerInvocation="1104" maxMicrosecondsPerInvocation="22480" standardDeviationMicrosecondsPerInvocation="3037"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="115" invocations="111" avgMicrosecondsPerInvocation="1038" maxMicrosecondsPerInvocation="32269" standardDeviationMicrosecondsPerInvocation="3414"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="110" invocations="10" avgMicrosecondsPerInvocation="11026" maxMicrosecondsPerInvocation="98928" standardDeviationMicrosecondsPerInvocation="29325"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="107" invocations="111" avgMicrosecondsPerInvocation="970" maxMicrosecondsPerInvocation="28363" standardDeviationMicrosecondsPerInvocation="3066"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="103" invocations="10" avgMicrosecondsPerInvocation="10397" maxMicrosecondsPerInvocation="43889" standardDeviationMicrosecondsPerInvocation="16002"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

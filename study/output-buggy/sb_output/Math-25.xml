@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.1.0" sequence="0" timestamp="1542186450000" analysisTimestamp="1542186452952" release="">
+  <Project projectName="">
+    <Jar>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-25/src/main/java</Jar>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-25/target/classes</AuxClasspathEntry>
+  </Project>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 14 Nov 2018 04:07:30 -0500" total_classes="2" referenced_classes="29" total_bugs="0" total_size="108" num_packages="1" java_version="1.8.0_121" vm_version="25.121-b13" cpu_seconds="6.24" clock_seconds="3.28" peak_mbytes="116.38" alloc_mbytes="1820.50" gc_seconds="0.03">
+    <FileStats path="org/apache/commons/math3/optimization/fitting/HarmonicFitter.java" bugCount="0" size="108"/>
+    <PackageStats package="org.apache.commons.math3.optimization.fitting" total_bugs="0" total_types="2" total_size="108">
+      <ClassStats class="org.apache.commons.math3.optimization.fitting.HarmonicFitter" sourceFile="HarmonicFitter.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="org.apache.commons.math3.optimization.fitting.HarmonicFitter$ParameterGuesser" sourceFile="HarmonicFitter.java" interface="false" size="100" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="503" invocations="363" avgMicrosecondsPerInvocation="1385" maxMicrosecondsPerInvocation="28772" standardDeviationMicrosecondsPerInvocation="2788"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="429" invocations="360" avgMicrosecondsPerInvocation="1192" maxMicrosecondsPerInvocation="53863" standardDeviationMicrosecondsPerInvocation="4118"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="142" invocations="29" avgMicrosecondsPerInvocation="4908" maxMicrosecondsPerInvocation="51769" standardDeviationMicrosecondsPerInvocation="10503"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="123" invocations="29" avgMicrosecondsPerInvocation="4247" maxMicrosecondsPerInvocation="50773" standardDeviationMicrosecondsPerInvocation="10140"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="116" invocations="325" avgMicrosecondsPerInvocation="358" maxMicrosecondsPerInvocation="21801" standardDeviationMicrosecondsPerInvocation="1614"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="89" invocations="3" avgMicrosecondsPerInvocation="29697" maxMicrosecondsPerInvocation="77498" standardDeviationMicrosecondsPerInvocation="34115"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="67" invocations="29" avgMicrosecondsPerInvocation="2333" maxMicrosecondsPerInvocation="46229" standardDeviationMicrosecondsPerInvocation="8479"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="65" invocations="55" avgMicrosecondsPerInvocation="1191" maxMicrosecondsPerInvocation="37798" standardDeviationMicrosecondsPerInvocation="5090"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="59" invocations="29" avgMicrosecondsPerInvocation="2063" maxMicrosecondsPerInvocation="27966" standardDeviationMicrosecondsPerInvocation="5275"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

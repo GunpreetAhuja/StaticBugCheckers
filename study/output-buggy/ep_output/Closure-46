@@ -1,0 +1,11 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-46/src/com/google/javascript/rhino/jstype/RecordType.java:103: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+    if (otherRecord == this) {
+                    ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'if (Objects.equals(otherRecord, this)) {' or 'if (otherRecord.equals(this)) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-46/src/com/google/javascript/rhino/jstype/RecordType.java:291: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+      if (type != resolvedType) {
+               ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'if (!type.equals(resolvedType)) {'?
+2 warnings

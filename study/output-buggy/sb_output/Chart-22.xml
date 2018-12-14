@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.1.0" sequence="0" timestamp="1542185265000" analysisTimestamp="1542185268071" release="">
+  <Project projectName="">
+    <Jar>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-22/source</Jar>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-22/build</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-22/lib/servlet.jar</AuxClasspathEntry>
+  </Project>
+  <BugInstance type="UC_USELESS_CONDITION" priority="1" rank="14" abbrev="UC" category="STYLE" instanceHash="dbf6b11229bbc2e0a499393167bf66d1" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Condition has no effect</ShortMessage>
+    <LongMessage>Useless condition: it&apos;s known that local$3 &gt;= 0 at this point</LongMessage>
+    <Class classname="org.jfree.data.KeyedObjects2D" primary="true">
+      <SourceLine classname="org.jfree.data.KeyedObjects2D" start="74" end="463" sourcefile="KeyedObjects2D.java" sourcepath="org/jfree/data/KeyedObjects2D.java">
+        <Message>At KeyedObjects2D.java:[lines 74-463]</Message>
+      </SourceLine>
+      <Message>In class org.jfree.data.KeyedObjects2D</Message>
+    </Class>
+    <Method classname="org.jfree.data.KeyedObjects2D" name="getObject" signature="(Ljava/lang/Comparable;Ljava/lang/Comparable;)Ljava/lang/Object;" isStatic="false" primary="true">
+      <SourceLine classname="org.jfree.data.KeyedObjects2D" start="215" end="236" startBytecode="0" endBytecode="246" sourcefile="KeyedObjects2D.java" sourcepath="org/jfree/data/KeyedObjects2D.java"/>
+      <Message>In method org.jfree.data.KeyedObjects2D.getObject(Comparable, Comparable)</Message>
+    </Method>
+    <String value="local$3 &gt;= 0">
+      <Message>Value local$3 &gt;= 0</Message>
+    </String>
+    <SourceLine classname="org.jfree.data.KeyedObjects2D" start="236" end="236" startBytecode="150" endBytecode="150" sourcefile="KeyedObjects2D.java" sourcepath="org/jfree/data/KeyedObjects2D.java" role="SOURCE_UNREACHABLE_CODE">
+      <Message>Unreachable code at KeyedObjects2D.java:[line 236]</Message>
+    </SourceLine>
+    <SourceLine classname="org.jfree.data.KeyedObjects2D" primary="true" start="231" end="231" startBytecode="125" endBytecode="125" sourcefile="KeyedObjects2D.java" sourcepath="org/jfree/data/KeyedObjects2D.java">
+      <Message>At KeyedObjects2D.java:[line 231]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="UC_USELESS_CONDITION" abbrev="UC" category="STYLE">
+    <ShortDescription>Condition has no effect</ShortDescription>
+    <Details><![CDATA[
+
+<p>This condition always produces the same result as the value of the involved variable that was narrowed before.
+Probably something else was meant or the condition can be removed.</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="UC">
+    <Description>Useless code</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 14 Nov 2018 03:47:45 -0500" total_classes="1" referenced_classes="20" total_bugs="1" total_size="150" num_packages="1" java_version="1.8.0_121" vm_version="25.121-b13" cpu_seconds="7.37" clock_seconds="3.76" peak_mbytes="115.01" alloc_mbytes="1820.50" gc_seconds="0.06" priority_1="1">
+    <FileStats path="org/jfree/data/KeyedObjects2D.java" bugCount="1" size="150" bugHash="553a3542222b457b668ee67acddfea63"/>
+    <PackageStats package="org.jfree.data" total_bugs="1" total_types="1" total_size="150" priority_1="1">
+      <ClassStats class="org.jfree.data.KeyedObjects2D" sourceFile="KeyedObjects2D.java" interface="false" size="150" bugs="1" priority_1="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="459" invocations="376" avgMicrosecondsPerInvocation="1223" maxMicrosecondsPerInvocation="41431" standardDeviationMicrosecondsPerInvocation="3442"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="380" invocations="379" avgMicrosecondsPerInvocation="1003" maxMicrosecondsPerInvocation="19283" standardDeviationMicrosecondsPerInvocation="1805"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="101" invocations="122" avgMicrosecondsPerInvocation="834" maxMicrosecondsPerInvocation="23693" standardDeviationMicrosecondsPerInvocation="2373"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="99" invocations="20" avgMicrosecondsPerInvocation="4989" maxMicrosecondsPerInvocation="21462" standardDeviationMicrosecondsPerInvocation="6643"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="93" invocations="21" avgMicrosecondsPerInvocation="4449" maxMicrosecondsPerInvocation="63248" standardDeviationMicrosecondsPerInvocation="13268"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="92" invocations="21" avgMicrosecondsPerInvocation="4419" maxMicrosecondsPerInvocation="43949" standardDeviationMicrosecondsPerInvocation="9476"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="90" invocations="344" avgMicrosecondsPerInvocation="261" maxMicrosecondsPerInvocation="16448" standardDeviationMicrosecondsPerInvocation="1010"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="78" invocations="21" avgMicrosecondsPerInvocation="3751" maxMicrosecondsPerInvocation="72859" standardDeviationMicrosecondsPerInvocation="15454"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="77" invocations="46" avgMicrosecondsPerInvocation="1687" maxMicrosecondsPerInvocation="52320" standardDeviationMicrosecondsPerInvocation="7610"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="75" invocations="20" avgMicrosecondsPerInvocation="3756" maxMicrosecondsPerInvocation="19599" standardDeviationMicrosecondsPerInvocation="6248"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="70" invocations="21" avgMicrosecondsPerInvocation="3333" maxMicrosecondsPerInvocation="39912" standardDeviationMicrosecondsPerInvocation="8615"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="69" invocations="20" avgMicrosecondsPerInvocation="3450" maxMicrosecondsPerInvocation="22082" standardDeviationMicrosecondsPerInvocation="5611"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="64" invocations="21" avgMicrosecondsPerInvocation="3093" maxMicrosecondsPerInvocation="37658" standardDeviationMicrosecondsPerInvocation="7855"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="45" invocations="21" avgMicrosecondsPerInvocation="2159" maxMicrosecondsPerInvocation="9658" standardDeviationMicrosecondsPerInvocation="2713"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="43" invocations="20" avgMicrosecondsPerInvocation="2186" maxMicrosecondsPerInvocation="24320" standardDeviationMicrosecondsPerInvocation="5447"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="41" invocations="21" avgMicrosecondsPerInvocation="1989" maxMicrosecondsPerInvocation="14991" standardDeviationMicrosecondsPerInvocation="3344"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

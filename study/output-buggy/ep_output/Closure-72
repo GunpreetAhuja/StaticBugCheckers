@@ -1,0 +1,11 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-72/src/com/google/javascript/jscomp/RenameLabels.java:136: warning: [MissingOverride] shouldTraverse implements method in Callback; expected @Override
+    public boolean shouldTraverse(NodeTraversal nodeTraversal, Node node,
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public boolean shouldTraverse(NodeTraversal nodeTraversal, Node node,'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-72/src/com/google/javascript/jscomp/RenameLabels.java:167: warning: [MissingOverride] visit implements method in Callback; expected @Override
+    public void visit(NodeTraversal nodeTraversal, Node node, Node parent) {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void visit(NodeTraversal nodeTraversal, Node node, Node parent) {'?
+2 warnings

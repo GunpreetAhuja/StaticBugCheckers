@@ -1,0 +1,11 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-3/src/main/java/org/apache/commons/math3/util/MathArrays.java:710: warning: [MissingOverride] compare implements method in Comparator; expected @Override
+            public int compare(Pair<Double, Integer> o1,
+                       ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int compare(Pair<Double, Integer> o1,'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-3/src/main/java/org/apache/commons/math3/util/MathArrays.java:715: warning: [MissingOverride] compare implements method in Comparator; expected @Override
+            public int compare(Pair<Double, Integer> o1,
+                       ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int compare(Pair<Double, Integer> o1,'?
+2 warnings

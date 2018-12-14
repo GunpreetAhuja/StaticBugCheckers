@@ -1,0 +1,33 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-43/src/java/org/apache/commons/lang/text/ExtendedMessageFormat.java:133: warning: [MissingOverride] toPattern overrides method in MessageFormat; expected @Override
+    public String toPattern() {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public String toPattern() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-43/src/java/org/apache/commons/lang/text/ExtendedMessageFormat.java:142: warning: [MissingOverride] applyPattern overrides method in MessageFormat; expected @Override
+    public final void applyPattern(String pattern) {
+                      ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public final void applyPattern(String pattern) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-43/src/java/org/apache/commons/lang/text/ExtendedMessageFormat.java:212: warning: [MissingOverride] setFormat overrides method in MessageFormat; expected @Override
+    public void setFormat(int formatElementIndex, Format newFormat) {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void setFormat(int formatElementIndex, Format newFormat) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-43/src/java/org/apache/commons/lang/text/ExtendedMessageFormat.java:220: warning: [MissingOverride] setFormatByArgumentIndex overrides method in MessageFormat; expected @Override
+    public void setFormatByArgumentIndex(int argumentIndex, Format newFormat) {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void setFormatByArgumentIndex(int argumentIndex, Format newFormat) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-43/src/java/org/apache/commons/lang/text/ExtendedMessageFormat.java:228: warning: [MissingOverride] setFormats overrides method in MessageFormat; expected @Override
+    public void setFormats(Format[] newFormats) {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void setFormats(Format[] newFormats) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-43/src/java/org/apache/commons/lang/text/ExtendedMessageFormat.java:236: warning: [MissingOverride] setFormatsByArgumentIndex overrides method in MessageFormat; expected @Override
+    public void setFormatsByArgumentIndex(Format[] newFormats) {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void setFormatsByArgumentIndex(Format[] newFormats) {'?
+Note: /Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-43/src/java/org/apache/commons/lang/text/ExtendedMessageFormat.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+6 warnings

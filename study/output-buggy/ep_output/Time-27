@@ -1,0 +1,176 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-27/src/main/java/org/joda/time/format/PeriodFormatterBuilder.java:861: warning: [MissingOverride] calculatePrintedLength implements method in PeriodFieldAffix; expected @Override
+        public int calculatePrintedLength(int value) {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int calculatePrintedLength(int value) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-27/src/main/java/org/joda/time/format/PeriodFormatterBuilder.java:865: warning: [MissingOverride] printTo implements method in PeriodFieldAffix; expected @Override
+        public void printTo(StringBuffer buf, int value) {
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void printTo(StringBuffer buf, int value) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-27/src/main/java/org/joda/time/format/PeriodFormatterBuilder.java:869: warning: [MissingOverride] printTo implements method in PeriodFieldAffix; expected @Override
+        public void printTo(Writer out, int value) throws IOException {
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void printTo(Writer out, int value) throws IOException {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-27/src/main/java/org/joda/time/format/PeriodFormatterBuilder.java:873: warning: [MissingOverride] parse implements method in PeriodFieldAffix; expected @Override
+        public int parse(String periodStr, int position) {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int parse(String periodStr, int position) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-27/src/main/java/org/joda/time/format/PeriodFormatterBuilder.java:882: warning: [MissingOverride] scan implements method in PeriodFieldAffix; expected @Override
+        public int scan(String periodStr, final int position) {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int scan(String periodStr, final int position) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-27/src/main/java/org/joda/time/format/PeriodFormatterBuilder.java:919: warning: [MissingOverride] calculatePrintedLength implements method in PeriodFieldAffix; expected @Override
+        public int calculatePrintedLength(int value) {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int calculatePrintedLength(int value) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-27/src/main/java/org/joda/time/format/PeriodFormatterBuilder.java:923: warning: [MissingOverride] printTo implements method in PeriodFieldAffix; expected @Override
+        public void printTo(StringBuffer buf, int value) {
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void printTo(StringBuffer buf, int value) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-27/src/main/java/org/joda/time/format/PeriodFormatterBuilder.java:927: warning: [MissingOverride] printTo implements method in PeriodFieldAffix; expected @Override
+        public void printTo(Writer out, int value) throws IOException {
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void printTo(Writer out, int value) throws IOException {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-27/src/main/java/org/joda/time/format/PeriodFormatterBuilder.java:931: warning: [MissingOverride] parse implements method in PeriodFieldAffix; expected @Override
+        public int parse(String periodStr, int position) {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int parse(String periodStr, int position) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-27/src/main/java/org/joda/time/format/PeriodFormatterBuilder.java:954: warning: [MissingOverride] scan implements method in PeriodFieldAffix; expected @Override
+        public int scan(String periodStr, final int position) {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int scan(String periodStr, final int position) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-27/src/main/java/org/joda/time/format/PeriodFormatterBuilder.java:994: warning: [MissingOverride] calculatePrintedLength implements method in PeriodFieldAffix; expected @Override
+        public int calculatePrintedLength(int value) {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int calculatePrintedLength(int value) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-27/src/main/java/org/joda/time/format/PeriodFormatterBuilder.java:999: warning: [MissingOverride] printTo implements method in PeriodFieldAffix; expected @Override
+        public void printTo(StringBuffer buf, int value) {
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void printTo(StringBuffer buf, int value) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-27/src/main/java/org/joda/time/format/PeriodFormatterBuilder.java:1004: warning: [MissingOverride] printTo implements method in PeriodFieldAffix; expected @Override
+        public void printTo(Writer out, int value) throws IOException {
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void printTo(Writer out, int value) throws IOException {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-27/src/main/java/org/joda/time/format/PeriodFormatterBuilder.java:1009: warning: [MissingOverride] parse implements method in PeriodFieldAffix; expected @Override
+        public int parse(String periodStr, int position) {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int parse(String periodStr, int position) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-27/src/main/java/org/joda/time/format/PeriodFormatterBuilder.java:1017: warning: [MissingOverride] scan implements method in PeriodFieldAffix; expected @Override
+        public int scan(String periodStr, final int position) {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int scan(String periodStr, final int position) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-27/src/main/java/org/joda/time/format/PeriodFormatterBuilder.java:1076: warning: [MissingOverride] countFieldsToPrint implements method in PeriodPrinter; expected @Override
+        public int countFieldsToPrint(ReadablePeriod period, int stopAt, Locale locale) {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int countFieldsToPrint(ReadablePeriod period, int stopAt, Locale locale) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-27/src/main/java/org/joda/time/format/PeriodFormatterBuilder.java:1086: warning: [MissingOverride] calculatePrintedLength implements method in PeriodPrinter; expected @Override
+        public int calculatePrintedLength(ReadablePeriod period, Locale locale) {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int calculatePrintedLength(ReadablePeriod period, Locale locale) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-27/src/main/java/org/joda/time/format/PeriodFormatterBuilder.java:1118: warning: [MissingOverride] printTo implements method in PeriodPrinter; expected @Override
+        public void printTo(StringBuffer buf, ReadablePeriod period, Locale locale) {
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void printTo(StringBuffer buf, ReadablePeriod period, Locale locale) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-27/src/main/java/org/joda/time/format/PeriodFormatterBuilder.java:1149: warning: [MissingOverride] printTo implements method in PeriodPrinter; expected @Override
+        public void printTo(Writer out, ReadablePeriod period, Locale locale) throws IOException {
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void printTo(Writer out, ReadablePeriod period, Locale locale) throws IOException {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-27/src/main/java/org/joda/time/format/PeriodFormatterBuilder.java:1180: warning: [MissingOverride] parseInto implements method in PeriodParser; expected @Override
+        public int parseInto(
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int parseInto('?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-27/src/main/java/org/joda/time/format/PeriodFormatterBuilder.java:1546: warning: [MissingOverride] countFieldsToPrint implements method in PeriodPrinter; expected @Override
+        public int countFieldsToPrint(ReadablePeriod period, int stopAt, Locale locale) {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int countFieldsToPrint(ReadablePeriod period, int stopAt, Locale locale) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-27/src/main/java/org/joda/time/format/PeriodFormatterBuilder.java:1550: warning: [MissingOverride] calculatePrintedLength implements method in PeriodPrinter; expected @Override
+        public int calculatePrintedLength(ReadablePeriod period, Locale locale) {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int calculatePrintedLength(ReadablePeriod period, Locale locale) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-27/src/main/java/org/joda/time/format/PeriodFormatterBuilder.java:1554: warning: [MissingOverride] printTo implements method in PeriodPrinter; expected @Override
+        public void printTo(StringBuffer buf, ReadablePeriod period, Locale locale) {
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void printTo(StringBuffer buf, ReadablePeriod period, Locale locale) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-27/src/main/java/org/joda/time/format/PeriodFormatterBuilder.java:1558: warning: [MissingOverride] printTo implements method in PeriodPrinter; expected @Override
+        public void printTo(Writer out, ReadablePeriod period, Locale locale) throws IOException {
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void printTo(Writer out, ReadablePeriod period, Locale locale) throws IOException {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-27/src/main/java/org/joda/time/format/PeriodFormatterBuilder.java:1562: warning: [MissingOverride] parseInto implements method in PeriodParser; expected @Override
+        public int parseInto(
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int parseInto('?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-27/src/main/java/org/joda/time/format/PeriodFormatterBuilder.java:1622: warning: [MissingOverride] countFieldsToPrint implements method in PeriodPrinter; expected @Override
+        public int countFieldsToPrint(ReadablePeriod period, int stopAt, Locale locale) {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int countFieldsToPrint(ReadablePeriod period, int stopAt, Locale locale) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-27/src/main/java/org/joda/time/format/PeriodFormatterBuilder.java:1630: warning: [MissingOverride] calculatePrintedLength implements method in PeriodPrinter; expected @Override
+        public int calculatePrintedLength(ReadablePeriod period, Locale locale) {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int calculatePrintedLength(ReadablePeriod period, Locale locale) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-27/src/main/java/org/joda/time/format/PeriodFormatterBuilder.java:1655: warning: [MissingOverride] printTo implements method in PeriodPrinter; expected @Override
+        public void printTo(StringBuffer buf, ReadablePeriod period, Locale locale) {
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void printTo(StringBuffer buf, ReadablePeriod period, Locale locale) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-27/src/main/java/org/joda/time/format/PeriodFormatterBuilder.java:1677: warning: [MissingOverride] printTo implements method in PeriodPrinter; expected @Override
+        public void printTo(Writer out, ReadablePeriod period, Locale locale) throws IOException {
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void printTo(Writer out, ReadablePeriod period, Locale locale) throws IOException {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-27/src/main/java/org/joda/time/format/PeriodFormatterBuilder.java:1699: warning: [MissingOverride] parseInto implements method in PeriodParser; expected @Override
+        public int parseInto(
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int parseInto('?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-27/src/main/java/org/joda/time/format/PeriodFormatterBuilder.java:1785: warning: [MissingOverride] countFieldsToPrint implements method in PeriodPrinter; expected @Override
+        public int countFieldsToPrint(ReadablePeriod period, int stopAt, Locale locale) {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int countFieldsToPrint(ReadablePeriod period, int stopAt, Locale locale) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-27/src/main/java/org/joda/time/format/PeriodFormatterBuilder.java:1794: warning: [MissingOverride] calculatePrintedLength implements method in PeriodPrinter; expected @Override
+        public int calculatePrintedLength(ReadablePeriod period, Locale locale) {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int calculatePrintedLength(ReadablePeriod period, Locale locale) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-27/src/main/java/org/joda/time/format/PeriodFormatterBuilder.java:1803: warning: [MissingOverride] printTo implements method in PeriodPrinter; expected @Override
+        public void printTo(StringBuffer buf, ReadablePeriod period, Locale locale) {
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void printTo(StringBuffer buf, ReadablePeriod period, Locale locale) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-27/src/main/java/org/joda/time/format/PeriodFormatterBuilder.java:1811: warning: [MissingOverride] printTo implements method in PeriodPrinter; expected @Override
+        public void printTo(Writer out, ReadablePeriod period, Locale locale) throws IOException {
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void printTo(Writer out, ReadablePeriod period, Locale locale) throws IOException {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-27/src/main/java/org/joda/time/format/PeriodFormatterBuilder.java:1819: warning: [MissingOverride] parseInto implements method in PeriodParser; expected @Override
+        public int parseInto(
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int parseInto('?
+35 warnings

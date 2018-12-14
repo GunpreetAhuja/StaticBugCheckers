@@ -1,0 +1,16 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-120/src/com/google/javascript/jscomp/ReferenceCollectingCallback.java:488: warning: [MutableConstantField] Constant field declarations should use the immutable type (such as ImmutableList) instead of the general collection interface type (such as List)
+    private static final Set<Integer> DECLARATION_PARENTS =
+                            ^
+    (see http://errorprone.info/bugpattern/MutableConstantField)
+  Did you mean 'private static final ImmutableSet<Integer> DECLARATION_PARENTS ='?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-120/src/com/google/javascript/jscomp/ReferenceCollectingCallback.java:560: warning: [OperatorPrecedence] Use grouping parenthesis to make the operator precedence explicit
+          parent.isParamList() &&
+                               ^
+    (see http://errorprone.info/bugpattern/OperatorPrecedence)
+  Did you mean '(parent.isParamList() &&'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-120/src/com/google/javascript/jscomp/ReferenceCollectingCallback.java:578: warning: [OperatorPrecedence] Use grouping parenthesis to make the operator precedence explicit
+      return isDeclaration() &&
+                             ^
+    (see http://errorprone.info/bugpattern/OperatorPrecedence)
+  Did you mean 'return (isDeclaration() &&'?
+3 warnings

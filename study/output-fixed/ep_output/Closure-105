@@ -1,0 +1,41 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-105/src/com/google/javascript/jscomp/FoldConstants.java:86: warning: [MissingOverride] process implements method in CompilerPass; expected @Override
+  public void process(Node externs, Node jsRoot) {
+              ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void process(Node externs, Node jsRoot) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-105/src/com/google/javascript/jscomp/FoldConstants.java:90: warning: [MissingOverride] visit implements method in Callback; expected @Override
+  public void visit(NodeTraversal t, Node n, Node parent) {
+              ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void visit(NodeTraversal t, Node n, Node parent) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-105/src/com/google/javascript/jscomp/FoldConstants.java:917: warning: [MissingOverride] visit implements method in Callback; expected @Override
+      public void visit(NodeTraversal t, Node n, Node parent) {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void visit(NodeTraversal t, Node n, Node parent) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-105/src/com/google/javascript/jscomp/FoldConstants.java:933: warning: [MissingOverride] visit implements method in Callback; expected @Override
+      public void visit(NodeTraversal t, Node n, Node parent) {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void visit(NodeTraversal t, Node n, Node parent) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-105/src/com/google/javascript/jscomp/FoldConstants.java:953: warning: [OperatorPrecedence] Use grouping parenthesis to make the operator precedence explicit
+      if (lval && type == Token.OR ||
+               ^
+    (see http://errorprone.info/bugpattern/OperatorPrecedence)
+  Did you mean 'if ((lval && type == Token.OR) ||'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-105/src/com/google/javascript/jscomp/FoldConstants.java:954: warning: [OperatorPrecedence] Use grouping parenthesis to make the operator precedence explicit
+          !lval && type == Token.AND) {
+                ^
+    (see http://errorprone.info/bugpattern/OperatorPrecedence)
+  Did you mean '(!lval && type == Token.AND)) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-105/src/com/google/javascript/jscomp/FoldConstants.java:979: warning: [OperatorPrecedence] Use grouping parenthesis to make the operator precedence explicit
+        if (type == Token.OR && !rval ||
+                             ^
+    (see http://errorprone.info/bugpattern/OperatorPrecedence)
+  Did you mean 'if ((type == Token.OR && !rval) ||'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-105/src/com/google/javascript/jscomp/FoldConstants.java:980: warning: [OperatorPrecedence] Use grouping parenthesis to make the operator precedence explicit
+            type == Token.AND && rval) {
+                              ^
+    (see http://errorprone.info/bugpattern/OperatorPrecedence)
+  Did you mean '(type == Token.AND && rval)) {'?
+8 warnings

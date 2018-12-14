@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.1.0" sequence="0" timestamp="1542190039000" analysisTimestamp="1542190042853" release="">
+  <Project projectName="">
+    <Jar>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-49/src</Jar>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-49/build/classes</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-49/lib/args4j.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-49/lib/guava.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-49/lib/json.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-49/lib/jsr305.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-49/lib/protobuf-java.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-49/build/lib/rhino.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-49/lib/ant.jar</AuxClasspathEntry>
+  </Project>
+  <BugInstance type="SF_SWITCH_NO_DEFAULT" priority="2" rank="19" abbrev="SF" category="STYLE" instanceHash="48c533b84e9bc9cf0cceadb95d63482" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Switch statement found where default case is missing</ShortMessage>
+    <LongMessage>Switch statement found in com.google.javascript.jscomp.MakeDeclaredNamesUnique.shouldTraverse(NodeTraversal, Node, Node) where default case is missing</LongMessage>
+    <Class classname="com.google.javascript.jscomp.MakeDeclaredNamesUnique" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.MakeDeclaredNamesUnique" start="60" end="229" sourcefile="MakeDeclaredNamesUnique.java" sourcepath="com/google/javascript/jscomp/MakeDeclaredNamesUnique.java">
+        <Message>At MakeDeclaredNamesUnique.java:[lines 60-229]</Message>
+      </SourceLine>
+      <Message>In class com.google.javascript.jscomp.MakeDeclaredNamesUnique</Message>
+    </Class>
+    <Method classname="com.google.javascript.jscomp.MakeDeclaredNamesUnique" name="shouldTraverse" signature="(Lcom/google/javascript/jscomp/NodeTraversal;Lcom/google/javascript/rhino/Node;Lcom/google/javascript/rhino/Node;)Z" isStatic="false" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.MakeDeclaredNamesUnique" start="108" end="155" startBytecode="0" endBytecode="394" sourcefile="MakeDeclaredNamesUnique.java" sourcepath="com/google/javascript/jscomp/MakeDeclaredNamesUnique.java"/>
+      <Message>In method com.google.javascript.jscomp.MakeDeclaredNamesUnique.shouldTraverse(NodeTraversal, Node, Node)</Message>
+    </Method>
+    <SourceLine classname="com.google.javascript.jscomp.MakeDeclaredNamesUnique" primary="true" start="108" end="150" startBytecode="4" endBytecode="247" sourcefile="MakeDeclaredNamesUnique.java" sourcepath="com/google/javascript/jscomp/MakeDeclaredNamesUnique.java">
+      <Message>At MakeDeclaredNamesUnique.java:[lines 108-150]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="SF_SWITCH_NO_DEFAULT" priority="2" rank="19" abbrev="SF" category="STYLE" instanceHash="bd3c24d1692a60ae9778ad3223d7cb5" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Switch statement found where default case is missing</ShortMessage>
+    <LongMessage>Switch statement found in com.google.javascript.jscomp.MakeDeclaredNamesUnique.visit(NodeTraversal, Node, Node) where default case is missing</LongMessage>
+    <Class classname="com.google.javascript.jscomp.MakeDeclaredNamesUnique" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.MakeDeclaredNamesUnique" start="60" end="229" sourcefile="MakeDeclaredNamesUnique.java" sourcepath="com/google/javascript/jscomp/MakeDeclaredNamesUnique.java">
+        <Message>At MakeDeclaredNamesUnique.java:[lines 60-229]</Message>
+      </SourceLine>
+      <Message>In class com.google.javascript.jscomp.MakeDeclaredNamesUnique</Message>
+    </Class>
+    <Method classname="com.google.javascript.jscomp.MakeDeclaredNamesUnique" name="visit" signature="(Lcom/google/javascript/jscomp/NodeTraversal;Lcom/google/javascript/rhino/Node;Lcom/google/javascript/rhino/Node;)V" isStatic="false" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.MakeDeclaredNamesUnique" start="160" end="192" startBytecode="0" endBytecode="249" sourcefile="MakeDeclaredNamesUnique.java" sourcepath="com/google/javascript/jscomp/MakeDeclaredNamesUnique.java"/>
+      <Message>In method com.google.javascript.jscomp.MakeDeclaredNamesUnique.visit(NodeTraversal, Node, Node)</Message>
+    </Method>
+    <SourceLine classname="com.google.javascript.jscomp.MakeDeclaredNamesUnique" primary="true" start="160" end="189" startBytecode="4" endBytecode="144" sourcefile="MakeDeclaredNamesUnique.java" sourcepath="com/google/javascript/jscomp/MakeDeclaredNamesUnique.java">
+      <Message>At MakeDeclaredNamesUnique.java:[lines 160-189]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="SF_SWITCH_NO_DEFAULT" abbrev="SF" category="STYLE">
+    <ShortDescription>Switch statement found where default case is missing</ShortDescription>
+    <Details><![CDATA[
+
+  <p> This method contains a switch statement where default case is missing.
+  Usually you need to provide a default case.</p>
+  <p>Because the analysis only looks at the generated bytecode, this warning can be incorrect triggered if
+the default case is at the end of the switch statement and the switch statement doesn't contain break statements for other
+cases.
+
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="SF">
+    <Description>Switch case falls through</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 14 Nov 2018 05:07:19 -0500" total_classes="7" referenced_classes="60" total_bugs="2" total_size="264" num_packages="1" java_version="1.8.0_121" vm_version="25.121-b13" cpu_seconds="9.39" clock_seconds="4.89" peak_mbytes="115.19" alloc_mbytes="1820.50" gc_seconds="0.11" priority_2="2">
+    <FileStats path="com/google/javascript/jscomp/MakeDeclaredNamesUnique.java" bugCount="2" size="264" bugHash="39e0713b2980e7ee5ac745053338f1d6"/>
+    <PackageStats package="com.google.javascript.jscomp" total_bugs="2" total_types="7" total_size="264" priority_2="2">
+      <ClassStats class="com.google.javascript.jscomp.MakeDeclaredNamesUnique" sourceFile="MakeDeclaredNamesUnique.java" interface="false" size="87" bugs="2" priority_2="2"/>
+      <ClassStats class="com.google.javascript.jscomp.MakeDeclaredNamesUnique$1" sourceFile="MakeDeclaredNamesUnique.java" interface="false" size="1" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.MakeDeclaredNamesUnique$BoilerplateRenamer" sourceFile="MakeDeclaredNamesUnique.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.MakeDeclaredNamesUnique$ContextualRenameInverter" sourceFile="MakeDeclaredNamesUnique.java" interface="false" size="89" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.MakeDeclaredNamesUnique$ContextualRenamer" sourceFile="MakeDeclaredNamesUnique.java" interface="false" size="40" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.MakeDeclaredNamesUnique$InlineRenamer" sourceFile="MakeDeclaredNamesUnique.java" interface="false" size="32" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.MakeDeclaredNamesUnique$Renamer" sourceFile="MakeDeclaredNamesUnique.java" interface="true" size="5" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="845" invocations="651" avgMicrosecondsPerInvocation="1299" maxMicrosecondsPerInvocation="29989" standardDeviationMicrosecondsPerInvocation="2197"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="644" invocations="650" avgMicrosecondsPerInvocation="991" maxMicrosecondsPerInvocation="37391" standardDeviationMicrosecondsPerInvocation="3442"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="324" invocations="60" avgMicrosecondsPerInvocation="5403" maxMicrosecondsPerInvocation="62355" standardDeviationMicrosecondsPerInvocation="12287"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="210" invocations="60" avgMicrosecondsPerInvocation="3506" maxMicrosecondsPerInvocation="46257" standardDeviationMicrosecondsPerInvocation="7794"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="154" invocations="234" avgMicrosecondsPerInvocation="659" maxMicrosecondsPerInvocation="13191" standardDeviationMicrosecondsPerInvocation="1363"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="142" invocations="619" avgMicrosecondsPerInvocation="230" maxMicrosecondsPerInvocation="26056" standardDeviationMicrosecondsPerInvocation="1351"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="113" invocations="9" avgMicrosecondsPerInvocation="12556" maxMicrosecondsPerInvocation="109124" standardDeviationMicrosecondsPerInvocation="34144"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="93" invocations="9" avgMicrosecondsPerInvocation="10344" maxMicrosecondsPerInvocation="50253" standardDeviationMicrosecondsPerInvocation="14881"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="87" invocations="60" avgMicrosecondsPerInvocation="1466" maxMicrosecondsPerInvocation="41938" standardDeviationMicrosecondsPerInvocation="5402"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="84" invocations="85" avgMicrosecondsPerInvocation="992" maxMicrosecondsPerInvocation="41338" standardDeviationMicrosecondsPerInvocation="4766"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="62" invocations="9" avgMicrosecondsPerInvocation="6923" maxMicrosecondsPerInvocation="29085" standardDeviationMicrosecondsPerInvocation="9056"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="61" invocations="9" avgMicrosecondsPerInvocation="6886" maxMicrosecondsPerInvocation="25985" standardDeviationMicrosecondsPerInvocation="8997"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

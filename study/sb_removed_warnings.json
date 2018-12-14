@@ -1,0 +1,378 @@
+[
+    {
+        "    Proj": "Chart-1",
+        "   Class": "org.jfree.chart.renderer.category.AbstractCategoryItemRenderer",
+        "     Cat": "CORRECTNESS",
+        "  Abbrev": "NP",
+        "    Type": "NP_ALWAYS_NULL",
+        "Priority": "1",
+        "    Rank": "5",
+        "     Msg": "Null pointer dereference of ? in org.jfree.chart.renderer.category.AbstractCategoryItemRenderer.getLegendItems()",
+        "  Method": "getLegendItems",
+        "   Field": "",
+        "   Lines": [
+            [
+                1800,
+                1800,
+                "SOURCE_LINE_DEREF"
+            ]
+        ]
+    },
+    {
+        "    Proj": "Chart-17",
+        "   Class": "org.jfree.data.time.TimeSeries",
+        "     Cat": "BAD_PRACTICE",
+        "  Abbrev": "CN",
+        "    Type": "CN_IDIOM_NO_SUPER_CALL",
+        "Priority": "2",
+        "    Rank": "16",
+        "     Msg": "org.jfree.data.time.TimeSeries.clone() does not call super.clone()",
+        "  Method": "clone",
+        "   Field": "",
+        "   Lines": [
+            [
+                857,
+                858,
+                null
+            ]
+        ]
+    },
+    {
+        "    Proj": "Chart-22",
+        "   Class": "org.jfree.data.KeyedObjects2D",
+        "     Cat": "STYLE",
+        "  Abbrev": "UC",
+        "    Type": "UC_USELESS_CONDITION",
+        "Priority": "1",
+        "    Rank": "14",
+        "     Msg": "Useless condition: it's known that local$3 >= 0 at this point",
+        "  Method": "getObject",
+        "   Field": "",
+        "   Lines": [
+            [
+                236,
+                236,
+                "SOURCE_UNREACHABLE_CODE"
+            ],
+            [
+                231,
+                231,
+                null
+            ]
+        ]
+    },
+    {
+        "    Proj": "Chart-23",
+        "   Class": "",
+        "     Cat": "",
+        "  Abbrev": "",
+        "    Type": "NO_WARNING",
+        "Priority": "",
+        "    Rank": "",
+        "     Msg": "",
+        "  Method": "",
+        "   Field": "",
+        "   Lines": []
+    },
+    {
+        "    Proj": "Chart-24",
+        "   Class": "org.jfree.chart.renderer.GrayPaintScale",
+        "     Cat": "STYLE",
+        "  Abbrev": "DLS",
+        "    Type": "DLS_DEAD_LOCAL_STORE",
+        "Priority": "2",
+        "    Rank": "17",
+        "     Msg": "Dead store to $L3 in org.jfree.chart.renderer.GrayPaintScale.getPaint(double)",
+        "  Method": "getPaint",
+        "   Field": "",
+        "   Lines": [
+            [
+                125,
+                125,
+                null
+            ]
+        ]
+    },
+    {
+        "    Proj": "Chart-4",
+        "   Class": "org.jfree.chart.plot.XYPlot",
+        "     Cat": "CORRECTNESS",
+        "  Abbrev": "NP",
+        "    Type": "NP_NULL_ON_SOME_PATH",
+        "Priority": "1",
+        "    Rank": "6",
+        "     Msg": "Possible null pointer dereference of ? in org.jfree.chart.plot.XYPlot.getDataRange(ValueAxis)",
+        "  Method": "getDataRange",
+        "   Field": "",
+        "   Lines": [
+            [
+                4493,
+                4493,
+                "SOURCE_LINE_DEREF"
+            ],
+            [
+                4479,
+                4479,
+                "SOURCE_LINE_KNOWN_NULL"
+            ],
+            [
+                4488,
+                4488,
+                "SOURCE_LINE_KNOWN_NULL"
+            ]
+        ]
+    },
+    {
+        "    Proj": "Chart-6",
+        "   Class": "",
+        "     Cat": "",
+        "  Abbrev": "",
+        "    Type": "NO_WARNING",
+        "Priority": "",
+        "    Rank": "",
+        "     Msg": "",
+        "  Method": "",
+        "   Field": "",
+        "   Lines": []
+    },
+    {
+        "    Proj": "Closure-45",
+        "   Class": "com.google.javascript.jscomp.RemoveUnusedVars",
+        "     Cat": "CORRECTNESS",
+        "  Abbrev": "NP",
+        "    Type": "NP_UNWRITTEN_FIELD",
+        "Priority": "2",
+        "    Rank": "8",
+        "     Msg": "Read of unwritten field assignNode in com.google.javascript.jscomp.RemoveUnusedVars.interpretAssigns()",
+        "  Method": "interpretAssigns",
+        "   Field": "assignNode",
+        "   Lines": [
+            [
+                736,
+                736,
+                null
+            ]
+        ]
+    },
+    {
+        "    Proj": "Closure-45",
+        "   Class": "com.google.javascript.jscomp.RemoveUnusedVars",
+        "     Cat": "CORRECTNESS",
+        "  Abbrev": "NP",
+        "    Type": "NP_UNWRITTEN_FIELD",
+        "Priority": "2",
+        "    Rank": "8",
+        "     Msg": "Read of unwritten field nameNode in com.google.javascript.jscomp.RemoveUnusedVars.traverseNode(Node, Node, Scope)",
+        "  Method": "traverseNode",
+        "   Field": "nameNode",
+        "   Lines": [
+            [
+                215,
+                215,
+                null
+            ]
+        ]
+    },
+    {
+        "    Proj": "Lang-23",
+        "   Class": "org.apache.commons.lang3.text.ExtendedMessageFormat",
+        "     Cat": "STYLE",
+        "  Abbrev": "Eq",
+        "    Type": "EQ_DOESNT_OVERRIDE_EQUALS",
+        "Priority": "2",
+        "    Rank": "17",
+        "     Msg": "org.apache.commons.lang3.text.ExtendedMessageFormat doesn't override java.text.MessageFormat.equals(Object)",
+        "  Method": "equals",
+        "   Field": "",
+        "   Lines": [
+            [
+                1,
+                1,
+                null
+            ]
+        ]
+    },
+    {
+        "    Proj": "Lang-3",
+        "   Class": "org.apache.commons.lang3.math.NumberUtils",
+        "     Cat": "STYLE",
+        "  Abbrev": "DLS",
+        "    Type": "DLS_DEAD_LOCAL_STORE",
+        "Priority": "2",
+        "    Rank": "17",
+        "     Msg": "Dead store to $L9 in org.apache.commons.lang3.math.NumberUtils.createNumber(String)",
+        "  Method": "createNumber",
+        "   Field": "",
+        "   Lines": [
+            [
+                497,
+                497,
+                null
+            ]
+        ]
+    },
+    {
+        "    Proj": "Lang-56",
+        "   Class": "org.apache.commons.lang.time.FastDateFormat",
+        "     Cat": "BAD_PRACTICE",
+        "  Abbrev": "Se",
+        "    Type": "SE_BAD_FIELD",
+        "Priority": "2",
+        "    Rank": "16",
+        "     Msg": "Class org.apache.commons.lang.time.FastDateFormat defines non-transient non-serializable instance field mRules",
+        "  Method": "",
+        "   Field": "mRules",
+        "   Lines": []
+    },
+    {
+        "    Proj": "Math-14",
+        "   Class": "",
+        "     Cat": "",
+        "  Abbrev": "",
+        "    Type": "NO_WARNING",
+        "Priority": "",
+        "    Rank": "",
+        "     Msg": "",
+        "  Method": "",
+        "   Field": "",
+        "   Lines": []
+    },
+    {
+        "    Proj": "Math-48",
+        "   Class": "",
+        "     Cat": "",
+        "  Abbrev": "",
+        "    Type": "NO_WARNING",
+        "Priority": "",
+        "    Rank": "",
+        "     Msg": "",
+        "  Method": "",
+        "   Field": "",
+        "   Lines": []
+    },
+    {
+        "    Proj": "Math-50",
+        "   Class": "org.apache.commons.math.analysis.solvers.BaseSecantSolver",
+        "     Cat": "STYLE",
+        "  Abbrev": "FE",
+        "    Type": "FE_FLOATING_POINT_EQUALITY",
+        "Priority": "1",
+        "    Rank": "15",
+        "     Msg": "Test for floating point equality in org.apache.commons.math.analysis.solvers.BaseSecantSolver.doSolve()",
+        "  Method": "doSolve",
+        "   Field": "",
+        "   Lines": [
+            [
+                187,
+                187,
+                null
+            ]
+        ]
+    },
+    {
+        "    Proj": "Math-51",
+        "   Class": "",
+        "     Cat": "",
+        "  Abbrev": "",
+        "    Type": "NO_WARNING",
+        "Priority": "",
+        "    Rank": "",
+        "     Msg": "",
+        "  Method": "",
+        "   Field": "",
+        "   Lines": []
+    },
+    {
+        "    Proj": "Math-66",
+        "   Class": "org.apache.commons.math.optimization.univariate.BrentOptimizer",
+        "     Cat": "STYLE",
+        "  Abbrev": "FE",
+        "    Type": "FE_FLOATING_POINT_EQUALITY",
+        "Priority": "1",
+        "    Rank": "15",
+        "     Msg": "Test for floating point equality in org.apache.commons.math.optimization.univariate.BrentOptimizer.localMin(boolean, UnivariateRealFunction, GoalType, double, double, double, double, double)",
+        "  Method": "localMin",
+        "   Field": "",
+        "   Lines": [
+            [
+                224,
+                224,
+                null
+            ],
+            [
+                230,
+                230,
+                "SOURCE_LINE_ANOTHER_INSTANCE"
+            ],
+            [
+                230,
+                230,
+                "SOURCE_LINE_ANOTHER_INSTANCE"
+            ]
+        ]
+    },
+    {
+        "    Proj": "Math-91",
+        "   Class": "org.apache.commons.math.fraction.Fraction",
+        "     Cat": "BAD_PRACTICE",
+        "  Abbrev": "Co",
+        "    Type": "CO_COMPARETO_INCORRECT_FLOATING",
+        "Priority": "2",
+        "    Rank": "16",
+        "     Msg": "org.apache.commons.math.fraction.Fraction.compareTo(Fraction) incorrectly handles double value",
+        "  Method": "compareTo",
+        "   Field": "",
+        "   Lines": [
+            [
+                261,
+                261,
+                null
+            ]
+        ]
+    },
+    {
+        "    Proj": "Mockito-1",
+        "   Class": "org.mockito.internal.invocation.InvocationMatcher",
+        "     Cat": "STYLE",
+        "  Abbrev": "DLS",
+        "    Type": "DLS_DEAD_LOCAL_STORE",
+        "Priority": "2",
+        "    Rank": "17",
+        "     Msg": "Dead store to $L2 in org.mockito.internal.invocation.InvocationMatcher.captureArgumentsFrom(Invocation)",
+        "  Method": "captureArgumentsFrom",
+        "   Field": "",
+        "   Lines": [
+            [
+                122,
+                122,
+                null
+            ]
+        ]
+    },
+    {
+        "    Proj": "Mockito-22",
+        "   Class": "",
+        "     Cat": "",
+        "  Abbrev": "",
+        "    Type": "NO_WARNING",
+        "Priority": "",
+        "    Rank": "",
+        "     Msg": "",
+        "  Method": "",
+        "   Field": "",
+        "   Lines": []
+    },
+    {
+        "    Proj": "Mockito-23",
+        "   Class": "org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs",
+        "     Cat": "BAD_PRACTICE",
+        "  Abbrev": "Se",
+        "    Type": "SE_BAD_FIELD",
+        "Priority": "1",
+        "    Rank": "14",
+        "     Msg": "Class org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs defines non-transient non-serializable instance field mockitoCore",
+        "  Method": "",
+        "   Field": "mockitoCore",
+        "   Lines": []
+    }
+]

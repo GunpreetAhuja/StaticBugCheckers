@@ -1,0 +1,379 @@
+[
+    {
+        "    Proj": "Chart-17",
+        "   Class": "org.jfree.data.time.TimeSeries",
+        "     Cat": "BAD_PRACTICE",
+        "  Abbrev": "CN",
+        "    Type": "CN_IDIOM_NO_SUPER_CALL",
+        "Priority": "2",
+        "    Rank": "16",
+        "     Msg": "org.jfree.data.time.TimeSeries.clone() does not call super.clone()",
+        "  Method": "clone",
+        "   Field": "",
+        "   Lines": [
+            [
+                857,
+                858,
+                null
+            ]
+        ]
+    },
+    {
+        "    Proj": "Chart-21",
+        "   Class": "org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset",
+        "     Cat": "BAD_PRACTICE",
+        "  Abbrev": "HE",
+        "    Type": "HE_EQUALS_USE_HASHCODE",
+        "Priority": "1",
+        "    Rank": "14",
+        "     Msg": "org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset defines equals and uses Object.hashCode()",
+        "  Method": "equals",
+        "   Field": "",
+        "   Lines": [
+            [
+                752,
+                760,
+                null
+            ]
+        ]
+    },
+    {
+        "    Proj": "Chart-22",
+        "   Class": "org.jfree.data.KeyedObjects2D",
+        "     Cat": "STYLE",
+        "  Abbrev": "UC",
+        "    Type": "UC_USELESS_CONDITION",
+        "Priority": "1",
+        "    Rank": "14",
+        "     Msg": "Useless condition: it's known that local$3 >= 0 at this point",
+        "  Method": "getObject",
+        "   Field": "",
+        "   Lines": [
+            [
+                236,
+                236,
+                "SOURCE_UNREACHABLE_CODE"
+            ],
+            [
+                231,
+                231,
+                null
+            ]
+        ]
+    },
+    {
+        "    Proj": "Chart-4",
+        "   Class": "org.jfree.chart.plot.XYPlot",
+        "     Cat": "CORRECTNESS",
+        "  Abbrev": "NP",
+        "    Type": "NP_NULL_ON_SOME_PATH",
+        "Priority": "1",
+        "    Rank": "6",
+        "     Msg": "Possible null pointer dereference of ? in org.jfree.chart.plot.XYPlot.getDataRange(ValueAxis)",
+        "  Method": "getDataRange",
+        "   Field": "",
+        "   Lines": [
+            [
+                4493,
+                4493,
+                "SOURCE_LINE_DEREF"
+            ],
+            [
+                4479,
+                4479,
+                "SOURCE_LINE_KNOWN_NULL"
+            ],
+            [
+                4488,
+                4488,
+                "SOURCE_LINE_KNOWN_NULL"
+            ]
+        ]
+    },
+    {
+        "    Proj": "Closure-100",
+        "   Class": "com.google.javascript.jscomp.CheckGlobalThis",
+        "     Cat": "STYLE",
+        "  Abbrev": "DLS",
+        "    Type": "DLS_DEAD_LOCAL_STORE",
+        "Priority": "2",
+        "    Rank": "17",
+        "     Msg": "Dead store to $L5 in com.google.javascript.jscomp.CheckGlobalThis.shouldTraverse(NodeTraversal, Node, Node)",
+        "  Method": "shouldTraverse",
+        "   Field": "",
+        "   Lines": [
+            [
+                103,
+                103,
+                null
+            ]
+        ]
+    },
+    {
+        "    Proj": "Closure-49",
+        "   Class": "com.google.javascript.jscomp.MakeDeclaredNamesUnique",
+        "     Cat": "STYLE",
+        "  Abbrev": "SF",
+        "    Type": "SF_SWITCH_NO_DEFAULT",
+        "Priority": "2",
+        "    Rank": "19",
+        "     Msg": "Switch statement found in com.google.javascript.jscomp.MakeDeclaredNamesUnique.shouldTraverse(NodeTraversal, Node, Node) where default case is missing",
+        "  Method": "shouldTraverse",
+        "   Field": "",
+        "   Lines": [
+            [
+                116,
+                147,
+                null
+            ]
+        ]
+    },
+    {
+        "    Proj": "Closure-49",
+        "   Class": "com.google.javascript.jscomp.MakeDeclaredNamesUnique",
+        "     Cat": "STYLE",
+        "  Abbrev": "SF",
+        "    Type": "SF_SWITCH_NO_DEFAULT",
+        "Priority": "2",
+        "    Rank": "19",
+        "     Msg": "Switch statement found in com.google.javascript.jscomp.MakeDeclaredNamesUnique.visit(NodeTraversal, Node, Node) where default case is missing",
+        "  Method": "visit",
+        "   Field": "",
+        "   Lines": [
+            [
+                157,
+                183,
+                null
+            ]
+        ]
+    },
+    {
+        "    Proj": "Closure-74",
+        "   Class": "com.google.javascript.jscomp.PeepholeFoldConstants",
+        "     Cat": "BAD_PRACTICE",
+        "  Abbrev": "NP",
+        "    Type": "NP_BOOLEAN_RETURN_NULL",
+        "Priority": "2",
+        "    Rank": "14",
+        "     Msg": "com.google.javascript.jscomp.PeepholeFoldConstants.compareAsNumbers(int, Node, Node) has Boolean return type and returns explicit null",
+        "  Method": "compareAsNumbers",
+        "   Field": "",
+        "   Lines": [
+            [
+                1082,
+                1082,
+                null
+            ],
+            [
+                1086,
+                1086,
+                "SOURCE_LINE_ANOTHER_INSTANCE"
+            ],
+            [
+                1111,
+                1111,
+                "SOURCE_LINE_ANOTHER_INSTANCE"
+            ]
+        ]
+    },
+    {
+        "    Proj": "Closure-91",
+        "   Class": "com.google.javascript.jscomp.CheckGlobalThis",
+        "     Cat": "STYLE",
+        "  Abbrev": "DLS",
+        "    Type": "DLS_DEAD_LOCAL_STORE",
+        "Priority": "2",
+        "    Rank": "17",
+        "     Msg": "Dead store to $L5 in com.google.javascript.jscomp.CheckGlobalThis.shouldTraverse(NodeTraversal, Node, Node)",
+        "  Method": "shouldTraverse",
+        "   Field": "",
+        "   Lines": [
+            [
+                119,
+                119,
+                null
+            ]
+        ]
+    },
+    {
+        "    Proj": "Lang-47",
+        "   Class": "org.apache.commons.lang.text.StrBuilder",
+        "     Cat": "BAD_PRACTICE",
+        "  Abbrev": "CN",
+        "    Type": "CN_IDIOM",
+        "Priority": "2",
+        "    Rank": "16",
+        "     Msg": "Class org.apache.commons.lang.text.StrBuilder implements Cloneable but does not define or use clone method",
+        "  Method": "",
+        "   Field": "",
+        "   Lines": [
+            [
+                98,
+                2551,
+                null
+            ]
+        ]
+    },
+    {
+        "    Proj": "Lang-58",
+        "   Class": "org.apache.commons.lang.math.NumberUtils",
+        "     Cat": "STYLE",
+        "  Abbrev": "SF",
+        "    Type": "SF_SWITCH_NO_DEFAULT",
+        "Priority": "2",
+        "    Rank": "19",
+        "     Msg": "Switch statement found in org.apache.commons.lang.math.NumberUtils.createNumber(String) where default case is missing",
+        "  Method": "createNumber",
+        "   Field": "",
+        "   Lines": [
+            [
+                449,
+                491,
+                null
+            ]
+        ]
+    },
+    {
+        "    Proj": "Lang-59",
+        "   Class": "org.apache.commons.lang.text.StrBuilder",
+        "     Cat": "BAD_PRACTICE",
+        "  Abbrev": "CN",
+        "    Type": "CN_IDIOM",
+        "Priority": "2",
+        "    Rank": "16",
+        "     Msg": "Class org.apache.commons.lang.text.StrBuilder implements Cloneable but does not define or use clone method",
+        "  Method": "",
+        "   Field": "",
+        "   Lines": [
+            [
+                98,
+                2203,
+                null
+            ]
+        ]
+    },
+    {
+        "    Proj": "Lang-60",
+        "   Class": "org.apache.commons.lang.text.StrBuilder",
+        "     Cat": "BAD_PRACTICE",
+        "  Abbrev": "CN",
+        "    Type": "CN_IDIOM",
+        "Priority": "2",
+        "    Rank": "16",
+        "     Msg": "Class org.apache.commons.lang.text.StrBuilder implements Cloneable but does not define or use clone method",
+        "  Method": "",
+        "   Field": "",
+        "   Lines": [
+            [
+                98,
+                2203,
+                null
+            ]
+        ]
+    },
+    {
+        "    Proj": "Lang-61",
+        "   Class": "org.apache.commons.lang.text.StrBuilder",
+        "     Cat": "BAD_PRACTICE",
+        "  Abbrev": "CN",
+        "    Type": "CN_IDIOM",
+        "Priority": "2",
+        "    Rank": "16",
+        "     Msg": "Class org.apache.commons.lang.text.StrBuilder implements Cloneable but does not define or use clone method",
+        "  Method": "",
+        "   Field": "",
+        "   Lines": [
+            [
+                98,
+                2203,
+                null
+            ]
+        ]
+    },
+    {
+        "    Proj": "Math-44",
+        "   Class": "org.apache.commons.math.ode.AbstractIntegrator",
+        "     Cat": "STYLE",
+        "  Abbrev": "UrF",
+        "    Type": "URF_UNREAD_PUBLIC_OR_PROTECTED_FIELD",
+        "Priority": "2",
+        "    Rank": "18",
+        "     Msg": "Unread public/protected field: org.apache.commons.math.ode.AbstractIntegrator.resetOccurred",
+        "  Method": "",
+        "   Field": "resetOccurred",
+        "   Lines": [
+            [
+                280,
+                280,
+                null
+            ]
+        ]
+    },
+    {
+        "    Proj": "Math-50",
+        "   Class": "org.apache.commons.math.analysis.solvers.BaseSecantSolver",
+        "     Cat": "STYLE",
+        "  Abbrev": "FE",
+        "    Type": "FE_FLOATING_POINT_EQUALITY",
+        "Priority": "1",
+        "    Rank": "15",
+        "     Msg": "Test for floating point equality in org.apache.commons.math.analysis.solvers.BaseSecantSolver.doSolve()",
+        "  Method": "doSolve",
+        "   Field": "",
+        "   Lines": [
+            [
+                187,
+                187,
+                null
+            ]
+        ]
+    },
+    {
+        "    Proj": "Math-66",
+        "   Class": "org.apache.commons.math.optimization.univariate.BrentOptimizer",
+        "     Cat": "STYLE",
+        "  Abbrev": "FE",
+        "    Type": "FE_FLOATING_POINT_EQUALITY",
+        "Priority": "1",
+        "    Rank": "15",
+        "     Msg": "Test for floating point equality in org.apache.commons.math.optimization.univariate.BrentOptimizer.localMin(boolean, UnivariateRealFunction, GoalType, double, double, double, double, double)",
+        "  Method": "localMin",
+        "   Field": "",
+        "   Lines": [
+            [
+                224,
+                224,
+                null
+            ],
+            [
+                230,
+                230,
+                "SOURCE_LINE_ANOTHER_INSTANCE"
+            ],
+            [
+                230,
+                230,
+                "SOURCE_LINE_ANOTHER_INSTANCE"
+            ]
+        ]
+    },
+    {
+        "    Proj": "Mockito-11",
+        "   Class": "org.mockito.internal.creation.DelegatingMethod",
+        "     Cat": "BAD_PRACTICE",
+        "  Abbrev": "Eq",
+        "    Type": "EQ_CHECK_FOR_OPERAND_NOT_COMPATIBLE_WITH_THIS",
+        "Priority": "1",
+        "    Rank": "14",
+        "     Msg": "org.mockito.internal.creation.DelegatingMethod.equals(Object) checks for operand being a reflect.Method ",
+        "  Method": "equals",
+        "   Field": "",
+        "   Lines": [
+            [
+                55,
+                55,
+                null
+            ]
+        ]
+    }
+]

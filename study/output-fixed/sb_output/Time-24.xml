@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.1.0" sequence="0" timestamp="1542191374000" analysisTimestamp="1542191376587" release="">
+  <Project projectName="">
+    <Jar>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-24/src/main/java</Jar>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Time-24/build/classes</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/framework/projects/Time/lib/joda-convert-1.2.jar</AuxClasspathEntry>
+  </Project>
+  <BugInstance type="NP_UNWRITTEN_FIELD" priority="2" rank="8" abbrev="NP" category="CORRECTNESS" instanceHash="92a910a4c335df7987e17b27dbb2b5f9" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="476">
+    <ShortMessage>Read of unwritten field</ShortMessage>
+    <LongMessage>Read of unwritten field iField in org.joda.time.format.DateTimeParserBucket.computeMillis(boolean, String)</LongMessage>
+    <Class classname="org.joda.time.format.DateTimeParserBucket" primary="true">
+      <SourceLine classname="org.joda.time.format.DateTimeParserBucket" start="55" end="508" sourcefile="DateTimeParserBucket.java" sourcepath="org/joda/time/format/DateTimeParserBucket.java">
+        <Message>At DateTimeParserBucket.java:[lines 55-508]</Message>
+      </SourceLine>
+      <Message>In class org.joda.time.format.DateTimeParserBucket</Message>
+    </Class>
+    <Method classname="org.joda.time.format.DateTimeParserBucket" name="computeMillis" signature="(ZLjava/lang/String;)J" isStatic="false" primary="true">
+      <SourceLine classname="org.joda.time.format.DateTimeParserBucket" start="332" end="382" startBytecode="0" endBytecode="653" sourcefile="DateTimeParserBucket.java" sourcepath="org/joda/time/format/DateTimeParserBucket.java"/>
+      <Message>In method org.joda.time.format.DateTimeParserBucket.computeMillis(boolean, String)</Message>
+    </Method>
+    <Field classname="org.joda.time.format.DateTimeParserBucket$SavedField" name="iField" signature="Lorg/joda/time/DateTimeField;" isStatic="false" primary="true">
+      <SourceLine classname="org.joda.time.format.DateTimeParserBucket$SavedField" sourcefile="DateTimeParserBucket.java" sourcepath="org/joda/time/format/DateTimeParserBucket.java">
+        <Message>In DateTimeParserBucket.java</Message>
+      </SourceLine>
+      <Message>Field org.joda.time.format.DateTimeParserBucket$SavedField.iField</Message>
+    </Field>
+    <SourceLine classname="org.joda.time.format.DateTimeParserBucket" primary="true" start="343" end="343" startBytecode="83" endBytecode="83" sourcefile="DateTimeParserBucket.java" sourcepath="org/joda/time/format/DateTimeParserBucket.java">
+      <Message>At DateTimeParserBucket.java:[line 343]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="RV_NEGATING_RESULT_OF_COMPARETO" priority="2" rank="16" abbrev="RV" category="BAD_PRACTICE" instanceHash="405d0b1d2400d4a2802935e22e2f3096" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="440">
+    <ShortMessage>Negating the result of compareTo()/compare()</ShortMessage>
+    <LongMessage>org.joda.time.format.DateTimeParserBucket.compareReverse(DurationField, DurationField) negates the return value of org.joda.time.DurationField.compareTo(Object)</LongMessage>
+    <Class classname="org.joda.time.format.DateTimeParserBucket" primary="true">
+      <SourceLine classname="org.joda.time.format.DateTimeParserBucket" start="55" end="508" sourcefile="DateTimeParserBucket.java" sourcepath="org/joda/time/format/DateTimeParserBucket.java">
+        <Message>At DateTimeParserBucket.java:[lines 55-508]</Message>
+      </SourceLine>
+      <Message>In class org.joda.time.format.DateTimeParserBucket</Message>
+    </Class>
+    <Method classname="org.joda.time.format.DateTimeParserBucket" name="compareReverse" signature="(Lorg/joda/time/DurationField;Lorg/joda/time/DurationField;)I" isStatic="true" primary="true">
+      <SourceLine classname="org.joda.time.format.DateTimeParserBucket" start="499" end="508" startBytecode="0" endBytecode="107" sourcefile="DateTimeParserBucket.java" sourcepath="org/joda/time/format/DateTimeParserBucket.java"/>
+      <Message>In method org.joda.time.format.DateTimeParserBucket.compareReverse(DurationField, DurationField)</Message>
+    </Method>
+    <Method classname="org.joda.time.DurationField" name="compareTo" signature="(Ljava/lang/Object;)I" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="org.joda.time.DurationField" sourcefile="DurationField.java" sourcepath="org/joda/time/DurationField.java"/>
+      <Message>Called method org.joda.time.DurationField.compareTo(Object)</Message>
+    </Method>
+    <Method classname="org.joda.time.DurationField" name="compareTo" signature="(Ljava/lang/Object;)I" isStatic="false" role="METHOD_RETURN_VALUE_OF">
+      <SourceLine classname="org.joda.time.DurationField" sourcefile="DurationField.java" sourcepath="org/joda/time/DurationField.java"/>
+      <Message>Return value of org.joda.time.DurationField.compareTo(Object) of type int</Message>
+    </Method>
+    <SourceLine classname="org.joda.time.format.DateTimeParserBucket" primary="true" start="508" end="508" startBytecode="44" endBytecode="44" sourcefile="DateTimeParserBucket.java" sourcepath="org/joda/time/format/DateTimeParserBucket.java">
+      <Message>At DateTimeParserBucket.java:[line 508]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="BAD_PRACTICE">
+    <Description>Bad practice</Description>
+  </BugCategory>
+  <BugCategory category="CORRECTNESS">
+    <Description>Correctness</Description>
+  </BugCategory>
+  <BugPattern type="NP_UNWRITTEN_FIELD" abbrev="NP" category="CORRECTNESS">
+    <ShortDescription>Read of unwritten field</ShortDescription>
+    <Details><![CDATA[
+
+  <p> The program is dereferencing a field that does not seem to ever have a non-null value written to it.
+Unless the field is initialized via some mechanism not seen by the analysis,
+dereferencing this value will generate a null pointer exception.
+</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="RV_NEGATING_RESULT_OF_COMPARETO" abbrev="RV" category="BAD_PRACTICE">
+    <ShortDescription>Negating the result of compareTo()/compare()</ShortDescription>
+    <Details><![CDATA[
+
+  <p> This code negatives the return value of a compareTo or compare method.
+This is a questionable or bad programming practice, since if the return
+value is Integer.MIN_VALUE, negating the return value won't
+negate the sign of the result. You can achieve the same intended result
+by reversing the order of the operands rather than by negating the results.
+</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="NP" cweid="476">
+    <Description>Null pointer dereference</Description>
+  </BugCode>
+  <BugCode abbrev="RV" cweid="440">
+    <Description>Bad use of return value from method</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 14 Nov 2018 05:29:34 -0500" total_classes="3" referenced_classes="25" total_bugs="2" total_size="208" num_packages="1" java_version="1.8.0_121" vm_version="25.121-b13" cpu_seconds="8.17" clock_seconds="4.43" peak_mbytes="114.04" alloc_mbytes="1820.50" gc_seconds="0.07" priority_2="2">
+    <FileStats path="org/joda/time/format/DateTimeParserBucket.java" bugCount="2" size="208" bugHash="64132fcb54c423cf9af38369352bca6b"/>
+    <PackageStats package="org.joda.time.format" total_bugs="2" total_types="3" total_size="208" priority_2="2">
+      <ClassStats class="org.joda.time.format.DateTimeParserBucket" sourceFile="DateTimeParserBucket.java" interface="false" size="149" bugs="2" priority_2="2"/>
+      <ClassStats class="org.joda.time.format.DateTimeParserBucket$SavedField" sourceFile="DateTimeParserBucket.java" interface="false" size="36" bugs="0"/>
+      <ClassStats class="org.joda.time.format.DateTimeParserBucket$SavedState" sourceFile="DateTimeParserBucket.java" interface="false" size="23" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="587" invocations="452" avgMicrosecondsPerInvocation="1298" maxMicrosecondsPerInvocation="23112" standardDeviationMicrosecondsPerInvocation="2209"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="453" invocations="451" avgMicrosecondsPerInvocation="1006" maxMicrosecondsPerInvocation="45314" standardDeviationMicrosecondsPerInvocation="3466"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="241" invocations="25" avgMicrosecondsPerInvocation="9643" maxMicrosecondsPerInvocation="117255" standardDeviationMicrosecondsPerInvocation="23280"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="152" invocations="25" avgMicrosecondsPerInvocation="6088" maxMicrosecondsPerInvocation="50947" standardDeviationMicrosecondsPerInvocation="12244"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="149" invocations="31" avgMicrosecondsPerInvocation="4837" maxMicrosecondsPerInvocation="129780" standardDeviationMicrosecondsPerInvocation="22955"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="129" invocations="25" avgMicrosecondsPerInvocation="5162" maxMicrosecondsPerInvocation="113119" standardDeviationMicrosecondsPerInvocation="22060"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="124" invocations="418" avgMicrosecondsPerInvocation="297" maxMicrosecondsPerInvocation="31407" standardDeviationMicrosecondsPerInvocation="1678"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="107" invocations="159" avgMicrosecondsPerInvocation="675" maxMicrosecondsPerInvocation="14171" standardDeviationMicrosecondsPerInvocation="1627"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="103" invocations="31" avgMicrosecondsPerInvocation="3348" maxMicrosecondsPerInvocation="31361" standardDeviationMicrosecondsPerInvocation="7959"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="88" invocations="32" avgMicrosecondsPerInvocation="2764" maxMicrosecondsPerInvocation="34781" standardDeviationMicrosecondsPerInvocation="7058"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="85" invocations="32" avgMicrosecondsPerInvocation="2660" maxMicrosecondsPerInvocation="25026" standardDeviationMicrosecondsPerInvocation="6133"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="81" invocations="31" avgMicrosecondsPerInvocation="2644" maxMicrosecondsPerInvocation="36468" standardDeviationMicrosecondsPerInvocation="7127"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="73" invocations="31" avgMicrosecondsPerInvocation="2358" maxMicrosecondsPerInvocation="32546" standardDeviationMicrosecondsPerInvocation="7327"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="66" invocations="25" avgMicrosecondsPerInvocation="2674" maxMicrosecondsPerInvocation="24852" standardDeviationMicrosecondsPerInvocation="5338"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="65" invocations="43" avgMicrosecondsPerInvocation="1523" maxMicrosecondsPerInvocation="44445" standardDeviationMicrosecondsPerInvocation="6679"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

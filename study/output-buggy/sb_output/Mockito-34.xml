@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.1.0" sequence="0" timestamp="1542186932000" analysisTimestamp="1542186934671" release="">
+  <Project projectName="">
+    <Jar>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Mockito-34/src</Jar>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Mockito-34/target/classes</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/framework/projects/Mockito/lib/asm-all-5.0.4.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/framework/projects/Mockito/lib/assertj-core-2.1.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/framework/projects/Mockito/lib/cglib-and-asm-1.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/framework/projects/Mockito/lib/cobertura-2.0.3.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/framework/projects/Mockito/lib/fest-assert-1.3.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/framework/projects/Mockito/lib/fest-util-1.1.4.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/framework/projects/Mockito/lib/hamcrest-all-1.3.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/framework/projects/Mockito/lib/hamcrest-core-1.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/framework/projects/Mockito/lib/objenesis-2.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/framework/projects/Mockito/lib/objenesis-2.2.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/framework/projects/Mockito/lib/powermock-reflect-1.2.5.jar</AuxClasspathEntry>
+  </Project>
+  <BugInstance type="SE_BAD_FIELD" priority="2" rank="16" abbrev="Se" category="BAD_PRACTICE" instanceHash="18b13bff65ba4face27e9bea08c7ad86" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Non-transient non-serializable instance field in serializable class</ShortMessage>
+    <LongMessage>Class org.mockito.internal.invocation.InvocationMatcher defines non-transient non-serializable instance field matchers</LongMessage>
+    <Class classname="org.mockito.internal.invocation.InvocationMatcher" primary="true">
+      <SourceLine classname="org.mockito.internal.invocation.InvocationMatcher" start="26" end="111" sourcefile="InvocationMatcher.java" sourcepath="org/mockito/internal/invocation/InvocationMatcher.java">
+        <Message>At InvocationMatcher.java:[lines 26-111]</Message>
+      </SourceLine>
+      <Message>In class org.mockito.internal.invocation.InvocationMatcher</Message>
+    </Class>
+    <Field classname="org.mockito.internal.invocation.InvocationMatcher" name="matchers" signature="Ljava/util/List;" isStatic="false" primary="true">
+      <SourceLine classname="org.mockito.internal.invocation.InvocationMatcher" sourcefile="InvocationMatcher.java" sourcepath="org/mockito/internal/invocation/InvocationMatcher.java">
+        <Message>In InvocationMatcher.java</Message>
+      </SourceLine>
+      <Message>Field org.mockito.internal.invocation.InvocationMatcher.matchers</Message>
+    </Field>
+    <Type descriptor="Lorg/hamcrest/Matcher;" role="TYPE_FOUND">
+      <SourceLine classname="org.hamcrest.Matcher" sourcefile="Matcher.java" sourcepath="org/hamcrest/Matcher.java">
+        <Message>In Matcher.java</Message>
+      </SourceLine>
+      <Message>Actual type org.hamcrest.Matcher</Message>
+    </Type>
+    <SourceLine classname="org.mockito.internal.invocation.InvocationMatcher" sourcefile="InvocationMatcher.java" sourcepath="org/mockito/internal/invocation/InvocationMatcher.java" synthetic="true">
+      <Message>In InvocationMatcher.java</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="BAD_PRACTICE">
+    <Description>Bad practice</Description>
+  </BugCategory>
+  <BugPattern type="SE_BAD_FIELD" abbrev="Se" category="BAD_PRACTICE">
+    <ShortDescription>Non-transient non-serializable instance field in serializable class</ShortDescription>
+    <Details><![CDATA[
+
+<p> This Serializable class defines a non-primitive instance field which is neither transient,
+Serializable, or <code>java.lang.Object</code>, and does not appear to implement
+the <code>Externalizable</code> interface or the
+<code>readObject()</code> and <code>writeObject()</code> methods.&nbsp;
+Objects of this class will not be deserialized correctly if a non-Serializable
+object is stored in this field.</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="Se">
+    <Description>Incorrect definition of Serializable class</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 14 Nov 2018 04:15:32 -0500" total_classes="1" referenced_classes="24" total_bugs="1" total_size="55" num_packages="1" java_version="1.8.0_121" vm_version="25.121-b13" cpu_seconds="6.71" clock_seconds="3.51" peak_mbytes="113.62" alloc_mbytes="1820.50" gc_seconds="0.08" priority_2="1">
+    <FileStats path="org/mockito/internal/invocation/InvocationMatcher.java" bugCount="1" size="55" bugHash="3d147b91d48729bd8ec9280416a8161a"/>
+    <PackageStats package="org.mockito.internal.invocation" total_bugs="1" total_types="1" total_size="55" priority_2="1">
+      <ClassStats class="org.mockito.internal.invocation.InvocationMatcher" sourceFile="InvocationMatcher.java" interface="false" size="55" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="504" invocations="408" avgMicrosecondsPerInvocation="1235" maxMicrosecondsPerInvocation="20944" standardDeviationMicrosecondsPerInvocation="2294"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="499" invocations="404" avgMicrosecondsPerInvocation="1235" maxMicrosecondsPerInvocation="47425" standardDeviationMicrosecondsPerInvocation="3818"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="161" invocations="24" avgMicrosecondsPerInvocation="6722" maxMicrosecondsPerInvocation="40408" standardDeviationMicrosecondsPerInvocation="10479"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="112" invocations="99" avgMicrosecondsPerInvocation="1134" maxMicrosecondsPerInvocation="19033" standardDeviationMicrosecondsPerInvocation="2737"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="95" invocations="372" avgMicrosecondsPerInvocation="256" maxMicrosecondsPerInvocation="29092" standardDeviationMicrosecondsPerInvocation="1623"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="94" invocations="13" avgMicrosecondsPerInvocation="7243" maxMicrosecondsPerInvocation="91033" standardDeviationMicrosecondsPerInvocation="24188"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="80" invocations="13" avgMicrosecondsPerInvocation="6222" maxMicrosecondsPerInvocation="51367" standardDeviationMicrosecondsPerInvocation="13646"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="80" invocations="24" avgMicrosecondsPerInvocation="3346" maxMicrosecondsPerInvocation="28791" standardDeviationMicrosecondsPerInvocation="8066"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="72" invocations="24" avgMicrosecondsPerInvocation="3025" maxMicrosecondsPerInvocation="21135" standardDeviationMicrosecondsPerInvocation="4617"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="71" invocations="24" avgMicrosecondsPerInvocation="2990" maxMicrosecondsPerInvocation="56930" standardDeviationMicrosecondsPerInvocation="11282"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="67" invocations="13" avgMicrosecondsPerInvocation="5221" maxMicrosecondsPerInvocation="42500" standardDeviationMicrosecondsPerInvocation="11034"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="61" invocations="13" avgMicrosecondsPerInvocation="4748" maxMicrosecondsPerInvocation="40655" standardDeviationMicrosecondsPerInvocation="10709"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="59" invocations="13" avgMicrosecondsPerInvocation="4573" maxMicrosecondsPerInvocation="46044" standardDeviationMicrosecondsPerInvocation="11999"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="51" invocations="13" avgMicrosecondsPerInvocation="3984" maxMicrosecondsPerInvocation="30840" standardDeviationMicrosecondsPerInvocation="7950"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.1.0" sequence="0" timestamp="1542189987000" analysisTimestamp="1542189990902" release="">
+  <Project projectName="">
+    <Jar>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-4/src</Jar>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-4/build/classes</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-4/lib/args4j.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-4/lib/guava.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-4/lib/json.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-4/lib/jsr305.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-4/lib/protobuf-java.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-4/build/lib/rhino.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-4/lib/ant.jar</AuxClasspathEntry>
+  </Project>
+  <BugInstance type="SE_BAD_FIELD" priority="2" rank="16" abbrev="Se" category="BAD_PRACTICE" instanceHash="de8fcb2fa7b8fb93f85a4162792b41ef" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Non-transient non-serializable instance field in serializable class</ShortMessage>
+    <LongMessage>Class com.google.javascript.rhino.jstype.NamedType defines non-transient non-serializable instance field propertyContinuations</LongMessage>
+    <Class classname="com.google.javascript.rhino.jstype.NamedType" primary="true">
+      <SourceLine classname="com.google.javascript.rhino.jstype.NamedType" start="98" end="373" sourcefile="NamedType.java" sourcepath="com/google/javascript/rhino/jstype/NamedType.java">
+        <Message>At NamedType.java:[lines 98-373]</Message>
+      </SourceLine>
+      <Message>In class com.google.javascript.rhino.jstype.NamedType</Message>
+    </Class>
+    <Field classname="com.google.javascript.rhino.jstype.NamedType" name="propertyContinuations" signature="Ljava/util/List;" isStatic="false" primary="true">
+      <SourceLine classname="com.google.javascript.rhino.jstype.NamedType" sourcefile="NamedType.java" sourcepath="com/google/javascript/rhino/jstype/NamedType.java">
+        <Message>In NamedType.java</Message>
+      </SourceLine>
+      <Message>Field com.google.javascript.rhino.jstype.NamedType.propertyContinuations</Message>
+    </Field>
+    <Type descriptor="Lcom/google/javascript/rhino/jstype/NamedType$PropertyContinuation;" role="TYPE_FOUND">
+      <SourceLine classname="com.google.javascript.rhino.jstype.NamedType$PropertyContinuation" start="378" end="398" sourcefile="NamedType.java" sourcepath="com/google/javascript/rhino/jstype/NamedType.java">
+        <Message>At NamedType.java:[lines 378-398]</Message>
+      </SourceLine>
+      <Message>Actual type com.google.javascript.rhino.jstype.NamedType$PropertyContinuation</Message>
+    </Type>
+    <SourceLine classname="com.google.javascript.rhino.jstype.NamedType" sourcefile="NamedType.java" sourcepath="com/google/javascript/rhino/jstype/NamedType.java" synthetic="true">
+      <Message>In NamedType.java</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="SE_BAD_FIELD" priority="2" rank="16" abbrev="Se" category="BAD_PRACTICE" instanceHash="1235507d0162ef3ca7ee12480c00cab8" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Non-transient non-serializable instance field in serializable class</ShortMessage>
+    <LongMessage>Class com.google.javascript.rhino.jstype.NamedType defines non-transient non-serializable instance field validator</LongMessage>
+    <Class classname="com.google.javascript.rhino.jstype.NamedType" primary="true">
+      <SourceLine classname="com.google.javascript.rhino.jstype.NamedType" start="98" end="373" sourcefile="NamedType.java" sourcepath="com/google/javascript/rhino/jstype/NamedType.java">
+        <Message>At NamedType.java:[lines 98-373]</Message>
+      </SourceLine>
+      <Message>In class com.google.javascript.rhino.jstype.NamedType</Message>
+    </Class>
+    <Field classname="com.google.javascript.rhino.jstype.NamedType" name="validator" signature="Lcom/google/common/base/Predicate;" isStatic="false" primary="true">
+      <SourceLine classname="com.google.javascript.rhino.jstype.NamedType" sourcefile="NamedType.java" sourcepath="com/google/javascript/rhino/jstype/NamedType.java">
+        <Message>In NamedType.java</Message>
+      </SourceLine>
+      <Message>Field com.google.javascript.rhino.jstype.NamedType.validator</Message>
+    </Field>
+    <Type descriptor="Lcom/google/common/base/Predicate;" role="TYPE_FOUND" typeParameters="&lt;com.google.javascript.rhino.jstype.JSType&gt;">
+      <SourceLine classname="com.google.common.base.Predicate" sourcefile="Predicate.java" sourcepath="com/google/common/base/Predicate.java">
+        <Message>In Predicate.java</Message>
+      </SourceLine>
+      <Message>Actual type com.google.common.base.Predicate&lt;com.google.javascript.rhino.jstype.JSType&gt;</Message>
+    </Type>
+    <SourceLine classname="com.google.javascript.rhino.jstype.NamedType" sourcefile="NamedType.java" sourcepath="com/google/javascript/rhino/jstype/NamedType.java" synthetic="true">
+      <Message>In NamedType.java</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="BAD_PRACTICE">
+    <Description>Bad practice</Description>
+  </BugCategory>
+  <BugPattern type="SE_BAD_FIELD" abbrev="Se" category="BAD_PRACTICE">
+    <ShortDescription>Non-transient non-serializable instance field in serializable class</ShortDescription>
+    <Details><![CDATA[
+
+<p> This Serializable class defines a non-primitive instance field which is neither transient,
+Serializable, or <code>java.lang.Object</code>, and does not appear to implement
+the <code>Externalizable</code> interface or the
+<code>readObject()</code> and <code>writeObject()</code> methods.&nbsp;
+Objects of this class will not be deserialized correctly if a non-Serializable
+object is stored in this field.</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="Se">
+    <Description>Incorrect definition of Serializable class</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 14 Nov 2018 05:06:27 -0500" total_classes="3" referenced_classes="60" total_bugs="2" total_size="169" num_packages="1" java_version="1.8.0_121" vm_version="25.121-b13" cpu_seconds="9.55" clock_seconds="5.10" peak_mbytes="181.87" alloc_mbytes="1820.50" gc_seconds="0.07" priority_2="2">
+    <FileStats path="com/google/javascript/rhino/jstype/NamedType.java" bugCount="2" size="169" bugHash="3eb0036434cf663d30ac48a68e65ea89"/>
+    <PackageStats package="com.google.javascript.rhino.jstype" total_bugs="2" total_types="3" total_size="169" priority_2="2">
+      <ClassStats class="com.google.javascript.rhino.jstype.NamedType" sourceFile="NamedType.java" interface="false" size="151" bugs="2" priority_2="2"/>
+      <ClassStats class="com.google.javascript.rhino.jstype.NamedType$1" sourceFile="NamedType.java" interface="false" size="1" bugs="0"/>
+      <ClassStats class="com.google.javascript.rhino.jstype.NamedType$PropertyContinuation" sourceFile="NamedType.java" interface="false" size="17" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="840" invocations="600" avgMicrosecondsPerInvocation="1400" maxMicrosecondsPerInvocation="39612" standardDeviationMicrosecondsPerInvocation="2830"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="682" invocations="596" avgMicrosecondsPerInvocation="1144" maxMicrosecondsPerInvocation="71486" standardDeviationMicrosecondsPerInvocation="4370"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="227" invocations="60" avgMicrosecondsPerInvocation="3791" maxMicrosecondsPerInvocation="31151" standardDeviationMicrosecondsPerInvocation="6283"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="206" invocations="60" avgMicrosecondsPerInvocation="3440" maxMicrosecondsPerInvocation="33775" standardDeviationMicrosecondsPerInvocation="6568"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="190" invocations="20" avgMicrosecondsPerInvocation="9539" maxMicrosecondsPerInvocation="105285" standardDeviationMicrosecondsPerInvocation="23588"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="141" invocations="241" avgMicrosecondsPerInvocation="585" maxMicrosecondsPerInvocation="17765" standardDeviationMicrosecondsPerInvocation="1610"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="130" invocations="96" avgMicrosecondsPerInvocation="1355" maxMicrosecondsPerInvocation="94377" standardDeviationMicrosecondsPerInvocation="9569"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="99" invocations="559" avgMicrosecondsPerInvocation="177" maxMicrosecondsPerInvocation="8134" standardDeviationMicrosecondsPerInvocation="517"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueRangeAnalysisFactory" totalMilliseconds="90" invocations="20" avgMicrosecondsPerInvocation="4517" maxMicrosecondsPerInvocation="79973" standardDeviationMicrosecondsPerInvocation="17362"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="86" invocations="60" avgMicrosecondsPerInvocation="1443" maxMicrosecondsPerInvocation="27306" standardDeviationMicrosecondsPerInvocation="4378"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="85" invocations="20" avgMicrosecondsPerInvocation="4283" maxMicrosecondsPerInvocation="77015" standardDeviationMicrosecondsPerInvocation="16705"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="83" invocations="60" avgMicrosecondsPerInvocation="1392" maxMicrosecondsPerInvocation="35636" standardDeviationMicrosecondsPerInvocation="4603"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

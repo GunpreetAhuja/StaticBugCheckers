@@ -1,0 +1,6 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-107/src/com/google/javascript/jscomp/CommandLineRunner.java:887: warning: [MutableConstantField] Constant field declarations should use the immutable type (such as ImmutableList) instead of the general collection interface type (such as List)
+  private static final List<String> DEFAULT_EXTERNS_NAMES = ImmutableList.of(
+                           ^
+    (see http://errorprone.info/bugpattern/MutableConstantField)
+  Did you mean 'private static final ImmutableList<String> DEFAULT_EXTERNS_NAMES = ImmutableList.of('?
+1 warning

@@ -1,0 +1,363 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-1/source/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java:266: warning: [MissingOverride] getPassCount implements method in CategoryItemRenderer; expected @Override
+    public int getPassCount() {
+               ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int getPassCount() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-1/source/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java:279: warning: [MissingOverride] getPlot implements method in CategoryItemRenderer; expected @Override
+    public CategoryPlot getPlot() {
+                        ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public CategoryPlot getPlot() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-1/source/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java:292: warning: [MissingOverride] setPlot implements method in CategoryItemRenderer; expected @Override
+    public void setPlot(CategoryPlot plot) {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void setPlot(CategoryPlot plot) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-1/source/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java:315: warning: [MissingOverride] getItemLabelGenerator implements method in CategoryItemRenderer; expected @Override
+    public CategoryItemLabelGenerator getItemLabelGenerator(int row,
+                                      ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public CategoryItemLabelGenerator getItemLabelGenerator(int row,'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-1/source/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java:334: warning: [MissingOverride] getSeriesItemLabelGenerator implements method in CategoryItemRenderer; expected @Override
+    public CategoryItemLabelGenerator getSeriesItemLabelGenerator(int series) {
+                                      ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public CategoryItemLabelGenerator getSeriesItemLabelGenerator(int series) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-1/source/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java:348: warning: [MissingOverride] setSeriesItemLabelGenerator implements method in CategoryItemRenderer; expected @Override
+    public void setSeriesItemLabelGenerator(int series,
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void setSeriesItemLabelGenerator(int series,'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-1/source/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java:365: warning: [MissingOverride] setSeriesItemLabelGenerator implements method in CategoryItemRenderer; expected @Override
+    public void setSeriesItemLabelGenerator(int series,
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void setSeriesItemLabelGenerator(int series,'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-1/source/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java:380: warning: [MissingOverride] getBaseItemLabelGenerator implements method in CategoryItemRenderer; expected @Override
+    public CategoryItemLabelGenerator getBaseItemLabelGenerator() {
+                                      ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public CategoryItemLabelGenerator getBaseItemLabelGenerator() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-1/source/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java:392: warning: [MissingOverride] setBaseItemLabelGenerator implements method in CategoryItemRenderer; expected @Override
+    public void setBaseItemLabelGenerator(
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void setBaseItemLabelGenerator('?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-1/source/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java:408: warning: [MissingOverride] setBaseItemLabelGenerator implements method in CategoryItemRenderer; expected @Override
+    public void setBaseItemLabelGenerator(
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void setBaseItemLabelGenerator('?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-1/source/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java:431: warning: [MissingOverride] getToolTipGenerator implements method in CategoryItemRenderer; expected @Override
+    public CategoryToolTipGenerator getToolTipGenerator(int row, int column,
+                                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public CategoryToolTipGenerator getToolTipGenerator(int row, int column,'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-1/source/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java:452: warning: [MissingOverride] getSeriesToolTipGenerator implements method in CategoryItemRenderer; expected @Override
+    public CategoryToolTipGenerator getSeriesToolTipGenerator(int series) {
+                                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public CategoryToolTipGenerator getSeriesToolTipGenerator(int series) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-1/source/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java:465: warning: [MissingOverride] setSeriesToolTipGenerator implements method in CategoryItemRenderer; expected @Override
+    public void setSeriesToolTipGenerator(int series,
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void setSeriesToolTipGenerator(int series,'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-1/source/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java:483: warning: [MissingOverride] setSeriesToolTipGenerator implements method in CategoryItemRenderer; expected @Override
+    public void setSeriesToolTipGenerator(int series,
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void setSeriesToolTipGenerator(int series,'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-1/source/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java:498: warning: [MissingOverride] getBaseToolTipGenerator implements method in CategoryItemRenderer; expected @Override
+    public CategoryToolTipGenerator getBaseToolTipGenerator() {
+                                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public CategoryToolTipGenerator getBaseToolTipGenerator() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-1/source/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java:510: warning: [MissingOverride] setBaseToolTipGenerator implements method in CategoryItemRenderer; expected @Override
+    public void setBaseToolTipGenerator(CategoryToolTipGenerator generator) {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void setBaseToolTipGenerator(CategoryToolTipGenerator generator) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-1/source/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java:525: warning: [MissingOverride] setBaseToolTipGenerator implements method in CategoryItemRenderer; expected @Override
+    public void setBaseToolTipGenerator(CategoryToolTipGenerator generator,
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void setBaseToolTipGenerator(CategoryToolTipGenerator generator,'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-1/source/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java:546: warning: [MissingOverride] getURLGenerator implements method in CategoryItemRenderer; expected @Override
+    public CategoryURLGenerator getURLGenerator(int row, int column, boolean
+                                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public CategoryURLGenerator getURLGenerator(int row, int column, boolean'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-1/source/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java:565: warning: [MissingOverride] getSeriesURLGenerator implements method in CategoryItemRenderer; expected @Override
+    public CategoryURLGenerator getSeriesURLGenerator(int series) {
+                                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public CategoryURLGenerator getSeriesURLGenerator(int series) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-1/source/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java:578: warning: [MissingOverride] setSeriesURLGenerator implements method in CategoryItemRenderer; expected @Override
+    public void setSeriesURLGenerator(int series,
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void setSeriesURLGenerator(int series,'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-1/source/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java:595: warning: [MissingOverride] setSeriesURLGenerator implements method in CategoryItemRenderer; expected @Override
+    public void setSeriesURLGenerator(int series,
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void setSeriesURLGenerator(int series,'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-1/source/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java:610: warning: [MissingOverride] getBaseURLGenerator implements method in CategoryItemRenderer; expected @Override
+    public CategoryURLGenerator getBaseURLGenerator() {
+                                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public CategoryURLGenerator getBaseURLGenerator() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-1/source/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java:621: warning: [MissingOverride] setBaseURLGenerator implements method in CategoryItemRenderer; expected @Override
+    public void setBaseURLGenerator(CategoryURLGenerator generator) {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void setBaseURLGenerator(CategoryURLGenerator generator) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-1/source/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java:635: warning: [MissingOverride] setBaseURLGenerator implements method in CategoryItemRenderer; expected @Override
+    public void setBaseURLGenerator(CategoryURLGenerator generator,
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void setBaseURLGenerator(CategoryURLGenerator generator,'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-1/source/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java:654: warning: [MissingOverride] addAnnotation implements method in CategoryItemRenderer; expected @Override
+    public void addAnnotation(CategoryAnnotation annotation) {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void addAnnotation(CategoryAnnotation annotation) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-1/source/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java:667: warning: [MissingOverride] addAnnotation implements method in CategoryItemRenderer; expected @Override
+    public void addAnnotation(CategoryAnnotation annotation, Layer layer) {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void addAnnotation(CategoryAnnotation annotation, Layer layer) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-1/source/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java:696: warning: [MissingOverride] removeAnnotation implements method in CategoryItemRenderer; expected @Override
+    public boolean removeAnnotation(CategoryAnnotation annotation) {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public boolean removeAnnotation(CategoryAnnotation annotation) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-1/source/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java:698: warning: [ShortCircuitBoolean] Prefer the short-circuiting boolean operators && and || to & and |.
+        removed = removed & this.backgroundAnnotations.remove(annotation);
+                          ^
+    (see http://errorprone.info/bugpattern/ShortCircuitBoolean)
+  Did you mean 'removed = removed && this.backgroundAnnotations.remove(annotation);'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-1/source/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java:709: warning: [MissingOverride] removeAnnotations implements method in CategoryItemRenderer; expected @Override
+    public void removeAnnotations() {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void removeAnnotations() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-1/source/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java:722: warning: [MissingOverride] getLegendItemLabelGenerator implements method in CategoryItemRenderer; expected @Override
+    public CategorySeriesLabelGenerator getLegendItemLabelGenerator() {
+                                        ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public CategorySeriesLabelGenerator getLegendItemLabelGenerator() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-1/source/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java:734: warning: [MissingOverride] setLegendItemLabelGenerator implements method in CategoryItemRenderer; expected @Override
+    public void setLegendItemLabelGenerator(
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void setLegendItemLabelGenerator('?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-1/source/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java:750: warning: [MissingOverride] getLegendItemToolTipGenerator implements method in CategoryItemRenderer; expected @Override
+    public CategorySeriesLabelGenerator getLegendItemToolTipGenerator() {
+                                        ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public CategorySeriesLabelGenerator getLegendItemToolTipGenerator() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-1/source/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java:762: warning: [MissingOverride] setLegendItemToolTipGenerator implements method in CategoryItemRenderer; expected @Override
+    public void setLegendItemToolTipGenerator(
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void setLegendItemToolTipGenerator('?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-1/source/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java:775: warning: [MissingOverride] getLegendItemURLGenerator implements method in CategoryItemRenderer; expected @Override
+    public CategorySeriesLabelGenerator getLegendItemURLGenerator() {
+                                        ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public CategorySeriesLabelGenerator getLegendItemURLGenerator() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-1/source/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java:787: warning: [MissingOverride] setLegendItemURLGenerator implements method in CategoryItemRenderer; expected @Override
+    public void setLegendItemURLGenerator(
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void setLegendItemURLGenerator('?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-1/source/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java:856: warning: [MissingOverride] initialise implements method in CategoryItemRenderer; expected @Override
+    public CategoryItemRendererState initialise(Graphics2D g2,
+                                     ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public CategoryItemRendererState initialise(Graphics2D g2,'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-1/source/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java:901: warning: [MissingOverride] findRangeBounds implements method in CategoryItemRenderer; expected @Override
+    public Range findRangeBounds(CategoryDataset dataset) {
+                 ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Range findRangeBounds(CategoryDataset dataset) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-1/source/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java:952: warning: [MissingOverride] getItemMiddle implements method in CategoryItemRenderer; expected @Override
+    public double getItemMiddle(Comparable rowKey, Comparable columnKey,
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double getItemMiddle(Comparable rowKey, Comparable columnKey,'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-1/source/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java:968: warning: [MissingOverride] drawBackground implements method in CategoryItemRenderer; expected @Override
+    public void drawBackground(Graphics2D g2,
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void drawBackground(Graphics2D g2,'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-1/source/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java:985: warning: [MissingOverride] drawOutline implements method in CategoryItemRenderer; expected @Override
+    public void drawOutline(Graphics2D g2,
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void drawOutline(Graphics2D g2,'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-1/source/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java:1013: warning: [MissingOverride] drawDomainLine implements method in CategoryItemRenderer; expected @Override
+    public void drawDomainLine(Graphics2D g2, CategoryPlot plot,
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void drawDomainLine(Graphics2D g2, CategoryPlot plot,'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-1/source/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java:1025: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+        if (orientation == PlotOrientation.HORIZONTAL) {
+                        ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'if (Objects.equals(orientation, PlotOrientation.HORIZONTAL)) {' or 'if (orientation.equals(PlotOrientation.HORIZONTAL)) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-1/source/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java:1029: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+        else if (orientation == PlotOrientation.VERTICAL) {
+                             ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'else if (Objects.equals(orientation, PlotOrientation.VERTICAL)) {' or 'else if (orientation.equals(PlotOrientation.VERTICAL)) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-1/source/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java:1056: warning: [MissingOverride] drawRangeLine implements method in CategoryItemRenderer; expected @Override
+    public void drawRangeLine(Graphics2D g2, CategoryPlot plot, ValueAxis axis,
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void drawRangeLine(Graphics2D g2, CategoryPlot plot, ValueAxis axis,'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-1/source/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java:1067: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+        if (orientation == PlotOrientation.HORIZONTAL) {
+                        ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'if (Objects.equals(orientation, PlotOrientation.HORIZONTAL)) {' or 'if (orientation.equals(PlotOrientation.HORIZONTAL)) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-1/source/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java:1071: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+        else if (orientation == PlotOrientation.VERTICAL) {
+                             ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'else if (Objects.equals(orientation, PlotOrientation.VERTICAL)) {' or 'else if (orientation.equals(PlotOrientation.VERTICAL)) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-1/source/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java:1094: warning: [MissingOverride] drawDomainMarker implements method in CategoryItemRenderer; expected @Override
+    public void drawDomainMarker(Graphics2D g2,
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void drawDomainMarker(Graphics2D g2,'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-1/source/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java:1118: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+            if (orientation == PlotOrientation.HORIZONTAL) {
+                            ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'if (Objects.equals(orientation, PlotOrientation.HORIZONTAL)) {' or 'if (orientation.equals(PlotOrientation.HORIZONTAL)) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-1/source/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java:1122: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+            else if (orientation == PlotOrientation.VERTICAL) {
+                                 ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'else if (Objects.equals(orientation, PlotOrientation.VERTICAL)) {' or 'else if (orientation.equals(PlotOrientation.VERTICAL)) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-1/source/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java:1139: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+            if (orientation == PlotOrientation.HORIZONTAL) {
+                            ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'if (Objects.equals(orientation, PlotOrientation.HORIZONTAL)) {' or 'if (orientation.equals(PlotOrientation.HORIZONTAL)) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-1/source/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java:1143: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+            else if (orientation == PlotOrientation.VERTICAL) {
+                                 ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'else if (Objects.equals(orientation, PlotOrientation.VERTICAL)) {' or 'else if (orientation.equals(PlotOrientation.VERTICAL)) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-1/source/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java:1180: warning: [MissingOverride] drawRangeMarker implements method in CategoryItemRenderer; expected @Override
+    public void drawRangeMarker(Graphics2D g2,
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void drawRangeMarker(Graphics2D g2,'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-1/source/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java:1203: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+            if (orientation == PlotOrientation.HORIZONTAL) {
+                            ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'if (Objects.equals(orientation, PlotOrientation.HORIZONTAL)) {' or 'if (orientation.equals(PlotOrientation.HORIZONTAL)) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-1/source/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java:1207: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+            else if (orientation == PlotOrientation.VERTICAL) {
+                                 ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'else if (Objects.equals(orientation, PlotOrientation.VERTICAL)) {' or 'else if (orientation.equals(PlotOrientation.VERTICAL)) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-1/source/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java:1254: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+            if (orientation == PlotOrientation.HORIZONTAL) {
+                            ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'if (Objects.equals(orientation, PlotOrientation.HORIZONTAL)) {' or 'if (orientation.equals(PlotOrientation.HORIZONTAL)) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-1/source/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java:1262: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+            else if (orientation == PlotOrientation.VERTICAL) {
+                                 ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'else if (Objects.equals(orientation, PlotOrientation.VERTICAL)) {' or 'else if (orientation.equals(PlotOrientation.VERTICAL)) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-1/source/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java:1286: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+                if (orientation == PlotOrientation.VERTICAL) {
+                                ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'if (Objects.equals(orientation, PlotOrientation.VERTICAL)) {' or 'if (orientation.equals(PlotOrientation.VERTICAL)) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-1/source/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java:1359: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+        if (orientation == PlotOrientation.HORIZONTAL) {
+                        ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'if (Objects.equals(orientation, PlotOrientation.HORIZONTAL)) {' or 'if (orientation.equals(PlotOrientation.HORIZONTAL)) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-1/source/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java:1363: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+        else if (orientation == PlotOrientation.VERTICAL) {
+                             ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'else if (Objects.equals(orientation, PlotOrientation.VERTICAL)) {' or 'else if (orientation.equals(PlotOrientation.VERTICAL)) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-1/source/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java:1393: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+        if (orientation == PlotOrientation.HORIZONTAL) {
+                        ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'if (Objects.equals(orientation, PlotOrientation.HORIZONTAL)) {' or 'if (orientation.equals(PlotOrientation.HORIZONTAL)) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-1/source/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java:1397: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+        else if (orientation == PlotOrientation.VERTICAL) {
+                             ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'else if (Objects.equals(orientation, PlotOrientation.VERTICAL)) {' or 'else if (orientation.equals(PlotOrientation.VERTICAL)) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-1/source/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java:1417: warning: [MissingOverride] getLegendItem implements method in CategoryItemRenderer; expected @Override
+    public LegendItem getLegendItem(int datasetIndex, int series) {
+                      ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public LegendItem getLegendItem(int datasetIndex, int series) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-1/source/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java:1469: warning: [MissingOverride] equals overrides method in AbstractRenderer; expected @Override
+    public boolean equals(Object obj) {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public boolean equals(Object obj) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-1/source/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java:1531: warning: [MissingOverride] hashCode overrides method in AbstractRenderer; expected @Override
+    public int hashCode() {
+               ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int hashCode() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-1/source/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java:1541: warning: [MissingOverride] getDrawingSupplier implements method in AbstractRenderer; expected @Override
+    public DrawingSupplier getDrawingSupplier() {
+                           ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public DrawingSupplier getDrawingSupplier() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-1/source/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java:1647: warning: [MissingOverride] drawAnnotations implements method in CategoryItemRenderer; expected @Override
+    public void drawAnnotations(Graphics2D g2, Rectangle2D dataArea,
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void drawAnnotations(Graphics2D g2, Rectangle2D dataArea,'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-1/source/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java:1680: warning: [MissingOverride] clone overrides method in AbstractRenderer; expected @Override
+    public Object clone() throws CloneNotSupportedException {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Object clone() throws CloneNotSupportedException {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-1/source/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java:1790: warning: [MissingOverride] getLegendItems implements method in LegendItemSource; expected @Override
+    public LegendItemCollection getLegendItems() {
+                                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public LegendItemCollection getLegendItems() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-1/source/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java:1872: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+            if (getPlot().getOrientation() == PlotOrientation.VERTICAL) {
+                                           ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'if (Objects.equals(getPlot().getOrientation(), PlotOrientation.VERTICAL)) {' or 'if (getPlot().getOrientation().equals(PlotOrientation.VERTICAL)) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-1/source/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java:1912: warning: [MissingOverride] createHotSpotShape implements method in CategoryItemRenderer; expected @Override
+    public Shape createHotSpotShape(Graphics2D g2, Rectangle2D dataArea,
+                 ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Shape createHotSpotShape(Graphics2D g2, Rectangle2D dataArea,'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-1/source/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java:1937: warning: [MissingOverride] createHotSpotBounds implements method in CategoryItemRenderer; expected @Override
+    public Rectangle2D createHotSpotBounds(Graphics2D g2, Rectangle2D dataArea,
+                       ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Rectangle2D createHotSpotBounds(Graphics2D g2, Rectangle2D dataArea,'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-1/source/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java:1979: warning: [MissingOverride] hitTest implements method in CategoryItemRenderer; expected @Override
+    public boolean hitTest(double xx, double yy, Graphics2D g2,
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public boolean hitTest(double xx, double yy, Graphics2D g2,'?
+Note: /Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-1/source/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+72 warnings

@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.1.0" sequence="0" timestamp="1542185232000" analysisTimestamp="1542185235022" release="">
+  <Project projectName="">
+    <Jar>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-16/source</Jar>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-16/build</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-16/lib/servlet.jar</AuxClasspathEntry>
+  </Project>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE" instanceHash="5c44215ce0de6ee9c7689df8d899d5ec" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="374">
+    <ShortMessage>May expose internal representation by incorporating reference to mutable object</ShortMessage>
+    <LongMessage>new org.jfree.data.category.DefaultIntervalCategoryDataset(Comparable[], Comparable[], Number[][], Number[][]) may expose internal representation by storing an externally mutable object into DefaultIntervalCategoryDataset.categoryKeys</LongMessage>
+    <Class classname="org.jfree.data.category.DefaultIntervalCategoryDataset" primary="true">
+      <SourceLine classname="org.jfree.data.category.DefaultIntervalCategoryDataset" start="91" end="799" sourcefile="DefaultIntervalCategoryDataset.java" sourcepath="org/jfree/data/category/DefaultIntervalCategoryDataset.java">
+        <Message>At DefaultIntervalCategoryDataset.java:[lines 91-799]</Message>
+      </SourceLine>
+      <Message>In class org.jfree.data.category.DefaultIntervalCategoryDataset</Message>
+    </Class>
+    <Method classname="org.jfree.data.category.DefaultIntervalCategoryDataset" name="&lt;init&gt;" signature="([Ljava/lang/Comparable;[Ljava/lang/Comparable;[[Ljava/lang/Number;[[Ljava/lang/Number;)V" isStatic="false" primary="true">
+      <SourceLine classname="org.jfree.data.category.DefaultIntervalCategoryDataset" start="145" end="212" startBytecode="0" endBytecode="442" sourcefile="DefaultIntervalCategoryDataset.java" sourcepath="org/jfree/data/category/DefaultIntervalCategoryDataset.java"/>
+      <Message>In method new org.jfree.data.category.DefaultIntervalCategoryDataset(Comparable[], Comparable[], Number[][], Number[][])</Message>
+    </Method>
+    <Field classname="org.jfree.data.category.DefaultIntervalCategoryDataset" name="categoryKeys" signature="[Ljava/lang/Comparable;" isStatic="false" primary="true">
+      <SourceLine classname="org.jfree.data.category.DefaultIntervalCategoryDataset" sourcefile="DefaultIntervalCategoryDataset.java" sourcepath="org/jfree/data/category/DefaultIntervalCategoryDataset.java">
+        <Message>In DefaultIntervalCategoryDataset.java</Message>
+      </SourceLine>
+      <Message>Field org.jfree.data.category.DefaultIntervalCategoryDataset.categoryKeys</Message>
+    </Field>
+    <LocalVariable name="?" register="2" pc="187" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 2</Message>
+    </LocalVariable>
+    <SourceLine classname="org.jfree.data.category.DefaultIntervalCategoryDataset" primary="true" start="197" end="197" startBytecode="187" endBytecode="187" sourcefile="DefaultIntervalCategoryDataset.java" sourcepath="org/jfree/data/category/DefaultIntervalCategoryDataset.java">
+      <Message>At DefaultIntervalCategoryDataset.java:[line 197]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE" instanceHash="1e7ddc7f9e59654426e439d59ac398d8" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="374">
+    <ShortMessage>May expose internal representation by incorporating reference to mutable object</ShortMessage>
+    <LongMessage>new org.jfree.data.category.DefaultIntervalCategoryDataset(Comparable[], Comparable[], Number[][], Number[][]) may expose internal representation by storing an externally mutable object into DefaultIntervalCategoryDataset.endData</LongMessage>
+    <Class classname="org.jfree.data.category.DefaultIntervalCategoryDataset" primary="true">
+      <SourceLine classname="org.jfree.data.category.DefaultIntervalCategoryDataset" start="91" end="799" sourcefile="DefaultIntervalCategoryDataset.java" sourcepath="org/jfree/data/category/DefaultIntervalCategoryDataset.java">
+        <Message>At DefaultIntervalCategoryDataset.java:[lines 91-799]</Message>
+      </SourceLine>
+      <Message>In class org.jfree.data.category.DefaultIntervalCategoryDataset</Message>
+    </Class>
+    <Method classname="org.jfree.data.category.DefaultIntervalCategoryDataset" name="&lt;init&gt;" signature="([Ljava/lang/Comparable;[Ljava/lang/Comparable;[[Ljava/lang/Number;[[Ljava/lang/Number;)V" isStatic="false" primary="true">
+      <SourceLine classname="org.jfree.data.category.DefaultIntervalCategoryDataset" start="145" end="212" startBytecode="0" endBytecode="442" sourcefile="DefaultIntervalCategoryDataset.java" sourcepath="org/jfree/data/category/DefaultIntervalCategoryDataset.java"/>
+      <Message>In method new org.jfree.data.category.DefaultIntervalCategoryDataset(Comparable[], Comparable[], Number[][], Number[][])</Message>
+    </Method>
+    <Field classname="org.jfree.data.category.DefaultIntervalCategoryDataset" name="endData" signature="[[Ljava/lang/Number;" isStatic="false" primary="true">
+      <SourceLine classname="org.jfree.data.category.DefaultIntervalCategoryDataset" sourcefile="DefaultIntervalCategoryDataset.java" sourcepath="org/jfree/data/category/DefaultIntervalCategoryDataset.java">
+        <Message>In DefaultIntervalCategoryDataset.java</Message>
+      </SourceLine>
+      <Message>Field org.jfree.data.category.DefaultIntervalCategoryDataset.endData</Message>
+    </Field>
+    <LocalVariable name="?" register="4" pc="12" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 4</Message>
+    </LocalVariable>
+    <SourceLine classname="org.jfree.data.category.DefaultIntervalCategoryDataset" primary="true" start="148" end="148" startBytecode="12" endBytecode="12" sourcefile="DefaultIntervalCategoryDataset.java" sourcepath="org/jfree/data/category/DefaultIntervalCategoryDataset.java">
+      <Message>At DefaultIntervalCategoryDataset.java:[line 148]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE" instanceHash="997cf399c9458ce5110670d140fd63a9" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="374">
+    <ShortMessage>May expose internal representation by incorporating reference to mutable object</ShortMessage>
+    <LongMessage>new org.jfree.data.category.DefaultIntervalCategoryDataset(Comparable[], Comparable[], Number[][], Number[][]) may expose internal representation by storing an externally mutable object into DefaultIntervalCategoryDataset.seriesKeys</LongMessage>
+    <Class classname="org.jfree.data.category.DefaultIntervalCategoryDataset" primary="true">
+      <SourceLine classname="org.jfree.data.category.DefaultIntervalCategoryDataset" start="91" end="799" sourcefile="DefaultIntervalCategoryDataset.java" sourcepath="org/jfree/data/category/DefaultIntervalCategoryDataset.java">
+        <Message>At DefaultIntervalCategoryDataset.java:[lines 91-799]</Message>
+      </SourceLine>
+      <Message>In class org.jfree.data.category.DefaultIntervalCategoryDataset</Message>
+    </Class>
+    <Method classname="org.jfree.data.category.DefaultIntervalCategoryDataset" name="&lt;init&gt;" signature="([Ljava/lang/Comparable;[Ljava/lang/Comparable;[[Ljava/lang/Number;[[Ljava/lang/Number;)V" isStatic="false" primary="true">
+      <SourceLine classname="org.jfree.data.category.DefaultIntervalCategoryDataset" start="145" end="212" startBytecode="0" endBytecode="442" sourcefile="DefaultIntervalCategoryDataset.java" sourcepath="org/jfree/data/category/DefaultIntervalCategoryDataset.java"/>
+      <Message>In method new org.jfree.data.category.DefaultIntervalCategoryDataset(Comparable[], Comparable[], Number[][], Number[][])</Message>
+    </Method>
+    <Field classname="org.jfree.data.category.DefaultIntervalCategoryDataset" name="seriesKeys" signature="[Ljava/lang/Comparable;" isStatic="false" primary="true">
+      <SourceLine classname="org.jfree.data.category.DefaultIntervalCategoryDataset" sourcefile="DefaultIntervalCategoryDataset.java" sourcepath="org/jfree/data/category/DefaultIntervalCategoryDataset.java">
+        <Message>In DefaultIntervalCategoryDataset.java</Message>
+      </SourceLine>
+      <Message>Field org.jfree.data.category.DefaultIntervalCategoryDataset.seriesKeys</Message>
+    </Field>
+    <LocalVariable name="?" register="1" pc="89" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="org.jfree.data.category.DefaultIntervalCategoryDataset" primary="true" start="174" end="174" startBytecode="89" endBytecode="89" sourcefile="DefaultIntervalCategoryDataset.java" sourcepath="org/jfree/data/category/DefaultIntervalCategoryDataset.java">
+      <Message>At DefaultIntervalCategoryDataset.java:[line 174]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE" instanceHash="b75d7c16ec9f90a9b46cacc84117e84e" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="374">
+    <ShortMessage>May expose internal representation by incorporating reference to mutable object</ShortMessage>
+    <LongMessage>new org.jfree.data.category.DefaultIntervalCategoryDataset(Comparable[], Comparable[], Number[][], Number[][]) may expose internal representation by storing an externally mutable object into DefaultIntervalCategoryDataset.startData</LongMessage>
+    <Class classname="org.jfree.data.category.DefaultIntervalCategoryDataset" primary="true">
+      <SourceLine classname="org.jfree.data.category.DefaultIntervalCategoryDataset" start="91" end="799" sourcefile="DefaultIntervalCategoryDataset.java" sourcepath="org/jfree/data/category/DefaultIntervalCategoryDataset.java">
+        <Message>At DefaultIntervalCategoryDataset.java:[lines 91-799]</Message>
+      </SourceLine>
+      <Message>In class org.jfree.data.category.DefaultIntervalCategoryDataset</Message>
+    </Class>
+    <Method classname="org.jfree.data.category.DefaultIntervalCategoryDataset" name="&lt;init&gt;" signature="([Ljava/lang/Comparable;[Ljava/lang/Comparable;[[Ljava/lang/Number;[[Ljava/lang/Number;)V" isStatic="false" primary="true">
+      <SourceLine classname="org.jfree.data.category.DefaultIntervalCategoryDataset" start="145" end="212" startBytecode="0" endBytecode="442" sourcefile="DefaultIntervalCategoryDataset.java" sourcepath="org/jfree/data/category/DefaultIntervalCategoryDataset.java"/>
+      <Message>In method new org.jfree.data.category.DefaultIntervalCategoryDataset(Comparable[], Comparable[], Number[][], Number[][])</Message>
+    </Method>
+    <Field classname="org.jfree.data.category.DefaultIntervalCategoryDataset" name="startData" signature="[[Ljava/lang/Number;" isStatic="false" primary="true">
+      <SourceLine classname="org.jfree.data.category.DefaultIntervalCategoryDataset" sourcefile="DefaultIntervalCategoryDataset.java" sourcepath="org/jfree/data/category/DefaultIntervalCategoryDataset.java">
+        <Message>In DefaultIntervalCategoryDataset.java</Message>
+      </SourceLine>
+      <Message>Field org.jfree.data.category.DefaultIntervalCategoryDataset.startData</Message>
+    </Field>
+    <LocalVariable name="?" register="3" pc="6" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 3</Message>
+    </LocalVariable>
+    <SourceLine classname="org.jfree.data.category.DefaultIntervalCategoryDataset" primary="true" start="147" end="147" startBytecode="6" endBytecode="6" sourcefile="DefaultIntervalCategoryDataset.java" sourcepath="org/jfree/data/category/DefaultIntervalCategoryDataset.java">
+      <Message>At DefaultIntervalCategoryDataset.java:[line 147]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE" instanceHash="deefa7de729a70ae07798a447fe7fe2a" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="374">
+    <ShortMessage>May expose internal representation by incorporating reference to mutable object</ShortMessage>
+    <LongMessage>org.jfree.data.category.DefaultIntervalCategoryDataset.setCategoryKeys(Comparable[]) may expose internal representation by storing an externally mutable object into DefaultIntervalCategoryDataset.categoryKeys</LongMessage>
+    <Class classname="org.jfree.data.category.DefaultIntervalCategoryDataset" primary="true">
+      <SourceLine classname="org.jfree.data.category.DefaultIntervalCategoryDataset" start="91" end="799" sourcefile="DefaultIntervalCategoryDataset.java" sourcepath="org/jfree/data/category/DefaultIntervalCategoryDataset.java">
+        <Message>At DefaultIntervalCategoryDataset.java:[lines 91-799]</Message>
+      </SourceLine>
+      <Message>In class org.jfree.data.category.DefaultIntervalCategoryDataset</Message>
+    </Class>
+    <Method classname="org.jfree.data.category.DefaultIntervalCategoryDataset" name="setCategoryKeys" signature="([Ljava/lang/Comparable;)V" isStatic="false" primary="true">
+      <SourceLine classname="org.jfree.data.category.DefaultIntervalCategoryDataset" start="335" end="351" startBytecode="0" endBytecode="157" sourcefile="DefaultIntervalCategoryDataset.java" sourcepath="org/jfree/data/category/DefaultIntervalCategoryDataset.java"/>
+      <Message>In method org.jfree.data.category.DefaultIntervalCategoryDataset.setCategoryKeys(Comparable[])</Message>
+    </Method>
+    <Field classname="org.jfree.data.category.DefaultIntervalCategoryDataset" name="categoryKeys" signature="[Ljava/lang/Comparable;" isStatic="false" primary="true">
+      <SourceLine classname="org.jfree.data.category.DefaultIntervalCategoryDataset" sourcefile="DefaultIntervalCategoryDataset.java" sourcepath="org/jfree/data/category/DefaultIntervalCategoryDataset.java">
+        <Message>In DefaultIntervalCategoryDataset.java</Message>
+      </SourceLine>
+      <Message>Field org.jfree.data.category.DefaultIntervalCategoryDataset.categoryKeys</Message>
+    </Field>
+    <LocalVariable name="?" register="1" pc="68" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="org.jfree.data.category.DefaultIntervalCategoryDataset" primary="true" start="349" end="349" startBytecode="68" endBytecode="68" sourcefile="DefaultIntervalCategoryDataset.java" sourcepath="org/jfree/data/category/DefaultIntervalCategoryDataset.java">
+      <Message>At DefaultIntervalCategoryDataset.java:[line 349]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE" instanceHash="cc6bd4dc42c587bab9b000ef8da6225f" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="374">
+    <ShortMessage>May expose internal representation by incorporating reference to mutable object</ShortMessage>
+    <LongMessage>org.jfree.data.category.DefaultIntervalCategoryDataset.setSeriesKeys(Comparable[]) may expose internal representation by storing an externally mutable object into DefaultIntervalCategoryDataset.seriesKeys</LongMessage>
+    <Class classname="org.jfree.data.category.DefaultIntervalCategoryDataset" primary="true">
+      <SourceLine classname="org.jfree.data.category.DefaultIntervalCategoryDataset" start="91" end="799" sourcefile="DefaultIntervalCategoryDataset.java" sourcepath="org/jfree/data/category/DefaultIntervalCategoryDataset.java">
+        <Message>At DefaultIntervalCategoryDataset.java:[lines 91-799]</Message>
+      </SourceLine>
+      <Message>In class org.jfree.data.category.DefaultIntervalCategoryDataset</Message>
+    </Class>
+    <Method classname="org.jfree.data.category.DefaultIntervalCategoryDataset" name="setSeriesKeys" signature="([Ljava/lang/Comparable;)V" isStatic="false" primary="true">
+      <SourceLine classname="org.jfree.data.category.DefaultIntervalCategoryDataset" start="277" end="286" startBytecode="0" endBytecode="100" sourcefile="DefaultIntervalCategoryDataset.java" sourcepath="org/jfree/data/category/DefaultIntervalCategoryDataset.java"/>
+      <Message>In method org.jfree.data.category.DefaultIntervalCategoryDataset.setSeriesKeys(Comparable[])</Message>
+    </Method>
+    <Field classname="org.jfree.data.category.DefaultIntervalCategoryDataset" name="seriesKeys" signature="[Ljava/lang/Comparable;" isStatic="false" primary="true">
+      <SourceLine classname="org.jfree.data.category.DefaultIntervalCategoryDataset" sourcefile="DefaultIntervalCategoryDataset.java" sourcepath="org/jfree/data/category/DefaultIntervalCategoryDataset.java">
+        <Message>In DefaultIntervalCategoryDataset.java</Message>
+      </SourceLine>
+      <Message>Field org.jfree.data.category.DefaultIntervalCategoryDataset.seriesKeys</Message>
+    </Field>
+    <LocalVariable name="?" register="1" pc="35" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="org.jfree.data.category.DefaultIntervalCategoryDataset" primary="true" start="284" end="284" startBytecode="35" endBytecode="35" sourcefile="DefaultIntervalCategoryDataset.java" sourcepath="org/jfree/data/category/DefaultIntervalCategoryDataset.java">
+      <Message>At DefaultIntervalCategoryDataset.java:[line 284]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="HE_EQUALS_USE_HASHCODE" priority="1" rank="14" abbrev="HE" category="BAD_PRACTICE" instanceHash="b56ef7bc97c366255b45f95bf10c391c" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Class defines equals() and uses Object.hashCode()</ShortMessage>
+    <LongMessage>org.jfree.data.category.DefaultIntervalCategoryDataset defines equals and uses Object.hashCode()</LongMessage>
+    <Class classname="org.jfree.data.category.DefaultIntervalCategoryDataset" primary="true">
+      <SourceLine classname="org.jfree.data.category.DefaultIntervalCategoryDataset" start="91" end="799" sourcefile="DefaultIntervalCategoryDataset.java" sourcepath="org/jfree/data/category/DefaultIntervalCategoryDataset.java">
+        <Message>At DefaultIntervalCategoryDataset.java:[lines 91-799]</Message>
+      </SourceLine>
+      <Message>In class org.jfree.data.category.DefaultIntervalCategoryDataset</Message>
+    </Class>
+    <Method classname="org.jfree.data.category.DefaultIntervalCategoryDataset" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false" primary="true">
+      <SourceLine classname="org.jfree.data.category.DefaultIntervalCategoryDataset" start="713" end="734" startBytecode="0" endBytecode="181" sourcefile="DefaultIntervalCategoryDataset.java" sourcepath="org/jfree/data/category/DefaultIntervalCategoryDataset.java"/>
+      <Message>In method org.jfree.data.category.DefaultIntervalCategoryDataset.equals(Object)</Message>
+    </Method>
+    <SourceLine classname="org.jfree.data.category.DefaultIntervalCategoryDataset" start="713" end="734" startBytecode="0" endBytecode="181" sourcefile="DefaultIntervalCategoryDataset.java" sourcepath="org/jfree/data/category/DefaultIntervalCategoryDataset.java" synthetic="true">
+      <Message>At DefaultIntervalCategoryDataset.java:[lines 713-734]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="BAD_PRACTICE">
+    <Description>Bad practice</Description>
+  </BugCategory>
+  <BugCategory category="MALICIOUS_CODE">
+    <Description>Malicious code vulnerability</Description>
+  </BugCategory>
+  <BugPattern type="EI_EXPOSE_REP2" abbrev="EI2" category="MALICIOUS_CODE" cweid="374">
+    <ShortDescription>May expose internal representation by incorporating reference to mutable object</ShortDescription>
+    <Details><![CDATA[
+
+  <p> This code stores a reference to an externally mutable object into the
+  internal representation of the object.&nbsp;
+   If instances
+   are accessed by untrusted code, and unchecked changes to
+   the mutable object would compromise security or other
+   important properties, you will need to do something different.
+  Storing a copy of the object is better approach in many situations.</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="HE_EQUALS_USE_HASHCODE" abbrev="HE" category="BAD_PRACTICE">
+    <ShortDescription>Class defines equals() and uses Object.hashCode()</ShortDescription>
+    <Details><![CDATA[
+
+  <p> This class overrides <code>equals(Object)</code>, but does not
+  override <code>hashCode()</code>, and inherits the implementation of
+  <code>hashCode()</code> from <code>java.lang.Object</code> (which returns
+  the identity hash code, an arbitrary value assigned to the object
+  by the VM).&nbsp; Therefore, the class is very likely to violate the
+  invariant that equal objects must have equal hashcodes.</p>
+
+<p>If you don't think instances of this class will ever be inserted into a HashMap/HashTable,
+the recommended <code>hashCode</code> implementation to use is:</p>
+<pre><code>public int hashCode() {
+    assert false : "hashCode not designed";
+    return 42; // any arbitrary constant will do
+}
+</code></pre>
+
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="HE">
+    <Description>Equal objects must have equal hashcodes</Description>
+  </BugCode>
+  <BugCode abbrev="EI2">
+    <Description>Storing reference to mutable object</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 14 Nov 2018 03:47:12 -0500" total_classes="1" referenced_classes="43" total_bugs="7" total_size="225" num_packages="1" java_version="1.8.0_121" vm_version="25.121-b13" cpu_seconds="8.64" clock_seconds="4.62" peak_mbytes="115.44" alloc_mbytes="1820.50" gc_seconds="0.09" priority_2="6" priority_1="1">
+    <FileStats path="org/jfree/data/category/DefaultIntervalCategoryDataset.java" bugCount="7" size="225" bugHash="f24eee7d6921601bf985484654473271"/>
+    <PackageStats package="org.jfree.data.category" total_bugs="7" total_types="1" total_size="225" priority_2="6" priority_1="1">
+      <ClassStats class="org.jfree.data.category.DefaultIntervalCategoryDataset" sourceFile="DefaultIntervalCategoryDataset.java" interface="false" size="225" bugs="7" priority_2="6" priority_1="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="809" invocations="527" avgMicrosecondsPerInvocation="1536" maxMicrosecondsPerInvocation="40467" standardDeviationMicrosecondsPerInvocation="4072"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="521" invocations="522" avgMicrosecondsPerInvocation="998" maxMicrosecondsPerInvocation="36725" standardDeviationMicrosecondsPerInvocation="3113"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="170" invocations="43" avgMicrosecondsPerInvocation="3964" maxMicrosecondsPerInvocation="42549" standardDeviationMicrosecondsPerInvocation="7706"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="160" invocations="43" avgMicrosecondsPerInvocation="3725" maxMicrosecondsPerInvocation="40211" standardDeviationMicrosecondsPerInvocation="8528"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="151" invocations="228" avgMicrosecondsPerInvocation="664" maxMicrosecondsPerInvocation="18893" standardDeviationMicrosecondsPerInvocation="1809"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="147" invocations="481" avgMicrosecondsPerInvocation="306" maxMicrosecondsPerInvocation="47976" standardDeviationMicrosecondsPerInvocation="2342"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="109" invocations="32" avgMicrosecondsPerInvocation="3427" maxMicrosecondsPerInvocation="35138" standardDeviationMicrosecondsPerInvocation="6930"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="108" invocations="32" avgMicrosecondsPerInvocation="3396" maxMicrosecondsPerInvocation="33227" standardDeviationMicrosecondsPerInvocation="6855"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="108" invocations="32" avgMicrosecondsPerInvocation="3376" maxMicrosecondsPerInvocation="35489" standardDeviationMicrosecondsPerInvocation="6994"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="92" invocations="32" avgMicrosecondsPerInvocation="2898" maxMicrosecondsPerInvocation="73788" standardDeviationMicrosecondsPerInvocation="12821"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="92" invocations="32" avgMicrosecondsPerInvocation="2884" maxMicrosecondsPerInvocation="28547" standardDeviationMicrosecondsPerInvocation="6761"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="84" invocations="77" avgMicrosecondsPerInvocation="1092" maxMicrosecondsPerInvocation="22789" standardDeviationMicrosecondsPerInvocation="3945"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="75" invocations="43" avgMicrosecondsPerInvocation="1749" maxMicrosecondsPerInvocation="23909" standardDeviationMicrosecondsPerInvocation="4175"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="71" invocations="43" avgMicrosecondsPerInvocation="1657" maxMicrosecondsPerInvocation="35481" standardDeviationMicrosecondsPerInvocation="5582"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="69" invocations="32" avgMicrosecondsPerInvocation="2167" maxMicrosecondsPerInvocation="23095" standardDeviationMicrosecondsPerInvocation="4542"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

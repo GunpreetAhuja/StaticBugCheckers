@@ -1,0 +1,13 @@
+Found 1 issue
+
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-73/src/com/google/javascript/jscomp/CodeGenerator.java:797: error: NULL_DEREFERENCE
+  object `firstAndOnlyChild` last assigned on line 795 could be null and is dereferenced by call to `isOneExactlyFunctionOrDo(...)` at line 797.
+  795.           Node firstAndOnlyChild = getFirstNonEmptyChild(n);
+  796.           boolean alwaysWrapInBlock = cc.shouldPreserveExtraBlocks();
+  797. >         if (alwaysWrapInBlock || isOneExactlyFunctionOrDo(firstAndOnlyChild)) {
+  798.             cc.beginBlock();
+  799.             add(firstAndOnlyChild, Context.STATEMENT);
+
+Summary of the reports
+
+  NULL_DEREFERENCE: 1

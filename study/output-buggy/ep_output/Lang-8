@@ -1,0 +1,21 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Lang-8/src/main/java/org/apache/commons/lang3/time/FastDatePrinter.java:304: warning: [OperatorPrecedence] Use grouping parenthesis to make the operator precedence explicit
+        if (c >= 'A' && c <= 'Z' || c >= 'a' && c <= 'z') {
+                     ^
+    (see http://errorprone.info/bugpattern/OperatorPrecedence)
+  Did you mean 'if ((c >= 'A' && c <= 'Z') || c >= 'a' && c <= 'z') {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Lang-8/src/main/java/org/apache/commons/lang3/time/FastDatePrinter.java:304: warning: [OperatorPrecedence] Use grouping parenthesis to make the operator precedence explicit
+        if (c >= 'A' && c <= 'Z' || c >= 'a' && c <= 'z') {
+                                             ^
+    (see http://errorprone.info/bugpattern/OperatorPrecedence)
+  Did you mean 'if (c >= 'A' && c <= 'Z' || (c >= 'a' && c <= 'z')) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Lang-8/src/main/java/org/apache/commons/lang3/time/FastDatePrinter.java:336: warning: [OperatorPrecedence] Use grouping parenthesis to make the operator precedence explicit
+                         (c >= 'A' && c <= 'Z' || c >= 'a' && c <= 'z')) {
+                                   ^
+    (see http://errorprone.info/bugpattern/OperatorPrecedence)
+  Did you mean '((c >= 'A' && c <= 'Z') || c >= 'a' && c <= 'z')) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Lang-8/src/main/java/org/apache/commons/lang3/time/FastDatePrinter.java:336: warning: [OperatorPrecedence] Use grouping parenthesis to make the operator precedence explicit
+                         (c >= 'A' && c <= 'Z' || c >= 'a' && c <= 'z')) {
+                                                           ^
+    (see http://errorprone.info/bugpattern/OperatorPrecedence)
+  Did you mean '(c >= 'A' && c <= 'Z' || (c >= 'a' && c <= 'z'))) {'?
+4 warnings

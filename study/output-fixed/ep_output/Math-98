@@ -1,0 +1,337 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-98/src/java/org/apache/commons/math/linear/RealMatrixImpl.java:176: warning: [MissingOverride] copy implements method in RealMatrix; expected @Override
+    public RealMatrix copy() {
+                      ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public RealMatrix copy() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-98/src/java/org/apache/commons/math/linear/RealMatrixImpl.java:187: warning: [MissingOverride] add implements method in RealMatrix; expected @Override
+    public RealMatrix add(RealMatrix m) throws IllegalArgumentException {
+                      ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public RealMatrix add(RealMatrix m) throws IllegalArgumentException {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-98/src/java/org/apache/commons/math/linear/RealMatrixImpl.java:240: warning: [MissingOverride] subtract implements method in RealMatrix; expected @Override
+    public RealMatrix subtract(RealMatrix m) throws IllegalArgumentException {
+                      ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public RealMatrix subtract(RealMatrix m) throws IllegalArgumentException {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-98/src/java/org/apache/commons/math/linear/RealMatrixImpl.java:292: warning: [MissingOverride] scalarAdd implements method in RealMatrix; expected @Override
+    public RealMatrix scalarAdd(double d) {
+                      ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public RealMatrix scalarAdd(double d) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-98/src/java/org/apache/commons/math/linear/RealMatrixImpl.java:311: warning: [MissingOverride] scalarMultiply implements method in RealMatrix; expected @Override
+    public RealMatrix scalarMultiply(double d) {
+                      ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public RealMatrix scalarMultiply(double d) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-98/src/java/org/apache/commons/math/linear/RealMatrixImpl.java:332: warning: [MissingOverride] multiply implements method in RealMatrix; expected @Override
+    public RealMatrix multiply(RealMatrix m) throws IllegalArgumentException {
+                      ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public RealMatrix multiply(RealMatrix m) throws IllegalArgumentException {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-98/src/java/org/apache/commons/math/linear/RealMatrixImpl.java:394: warning: [MissingOverride] preMultiply implements method in RealMatrix; expected @Override
+    public RealMatrix preMultiply(RealMatrix m) throws IllegalArgumentException {
+                      ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public RealMatrix preMultiply(RealMatrix m) throws IllegalArgumentException {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-98/src/java/org/apache/commons/math/linear/RealMatrixImpl.java:405: warning: [MissingOverride] getData implements method in RealMatrix; expected @Override
+    public double[][] getData() {
+                      ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double[][] getData() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-98/src/java/org/apache/commons/math/linear/RealMatrixImpl.java:424: warning: [MissingOverride] getNorm implements method in RealMatrix; expected @Override
+    public double getNorm() {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double getNorm() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-98/src/java/org/apache/commons/math/linear/RealMatrixImpl.java:448: warning: [MissingOverride] getSubMatrix implements method in RealMatrix; expected @Override
+    public RealMatrix getSubMatrix(int startRow, int endRow,
+                      ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public RealMatrix getSubMatrix(int startRow, int endRow,'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-98/src/java/org/apache/commons/math/linear/RealMatrixImpl.java:478: warning: [MissingOverride] getSubMatrix implements method in RealMatrix; expected @Override
+    public RealMatrix getSubMatrix(int[] selectedRows, int[] selectedColumns)
+                      ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public RealMatrix getSubMatrix(int[] selectedRows, int[] selectedColumns)'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-98/src/java/org/apache/commons/math/linear/RealMatrixImpl.java:573: warning: [MissingOverride] getRowMatrix implements method in RealMatrix; expected @Override
+    public RealMatrix getRowMatrix(int row) throws MatrixIndexException {
+                      ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public RealMatrix getRowMatrix(int row) throws MatrixIndexException {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-98/src/java/org/apache/commons/math/linear/RealMatrixImpl.java:591: warning: [MissingOverride] getColumnMatrix implements method in RealMatrix; expected @Override
+    public RealMatrix getColumnMatrix(int column) throws MatrixIndexException {
+                      ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public RealMatrix getColumnMatrix(int column) throws MatrixIndexException {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-98/src/java/org/apache/commons/math/linear/RealMatrixImpl.java:613: warning: [MissingOverride] getRow implements method in RealMatrix; expected @Override
+    public double[] getRow(int row) throws MatrixIndexException {
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double[] getRow(int row) throws MatrixIndexException {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-98/src/java/org/apache/commons/math/linear/RealMatrixImpl.java:633: warning: [MissingOverride] getColumn implements method in RealMatrix; expected @Override
+    public double[] getColumn(int col) throws MatrixIndexException {
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double[] getColumn(int col) throws MatrixIndexException {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-98/src/java/org/apache/commons/math/linear/RealMatrixImpl.java:660: warning: [MissingOverride] getEntry implements method in RealMatrix; expected @Override
+    public double getEntry(int row, int column)
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double getEntry(int row, int column)'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-98/src/java/org/apache/commons/math/linear/RealMatrixImpl.java:674: warning: [MissingOverride] transpose implements method in RealMatrix; expected @Override
+    public RealMatrix transpose() {
+                      ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public RealMatrix transpose() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-98/src/java/org/apache/commons/math/linear/RealMatrixImpl.java:693: warning: [MissingOverride] inverse implements method in RealMatrix; expected @Override
+    public RealMatrix inverse() throws InvalidMatrixException {
+                      ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public RealMatrix inverse() throws InvalidMatrixException {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-98/src/java/org/apache/commons/math/linear/RealMatrixImpl.java:701: warning: [MissingOverride] getDeterminant implements method in RealMatrix; expected @Override
+    public double getDeterminant() throws InvalidMatrixException {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double getDeterminant() throws InvalidMatrixException {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-98/src/java/org/apache/commons/math/linear/RealMatrixImpl.java:719: warning: [MissingOverride] isSquare implements method in RealMatrix; expected @Override
+    public boolean isSquare() {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public boolean isSquare() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-98/src/java/org/apache/commons/math/linear/RealMatrixImpl.java:726: warning: [MissingOverride] isSingular implements method in RealMatrix; expected @Override
+    public boolean isSingular() {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public boolean isSingular() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-98/src/java/org/apache/commons/math/linear/RealMatrixImpl.java:742: warning: [MissingOverride] getRowDimension implements method in RealMatrix; expected @Override
+    public int getRowDimension() {
+               ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int getRowDimension() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-98/src/java/org/apache/commons/math/linear/RealMatrixImpl.java:749: warning: [MissingOverride] getColumnDimension implements method in RealMatrix; expected @Override
+    public int getColumnDimension() {
+               ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int getColumnDimension() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-98/src/java/org/apache/commons/math/linear/RealMatrixImpl.java:757: warning: [MissingOverride] getTrace implements method in RealMatrix; expected @Override
+    public double getTrace() throws IllegalArgumentException {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double getTrace() throws IllegalArgumentException {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-98/src/java/org/apache/commons/math/linear/RealMatrixImpl.java:773: warning: [MissingOverride] operate implements method in RealMatrix; expected @Override
+    public double[] operate(double[] v) throws IllegalArgumentException {
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double[] operate(double[] v) throws IllegalArgumentException {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-98/src/java/org/apache/commons/math/linear/RealMatrixImpl.java:796: warning: [MissingOverride] preMultiply implements method in RealMatrix; expected @Override
+    public double[] preMultiply(double[] v) throws IllegalArgumentException {
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double[] preMultiply(double[] v) throws IllegalArgumentException {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-98/src/java/org/apache/commons/math/linear/RealMatrixImpl.java:824: warning: [MissingOverride] solve implements method in RealMatrix; expected @Override
+    public double[] solve(double[] b) throws IllegalArgumentException, InvalidMatrixException {
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double[] solve(double[] b) throws IllegalArgumentException, InvalidMatrixException {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-98/src/java/org/apache/commons/math/linear/RealMatrixImpl.java:849: warning: [MissingOverride] solve implements method in RealMatrix; expected @Override
+    public RealMatrix solve(RealMatrix b) throws IllegalArgumentException, InvalidMatrixException  {
+                      ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public RealMatrix solve(RealMatrix b) throws IllegalArgumentException, InvalidMatrixException  {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-98/src/java/org/apache/commons/math/linear/RealMatrixImpl.java:1003: warning: [MissingOverride] toString overrides method in Object; expected @Override
+    public String toString() {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public String toString() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-98/src/java/org/apache/commons/math/linear/RealMatrixImpl.java:1034: warning: [MissingOverride] equals overrides method in Object; expected @Override
+    public boolean equals(Object object) {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public boolean equals(Object object) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-98/src/java/org/apache/commons/math/linear/RealMatrixImpl.java:1064: warning: [MissingOverride] hashCode overrides method in Object; expected @Override
+    public int hashCode() {
+               ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int hashCode() {'?
+31 warnings
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-98/src/java/org/apache/commons/math/linear/BigMatrixImpl.java:247: warning: [MissingOverride] copy implements method in BigMatrix; expected @Override
+    public BigMatrix copy() {
+                     ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public BigMatrix copy() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-98/src/java/org/apache/commons/math/linear/BigMatrixImpl.java:258: warning: [MissingOverride] add implements method in BigMatrix; expected @Override
+    public BigMatrix add(BigMatrix m) throws IllegalArgumentException {
+                     ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public BigMatrix add(BigMatrix m) throws IllegalArgumentException {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-98/src/java/org/apache/commons/math/linear/BigMatrixImpl.java:311: warning: [MissingOverride] subtract implements method in BigMatrix; expected @Override
+    public BigMatrix subtract(BigMatrix m) throws IllegalArgumentException {
+                     ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public BigMatrix subtract(BigMatrix m) throws IllegalArgumentException {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-98/src/java/org/apache/commons/math/linear/BigMatrixImpl.java:363: warning: [MissingOverride] scalarAdd implements method in BigMatrix; expected @Override
+    public BigMatrix scalarAdd(BigDecimal d) {
+                     ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public BigMatrix scalarAdd(BigDecimal d) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-98/src/java/org/apache/commons/math/linear/BigMatrixImpl.java:382: warning: [MissingOverride] scalarMultiply implements method in BigMatrix; expected @Override
+    public BigMatrix scalarMultiply(BigDecimal d) {
+                     ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public BigMatrix scalarMultiply(BigDecimal d) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-98/src/java/org/apache/commons/math/linear/BigMatrixImpl.java:403: warning: [MissingOverride] multiply implements method in BigMatrix; expected @Override
+    public BigMatrix multiply(BigMatrix m) throws IllegalArgumentException {
+                     ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public BigMatrix multiply(BigMatrix m) throws IllegalArgumentException {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-98/src/java/org/apache/commons/math/linear/BigMatrixImpl.java:465: warning: [MissingOverride] preMultiply implements method in BigMatrix; expected @Override
+    public BigMatrix preMultiply(BigMatrix m) throws IllegalArgumentException {
+                     ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public BigMatrix preMultiply(BigMatrix m) throws IllegalArgumentException {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-98/src/java/org/apache/commons/math/linear/BigMatrixImpl.java:476: warning: [MissingOverride] getData implements method in BigMatrix; expected @Override
+    public BigDecimal[][] getData() {
+                          ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public BigDecimal[][] getData() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-98/src/java/org/apache/commons/math/linear/BigMatrixImpl.java:488: warning: [MissingOverride] getDataAsDoubleArray implements method in BigMatrix; expected @Override
+    public double[][] getDataAsDoubleArray() {
+                      ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double[][] getDataAsDoubleArray() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-98/src/java/org/apache/commons/math/linear/BigMatrixImpl.java:517: warning: [MissingOverride] getRoundingMode implements method in BigMatrix; expected @Override
+    public int getRoundingMode() {
+               ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int getRoundingMode() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-98/src/java/org/apache/commons/math/linear/BigMatrixImpl.java:555: warning: [MissingOverride] getNorm implements method in BigMatrix; expected @Override
+    public BigDecimal getNorm() {
+                      ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public BigDecimal getNorm() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-98/src/java/org/apache/commons/math/linear/BigMatrixImpl.java:579: warning: [MissingOverride] getSubMatrix implements method in BigMatrix; expected @Override
+    public BigMatrix getSubMatrix(int startRow, int endRow,
+                     ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public BigMatrix getSubMatrix(int startRow, int endRow,'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-98/src/java/org/apache/commons/math/linear/BigMatrixImpl.java:609: warning: [MissingOverride] getSubMatrix implements method in BigMatrix; expected @Override
+    public BigMatrix getSubMatrix(int[] selectedRows, int[] selectedColumns)
+                     ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public BigMatrix getSubMatrix(int[] selectedRows, int[] selectedColumns)'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-98/src/java/org/apache/commons/math/linear/BigMatrixImpl.java:705: warning: [MissingOverride] getRowMatrix implements method in BigMatrix; expected @Override
+    public BigMatrix getRowMatrix(int row) throws MatrixIndexException {
+                     ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public BigMatrix getRowMatrix(int row) throws MatrixIndexException {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-98/src/java/org/apache/commons/math/linear/BigMatrixImpl.java:723: warning: [MissingOverride] getColumnMatrix implements method in BigMatrix; expected @Override
+    public BigMatrix getColumnMatrix(int column) throws MatrixIndexException {
+                     ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public BigMatrix getColumnMatrix(int column) throws MatrixIndexException {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-98/src/java/org/apache/commons/math/linear/BigMatrixImpl.java:745: warning: [MissingOverride] getRow implements method in BigMatrix; expected @Override
+    public BigDecimal[] getRow(int row) throws MatrixIndexException {
+                        ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public BigDecimal[] getRow(int row) throws MatrixIndexException {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-98/src/java/org/apache/commons/math/linear/BigMatrixImpl.java:766: warning: [MissingOverride] getRowAsDoubleArray implements method in BigMatrix; expected @Override
+    public double[] getRowAsDoubleArray(int row) throws MatrixIndexException {
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double[] getRowAsDoubleArray(int row) throws MatrixIndexException {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-98/src/java/org/apache/commons/math/linear/BigMatrixImpl.java:788: warning: [MissingOverride] getColumn implements method in BigMatrix; expected @Override
+    public BigDecimal[] getColumn(int col) throws MatrixIndexException {
+                        ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public BigDecimal[] getColumn(int col) throws MatrixIndexException {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-98/src/java/org/apache/commons/math/linear/BigMatrixImpl.java:811: warning: [MissingOverride] getColumnAsDoubleArray implements method in BigMatrix; expected @Override
+    public double[] getColumnAsDoubleArray(int col) throws MatrixIndexException {
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double[] getColumnAsDoubleArray(int col) throws MatrixIndexException {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-98/src/java/org/apache/commons/math/linear/BigMatrixImpl.java:838: warning: [MissingOverride] getEntry implements method in BigMatrix; expected @Override
+    public BigDecimal getEntry(int row, int column)
+                      ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public BigDecimal getEntry(int row, int column)'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-98/src/java/org/apache/commons/math/linear/BigMatrixImpl.java:863: warning: [MissingOverride] getEntryAsDouble implements method in BigMatrix; expected @Override
+    public double getEntryAsDouble(int row, int column) throws MatrixIndexException {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double getEntryAsDouble(int row, int column) throws MatrixIndexException {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-98/src/java/org/apache/commons/math/linear/BigMatrixImpl.java:872: warning: [MissingOverride] transpose implements method in BigMatrix; expected @Override
+    public BigMatrix transpose() {
+                     ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public BigMatrix transpose() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-98/src/java/org/apache/commons/math/linear/BigMatrixImpl.java:891: warning: [MissingOverride] inverse implements method in BigMatrix; expected @Override
+    public BigMatrix inverse() throws InvalidMatrixException {
+                     ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public BigMatrix inverse() throws InvalidMatrixException {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-98/src/java/org/apache/commons/math/linear/BigMatrixImpl.java:901: warning: [MissingOverride] getDeterminant implements method in BigMatrix; expected @Override
+    public BigDecimal getDeterminant() throws InvalidMatrixException {
+                      ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public BigDecimal getDeterminant() throws InvalidMatrixException {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-98/src/java/org/apache/commons/math/linear/BigMatrixImpl.java:920: warning: [MissingOverride] isSquare implements method in BigMatrix; expected @Override
+    public boolean isSquare() {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public boolean isSquare() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-98/src/java/org/apache/commons/math/linear/BigMatrixImpl.java:928: warning: [MissingOverride] isSingular implements method in BigMatrix; expected @Override
+    public boolean isSingular() {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public boolean isSingular() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-98/src/java/org/apache/commons/math/linear/BigMatrixImpl.java:946: warning: [MissingOverride] getRowDimension implements method in BigMatrix; expected @Override
+    public int getRowDimension() {
+               ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int getRowDimension() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-98/src/java/org/apache/commons/math/linear/BigMatrixImpl.java:955: warning: [MissingOverride] getColumnDimension implements method in BigMatrix; expected @Override
+    public int getColumnDimension() {
+               ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int getColumnDimension() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-98/src/java/org/apache/commons/math/linear/BigMatrixImpl.java:967: warning: [MissingOverride] getTrace implements method in BigMatrix; expected @Override
+    public BigDecimal getTrace() throws IllegalArgumentException {
+                      ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public BigDecimal getTrace() throws IllegalArgumentException {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-98/src/java/org/apache/commons/math/linear/BigMatrixImpl.java:985: warning: [MissingOverride] operate implements method in BigMatrix; expected @Override
+    public BigDecimal[] operate(BigDecimal[] v) throws IllegalArgumentException {
+                        ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public BigDecimal[] operate(BigDecimal[] v) throws IllegalArgumentException {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-98/src/java/org/apache/commons/math/linear/BigMatrixImpl.java:1024: warning: [MissingOverride] preMultiply implements method in BigMatrix; expected @Override
+    public BigDecimal[] preMultiply(BigDecimal[] v) throws IllegalArgumentException {
+                        ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public BigDecimal[] preMultiply(BigDecimal[] v) throws IllegalArgumentException {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-98/src/java/org/apache/commons/math/linear/BigMatrixImpl.java:1052: warning: [MissingOverride] solve implements method in BigMatrix; expected @Override
+    public BigDecimal[] solve(BigDecimal[] b) throws IllegalArgumentException, InvalidMatrixException {
+                        ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public BigDecimal[] solve(BigDecimal[] b) throws IllegalArgumentException, InvalidMatrixException {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-98/src/java/org/apache/commons/math/linear/BigMatrixImpl.java:1096: warning: [MissingOverride] solve implements method in BigMatrix; expected @Override
+    public BigMatrix solve(BigMatrix b) throws IllegalArgumentException, InvalidMatrixException  {
+                     ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public BigMatrix solve(BigMatrix b) throws IllegalArgumentException, InvalidMatrixException  {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-98/src/java/org/apache/commons/math/linear/BigMatrixImpl.java:1253: warning: [MissingOverride] toString overrides method in Object; expected @Override
+    public String toString() {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public String toString() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-98/src/java/org/apache/commons/math/linear/BigMatrixImpl.java:1284: warning: [MissingOverride] equals overrides method in Object; expected @Override
+    public boolean equals(Object object) {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public boolean equals(Object object) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-98/src/java/org/apache/commons/math/linear/BigMatrixImpl.java:1313: warning: [MissingOverride] hashCode overrides method in Object; expected @Override
+    public int hashCode() {
+               ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int hashCode() {'?
+36 warnings

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.1.0" sequence="0" timestamp="1542185447000" analysisTimestamp="1542185450621" release="">
+  <Project projectName="">
+    <Jar>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-119/src</Jar>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-119/build/classes</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-119/lib/args4j.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-119/lib/guava.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-119/lib/json.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-119/lib/jsr305.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-119/lib/protobuf-java.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-119/build/lib/rhino.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-119/lib/ant.jar</AuxClasspathEntry>
+  </Project>
+  <BugInstance type="NP_UNWRITTEN_FIELD" priority="2" rank="8" abbrev="NP" category="CORRECTNESS" instanceHash="69b82b70f756d5a15a202288d7af9e5f" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="476">
+    <ShortMessage>Read of unwritten field</ShortMessage>
+    <LongMessage>Read of unwritten field node in com.google.javascript.jscomp.GlobalNamespace.scanNewNodes(List)</LongMessage>
+    <Class classname="com.google.javascript.jscomp.GlobalNamespace" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.GlobalNamespace" start="52" end="276" sourcefile="GlobalNamespace.java" sourcepath="com/google/javascript/jscomp/GlobalNamespace.java">
+        <Message>At GlobalNamespace.java:[lines 52-276]</Message>
+      </SourceLine>
+      <Message>In class com.google.javascript.jscomp.GlobalNamespace</Message>
+    </Class>
+    <Method classname="com.google.javascript.jscomp.GlobalNamespace" name="scanNewNodes" signature="(Ljava/util/List;)V" isStatic="false" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.GlobalNamespace" start="196" end="204" startBytecode="0" endBytecode="158" sourcefile="GlobalNamespace.java" sourcepath="com/google/javascript/jscomp/GlobalNamespace.java"/>
+      <Message>In method com.google.javascript.jscomp.GlobalNamespace.scanNewNodes(List)</Message>
+    </Method>
+    <Field classname="com.google.javascript.jscomp.GlobalNamespace$AstChange" name="node" signature="Lcom/google/javascript/rhino/Node;" isStatic="false" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.GlobalNamespace$AstChange" sourcefile="GlobalNamespace.java" sourcepath="com/google/javascript/jscomp/GlobalNamespace.java">
+        <Message>In GlobalNamespace.java</Message>
+      </SourceLine>
+      <Message>Field com.google.javascript.jscomp.GlobalNamespace$AstChange.node</Message>
+    </Field>
+    <SourceLine classname="com.google.javascript.jscomp.GlobalNamespace" primary="true" start="199" end="199" startBytecode="41" endBytecode="41" sourcefile="GlobalNamespace.java" sourcepath="com/google/javascript/jscomp/GlobalNamespace.java">
+      <Message>At GlobalNamespace.java:[line 199]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="CORRECTNESS">
+    <Description>Correctness</Description>
+  </BugCategory>
+  <BugPattern type="NP_UNWRITTEN_FIELD" abbrev="NP" category="CORRECTNESS">
+    <ShortDescription>Read of unwritten field</ShortDescription>
+    <Details><![CDATA[
+
+  <p> The program is dereferencing a field that does not seem to ever have a non-null value written to it.
+Unless the field is initialized via some mechanism not seen by the analysis,
+dereferencing this value will generate a null pointer exception.
+</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="NP" cweid="476">
+    <Description>Null pointer dereference</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 14 Nov 2018 03:50:47 -0500" total_classes="9" referenced_classes="89" total_bugs="1" total_size="663" num_packages="1" java_version="1.8.0_121" vm_version="25.121-b13" cpu_seconds="9.78" clock_seconds="4.91" peak_mbytes="116.65" alloc_mbytes="1820.50" gc_seconds="0.08" priority_2="1">
+    <FileStats path="com/google/javascript/jscomp/GlobalNamespace.java" bugCount="1" size="663" bugHash="b2100177e5ed3bb48dafc0f88ac4b72f"/>
+    <PackageStats package="com.google.javascript.jscomp" total_bugs="1" total_types="9" total_size="663" priority_2="1">
+      <ClassStats class="com.google.javascript.jscomp.GlobalNamespace" sourceFile="GlobalNamespace.java" interface="false" size="103" bugs="1" priority_2="1"/>
+      <ClassStats class="com.google.javascript.jscomp.GlobalNamespace$1" sourceFile="GlobalNamespace.java" interface="false" size="4" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.GlobalNamespace$AstChange" sourceFile="GlobalNamespace.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.GlobalNamespace$BuildGlobalNamespace" sourceFile="GlobalNamespace.java" interface="false" size="242" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.GlobalNamespace$Name" sourceFile="GlobalNamespace.java" interface="false" size="172" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.GlobalNamespace$Name$Type" sourceFile="GlobalNamespace.java" interface="false" size="17" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.GlobalNamespace$Ref" sourceFile="GlobalNamespace.java" interface="false" size="62" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.GlobalNamespace$Ref$Type" sourceFile="GlobalNamespace.java" interface="false" size="21" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.GlobalNamespace$Tracker" sourceFile="GlobalNamespace.java" interface="false" size="32" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="924" invocations="666" avgMicrosecondsPerInvocation="1387" maxMicrosecondsPerInvocation="27043" standardDeviationMicrosecondsPerInvocation="2434"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="667" invocations="665" avgMicrosecondsPerInvocation="1003" maxMicrosecondsPerInvocation="86859" standardDeviationMicrosecondsPerInvocation="4098"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="251" invocations="89" avgMicrosecondsPerInvocation="2823" maxMicrosecondsPerInvocation="30548" standardDeviationMicrosecondsPerInvocation="5730"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="171" invocations="89" avgMicrosecondsPerInvocation="1921" maxMicrosecondsPerInvocation="24020" standardDeviationMicrosecondsPerInvocation="3891"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="135" invocations="294" avgMicrosecondsPerInvocation="462" maxMicrosecondsPerInvocation="8024" standardDeviationMicrosecondsPerInvocation="864"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="124" invocations="111" avgMicrosecondsPerInvocation="1124" maxMicrosecondsPerInvocation="44030" standardDeviationMicrosecondsPerInvocation="4916"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="116" invocations="630" avgMicrosecondsPerInvocation="184" maxMicrosecondsPerInvocation="13031" standardDeviationMicrosecondsPerInvocation="659"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="91" invocations="35" avgMicrosecondsPerInvocation="2625" maxMicrosecondsPerInvocation="35444" standardDeviationMicrosecondsPerInvocation="6443"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="90" invocations="35" avgMicrosecondsPerInvocation="2578" maxMicrosecondsPerInvocation="82686" standardDeviationMicrosecondsPerInvocation="13741"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="78" invocations="35" avgMicrosecondsPerInvocation="2248" maxMicrosecondsPerInvocation="38915" standardDeviationMicrosecondsPerInvocation="6794"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="74" invocations="89" avgMicrosecondsPerInvocation="838" maxMicrosecondsPerInvocation="8553" standardDeviationMicrosecondsPerInvocation="1696"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

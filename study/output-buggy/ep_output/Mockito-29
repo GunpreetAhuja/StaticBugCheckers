@@ -1,0 +1,11 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Mockito-29/src/org/mockito/internal/matchers/Same.java:22: warning: [MissingOverride] matches implements method in ArgumentMatcher; expected @Override
+    public boolean matches(Object actual) {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public boolean matches(Object actual) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Mockito-29/src/org/mockito/internal/matchers/Same.java:26: warning: [MissingOverride] describeTo overrides method in ArgumentMatcher; expected @Override
+    public void describeTo(Description description) {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void describeTo(Description description) {'?
+2 warnings

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.1.0" sequence="0" timestamp="1542185343000" analysisTimestamp="1542185346749" release="">
+  <Project projectName="">
+    <Jar>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-102/src</Jar>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-102/build/classes</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-102/lib/ant_deploy.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-102/lib/google_common_deploy.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-102/lib/hamcrest-core-1.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-102/lib/junit4-core.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-102/lib/junit4-legacy.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-102/lib/libtrunk_rhino_parser_jarjared.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-102/lib/protobuf_deploy.jar</AuxClasspathEntry>
+  </Project>
+  <BugInstance type="SF_SWITCH_NO_DEFAULT" priority="2" rank="19" abbrev="SF" category="STYLE" instanceHash="81e1e3405fafb47cd11014db3091b48f" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Switch statement found where default case is missing</ShortMessage>
+    <LongMessage>Switch statement found in com.google.javascript.jscomp.Normalize.extractForInitializer(Node, Node, Node) where default case is missing</LongMessage>
+    <Class classname="com.google.javascript.jscomp.Normalize" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.Normalize" start="66" end="434" sourcefile="Normalize.java" sourcepath="com/google/javascript/jscomp/Normalize.java">
+        <Message>At Normalize.java:[lines 66-434]</Message>
+      </SourceLine>
+      <Message>In class com.google.javascript.jscomp.Normalize</Message>
+    </Class>
+    <Method classname="com.google.javascript.jscomp.Normalize" name="extractForInitializer" signature="(Lcom/google/javascript/rhino/Node;Lcom/google/javascript/rhino/Node;Lcom/google/javascript/rhino/Node;)V" isStatic="false" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.Normalize" start="314" end="343" startBytecode="0" endBytecode="368" sourcefile="Normalize.java" sourcepath="com/google/javascript/jscomp/Normalize.java"/>
+      <Message>In method com.google.javascript.jscomp.Normalize.extractForInitializer(Node, Node, Node)</Message>
+    </Method>
+    <SourceLine classname="com.google.javascript.jscomp.Normalize" primary="true" start="318" end="338" startBytecode="46" endBytecode="167" sourcefile="Normalize.java" sourcepath="com/google/javascript/jscomp/Normalize.java">
+      <Message>At Normalize.java:[lines 318-338]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="SF_SWITCH_NO_DEFAULT" priority="2" rank="19" abbrev="SF" category="STYLE" instanceHash="514ca59fd25d43f244fa12473837fec2" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Switch statement found where default case is missing</ShortMessage>
+    <LongMessage>Switch statement found in com.google.javascript.jscomp.Normalize.visit(NodeTraversal, Node, Node) where default case is missing</LongMessage>
+    <Class classname="com.google.javascript.jscomp.Normalize" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.Normalize" start="66" end="434" sourcefile="Normalize.java" sourcepath="com/google/javascript/jscomp/Normalize.java">
+        <Message>At Normalize.java:[lines 66-434]</Message>
+      </SourceLine>
+      <Message>In class com.google.javascript.jscomp.Normalize</Message>
+    </Class>
+    <Method classname="com.google.javascript.jscomp.Normalize" name="visit" signature="(Lcom/google/javascript/jscomp/NodeTraversal;Lcom/google/javascript/rhino/Node;Lcom/google/javascript/rhino/Node;)V" isStatic="false" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.Normalize" start="235" end="246" startBytecode="0" endBytecode="130" sourcefile="Normalize.java" sourcepath="com/google/javascript/jscomp/Normalize.java"/>
+      <Message>In method com.google.javascript.jscomp.Normalize.visit(NodeTraversal, Node, Node)</Message>
+    </Method>
+    <SourceLine classname="com.google.javascript.jscomp.Normalize" primary="true" start="235" end="242" startBytecode="4" endBytecode="71" sourcefile="Normalize.java" sourcepath="com/google/javascript/jscomp/Normalize.java">
+      <Message>At Normalize.java:[lines 235-242]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="SF_SWITCH_NO_DEFAULT" abbrev="SF" category="STYLE">
+    <ShortDescription>Switch statement found where default case is missing</ShortDescription>
+    <Details><![CDATA[
+
+  <p> This method contains a switch statement where default case is missing.
+  Usually you need to provide a default case.</p>
+  <p>Because the analysis only looks at the generated bytecode, this warning can be incorrect triggered if
+the default case is at the end of the switch statement and the switch statement doesn't contain break statements for other
+cases.
+
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="SF">
+    <Description>Switch case falls through</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 14 Nov 2018 03:49:03 -0500" total_classes="6" referenced_classes="58" total_bugs="2" total_size="231" num_packages="1" java_version="1.8.0_121" vm_version="25.121-b13" cpu_seconds="9.01" clock_seconds="4.71" peak_mbytes="114.10" alloc_mbytes="1820.50" gc_seconds="0.08" priority_2="2">
+    <FileStats path="com/google/javascript/jscomp/Normalize.java" bugCount="2" size="231" bugHash="0ec9fa96dac129940f588de52926fda4"/>
+    <PackageStats package="com.google.javascript.jscomp" total_bugs="2" total_types="6" total_size="231" priority_2="2">
+      <ClassStats class="com.google.javascript.jscomp.Normalize" sourceFile="Normalize.java" interface="false" size="120" bugs="2" priority_2="2"/>
+      <ClassStats class="com.google.javascript.jscomp.Normalize$1" sourceFile="Normalize.java" interface="false" size="1" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.Normalize$DuplicateDeclarationHandler" sourceFile="Normalize.java" interface="false" size="25" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.Normalize$PropogateConstantAnnotations" sourceFile="Normalize.java" interface="false" size="27" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.Normalize$ScopeTicklingCallback" sourceFile="Normalize.java" interface="false" size="14" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.Normalize$VerifyConstants" sourceFile="Normalize.java" interface="false" size="44" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="775" invocations="571" avgMicrosecondsPerInvocation="1358" maxMicrosecondsPerInvocation="38020" standardDeviationMicrosecondsPerInvocation="2693"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="622" invocations="570" avgMicrosecondsPerInvocation="1092" maxMicrosecondsPerInvocation="42774" standardDeviationMicrosecondsPerInvocation="3438"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="239" invocations="58" avgMicrosecondsPerInvocation="4120" maxMicrosecondsPerInvocation="83048" standardDeviationMicrosecondsPerInvocation="11415"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="196" invocations="209" avgMicrosecondsPerInvocation="941" maxMicrosecondsPerInvocation="37176" standardDeviationMicrosecondsPerInvocation="2912"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="175" invocations="539" avgMicrosecondsPerInvocation="326" maxMicrosecondsPerInvocation="25732" standardDeviationMicrosecondsPerInvocation="1915"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="148" invocations="58" avgMicrosecondsPerInvocation="2565" maxMicrosecondsPerInvocation="18196" standardDeviationMicrosecondsPerInvocation="4184"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="91" invocations="13" avgMicrosecondsPerInvocation="7064" maxMicrosecondsPerInvocation="73678" standardDeviationMicrosecondsPerInvocation="19493"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="87" invocations="13" avgMicrosecondsPerInvocation="6719" maxMicrosecondsPerInvocation="35143" standardDeviationMicrosecondsPerInvocation="10454"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="86" invocations="13" avgMicrosecondsPerInvocation="6615" maxMicrosecondsPerInvocation="41588" standardDeviationMicrosecondsPerInvocation="10772"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="85" invocations="58" avgMicrosecondsPerInvocation="1474" maxMicrosecondsPerInvocation="26847" standardDeviationMicrosecondsPerInvocation="4517"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="74" invocations="13" avgMicrosecondsPerInvocation="5714" maxMicrosecondsPerInvocation="39685" standardDeviationMicrosecondsPerInvocation="10445"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="68" invocations="13" avgMicrosecondsPerInvocation="5300" maxMicrosecondsPerInvocation="23707" standardDeviationMicrosecondsPerInvocation="6733"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="66" invocations="80" avgMicrosecondsPerInvocation="834" maxMicrosecondsPerInvocation="19793" standardDeviationMicrosecondsPerInvocation="2621"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

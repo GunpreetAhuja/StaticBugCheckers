@@ -1,0 +1,46 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-103/src/java/org/apache/commons/math/distribution/NormalDistributionImpl.java:67: warning: [MissingOverride] getMean implements method in NormalDistribution; expected @Override
+    public double getMean() {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double getMean() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-103/src/java/org/apache/commons/math/distribution/NormalDistributionImpl.java:75: warning: [MissingOverride] setMean implements method in NormalDistribution; expected @Override
+    public void setMean(double mean) {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void setMean(double mean) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-103/src/java/org/apache/commons/math/distribution/NormalDistributionImpl.java:83: warning: [MissingOverride] getStandardDeviation implements method in NormalDistribution; expected @Override
+    public double getStandardDeviation() {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double getStandardDeviation() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-103/src/java/org/apache/commons/math/distribution/NormalDistributionImpl.java:92: warning: [MissingOverride] setStandardDeviation implements method in NormalDistribution; expected @Override
+    public void setStandardDeviation(double sd) {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void setStandardDeviation(double sd) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-103/src/java/org/apache/commons/math/distribution/NormalDistributionImpl.java:108: warning: [MissingOverride] cumulativeProbability implements method in Distribution; expected @Override
+    public double cumulativeProbability(double x) throws MathException {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double cumulativeProbability(double x) throws MathException {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-103/src/java/org/apache/commons/math/distribution/NormalDistributionImpl.java:127: warning: [MissingOverride] inverseCumulativeProbability overrides method in AbstractContinuousDistribution; expected @Override
+    public double inverseCumulativeProbability(final double p) 
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double inverseCumulativeProbability(final double p)'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-103/src/java/org/apache/commons/math/distribution/NormalDistributionImpl.java:147: warning: [MissingOverride] getDomainLowerBound implements method in AbstractContinuousDistribution; expected @Override
+    protected double getDomainLowerBound(double p) {
+                     ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override protected double getDomainLowerBound(double p) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-103/src/java/org/apache/commons/math/distribution/NormalDistributionImpl.java:168: warning: [MissingOverride] getDomainUpperBound implements method in AbstractContinuousDistribution; expected @Override
+    protected double getDomainUpperBound(double p) {
+                     ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override protected double getDomainUpperBound(double p) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-103/src/java/org/apache/commons/math/distribution/NormalDistributionImpl.java:188: warning: [MissingOverride] getInitialDomain implements method in AbstractContinuousDistribution; expected @Override
+    protected double getInitialDomain(double p) {
+                     ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override protected double getInitialDomain(double p) {'?
+9 warnings

@@ -1,0 +1,13 @@
+Found 1 issue
+
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-60/src/com/google/javascript/jscomp/NodeUtil.java:2286: error: NULL_DEREFERENCE
+  object `addingRoot` last assigned on line 2272 could be null and is dereferenced at line 2286.
+  2284.   
+  2285.       // make sure that the adding root looks ok
+  2286. >     Preconditions.checkState(addingRoot.getType() == Token.BLOCK ||
+  2287.           addingRoot.getType() == Token.SCRIPT);
+  2288.       Preconditions.checkState(addingRoot.getFirstChild() == null ||
+
+Summary of the reports
+
+  NULL_DEREFERENCE: 1

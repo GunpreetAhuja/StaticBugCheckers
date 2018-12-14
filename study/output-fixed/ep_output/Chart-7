@@ -1,0 +1,23 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Chart-7/source/org/jfree/data/time/TimePeriodValues.java:192: warning: [MissingOverride] getItemCount implements method in Series; expected @Override
+    public int getItemCount() {
+               ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int getItemCount() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Chart-7/source/org/jfree/data/time/TimePeriodValues.java:414: warning: [MissingOverride] equals overrides method in Series; expected @Override
+    public boolean equals(Object obj) {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public boolean equals(Object obj) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Chart-7/source/org/jfree/data/time/TimePeriodValues.java:450: warning: [MissingOverride] hashCode overrides method in Series; expected @Override
+    public int hashCode() {
+               ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int hashCode() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Chart-7/source/org/jfree/data/time/TimePeriodValues.java:479: warning: [MissingOverride] clone overrides method in Series; expected @Override
+    public Object clone() throws CloneNotSupportedException {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Object clone() throws CloneNotSupportedException {'?
+Note: /Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Chart-7/source/org/jfree/data/time/TimePeriodValues.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+4 warnings

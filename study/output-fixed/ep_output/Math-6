@@ -1,0 +1,49 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-6/src/main/java/org/apache/commons/math3/optim/nonlinear/scalar/noderiv/CMAESOptimizer.java:189: warning: [OvershadowingSubclassFields] Overshadowing variables of superclass causes confusion and errors. This variable is overshadowing a variable in superclass:  BaseOptimizer
+    private int iterations;
+                ^
+    (see http://errorprone.info/bugpattern/OvershadowingSubclassFields)
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-6/src/main/java/org/apache/commons/math3/optim/nonlinear/scalar/noderiv/CMAESOptimizer.java:850: warning: [MissingOverride] compareTo implements method in Comparable; expected @Override
+        public int compareTo(DoubleIndex o) {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int compareTo(DoubleIndex o) {'?
+2 warnings
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-6/src/main/java/org/apache/commons/math3/optim/nonlinear/scalar/noderiv/SimplexOptimizer.java:134: warning: [MissingOverride] value implements method in MultivariateFunction; expected @Override
+                public double value(double[] point) {
+                              ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double value(double[] point) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-6/src/main/java/org/apache/commons/math3/optim/nonlinear/scalar/noderiv/SimplexOptimizer.java:142: warning: [MissingOverride] compare implements method in Comparator; expected @Override
+            public int compare(final PointValuePair o1,
+                       ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int compare(final PointValuePair o1,'?
+2 warnings
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-6/src/main/java/org/apache/commons/math3/optim/BaseOptimizer.java:212: warning: [MissingOverride] trigger implements method in MaxCountExceededCallback; expected @Override
+        public void trigger(int max) {
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void trigger(int max) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-6/src/main/java/org/apache/commons/math3/optim/BaseOptimizer.java:227: warning: [MissingOverride] trigger implements method in MaxCountExceededCallback; expected @Override
+        public void trigger(int max) {
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void trigger(int max) {'?
+2 warnings
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-6/src/main/java/org/apache/commons/math3/optim/nonlinear/scalar/noderiv/PowellOptimizer.java:346: warning: [MissingOverride] value implements method in UnivariateFunction; expected @Override
+                    public double value(double alpha) {
+                                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double value(double alpha) {'?
+1 warning
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-6/src/main/java/org/apache/commons/math3/optim/nonlinear/scalar/gradient/NonLinearConjugateGradientOptimizer.java:344: warning: [MissingOverride] precondition implements method in Preconditioner; expected @Override
+        public double[] precondition(double[] variables, double[] r) {
+                        ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double[] precondition(double[] variables, double[] r) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-6/src/main/java/org/apache/commons/math3/optim/nonlinear/scalar/gradient/NonLinearConjugateGradientOptimizer.java:376: warning: [MissingOverride] value implements method in UnivariateFunction; expected @Override
+        public double value(double x) {
+                      ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double value(double x) {'?
+2 warnings

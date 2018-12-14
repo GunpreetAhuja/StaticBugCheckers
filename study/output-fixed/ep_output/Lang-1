@@ -1,0 +1,11 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-1/src/main/java/org/apache/commons/lang3/math/NumberUtils.java:532: warning: [OperatorPrecedence] Use grouping parenthesis to make the operator precedence explicit
+                        && (numeric.charAt(0) == '-' && isDigits(numeric.substring(1)) || isDigits(numeric))) {
+                                                     ^
+    (see http://errorprone.info/bugpattern/OperatorPrecedence)
+  Did you mean '&& ((numeric.charAt(0) == '-' && isDigits(numeric.substring(1))) || isDigits(numeric))) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-1/src/main/java/org/apache/commons/lang3/math/NumberUtils.java:734: error: [IdentityBinaryExpression] A binary expression where both operands are the same is usually incorrect; the value of this expression is equivalent to `str.startsWith("0x", pos)`.
+        if (str.startsWith("0x", pos) || str.startsWith("0x", pos)) { // hex
+                                      ^
+    (see http://errorprone.info/bugpattern/IdentityBinaryExpression)
+1 error
+1 warning

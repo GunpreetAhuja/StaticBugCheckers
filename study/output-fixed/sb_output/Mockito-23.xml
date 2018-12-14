@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.1.0" sequence="0" timestamp="1542191198000" analysisTimestamp="1542191201558" release="">
+  <Project projectName="">
+    <Jar>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Mockito-23/src</Jar>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Mockito-23/target/classes</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/framework/projects/Mockito/lib/asm-all-5.0.4.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/framework/projects/Mockito/lib/assertj-core-2.1.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/framework/projects/Mockito/lib/cglib-and-asm-1.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/framework/projects/Mockito/lib/cobertura-2.0.3.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/framework/projects/Mockito/lib/fest-assert-1.3.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/framework/projects/Mockito/lib/fest-util-1.1.4.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/framework/projects/Mockito/lib/hamcrest-all-1.3.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/framework/projects/Mockito/lib/hamcrest-core-1.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/framework/projects/Mockito/lib/objenesis-2.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/framework/projects/Mockito/lib/objenesis-2.2.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/framework/projects/Mockito/lib/powermock-reflect-1.2.5.jar</AuxClasspathEntry>
+  </Project>
+  <BugInstance type="IS2_INCONSISTENT_SYNC" priority="2" rank="17" abbrev="IS" category="MT_CORRECTNESS" instanceHash="ee52f96360b72545d5971deec554a0ad" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="366">
+    <ShortMessage>Inconsistent synchronization</ShortMessage>
+    <LongMessage>Inconsistent synchronization of org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs.delegate; locked 66% of time</LongMessage>
+    <Class classname="org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs" primary="true">
+      <SourceLine classname="org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs" start="40" end="143" sourcefile="ReturnsDeepStubs.java" sourcepath="org/mockito/internal/stubbing/defaultanswers/ReturnsDeepStubs.java">
+        <Message>At ReturnsDeepStubs.java:[lines 40-143]</Message>
+      </SourceLine>
+      <Message>In class org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs</Message>
+    </Class>
+    <Field classname="org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs" name="delegate" signature="Lorg/mockito/internal/stubbing/defaultanswers/ReturnsEmptyValues;" isStatic="false" primary="true">
+      <SourceLine classname="org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs" sourcefile="ReturnsDeepStubs.java" sourcepath="org/mockito/internal/stubbing/defaultanswers/ReturnsDeepStubs.java">
+        <Message>In ReturnsDeepStubs.java</Message>
+      </SourceLine>
+      <Message>Field org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs.delegate</Message>
+    </Field>
+    <Int value="66" role="INT_SYNC_PERCENT">
+      <Message>Synchronized 66% of the time</Message>
+    </Int>
+    <SourceLine classname="org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs" primary="true" start="55" end="55" startBytecode="45" endBytecode="45" sourcefile="ReturnsDeepStubs.java" sourcepath="org/mockito/internal/stubbing/defaultanswers/ReturnsDeepStubs.java" role="SOURCE_LINE_UNSYNC_ACCESS">
+      <Message>Unsynchronized access at ReturnsDeepStubs.java:[line 55]</Message>
+    </SourceLine>
+    <SourceLine classname="org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs" start="68" end="68" startBytecode="1" endBytecode="1" sourcefile="ReturnsDeepStubs.java" sourcepath="org/mockito/internal/stubbing/defaultanswers/ReturnsDeepStubs.java" role="SOURCE_LINE_SYNC_ACCESS">
+      <Message>Synchronized access at ReturnsDeepStubs.java:[line 68]</Message>
+    </SourceLine>
+    <SourceLine classname="org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs" start="69" end="69" startBytecode="15" endBytecode="15" sourcefile="ReturnsDeepStubs.java" sourcepath="org/mockito/internal/stubbing/defaultanswers/ReturnsDeepStubs.java" role="SOURCE_LINE_SYNC_ACCESS">
+      <Message>Synchronized access at ReturnsDeepStubs.java:[line 69]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="IS2_INCONSISTENT_SYNC" priority="2" rank="17" abbrev="IS" category="MT_CORRECTNESS" instanceHash="44c8a4f14363836e3f26d59ed3f71ca7" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="366">
+    <ShortMessage>Inconsistent synchronization</ShortMessage>
+    <LongMessage>Inconsistent synchronization of org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs.mockitoCore; locked 50% of time</LongMessage>
+    <Class classname="org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs" primary="true">
+      <SourceLine classname="org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs" start="40" end="143" sourcefile="ReturnsDeepStubs.java" sourcepath="org/mockito/internal/stubbing/defaultanswers/ReturnsDeepStubs.java">
+        <Message>At ReturnsDeepStubs.java:[lines 40-143]</Message>
+      </SourceLine>
+      <Message>In class org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs</Message>
+    </Class>
+    <Field classname="org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs" name="mockitoCore" signature="Lorg/mockito/internal/MockitoCore;" isStatic="false" primary="true">
+      <SourceLine classname="org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs" sourcefile="ReturnsDeepStubs.java" sourcepath="org/mockito/internal/stubbing/defaultanswers/ReturnsDeepStubs.java">
+        <Message>In ReturnsDeepStubs.java</Message>
+      </SourceLine>
+      <Message>Field org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs.mockitoCore</Message>
+    </Field>
+    <Int value="50" role="INT_SYNC_PERCENT">
+      <Message>Synchronized 50% of the time</Message>
+    </Int>
+    <SourceLine classname="org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs" primary="true" start="99" end="99" startBytecode="1" endBytecode="1" sourcefile="ReturnsDeepStubs.java" sourcepath="org/mockito/internal/stubbing/defaultanswers/ReturnsDeepStubs.java" role="SOURCE_LINE_UNSYNC_ACCESS">
+      <Message>Unsynchronized access at ReturnsDeepStubs.java:[line 99]</Message>
+    </SourceLine>
+    <SourceLine classname="org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs" start="54" end="54" startBytecode="34" endBytecode="34" sourcefile="ReturnsDeepStubs.java" sourcepath="org/mockito/internal/stubbing/defaultanswers/ReturnsDeepStubs.java" role="SOURCE_LINE_UNSYNC_ACCESS">
+      <Message>Unsynchronized access at ReturnsDeepStubs.java:[line 54]</Message>
+    </SourceLine>
+    <SourceLine classname="org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs" start="62" end="62" startBytecode="1" endBytecode="1" sourcefile="ReturnsDeepStubs.java" sourcepath="org/mockito/internal/stubbing/defaultanswers/ReturnsDeepStubs.java" role="SOURCE_LINE_SYNC_ACCESS">
+      <Message>Synchronized access at ReturnsDeepStubs.java:[line 62]</Message>
+    </SourceLine>
+    <SourceLine classname="org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs" start="63" end="63" startBytecode="15" endBytecode="15" sourcefile="ReturnsDeepStubs.java" sourcepath="org/mockito/internal/stubbing/defaultanswers/ReturnsDeepStubs.java" role="SOURCE_LINE_SYNC_ACCESS">
+      <Message>Synchronized access at ReturnsDeepStubs.java:[line 63]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="MT_CORRECTNESS">
+    <Description>Multithreaded correctness</Description>
+  </BugCategory>
+  <BugPattern type="IS2_INCONSISTENT_SYNC" abbrev="IS" category="MT_CORRECTNESS">
+    <ShortDescription>Inconsistent synchronization</ShortDescription>
+    <Details><![CDATA[
+
+  <p> The fields of this class appear to be accessed inconsistently with respect
+  to synchronization.&nbsp; This bug report indicates that the bug pattern detector
+  judged that
+  </p>
+  <ul>
+  <li> The class contains a mix of locked and unlocked accesses,</li>
+  <li> The class is <b>not</b> annotated as javax.annotation.concurrent.NotThreadSafe,</li>
+  <li> At least one locked access was performed by one of the class's own methods, and</li>
+  <li> The number of unsynchronized field accesses (reads and writes) was no more than
+       one third of all accesses, with writes being weighed twice as high as reads</li>
+  </ul>
+
+  <p> A typical bug matching this bug pattern is forgetting to synchronize
+  one of the methods in a class that is intended to be thread-safe.</p>
+
+  <p> You can select the nodes labeled "Unsynchronized access" to show the
+  code locations where the detector believed that a field was accessed
+  without synchronization.</p>
+
+  <p> Note that there are various sources of inaccuracy in this detector;
+  for example, the detector cannot statically detect all situations in which
+  a lock is held.&nbsp; Also, even when the detector is accurate in
+  distinguishing locked vs. unlocked accesses, the code in question may still
+  be correct.</p>
+
+
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="IS" cweid="366">
+    <Description>Inconsistent synchronization</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 14 Nov 2018 05:26:38 -0500" total_classes="4" referenced_classes="33" total_bugs="2" total_size="69" num_packages="1" java_version="1.8.0_121" vm_version="25.121-b13" cpu_seconds="6.55" clock_seconds="3.48" peak_mbytes="114.99" alloc_mbytes="1820.50" gc_seconds="0.04" priority_2="2">
+    <FileStats path="org/mockito/internal/stubbing/defaultanswers/ReturnsDeepStubs.java" bugCount="2" size="69" bugHash="f54ef01ded547c41e642dfda07db7764"/>
+    <PackageStats package="org.mockito.internal.stubbing.defaultanswers" total_bugs="2" total_types="4" total_size="69" priority_2="2">
+      <ClassStats class="org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs" sourceFile="ReturnsDeepStubs.java" interface="false" size="51" bugs="2" priority_2="2"/>
+      <ClassStats class="org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs$1" sourceFile="ReturnsDeepStubs.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs$2" sourceFile="ReturnsDeepStubs.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs$SerializableAnswer" sourceFile="ReturnsDeepStubs.java" interface="false" size="4" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="608" invocations="427" avgMicrosecondsPerInvocation="1424" maxMicrosecondsPerInvocation="21843" standardDeviationMicrosecondsPerInvocation="2635"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="533" invocations="424" avgMicrosecondsPerInvocation="1257" maxMicrosecondsPerInvocation="41765" standardDeviationMicrosecondsPerInvocation="4324"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="136" invocations="33" avgMicrosecondsPerInvocation="4127" maxMicrosecondsPerInvocation="61518" standardDeviationMicrosecondsPerInvocation="10775"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="102" invocations="10" avgMicrosecondsPerInvocation="10281" maxMicrosecondsPerInvocation="100017" standardDeviationMicrosecondsPerInvocation="29912"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="94" invocations="392" avgMicrosecondsPerInvocation="240" maxMicrosecondsPerInvocation="25570" standardDeviationMicrosecondsPerInvocation="1409"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="74" invocations="10" avgMicrosecondsPerInvocation="7445" maxMicrosecondsPerInvocation="37119" standardDeviationMicrosecondsPerInvocation="12658"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="72" invocations="59" avgMicrosecondsPerInvocation="1233" maxMicrosecondsPerInvocation="35477" standardDeviationMicrosecondsPerInvocation="4597"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="71" invocations="33" avgMicrosecondsPerInvocation="2162" maxMicrosecondsPerInvocation="17137" standardDeviationMicrosecondsPerInvocation="3957"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="54" invocations="66" avgMicrosecondsPerInvocation="829" maxMicrosecondsPerInvocation="24688" standardDeviationMicrosecondsPerInvocation="3283"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="53" invocations="33" avgMicrosecondsPerInvocation="1636" maxMicrosecondsPerInvocation="28644" standardDeviationMicrosecondsPerInvocation="5465"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

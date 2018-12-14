@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.1.0" sequence="0" timestamp="1542190775000" analysisTimestamp="1542190777803" release="">
+  <Project projectName="">
+    <Jar>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-28/src/main/java</Jar>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-28/target/classes</AuxClasspathEntry>
+  </Project>
+  <BugInstance type="RC_REF_COMPARISON" priority="1" rank="1" abbrev="RC" category="CORRECTNESS" instanceHash="38d0d6f58d51d8137df7284af9faf5c0" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Suspicious reference comparison</ShortMessage>
+    <LongMessage>Suspicious comparison of Integer references in org.apache.commons.math3.optimization.linear.SimplexSolver.getPivotRow(SimplexTableau, int)</LongMessage>
+    <Class classname="org.apache.commons.math3.optimization.linear.SimplexSolver" primary="true">
+      <SourceLine classname="org.apache.commons.math3.optimization.linear.SimplexSolver" start="51" end="233" sourcefile="SimplexSolver.java" sourcepath="org/apache/commons/math3/optimization/linear/SimplexSolver.java">
+        <Message>At SimplexSolver.java:[lines 51-233]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.math3.optimization.linear.SimplexSolver</Message>
+    </Class>
+    <Method classname="org.apache.commons.math3.optimization.linear.SimplexSolver" name="getPivotRow" signature="(Lorg/apache/commons/math3/optimization/linear/SimplexTableau;I)Ljava/lang/Integer;" isStatic="false" primary="true">
+      <SourceLine classname="org.apache.commons.math3.optimization.linear.SimplexSolver" start="92" end="157" startBytecode="0" endBytecode="174" sourcefile="SimplexSolver.java" sourcepath="org/apache/commons/math3/optimization/linear/SimplexSolver.java"/>
+      <Message>In method org.apache.commons.math3.optimization.linear.SimplexSolver.getPivotRow(SimplexTableau, int)</Message>
+    </Method>
+    <Type descriptor="Ljava/lang/Integer;" role="TYPE_FOUND">
+      <SourceLine classname="java.lang.Integer" start="52" end="1590" sourcefile="Integer.java" sourcepath="java/lang/Integer.java">
+        <Message>At Integer.java:[lines 52-1590]</Message>
+      </SourceLine>
+      <Message>Actual type Integer</Message>
+    </Type>
+    <LocalVariable name="?" register="9" pc="337" role="LOCAL_VARIABLE_VALUE_OF">
+      <Message>Value loaded from ?</Message>
+    </LocalVariable>
+    <SourceLine classname="org.apache.commons.math3.optimization.linear.SimplexSolver" primary="true" start="145" end="145" startBytecode="339" endBytecode="339" sourcefile="SimplexSolver.java" sourcepath="org/apache/commons/math3/optimization/linear/SimplexSolver.java">
+      <Message>At SimplexSolver.java:[line 145]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="RC_REF_COMPARISON" priority="1" rank="1" abbrev="RC" category="CORRECTNESS" instanceHash="f71b0c9e2a8faa68b6de68b13142c78f" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Suspicious reference comparison</ShortMessage>
+    <LongMessage>Suspicious comparison of Integer references in org.apache.commons.math3.optimization.linear.SimplexSolver.getPivotRow(SimplexTableau, int)</LongMessage>
+    <Class classname="org.apache.commons.math3.optimization.linear.SimplexSolver" primary="true">
+      <SourceLine classname="org.apache.commons.math3.optimization.linear.SimplexSolver" start="51" end="233" sourcefile="SimplexSolver.java" sourcepath="org/apache/commons/math3/optimization/linear/SimplexSolver.java">
+        <Message>At SimplexSolver.java:[lines 51-233]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.math3.optimization.linear.SimplexSolver</Message>
+    </Class>
+    <Method classname="org.apache.commons.math3.optimization.linear.SimplexSolver" name="getPivotRow" signature="(Lorg/apache/commons/math3/optimization/linear/SimplexTableau;I)Ljava/lang/Integer;" isStatic="false" primary="true">
+      <SourceLine classname="org.apache.commons.math3.optimization.linear.SimplexSolver" start="92" end="157" startBytecode="0" endBytecode="174" sourcefile="SimplexSolver.java" sourcepath="org/apache/commons/math3/optimization/linear/SimplexSolver.java"/>
+      <Message>In method org.apache.commons.math3.optimization.linear.SimplexSolver.getPivotRow(SimplexTableau, int)</Message>
+    </Method>
+    <Type descriptor="Ljava/lang/Integer;" role="TYPE_FOUND">
+      <SourceLine classname="java.lang.Integer" start="52" end="1590" sourcefile="Integer.java" sourcepath="java/lang/Integer.java">
+        <Message>At Integer.java:[lines 52-1590]</Message>
+      </SourceLine>
+      <Message>Actual type Integer</Message>
+    </Type>
+    <Method classname="org.apache.commons.math3.optimization.linear.SimplexTableau" name="getBasicRow" signature="(I)Ljava/lang/Integer;" isStatic="false" role="METHOD_RETURN_VALUE_OF">
+      <SourceLine classname="org.apache.commons.math3.optimization.linear.SimplexTableau" start="316" end="325" startBytecode="0" endBytecode="181" sourcefile="SimplexTableau.java" sourcepath="org/apache/commons/math3/optimization/linear/SimplexTableau.java"/>
+      <Message>Return value of org.apache.commons.math3.optimization.linear.SimplexTableau.getBasicRow(int) of type Integer</Message>
+    </Method>
+    <LocalVariable name="?" register="9" pc="347" role="LOCAL_VARIABLE_VALUE_OF">
+      <Message>Value loaded from ?</Message>
+    </LocalVariable>
+    <SourceLine classname="org.apache.commons.math3.optimization.linear.SimplexSolver" primary="true" start="146" end="146" startBytecode="350" endBytecode="350" sourcefile="SimplexSolver.java" sourcepath="org/apache/commons/math3/optimization/linear/SimplexSolver.java">
+      <Message>At SimplexSolver.java:[line 146]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="CORRECTNESS">
+    <Description>Correctness</Description>
+  </BugCategory>
+  <BugPattern type="RC_REF_COMPARISON" abbrev="RC" category="CORRECTNESS">
+    <ShortDescription>Suspicious reference comparison</ShortDescription>
+    <Details><![CDATA[
+
+<p> This method compares two reference values using the == or != operator,
+where the correct way to compare instances of this type is generally
+with the equals() method.
+It is possible to create distinct instances that are equal but do not compare as == since
+they are different objects.
+Examples of classes which should generally
+not be compared by reference are java.lang.Integer, java.lang.Float, etc.</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="RC">
+    <Description>Questionable use of reference equality rather than calling equals</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 14 Nov 2018 05:19:35 -0500" total_classes="1" referenced_classes="26" total_bugs="2" total_size="93" num_packages="1" java_version="1.8.0_121" vm_version="25.121-b13" cpu_seconds="7.66" clock_seconds="4.33" peak_mbytes="111.40" alloc_mbytes="1820.50" gc_seconds="0.05" priority_1="2">
+    <FileStats path="org/apache/commons/math3/optimization/linear/SimplexSolver.java" bugCount="2" size="93" bugHash="fc7417c02c1b5b72a97f3087bab8306f"/>
+    <PackageStats package="org.apache.commons.math3.optimization.linear" total_bugs="2" total_types="1" total_size="93" priority_1="2">
+      <ClassStats class="org.apache.commons.math3.optimization.linear.SimplexSolver" sourceFile="SimplexSolver.java" interface="false" size="93" bugs="2" priority_1="2"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="625" invocations="403" avgMicrosecondsPerInvocation="1553" maxMicrosecondsPerInvocation="62157" standardDeviationMicrosecondsPerInvocation="5017"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="592" invocations="406" avgMicrosecondsPerInvocation="1458" maxMicrosecondsPerInvocation="75067" standardDeviationMicrosecondsPerInvocation="4494"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="176" invocations="26" avgMicrosecondsPerInvocation="6790" maxMicrosecondsPerInvocation="39722" standardDeviationMicrosecondsPerInvocation="10693"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="134" invocations="92" avgMicrosecondsPerInvocation="1465" maxMicrosecondsPerInvocation="26781" standardDeviationMicrosecondsPerInvocation="3553"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="123" invocations="369" avgMicrosecondsPerInvocation="334" maxMicrosecondsPerInvocation="28827" standardDeviationMicrosecondsPerInvocation="1715"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="117" invocations="7" avgMicrosecondsPerInvocation="16770" maxMicrosecondsPerInvocation="113359" standardDeviationMicrosecondsPerInvocation="39435"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="112" invocations="7" avgMicrosecondsPerInvocation="16088" maxMicrosecondsPerInvocation="52601" standardDeviationMicrosecondsPerInvocation="17732"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="95" invocations="49" avgMicrosecondsPerInvocation="1948" maxMicrosecondsPerInvocation="52321" standardDeviationMicrosecondsPerInvocation="8294"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="88" invocations="7" avgMicrosecondsPerInvocation="12631" maxMicrosecondsPerInvocation="34640" standardDeviationMicrosecondsPerInvocation="11386"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="83" invocations="7" avgMicrosecondsPerInvocation="11964" maxMicrosecondsPerInvocation="50729" standardDeviationMicrosecondsPerInvocation="18000"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="80" invocations="26" avgMicrosecondsPerInvocation="3103" maxMicrosecondsPerInvocation="22839" standardDeviationMicrosecondsPerInvocation="6074"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="68" invocations="26" avgMicrosecondsPerInvocation="2635" maxMicrosecondsPerInvocation="16052" standardDeviationMicrosecondsPerInvocation="3753"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="57" invocations="7" avgMicrosecondsPerInvocation="8158" maxMicrosecondsPerInvocation="35266" standardDeviationMicrosecondsPerInvocation="11655"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="56" invocations="26" avgMicrosecondsPerInvocation="2172" maxMicrosecondsPerInvocation="28030" standardDeviationMicrosecondsPerInvocation="5829"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

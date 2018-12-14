@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.1.0" sequence="0" timestamp="1542190997000" analysisTimestamp="1542191000692" release="">
+  <Project projectName="">
+    <Jar>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-72/src/main/java</Jar>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-72/target/classes</AuxClasspathEntry>
+  </Project>
+  <BugInstance type="FE_FLOATING_POINT_EQUALITY" priority="1" rank="15" abbrev="FE" category="STYLE" instanceHash="15afd46a51934ed06abe072c73d6e0f3" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Test for floating point equality</ShortMessage>
+    <LongMessage>Test for floating point equality in org.apache.commons.math.analysis.solvers.BrentSolver.solve(UnivariateRealFunction, double, double, double, double, double, double)</LongMessage>
+    <Class classname="org.apache.commons.math.analysis.solvers.BrentSolver" primary="true">
+      <SourceLine classname="org.apache.commons.math.analysis.solvers.BrentSolver" start="54" end="317" sourcefile="BrentSolver.java" sourcepath="org/apache/commons/math/analysis/solvers/BrentSolver.java">
+        <Message>At BrentSolver.java:[lines 54-317]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.math.analysis.solvers.BrentSolver</Message>
+    </Class>
+    <Method classname="org.apache.commons.math.analysis.solvers.BrentSolver" name="solve" signature="(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDDDD)D" isStatic="false" primary="true">
+      <SourceLine classname="org.apache.commons.math.analysis.solvers.BrentSolver" start="229" end="317" startBytecode="0" endBytecode="819" sourcefile="BrentSolver.java" sourcepath="org/apache/commons/math/analysis/solvers/BrentSolver.java"/>
+      <Message>In method org.apache.commons.math.analysis.solvers.BrentSolver.solve(UnivariateRealFunction, double, double, double, double, double, double)</Message>
+    </Method>
+    <SourceLine classname="org.apache.commons.math.analysis.solvers.BrentSolver" primary="true" start="269" end="269" startBytecode="185" endBytecode="185" sourcefile="BrentSolver.java" sourcepath="org/apache/commons/math/analysis/solvers/BrentSolver.java">
+      <Message>At BrentSolver.java:[line 269]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="FE_FLOATING_POINT_EQUALITY" abbrev="FE" category="STYLE">
+    <ShortDescription>Test for floating point equality</ShortDescription>
+    <Details><![CDATA[
+   
+    <p>
+    This operation compares two floating point values for equality.
+    Because floating point calculations may involve rounding,
+   calculated float and double values may not be accurate.
+    For values that must be precise, such as monetary values,
+   consider using a fixed-precision type such as BigDecimal.
+    For values that need not be precise, consider comparing for equality
+    within some range, for example:
+    <code>if ( Math.abs(x - y) &lt; .0000001 )</code>.
+   See the Java Language Specification, section 4.2.4.
+    </p>
+    
+     ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="FE">
+    <Description>Test for floating point equality</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 14 Nov 2018 05:23:17 -0500" total_classes="1" referenced_classes="23" total_bugs="1" total_size="117" num_packages="1" java_version="1.8.0_121" vm_version="25.121-b13" cpu_seconds="6.98" clock_seconds="4.06" peak_mbytes="108.95" alloc_mbytes="1820.50" gc_seconds="0.05" priority_1="1">
+    <FileStats path="org/apache/commons/math/analysis/solvers/BrentSolver.java" bugCount="1" size="117" bugHash="b719bc5cc725b9da96eb0f8da82ecde0"/>
+    <PackageStats package="org.apache.commons.math.analysis.solvers" total_bugs="1" total_types="1" total_size="117" priority_1="1">
+      <ClassStats class="org.apache.commons.math.analysis.solvers.BrentSolver" sourceFile="BrentSolver.java" interface="false" size="117" bugs="1" priority_1="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="510" invocations="349" avgMicrosecondsPerInvocation="1463" maxMicrosecondsPerInvocation="48310" standardDeviationMicrosecondsPerInvocation="4869"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="475" invocations="353" avgMicrosecondsPerInvocation="1347" maxMicrosecondsPerInvocation="22736" standardDeviationMicrosecondsPerInvocation="2490"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="185" invocations="23" avgMicrosecondsPerInvocation="8057" maxMicrosecondsPerInvocation="56500" standardDeviationMicrosecondsPerInvocation="14590"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="129" invocations="316" avgMicrosecondsPerInvocation="410" maxMicrosecondsPerInvocation="16990" standardDeviationMicrosecondsPerInvocation="1585"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="120" invocations="66" avgMicrosecondsPerInvocation="1825" maxMicrosecondsPerInvocation="25615" standardDeviationMicrosecondsPerInvocation="4583"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="99" invocations="7" avgMicrosecondsPerInvocation="14197" maxMicrosecondsPerInvocation="93688" standardDeviationMicrosecondsPerInvocation="32463"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="99" invocations="39" avgMicrosecondsPerInvocation="2542" maxMicrosecondsPerInvocation="69710" standardDeviationMicrosecondsPerInvocation="11108"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="90" invocations="23" avgMicrosecondsPerInvocation="3918" maxMicrosecondsPerInvocation="33680" standardDeviationMicrosecondsPerInvocation="8021"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="88" invocations="7" avgMicrosecondsPerInvocation="12653" maxMicrosecondsPerInvocation="40418" standardDeviationMicrosecondsPerInvocation="16013"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="87" invocations="7" avgMicrosecondsPerInvocation="12504" maxMicrosecondsPerInvocation="68840" standardDeviationMicrosecondsPerInvocation="23330"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="87" invocations="7" avgMicrosecondsPerInvocation="12448" maxMicrosecondsPerInvocation="54790" standardDeviationMicrosecondsPerInvocation="17951"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="83" invocations="7" avgMicrosecondsPerInvocation="11919" maxMicrosecondsPerInvocation="58785" standardDeviationMicrosecondsPerInvocation="20112"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="73" invocations="23" avgMicrosecondsPerInvocation="3209" maxMicrosecondsPerInvocation="28549" standardDeviationMicrosecondsPerInvocation="6629"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

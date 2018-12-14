@@ -1,0 +1,51 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-65/src/main/java/org/apache/commons/math/optimization/general/AbstractLeastSquaresOptimizer.java:123: warning: [MissingOverride] setMaxIterations implements method in DifferentiableMultivariateVectorialOptimizer; expected @Override
+    public void setMaxIterations(int maxIterations) {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void setMaxIterations(int maxIterations) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-65/src/main/java/org/apache/commons/math/optimization/general/AbstractLeastSquaresOptimizer.java:128: warning: [MissingOverride] getMaxIterations implements method in DifferentiableMultivariateVectorialOptimizer; expected @Override
+    public int getMaxIterations() {
+               ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int getMaxIterations() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-65/src/main/java/org/apache/commons/math/optimization/general/AbstractLeastSquaresOptimizer.java:133: warning: [MissingOverride] getIterations implements method in DifferentiableMultivariateVectorialOptimizer; expected @Override
+    public int getIterations() {
+               ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int getIterations() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-65/src/main/java/org/apache/commons/math/optimization/general/AbstractLeastSquaresOptimizer.java:138: warning: [MissingOverride] setMaxEvaluations implements method in DifferentiableMultivariateVectorialOptimizer; expected @Override
+    public void setMaxEvaluations(int maxEvaluations) {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void setMaxEvaluations(int maxEvaluations) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-65/src/main/java/org/apache/commons/math/optimization/general/AbstractLeastSquaresOptimizer.java:143: warning: [MissingOverride] getMaxEvaluations implements method in DifferentiableMultivariateVectorialOptimizer; expected @Override
+    public int getMaxEvaluations() {
+               ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int getMaxEvaluations() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-65/src/main/java/org/apache/commons/math/optimization/general/AbstractLeastSquaresOptimizer.java:148: warning: [MissingOverride] getEvaluations implements method in DifferentiableMultivariateVectorialOptimizer; expected @Override
+    public int getEvaluations() {
+               ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int getEvaluations() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-65/src/main/java/org/apache/commons/math/optimization/general/AbstractLeastSquaresOptimizer.java:153: warning: [MissingOverride] getJacobianEvaluations implements method in DifferentiableMultivariateVectorialOptimizer; expected @Override
+    public int getJacobianEvaluations() {
+               ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int getJacobianEvaluations() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-65/src/main/java/org/apache/commons/math/optimization/general/AbstractLeastSquaresOptimizer.java:158: warning: [MissingOverride] setConvergenceChecker implements method in DifferentiableMultivariateVectorialOptimizer; expected @Override
+    public void setConvergenceChecker(VectorialConvergenceChecker convergenceChecker) {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void setConvergenceChecker(VectorialConvergenceChecker convergenceChecker) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-65/src/main/java/org/apache/commons/math/optimization/general/AbstractLeastSquaresOptimizer.java:163: warning: [MissingOverride] getConvergenceChecker implements method in DifferentiableMultivariateVectorialOptimizer; expected @Override
+    public VectorialConvergenceChecker getConvergenceChecker() {
+                                       ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public VectorialConvergenceChecker getConvergenceChecker() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-65/src/main/java/org/apache/commons/math/optimization/general/AbstractLeastSquaresOptimizer.java:327: warning: [MissingOverride] optimize implements method in DifferentiableMultivariateVectorialOptimizer; expected @Override
+    public VectorialPointValuePair optimize(final DifferentiableMultivariateVectorialFunction f,
+                                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public VectorialPointValuePair optimize(final DifferentiableMultivariateVectorialFunction f,'?
+10 warnings

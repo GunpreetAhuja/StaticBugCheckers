@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.1.0" sequence="0" timestamp="1542190444000" analysisTimestamp="1542190447905" release="">
+  <Project projectName="">
+    <Jar>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-3/src/main/java</Jar>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Lang-3/target/classes</AuxClasspathEntry>
+  </Project>
+  <BugInstance type="RpC_REPEATED_CONDITIONAL_TEST" priority="1" rank="6" abbrev="RpC" category="CORRECTNESS" instanceHash="c4490d4d3409c506ba0a83b64c6064de" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Repeated conditional tests</ShortMessage>
+    <LongMessage>Repeated conditional test in org.apache.commons.lang3.math.NumberUtils.createBigInteger(String)</LongMessage>
+    <Class classname="org.apache.commons.lang3.math.NumberUtils" primary="true">
+      <SourceLine classname="org.apache.commons.lang3.math.NumberUtils" start="34" end="1424" sourcefile="NumberUtils.java" sourcepath="org/apache/commons/lang3/math/NumberUtils.java">
+        <Message>At NumberUtils.java:[lines 34-1424]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.lang3.math.NumberUtils</Message>
+    </Class>
+    <Method classname="org.apache.commons.lang3.math.NumberUtils" name="createBigInteger" signature="(Ljava/lang/String;)Ljava/math/BigInteger;" isStatic="true" primary="true">
+      <SourceLine classname="org.apache.commons.lang3.math.NumberUtils" start="715" end="737" startBytecode="0" endBytecode="254" sourcefile="NumberUtils.java" sourcepath="org/apache/commons/lang3/math/NumberUtils.java"/>
+      <Message>In method org.apache.commons.lang3.math.NumberUtils.createBigInteger(String)</Message>
+    </Method>
+    <SourceLine classname="org.apache.commons.lang3.math.NumberUtils" primary="true" start="725" end="725" startBytecode="26" endBytecode="32" sourcefile="NumberUtils.java" sourcepath="org/apache/commons/lang3/math/NumberUtils.java">
+      <Message>At NumberUtils.java:[line 725]</Message>
+    </SourceLine>
+    <SourceLine classname="org.apache.commons.lang3.math.NumberUtils" start="725" end="725" startBytecode="36" endBytecode="42" sourcefile="NumberUtils.java" sourcepath="org/apache/commons/lang3/math/NumberUtils.java">
+      <Message>At NumberUtils.java:[line 725]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="SF_SWITCH_FALLTHROUGH" priority="2" rank="17" abbrev="SF" category="STYLE" instanceHash="9ced27956403011d4dfc04e1c028a4fb" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="484">
+    <ShortMessage>Switch statement found where one case falls through to the next case</ShortMessage>
+    <LongMessage>Switch statement found in org.apache.commons.lang3.math.NumberUtils.createNumber(String) where one case falls through to the next case</LongMessage>
+    <Class classname="org.apache.commons.lang3.math.NumberUtils" primary="true">
+      <SourceLine classname="org.apache.commons.lang3.math.NumberUtils" start="34" end="1424" sourcefile="NumberUtils.java" sourcepath="org/apache/commons/lang3/math/NumberUtils.java">
+        <Message>At NumberUtils.java:[lines 34-1424]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.lang3.math.NumberUtils</Message>
+    </Class>
+    <Method classname="org.apache.commons.lang3.math.NumberUtils" name="createNumber" signature="(Ljava/lang/String;)Ljava/lang/Number;" isStatic="true" primary="true">
+      <SourceLine classname="org.apache.commons.lang3.math.NumberUtils" start="451" end="613" startBytecode="0" endBytecode="1624" sourcefile="NumberUtils.java" sourcepath="org/apache/commons/lang3/math/NumberUtils.java"/>
+      <Message>In method org.apache.commons.lang3.math.NumberUtils.createNumber(String)</Message>
+    </Method>
+    <SourceLine classname="org.apache.commons.lang3.math.NumberUtils" primary="true" start="543" end="550" startBytecode="610" endBytecode="612" sourcefile="NumberUtils.java" sourcepath="org/apache/commons/lang3/math/NumberUtils.java">
+      <Message>At NumberUtils.java:[lines 543-550]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="SF_SWITCH_NO_DEFAULT" priority="2" rank="19" abbrev="SF" category="STYLE" instanceHash="fa2d0315b27cedf1fd9ee1e6e1f3616f" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Switch statement found where default case is missing</ShortMessage>
+    <LongMessage>Switch statement found in org.apache.commons.lang3.math.NumberUtils.createNumber(String) where default case is missing</LongMessage>
+    <Class classname="org.apache.commons.lang3.math.NumberUtils" primary="true">
+      <SourceLine classname="org.apache.commons.lang3.math.NumberUtils" start="34" end="1424" sourcefile="NumberUtils.java" sourcepath="org/apache/commons/lang3/math/NumberUtils.java">
+        <Message>At NumberUtils.java:[lines 34-1424]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.lang3.math.NumberUtils</Message>
+    </Class>
+    <Method classname="org.apache.commons.lang3.math.NumberUtils" name="createNumber" signature="(Ljava/lang/String;)Ljava/lang/Number;" isStatic="true" primary="true">
+      <SourceLine classname="org.apache.commons.lang3.math.NumberUtils" start="451" end="613" startBytecode="0" endBytecode="1624" sourcefile="NumberUtils.java" sourcepath="org/apache/commons/lang3/math/NumberUtils.java"/>
+      <Message>In method org.apache.commons.lang3.math.NumberUtils.createNumber(String)</Message>
+    </Method>
+    <SourceLine classname="org.apache.commons.lang3.math.NumberUtils" primary="true" start="518" end="559" startBytecode="434" endBytecode="658" sourcefile="NumberUtils.java" sourcepath="org/apache/commons/lang3/math/NumberUtils.java">
+      <Message>At NumberUtils.java:[lines 518-559]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="CORRECTNESS">
+    <Description>Correctness</Description>
+  </BugCategory>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="RpC_REPEATED_CONDITIONAL_TEST" abbrev="RpC" category="CORRECTNESS">
+    <ShortDescription>Repeated conditional tests</ShortDescription>
+    <Details><![CDATA[
+
+<p>The code contains a conditional test is performed twice, one right after the other
+(e.g., <code>x == 0 || x == 0</code>). Perhaps the second occurrence is intended to be something else
+(e.g., <code>x == 0 || y == 0</code>).
+</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="SF_SWITCH_FALLTHROUGH" abbrev="SF" category="STYLE" cweid="484">
+    <ShortDescription>Switch statement found where one case falls through to the next case</ShortDescription>
+    <Details><![CDATA[
+
+  <p> This method contains a switch statement where one case branch will fall through to the next case.
+  Usually you need to end this case with a break or return.</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="SF_SWITCH_NO_DEFAULT" abbrev="SF" category="STYLE">
+    <ShortDescription>Switch statement found where default case is missing</ShortDescription>
+    <Details><![CDATA[
+
+  <p> This method contains a switch statement where default case is missing.
+  Usually you need to provide a default case.</p>
+  <p>Because the analysis only looks at the generated bytecode, this warning can be incorrect triggered if
+the default case is at the end of the switch statement and the switch statement doesn't contain break statements for other
+cases.
+
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="SF">
+    <Description>Switch case falls through</Description>
+  </BugCode>
+  <BugCode abbrev="RpC">
+    <Description>Repeated conditional test</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 14 Nov 2018 05:14:04 -0500" total_classes="1" referenced_classes="23" total_bugs="3" total_size="443" num_packages="1" java_version="1.8.0_121" vm_version="25.121-b13" cpu_seconds="9.27" clock_seconds="5.93" peak_mbytes="111.72" alloc_mbytes="1820.50" gc_seconds="0.06" priority_2="2" priority_1="1">
+    <FileStats path="org/apache/commons/lang3/math/NumberUtils.java" bugCount="3" size="443" bugHash="ed67e97fe3d9076234b648a60a759d8d"/>
+    <PackageStats package="org.apache.commons.lang3.math" total_bugs="3" total_types="1" total_size="443" priority_2="2" priority_1="1">
+      <ClassStats class="org.apache.commons.lang3.math.NumberUtils" sourceFile="NumberUtils.java" interface="false" size="443" bugs="3" priority_2="2" priority_1="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="732" invocations="360" avgMicrosecondsPerInvocation="2034" maxMicrosecondsPerInvocation="47250" standardDeviationMicrosecondsPerInvocation="6097"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="675" invocations="361" avgMicrosecondsPerInvocation="1871" maxMicrosecondsPerInvocation="42202" standardDeviationMicrosecondsPerInvocation="3988"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="338" invocations="23" avgMicrosecondsPerInvocation="14709" maxMicrosecondsPerInvocation="92536" standardDeviationMicrosecondsPerInvocation="22995"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="336" invocations="271" avgMicrosecondsPerInvocation="1243" maxMicrosecondsPerInvocation="36387" standardDeviationMicrosecondsPerInvocation="4209"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="184" invocations="49" avgMicrosecondsPerInvocation="3761" maxMicrosecondsPerInvocation="63737" standardDeviationMicrosecondsPerInvocation="11137"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="174" invocations="49" avgMicrosecondsPerInvocation="3555" maxMicrosecondsPerInvocation="61361" standardDeviationMicrosecondsPerInvocation="11204"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="139" invocations="49" avgMicrosecondsPerInvocation="2838" maxMicrosecondsPerInvocation="50218" standardDeviationMicrosecondsPerInvocation="8829"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="138" invocations="325" avgMicrosecondsPerInvocation="425" maxMicrosecondsPerInvocation="33059" standardDeviationMicrosecondsPerInvocation="2328"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="131" invocations="49" avgMicrosecondsPerInvocation="2675" maxMicrosecondsPerInvocation="59084" standardDeviationMicrosecondsPerInvocation="8878"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="122" invocations="49" avgMicrosecondsPerInvocation="2492" maxMicrosecondsPerInvocation="100716" standardDeviationMicrosecondsPerInvocation="14207"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="102" invocations="49" avgMicrosecondsPerInvocation="2092" maxMicrosecondsPerInvocation="57845" standardDeviationMicrosecondsPerInvocation="8311"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="100" invocations="49" avgMicrosecondsPerInvocation="2041" maxMicrosecondsPerInvocation="35748" standardDeviationMicrosecondsPerInvocation="5972"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="94" invocations="23" avgMicrosecondsPerInvocation="4092" maxMicrosecondsPerInvocation="32513" standardDeviationMicrosecondsPerInvocation="8957"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="91" invocations="23" avgMicrosecondsPerInvocation="3995" maxMicrosecondsPerInvocation="33733" standardDeviationMicrosecondsPerInvocation="7191"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="77" invocations="39" avgMicrosecondsPerInvocation="1983" maxMicrosecondsPerInvocation="43435" standardDeviationMicrosecondsPerInvocation="6881"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="73" invocations="23" avgMicrosecondsPerInvocation="3194" maxMicrosecondsPerInvocation="20466" standardDeviationMicrosecondsPerInvocation="5585"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueRangeAnalysisFactory" totalMilliseconds="69" invocations="49" avgMicrosecondsPerInvocation="1425" maxMicrosecondsPerInvocation="59984" standardDeviationMicrosecondsPerInvocation="8479"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="69" invocations="23" avgMicrosecondsPerInvocation="3008" maxMicrosecondsPerInvocation="25821" standardDeviationMicrosecondsPerInvocation="6378"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

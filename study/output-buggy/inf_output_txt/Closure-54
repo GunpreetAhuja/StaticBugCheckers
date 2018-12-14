@@ -1,0 +1,22 @@
+No issues found
+Found 2 issues
+
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-54/src/com/google/javascript/rhino/jstype/FunctionType.java:711: error: NULL_DEREFERENCE
+  object returned by `getPrototype()` could be null and is dereferenced at line 711.
+  709.     public FunctionType getSuperClassConstructor() {
+  710.       Preconditions.checkArgument(isConstructor() || isInterface());
+  711. >     ObjectType maybeSuperInstanceType = getPrototype().getImplicitPrototype();
+  712.       if (maybeSuperInstanceType == null) {
+  713.         return null;
+
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-54/src/com/google/javascript/rhino/jstype/FunctionType.java:743: error: NULL_DEREFERENCE
+  object returned by `getPrototype()` could be null and is dereferenced at line 743.
+  741.     public ObjectType getTopMostDefiningType(String propertyName) {
+  742.       Preconditions.checkState(isConstructor() || isInterface());
+  743. >     Preconditions.checkArgument(getPrototype().hasProperty(propertyName));
+  744.       FunctionType ctor = this;
+  745.   
+
+Summary of the reports
+
+  NULL_DEREFERENCE: 2

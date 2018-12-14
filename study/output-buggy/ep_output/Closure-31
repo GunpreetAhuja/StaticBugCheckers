@@ -1,0 +1,18 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-31/src/com/google/javascript/jscomp/Compiler.java:77: warning: [JavaLangClash] com.google.javascript.jscomp.Compiler clashes with java.lang.Compiler
+public class Compiler extends AbstractCompiler {
+       ^
+  
+    (see http://errorprone.info/bugpattern/JavaLangClash)
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-31/src/com/google/javascript/jscomp/Compiler.java:642: warning: [ThreadJoinLoop] Thread.join needs to be surrounded by a loop until it succeeds, as in Uninterruptibles.joinUninterruptibly.
+          th.join();
+                 ^
+    (see http://errorprone.info/bugpattern/ThreadJoinLoop)
+  Did you mean 'Uninterruptibles.joinUninterruptibly(th);'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-31/src/com/google/javascript/jscomp/Compiler.java:1918: error: [MissingCasesInEnumSwitch] Non-exhaustive switch; either add a default or handle the remaining cases: ECMASCRIPT3
+    switch (options.getLanguageIn()) {
+    ^
+    (see http://errorprone.info/bugpattern/MissingCasesInEnumSwitch)
+Note: /Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-31/src/com/google/javascript/jscomp/Compiler.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+1 error
+2 warnings

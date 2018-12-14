@@ -1,0 +1,26 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Mockito-7/src/org/mockito/internal/util/reflection/GenericMetadataSupport.java:430: warning: [MissingOverride] rawExtraInterfaces overrides method in GenericMetadataSupport; expected @Override
+        public Class<?>[] rawExtraInterfaces() {
+                          ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Class<?>[] rawExtraInterfaces() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Mockito-7/src/org/mockito/internal/util/reflection/GenericMetadataSupport.java:527: warning: [MissingOverride] firstBound implements method in BoundedType; expected @Override
+        public Type firstBound() {
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Type firstBound() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Mockito-7/src/org/mockito/internal/util/reflection/GenericMetadataSupport.java:538: warning: [MissingOverride] interfaceBounds implements method in BoundedType; expected @Override
+        public Type[] interfaceBounds() {
+                      ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Type[] interfaceBounds() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Mockito-7/src/org/mockito/internal/util/reflection/GenericMetadataSupport.java:587: warning: [MissingOverride] firstBound implements method in BoundedType; expected @Override
+        public Type firstBound() {
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Type firstBound() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Mockito-7/src/org/mockito/internal/util/reflection/GenericMetadataSupport.java:597: warning: [MissingOverride] interfaceBounds implements method in BoundedType; expected @Override
+        public Type[] interfaceBounds() {
+                      ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Type[] interfaceBounds() {'?
+5 warnings

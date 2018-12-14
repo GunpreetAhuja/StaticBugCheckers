@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.1.0" sequence="0" timestamp="1542186395000" analysisTimestamp="1542186398024" release="">
+  <Project projectName="">
+    <Jar>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-15/src/main/java</Jar>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-15/target/classes</AuxClasspathEntry>
+  </Project>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" instanceHash="7aac49c9a1ffd6334ddb1b275d948037" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Dead store to local variable</ShortMessage>
+    <LongMessage>Dead store to $L25 in org.apache.commons.math3.util.FastMath.atan(double, double, boolean)</LongMessage>
+    <Class classname="org.apache.commons.math3.util.FastMath" primary="true">
+      <SourceLine classname="org.apache.commons.math3.util.FastMath" start="82" end="3700" sourcefile="FastMath.java" sourcepath="org/apache/commons/math3/util/FastMath.java">
+        <Message>At FastMath.java:[lines 82-3700]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.math3.util.FastMath</Message>
+    </Class>
+    <Method classname="org.apache.commons.math3.util.FastMath" name="atan" signature="(DDZ)D" isStatic="true" primary="true">
+      <SourceLine classname="org.apache.commons.math3.util.FastMath" start="2431" end="2568" startBytecode="0" endBytecode="430" sourcefile="FastMath.java" sourcepath="org/apache/commons/math3/util/FastMath.java"/>
+      <Message>In method org.apache.commons.math3.util.FastMath.atan(double, double, boolean)</Message>
+    </Method>
+    <LocalVariable name="?" register="25" pc="708" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 25</Message>
+    </LocalVariable>
+    <SourceLine classname="org.apache.commons.math3.util.FastMath" primary="true" start="2560" end="2560" startBytecode="706" endBytecode="706" sourcefile="FastMath.java" sourcepath="org/apache/commons/math3/util/FastMath.java">
+      <Message>At FastMath.java:[line 2560]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+  </BugInstance>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="DLS_DEAD_LOCAL_STORE" abbrev="DLS" category="STYLE">
+    <ShortDescription>Dead store to local variable</ShortDescription>
+    <Details><![CDATA[
+
+<p>
+This instruction assigns a value to a local variable,
+but the value is not read or used in any subsequent instruction.
+Often, this indicates an error, because the value computed is never
+used.
+</p>
+<p>
+Note that Sun's javac compiler often generates dead stores for
+final local variables.  Because SpotBugs is a bytecode-based tool,
+there is no easy way to eliminate these false positives.
+</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="DLS" cweid="563">
+    <Description>Dead local store</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 14 Nov 2018 04:06:35 -0500" total_classes="5" referenced_classes="23" total_bugs="1" total_size="1626" num_packages="1" java_version="1.8.0_121" vm_version="25.121-b13" cpu_seconds="12.01" clock_seconds="6.46" peak_mbytes="167.50" alloc_mbytes="1820.50" gc_seconds="0.04" priority_2="1">
+    <FileStats path="org/apache/commons/math3/util/FastMath.java" bugCount="1" size="1626" bugHash="7683e2d003ca2a480c97b3cc3f7cb23f"/>
+    <PackageStats package="org.apache.commons.math3.util" total_bugs="1" total_types="5" total_size="1626" priority_2="1">
+      <ClassStats class="org.apache.commons.math3.util.FastMath" sourceFile="FastMath.java" interface="false" size="1564" bugs="1" priority_2="1"/>
+      <ClassStats class="org.apache.commons.math3.util.FastMath$CodyWaite" sourceFile="FastMath.java" interface="false" size="32" bugs="0"/>
+      <ClassStats class="org.apache.commons.math3.util.FastMath$ExpFracTable" sourceFile="FastMath.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="org.apache.commons.math3.util.FastMath$ExpIntTable" sourceFile="FastMath.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="org.apache.commons.math3.util.FastMath$lnMant" sourceFile="FastMath.java" interface="false" size="8" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="938" invocations="73" avgMicrosecondsPerInvocation="12850" maxMicrosecondsPerInvocation="184750" standardDeviationMicrosecondsPerInvocation="33308"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="592" invocations="358" avgMicrosecondsPerInvocation="1654" maxMicrosecondsPerInvocation="54480" standardDeviationMicrosecondsPerInvocation="5873"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="482" invocations="359" avgMicrosecondsPerInvocation="1343" maxMicrosecondsPerInvocation="34067" standardDeviationMicrosecondsPerInvocation="2895"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="186" invocations="23" avgMicrosecondsPerInvocation="8098" maxMicrosecondsPerInvocation="93899" standardDeviationMicrosecondsPerInvocation="19083"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="181" invocations="73" avgMicrosecondsPerInvocation="2485" maxMicrosecondsPerInvocation="56744" standardDeviationMicrosecondsPerInvocation="6919"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="181" invocations="73" avgMicrosecondsPerInvocation="2483" maxMicrosecondsPerInvocation="79466" standardDeviationMicrosecondsPerInvocation="9622"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="171" invocations="146" avgMicrosecondsPerInvocation="1174" maxMicrosecondsPerInvocation="33506" standardDeviationMicrosecondsPerInvocation="4004"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="168" invocations="73" avgMicrosecondsPerInvocation="2308" maxMicrosecondsPerInvocation="71828" standardDeviationMicrosecondsPerInvocation="8738"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="144" invocations="23" avgMicrosecondsPerInvocation="6281" maxMicrosecondsPerInvocation="30594" standardDeviationMicrosecondsPerInvocation="9001"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="133" invocations="1" avgMicrosecondsPerInvocation="133975" maxMicrosecondsPerInvocation="133975" standardDeviationMicrosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="119" invocations="73" avgMicrosecondsPerInvocation="1639" maxMicrosecondsPerInvocation="30818" standardDeviationMicrosecondsPerInvocation="4030"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="91" invocations="73" avgMicrosecondsPerInvocation="1257" maxMicrosecondsPerInvocation="66064" standardDeviationMicrosecondsPerInvocation="7653"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="83" invocations="323" avgMicrosecondsPerInvocation="259" maxMicrosecondsPerInvocation="12259" standardDeviationMicrosecondsPerInvocation="978"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="74" invocations="23" avgMicrosecondsPerInvocation="3236" maxMicrosecondsPerInvocation="34248" standardDeviationMicrosecondsPerInvocation="7021"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="74" invocations="73" avgMicrosecondsPerInvocation="1018" maxMicrosecondsPerInvocation="17129" standardDeviationMicrosecondsPerInvocation="2076"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="67" invocations="23" avgMicrosecondsPerInvocation="2935" maxMicrosecondsPerInvocation="36403" standardDeviationMicrosecondsPerInvocation="7568"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="65" invocations="1" avgMicrosecondsPerInvocation="65025" maxMicrosecondsPerInvocation="65025" standardDeviationMicrosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueRangeAnalysisFactory" totalMilliseconds="58" invocations="73" avgMicrosecondsPerInvocation="803" maxMicrosecondsPerInvocation="18238" standardDeviationMicrosecondsPerInvocation="2990"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="55" invocations="40" avgMicrosecondsPerInvocation="1387" maxMicrosecondsPerInvocation="18453" standardDeviationMicrosecondsPerInvocation="3625"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.ReflectiveClasses" totalMilliseconds="52" invocations="23" avgMicrosecondsPerInvocation="2293" maxMicrosecondsPerInvocation="41493" standardDeviationMicrosecondsPerInvocation="8384"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="51" invocations="59" avgMicrosecondsPerInvocation="879" maxMicrosecondsPerInvocation="17024" standardDeviationMicrosecondsPerInvocation="2352"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindInconsistentSync2" totalMilliseconds="51" invocations="1" avgMicrosecondsPerInvocation="51851" maxMicrosecondsPerInvocation="51851" standardDeviationMicrosecondsPerInvocation="0"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

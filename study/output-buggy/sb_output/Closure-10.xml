@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.1.0" sequence="0" timestamp="1542185328000" analysisTimestamp="1542185331043" release="">
+  <Project projectName="">
+    <Jar>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-10/src</Jar>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-10/build/classes</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-10/lib/args4j.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-10/lib/guava.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-10/lib/json.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-10/lib/jsr305.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-10/lib/protobuf-java.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-10/build/lib/rhino.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-10/lib/ant.jar</AuxClasspathEntry>
+  </Project>
+  <BugInstance type="NP_NULL_ON_SOME_PATH" priority="2" rank="8" abbrev="NP" category="CORRECTNESS" instanceHash="fc33daa8c0b8ef59a9e1052141a8afd" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="476">
+    <ShortMessage>Possible null pointer dereference</ShortMessage>
+    <LongMessage>Possible null pointer dereference of ? in com.google.javascript.jscomp.NodeUtil.getAddingRoot(Node)</LongMessage>
+    <Class classname="com.google.javascript.jscomp.NodeUtil" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.NodeUtil" start="50" end="3227" sourcefile="NodeUtil.java" sourcepath="com/google/javascript/jscomp/NodeUtil.java">
+        <Message>At NodeUtil.java:[lines 50-3227]</Message>
+      </SourceLine>
+      <Message>In class com.google.javascript.jscomp.NodeUtil</Message>
+    </Class>
+    <Method classname="com.google.javascript.jscomp.NodeUtil" name="getAddingRoot" signature="(Lcom/google/javascript/rhino/Node;)Lcom/google/javascript/rhino/Node;" isStatic="true" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.NodeUtil" start="2250" end="2268" startBytecode="0" endBytecode="221" sourcefile="NodeUtil.java" sourcepath="com/google/javascript/jscomp/NodeUtil.java"/>
+      <Message>In method com.google.javascript.jscomp.NodeUtil.getAddingRoot(Node)</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="10" role="LOCAL_VARIABLE_VALUE_OF">
+      <Message>Value loaded from ?</Message>
+    </LocalVariable>
+    <SourceLine classname="com.google.javascript.jscomp.NodeUtil" primary="true" start="2264" end="2264" startBytecode="49" endBytecode="49" sourcefile="NodeUtil.java" sourcepath="com/google/javascript/jscomp/NodeUtil.java" role="SOURCE_LINE_DEREF">
+      <Message>Dereferenced at NodeUtil.java:[line 2264]</Message>
+    </SourceLine>
+    <SourceLine classname="com.google.javascript.jscomp.NodeUtil" start="2250" end="2250" startBytecode="0" endBytecode="0" sourcefile="NodeUtil.java" sourcepath="com/google/javascript/jscomp/NodeUtil.java" role="SOURCE_LINE_NULL_VALUE">
+      <Message>Null value at NodeUtil.java:[line 2250]</Message>
+    </SourceLine>
+    <SourceLine classname="com.google.javascript.jscomp.NodeUtil" start="2252" end="2252" startBytecode="11" endBytecode="11" sourcefile="NodeUtil.java" sourcepath="com/google/javascript/jscomp/NodeUtil.java" role="SOURCE_LINE_KNOWN_NULL">
+      <Message>Known null at NodeUtil.java:[line 2252]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="NP_UNWRITTEN_FIELD" priority="2" rank="8" abbrev="NP" category="CORRECTNESS" instanceHash="cdf50b60aaca285331e775e6d9cd2ea5" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="476">
+    <ShortMessage>Read of unwritten field</ShortMessage>
+    <LongMessage>Read of unwritten field vars in com.google.javascript.jscomp.NodeUtil.getVarsDeclaredInBranch(Node)</LongMessage>
+    <Class classname="com.google.javascript.jscomp.NodeUtil" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.NodeUtil" start="50" end="3227" sourcefile="NodeUtil.java" sourcepath="com/google/javascript/jscomp/NodeUtil.java">
+        <Message>At NodeUtil.java:[lines 50-3227]</Message>
+      </SourceLine>
+      <Message>In class com.google.javascript.jscomp.NodeUtil</Message>
+    </Class>
+    <Method classname="com.google.javascript.jscomp.NodeUtil" name="getVarsDeclaredInBranch" signature="(Lcom/google/javascript/rhino/Node;)Ljava/util/Collection;" isStatic="true" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.NodeUtil" start="2479" end="2484" startBytecode="0" endBytecode="58" sourcefile="NodeUtil.java" sourcepath="com/google/javascript/jscomp/NodeUtil.java"/>
+      <Message>In method com.google.javascript.jscomp.NodeUtil.getVarsDeclaredInBranch(Node)</Message>
+    </Method>
+    <Field classname="com.google.javascript.jscomp.NodeUtil$VarCollector" name="vars" signature="Ljava/util/Map;" isStatic="false" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.NodeUtil$VarCollector" sourcefile="NodeUtil.java" sourcepath="com/google/javascript/jscomp/NodeUtil.java">
+        <Message>In NodeUtil.java</Message>
+      </SourceLine>
+      <Message>Field com.google.javascript.jscomp.NodeUtil$VarCollector.vars</Message>
+    </Field>
+    <SourceLine classname="com.google.javascript.jscomp.NodeUtil" primary="true" start="2484" end="2484" startBytecode="21" endBytecode="21" sourcefile="NodeUtil.java" sourcepath="com/google/javascript/jscomp/NodeUtil.java">
+      <Message>At NodeUtil.java:[line 2484]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="CORRECTNESS">
+    <Description>Correctness</Description>
+  </BugCategory>
+  <BugPattern type="NP_NULL_ON_SOME_PATH" abbrev="NP" category="CORRECTNESS">
+    <ShortDescription>Possible null pointer dereference</ShortDescription>
+    <Details><![CDATA[
+
+<p> There is a branch of statement that, <em>if executed,</em>  guarantees that
+a null value will be dereferenced, which
+would generate a <code>NullPointerException</code> when the code is executed.
+Of course, the problem might be that the branch or statement is infeasible and that
+the null pointer exception can't ever be executed; deciding that is beyond the ability of SpotBugs.
+</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="NP_UNWRITTEN_FIELD" abbrev="NP" category="CORRECTNESS">
+    <ShortDescription>Read of unwritten field</ShortDescription>
+    <Details><![CDATA[
+
+  <p> The program is dereferencing a field that does not seem to ever have a non-null value written to it.
+Unless the field is initialized via some mechanism not seen by the analysis,
+dereferencing this value will generate a null pointer exception.
+</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="NP" cweid="476">
+    <Description>Null pointer dereference</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 14 Nov 2018 03:48:48 -0500" total_classes="12" referenced_classes="58" total_bugs="2" total_size="1242" num_packages="1" java_version="1.8.0_121" vm_version="25.121-b13" cpu_seconds="14.21" clock_seconds="7.76" peak_mbytes="200.02" alloc_mbytes="1820.50" gc_seconds="0.11" priority_2="2">
+    <FileStats path="com/google/javascript/jscomp/NodeUtil.java" bugCount="2" size="1242" bugHash="579b7ca424e2c074906abb5bfb23a2e1"/>
+    <PackageStats package="com.google.javascript.jscomp" total_bugs="2" total_types="12" total_size="1242" priority_2="2">
+      <ClassStats class="com.google.javascript.jscomp.NodeUtil" sourceFile="NodeUtil.java" interface="false" size="1164" bugs="2" priority_2="2"/>
+      <ClassStats class="com.google.javascript.jscomp.NodeUtil$1" sourceFile="NodeUtil.java" interface="false" size="1" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.NodeUtil$BooleanResultPredicate" sourceFile="NodeUtil.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.NodeUtil$MatchDeclaration" sourceFile="NodeUtil.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.NodeUtil$MatchNameNode" sourceFile="NodeUtil.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.NodeUtil$MatchNodeType" sourceFile="NodeUtil.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.NodeUtil$MatchNotFunction" sourceFile="NodeUtil.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.NodeUtil$MatchShallowStatement" sourceFile="NodeUtil.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.NodeUtil$MayBeStringResultPredicate" sourceFile="NodeUtil.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.NodeUtil$NumbericResultPredicate" sourceFile="NodeUtil.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.NodeUtil$VarCollector" sourceFile="NodeUtil.java" interface="false" size="14" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.NodeUtil$Visitor" sourceFile="NodeUtil.java" interface="true" size="2" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="873" invocations="607" avgMicrosecondsPerInvocation="1438" maxMicrosecondsPerInvocation="39081" standardDeviationMicrosecondsPerInvocation="3033"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="706" invocations="604" avgMicrosecondsPerInvocation="1169" maxMicrosecondsPerInvocation="56549" standardDeviationMicrosecondsPerInvocation="4406"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="253" invocations="155" avgMicrosecondsPerInvocation="1637" maxMicrosecondsPerInvocation="32319" standardDeviationMicrosecondsPerInvocation="4533"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="238" invocations="155" avgMicrosecondsPerInvocation="1541" maxMicrosecondsPerInvocation="71680" standardDeviationMicrosecondsPerInvocation="6132"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="219" invocations="155" avgMicrosecondsPerInvocation="1419" maxMicrosecondsPerInvocation="175327" standardDeviationMicrosecondsPerInvocation="14036"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="217" invocations="58" avgMicrosecondsPerInvocation="3757" maxMicrosecondsPerInvocation="25520" standardDeviationMicrosecondsPerInvocation="5699"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="206" invocations="155" avgMicrosecondsPerInvocation="1329" maxMicrosecondsPerInvocation="23921" standardDeviationMicrosecondsPerInvocation="3280"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="196" invocations="408" avgMicrosecondsPerInvocation="481" maxMicrosecondsPerInvocation="20235" standardDeviationMicrosecondsPerInvocation="1419"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="182" invocations="155" avgMicrosecondsPerInvocation="1175" maxMicrosecondsPerInvocation="21367" standardDeviationMicrosecondsPerInvocation="2935"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="164" invocations="155" avgMicrosecondsPerInvocation="1059" maxMicrosecondsPerInvocation="25192" standardDeviationMicrosecondsPerInvocation="2650"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="156" invocations="570" avgMicrosecondsPerInvocation="274" maxMicrosecondsPerInvocation="27677" standardDeviationMicrosecondsPerInvocation="1740"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindOpenStream" totalMilliseconds="145" invocations="1" avgMicrosecondsPerInvocation="145432" maxMicrosecondsPerInvocation="145432" standardDeviationMicrosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="141" invocations="155" avgMicrosecondsPerInvocation="912" maxMicrosecondsPerInvocation="20699" standardDeviationMicrosecondsPerInvocation="2046"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="134" invocations="58" avgMicrosecondsPerInvocation="2325" maxMicrosecondsPerInvocation="17906" standardDeviationMicrosecondsPerInvocation="3809"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="120" invocations="81" avgMicrosecondsPerInvocation="1489" maxMicrosecondsPerInvocation="67110" standardDeviationMicrosecondsPerInvocation="7492"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="113" invocations="150" avgMicrosecondsPerInvocation="753" maxMicrosecondsPerInvocation="35063" standardDeviationMicrosecondsPerInvocation="3424"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.DefaultEncodingDetector" totalMilliseconds="103" invocations="1" avgMicrosecondsPerInvocation="103487" maxMicrosecondsPerInvocation="103487" standardDeviationMicrosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="100" invocations="1" avgMicrosecondsPerInvocation="100263" maxMicrosecondsPerInvocation="100263" standardDeviationMicrosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueRangeAnalysisFactory" totalMilliseconds="75" invocations="155" avgMicrosecondsPerInvocation="489" maxMicrosecondsPerInvocation="26495" standardDeviationMicrosecondsPerInvocation="3072"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="74" invocations="58" avgMicrosecondsPerInvocation="1283" maxMicrosecondsPerInvocation="12245" standardDeviationMicrosecondsPerInvocation="2427"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="68" invocations="155" avgMicrosecondsPerInvocation="441" maxMicrosecondsPerInvocation="17884" standardDeviationMicrosecondsPerInvocation="1658"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.LiveLocalStoreDataflowFactory" totalMilliseconds="60" invocations="155" avgMicrosecondsPerInvocation="392" maxMicrosecondsPerInvocation="10029" standardDeviationMicrosecondsPerInvocation="1020"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref" totalMilliseconds="60" invocations="1" avgMicrosecondsPerInvocation="60567" maxMicrosecondsPerInvocation="60567" standardDeviationMicrosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="58" invocations="58" avgMicrosecondsPerInvocation="1016" maxMicrosecondsPerInvocation="19370" standardDeviationMicrosecondsPerInvocation="2837"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="58" invocations="58" avgMicrosecondsPerInvocation="1000" maxMicrosecondsPerInvocation="10678" standardDeviationMicrosecondsPerInvocation="1946"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

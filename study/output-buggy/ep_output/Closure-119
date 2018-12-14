@@ -1,0 +1,21 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-119/src/com/google/javascript/jscomp/GlobalNamespace.java:588: warning: [OperatorPrecedence] Use grouping parenthesis to make the operator precedence explicit
+             (info.isConstructor() && valueNode.isFunction() ||
+                                   ^
+    (see http://errorprone.info/bugpattern/OperatorPrecedence)
+  Did you mean '((info.isConstructor() && valueNode.isFunction()) ||'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-119/src/com/google/javascript/jscomp/GlobalNamespace.java:589: warning: [OperatorPrecedence] Use grouping parenthesis to make the operator precedence explicit
+              info.isInterface() && valueNode.isFunction() ||
+                                 ^
+    (see http://errorprone.info/bugpattern/OperatorPrecedence)
+  Did you mean '(info.isInterface() && valueNode.isFunction()) ||'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-119/src/com/google/javascript/jscomp/GlobalNamespace.java:590: warning: [OperatorPrecedence] Use grouping parenthesis to make the operator precedence explicit
+              info.hasEnumParameterType() && valueNode.isObjectLit());
+                                          ^
+    (see http://errorprone.info/bugpattern/OperatorPrecedence)
+  Did you mean '(info.hasEnumParameterType() && valueNode.isObjectLit()));'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-119/src/com/google/javascript/jscomp/GlobalNamespace.java:1068: warning: [OperatorPrecedence] Use grouping parenthesis to make the operator precedence explicit
+          (globalSets > 0 || localSets > 0) &&
+                                            ^
+    (see http://errorprone.info/bugpattern/OperatorPrecedence)
+  Did you mean '((parent == null || parent.canCollapseUnannotatedChildNames()) &&'?
+4 warnings

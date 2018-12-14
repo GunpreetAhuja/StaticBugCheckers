@@ -1,0 +1,41 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-5/src/main/java/org/apache/commons/math3/complex/Complex.java:156: warning: [MissingOverride] add implements method in FieldElement; expected @Override
+    public Complex add(Complex addend) throws NullArgumentException {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Complex add(Complex addend) throws NullArgumentException {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-5/src/main/java/org/apache/commons/math3/complex/Complex.java:246: warning: [MissingOverride] divide implements method in FieldElement; expected @Override
+    public Complex divide(Complex divisor)
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Complex divide(Complex divisor)'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-5/src/main/java/org/apache/commons/math3/complex/Complex.java:299: warning: [MissingOverride] reciprocal implements method in FieldElement; expected @Override
+    public Complex reciprocal() {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Complex reciprocal() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-5/src/main/java/org/apache/commons/math3/complex/Complex.java:436: warning: [MissingOverride] multiply implements method in FieldElement; expected @Override
+    public Complex multiply(Complex factor)
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Complex multiply(Complex factor)'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-5/src/main/java/org/apache/commons/math3/complex/Complex.java:461: warning: [MissingOverride] multiply implements method in FieldElement; expected @Override
+    public Complex multiply(final int factor) {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Complex multiply(final int factor) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-5/src/main/java/org/apache/commons/math3/complex/Complex.java:500: warning: [MissingOverride] negate implements method in FieldElement; expected @Override
+    public Complex negate() {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Complex negate() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-5/src/main/java/org/apache/commons/math3/complex/Complex.java:526: warning: [MissingOverride] subtract implements method in FieldElement; expected @Override
+    public Complex subtract(Complex subtrahend)
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Complex subtract(Complex subtrahend)'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-5/src/main/java/org/apache/commons/math3/complex/Complex.java:1221: warning: [MissingOverride] getField implements method in FieldElement; expected @Override
+    public ComplexField getField() {
+                        ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public ComplexField getField() {'?
+8 warnings

@@ -1,0 +1,6 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Closure-104/src/com/google/javascript/rhino/jstype/UnionType.java:490: warning: [ReferenceEquality] Comparison using reference equality instead of value equality
+      changed |= (alternate != newAlternate);
+                            ^
+    (see http://errorprone.info/bugpattern/ReferenceEquality)
+  Did you mean 'changed |= (!alternate.equals(newAlternate));'?
+1 warning

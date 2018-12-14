@@ -1,0 +1,542 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-77/src/main/java/org/apache/commons/math/linear/ArrayRealVector.java:263: warning: [MissingOverride] copy overrides method in AbstractRealVector; expected @Override
+    public AbstractRealVector copy() {
+                              ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public AbstractRealVector copy() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-77/src/main/java/org/apache/commons/math/linear/ArrayRealVector.java:268: warning: [MissingOverride] add overrides method in AbstractRealVector; expected @Override
+    public RealVector add(RealVector v)
+                      ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public RealVector add(RealVector v)'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-77/src/main/java/org/apache/commons/math/linear/ArrayRealVector.java:285: warning: [MissingOverride] add overrides method in AbstractRealVector; expected @Override
+    public RealVector add(double[] v)
+                      ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public RealVector add(double[] v)'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-77/src/main/java/org/apache/commons/math/linear/ArrayRealVector.java:307: warning: [MissingOverride] subtract overrides method in AbstractRealVector; expected @Override
+    public RealVector subtract(RealVector v)
+                      ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public RealVector subtract(RealVector v)'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-77/src/main/java/org/apache/commons/math/linear/ArrayRealVector.java:324: warning: [MissingOverride] subtract overrides method in AbstractRealVector; expected @Override
+    public RealVector subtract(double[] v)
+                      ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public RealVector subtract(double[] v)'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-77/src/main/java/org/apache/commons/math/linear/ArrayRealVector.java:346: warning: [MissingOverride] mapAddToSelf overrides method in AbstractRealVector; expected @Override
+    public RealVector mapAddToSelf(double d) {
+                      ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public RealVector mapAddToSelf(double d) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-77/src/main/java/org/apache/commons/math/linear/ArrayRealVector.java:354: warning: [MissingOverride] mapSubtractToSelf overrides method in AbstractRealVector; expected @Override
+    public RealVector mapSubtractToSelf(double d) {
+                      ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public RealVector mapSubtractToSelf(double d) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-77/src/main/java/org/apache/commons/math/linear/ArrayRealVector.java:362: warning: [MissingOverride] mapMultiplyToSelf overrides method in AbstractRealVector; expected @Override
+    public RealVector mapMultiplyToSelf(double d) {
+                      ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public RealVector mapMultiplyToSelf(double d) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-77/src/main/java/org/apache/commons/math/linear/ArrayRealVector.java:370: warning: [MissingOverride] mapDivideToSelf overrides method in AbstractRealVector; expected @Override
+    public RealVector mapDivideToSelf(double d) {
+                      ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public RealVector mapDivideToSelf(double d) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-77/src/main/java/org/apache/commons/math/linear/ArrayRealVector.java:378: warning: [MissingOverride] mapPowToSelf overrides method in AbstractRealVector; expected @Override
+    public RealVector mapPowToSelf(double d) {
+                      ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public RealVector mapPowToSelf(double d) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-77/src/main/java/org/apache/commons/math/linear/ArrayRealVector.java:386: warning: [MissingOverride] mapExpToSelf overrides method in AbstractRealVector; expected @Override
+    public RealVector mapExpToSelf() {
+                      ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public RealVector mapExpToSelf() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-77/src/main/java/org/apache/commons/math/linear/ArrayRealVector.java:394: warning: [MissingOverride] mapExpm1ToSelf overrides method in AbstractRealVector; expected @Override
+    public RealVector mapExpm1ToSelf() {
+                      ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public RealVector mapExpm1ToSelf() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-77/src/main/java/org/apache/commons/math/linear/ArrayRealVector.java:402: warning: [MissingOverride] mapLogToSelf overrides method in AbstractRealVector; expected @Override
+    public RealVector mapLogToSelf() {
+                      ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public RealVector mapLogToSelf() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-77/src/main/java/org/apache/commons/math/linear/ArrayRealVector.java:410: warning: [MissingOverride] mapLog10ToSelf overrides method in AbstractRealVector; expected @Override
+    public RealVector mapLog10ToSelf() {
+                      ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public RealVector mapLog10ToSelf() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-77/src/main/java/org/apache/commons/math/linear/ArrayRealVector.java:418: warning: [MissingOverride] mapLog1pToSelf overrides method in AbstractRealVector; expected @Override
+    public RealVector mapLog1pToSelf() {
+                      ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public RealVector mapLog1pToSelf() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-77/src/main/java/org/apache/commons/math/linear/ArrayRealVector.java:426: warning: [MissingOverride] mapCoshToSelf overrides method in AbstractRealVector; expected @Override
+    public RealVector mapCoshToSelf() {
+                      ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public RealVector mapCoshToSelf() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-77/src/main/java/org/apache/commons/math/linear/ArrayRealVector.java:434: warning: [MissingOverride] mapSinhToSelf overrides method in AbstractRealVector; expected @Override
+    public RealVector mapSinhToSelf() {
+                      ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public RealVector mapSinhToSelf() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-77/src/main/java/org/apache/commons/math/linear/ArrayRealVector.java:442: warning: [MissingOverride] mapTanhToSelf overrides method in AbstractRealVector; expected @Override
+    public RealVector mapTanhToSelf() {
+                      ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public RealVector mapTanhToSelf() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-77/src/main/java/org/apache/commons/math/linear/ArrayRealVector.java:450: warning: [MissingOverride] mapCosToSelf overrides method in AbstractRealVector; expected @Override
+    public RealVector mapCosToSelf() {
+                      ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public RealVector mapCosToSelf() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-77/src/main/java/org/apache/commons/math/linear/ArrayRealVector.java:458: warning: [MissingOverride] mapSinToSelf overrides method in AbstractRealVector; expected @Override
+    public RealVector mapSinToSelf() {
+                      ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public RealVector mapSinToSelf() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-77/src/main/java/org/apache/commons/math/linear/ArrayRealVector.java:466: warning: [MissingOverride] mapTanToSelf overrides method in AbstractRealVector; expected @Override
+    public RealVector mapTanToSelf() {
+                      ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public RealVector mapTanToSelf() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-77/src/main/java/org/apache/commons/math/linear/ArrayRealVector.java:474: warning: [MissingOverride] mapAcosToSelf overrides method in AbstractRealVector; expected @Override
+    public RealVector mapAcosToSelf() {
+                      ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public RealVector mapAcosToSelf() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-77/src/main/java/org/apache/commons/math/linear/ArrayRealVector.java:482: warning: [MissingOverride] mapAsinToSelf overrides method in AbstractRealVector; expected @Override
+    public RealVector mapAsinToSelf() {
+                      ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public RealVector mapAsinToSelf() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-77/src/main/java/org/apache/commons/math/linear/ArrayRealVector.java:490: warning: [MissingOverride] mapAtanToSelf overrides method in AbstractRealVector; expected @Override
+    public RealVector mapAtanToSelf() {
+                      ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public RealVector mapAtanToSelf() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-77/src/main/java/org/apache/commons/math/linear/ArrayRealVector.java:498: warning: [MissingOverride] mapInvToSelf overrides method in AbstractRealVector; expected @Override
+    public RealVector mapInvToSelf() {
+                      ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public RealVector mapInvToSelf() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-77/src/main/java/org/apache/commons/math/linear/ArrayRealVector.java:506: warning: [MissingOverride] mapAbsToSelf overrides method in AbstractRealVector; expected @Override
+    public RealVector mapAbsToSelf() {
+                      ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public RealVector mapAbsToSelf() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-77/src/main/java/org/apache/commons/math/linear/ArrayRealVector.java:514: warning: [MissingOverride] mapSqrtToSelf overrides method in AbstractRealVector; expected @Override
+    public RealVector mapSqrtToSelf() {
+                      ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public RealVector mapSqrtToSelf() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-77/src/main/java/org/apache/commons/math/linear/ArrayRealVector.java:522: warning: [MissingOverride] mapCbrtToSelf overrides method in AbstractRealVector; expected @Override
+    public RealVector mapCbrtToSelf() {
+                      ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public RealVector mapCbrtToSelf() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-77/src/main/java/org/apache/commons/math/linear/ArrayRealVector.java:530: warning: [MissingOverride] mapCeilToSelf overrides method in AbstractRealVector; expected @Override
+    public RealVector mapCeilToSelf() {
+                      ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public RealVector mapCeilToSelf() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-77/src/main/java/org/apache/commons/math/linear/ArrayRealVector.java:538: warning: [MissingOverride] mapFloorToSelf overrides method in AbstractRealVector; expected @Override
+    public RealVector mapFloorToSelf() {
+                      ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public RealVector mapFloorToSelf() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-77/src/main/java/org/apache/commons/math/linear/ArrayRealVector.java:546: warning: [MissingOverride] mapRintToSelf overrides method in AbstractRealVector; expected @Override
+    public RealVector mapRintToSelf() {
+                      ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public RealVector mapRintToSelf() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-77/src/main/java/org/apache/commons/math/linear/ArrayRealVector.java:554: warning: [MissingOverride] mapSignumToSelf overrides method in AbstractRealVector; expected @Override
+    public RealVector mapSignumToSelf() {
+                      ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public RealVector mapSignumToSelf() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-77/src/main/java/org/apache/commons/math/linear/ArrayRealVector.java:562: warning: [MissingOverride] mapUlpToSelf overrides method in AbstractRealVector; expected @Override
+    public RealVector mapUlpToSelf() {
+                      ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public RealVector mapUlpToSelf() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-77/src/main/java/org/apache/commons/math/linear/ArrayRealVector.java:570: warning: [MissingOverride] ebeMultiply implements method in RealVector; expected @Override
+    public RealVector ebeMultiply(RealVector v)
+                      ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public RealVector ebeMultiply(RealVector v)'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-77/src/main/java/org/apache/commons/math/linear/ArrayRealVector.java:585: warning: [MissingOverride] ebeMultiply overrides method in AbstractRealVector; expected @Override
+    public RealVector ebeMultiply(double[] v)
+                      ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public RealVector ebeMultiply(double[] v)'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-77/src/main/java/org/apache/commons/math/linear/ArrayRealVector.java:607: warning: [MissingOverride] ebeDivide implements method in RealVector; expected @Override
+    public RealVector ebeDivide(RealVector v)
+                      ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public RealVector ebeDivide(RealVector v)'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-77/src/main/java/org/apache/commons/math/linear/ArrayRealVector.java:622: warning: [MissingOverride] ebeDivide overrides method in AbstractRealVector; expected @Override
+    public RealVector ebeDivide(double[] v)
+                      ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public RealVector ebeDivide(double[] v)'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-77/src/main/java/org/apache/commons/math/linear/ArrayRealVector.java:644: warning: [MissingOverride] getData overrides method in AbstractRealVector; expected @Override
+    public double[] getData() {
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double[] getData() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-77/src/main/java/org/apache/commons/math/linear/ArrayRealVector.java:658: warning: [MissingOverride] dotProduct overrides method in AbstractRealVector; expected @Override
+    public double dotProduct(RealVector v)
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double dotProduct(RealVector v)'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-77/src/main/java/org/apache/commons/math/linear/ArrayRealVector.java:675: warning: [MissingOverride] dotProduct overrides method in AbstractRealVector; expected @Override
+    public double dotProduct(double[] v)
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double dotProduct(double[] v)'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-77/src/main/java/org/apache/commons/math/linear/ArrayRealVector.java:727: warning: [MissingOverride] getDistance overrides method in AbstractRealVector; expected @Override
+    public double getDistance(RealVector v)
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double getDistance(RealVector v)'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-77/src/main/java/org/apache/commons/math/linear/ArrayRealVector.java:743: warning: [MissingOverride] getDistance overrides method in AbstractRealVector; expected @Override
+    public double getDistance(double[] v)
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double getDistance(double[] v)'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-77/src/main/java/org/apache/commons/math/linear/ArrayRealVector.java:773: warning: [MissingOverride] getL1Distance overrides method in AbstractRealVector; expected @Override
+    public double getL1Distance(RealVector v)
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double getL1Distance(RealVector v)'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-77/src/main/java/org/apache/commons/math/linear/ArrayRealVector.java:789: warning: [MissingOverride] getL1Distance overrides method in AbstractRealVector; expected @Override
+    public double getL1Distance(double[] v)
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double getL1Distance(double[] v)'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-77/src/main/java/org/apache/commons/math/linear/ArrayRealVector.java:819: warning: [MissingOverride] getLInfDistance overrides method in AbstractRealVector; expected @Override
+    public double getLInfDistance(RealVector v)
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double getLInfDistance(RealVector v)'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-77/src/main/java/org/apache/commons/math/linear/ArrayRealVector.java:835: warning: [MissingOverride] getLInfDistance overrides method in AbstractRealVector; expected @Override
+    public double getLInfDistance(double[] v)
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double getLInfDistance(double[] v)'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-77/src/main/java/org/apache/commons/math/linear/ArrayRealVector.java:865: warning: [MissingOverride] unitVector overrides method in AbstractRealVector; expected @Override
+    public RealVector unitVector() throws ArithmeticException {
+                      ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public RealVector unitVector() throws ArithmeticException {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-77/src/main/java/org/apache/commons/math/linear/ArrayRealVector.java:874: warning: [MissingOverride] unitize overrides method in AbstractRealVector; expected @Override
+    public void unitize() throws ArithmeticException {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void unitize() throws ArithmeticException {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-77/src/main/java/org/apache/commons/math/linear/ArrayRealVector.java:883: warning: [MissingOverride] projection implements method in RealVector; expected @Override
+    public RealVector projection(RealVector v) {
+                      ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public RealVector projection(RealVector v) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-77/src/main/java/org/apache/commons/math/linear/ArrayRealVector.java:888: warning: [MissingOverride] projection overrides method in AbstractRealVector; expected @Override
+    public RealVector projection(double[] v) {
+                      ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public RealVector projection(double[] v) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-77/src/main/java/org/apache/commons/math/linear/ArrayRealVector.java:902: warning: [MissingOverride] outerProduct overrides method in AbstractRealVector; expected @Override
+    public RealMatrix outerProduct(RealVector v)
+                      ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public RealMatrix outerProduct(RealVector v)'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-77/src/main/java/org/apache/commons/math/linear/ArrayRealVector.java:931: warning: [MissingOverride] outerProduct overrides method in AbstractRealVector; expected @Override
+    public RealMatrix outerProduct(double[] v)
+                      ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public RealMatrix outerProduct(double[] v)'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-77/src/main/java/org/apache/commons/math/linear/ArrayRealVector.java:945: warning: [MissingOverride] getEntry implements method in RealVector; expected @Override
+    public double getEntry(int index) throws MatrixIndexException {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double getEntry(int index) throws MatrixIndexException {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-77/src/main/java/org/apache/commons/math/linear/ArrayRealVector.java:950: warning: [MissingOverride] getDimension implements method in RealVector; expected @Override
+    public int getDimension() {
+               ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int getDimension() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-77/src/main/java/org/apache/commons/math/linear/ArrayRealVector.java:955: warning: [MissingOverride] append implements method in RealVector; expected @Override
+    public RealVector append(RealVector v) {
+                      ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public RealVector append(RealVector v) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-77/src/main/java/org/apache/commons/math/linear/ArrayRealVector.java:973: warning: [MissingOverride] append implements method in RealVector; expected @Override
+    public RealVector append(double in) {
+                      ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public RealVector append(double in) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-77/src/main/java/org/apache/commons/math/linear/ArrayRealVector.java:981: warning: [MissingOverride] append implements method in RealVector; expected @Override
+    public RealVector append(double[] in) {
+                      ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public RealVector append(double[] in) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-77/src/main/java/org/apache/commons/math/linear/ArrayRealVector.java:986: warning: [MissingOverride] getSubVector implements method in RealVector; expected @Override
+    public RealVector getSubVector(int index, int n) {
+                      ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public RealVector getSubVector(int index, int n) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-77/src/main/java/org/apache/commons/math/linear/ArrayRealVector.java:998: warning: [MissingOverride] setEntry implements method in RealVector; expected @Override
+    public void setEntry(int index, double value) {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void setEntry(int index, double value) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-77/src/main/java/org/apache/commons/math/linear/ArrayRealVector.java:1007: warning: [MissingOverride] setSubVector overrides method in AbstractRealVector; expected @Override
+    public void setSubVector(int index, RealVector v) {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void setSubVector(int index, RealVector v) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-77/src/main/java/org/apache/commons/math/linear/ArrayRealVector.java:1023: warning: [MissingOverride] setSubVector overrides method in AbstractRealVector; expected @Override
+    public void setSubVector(int index, double[] v) {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void setSubVector(int index, double[] v) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-77/src/main/java/org/apache/commons/math/linear/ArrayRealVector.java:1046: warning: [MissingOverride] set overrides method in AbstractRealVector; expected @Override
+    public void set(double value) {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void set(double value) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-77/src/main/java/org/apache/commons/math/linear/ArrayRealVector.java:1051: warning: [MissingOverride] toArray overrides method in AbstractRealVector; expected @Override
+    public double[] toArray(){
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double[] toArray(){'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-77/src/main/java/org/apache/commons/math/linear/ArrayRealVector.java:1067: warning: [MissingOverride] checkVectorDimensions overrides method in AbstractRealVector; expected @Override
+    protected void checkVectorDimensions(RealVector v)
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override protected void checkVectorDimensions(RealVector v)'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-77/src/main/java/org/apache/commons/math/linear/ArrayRealVector.java:1079: warning: [MissingOverride] checkVectorDimensions overrides method in AbstractRealVector; expected @Override
+    protected void checkVectorDimensions(int n)
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override protected void checkVectorDimensions(int n)'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-77/src/main/java/org/apache/commons/math/linear/ArrayRealVector.java:1092: warning: [MissingOverride] isNaN implements method in RealVector; expected @Override
+    public boolean isNaN() {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public boolean isNaN() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-77/src/main/java/org/apache/commons/math/linear/ArrayRealVector.java:1107: warning: [MissingOverride] isInfinite implements method in RealVector; expected @Override
+    public boolean isInfinite() {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public boolean isInfinite() {'?
+67 warnings
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-77/src/main/java/org/apache/commons/math/linear/OpenMapRealVector.java:209: warning: [MissingOverride] add overrides method in AbstractRealVector; expected @Override
+    public RealVector add(RealVector v) throws IllegalArgumentException {
+                      ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public RealVector add(RealVector v) throws IllegalArgumentException {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-77/src/main/java/org/apache/commons/math/linear/OpenMapRealVector.java:258: warning: [MissingOverride] append implements method in RealVector; expected @Override
+    public OpenMapRealVector append(RealVector v) {
+                             ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public OpenMapRealVector append(RealVector v) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-77/src/main/java/org/apache/commons/math/linear/OpenMapRealVector.java:266: warning: [MissingOverride] append implements method in RealVector; expected @Override
+    public OpenMapRealVector append(double d) {
+                             ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public OpenMapRealVector append(double d) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-77/src/main/java/org/apache/commons/math/linear/OpenMapRealVector.java:273: warning: [MissingOverride] append implements method in RealVector; expected @Override
+    public OpenMapRealVector append(double[] a) {
+                             ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public OpenMapRealVector append(double[] a) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-77/src/main/java/org/apache/commons/math/linear/OpenMapRealVector.java:282: warning: [MissingOverride] copy overrides method in AbstractRealVector; expected @Override
+    public OpenMapRealVector copy() {
+                             ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public OpenMapRealVector copy() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-77/src/main/java/org/apache/commons/math/linear/OpenMapRealVector.java:307: warning: [MissingOverride] dotProduct overrides method in AbstractRealVector; expected @Override
+    public double dotProduct(RealVector v) throws IllegalArgumentException {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double dotProduct(RealVector v) throws IllegalArgumentException {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-77/src/main/java/org/apache/commons/math/linear/OpenMapRealVector.java:316: warning: [MissingOverride] ebeDivide implements method in RealVector; expected @Override
+    public OpenMapRealVector ebeDivide(RealVector v) throws IllegalArgumentException {
+                             ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public OpenMapRealVector ebeDivide(RealVector v) throws IllegalArgumentException {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-77/src/main/java/org/apache/commons/math/linear/OpenMapRealVector.java:328: warning: [MissingOverride] ebeDivide overrides method in AbstractRealVector; expected @Override
+    public OpenMapRealVector ebeDivide(double[] v) throws IllegalArgumentException {
+                             ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public OpenMapRealVector ebeDivide(double[] v) throws IllegalArgumentException {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-77/src/main/java/org/apache/commons/math/linear/OpenMapRealVector.java:340: warning: [MissingOverride] ebeMultiply implements method in RealVector; expected @Override
+    public OpenMapRealVector ebeMultiply(RealVector v) throws IllegalArgumentException {
+                             ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public OpenMapRealVector ebeMultiply(RealVector v) throws IllegalArgumentException {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-77/src/main/java/org/apache/commons/math/linear/OpenMapRealVector.java:352: warning: [MissingOverride] ebeMultiply overrides method in AbstractRealVector; expected @Override
+    public OpenMapRealVector ebeMultiply(double[] v) throws IllegalArgumentException {
+                             ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public OpenMapRealVector ebeMultiply(double[] v) throws IllegalArgumentException {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-77/src/main/java/org/apache/commons/math/linear/OpenMapRealVector.java:364: warning: [MissingOverride] getSubVector implements method in RealVector; expected @Override
+    public OpenMapRealVector getSubVector(int index, int n) throws MatrixIndexException {
+                             ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public OpenMapRealVector getSubVector(int index, int n) throws MatrixIndexException {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-77/src/main/java/org/apache/commons/math/linear/OpenMapRealVector.java:381: warning: [MissingOverride] getData overrides method in AbstractRealVector; expected @Override
+    public double[] getData() {
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double[] getData() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-77/src/main/java/org/apache/commons/math/linear/OpenMapRealVector.java:392: warning: [MissingOverride] getDimension implements method in RealVector; expected @Override
+    public int getDimension() {
+               ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int getDimension() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-77/src/main/java/org/apache/commons/math/linear/OpenMapRealVector.java:425: warning: [MissingOverride] getDistance overrides method in AbstractRealVector; expected @Override
+    public double getDistance(RealVector v) throws IllegalArgumentException {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double getDistance(RealVector v) throws IllegalArgumentException {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-77/src/main/java/org/apache/commons/math/linear/OpenMapRealVector.java:434: warning: [MissingOverride] getDistance overrides method in AbstractRealVector; expected @Override
+    public double getDistance(double[] v) throws IllegalArgumentException {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double getDistance(double[] v) throws IllegalArgumentException {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-77/src/main/java/org/apache/commons/math/linear/OpenMapRealVector.java:445: warning: [MissingOverride] getEntry implements method in RealVector; expected @Override
+    public double getEntry(int index) throws MatrixIndexException {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double getEntry(int index) throws MatrixIndexException {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-77/src/main/java/org/apache/commons/math/linear/OpenMapRealVector.java:479: warning: [MissingOverride] getL1Distance overrides method in AbstractRealVector; expected @Override
+    public double getL1Distance(RealVector v) throws IllegalArgumentException {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double getL1Distance(RealVector v) throws IllegalArgumentException {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-77/src/main/java/org/apache/commons/math/linear/OpenMapRealVector.java:488: warning: [MissingOverride] getL1Distance overrides method in AbstractRealVector; expected @Override
+    public double getL1Distance(double[] v) throws IllegalArgumentException {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double getL1Distance(double[] v) throws IllegalArgumentException {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-77/src/main/java/org/apache/commons/math/linear/OpenMapRealVector.java:498: warning: [MissingOverride] getLInfNorm overrides method in AbstractRealVector; expected @Override
+    public double getLInfNorm() {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double getLInfNorm() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-77/src/main/java/org/apache/commons/math/linear/OpenMapRealVector.java:536: warning: [MissingOverride] getLInfDistance overrides method in AbstractRealVector; expected @Override
+    public double getLInfDistance(RealVector v) throws IllegalArgumentException {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double getLInfDistance(RealVector v) throws IllegalArgumentException {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-77/src/main/java/org/apache/commons/math/linear/OpenMapRealVector.java:545: warning: [MissingOverride] getLInfDistance overrides method in AbstractRealVector; expected @Override
+    public double getLInfDistance(double[] v) throws IllegalArgumentException {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double getLInfDistance(double[] v) throws IllegalArgumentException {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-77/src/main/java/org/apache/commons/math/linear/OpenMapRealVector.java:558: warning: [MissingOverride] isInfinite implements method in RealVector; expected @Override
+    public boolean isInfinite() {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public boolean isInfinite() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-77/src/main/java/org/apache/commons/math/linear/OpenMapRealVector.java:575: warning: [MissingOverride] isNaN implements method in RealVector; expected @Override
+    public boolean isNaN() {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public boolean isNaN() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-77/src/main/java/org/apache/commons/math/linear/OpenMapRealVector.java:587: warning: [MissingOverride] mapAdd overrides method in AbstractRealVector; expected @Override
+    public OpenMapRealVector mapAdd(double d) {
+                             ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public OpenMapRealVector mapAdd(double d) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-77/src/main/java/org/apache/commons/math/linear/OpenMapRealVector.java:592: warning: [MissingOverride] mapAddToSelf overrides method in AbstractRealVector; expected @Override
+    public OpenMapRealVector mapAddToSelf(double d) {
+                             ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public OpenMapRealVector mapAddToSelf(double d) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-77/src/main/java/org/apache/commons/math/linear/OpenMapRealVector.java:600: warning: [MissingOverride] outerProduct overrides method in AbstractRealVector; expected @Override
+    public RealMatrix outerProduct(double[] v) throws IllegalArgumentException {
+                      ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public RealMatrix outerProduct(double[] v) throws IllegalArgumentException {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-77/src/main/java/org/apache/commons/math/linear/OpenMapRealVector.java:616: warning: [MissingOverride] projection implements method in RealVector; expected @Override
+    public RealVector projection(RealVector v) throws IllegalArgumentException {
+                      ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public RealVector projection(RealVector v) throws IllegalArgumentException {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-77/src/main/java/org/apache/commons/math/linear/OpenMapRealVector.java:622: warning: [MissingOverride] projection overrides method in AbstractRealVector; expected @Override
+    public OpenMapRealVector projection(double[] v) throws IllegalArgumentException {
+                             ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public OpenMapRealVector projection(double[] v) throws IllegalArgumentException {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-77/src/main/java/org/apache/commons/math/linear/OpenMapRealVector.java:628: warning: [MissingOverride] setEntry implements method in RealVector; expected @Override
+    public void setEntry(int index, double value) throws MatrixIndexException {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void setEntry(int index, double value) throws MatrixIndexException {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-77/src/main/java/org/apache/commons/math/linear/OpenMapRealVector.java:638: warning: [MissingOverride] setSubVector overrides method in AbstractRealVector; expected @Override
+    public void setSubVector(int index, RealVector v) throws MatrixIndexException {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void setSubVector(int index, RealVector v) throws MatrixIndexException {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-77/src/main/java/org/apache/commons/math/linear/OpenMapRealVector.java:645: warning: [MissingOverride] setSubVector overrides method in AbstractRealVector; expected @Override
+    public void setSubVector(int index, double[] v) throws MatrixIndexException {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void setSubVector(int index, double[] v) throws MatrixIndexException {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-77/src/main/java/org/apache/commons/math/linear/OpenMapRealVector.java:654: warning: [MissingOverride] set overrides method in AbstractRealVector; expected @Override
+    public void set(double value) {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void set(double value) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-77/src/main/java/org/apache/commons/math/linear/OpenMapRealVector.java:683: warning: [MissingOverride] subtract overrides method in AbstractRealVector; expected @Override
+    public OpenMapRealVector subtract(RealVector v) throws IllegalArgumentException {
+                             ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public OpenMapRealVector subtract(RealVector v) throws IllegalArgumentException {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-77/src/main/java/org/apache/commons/math/linear/OpenMapRealVector.java:692: warning: [MissingOverride] subtract overrides method in AbstractRealVector; expected @Override
+    public OpenMapRealVector subtract(double[] v) throws IllegalArgumentException {
+                             ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public OpenMapRealVector subtract(double[] v) throws IllegalArgumentException {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-77/src/main/java/org/apache/commons/math/linear/OpenMapRealVector.java:707: warning: [MissingOverride] unitVector overrides method in AbstractRealVector; expected @Override
+    public OpenMapRealVector unitVector() {
+                             ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public OpenMapRealVector unitVector() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-77/src/main/java/org/apache/commons/math/linear/OpenMapRealVector.java:714: warning: [MissingOverride] unitize overrides method in AbstractRealVector; expected @Override
+    public void unitize() {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void unitize() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-77/src/main/java/org/apache/commons/math/linear/OpenMapRealVector.java:729: warning: [MissingOverride] toArray overrides method in AbstractRealVector; expected @Override
+    public double[] toArray() {
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double[] toArray() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-77/src/main/java/org/apache/commons/math/linear/OpenMapRealVector.java:808: warning: [MissingOverride] sparseIterator overrides method in AbstractRealVector; expected @Override
+    public java.util.Iterator<Entry> sparseIterator() {
+                                     ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public java.util.Iterator<Entry> sparseIterator() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-77/src/main/java/org/apache/commons/math/linear/OpenMapRealVector.java:869: warning: [MissingOverride] hasNext implements method in Iterator; expected @Override
+        public boolean hasNext() {
+                       ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public boolean hasNext() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-77/src/main/java/org/apache/commons/math/linear/OpenMapRealVector.java:874: warning: [MissingOverride] next implements method in Iterator; expected @Override
+        public Entry next() {
+                     ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Entry next() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-77/src/main/java/org/apache/commons/math/linear/OpenMapRealVector.java:880: warning: [MissingOverride] remove implements method in Iterator; expected @Override
+        public void remove() {
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void remove() {'?
+41 warnings

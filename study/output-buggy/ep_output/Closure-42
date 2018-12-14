@@ -1,0 +1,11 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-42/src/com/google/javascript/jscomp/parsing/IRFactory.java:96: warning: [MutableConstantField] Constant field declarations should use the immutable type (such as ImmutableList) instead of the general collection interface type (such as List)
+  private static final Set<String> ES5_RESERVED_KEYWORDS =
+                          ^
+    (see http://errorprone.info/bugpattern/MutableConstantField)
+  Did you mean 'private static final ImmutableSet<String> ES5_RESERVED_KEYWORDS ='?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-42/src/com/google/javascript/jscomp/parsing/IRFactory.java:100: warning: [MutableConstantField] Constant field declarations should use the immutable type (such as ImmutableList) instead of the general collection interface type (such as List)
+  private static final Set<String> ES5_STRICT_RESERVED_KEYWORDS =
+                          ^
+    (see http://errorprone.info/bugpattern/MutableConstantField)
+  Did you mean 'private static final ImmutableSet<String> ES5_STRICT_RESERVED_KEYWORDS ='?
+2 warnings

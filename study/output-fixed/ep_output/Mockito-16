@@ -1,0 +1,5 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Mockito-16/src/org/mockito/Mockito.java:776: warning: [FunctionalInterfaceClash] When passing lambda arguments to this function, callers will need a cast to disambiguate with: mock(Class<T>, Answer)
+    public static <T> T mock(Class<T> classToMock, ReturnValues returnValues) {
+                        ^
+    (see http://errorprone.info/bugpattern/FunctionalInterfaceClash)
+1 warning

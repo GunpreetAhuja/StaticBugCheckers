@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.1.0" sequence="0" timestamp="1542191125000" analysisTimestamp="1542191128735" release="">
+  <Project projectName="">
+    <Jar>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-98/src/java</Jar>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-98/target/classes</AuxClasspathEntry>
+  </Project>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE" instanceHash="64601a409aa63a20507d0d5643eef27" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="374">
+    <ShortMessage>May expose internal representation by returning reference to mutable object</ShortMessage>
+    <LongMessage>org.apache.commons.math.linear.BigMatrixImpl.getDataRef() may expose internal representation by returning BigMatrixImpl.data</LongMessage>
+    <Class classname="org.apache.commons.math.linear.BigMatrixImpl" primary="true">
+      <SourceLine classname="org.apache.commons.math.linear.BigMatrixImpl" start="56" end="1463" sourcefile="BigMatrixImpl.java" sourcepath="org/apache/commons/math/linear/BigMatrixImpl.java">
+        <Message>At BigMatrixImpl.java:[lines 56-1463]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.math.linear.BigMatrixImpl</Message>
+    </Class>
+    <Method classname="org.apache.commons.math.linear.BigMatrixImpl" name="getDataRef" signature="()[[Ljava/math/BigDecimal;" isStatic="false" primary="true">
+      <SourceLine classname="org.apache.commons.math.linear.BigMatrixImpl" start="508" end="508" startBytecode="0" endBytecode="28" sourcefile="BigMatrixImpl.java" sourcepath="org/apache/commons/math/linear/BigMatrixImpl.java"/>
+      <Message>In method org.apache.commons.math.linear.BigMatrixImpl.getDataRef()</Message>
+    </Method>
+    <Field classname="org.apache.commons.math.linear.BigMatrixImpl" name="data" signature="[[Ljava/math/BigDecimal;" isStatic="false" primary="true">
+      <SourceLine classname="org.apache.commons.math.linear.BigMatrixImpl" sourcefile="BigMatrixImpl.java" sourcepath="org/apache/commons/math/linear/BigMatrixImpl.java">
+        <Message>In BigMatrixImpl.java</Message>
+      </SourceLine>
+      <Message>Field org.apache.commons.math.linear.BigMatrixImpl.data</Message>
+    </Field>
+    <SourceLine classname="org.apache.commons.math.linear.BigMatrixImpl" primary="true" start="508" end="508" startBytecode="4" endBytecode="4" sourcefile="BigMatrixImpl.java" sourcepath="org/apache/commons/math/linear/BigMatrixImpl.java">
+      <Message>At BigMatrixImpl.java:[line 508]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE" instanceHash="f3dc4aeb52cd92341aff9df0eff1e865" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="374">
+    <ShortMessage>May expose internal representation by incorporating reference to mutable object</ShortMessage>
+    <LongMessage>new org.apache.commons.math.linear.BigMatrixImpl(BigDecimal[][], boolean) may expose internal representation by storing an externally mutable object into BigMatrixImpl.data</LongMessage>
+    <Class classname="org.apache.commons.math.linear.BigMatrixImpl" primary="true">
+      <SourceLine classname="org.apache.commons.math.linear.BigMatrixImpl" start="56" end="1463" sourcefile="BigMatrixImpl.java" sourcepath="org/apache/commons/math/linear/BigMatrixImpl.java">
+        <Message>At BigMatrixImpl.java:[lines 56-1463]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.math.linear.BigMatrixImpl</Message>
+    </Class>
+    <Method classname="org.apache.commons.math.linear.BigMatrixImpl" name="&lt;init&gt;" signature="([[Ljava/math/BigDecimal;Z)V" isStatic="false" primary="true">
+      <SourceLine classname="org.apache.commons.math.linear.BigMatrixImpl" start="138" end="161" startBytecode="0" endBytecode="309" sourcefile="BigMatrixImpl.java" sourcepath="org/apache/commons/math/linear/BigMatrixImpl.java"/>
+      <Message>In method new org.apache.commons.math.linear.BigMatrixImpl(BigDecimal[][], boolean)</Message>
+    </Method>
+    <Field classname="org.apache.commons.math.linear.BigMatrixImpl" name="data" signature="[[Ljava/math/BigDecimal;" isStatic="false" primary="true">
+      <SourceLine classname="org.apache.commons.math.linear.BigMatrixImpl" sourcefile="BigMatrixImpl.java" sourcepath="org/apache/commons/math/linear/BigMatrixImpl.java">
+        <Message>In BigMatrixImpl.java</Message>
+      </SourceLine>
+      <Message>Field org.apache.commons.math.linear.BigMatrixImpl.data</Message>
+    </Field>
+    <LocalVariable name="?" register="1" pc="140" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="org.apache.commons.math.linear.BigMatrixImpl" primary="true" start="158" end="158" startBytecode="140" endBytecode="140" sourcefile="BigMatrixImpl.java" sourcepath="org/apache/commons/math/linear/BigMatrixImpl.java">
+      <Message>At BigMatrixImpl.java:[line 158]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE" instanceHash="668d12cc71e696900db17dc55b05184b" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="374">
+    <ShortMessage>May expose internal representation by returning reference to mutable object</ShortMessage>
+    <LongMessage>org.apache.commons.math.linear.RealMatrixImpl.getDataRef() may expose internal representation by returning RealMatrixImpl.data</LongMessage>
+    <Class classname="org.apache.commons.math.linear.RealMatrixImpl" primary="true">
+      <SourceLine classname="org.apache.commons.math.linear.RealMatrixImpl" start="58" end="1175" sourcefile="RealMatrixImpl.java" sourcepath="org/apache/commons/math/linear/RealMatrixImpl.java">
+        <Message>At RealMatrixImpl.java:[lines 58-1175]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.math.linear.RealMatrixImpl</Message>
+    </Class>
+    <Method classname="org.apache.commons.math.linear.RealMatrixImpl" name="getDataRef" signature="()[[D" isStatic="false" primary="true">
+      <SourceLine classname="org.apache.commons.math.linear.RealMatrixImpl" start="417" end="417" startBytecode="0" endBytecode="28" sourcefile="RealMatrixImpl.java" sourcepath="org/apache/commons/math/linear/RealMatrixImpl.java"/>
+      <Message>In method org.apache.commons.math.linear.RealMatrixImpl.getDataRef()</Message>
+    </Method>
+    <Field classname="org.apache.commons.math.linear.RealMatrixImpl" name="data" signature="[[D" isStatic="false" primary="true">
+      <SourceLine classname="org.apache.commons.math.linear.RealMatrixImpl" sourcefile="RealMatrixImpl.java" sourcepath="org/apache/commons/math/linear/RealMatrixImpl.java">
+        <Message>In RealMatrixImpl.java</Message>
+      </SourceLine>
+      <Message>Field org.apache.commons.math.linear.RealMatrixImpl.data</Message>
+    </Field>
+    <SourceLine classname="org.apache.commons.math.linear.RealMatrixImpl" primary="true" start="417" end="417" startBytecode="4" endBytecode="4" sourcefile="RealMatrixImpl.java" sourcepath="org/apache/commons/math/linear/RealMatrixImpl.java">
+      <Message>At RealMatrixImpl.java:[line 417]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE" instanceHash="c4b9da7359263f1c90005a26ba0fcad8" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="374">
+    <ShortMessage>May expose internal representation by incorporating reference to mutable object</ShortMessage>
+    <LongMessage>new org.apache.commons.math.linear.RealMatrixImpl(double[][], boolean) may expose internal representation by storing an externally mutable object into RealMatrixImpl.data</LongMessage>
+    <Class classname="org.apache.commons.math.linear.RealMatrixImpl" primary="true">
+      <SourceLine classname="org.apache.commons.math.linear.RealMatrixImpl" start="58" end="1175" sourcefile="RealMatrixImpl.java" sourcepath="org/apache/commons/math/linear/RealMatrixImpl.java">
+        <Message>At RealMatrixImpl.java:[lines 58-1175]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.math.linear.RealMatrixImpl</Message>
+    </Class>
+    <Method classname="org.apache.commons.math.linear.RealMatrixImpl" name="&lt;init&gt;" signature="([[DZ)V" isStatic="false" primary="true">
+      <SourceLine classname="org.apache.commons.math.linear.RealMatrixImpl" start="130" end="153" startBytecode="0" endBytecode="290" sourcefile="RealMatrixImpl.java" sourcepath="org/apache/commons/math/linear/RealMatrixImpl.java"/>
+      <Message>In method new org.apache.commons.math.linear.RealMatrixImpl(double[][], boolean)</Message>
+    </Method>
+    <Field classname="org.apache.commons.math.linear.RealMatrixImpl" name="data" signature="[[D" isStatic="false" primary="true">
+      <SourceLine classname="org.apache.commons.math.linear.RealMatrixImpl" sourcefile="RealMatrixImpl.java" sourcepath="org/apache/commons/math/linear/RealMatrixImpl.java">
+        <Message>In RealMatrixImpl.java</Message>
+      </SourceLine>
+      <Message>Field org.apache.commons.math.linear.RealMatrixImpl.data</Message>
+    </Field>
+    <LocalVariable name="?" register="1" pc="129" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="org.apache.commons.math.linear.RealMatrixImpl" primary="true" start="150" end="150" startBytecode="129" endBytecode="129" sourcefile="RealMatrixImpl.java" sourcepath="org/apache/commons/math/linear/RealMatrixImpl.java">
+      <Message>At RealMatrixImpl.java:[line 150]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="MALICIOUS_CODE">
+    <Description>Malicious code vulnerability</Description>
+  </BugCategory>
+  <BugPattern type="EI_EXPOSE_REP2" abbrev="EI2" category="MALICIOUS_CODE" cweid="374">
+    <ShortDescription>May expose internal representation by incorporating reference to mutable object</ShortDescription>
+    <Details><![CDATA[
+
+  <p> This code stores a reference to an externally mutable object into the
+  internal representation of the object.&nbsp;
+   If instances
+   are accessed by untrusted code, and unchecked changes to
+   the mutable object would compromise security or other
+   important properties, you will need to do something different.
+  Storing a copy of the object is better approach in many situations.</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="EI_EXPOSE_REP" abbrev="EI" category="MALICIOUS_CODE" cweid="374">
+    <ShortDescription>May expose internal representation by returning reference to mutable object</ShortDescription>
+    <Details><![CDATA[
+
+  <p> Returning a reference to a mutable object value stored in one of the object's fields
+  exposes the internal representation of the object.&nbsp;
+   If instances
+   are accessed by untrusted code, and unchecked changes to
+   the mutable object would compromise security or other
+   important properties, you will need to do something different.
+  Returning a new copy of the object is better approach in many situations.</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="EI">
+    <Description>Method returning array may expose internal representation</Description>
+  </BugCode>
+  <BugCode abbrev="EI2">
+    <Description>Storing reference to mutable object</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 14 Nov 2018 05:25:25 -0500" total_classes="2" referenced_classes="26" total_bugs="4" total_size="1045" num_packages="1" java_version="1.8.0_121" vm_version="25.121-b13" cpu_seconds="12.32" clock_seconds="6.82" peak_mbytes="144.03" alloc_mbytes="1820.50" gc_seconds="0.08" priority_2="4">
+    <FileStats path="org/apache/commons/math/linear/BigMatrixImpl.java" bugCount="2" size="575" bugHash="3fa31bd6bb7b98ad358553f13ade8400"/>
+    <FileStats path="org/apache/commons/math/linear/RealMatrixImpl.java" bugCount="2" size="470" bugHash="9e59ec560abcb6e65fc920abada78d8a"/>
+    <PackageStats package="org.apache.commons.math.linear" total_bugs="4" total_types="2" total_size="1045" priority_2="4">
+      <ClassStats class="org.apache.commons.math.linear.BigMatrixImpl" sourceFile="BigMatrixImpl.java" interface="false" size="575" bugs="2" priority_2="2"/>
+      <ClassStats class="org.apache.commons.math.linear.RealMatrixImpl" sourceFile="RealMatrixImpl.java" interface="false" size="470" bugs="2" priority_2="2"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="546" invocations="365" avgMicrosecondsPerInvocation="1497" maxMicrosecondsPerInvocation="33437" standardDeviationMicrosecondsPerInvocation="3417"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="494" invocations="363" avgMicrosecondsPerInvocation="1362" maxMicrosecondsPerInvocation="43945" standardDeviationMicrosecondsPerInvocation="4003"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="303" invocations="117" avgMicrosecondsPerInvocation="2596" maxMicrosecondsPerInvocation="29994" standardDeviationMicrosecondsPerInvocation="5263"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="288" invocations="109" avgMicrosecondsPerInvocation="2649" maxMicrosecondsPerInvocation="30013" standardDeviationMicrosecondsPerInvocation="5396"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="283" invocations="26" avgMicrosecondsPerInvocation="10901" maxMicrosecondsPerInvocation="59224" standardDeviationMicrosecondsPerInvocation="16611"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="280" invocations="109" avgMicrosecondsPerInvocation="2571" maxMicrosecondsPerInvocation="45260" standardDeviationMicrosecondsPerInvocation="6056"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="234" invocations="263" avgMicrosecondsPerInvocation="890" maxMicrosecondsPerInvocation="23560" standardDeviationMicrosecondsPerInvocation="2476"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="222" invocations="109" avgMicrosecondsPerInvocation="2038" maxMicrosecondsPerInvocation="28258" standardDeviationMicrosecondsPerInvocation="4495"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="208" invocations="111" avgMicrosecondsPerInvocation="1877" maxMicrosecondsPerInvocation="26849" standardDeviationMicrosecondsPerInvocation="4063"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="192" invocations="99" avgMicrosecondsPerInvocation="1945" maxMicrosecondsPerInvocation="32543" standardDeviationMicrosecondsPerInvocation="4907"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="146" invocations="109" avgMicrosecondsPerInvocation="1343" maxMicrosecondsPerInvocation="23018" standardDeviationMicrosecondsPerInvocation="3193"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="114" invocations="26" avgMicrosecondsPerInvocation="4396" maxMicrosecondsPerInvocation="39084" standardDeviationMicrosecondsPerInvocation="9149"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="111" invocations="26" avgMicrosecondsPerInvocation="4281" maxMicrosecondsPerInvocation="26285" standardDeviationMicrosecondsPerInvocation="6630"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="110" invocations="109" avgMicrosecondsPerInvocation="1016" maxMicrosecondsPerInvocation="87955" standardDeviationMicrosecondsPerInvocation="8372"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="105" invocations="109" avgMicrosecondsPerInvocation="969" maxMicrosecondsPerInvocation="15578" standardDeviationMicrosecondsPerInvocation="2492"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.TypeQualifierNullnessAnnotationDatabase" totalMilliseconds="86" invocations="1202" avgMicrosecondsPerInvocation="71" maxMicrosecondsPerInvocation="49057" standardDeviationMicrosecondsPerInvocation="1512"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="85" invocations="2" avgMicrosecondsPerInvocation="42753" maxMicrosecondsPerInvocation="46249" standardDeviationMicrosecondsPerInvocation="3496"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="71" invocations="26" avgMicrosecondsPerInvocation="2768" maxMicrosecondsPerInvocation="25343" standardDeviationMicrosecondsPerInvocation="4999"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.LiveLocalStoreDataflowFactory" totalMilliseconds="69" invocations="109" avgMicrosecondsPerInvocation="634" maxMicrosecondsPerInvocation="12181" standardDeviationMicrosecondsPerInvocation="1654"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindFieldSelfAssignment" totalMilliseconds="66" invocations="2" avgMicrosecondsPerInvocation="33446" maxMicrosecondsPerInvocation="34226" standardDeviationMicrosecondsPerInvocation="800"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindInconsistentSync2" totalMilliseconds="66" invocations="2" avgMicrosecondsPerInvocation="33273" maxMicrosecondsPerInvocation="58251" standardDeviationMicrosecondsPerInvocation="24978"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.InfiniteRecursiveLoop" totalMilliseconds="63" invocations="2" avgMicrosecondsPerInvocation="31839" maxMicrosecondsPerInvocation="60332" standardDeviationMicrosecondsPerInvocation="28493"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CheckRelaxingNullnessAnnotation" totalMilliseconds="61" invocations="2" avgMicrosecondsPerInvocation="30609" maxMicrosecondsPerInvocation="39233" standardDeviationMicrosecondsPerInvocation="8625"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="60" invocations="2" avgMicrosecondsPerInvocation="30411" maxMicrosecondsPerInvocation="42611" standardDeviationMicrosecondsPerInvocation="12200"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="55" invocations="26" avgMicrosecondsPerInvocation="2117" maxMicrosecondsPerInvocation="10229" standardDeviationMicrosecondsPerInvocation="3211"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.ReadOfInstanceFieldInMethodInvokedByConstructorInSuperclass" totalMilliseconds="53" invocations="2" avgMicrosecondsPerInvocation="26784" maxMicrosecondsPerInvocation="33699" standardDeviationMicrosecondsPerInvocation="6915"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.1.0" sequence="0" timestamp="1542190924000" analysisTimestamp="1542190927005" release="">
+  <Project projectName="">
+    <Jar>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-58/src/main/java</Jar>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-58/target/classes</AuxClasspathEntry>
+  </Project>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 14 Nov 2018 05:22:04 -0500" total_classes="4" referenced_classes="53" total_bugs="0" total_size="120" num_packages="1" java_version="1.8.0_121" vm_version="25.121-b13" cpu_seconds="7.22" clock_seconds="4.06" peak_mbytes="110.90" alloc_mbytes="1820.50" gc_seconds="0.04">
+    <FileStats path="org/apache/commons/math/optimization/fitting/GaussianFitter.java" bugCount="0" size="120"/>
+    <PackageStats package="org.apache.commons.math.optimization.fitting" total_bugs="0" total_types="4" total_size="120">
+      <ClassStats class="org.apache.commons.math.optimization.fitting.GaussianFitter" sourceFile="GaussianFitter.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="org.apache.commons.math.optimization.fitting.GaussianFitter$1" sourceFile="GaussianFitter.java" interface="false" size="18" bugs="0"/>
+      <ClassStats class="org.apache.commons.math.optimization.fitting.GaussianFitter$ParameterGuesser" sourceFile="GaussianFitter.java" interface="false" size="67" bugs="0"/>
+      <ClassStats class="org.apache.commons.math.optimization.fitting.GaussianFitter$ParameterGuesser$1" sourceFile="GaussianFitter.java" interface="false" size="25" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="708" invocations="503" avgMicrosecondsPerInvocation="1408" maxMicrosecondsPerInvocation="24520" standardDeviationMicrosecondsPerInvocation="2698"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="558" invocations="498" avgMicrosecondsPerInvocation="1122" maxMicrosecondsPerInvocation="58265" standardDeviationMicrosecondsPerInvocation="3887"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="261" invocations="53" avgMicrosecondsPerInvocation="4929" maxMicrosecondsPerInvocation="83597" standardDeviationMicrosecondsPerInvocation="13080"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="213" invocations="177" avgMicrosecondsPerInvocation="1203" maxMicrosecondsPerInvocation="69810" standardDeviationMicrosecondsPerInvocation="6316"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="173" invocations="53" avgMicrosecondsPerInvocation="3277" maxMicrosecondsPerInvocation="33597" standardDeviationMicrosecondsPerInvocation="6800"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="92" invocations="84" avgMicrosecondsPerInvocation="1103" maxMicrosecondsPerInvocation="32238" standardDeviationMicrosecondsPerInvocation="4364"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="90" invocations="53" avgMicrosecondsPerInvocation="1705" maxMicrosecondsPerInvocation="35191" standardDeviationMicrosecondsPerInvocation="6098"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="87" invocations="461" avgMicrosecondsPerInvocation="189" maxMicrosecondsPerInvocation="9942" standardDeviationMicrosecondsPerInvocation="600"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

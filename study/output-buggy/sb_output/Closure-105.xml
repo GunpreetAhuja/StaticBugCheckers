@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.1.0" sequence="0" timestamp="1542185362000" analysisTimestamp="1542185365354" release="">
+  <Project projectName="">
+    <Jar>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-105/src</Jar>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-105/build/classes</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-105/lib/ant_deploy.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-105/lib/google_common_deploy.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-105/lib/hamcrest-core-1.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-105/lib/junit4-core.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-105/lib/junit4-legacy.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-105/lib/libtrunk_rhino_parser_jarjared.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-105/lib/protobuf_deploy.jar</AuxClasspathEntry>
+  </Project>
+  <BugInstance type="SF_SWITCH_NO_DEFAULT" priority="2" rank="19" abbrev="SF" category="STYLE" instanceHash="6807109914f89def1c2a31e93631cb5d" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Switch statement found where default case is missing</ShortMessage>
+    <LongMessage>Switch statement found in com.google.javascript.jscomp.FoldConstants.makeForwardSlashBracketSafe(Node) where default case is missing</LongMessage>
+    <Class classname="com.google.javascript.jscomp.FoldConstants" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.FoldConstants" start="40" end="2021" sourcefile="FoldConstants.java" sourcepath="com/google/javascript/jscomp/FoldConstants.java">
+        <Message>At FoldConstants.java:[lines 40-2021]</Message>
+      </SourceLine>
+      <Message>In class com.google.javascript.jscomp.FoldConstants</Message>
+    </Class>
+    <Method classname="com.google.javascript.jscomp.FoldConstants" name="makeForwardSlashBracketSafe" signature="(Lcom/google/javascript/rhino/Node;)Lcom/google/javascript/rhino/Node;" isStatic="true" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.FoldConstants" start="1710" end="1731" startBytecode="0" endBytecode="239" sourcefile="FoldConstants.java" sourcepath="com/google/javascript/jscomp/FoldConstants.java"/>
+      <Message>In method com.google.javascript.jscomp.FoldConstants.makeForwardSlashBracketSafe(Node)</Message>
+    </Method>
+    <SourceLine classname="com.google.javascript.jscomp.FoldConstants" primary="true" start="1715" end="1722" startBytecode="27" endBytecode="94" sourcefile="FoldConstants.java" sourcepath="com/google/javascript/jscomp/FoldConstants.java">
+      <Message>At FoldConstants.java:[lines 1715-1722]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="SF_SWITCH_NO_DEFAULT" priority="2" rank="19" abbrev="SF" category="STYLE" instanceHash="3426b2b74afd5d592003a2a0e46c62fb" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Switch statement found where default case is missing</ShortMessage>
+    <LongMessage>Switch statement found in com.google.javascript.jscomp.FoldConstants.tryMinimizeCondition(NodeTraversal, Node, Node) where default case is missing</LongMessage>
+    <Class classname="com.google.javascript.jscomp.FoldConstants" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.FoldConstants" start="40" end="2021" sourcefile="FoldConstants.java" sourcepath="com/google/javascript/jscomp/FoldConstants.java">
+        <Message>At FoldConstants.java:[lines 40-2021]</Message>
+      </SourceLine>
+      <Message>In class com.google.javascript.jscomp.FoldConstants</Message>
+    </Class>
+    <Method classname="com.google.javascript.jscomp.FoldConstants" name="tryMinimizeCondition" signature="(Lcom/google/javascript/jscomp/NodeTraversal;Lcom/google/javascript/rhino/Node;Lcom/google/javascript/rhino/Node;)V" isStatic="false" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.FoldConstants" start="1863" end="1924" startBytecode="0" endBytecode="530" sourcefile="FoldConstants.java" sourcepath="com/google/javascript/jscomp/FoldConstants.java"/>
+      <Message>In method com.google.javascript.jscomp.FoldConstants.tryMinimizeCondition(NodeTraversal, Node, Node)</Message>
+    </Method>
+    <SourceLine classname="com.google.javascript.jscomp.FoldConstants" primary="true" start="1866" end="1893" startBytecode="51" endBytecode="217" sourcefile="FoldConstants.java" sourcepath="com/google/javascript/jscomp/FoldConstants.java">
+      <Message>At FoldConstants.java:[lines 1866-1893]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="SF_SWITCH_NO_DEFAULT" priority="2" rank="19" abbrev="SF" category="STYLE" instanceHash="5a94d8879697756b2af5ac3a2715efe5" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Switch statement found where default case is missing</ShortMessage>
+    <LongMessage>Switch statement found in com.google.javascript.jscomp.FoldConstants.visit(NodeTraversal, Node, Node) where default case is missing</LongMessage>
+    <Class classname="com.google.javascript.jscomp.FoldConstants" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.FoldConstants" start="40" end="2021" sourcefile="FoldConstants.java" sourcepath="com/google/javascript/jscomp/FoldConstants.java">
+        <Message>At FoldConstants.java:[lines 40-2021]</Message>
+      </SourceLine>
+      <Message>In class com.google.javascript.jscomp.FoldConstants</Message>
+    </Class>
+    <Method classname="com.google.javascript.jscomp.FoldConstants" name="visit" signature="(Lcom/google/javascript/jscomp/NodeTraversal;Lcom/google/javascript/rhino/Node;Lcom/google/javascript/rhino/Node;)V" isStatic="false" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.FoldConstants" start="91" end="382" startBytecode="0" endBytecode="2152" sourcefile="FoldConstants.java" sourcepath="com/google/javascript/jscomp/FoldConstants.java"/>
+      <Message>In method com.google.javascript.jscomp.FoldConstants.visit(NodeTraversal, Node, Node)</Message>
+    </Method>
+    <SourceLine classname="com.google.javascript.jscomp.FoldConstants" primary="true" start="106" end="126" startBytecode="56" endBytecode="224" sourcefile="FoldConstants.java" sourcepath="com/google/javascript/jscomp/FoldConstants.java">
+      <Message>At FoldConstants.java:[lines 106-126]</Message>
+    </SourceLine>
+    <SourceLine classname="com.google.javascript.jscomp.FoldConstants" start="161" end="211" startBytecode="329" endBytecode="601" sourcefile="FoldConstants.java" sourcepath="com/google/javascript/jscomp/FoldConstants.java" role="SOURCE_LINE_ANOTHER_INSTANCE">
+      <Message>Another occurrence at FoldConstants.java:[lines 161-211]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="SF_SWITCH_NO_DEFAULT" abbrev="SF" category="STYLE">
+    <ShortDescription>Switch statement found where default case is missing</ShortDescription>
+    <Details><![CDATA[
+
+  <p> This method contains a switch statement where default case is missing.
+  Usually you need to provide a default case.</p>
+  <p>Because the analysis only looks at the generated bytecode, this warning can be incorrect triggered if
+the default case is at the end of the switch statement and the switch statement doesn't contain break statements for other
+cases.
+
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="SF">
+    <Description>Switch case falls through</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 14 Nov 2018 03:49:22 -0500" total_classes="3" referenced_classes="54" total_bugs="3" total_size="1060" num_packages="1" java_version="1.8.0_121" vm_version="25.121-b13" cpu_seconds="12.75" clock_seconds="6.77" peak_mbytes="195.92" alloc_mbytes="1820.50" gc_seconds="0.08" priority_2="3">
+    <FileStats path="com/google/javascript/jscomp/FoldConstants.java" bugCount="3" size="1060" bugHash="684538e0df5b89e4e42524fa121f7e9e"/>
+    <PackageStats package="com.google.javascript.jscomp" total_bugs="3" total_types="3" total_size="1060" priority_2="3">
+      <ClassStats class="com.google.javascript.jscomp.FoldConstants" sourceFile="FoldConstants.java" interface="false" size="1042" bugs="3" priority_2="3"/>
+      <ClassStats class="com.google.javascript.jscomp.FoldConstants$1" sourceFile="FoldConstants.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.FoldConstants$2" sourceFile="FoldConstants.java" interface="false" size="9" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="768" invocations="616" avgMicrosecondsPerInvocation="1247" maxMicrosecondsPerInvocation="24060" standardDeviationMicrosecondsPerInvocation="1960"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="625" invocations="613" avgMicrosecondsPerInvocation="1020" maxMicrosecondsPerInvocation="26503" standardDeviationMicrosecondsPerInvocation="2972"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="289" invocations="54" avgMicrosecondsPerInvocation="5357" maxMicrosecondsPerInvocation="60977" standardDeviationMicrosecondsPerInvocation="12626"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="288" invocations="258" avgMicrosecondsPerInvocation="1119" maxMicrosecondsPerInvocation="30663" standardDeviationMicrosecondsPerInvocation="3038"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="276" invocations="45" avgMicrosecondsPerInvocation="6146" maxMicrosecondsPerInvocation="29529" standardDeviationMicrosecondsPerInvocation="8474"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="254" invocations="45" avgMicrosecondsPerInvocation="5659" maxMicrosecondsPerInvocation="49316" standardDeviationMicrosecondsPerInvocation="10998"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="251" invocations="45" avgMicrosecondsPerInvocation="5593" maxMicrosecondsPerInvocation="60979" standardDeviationMicrosecondsPerInvocation="11747"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="218" invocations="54" avgMicrosecondsPerInvocation="4053" maxMicrosecondsPerInvocation="64541" standardDeviationMicrosecondsPerInvocation="11946"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="189" invocations="45" avgMicrosecondsPerInvocation="4220" maxMicrosecondsPerInvocation="42117" standardDeviationMicrosecondsPerInvocation="8686"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="174" invocations="45" avgMicrosecondsPerInvocation="3870" maxMicrosecondsPerInvocation="60807" standardDeviationMicrosecondsPerInvocation="11552"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="159" invocations="45" avgMicrosecondsPerInvocation="3553" maxMicrosecondsPerInvocation="31992" standardDeviationMicrosecondsPerInvocation="6482"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueRangeAnalysisFactory" totalMilliseconds="139" invocations="45" avgMicrosecondsPerInvocation="3104" maxMicrosecondsPerInvocation="121821" standardDeviationMicrosecondsPerInvocation="17926"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="122" invocations="45" avgMicrosecondsPerInvocation="2721" maxMicrosecondsPerInvocation="79480" standardDeviationMicrosecondsPerInvocation="12151"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="94" invocations="54" avgMicrosecondsPerInvocation="1746" maxMicrosecondsPerInvocation="29633" standardDeviationMicrosecondsPerInvocation="4600"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="90" invocations="54" avgMicrosecondsPerInvocation="1669" maxMicrosecondsPerInvocation="25136" standardDeviationMicrosecondsPerInvocation="4635"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="87" invocations="75" avgMicrosecondsPerInvocation="1165" maxMicrosecondsPerInvocation="42912" standardDeviationMicrosecondsPerInvocation="5128"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="87" invocations="580" avgMicrosecondsPerInvocation="150" maxMicrosecondsPerInvocation="6234" standardDeviationMicrosecondsPerInvocation="391"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="77" invocations="54" avgMicrosecondsPerInvocation="1432" maxMicrosecondsPerInvocation="31691" standardDeviationMicrosecondsPerInvocation="5110"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="71" invocations="1" avgMicrosecondsPerInvocation="71770" maxMicrosecondsPerInvocation="71770" standardDeviationMicrosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.SwitchFallthrough" totalMilliseconds="61" invocations="1" avgMicrosecondsPerInvocation="61003" maxMicrosecondsPerInvocation="61003" standardDeviationMicrosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="59" invocations="1" avgMicrosecondsPerInvocation="59903" maxMicrosecondsPerInvocation="59903" standardDeviationMicrosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.DefaultEncodingDetector" totalMilliseconds="58" invocations="1" avgMicrosecondsPerInvocation="58924" maxMicrosecondsPerInvocation="58924" standardDeviationMicrosecondsPerInvocation="0"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

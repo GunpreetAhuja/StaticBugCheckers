@@ -5,7 +5,7 @@
 
 [[ ! "${#BASH_SOURCE[@]}" -gt "1" ]] && { source ./scripts/config.sh; }
 
-if [ -d ${D4J_ROOT} ]; then rm -rf ${D4J_ROOT}; fi
+#if [ -d ${D4J_ROOT} ]; then rm -rf ${D4J_ROOT}; fi
 echo
 echo ">>> Downloading the Defects4J framework <<<"
 
@@ -21,7 +21,7 @@ git clone -q https://github.com/rjust/defects4j.git
 # NOTE: depending on which version is used, python/CheckoutD4j.py should be updated accordingly.
 # as it now has the list of Defects projects identifiers and number of bugs encoded manually.
 
-D4J_PR="112"	# Comment out this line to use the most recent official release of the Defects4J.
+#D4J_PR="112"	# Comment out this line to use the most recent official release of the Defects4J.
 							# Look at the note above. Don't forget to update python/CheckoutD4j.py.
 
 if [ $D4J_PR ]

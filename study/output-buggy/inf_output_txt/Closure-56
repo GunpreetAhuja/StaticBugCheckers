@@ -1,0 +1,32 @@
+Found 3 issues
+
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-56/src/com/google/javascript/jscomp/SourceFile.java:401: error: THREAD_SAFETY_VIOLATION
+  Unprotected write. Non-private method `void SourceFile$Generated.clearCachedSource()` indirectly writes to field `this.com.google.javascript.jscomp.SourceFile.code` outside of synchronization.
+ Reporting because another access to the same memory occurs on a background thread, although this access may not.
+  399.       @Override
+  400.       public void clearCachedSource() {
+  401. >       super.setCode(null);
+  402.       }
+  403.     }
+
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-56/src/com/google/javascript/jscomp/SourceFile.java:460: error: THREAD_SAFETY_VIOLATION
+  Unprotected write. Non-private method `void SourceFile$OnDisk.clearCachedSource()` indirectly writes to field `this.com.google.javascript.jscomp.SourceFile.code` outside of synchronization.
+ Reporting because another access to the same memory occurs on a background thread, although this access may not.
+  458.       @Override
+  459.       public void clearCachedSource() {
+  460. >       super.setCode(null);
+  461.       }
+  462.   
+
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-56/src/com/google/javascript/jscomp/SourceFile.java:448: error: THREAD_SAFETY_VIOLATION
+  Read/Write race. Non-private method `Reader SourceFile$OnDisk.getCodeReader()` indirectly reads without synchronization from `this.com.google.javascript.jscomp.SourceFile.code`. Potentially races with write in method `SourceFile$OnDisk.getCode()`.
+ Reporting because another access to the same memory occurs on a background thread, although this access may not.
+  446.       @Override
+  447.       public Reader getCodeReader() throws IOException {
+  448. >       if (hasSourceInMemory()) {
+  449.           return super.getCodeReader();
+  450.         } else {
+
+Summary of the reports
+
+  THREAD_SAFETY_VIOLATION: 3

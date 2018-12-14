@@ -1,0 +1,141 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-18/source/org/jfree/data/DefaultKeyedValues2D.java:117: warning: [MissingOverride] getRowCount implements method in Values2D; expected @Override
+    public int getRowCount() {
+               ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int getRowCount() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-18/source/org/jfree/data/DefaultKeyedValues2D.java:128: warning: [MissingOverride] getColumnCount implements method in Values2D; expected @Override
+    public int getColumnCount() {
+               ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int getColumnCount() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-18/source/org/jfree/data/DefaultKeyedValues2D.java:142: warning: [MissingOverride] getValue implements method in Values2D; expected @Override
+    public Number getValue(int row, int column) {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Number getValue(int row, int column) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-18/source/org/jfree/data/DefaultKeyedValues2D.java:167: warning: [MissingOverride] getRowKey implements method in KeyedValues2D; expected @Override
+    public Comparable getRowKey(int row) {
+                      ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Comparable getRowKey(int row) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-18/source/org/jfree/data/DefaultKeyedValues2D.java:181: warning: [MissingOverride] getRowIndex implements method in KeyedValues2D; expected @Override
+    public int getRowIndex(Comparable key) {
+               ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int getRowIndex(Comparable key) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-18/source/org/jfree/data/DefaultKeyedValues2D.java:200: warning: [MissingOverride] getRowKeys implements method in KeyedValues2D; expected @Override
+    public List getRowKeys() {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public List getRowKeys() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-18/source/org/jfree/data/DefaultKeyedValues2D.java:215: warning: [MissingOverride] getColumnKey implements method in KeyedValues2D; expected @Override
+    public Comparable getColumnKey(int column) {
+                      ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Comparable getColumnKey(int column) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-18/source/org/jfree/data/DefaultKeyedValues2D.java:229: warning: [MissingOverride] getColumnIndex implements method in KeyedValues2D; expected @Override
+    public int getColumnIndex(Comparable key) {
+               ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int getColumnIndex(Comparable key) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-18/source/org/jfree/data/DefaultKeyedValues2D.java:243: warning: [MissingOverride] getColumnKeys implements method in KeyedValues2D; expected @Override
+    public List getColumnKeys() {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public List getColumnKeys() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-18/source/org/jfree/data/DefaultKeyedValues2D.java:260: warning: [MissingOverride] getValue implements method in KeyedValues2D; expected @Override
+    public Number getValue(Comparable rowKey, Comparable columnKey) {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Number getValue(Comparable rowKey, Comparable columnKey) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-18/source/org/jfree/data/DefaultKeyedValues2D.java:479: warning: [MissingOverride] equals overrides method in Object; expected @Override
+    public boolean equals(Object o) {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public boolean equals(Object o) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-18/source/org/jfree/data/DefaultKeyedValues2D.java:532: warning: [MissingOverride] hashCode overrides method in Object; expected @Override
+    public int hashCode() {
+               ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int hashCode() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-18/source/org/jfree/data/DefaultKeyedValues2D.java:548: warning: [MissingOverride] clone implements method in PublicCloneable; expected @Override
+    public Object clone() throws CloneNotSupportedException {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Object clone() throws CloneNotSupportedException {'?
+Note: /Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-18/source/org/jfree/data/DefaultKeyedValues2D.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+13 warnings
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-18/source/org/jfree/data/DefaultKeyedValues.java:109: warning: [MissingOverride] getItemCount implements method in Values; expected @Override
+    public int getItemCount() {
+               ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int getItemCount() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-18/source/org/jfree/data/DefaultKeyedValues.java:122: warning: [MissingOverride] getValue implements method in Values; expected @Override
+    public Number getValue(int item) {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Number getValue(int item) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-18/source/org/jfree/data/DefaultKeyedValues.java:135: warning: [MissingOverride] getKey implements method in KeyedValues; expected @Override
+    public Comparable getKey(int index) {
+                      ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Comparable getKey(int index) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-18/source/org/jfree/data/DefaultKeyedValues.java:149: warning: [MissingOverride] getIndex implements method in KeyedValues; expected @Override
+    public int getIndex(Comparable key) {
+               ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int getIndex(Comparable key) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-18/source/org/jfree/data/DefaultKeyedValues.java:165: warning: [MissingOverride] getKeys implements method in KeyedValues; expected @Override
+    public List getKeys() {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public List getKeys() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-18/source/org/jfree/data/DefaultKeyedValues.java:180: warning: [MissingOverride] getValue implements method in KeyedValues; expected @Override
+    public Number getValue(Comparable key) {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Number getValue(Comparable key) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-18/source/org/jfree/data/DefaultKeyedValues.java:197: warning: [BoxedPrimitiveConstructor] valueOf or autoboxing provides better time and space performance
+        addValue(key, new Double(value)); 
+                      ^
+    (see http://errorprone.info/bugpattern/BoxedPrimitiveConstructor)
+  Did you mean 'addValue(key, Double.valueOf(value));'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-18/source/org/jfree/data/DefaultKeyedValues.java:219: warning: [BoxedPrimitiveConstructor] valueOf or autoboxing provides better time and space performance
+        setValue(key, new Double(value));   
+                      ^
+    (see http://errorprone.info/bugpattern/BoxedPrimitiveConstructor)
+  Did you mean 'setValue(key, Double.valueOf(value));'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-18/source/org/jfree/data/DefaultKeyedValues.java:240: warning: [BoxedPrimitiveConstructor] valueOf or autoboxing provides better time and space performance
+            this.indexMap.put(key, new Integer(this.keys.size() - 1));
+                                   ^
+    (see http://errorprone.info/bugpattern/BoxedPrimitiveConstructor)
+  Did you mean 'this.indexMap.put(key, Integer.valueOf(this.keys.size() - 1));'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-18/source/org/jfree/data/DefaultKeyedValues.java:256: warning: [BoxedPrimitiveConstructor] valueOf or autoboxing provides better time and space performance
+        insertValue(position, key, new Double(value));
+                                   ^
+    (see http://errorprone.info/bugpattern/BoxedPrimitiveConstructor)
+  Did you mean 'insertValue(position, key, Double.valueOf(value));'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-18/source/org/jfree/data/DefaultKeyedValues.java:302: warning: [BoxedPrimitiveConstructor] valueOf or autoboxing provides better time and space performance
+            this.indexMap.put(key, new Integer(i));
+                                   ^
+    (see http://errorprone.info/bugpattern/BoxedPrimitiveConstructor)
+  Did you mean 'this.indexMap.put(key, Integer.valueOf(i));'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-18/source/org/jfree/data/DefaultKeyedValues.java:409: warning: [MissingOverride] equals overrides method in Object; expected @Override
+    public boolean equals(Object obj) {
+                   ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public boolean equals(Object obj) {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-18/source/org/jfree/data/DefaultKeyedValues.java:451: warning: [MissingOverride] hashCode overrides method in Object; expected @Override
+    public int hashCode() {
+               ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public int hashCode() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-18/source/org/jfree/data/DefaultKeyedValues.java:463: warning: [MissingOverride] clone implements method in PublicCloneable; expected @Override
+    public Object clone() throws CloneNotSupportedException {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Object clone() throws CloneNotSupportedException {'?
+Note: /Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Chart-18/source/org/jfree/data/DefaultKeyedValues.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+14 warnings

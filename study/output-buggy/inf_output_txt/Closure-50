@@ -1,0 +1,13 @@
+Found 1 issue
+
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-50/src/com/google/javascript/jscomp/PeepholeReplaceKnownMethods.java:385: error: NULL_DEREFERENCE
+  object `functionName` last assigned on line 382 could be null and is dereferenced at line 385.
+  383.   
+  384.       if ((arrayNode.getType() != Token.ARRAYLIT) ||
+  385. >         !functionName.getString().equals("join")) {
+  386.         return n;
+  387.       }
+
+Summary of the reports
+
+  NULL_DEREFERENCE: 1

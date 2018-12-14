@@ -1,0 +1,6 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Mockito-9/src/org/mockito/internal/stubbing/answers/CallsRealMethods.java:37: warning: [MissingOverride] answer implements method in Answer; expected @Override
+    public Object answer(InvocationOnMock invocation) throws Throwable {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Object answer(InvocationOnMock invocation) throws Throwable {'?
+1 warning

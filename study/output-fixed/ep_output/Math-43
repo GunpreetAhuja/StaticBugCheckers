@@ -1,0 +1,36 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-43/src/main/java/org/apache/commons/math/stat/descriptive/SummaryStatistics.java:174: warning: [MissingOverride] getN implements method in StatisticalSummary; expected @Override
+    public long getN() {
+                ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public long getN() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-43/src/main/java/org/apache/commons/math/stat/descriptive/SummaryStatistics.java:182: warning: [MissingOverride] getSum implements method in StatisticalSummary; expected @Override
+    public double getSum() {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double getSum() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-43/src/main/java/org/apache/commons/math/stat/descriptive/SummaryStatistics.java:204: warning: [MissingOverride] getMean implements method in StatisticalSummary; expected @Override
+    public double getMean() {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double getMean() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-43/src/main/java/org/apache/commons/math/stat/descriptive/SummaryStatistics.java:215: warning: [MissingOverride] getStandardDeviation implements method in StatisticalSummary; expected @Override
+    public double getStandardDeviation() {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double getStandardDeviation() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-43/src/main/java/org/apache/commons/math/stat/descriptive/SummaryStatistics.java:238: warning: [MissingOverride] getVariance implements method in StatisticalSummary; expected @Override
+    public double getVariance() {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double getVariance() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-43/src/main/java/org/apache/commons/math/stat/descriptive/SummaryStatistics.java:263: warning: [MissingOverride] getMax implements method in StatisticalSummary; expected @Override
+    public double getMax() {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double getMax() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-43/src/main/java/org/apache/commons/math/stat/descriptive/SummaryStatistics.java:274: warning: [MissingOverride] getMin implements method in StatisticalSummary; expected @Override
+    public double getMin() {
+                  ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public double getMin() {'?
+7 warnings

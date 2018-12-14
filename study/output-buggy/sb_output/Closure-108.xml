@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.1.0" sequence="0" timestamp="1542185376000" analysisTimestamp="1542185380172" release="">
+  <Project projectName="">
+    <Jar>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-108/src</Jar>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-108/build/classes</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-108/lib/args4j.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-108/lib/guava.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-108/lib/json.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-108/lib/jsr305.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-108/lib/protobuf-java.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-108/build/lib/rhino.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Closure-108/lib/ant.jar</AuxClasspathEntry>
+  </Project>
+  <BugInstance type="NP_UNWRITTEN_FIELD" priority="2" rank="8" abbrev="NP" category="CORRECTNESS" instanceHash="efd27f0a02180f29b55a95d9af1a9b4c" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="476">
+    <ShortMessage>Read of unwritten field</ShortMessage>
+    <LongMessage>Read of unwritten field aliasVar in com.google.javascript.jscomp.ScopedAliases.hotSwapScript(Node, Node)</LongMessage>
+    <Class classname="com.google.javascript.jscomp.ScopedAliases" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.ScopedAliases" start="73" end="189" sourcefile="ScopedAliases.java" sourcepath="com/google/javascript/jscomp/ScopedAliases.java">
+        <Message>At ScopedAliases.java:[lines 73-189]</Message>
+      </SourceLine>
+      <Message>In class com.google.javascript.jscomp.ScopedAliases</Message>
+    </Class>
+    <Method classname="com.google.javascript.jscomp.ScopedAliases" name="hotSwapScript" signature="(Lcom/google/javascript/rhino/Node;Lcom/google/javascript/rhino/Node;)V" isStatic="false" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.ScopedAliases" start="133" end="189" startBytecode="0" endBytecode="626" sourcefile="ScopedAliases.java" sourcepath="com/google/javascript/jscomp/ScopedAliases.java"/>
+      <Message>In method com.google.javascript.jscomp.ScopedAliases.hotSwapScript(Node, Node)</Message>
+    </Method>
+    <Field classname="com.google.javascript.jscomp.ScopedAliases$AliasUsage" name="aliasVar" signature="Lcom/google/javascript/jscomp/Scope$Var;" isStatic="false" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.ScopedAliases$AliasUsage" sourcefile="ScopedAliases.java" sourcepath="com/google/javascript/jscomp/ScopedAliases.java">
+        <Message>In ScopedAliases.java</Message>
+      </SourceLine>
+      <Message>Field com.google.javascript.jscomp.ScopedAliases$AliasUsage.aliasVar</Message>
+    </Field>
+    <SourceLine classname="com.google.javascript.jscomp.ScopedAliases" primary="true" start="155" end="155" startBytecode="149" endBytecode="149" sourcefile="ScopedAliases.java" sourcepath="com/google/javascript/jscomp/ScopedAliases.java">
+      <Message>At ScopedAliases.java:[line 155]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="CORRECTNESS">
+    <Description>Correctness</Description>
+  </BugCategory>
+  <BugPattern type="NP_UNWRITTEN_FIELD" abbrev="NP" category="CORRECTNESS">
+    <ShortDescription>Read of unwritten field</ShortDescription>
+    <Details><![CDATA[
+
+  <p> The program is dereferencing a field that does not seem to ever have a non-null value written to it.
+Unless the field is initialized via some mechanism not seen by the analysis,
+dereferencing this value will generate a null pointer exception.
+</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="NP" cweid="476">
+    <Description>Null pointer dereference</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 14 Nov 2018 03:49:36 -0500" total_classes="7" referenced_classes="76" total_bugs="1" total_size="338" num_packages="1" java_version="1.8.0_121" vm_version="25.121-b13" cpu_seconds="9.55" clock_seconds="5.00" peak_mbytes="118.38" alloc_mbytes="1820.50" gc_seconds="0.09" priority_2="1">
+    <FileStats path="com/google/javascript/jscomp/ScopedAliases.java" bugCount="1" size="338" bugHash="c8be4a49ba8aad64e6b8f1acaf009dfc"/>
+    <PackageStats package="com.google.javascript.jscomp" total_bugs="1" total_types="7" total_size="338" priority_2="1">
+      <ClassStats class="com.google.javascript.jscomp.ScopedAliases" sourceFile="ScopedAliases.java" interface="false" size="77" bugs="1" priority_2="1"/>
+      <ClassStats class="com.google.javascript.jscomp.ScopedAliases$1" sourceFile="ScopedAliases.java" interface="false" size="1" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.ScopedAliases$AliasUsage" sourceFile="ScopedAliases.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.ScopedAliases$AliasedNode" sourceFile="ScopedAliases.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.ScopedAliases$AliasedTypeNode" sourceFile="ScopedAliases.java" interface="false" size="17" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.ScopedAliases$Traversal" sourceFile="ScopedAliases.java" interface="false" size="213" bugs="0"/>
+      <ClassStats class="com.google.javascript.jscomp.ScopedAliases$Traversal$1" sourceFile="ScopedAliases.java" interface="false" size="4" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="987" invocations="652" avgMicrosecondsPerInvocation="1514" maxMicrosecondsPerInvocation="31819" standardDeviationMicrosecondsPerInvocation="3048"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="756" invocations="650" avgMicrosecondsPerInvocation="1163" maxMicrosecondsPerInvocation="54432" standardDeviationMicrosecondsPerInvocation="4420"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="325" invocations="76" avgMicrosecondsPerInvocation="4279" maxMicrosecondsPerInvocation="50866" standardDeviationMicrosecondsPerInvocation="9691"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="212" invocations="236" avgMicrosecondsPerInvocation="899" maxMicrosecondsPerInvocation="31469" standardDeviationMicrosecondsPerInvocation="2854"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="210" invocations="76" avgMicrosecondsPerInvocation="2766" maxMicrosecondsPerInvocation="34981" standardDeviationMicrosecondsPerInvocation="6609"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="148" invocations="619" avgMicrosecondsPerInvocation="239" maxMicrosecondsPerInvocation="25894" standardDeviationMicrosecondsPerInvocation="1346"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="105" invocations="76" avgMicrosecondsPerInvocation="1392" maxMicrosecondsPerInvocation="23696" standardDeviationMicrosecondsPerInvocation="3669"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="93" invocations="76" avgMicrosecondsPerInvocation="1226" maxMicrosecondsPerInvocation="20887" standardDeviationMicrosecondsPerInvocation="3108"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="84" invocations="99" avgMicrosecondsPerInvocation="848" maxMicrosecondsPerInvocation="33418" standardDeviationMicrosecondsPerInvocation="3683"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

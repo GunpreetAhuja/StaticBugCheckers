@@ -1,0 +1,16 @@
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-29/src/main/java/org/apache/commons/math3/linear/OpenMapRealVector.java:829: warning: [MissingOverride] hasNext implements method in Iterator; expected @Override
+        public boolean hasNext() {
+                       ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public boolean hasNext() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-29/src/main/java/org/apache/commons/math3/linear/OpenMapRealVector.java:834: warning: [MissingOverride] next implements method in Iterator; expected @Override
+        public Entry next() {
+                     ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public Entry next() {'?
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/f/Math-29/src/main/java/org/apache/commons/math3/linear/OpenMapRealVector.java:840: warning: [MissingOverride] remove implements method in Iterator; expected @Override
+        public void remove() {
+                    ^
+    (see http://errorprone.info/bugpattern/MissingOverride)
+  Did you mean '@Override public void remove() {'?
+3 warnings

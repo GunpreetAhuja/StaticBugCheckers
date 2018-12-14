@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.1.0" sequence="0" timestamp="1542186057000" analysisTimestamp="1542186059987" release="">
+  <Project projectName="">
+    <Jar>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Lang-14/src/main/java</Jar>
+    <AuxClasspathEntry>/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Lang-14/target/classes</AuxClasspathEntry>
+  </Project>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="cb809f3fc05bf9ad91070243d5a3ccd3" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in org.apache.commons.lang3.StringUtils.toString(byte[], String): new String(byte[])</LongMessage>
+    <Class classname="org.apache.commons.lang3.StringUtils" primary="true">
+      <SourceLine classname="org.apache.commons.lang3.StringUtils" start="148" end="6585" sourcefile="StringUtils.java" sourcepath="org/apache/commons/lang3/StringUtils.java">
+        <Message>At StringUtils.java:[lines 148-6585]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.lang3.StringUtils</Message>
+    </Class>
+    <Method classname="org.apache.commons.lang3.StringUtils" name="toString" signature="([BLjava/lang/String;)Ljava/lang/String;" isStatic="true" primary="true">
+      <SourceLine classname="org.apache.commons.lang3.StringUtils" start="6585" end="6585" startBytecode="0" endBytecode="61" sourcefile="StringUtils.java" sourcepath="org/apache/commons/lang3/StringUtils.java"/>
+      <Message>In method org.apache.commons.lang3.StringUtils.toString(byte[], String)</Message>
+    </Method>
+    <Method classname="java.lang.String" name="&lt;init&gt;" signature="([B)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.String" start="566" end="567" startBytecode="0" endBytecode="36" sourcefile="String.java" sourcepath="java/lang/String.java"/>
+      <Message>Called method new String(byte[])</Message>
+    </Method>
+    <SourceLine classname="org.apache.commons.lang3.StringUtils" primary="true" start="6585" end="6585" startBytecode="9" endBytecode="9" sourcefile="StringUtils.java" sourcepath="org/apache/commons/lang3/StringUtils.java">
+      <Message>At StringUtils.java:[line 6585]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="I18N">
+    <Description>Internationalization</Description>
+  </BugCategory>
+  <BugPattern type="DM_DEFAULT_ENCODING" abbrev="Dm" category="I18N">
+    <ShortDescription>Reliance on default encoding</ShortDescription>
+    <Details><![CDATA[
+
+<p> Found a call to a method which will perform a byte to String (or String to byte) conversion, and will assume that the default platform encoding is suitable. This will cause the application behaviour to vary between platforms. Use an alternative API and specify a charset name or Charset object explicitly.  </p>
+
+      ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="Dm">
+    <Description>Dubious method used</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 14 Nov 2018 04:00:57 -0500" total_classes="2" referenced_classes="40" total_bugs="1" total_size="1480" num_packages="1" java_version="1.8.0_121" vm_version="25.121-b13" cpu_seconds="13.43" clock_seconds="7.12" peak_mbytes="173.07" alloc_mbytes="1820.50" gc_seconds="0.09" priority_1="1">
+    <FileStats path="org/apache/commons/lang3/StringUtils.java" bugCount="1" size="1480" bugHash="7d81788eda624812a3e80ae2206d59e3"/>
+    <PackageStats package="org.apache.commons.lang3" total_bugs="1" total_types="2" total_size="1480" priority_1="1">
+      <ClassStats class="org.apache.commons.lang3.StringUtils" sourceFile="StringUtils.java" interface="false" size="1434" bugs="1" priority_1="1"/>
+      <ClassStats class="org.apache.commons.lang3.StringUtils$InitStripAccents" sourceFile="StringUtils.java" interface="false" size="46" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="787" invocations="558" avgMicrosecondsPerInvocation="1410" maxMicrosecondsPerInvocation="27180" standardDeviationMicrosecondsPerInvocation="2680"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="561" invocations="557" avgMicrosecondsPerInvocation="1007" maxMicrosecondsPerInvocation="68789" standardDeviationMicrosecondsPerInvocation="3806"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="325" invocations="168" avgMicrosecondsPerInvocation="1939" maxMicrosecondsPerInvocation="57335" standardDeviationMicrosecondsPerInvocation="5911"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="312" invocations="490" avgMicrosecondsPerInvocation="638" maxMicrosecondsPerInvocation="42210" standardDeviationMicrosecondsPerInvocation="2774"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="247" invocations="40" avgMicrosecondsPerInvocation="6184" maxMicrosecondsPerInvocation="55895" standardDeviationMicrosecondsPerInvocation="10885"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="233" invocations="167" avgMicrosecondsPerInvocation="1396" maxMicrosecondsPerInvocation="39854" standardDeviationMicrosecondsPerInvocation="3774"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="217" invocations="167" avgMicrosecondsPerInvocation="1305" maxMicrosecondsPerInvocation="31975" standardDeviationMicrosecondsPerInvocation="3875"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="189" invocations="168" avgMicrosecondsPerInvocation="1130" maxMicrosecondsPerInvocation="19440" standardDeviationMicrosecondsPerInvocation="2793"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="186" invocations="167" avgMicrosecondsPerInvocation="1117" maxMicrosecondsPerInvocation="24412" standardDeviationMicrosecondsPerInvocation="2686"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="160" invocations="167" avgMicrosecondsPerInvocation="958" maxMicrosecondsPerInvocation="65634" standardDeviationMicrosecondsPerInvocation="6684"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="142" invocations="167" avgMicrosecondsPerInvocation="853" maxMicrosecondsPerInvocation="17761" standardDeviationMicrosecondsPerInvocation="1894"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="139" invocations="40" avgMicrosecondsPerInvocation="3490" maxMicrosecondsPerInvocation="42990" standardDeviationMicrosecondsPerInvocation="7416"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="125" invocations="517" avgMicrosecondsPerInvocation="243" maxMicrosecondsPerInvocation="21423" standardDeviationMicrosecondsPerInvocation="1394"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="123" invocations="65" avgMicrosecondsPerInvocation="1897" maxMicrosecondsPerInvocation="58773" standardDeviationMicrosecondsPerInvocation="8098"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="116" invocations="165" avgMicrosecondsPerInvocation="704" maxMicrosecondsPerInvocation="31552" standardDeviationMicrosecondsPerInvocation="2768"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.LiveLocalStoreDataflowFactory" totalMilliseconds="112" invocations="167" avgMicrosecondsPerInvocation="675" maxMicrosecondsPerInvocation="24540" standardDeviationMicrosecondsPerInvocation="2901"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="89" invocations="167" avgMicrosecondsPerInvocation="537" maxMicrosecondsPerInvocation="21656" standardDeviationMicrosecondsPerInvocation="2180"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="86" invocations="1" avgMicrosecondsPerInvocation="86775" maxMicrosecondsPerInvocation="86775" standardDeviationMicrosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="85" invocations="40" avgMicrosecondsPerInvocation="2136" maxMicrosecondsPerInvocation="22179" standardDeviationMicrosecondsPerInvocation="4806"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="85" invocations="1" avgMicrosecondsPerInvocation="85019" maxMicrosecondsPerInvocation="85019" standardDeviationMicrosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="84" invocations="1" avgMicrosecondsPerInvocation="84542" maxMicrosecondsPerInvocation="84542" standardDeviationMicrosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.DefaultEncodingDetector" totalMilliseconds="80" invocations="1" avgMicrosecondsPerInvocation="80378" maxMicrosecondsPerInvocation="80378" standardDeviationMicrosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="72" invocations="40" avgMicrosecondsPerInvocation="1815" maxMicrosecondsPerInvocation="20710" standardDeviationMicrosecondsPerInvocation="3959"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="71" invocations="40" avgMicrosecondsPerInvocation="1790" maxMicrosecondsPerInvocation="16604" standardDeviationMicrosecondsPerInvocation="3678"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref$CheckCallSitesAndReturnInstructions" totalMilliseconds="67" invocations="167" avgMicrosecondsPerInvocation="403" maxMicrosecondsPerInvocation="28881" standardDeviationMicrosecondsPerInvocation="2418"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

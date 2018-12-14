@@ -1,0 +1,21 @@
+Found 2 issues
+
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-27/src/main/java/org/joda/time/format/PeriodFormatterBuilder.java:1434: error: NULL_DEREFERENCE
+  object `type` last assigned on line 1383 could be null and is dereferenced by call to `isSupported(...)` at line 1434.
+  1432.                       if (isZero(period) && iFieldFormatters[iFieldType] == this) {
+  1433.                           for (int i = iFieldType + 1; i <= MAX_FIELD; i++) {
+  1434. >                             if (isSupported(type, i) && iFieldFormatters[i] != null) {
+  1435.                                   return Long.MAX_VALUE;
+  1436.                               }
+
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Time-27/src/main/java/org/joda/time/format/PeriodFormatterBuilder.java:1447: error: NULL_DEREFERENCE
+  object `type` last assigned on line 1383 could be null and is dereferenced by call to `isSupported(...)` at line 1447.
+  1445.                           i--;                              // see bug 1660490
+  1446.                           for (; i >= 0 && i <= MAX_FIELD; i--) {
+  1447. >                             if (isSupported(type, i) && iFieldFormatters[i] != null) {
+  1448.                                   return Long.MAX_VALUE;
+  1449.                               }
+
+Summary of the reports
+
+  NULL_DEREFERENCE: 2

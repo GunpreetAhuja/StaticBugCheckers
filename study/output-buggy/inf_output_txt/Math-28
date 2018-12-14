@@ -1,0 +1,13 @@
+Found 1 issue
+
+/Users/stylethinking/Documents/StaticBugCheckers/defects4j/projects/b/Math-28/src/main/java/org/apache/commons/math3/optimization/linear/SimplexSolver.java:168: error: NULL_DEREFERENCE
+  object `pivotCol` last assigned on line 167 could be null and is dereferenced at line 168.
+  166.   
+  167.           Integer pivotCol = getPivotColumn(tableau);
+  168. >         Integer pivotRow = getPivotRow(tableau, pivotCol);
+  169.           if (pivotRow == null) {
+  170.               throw new UnboundedSolutionException();
+
+Summary of the reports
+
+  NULL_DEREFERENCE: 1
