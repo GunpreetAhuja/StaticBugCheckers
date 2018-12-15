@@ -1,3 +1,9 @@
+PLEASE FIND THE ADDITIONAL DETAILED ANALYSIS RESULTS FOR 76 PROJECTS IN THE 3 FILES:  
+Detailed Analysis.pdf
+Detailed Screenshots.pdf
+Manual Analysis - Sheet1.pdf
+
+
 # Original results published in the ASE2018 paper and more.
 
 **Note 1:**
