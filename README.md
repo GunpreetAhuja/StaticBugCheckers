@@ -1,3 +1,11 @@
+PLEASE FIND THE ADDITIONAL DETAILED ANALYSIS RESULTS FOR 76 PROJECTS IN THE 3 FILES:
+Detailed Analysis.pdf 
+Detailed Screenshots.pdf 
+Manual Analysis - Sheet1.pdf
+
+
+
+
 # An empirical study of static bug checkers and how many bugs do they find.
 
 *Static bug detection tools* such as Google's [Error Prone](https://errorprone.info/),
